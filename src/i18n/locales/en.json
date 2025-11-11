@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Spectra - AI-Powered Blockchain Security Audits",
+    "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
+    "keywords": ["blockchain security", "AI audit", "smart contract security", "crypto safety", "DeFi protection"]
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "documentation": "Documentation",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "language": "Language"
+  },
+  "hero": {
+    "authority": {
+      "isoCertified": "ISO 27001 Certified",
+      "soc2Compliant": "SOC 2 Type II",
+      "openSource": "Open Source"
+    },
+    "headline": "One clear security grade with the evidence behind it",
+    "subheadline": "Real-time AI audits you can verify. Stop relying on static PDFs and get continuous, transparent security monitoring for your blockchain investments.",
+    "trustMetrics": {
+      "activeUsers": "Active Users",
+      "accuracy": "Accuracy",
+      "scanTime": "Sec Scans",
+      "protectedUsers": "Protected Users",
+      "uptime": "Uptime",
+      "detectionRate": "Detection Rate",
+      "threatTypes": "Threat Types"
+    },
+    "cta": {
+      "primary": "Get My Free Audit",
+      "secondary": "View Sample Report"
+    },
+    "riskWarning": {
+      "threatsPrevented": "23 threats prevented this week",
+      "message": "Don't wait for the next exploit. Real-time protection prevents vulnerabilities before they can be exploited."
+    },
+    "socialProof": {
+      "trustedBy": "Trusted by leading protocols",
+      "defiLeader": "DeFi Security Leader",
+      "protocols": "1000+ Integrated Protocols"
+    }
+  },
+  "persona": {
+    "title": "Choose your security approach",
+    "subtitle": "Different users need different security approaches. Which describes you best?",
+    "passiveSaver": {
+      "name": "Simple Protection",
+      "title": "Passive Savers",
+      "description": "Secure, low-maintenance protection for your crypto investments",
+      "benefits": [
+        "Automatic 24/7 monitoring",
+        "Simple security grades (A-F)",
+        "Instant alerts on risks",
+        "No technical knowledge needed"
+      ],
+      "cta": "Protect My Assets",
+      "ctaSubtext": "Start protecting in 30 seconds"
+    },
+    "powerAnalyst": {
+      "name": "Advanced Analysis",
+      "title": "Power Analysts",
+      "description": "Comprehensive security analytics with detailed technical insights",
+      "benefits": [
+        "Detailed vulnerability reports",
+        "API access for integration",
+        "Custom alert configurations",
+        "Advanced threat detection"
+      ],
+      "cta": "Analyze Security",
+      "ctaSubtext": "Get comprehensive technical analysis"
+    },
+    "skip": "Skip and continue with simple protection"
+  },
+  "features": {
+    "title": "Security audits that actually work",
+    "subtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
+    "monitoring": {
+      "title": "Real-time Monitoring",
+      "description": "Continuous AI-powered scanning detects vulnerabilities the moment they're introduced. Get instant alerts when code changes affect your security posture.",
+      "metric": "30-second average scan time",
+      "comparison": "2.4x faster than traditional audits"
+    },
+    "verifiable": {
+      "title": "Verifiable Evidence",
+      "description": "Every security claim includes reproducible AI diffs and evidence you can verify. No more taking audit reports on faith - see exactly how we found each issue.",
+      "metric": "100% transparent methodology",
+      "detail": "Open source with public GitHub repository"
+    },
+    "comprehensive": {
+      "title": "Comprehensive Coverage",
+      "description": "Advanced AI models catch more vulnerability types than human auditors. From smart contract bugs to economic attack vectors, we've got you covered.",
+      "metric": "15+ vulnerability categories",
+      "detail": "Detects 95% of known exploits before deployment"
+    },
+    "trustIndicators": {
+      "monitoring": "24/7 Monitoring",
+      "zeroFalsePositives": "Zero False Positives Guarantee",
+      "uptime": "99.9% Uptime SLA"
+    },
+    "lossPrevention": "Prevented $47M in potential losses this month"
+  },
+  "liveStatus": {
+    "title": "Live protection for active protocols",
+    "subtitle": "Join thousands of users who trust Spectra for continuous security monitoring.",
+    "contracts": "Contracts monitored",
+    "threatsPrevented": "Threats prevented this week",
+    "valueProtected": "Value protected",
+    "uptimeSLA": "Uptime SLA",
+    "growth": "+12% this month",
+    "savedLosses": "Saved $4.7M in losses",
+    "defiProtocols": "Across DeFi protocols",
+    "last30Days": "Last 30 days",
+    "systemStatus": "All systems operational • Last scan: 2 seconds ago"
+  },
+  "cta": {
+    "title": "Security in seconds. Ready to verify?",
+    "subtitle": "Don't wait for the next exploit. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
+    "button": "Start Your Free Audit Now",
+    "noCreditCard": "No credit card required • 30-second setup",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "Risk-Free Trial",
+        "description": "Full-featured 14-day trial, no credit card required"
+      },
+      "expertSupport": {
+        "title": "Expert Support",
+        "description": "24/7 security team available for urgent matters"
+      },
+      "communityTrusted": {
+        "title": "Community Trusted",
+        "description": "1,250+ protocols protected with $2.4B assets"
+      }
+    },
+    "urgency": "Limited: Free comprehensive audits available for the next 47 users"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content",
+    "closeModal": "Close persona selector",
+    "selectPersona": "Select {persona} persona"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "errorDescription": "We encountered an unexpected error. This has been logged and our team will investigate.",
+    "errorId": "Error ID",
+    "tryAgain": "Try Again",
+    "reloadPage": "Reload Page",
+    "contactSupport": "If this problem persists, please contact our security team at"
+  }
+}

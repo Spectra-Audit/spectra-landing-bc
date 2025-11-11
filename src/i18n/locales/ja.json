@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Spectra - AI搭載ブロックチェーンセキュリティ監査",
+    "description": "明確なセキュリティグレードとその裏付けとなる証拠。検証可能なリアルタイムAI監査。継続的で透明性の高いセキュリティモニタリングで暗号資産投資を保護。",
+    "keywords": ["ブロックチェーンセキュリティ", "AI監査", "スマートコントラクトセキュリティ", "暗号資産セキュリティ", "DeFi保護"]
+  },
+  "nav": {
+    "features": "機能",
+    "pricing": "料金",
+    "documentation": "ドキュメント",
+    "contact": "お問い合わせ",
+    "getStarted": "開始",
+    "language": "言語"
+  },
+  "hero": {
+    "authority": {
+      "isoCertified": "ISO 27001認証",
+      "soc2Compliant": "SOC 2タイプII",
+      "openSource": "オープンソース"
+    },
+    "headline": "明確なセキュリティグレードとその裏付けとなる証拠",
+    "subheadline": "検証可能なリアルタイムAI監査。静的PDFへの依存をやめ、ブロックチェーン投資のための継続的で透明性の高いセキュリティモニタリングを取得。",
+    "trustMetrics": {
+      "activeUsers": "アクティブユーザー",
+      "accuracy": "精度",
+      "scanTime": "秒スキャン",
+      "protectedUsers": "保護されたユーザー",
+      "uptime": "稼働時間",
+      "detectionRate": "検出率",
+      "threatTypes": "脅威タイプ"
+    },
+    "cta": {
+      "primary": "無料監査を取得",
+      "secondary": "サンプルレポートを表示"
+    },
+    "riskWarning": {
+      "threatsPrevented": "今週23件の脅威を防止",
+      "message": "次のエクスプロイトを待たないでください。リアルタイム保護は、脆弱性が悪用される前に防止します。"
+    },
+    "socialProof": {
+      "trustedBy": "主要プロトコルに信頼されています",
+      "defiLeader": "DeFiセキュリティリーダー",
+      "protocols": "1000+統合プロトコル"
+    }
+  },
+  "persona": {
+    "title": "セキュリティアプローチを選択",
+    "subtitle": "異なるユーザーは異なるセキュリティアプローチが必要です。どちらがあなたに最も合っていますか？",
+    "passiveSaver": {
+      "name": "シンプルな保護",
+      "title": "パッシブセーバー",
+      "description": "暗号資産投資のための安全で低メンテナンスの保護",
+      "benefits": [
+        "自動24時間365日監視",
+        "シンプルなセキュリティグレード（A-F）",
+        "リスクに関する即時アラート",
+        "技術的知識不要"
+      ],
+      "cta": "資産を保護",
+      "ctaSubtext": "30秒で保護を開始"
+    },
+    "powerAnalyst": {
+      "name": "高度な分析",
+      "title": "パワーアナリスト",
+      "description": "詳細な技術的洞察を含む包括的なセキュリティ分析",
+      "benefits": [
+        "詳細な脆弱性レポート",
+        "統合用APIアクセス",
+        "カスタムアラート設定",
+        "高度な脅威検出"
+      ],
+      "cta": "セキュリティを分析",
+      "ctaSubtext": "包括的な技術分析を取得"
+    },
+    "skip": "スキップしてシンプルな保護で続行"
+  },
+  "features": {
+    "title": "実際に機能するセキュリティ監査",
+    "subtitle": "従来の監査は遅く、高価で、すぐに古くなります。Spectraは、あなたのコードに追従する継続的で検証可能なセキュリティモニタリングを提供します。",
+    "monitoring": {
+      "title": "リアルタイム監視",
+      "description": "継続的なAI搭載スキャンは、脆弱性が導入された瞬間を検出します。コード変更がセキュリティ姿勢に影響する場合に即時アラートを受け取ります。",
+      "metric": "平均30秒のスキャン時間",
+      "comparison": "従来の監査より2.4倍高速"
+    },
+    "verifiable": {
+      "title": "検証可能な証拠",
+      "description": "各セキュリティ主張には、検証可能な再現可能なAI差分と証拠が含まれています。監査レポートを鵜呑みにしないでください - 各問題の見つけ方を正確に確認できます。",
+      "metric": "100%透明性のある方法論",
+      "detail": "公開GitHubリポジトリでのオープンソース"
+    },
+    "comprehensive": {
+      "title": "包括的カバー",
+      "description": "高度なAIモデルは、人間の監査者よりも多くの脆弱性タイプを検出します。スマートコントラクトのバグから経済的攻撃ベクトルまで、対応しています。",
+      "metric": "15以上の脆弱性カテゴリ",
+      "detail": "展開前に既知のエクスプロイトの95%を検出"
+    },
+    "trustIndicators": {
+      "monitoring": "24時間365日監視",
+      "zeroFalsePositives": "ゼロ偽陽性保証",
+      "uptime": "99.9%稼働時間SLA"
+    },
+    "lossPrevention": "今月$4700万の潜在的損失を防止"
+  },
+  "liveStatus": {
+    "title": "アクティブプロトコルのライブ保護",
+    "subtitle": "継続的セキュリティモニタリングでSpectraを信頼する何千人ものユーザーに参加してください。",
+    "contracts": "監視中の契約",
+    "threatsPrevented": "今週防止された脅威",
+    "valueProtected": "保護された価値",
+    "uptimeSLA": "稼働時間SLA",
+    "growth": "今月+12%",
+    "savedLosses": "$470万の損失を節約",
+    "defiProtocols": "DeFiプロトコル全体",
+    "last30Days": "過去30日間",
+    "systemStatus": "すべてのシステム稼働中 • 最終スキャン: 2秒前"
+  },
+  "cta": {
+    "title": "数秒でセキュリティ。検証準備はできていますか？",
+    "subtitle": "次のエクスプロイトを待たないでください。今日Spectraを開始し、検証可能なリアルタイムセキュリティモニタリングで投資を保護してください。",
+    "button": "今すぐ無料監査を開始",
+    "noCreditCard": "クレジットカード不要 • 30秒セットアップ",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "リスクフリー試用",
+        "description": "完全機能14日間試用、クレジットカード不要"
+      },
+      "expertSupport": {
+        "title": "専門家サポート",
+        "description": "緊急事項のため24時間365日利用可能なセキュリティチーム"
+      },
+      "communityTrusted": {
+        "title": "コミュニティ信頼",
+        "description": "$24億の資産で保護された1250以上のプロトコル"
+      }
+    },
+    "urgency": "限定：次の47ユーザー向けに無料の包括的監査が利用可能"
+  },
+  "theme": {
+    "toggle": "テーマ切り替え",
+    "light": "ライトモード",
+    "dark": "ダークモード"
+  },
+  "accessibility": {
+    "skipToMain": "メインコンテンツにスキップ",
+    "closeModal": "ペルソナセレクターを閉じる",
+    "selectPersona": "ペルソナ{persona}を選択"
+  },
+  "errors": {
+    "somethingWentWrong": "何か問題が発生しました",
+    "errorDescription": "予期せぬエラーが発生しました。これが記録され、当社チームが調査します。",
+    "errorId": "エラーID",
+    "tryAgain": "再試行",
+    "reloadPage": "ページを再読み込み",
+    "contactSupport": "この問題が解決しない場合、セキュリティチームまでご連絡ください"
+  }
+}

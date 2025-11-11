@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Spectra - AI驱动的区块链安全审计",
+    "description": "一个明确的安全等级及其背后的证据。可验证的实时AI审计。通过持续透明的安全监控保护您的加密投资。",
+    "keywords": ["区块链安全", "AI审计", "智能合约安全", "加密安全", "DeFi保护"]
+  },
+  "nav": {
+    "features": "功能",
+    "pricing": "定价",
+    "documentation": "文档",
+    "contact": "联系",
+    "getStarted": "开始",
+    "language": "语言"
+  },
+  "hero": {
+    "authority": {
+      "isoCertified": "ISO 27001认证",
+      "soc2Compliant": "SOC 2类型II",
+      "openSource": "开源"
+    },
+    "headline": "一个明确的安全等级及其背后的证据",
+    "subheadline": "可验证的实时AI审计。停止依赖静态PDF，为您的区块链投资获取持续透明的安全监控。",
+    "trustMetrics": {
+      "activeUsers": "活跃用户",
+      "accuracy": "准确度",
+      "scanTime": "秒扫描",
+      "protectedUsers": "受保护用户",
+      "uptime": "正常运行时间",
+      "detectionRate": "检测率",
+      "threatTypes": "威胁类型"
+    },
+    "cta": {
+      "primary": "获取我的免费审计",
+      "secondary": "查看示例报告"
+    },
+    "riskWarning": {
+      "threatsPrevented": "本周阻止23个威胁",
+      "message": "不要等待下一个漏洞。实时保护在漏洞被利用之前就进行预防。"
+    },
+    "socialProof": {
+      "trustedBy": "受主要协议信赖",
+      "defiLeader": "DeFi安全领导者",
+      "protocols": "1000+集成协议"
+    }
+  },
+  "persona": {
+    "title": "选择您的安全方法",
+    "subtitle": "不同的用户需要不同的安全方法。哪个最能描述您？",
+    "passiveSaver": {
+      "name": "简单保护",
+      "title": "被动储蓄者",
+      "description": "为您的加密投资提供安全、低维护的保护",
+      "benefits": [
+        "自动24/7监控",
+        "简单的安全等级（A-F）",
+        "风险即时警报",
+        "无需技术知识"
+      ],
+      "cta": "保护我的资产",
+      "ctaSubtext": "30秒开始保护"
+    },
+    "powerAnalyst": {
+      "name": "高级分析",
+      "title": "高级分析师",
+      "description": "包含详细技术洞察的全面安全分析",
+      "benefits": [
+        "详细的漏洞报告",
+        "集成API访问",
+        "自定义警报配置",
+        "高级威胁检测"
+      ],
+      "cta": "分析安全性",
+      "ctaSubtext": "获取全面的技术分析"
+    },
+    "skip": "跳过并继续简单保护"
+  },
+  "features": {
+    "title": "真正有效的安全审计",
+    "subtitle": "传统审计缓慢、昂贵且很快过时。Spectra提供持续、可验证的安全监控，跟上您的代码。",
+    "monitoring": {
+      "title": "实时监控",
+      "description": "持续的AI驱动扫描在漏洞引入时立即检测。当代码变更影响您安全态势时获取即时警报。",
+      "metric": "平均30秒扫描时间",
+      "comparison": "比传统审计快2.4倍"
+    },
+    "verifiable": {
+      "title": "可验证的证据",
+      "description": "每个安全声明都包含可重现的AI差异和可验证的证据。不再盲目相信审计报告 - 查看我们如何找到每个问题的确切方式。",
+      "metric": "100%透明的方法论",
+      "detail": "具有公共GitHub存储库的开源"
+    },
+    "comprehensive": {
+      "title": "全面覆盖",
+      "description": "高级AI模型比人类审计员捕获更多漏洞类型。从智能合约错误到经济攻击向量，我们已覆盖您。",
+      "metric": "15+漏洞类别",
+      "detail": "在部署前检测95%已知漏洞利用"
+    },
+    "trustIndicators": {
+      "monitoring": "24/7监控",
+      "zeroFalsePositives": "零误报保证",
+      "uptime": "99.9%正常运行时间SLA"
+    },
+    "lossPrevention": "本月防止了4700万美元潜在损失"
+  },
+  "liveStatus": {
+    "title": "活跃协议的实时保护",
+    "subtitle": "加入数千名信任Spectra进行持续安全监控的用户。",
+    "contracts": "监控合约",
+    "threatsPrevented": "本周阻止威胁",
+    "valueProtected": "保护价值",
+    "uptimeSLA": "正常运行时间SLA",
+    "growth": "本月+12%",
+    "savedLosses": "节省470万美元损失",
+    "defiProtocols": "跨DeFi协议",
+    "last30Days": "过去30天",
+    "systemStatus": "所有系统正常运行 • 最后扫描：2秒前"
+  },
+  "cta": {
+    "title": "几秒钟内获得安全性。准备验证吗？",
+    "subtitle": "不要等待下一个漏洞。今天开始使用Spectra，通过可验证的实时安全监控保护您的投资。",
+    "button": "立即开始您的免费审计",
+    "noCreditCard": "无需信用卡 • 30秒设置",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "无风险试用",
+        "description": "全功能14天试用，无需信用卡"
+      },
+      "expertSupport": {
+        "title": "专家支持",
+        "description": "24/7安全团队处理紧急事务"
+      },
+      "communityTrusted": {
+        "title": "社区信任",
+        "description": "1250+受保护协议，24亿美元资产"
+      }
+    },
+    "urgency": "有限：免费全面审计可供下47位用户使用"
+  },
+  "theme": {
+    "toggle": "切换主题",
+    "light": "浅色模式",
+    "dark": "深色模式"
+  },
+  "accessibility": {
+    "skipToMain": "跳转到主要内容",
+    "closeModal": "关闭角色选择器",
+    "selectPersona": "选择{persona}角色"
+  },
+  "errors": {
+    "somethingWentWrong": "出现了一些问题",
+    "errorDescription": "我们遇到了意外错误。这已被记录，我们的团队将进行调查。",
+    "errorId": "错误ID",
+    "tryAgain": "重试",
+    "reloadPage": "重新加载页面",
+    "contactSupport": "如果此问题持续存在，请联系我们的安全团队"
+  }
+}

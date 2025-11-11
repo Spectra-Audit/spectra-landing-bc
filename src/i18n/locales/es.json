@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Spectra - Auditorías de Seguridad Blockchain con IA",
+    "description": "Una clara calificación de seguridad con la evidencia detrás. Auditorías de IA en tiempo real que puedes verificar. Protege tus inversiones cripto con monitoreo de seguridad continuo y transparente.",
+    "keywords": ["seguridad blockchain", "auditoría IA", "seguridad smart contract", "seguridad cripto", "protección DeFi"]
+  },
+  "nav": {
+    "features": "Características",
+    "pricing": "Precios",
+    "documentation": "Documentación",
+    "contact": "Contacto",
+    "getStarted": "Comenzar",
+    "language": "Idioma"
+  },
+  "hero": {
+    "authority": {
+      "isoCertified": "Certificado ISO 27001",
+      "soc2Compliant": "SOC 2 Tipo II",
+      "openSource": "Código Abierto"
+    },
+    "headline": "Una clara calificación de seguridad con la evidencia detrás",
+    "subheadline": "Auditorías de IA en tiempo real que puedes verificar. Deja de depender de PDFs estáticos y obtén monitoreo de seguridad continuo y transparente para tus inversiones blockchain.",
+    "trustMetrics": {
+      "activeUsers": "Usuarios Activos",
+      "accuracy": "Precisión",
+      "scanTime": "Escaneos Seg",
+      "protectedUsers": "Usuarios Protegidos",
+      "uptime": "Disponibilidad",
+      "detectionRate": "Tasa de Detección",
+      "threatTypes": "Tipos de Amenazas"
+    },
+    "cta": {
+      "primary": "Obtener Mi Auditoría Gratuita",
+      "secondary": "Ver Reporte de Muestra"
+    },
+    "riskWarning": {
+      "threatsPrevented": "23 amenazas prevenidas esta semana",
+      "message": "No esperes el próximo exploit. La protección en tiempo real previene vulnerabilidades antes de que puedan ser explotadas."
+    },
+    "socialProof": {
+      "trustedBy": "Confiado por protocolos líderes",
+      "defiLeader": "Líder en Seguridad DeFi",
+      "protocols": "1000+ Protocolos Integrados"
+    }
+  },
+  "persona": {
+    "title": "Elige tu enfoque de seguridad",
+    "subtitle": "Diferentes usuarios necesitan diferentes enfoques de seguridad. ¿Cuál te describe mejor?",
+    "passiveSaver": {
+      "name": "Protección Simple",
+      "title": "Ahorradores Pasivos",
+      "description": "Protección segura y de bajo mantenimiento para tus inversiones cripto",
+      "benefits": [
+        "Monitoreo automático 24/7",
+        "Calificaciones de seguridad simples (A-F)",
+        "Alertas instantáneas de riesgos",
+        "No se requieren conocimientos técnicos"
+      ],
+      "cta": "Proteger Mis Activos",
+      "ctaSubtext": "Comienza a proteger en 30 segundos"
+    },
+    "powerAnalyst": {
+      "name": "Análisis Avanzado",
+      "title": "Analistas de Poder",
+      "description": "Analíticas de seguridad comprehensivas con insights técnicos detallados",
+      "benefits": [
+        "Reportes detallados de vulnerabilidades",
+        "Acceso API para integración",
+        "Configuraciones de alerta personalizadas",
+        "Detección avanzada de amenazas"
+      ],
+      "cta": "Analizar Seguridad",
+      "ctaSubtext": "Obtener análisis técnico comprehensivo"
+    },
+    "skip": "Omitir y continuar con protección simple"
+  },
+  "features": {
+    "title": "Auditorías de seguridad que realmente funcionan",
+    "subtitle": "Las auditorías tradicionales son lentas, costosas y rápidamente obsoletas. Spectra proporciona monitoreo de seguridad verificable y continuo que se mantiene al día con tu código.",
+    "monitoring": {
+      "title": "Monitoreo en Tiempo Real",
+      "description": "El escaneo continuo con IA detecta vulnerabilidades en el momento en que se introducen. Obtén alertas instantáneas cuando los cambios de código afecten tu postura de seguridad.",
+      "metric": "Tiempo promedio de escaneo de 30 segundos",
+      "comparison": "2.4x más rápido que las auditorías tradicionales"
+    },
+    "verifiable": {
+      "title": "Evidencia Verificable",
+      "description": "Cada reclamo de seguridad incluye diffs de IA reproducibles y evidencia que puedes verificar. No más confiar ciegamente en reportes de auditoría - ve exactamente cómo encontramos cada problema.",
+      "metric": "Metodología 100% transparente",
+      "detail": "Código abierto con repositorio GitHub público"
+    },
+    "comprehensive": {
+      "title": "Cobertura Comprensiva",
+      "description": "Modelos de IA avanzados detectan más tipos de vulnerabilidades que los auditores humanos. Desde bugs de smart contracts hasta vectores de ataque económicos, te tenemos cubierto.",
+      "metric": "15+ categorías de vulnerabilidades",
+      "detail": "Detecta 95% de exploits conocidos antes del despliegue"
+    },
+    "trustIndicators": {
+      "monitoring": "Monitoreo 24/7",
+      "zeroFalsePositives": "Garantía de Cero Falsos Positivos",
+      "uptime": "99.9% SLA de Disponibilidad"
+    },
+    "lossPrevention": "Se previnieron $47M en pérdidas potenciales este mes"
+  },
+  "liveStatus": {
+    "title": "Protección en vivo para protocolos activos",
+    "subtitle": "Únete a miles de usuarios que confían en Spectra para monitoreo de seguridad continuo.",
+    "contracts": "Contratos monitoreados",
+    "threatsPrevented": "Amenazas prevenidas esta semana",
+    "valueProtected": "Valor protegido",
+    "uptimeSLA": "SLA de Disponibilidad",
+    "growth": "+12% este mes",
+    "savedLosses": "Se ahorraron $4.7M en pérdidas",
+    "defiProtocols": "A través de protocolos DeFi",
+    "last30Days": "Últimos 30 días",
+    "systemStatus": "Todos los sistemas operacionales • Último escaneo: hace 2 segundos"
+  },
+  "cta": {
+    "title": "Seguridad en segundos. ¿Listo para verificar?",
+    "subtitle": "No esperes el próximo exploit. Comienza con Spectra hoy y protege tus inversiones con monitoreo de seguridad verificable y en tiempo real.",
+    "button": "Comienza Tu Auditoría Gratuita Ahora",
+    "noCreditCard": "No se requiere tarjeta de crédito • Configuración de 30 segundos",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "Prueba Sin Riesgo",
+        "description": "Prueba de 14 días completa, sin tarjeta de crédito requerida"
+      },
+      "expertSupport": {
+        "title": "Soporte Experto",
+        "description": "Equipo de seguridad 24/7 disponible para asuntos urgentes"
+      },
+      "communityTrusted": {
+        "title": "Confiado por la Comunidad",
+        "description": "1,250+ protocolos protegidos con $2.4B en activos"
+      }
+    },
+    "urgency": "Limitado: Auditorías comprehensivas gratuitas disponibles para los próximos 47 usuarios"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "accessibility": {
+    "skipToMain": "Saltar al contenido principal",
+    "closeModal": "Cerrar selector de persona",
+    "selectPersona": "Seleccionar persona {persona}"
+  },
+  "errors": {
+    "somethingWentWrong": "Algo salió mal",
+    "errorDescription": "Encontramos un error inesperado. Esto ha sido registrado y nuestro equipo investigará.",
+    "errorId": "ID del Error",
+    "tryAgain": "Intentar de Nuevo",
+    "reloadPage": "Recargar Página",
+    "contactSupport": "Si este problema persiste, por favor contacta a nuestro equipo de seguridad en"
+  }
+}

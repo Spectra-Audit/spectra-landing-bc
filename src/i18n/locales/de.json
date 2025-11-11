@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Spectra - KI-gestützte Blockchain-Sicherheitsaudits",
+    "description": "Ein klares Sicherheitsrating mit den Beweisen dahinter. Echtzeit-KI-Audits, die Sie überprüfen können. Schützen Sie Ihre Krypto-Investitionen mit kontinuierlicher, transparenter Sicherheitsüberwachung.",
+    "keywords": ["Blockchain-Sicherheit", "KI-Audit", "Smart Contract Sicherheit", "Krypto-Sicherheit", "DeFi-Schutz"]
+  },
+  "nav": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "documentation": "Dokumentation",
+    "contact": "Kontakt",
+    "getStarted": "Starten",
+    "language": "Sprache"
+  },
+  "hero": {
+    "authority": {
+      "isoCertified": "ISO 27001 zertifiziert",
+      "soc2Compliant": "SOC 2 Typ II",
+      "openSource": "Open Source"
+    },
+    "headline": "Ein klares Sicherheitsrating mit den Beweisen dahinter",
+    "subheadline": "Echtzeit-KI-Audits, die Sie überprüfen können. Hören Sie auf, sich auf statische PDFs zu verlassen, und erhalten Sie kontinuierliche, transparente Sicherheitsüberwachung für Ihre Blockchain-Investitionen.",
+    "trustMetrics": {
+      "activeUsers": "Aktive Nutzer",
+      "accuracy": "Genauigkeit",
+      "scanTime": "Sek Scans",
+      "protectedUsers": "Geschützte Nutzer",
+      "uptime": "Verfügbarkeit",
+      "detectionRate": "Erkennungsrate",
+      "threatTypes": "Bedrohungsarten"
+    },
+    "cta": {
+      "primary": "Mein kostenloses Audit erhalten",
+      "secondary": "Beispielbericht ansehen"
+    },
+    "riskWarning": {
+      "threatsPrevented": "23 Bedrohungen diese Woche verhindert",
+      "message": "Warten Sie nicht auf den nächsten Exploit. Echtzeitschutz verhindert Schwachstellen, bevor sie ausgenutzt werden können."
+    },
+    "socialProof": {
+      "trustedBy": "Vertraut von führenden Protokollen",
+      "defiLeader": "DeFi Sicherheitsführer",
+      "protocols": "1000+ Integrierte Protokolle"
+    }
+  },
+  "persona": {
+    "title": "Wählen Sie Ihren Sicherheitsansatz",
+    "subtitle": "Verschiedene Nutzer benötigen verschiedene Sicherheitsansätze. Was beschreibt Sie am besten?",
+    "passiveSaver": {
+      "name": "Einfacher Schutz",
+      "title": "Passive Sparer",
+      "description": "Sicherer, wartungsarmer Schutz für Ihre Krypto-Investitionen",
+      "benefits": [
+        "Automatische 24/7-Überwachung",
+        "Einfache Sicherheitsbewertungen (A-F)",
+        "Sofortige Warnungen bei Risiken",
+        "Keine technischen Kenntnisse erforderlich"
+      ],
+      "cta": "Meine Vermögenswerte schützen",
+      "ctaSubtext": "In 30 Sekunden mit dem Schutz beginnen"
+    },
+    "powerAnalyst": {
+      "name": "Erweiterte Analyse",
+      "title": "Power-Analysten",
+      "description": "Umfassende Sicherheitsanalysen mit detaillierten technischen Einblicken",
+      "benefits": [
+        "Detaillierte Schwachstellenberichte",
+        "API-Zugang für Integration",
+        "Benutzerdefinierte Warnkonfigurationen",
+        "Erweiterte Bedrohungserkennung"
+      ],
+      "cta": "Sicherheit analysieren",
+      "ctaSubtext": "Umfassende technische Analyse erhalten"
+    },
+    "skip": "Überspringen und mit einfachem Schutz fortfahren"
+  },
+  "features": {
+    "title": "Sicherheitsaudits, die wirklich funktionieren",
+    "subtitle": "Traditionelle Audits sind langsam, teuer und schnell veraltet. Spectra bietet kontinuierliche, überprüfbare Sicherheitsüberwachung, die mit Ihrem Code Schritt hält.",
+    "monitoring": {
+      "title": "Echtzeitüberwachung",
+      "description": "Kontinuierliche KI-gestützte Scans erkennen Schwachstellen im Moment ihrer Einführung. Erhalten Sie sofortige Warnungen, wenn Codeänderungen Ihre Sicherheitslage beeinträchtigen.",
+      "metric": "30 Sekunden durchschnittliche Scanzeit",
+      "comparison": "2,4x schneller als traditionelle Audits"
+    },
+    "verifiable": {
+      "title": "Überprüfbare Beweise",
+      "description": "Jeder Sicherheitsanspruch enthält reproduzierbare KI-Diffs und Beweise, die Sie überprüfen können. Verlassen Sie sich nicht mehr blind auf Audit-Berichte - sehen Sie genau, wie wir jedes Problem gefunden haben.",
+      "metric": "100% transparente Methodik",
+      "detail": "Open Source mit öffentlichem GitHub-Repository"
+    },
+    "comprehensive": {
+      "title": "Umfassende Abdeckung",
+      "description": "Fortschrittliche KI-Modelle erkennen mehr Schwachstellentypen als menschliche Prüfer. Von Smart-Contract-Bugs bis zu wirtschaftlichen Angriffsvektoren haben wir Sie abgedeckt.",
+      "metric": "15+ Schwachstellenkategorien",
+      "detail": "Erkennt 95% bekannter Exploits vor der Bereitstellung"
+    },
+    "trustIndicators": {
+      "monitoring": "24/7-Überwachung",
+      "zeroFalsePositives": "Garantie für Null-Falsch-Positive",
+      "uptime": "99,9% Uptime SLA"
+    },
+    "lossPrevention": "$47M an potenziellen Verlusten diesen Monat verhindert"
+  },
+  "liveStatus": {
+    "title": "Live-Schutz für aktive Protokolle",
+    "subtitle": "Schließen Sie sich Tausenden von Nutzern an, die Spectra für kontinuierliche Sicherheitsüberwachung vertrauen.",
+    "contracts": "Überwachte Verträge",
+    "threatsPrevented": "Diese Woche verhinderte Bedrohungen",
+    "valueProtected": "Geschützter Wert",
+    "uptimeSLA": "Uptime SLA",
+    "growth": "+12% diesen Monat",
+    "savedLosses": "$4,7M an Verlusten eingespart",
+    "defiProtocols": "Über DeFi-Protokolle",
+    "last30Days": "Letzte 30 Tage",
+    "systemStatus": "Alle Systeme betriebsbereit • Letzter Scan: vor 2 Sekunden"
+  },
+  "cta": {
+    "title": "Sicherheit in Sekunden. Bereit zu überprüfen?",
+    "subtitle": "Warten Sie nicht auf den nächsten Exploit. Starten Sie noch heute mit Spectra und schützen Sie Ihre Investitionen mit überprüfbarer, Echtzeit-Sicherheitsüberwachung.",
+    "button": "Starten Sie jetzt Ihr kostenloses Audit",
+    "noCreditCard": "Keine Kreditkarte erforderlich • 30-Sekunden-Setup",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "Risikofreier Test",
+        "description": "14-tägiger voll funktionsfähiger Test, keine Kreditkarte erforderlich"
+      },
+      "expertSupport": {
+        "title": "Expertenunterstützung",
+        "description": "24/7-Sicherheitsteam verfügbar für dringende Angelegenheiten"
+      },
+      "communityTrusted": {
+        "title": "Von der Community vertraut",
+        "description": "1.250+ geschützte Protokolle mit $2,4B an Vermögenswerten"
+      }
+    },
+    "urgency": "Begrenzt: Kostenlose umfassende Audits verfügbar für die nächsten 47 Nutzer"
+  },
+  "theme": {
+    "toggle": "Design umschalten",
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus"
+  },
+  "accessibility": {
+    "skipToMain": "Zum Hauptinhalt springen",
+    "closeModal": "Persona-Auswahl schließen",
+    "selectPersona": "Persona {persona} auswählen"
+  },
+  "errors": {
+    "somethingWentWrong": "Etwasas ist schiefgelaufen",
+    "errorDescription": "Wir sind auf einen unerwarteten Fehler gestoßen. Dies wurde protokolliert und unser Team wird untersuchen.",
+    "errorId": "Fehler-ID",
+    "tryAgain": "Erneut versuchen",
+    "reloadPage": "Seite neu laden",
+    "contactSupport": "Wenn dieses Problem weiterhin besteht, kontaktieren Sie bitte unser Sicherheitsteam unter"
+  }
+}
