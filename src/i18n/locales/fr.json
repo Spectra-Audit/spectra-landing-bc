@@ -1,157 +1,551 @@
 {
+  "metadata": {
+    "title": "Spectra - Audits de Sécurité Blockchain par IA",
+    "description": "Un score de sécurité clair, preuves à l'appui. Audits par IA en temps réel et vérifiables. Protégez vos investissements crypto avec une surveillance de sécurité continue et transparente.",
+    "keywords": "sécurité blockchain, audit IA, sécurité des contrats intelligents, sécurité crypto, protection de la DeFi",
+    "og": {
+      "title": "Spectra - Audits de Sécurité Blockchain par IA",
+      "description": "Un score de sécurité clair, preuves à l'appui. Audits par IA en temps réel et vérifiables.",
+      "imageAlt": "Plateforme d'Audit de Sécurité par IA Spectra"
+    }
+  },
   "meta": {
     "title": "Spectra - Audits de Sécurité Blockchain par IA",
-    "description": "Une note de sécurité claire avec les preuves à l'appui. Audits IA en temps réel que vous pouvez vérifier. Protégez vos investissements crypto avec une surveillance de sécurité continue et transparente.",
-    "keywords": ["sécurité blockchain", "audit IA", "sécurité smart contract", "sécurité crypto", "protection DeFi"]
+    "description": "Un score de sécurité clair, preuves à l'appui. Audits par IA en temps réel et vérifiables. Protégez vos investissements crypto avec une surveillance de sécurité continue et transparente.",
+    "keywords": "sécurité blockchain, audit IA, sécurité des contrats intelligents, sécurité crypto, protection de la DeFi"
   },
   "nav": {
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
     "documentation": "Documentation",
+    "whitepaper": "Livre blanc",
     "contact": "Contact",
-    "getStarted": "Commencer",
-    "language": "Langue"
+    "getStarted": "Démarrer",
+    "language": "Langue",
+    "launchApp": "Lancer l'Application"
   },
   "hero": {
     "authority": {
-      "isoCertified": "Certifié ISO 27001",
-      "soc2Compliant": "SOC 2 Type II",
+      "securityFirst": "Architecture Sécurisée",
+      "bestPractices": "Meilleures Pratiques",
       "openSource": "Open Source"
     },
-    "headline": "Une note de sécurité claire avec les preuves à l'appui",
-    "subheadline": "Audits IA en temps réel que vous pouvez vérifier. Cessez de vous fier aux PDF statiques et obtenez une surveillance de sécurité continue et transparente pour vos investissements blockchain.",
+    "headline": "Recherchez la Sécurité du Projet Avant d'Investir",
+    "subheadline": "Scores de sécurité multidimensionnels pour plus de 1000 protocoles DeFi. Comprenez les risques avant d'investir avec une analyse complète que vous pouvez vérifier.",
+    "addressPlaceholder": "Saisissez votre adresse Ethereum",
+    "getAuditReport": "Obtenir le Rapport d'Audit",
+    "getReport": "Obtenir le Rapport",
     "trustMetrics": {
       "activeUsers": "Utilisateurs Actifs",
       "accuracy": "Précision",
-      "scanTime": "Analyses Sec",
+      "scanTime": "Temps d'analyse (sec)",
       "protectedUsers": "Utilisateurs Protégés",
       "uptime": "Disponibilité",
       "detectionRate": "Taux de Détection",
-      "threatTypes": "Types de Menaces"
+      "threatTypes": "Types de Menaces",
+      "projectsAnalyzed": "Projets Analysés",
+      "riskFlagsIdentified": "Indicateurs de Risque Identifiés"
     },
     "cta": {
-      "primary": "Obtenir Mon Audit Gratuit",
-      "secondary": "Voir l'Exemple de Rapport"
+      "primary": "Explorer les Projets",
+      "secondary": "Comprendre les Scores"
     },
     "riskWarning": {
-      "threatsPrevented": "23 menaces empêchées cette semaine",
-      "message": "N'attendez pas la prochaine exploitation. La protection en temps réel empêche les vulnérabilités avant qu'elles ne soient exploitées."
+      "threatsPrevented": "Menaces prévenues continuellement",
+      "message": "N'attendez pas le prochain exploit. La protection en temps réel prévient les vulnérabilités avant qu'elles ne soient exploitées."
     },
     "socialProof": {
-      "trustedBy": "Approuvé par les protocoles leaders",
-      "defiLeader": "Leader en Sécurité DeFi",
-      "protocols": "1000+ Protocoles Intégrés"
+      "trustedBy": "Approuvé par les protocoles de premier plan",
+      "defiLeader": "Leader de la sécurité DeFi",
+      "protocols": "Plus de 1000 protocoles intégrés"
+    },
+    "page": {
+      "heroTitle": "Audits de Sécurité de Contrats Intelligents",
+      "heroSubtitle": "en Secondes, Pas Semaines",
+      "heroDescription": "Analyse de contrats intelligents par IA avec preuves vérifiables. Obtenez des audits de sécurité complets en moins de 30 secondes. Aucune inscription requise.",
+      "securityAuditTitle": "Audité et Vérifié Professionnellement",
+      "securityAuditSubtitle": "Sécurité en laquelle vous pouvez faire confiance, vérifiée par des experts leaders",
+      "thirdPartyAudited": "Audité par des Tiers",
+      "thirdPartyAuditedDesc": "Sécurité révisée par les cabinets leaders d'audit crypto",
+      "verified": "Vérifié",
+      "openSource": "Open Source",
+      "openSourceDesc": "Code publiquement vérifiable sur GitHub",
+      "transparent": "Transparent",
+      "trustMessage": "Notre base de code a subi des audits de sécurité complets par des entreprises de sécurité blockchain réputées. Nous sommes engagés dans des améliorations continues de la sécurité et la transparence.",
+      "featuresTitle": "Des audits de sécurité qui fonctionnent vraiment",
+      "featuresSubtitle": "Les audits traditionnels sont lents, coûteux et vite obsolètes. Spectra offre une surveillance de sécurité continue et vérifiable qui s'adapte à votre code.",
+      "realTimeMonitoring": "Surveillance IA en Temps Réel",
+      "realTimeMonitoringDesc": "L'analyse continue par IA détecte les vulnérabilités dès leur introduction. Recevez des alertes instantanées lorsque les changements de code affectent votre posture de sécurité, avec un temps d'analyse moyen de 30 secondes.",
+      "avgScanTime": "30s",
+      "avgScanTimeLabel": "Temps d'analyse moyen",
+      "fasterThanAudits": "2.4x",
+      "fasterThanAuditsLabel": "Plus rapide que les audits",
+      "automated": "100%",
+      "automatedLabel": "Automatisé",
+      "verifiableEvidence": "Preuves Vérifiables",
+      "verifiableEvidenceDesc": "Chaque constat de sécurité est accompagné de 'diffs' IA reproductibles et de preuves que vous pouvez vérifier. Plus de confiance aveugle dans les rapports : voyez exactement comment nous avons identifié chaque problème.",
+      "openSourceCodebase": "Base de code open source",
+      "publicGitHubRepo": "Référentiel public sur GitHub",
+      "comprehensiveCoverage": "Couverture Complète",
+      "comprehensiveCoverageDesc": "Les modèles IA avancés détectent plus de types de vulnérabilités que les auditeurs humains. Des bugs de contrats intelligents aux vecteurs d'attaque économiques.",
+      "vulnerabilityCategories": "Plus de 15 catégories de vulnérabilités",
+      "detectionRate": "Détecte 95% des exploits connus",
+      "productionReady": "Sécurité Prête pour la Production",
+      "productionReadyDesc": "Conçu pour les développeurs qui ont besoin d'une analyse de sécurité de contrats intelligents fiable. Audité par des tiers et open source, avec des rapports d'audit vérifiables.",
+      "thirdPartyVerified": "Vérifié par des Tiers",
+      "sourceCode": "Code Source",
+      "scanTime": "Analyses de <30 Secondes",
+      "aiPoweredAnalysis": "Analyse Alimentée par IA",
+      "aiPoweredAnalysisDesc": "Analyse de sécurité automatisée rapide",
+      "highAccuracy": "Haute Précision",
+      "highAccuracyDesc": "Résultats vérifiés par IA auxquels vous pouvez faire confiance",
+      "multiDimensional": "Multidimensionnel",
+      "multiDimensionalDesc": "Notation de sécurité à 5 facteurs",
+      "liveStatusTitle": "Analyse de sécurité complète",
+      "liveStatusSubtitle": "Notation multidimensionnelle pour une évaluation complète de la sécurité des contrats intelligents.",
+      "scanTimeValue": "<30s",
+      "scanTimeLabel": "Temps d'analyse moyen",
+      "scanTimeBadge": "Analyse rapide",
+      "dimensionsValue": "5",
+      "dimensionsLabel": "Dimensions de sécurité",
+      "dimensionsBadge": "Notation multifactor",
+      "aiPoweredValue": "IA",
+      "aiPoweredLabel": "Analyse alimentée",
+      "aiPoweredBadge": "Détection intelligente",
+      "transparentValue": "100%",
+      "transparentLabel": "Méthodologie transparente",
+      "transparentBadge": "Résultats vérifiables",
+      "systemReady": "Système prêt • Commencez votre audit en secondes",
+      "finalCtaTitle": "Sécurité en secondes. Prêt à vérifier ?",
+      "finalCtaSubtitle": "N'attendez pas le prochain exploit. Commencez avec Spectra aujourd'hui et protégez vos investissements avec une surveillance de sécurité vérifiable et en temps réel.",
+      "noCreditCardRequired": "Aucune carte de crédit requise • Configuration en 30 secondes",
+      "quickSetup": "Configuration Rapide",
+      "quickSetupDesc": "Commencez avec des audits de sécurité complets",
+      "expertSupport": "Support Expert",
+      "expertSupportDesc": "Équipe de sécurité disponible quand vous avez besoin d'aide",
+      "communityDriven": "Axé sur la Communauté",
+      "communityDrivenDesc": "Open source avec développement transparent"
+    }
+  },
+  "howScoresWork": {
+    "title": "Comprendre les Scores de Sécurité",
+    "subtitle": "Notre analyse multidimensionnelle va au-delà du code pour évaluer les risques réels du projet.",
+    "description": "Chaque dimension est notée de 0-100 et combinée en votre Score de Sécurité Global. Cette approche complète aide à identifier les risques que les audits traditionnels limités au code manquent.",
+    "dimensions": {
+      "codeSecurity": {
+        "title": "Sécurité du Code",
+        "score": "0-100",
+        "description": "Vulnérabilités des smart contracts, historique des audits, programmes de bug bounty et vecteurs d'attaque courants comme la réentrance et les problèmes de dépassement."
+      },
+      "tokenomics": {
+        "title": "Tokenomique",
+        "score": "0-100",
+        "description": "Mécanismes d'approvisionnement, calendriers d'inflation, analyse de la distribution des tokens, examen des vestings et viabilité du modèle économique."
+      },
+      "liquidity": {
+        "title": "Santé de la Liquidité",
+        "score": "0-100",
+        "description": "Profondeur du pool, périodes de verrouillage, évaluation des risques de retrait, analyse du slippage et qualité de la distribution initiale."
+      },
+      "distribution": {
+        "title": "Distribution des Détenteurs",
+        "score": "0-100",
+        "description": "Analyse de la concentration, évaluation des risques de baleines, indicateurs de détenteurs anonymes, suivi des tokens de l'équipe et score de décentralisation."
+      },
+      "team": {
+        "title": "Équipe et Sentiment",
+        "score": "0-100",
+        "description": "Vérification des antécédents, historique des projets passés, signaux de santé de la communauté, analyse des sentiments sociaux et indicateurs de confiance publique.",
+        "comingSoon": "Prochainement"
+      }
+    },
+    "overallScore": {
+      "title": "Score de Sécurité Global",
+      "description": "Toutes les dimensions combinées en une seule note facile à comprendre.",
+      "excellent": "85+ = Excellent",
+      "good": "70-84 = Bon",
+      "fair": "55-69 = Correct",
+      "needsImprovement": "<55 = Besoin d'Améliorations"
+    },
+    "cta": {
+      "exploreProjects": "Explorer les Projets",
+      "viewSampleReport": "Voir un Rapport d'Exemple"
     }
   },
   "persona": {
     "title": "Choisissez votre approche de sécurité",
-    "subtitle": "Différents utilisateurs ont besoin de différentes approches de sécurité. Vous vous décrivez le mieux ?",
+    "subtitle": "Chaque utilisateur a des besoins de sécurité différents. Quel profil vous correspond le mieux ?",
     "passiveSaver": {
       "name": "Protection Simple",
-      "title": "Épargnants Passifs",
-      "description": "Protection sécurisée et à faible entretien pour vos investissements crypto",
+      "title": "L'investisseur passif",
+      "description": "Une protection simple et sécurisée pour vos investissements crypto.",
       "benefits": [
         "Surveillance automatique 24/7",
-        "Notes de sécurité simples (A-F)",
-        "Alertes instantanées sur les risques",
+        "Scores de sécurité simples (A à F)",
+        "Alertes de risque instantanées",
         "Aucune connaissance technique requise"
       ],
       "cta": "Protéger Mes Actifs",
-      "ctaSubtext": "Commencez à protéger en 30 secondes"
+      "ctaSubtext": "Protection activée en 30 secondes"
     },
     "powerAnalyst": {
       "name": "Analyse Avancée",
-      "title": "Analystes Experts",
-      "description": "Analyses de sécurité complètes avec aperçus techniques détaillés",
+      "title": "L'analyste expert",
+      "description": "Analyses de sécurité complètes avec des informations techniques approfondies.",
       "benefits": [
         "Rapports de vulnérabilité détaillés",
-        "Accès API pour intégration",
-        "Configurations d'alerte personnalisées",
+        "Accès à l'API pour l'intégration",
+        "Configuration d'alertes personnalisées",
         "Détection avancée des menaces"
       ],
       "cta": "Analyser la Sécurité",
       "ctaSubtext": "Obtenir une analyse technique complète"
     },
-    "skip": "Passer et continuer avec la protection simple"
+    "skip": "Ignorer et utiliser la protection simple"
   },
   "features": {
-    "title": "Audits de sécurité qui fonctionnent vraiment",
-    "subtitle": "Les audits traditionnels sont lents, coûteux et rapidement obsolètes. Spectra fournit une surveillance de sécurité vérifiable et continue qui suit l'évolution de votre code.",
+    "title": "Des audits de sécurité réellement efficaces",
+    "subtitle": "Les audits traditionnels sont lents, coûteux et vite obsolètes. Spectra offre une surveillance de sécurité continue et vérifiable qui s'adapte à l'évolution de votre code.",
     "monitoring": {
       "title": "Surveillance en Temps Réel",
-      "description": "L'analyse continue par IA détecte les vulnérabilités dès leur introduction. Obtenez des alertes instantanées lorsque les changements de code affectent votre posture de sécurité.",
-      "metric": "Temps d'analyse moyen de 30 secondes",
-      "comparison": "2.4x plus rapide que les audits traditionnels"
+      "description": "Notre analyse continue par IA détecte les vulnérabilités dès leur apparition. Recevez des alertes instantanées lorsque des modifications de code impactent votre niveau de sécurité.",
+      "metric": "30 secondes en moyenne par analyse",
+      "comparison": "2,4x plus rapide que les audits traditionnels"
     },
     "verifiable": {
       "title": "Preuves Vérifiables",
-      "description": "Chaque affirmation de sécurité inclut des diffs IA reproductibles et des preuves que vous pouvez vérifier. Ne vous fiez plus aveuglément aux rapports d'audit - voyez exactement comment nous avons trouvé chaque problème.",
+      "description": "Chaque constat de sécurité est accompagné de 'diffs' reproductibles par l'IA et de preuves que vous pouvez vérifier. Ne vous fiez plus aveuglément aux rapports : voyez précisément comment nous avons identifié chaque problème.",
       "metric": "Méthodologie 100% transparente",
-      "detail": "Open source avec dépôt GitHub public"
+      "detail": "Open source avec un dépôt GitHub public"
     },
     "comprehensive": {
       "title": "Couverture Complète",
-      "description": "Les modèles IA avancés détectent plus de types de vulnérabilités que les auditeurs humains. Des bugs de smart contracts aux vecteurs d'attaque économiques, nous vous couvrons.",
-      "metric": "15+ catégories de vulnérabilités",
+      "description": "Nos modèles d'IA avancés détectent plus de types de vulnérabilités que les auditeurs humains. Des bugs de contrats intelligents aux vecteurs d'attaques économiques, nous assurons votre protection.",
+      "metric": "Plus de 15 catégories de vulnérabilités",
       "detail": "Détecte 95% des exploits connus avant le déploiement"
     },
     "trustIndicators": {
       "monitoring": "Surveillance 24/7",
-      "zeroFalsePositives": "Garantie Zéro Faux Positifs",
-      "uptime": "99.9% SLA de Disponibilité"
+      "zeroFalsePositives": "Garantie zéro faux positif",
+      "uptime": "SLA de disponibilité de 99,9%"
     },
-    "lossPrevention": "Évité $47M de pertes potentielles ce mois-ci"
+    "lossPrevention": "Important: Pertes potentielles prévenues ce mois-ci"
   },
   "liveStatus": {
-    "title": "Protection en direct pour les protocoles actifs",
-    "subtitle": "Rejoignez des milliers d'utilisateurs qui font confiance à Spectra pour une surveillance de sécurité continue.",
+    "title": "Protection en direct des protocoles actifs",
+    "subtitle": "Rejoignez les milliers d'utilisateurs qui font confiance à Spectra pour une surveillance de sécurité en continu.",
     "contracts": "Contrats surveillés",
-    "threatsPrevented": "Menaces empêchées cette semaine",
+    "threatsPrevented": "Menaces évitées cette semaine",
     "valueProtected": "Valeur protégée",
     "uptimeSLA": "SLA de Disponibilité",
-    "growth": "+12% ce mois-ci",
-    "savedLosses": "Économisé $4.7M en pertes",
-    "defiProtocols": "À travers les protocoles DeFi",
-    "last30Days": "30 derniers jours",
-    "systemStatus": "Tous les systèmes opérationnels • Dernière analyse : il y a 2 secondes"
+    "growth": "+12 % ce mois-ci",
+    "savedLosses": "4,7 M$ de pertes évitées",
+    "defiProtocols": "Sur l'ensemble des protocoles DeFi",
+    "last30Days": "Sur les 30 derniers jours",
+    "systemStatus": "Tous les systèmes sont opérationnels • Dernière analyse : il y a 2 secondes"
   },
   "cta": {
-    "title": "Sécurité en secondes. Prêt à vérifier ?",
-    "subtitle": "N'attendez pas la prochaine exploitation. Commencez avec Spectra aujourd'hui et protégez vos investissements avec une surveillance de sécurité vérifiable et en temps réel.",
-    "button": "Commencez Votre Audit Gratuit Maintenant",
-    "noCreditCard": "Aucune carte de crédit requise • Configuration de 30 secondes",
+    "title": "La sécurité en quelques secondes. Prêt à vérifier ?",
+    "subtitle": "N'attendez pas le prochain exploit. Démarrez avec Spectra aujourd'hui et protégez vos investissements grâce à une surveillance de sécurité vérifiable et en temps réel.",
+    "button": "Démarrer votre audit gratuit",
+    "noCreditCard": "Aucune carte de crédit requise • Configuration en 30 secondes",
     "trustBuilders": {
       "riskFree": {
-        "title": "Essai Sans Risque",
-        "description": "Essai complet de 14 jours, aucune carte de crédit requise"
+        "title": "Essai sans risque",
+        "description": "Essai complet de 14 jours, sans carte de crédit"
       },
       "expertSupport": {
-        "title": "Support Expert",
-        "description": "Équipe de sécurité 24/7 disponible pour les questions urgentes"
+        "title": "Support expert",
+        "description": "Équipe de sécurité disponible 24/7 pour les questions urgentes"
       },
       "communityTrusted": {
-        "title": "Approuvé par la Communauté",
-        "description": "1,250+ protocoles protégés avec $2.4B d'actifs"
+        "title": "Approuvé par la communauté",
+        "description": "Plus de 1 250 protocoles protégés, représentant 2,4 Md$ d'actifs"
       }
     },
-    "urgency": "Limité : Audits complets gratuits disponibles pour les 47 prochains utilisateurs"
+    "urgency": "Commencez votre audit gratuit complet dès maintenant"
   },
   "theme": {
-    "toggle": "Basculer le thème",
+    "toggle": "Changer de thème",
     "light": "Mode clair",
     "dark": "Mode sombre"
   },
   "accessibility": {
     "skipToMain": "Aller au contenu principal",
-    "closeModal": "Fermer le sélecteur de persona",
-    "selectPersona": "Sélectionner la persona {persona}"
+    "closeModal": "Fermer le sélecteur de profil",
+    "selectPersona": "Sélectionner le profil {persona}"
   },
   "errors": {
-    "somethingWentWrong": "Quelque chose s'est mal passé",
-    "errorDescription": "Nous avons rencontré une erreur inattendue. Ceci a été enregistré et notre équipe enquêtera.",
-    "errorId": "ID d'Erreur",
+    "somethingWentWrong": "Une erreur est survenue",
+    "errorDescription": "Nous avons rencontré une erreur inattendue. L'incident a été enregistré et notre équipe va l'examiner.",
+    "errorId": "ID de l'erreur",
     "tryAgain": "Réessayer",
-    "reloadPage": "Recharger la Page",
-    "contactSupport": "Si ce problème persiste, veuillez contacter notre équipe de sécurité à"
+    "reloadPage": "Recharger la page",
+    "contactSupport": "Si le problème persiste, veuillez contacter notre équipe de sécurité à l'adresse"
+  },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "Langue",
+      "themeLabel": "Thème",
+      "connectWithUs": "Connectez-vous avec nous",
+      "freeAnalysis": "Analyse instantanée gratuite • Aucune inscription requise"
+    }
+  },
+  "customerLogos": {
+    "title": "Approuvé par les principaux protocoles DeFi",
+    "liveAudits": "Audits en cours",
+    "enterpriseSecurity": "Sécurité de niveau entreprise",
+    "protected": "2,4 Md$ protégés"
+  },
+  "whitepaper": {
+    "badge": "Whitepaper v1.0",
+    "hero": {
+      "title": "Les 5 Dimensions",
+      "subtitle": "Cadre d'Audit de Sécurité",
+      "description": "Découvrez comment Spectra révolutionne la sécurité blockchain grâce à une analyse multidimensionnelle complète, offrant des perspectives plus approfondies que les audits traditionnels.",
+      "buttons": {
+        "exploreDimensions": "Explorer les Dimensions",
+        "scoringAlgorithm": "Algorithme de Scoring",
+        "viewRoadmap": "Voir la Roadmap"
+      }
+    },
+    "introduction": {
+      "title": "Pourquoi une Analyse Multidimensionnelle ?",
+      "paragraph1": "Les audits traditionnels de contrats intelligents se concentrent exclusivement sur la sécurité du code. Bien qu'importante, cette approche à lentille unique manque des facteurs de risque critiques qui mènent à la plupart des exploits DeFi et des échecs de projets.",
+      "paragraph2": {
+        "before": "Le cadre d'audit ",
+        "highlight": "5 dimensions",
+        "after": " de Spectra analyse les projets de manière complète à travers le sentiment, le code, la tokenomique, la liquidité et la distribution—fournissant une image de sécurité complète qui protège les investisseurs des menaces que les audits de code seuls ne peuvent détecter."
+      },
+      "stats": {
+        "coreDimensions": {
+          "value": "5",
+          "label": "Dimensions Principales"
+        },
+        "detectionRate": {
+          "value": "95%",
+          "label": "Taux de Détection"
+        },
+        "analysisTime": {
+          "value": "<30s",
+          "label": "Temps d'Analyse"
+        },
+        "riskCategories": {
+          "value": "15+",
+          "label": "Catégories de Risque"
+        }
+      }
+    },
+    "dimensions": {
+      "title": {
+        "before": "Les ",
+        "highlight": "5 Dimensions",
+        "after": ""
+      },
+      "subtitle": "Chaque dimension fournit des perspectives uniques. Ensemble, elles livrent une intelligence de sécurité complète.",
+      "convergeLabel": "5 dimensions convergent",
+      "scoreDisplay": {
+        "score": "95",
+        "label": "Score de Sécurité",
+        "excellent": "Excellent"
+      },
+      "weightDistribution": {
+        "title": "Distribution des Poids",
+        "totalLabel": "Total:",
+        "totalValue": "100%"
+      },
+      "items": {
+        "sentiment": {
+          "name": "Analyse des Sentiments",
+          "shortName": "Sentiment",
+          "description": "Analyse alimentée par IA du sentiment de la communauté à travers les plateformes sociales, forums et discussions de développeurs.",
+          "details": {
+            "socialVolume": "Suivi du volume social",
+            "sentimentScoring": "Scoring de sentiment",
+            "influencerAnalysis": "Analyse des influenceurs",
+            "communityHealth": "Indice de santé de la communauté",
+            "fudFomoDetection": "Détection FUD/FOMO"
+          },
+          "weight": "15"
+        },
+        "code": {
+          "name": "Sécurité du Code",
+          "shortName": "Code",
+          "description": "Analyse statique et dynamique approfondie du code de contrats intelligents pour identifier les vulnérabilités et les modèles de sécurité.",
+          "details": {
+            "vulnerabilityDetection": "Détection de vulnérabilités",
+            "codeQuality": "Scoring de qualité du code",
+            "auditVerification": "Vérification de rapport d'audit",
+            "dependencyAnalysis": "Analyse des dépendances",
+            "bestPractices": "Vérification des meilleures pratiques"
+          },
+          "weight": "30"
+        },
+        "tokenomics": {
+          "name": "Santé de la Tokenomics",
+          "shortName": "Tokenomics",
+          "description": "Évaluation complète de la distribution des tokens, calendriers de vesting, mécanismes d'inflation et durabilité économique.",
+          "details": {
+            "supplyDistribution": "Distribution de l'offre",
+            "vestingAnalysis": "Analyse de vesting",
+            "inflationRates": "Taux d'inflation",
+            "economicModel": "Validation du modèle économique",
+            "unlockSchedule": "Suivi du calendrier de déblocage"
+          },
+          "weight": "20"
+        },
+        "liquidity": {
+          "name": "Profondeur de la Liquidité",
+          "shortName": "Liquidité",
+          "description": "Évaluation en temps réel des pools de liquidité, volumes de trading, tolérance au slippage et profondeur du marché sur les DEX.",
+          "details": {
+            "poolDepth": "Analyse de profondeur de pool",
+            "volumeTrends": "Tendances de volume",
+            "slippageCalc": "Calcul de slippage",
+            "dexCoverage": "Couverture DEX",
+            "liquidityConcentration": "Concentration de liquidité"
+          },
+          "weight": "20"
+        },
+        "distribution": {
+          "name": "Analyse de la Distribution",
+          "shortName": "Distribution",
+          "description": "Évaluation de la concentration des détenteurs de tokens, activité des baleines, distributions d'airdrop et métriques de décentralisation.",
+          "details": {
+            "holderConcentration": "Concentration des détenteurs",
+            "whaleTracking": "Suivi des baleines",
+            "decentralizationScore": "Score de décentralisation",
+            "airdropAnalysis": "Analyse d'airdrop",
+            "walletDistribution": "Distribution des portefeuilles"
+          },
+          "weight": "15"
+        }
+      }
+    },
+    "scoring": {
+      "badge": "Algorithme",
+      "title": {
+        "before": "Calcul du ",
+        "highlight": "Score de Sécurité",
+        "after": " Optimisé par IA"
+      },
+      "subtitle": "Notre algorithme de scoring utilise des moyennes pondérées dynamiques, continuellement affinées par le machine learning pour une précision prédictive maximale.",
+      "formula": {
+        "title": "Formule du Score de Sécurité",
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
+        "dynamicWeights": "Poids Dynamiques",
+        "aiAdjustments": "Ajustements IA",
+        "accuracy": "Précision"
+      },
+      "weightDistribution": {
+        "title": "Distribution Dynamique des Poids",
+        "description": "Les poids de base sont assignés à chaque dimension basés sur l'analyse d'impact historique:"
+      },
+      "aiOptimization": {
+        "title": "Couche d'Optimisation IA",
+        "description": "Les modèles de machine learning affinent continuellement les poids basés sur:",
+        "factors": {
+          "exploitPatterns": "Analyse des motifs d'exploit",
+          "marketCorrelation": "Corrélation des conditions de marché",
+          "projectCategorization": "Catégorisation du type de projet",
+          "threatIntelligence": "Intelligence des menaces en temps réel",
+          "communityFeedback": "Intégration des retours de la communauté"
+        }
+      },
+      "calculationExample": {
+        "title": "Exemple de Calcul",
+        "comment": "// Exemple: Projet avec scores de dimension variables",
+        "baseScore": "Score de Base:",
+        "aiAdjustment": "Ajustement IA:",
+        "aiEnhancedTitle": "Précision Améliorée par IA",
+        "aiEnhancedDescription": "Le facteur d'ajustement IA considère les corrélations inter-dimensionnelles, la maturité du projet, les conditions de marché et les données de menaces en temps réel pour fournir un score qui reflète mieux le vrai risque de sécurité."
+      }
+    },
+    "howItWorks": {
+      "title": {
+        "before": "Comment ",
+        "highlight": "Ça",
+        "after": " Marche"
+      },
+      "subtitle": "Notre système alimenté par IA surveille et analyse continuellement les projets à travers toutes les dimensions.",
+      "steps": {
+        "dataCollection": {
+          "title": "1. Collecte de Données",
+          "description": "Ingestion en temps réel de données on-chain, signaux sociaux, dépôts de code et données de marché."
+        },
+        "aiAnalysis": {
+          "title": "2. Analyse IA",
+          "description": "Les modèles ML avancés traitent les données à travers toutes les 5 dimensions avec optimisation dynamique des poids."
+        },
+        "riskScoring": {
+          "title": "3. Scoring de Risque",
+          "description": "Scores pondérés optimisés par IA avec preuves vérifiables fournissent une évaluation de sécurité complète."
+        }
+      }
+    },
+    "roadmap": {
+      "title": {
+        "before": "Roadmap ",
+        "highlight": "Produit",
+        "after": ""
+      },
+      "subtitle": "Notre parcours pour étendre l'intelligence de sécurité avec de nouvelles dimensions et des capacités de recherche améliorées.",
+      "phases": {
+        "q1_2025": {
+          "phase": "Q1 2025",
+          "title": "Fondation",
+          "items": [
+            "Lancement du système d'audit à 5 dimensions",
+            "Intégration des réseaux blockchain majeurs",
+            "Déploiement de l'infrastructure de surveillance en temps réel",
+            "Établissement de partenariats de sécurité"
+          ]
+        },
+        "q2_2025": {
+          "phase": "Q2 2025",
+          "title": "Amélioration",
+          "items": [
+            "Ajouter l'analyse de dimension Gouvernance",
+            "Introduire la sécurité des ponts cross-chain",
+            "Lancement d'API pour l'integration entreprise",
+            "Publication de l'application mobile"
+          ]
+        },
+        "q3_2025": {
+          "phase": "Q3 2025",
+          "title": "Expansion",
+          "items": [
+            "Dimension de risque d'assurance",
+            "Vérifications de conformité réglementaire",
+            "Prédiction de menaces basée sur ML avancé",
+            "Fonctionnalités de gouvernance communautaire"
+          ]
+        },
+        "q4_2025": {
+          "phase": "Q4 2025+",
+          "title": "Évolution",
+          "items": [
+            "Dimensions de recherche additionnelles basées sur les besoins du marché",
+            "Optimisation améliorée des facteurs de recherche IA",
+            "Réseau d'audit décentralisé",
+            "Système de prévention d'exploits en temps réel"
+          ]
+        }
+      },
+      "status": {
+        "completed": "Terminé",
+        "inProgress": "En Cours",
+        "upcoming": "À Venir"
+      },
+      "expansion": {
+        "title": "Expansion Continue",
+        "description": "Au-delà de Q4 2025, nous nous engageons à ajouter continuellement de nouvelles dimensions de recherche et des facteurs d'analyse améliorés basés sur les besoins émergents du marché, les avancées technologiques et les retours de la communauté. Notre framework est conçu pour évoluer avec l'écosystème blockchain."
+      }
+    },
+    "cta": {
+      "title": "Prêt pour des Insights de Sécurité Plus Profonds?",
+      "description": "Découvrez la puissance de l'analyse à 5 dimensions avec le scoring optimisé par IA. Obtenez des audits de sécurité complets en moins de 30 secondes.",
+      "button": "Commencez Votre Premier Audit"
+    }
   }
 }

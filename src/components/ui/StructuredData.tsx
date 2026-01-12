@@ -53,9 +53,68 @@ interface SecurityAuditSchema {
   }
 }
 
+interface WebPageSchema {
+  '@context': string
+  '@type': string
+  name: string
+  description: string
+  url: string
+  inLanguage: string
+  isPartOf: {
+    '@type': string
+    name: string
+    url: string
+  }
+  about?: string[]
+  mainEntity?: {
+    '@type': string
+    name: string
+  }
+}
+
+interface FAQSchema {
+  '@context': string
+  '@type': string
+  mainEntity: Array<{
+    '@type': string
+    acceptedAnswer: {
+      '@type': string
+      text: string
+    }
+    name: string
+  }>
+}
+
+interface ServiceSchema {
+  '@context': string
+  '@type': string
+  name: string
+  description: string
+  provider: {
+    '@type': string
+    name: string
+    url: string
+  }
+  serviceType: string
+  areaServed: string
+  hasOfferCatalog: {
+    '@type': string
+    itemListElement: Array<{
+      '@type': string
+      name: string
+      description: string
+      offers: {
+        '@type': string
+        price: string
+        priceCurrency: string
+      }
+    }>
+  }
+}
+
 interface StructuredDataProps {
-  type: 'software' | 'organization' | 'security-audit'
-  data: SoftwareApplicationSchema | OrganizationSchema | SecurityAuditSchema
+  type: 'software' | 'organization' | 'security-audit' | 'webpage' | 'faq' | 'service'
+  data: SoftwareApplicationSchema | OrganizationSchema | SecurityAuditSchema | WebPageSchema | FAQSchema | ServiceSchema
 }
 
 export default function StructuredData({ type, data }: StructuredDataProps) {
@@ -68,6 +127,12 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return !!(data.name && data.url && data.description)
       case 'security-audit':
         return !!(data.name && data.description && data.auditScore)
+      case 'webpage':
+        return !!(data.name && data.description && data.url)
+      case 'faq':
+        return !!(data.mainEntity && Array.isArray(data.mainEntity) && data.mainEntity.length > 0)
+      case 'service':
+        return !!(data.name && data.description && data.serviceType)
       default:
         return false
     }
@@ -175,8 +240,8 @@ export const createOrganizationSchema = (): OrganizationSchema => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Spectra Security',
-  url: 'https://spectra.security',
-  logo: 'https://spectra.security/logo.png',
+  url: 'https://spectra-audit.com',
+  logo: 'https://spectra-audit.com/logo.png',
   description: 'Leading blockchain security platform providing AI-powered smart contract audits and continuous security monitoring.',
   sameAs: [
     'https://twitter.com/spectrasecurity',
@@ -200,5 +265,126 @@ export const createSecurityAuditSchema = (contractName: string, grade: string): 
   itemReviewed: {
     '@type': 'SoftwareApplication',
     name: contractName
+  }
+})
+
+export const createWebPageSchema = (): WebPageSchema => ({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Spectra - AI-Powered Security Audits | Smart Contract Security',
+  description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in seconds, not weeks. Continuous monitoring for blockchain protocols.',
+  url: 'https://spectra-audit.com',
+  inLanguage: 'en',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Spectra Security',
+    url: 'https://spectra-audit.com'
+  },
+  about: [
+    'Smart Contract Security',
+    'Blockchain Security',
+    'DeFi Auditing',
+    'Vulnerability Detection',
+    'AI Security Analysis'
+  ],
+  mainEntity: {
+    '@type': 'SoftwareApplication',
+    name: 'Spectra Security Platform'
+  }
+})
+
+export const createFAQSchema = (): FAQSchema => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does a security audit take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Spectra provides comprehensive security audits in under 30 seconds, compared to traditional audits that take weeks.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What types of vulnerabilities can Spectra detect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Spectra detects 15+ vulnerability categories including reentrancy, overflow/underflow, access control issues, and economic attack vectors.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Spectra\'s security audit really free?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, Spectra offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'How accurate are Spectra\'s security findings?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Spectra achieves 99% accuracy with zero false positives guarantee. All findings include verifiable evidence and AI diffs you can inspect.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Spectra support multiple blockchains?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Spectra supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains.'
+      }
+    }
+  ]
+})
+
+export const createServiceSchema = (): ServiceSchema => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'AI-Powered Security Audit Service',
+  description: 'Continuous AI-powered security monitoring and auditing for blockchain smart contracts and DeFi protocols.',
+  provider: {
+    '@type': 'Organization',
+    name: 'Spectra Security',
+    url: 'https://spectra-audit.com'
+  },
+  serviceType: 'Security Audit Service',
+  areaServed: 'Worldwide',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Free Security Audit',
+        description: 'Comprehensive smart contract security audit with AI-powered vulnerability detection',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        }
+      },
+      {
+        '@type': 'Offer',
+        name: 'Premium Monitoring',
+        description: 'Continuous real-time security monitoring with instant alerts',
+        offers: {
+          '@type': 'Offer',
+          price: '299',
+          priceCurrency: 'USD'
+        }
+      },
+      {
+        '@type': 'Offer',
+        name: 'Enterprise Protection',
+        description: 'Advanced security features with dedicated support and custom integrations',
+        offers: {
+          '@type': 'Offer',
+          price: '999',
+          priceCurrency: 'USD'
+        }
+      }
+    ]
   }
 })

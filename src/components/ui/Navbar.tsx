@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
-import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Shield } from 'lucide-react'
+import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Shield, Github, Twitter, MessageCircle } from 'lucide-react'
 import Button from './Button'
 import LanguageSelector from './LanguageSelector'
 import ThemeToggle from './ThemeToggle'
@@ -16,6 +16,7 @@ interface NavbarProps {
 export function Navbar({ className }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isHydrated, setIsHydrated] = useState(false)
   const t = useTranslations()
   const locale = useLocale()
 
@@ -28,32 +29,78 @@ export function Navbar({ className }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = [
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMobileMenuOpen])
+
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
+
+  // Default fallback translations (English) for SSR
+  const fallbackNavItems = [
     {
       label: 'Documentation',
-      href: 'https://docs.spectra.security',
-      icon: <FileText className="w-4 h-4" />,
+      href: 'https://docs.spectra-audit.com',
+      icon: <FileText className="w-5 h-5" />,
       external: true
     },
     {
       label: 'Whitepaper',
-      href: '/whitepaper',
-      icon: <FileText className="w-4 h-4" />,
+      href: `/${locale}/whitepaper`,
+      icon: <FileText className="w-5 h-5" />,
       external: false
     },
     {
       label: 'Pricing',
-      href: 'https://app.spectra.security/pricing',
-      icon: <DollarSign className="w-4 h-4" />,
+      href: 'https://app.spectra-audit.com/pricing',
+      icon: <DollarSign className="w-5 h-5" />,
       external: true
     }
+  ]
+
+  // Use translated navItems only after hydration
+  const navItems = isHydrated ? [
+    {
+      label: t('nav.documentation'),
+      href: 'https://docs.spectra-audit.com',
+      icon: <FileText className="w-5 h-5" />,
+      external: true
+    },
+    {
+      label: t('nav.whitepaper'),
+      href: `/${locale}/whitepaper`,
+      icon: <FileText className="w-5 h-5" />,
+      external: false
+    },
+    {
+      label: t('nav.pricing'),
+      href: 'https://app.spectra-audit.com/pricing',
+      icon: <DollarSign className="w-5 h-5" />,
+      external: true
+    }
+  ] : fallbackNavItems
+
+  // Social links for mobile menu
+  const socialLinks = [
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/spectraaudit', color: 'text-blue-400' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/spectra', color: 'text-neutral-400' },
+    { name: 'Discord', icon: MessageCircle, href: 'https://discord.gg/spectra', color: 'text-indigo-400' }
   ]
 
   return (
     <nav className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
       isScrolled
-        ? 'bg-neutral-900/95 backdrop-blur-md border-b border-neutral-800/50'
+        ? 'bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800/50'
         : 'bg-transparent',
       className
     )}>
@@ -61,11 +108,11 @@ export function Navbar({ className }: NavbarProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href={`/${locale}`} className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <Shield className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Spectra</span>
+              <span className="text-xl font-bold text-neutral-900 dark:text-white">Spectra</span>
             </Link>
           </div>
 
@@ -76,7 +123,7 @@ export function Navbar({ className }: NavbarProps) {
                 key={item.label}
                 href={item.href}
                 className={cn(
-                  "flex items-center space-x-1 text-neutral-300 hover:text-white transition-colors duration-200",
+                  "flex items-center space-x-1 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200",
                   "text-sm font-medium"
                 )}
                 {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
@@ -101,59 +148,132 @@ export function Navbar({ className }: NavbarProps) {
                 size="sm"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium"
                 icon={<Rocket className="w-4 h-4" />}
-                onClick={() => window.open('https://app.spectra.security', '_blank')}
+                onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
-                Launch App
+                {t('nav.launchApp')}
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="md:hidden flex items-center gap-1">
               <LanguageSelector variant="dropdown" size="sm" />
               <ThemeToggle variant="button" size="sm" />
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-neutral-300 hover:text-white transition-colors duration-200"
+                className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200 p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               >
                 {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
+                  <X className="w-5 h-5" />
                 ) : (
-                  <Menu className="w-6 h-6" />
+                  <Menu className="w-5 h-5" />
                 )}
               </button>
             </div>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* ENHANCED Full-Screen Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-neutral-900/95 backdrop-blur-md border-t border-neutral-800/50">
-            <div className="px-4 py-4 space-y-3">
-              {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className={cn(
-                    "flex items-center space-x-2 text-neutral-300 hover:text-white transition-colors duration-200",
-                    "text-sm font-medium py-2"
-                  )}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
-                >
-                  {item.icon}
-                  <span>{item.label}</span>
-                  {item.external && <ExternalLink className="w-3 h-3" />}
-                </Link>
-              ))}
-              <div className="pt-3 border-t border-neutral-800">
-                <Button
-                  size="sm"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium"
-                  icon={<Rocket className="w-4 h-4" />}
-                  onClick={() => window.open('https://app.spectra.security', '_blank')}
-                >
-                  Launch App
-                </Button>
+          <div
+            className={cn(
+              "fixed inset-0 z-50 md:hidden",
+              "bg-white/98 dark:bg-neutral-900/98 backdrop-blur-lg",
+              "transition-opacity duration-300 ease-in-out",
+              isMobileMenuOpen ? "opacity-100" : "opacity-0"
+            )}
+            style={{ top: '64px' }}
+          >
+            <div className="h-full overflow-y-auto">
+              <div className="min-h-full flex flex-col px-4 py-8">
+                {/* Navigation Links - Large Touch Targets */}
+                <div className="space-y-2 flex-1">
+                  {navItems.map((item, index) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className={cn(
+                        "flex items-center space-x-4 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white",
+                        "transition-all duration-200",
+                        "text-lg font-semibold",
+                        "py-4 px-6 rounded-2xl hover:bg-neutral-100 dark:hover:bg-white/5",
+                        "min-h-[64px] w-full",
+                        "border border-transparent hover:border-neutral-200 dark:hover:border-neutral-700/50",
+                        // Stagger animation
+                        "animate-slide-up"
+                      )}
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
+                    >
+                      <span className="flex-shrink-0 text-spectra-blue-500 dark:text-spectra-blue-400">{item.icon}</span>
+                      <span className="flex-1 text-left">{item.label}</span>
+                      {item.external && <ExternalLink className="w-4 h-4 flex-shrink-0 text-neutral-400 dark:text-neutral-500" />}
+                    </Link>
+                  ))}
+                </div>
+
+                {/* Language & Theme Controls in Mobile Menu */}
+                <div className="py-6 border-t border-neutral-200 dark:border-neutral-800/50 mt-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="flex items-center justify-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
+                      <span className="text-xs uppercase tracking-wide">{t('navbar.mobileMenu.languageLabel')}</span>
+                    </div>
+                    <div className="flex items-center justify-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
+                      <span className="text-xs uppercase tracking-wide">{t('navbar.mobileMenu.themeLabel')}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Social Links */}
+                <div className="py-6 border-t border-neutral-200 dark:border-neutral-800/50">
+                  <p className="text-center text-neutral-400 dark:text-neutral-500 text-xs uppercase tracking-wide mb-4">
+                    {t('navbar.mobileMenu.connectWithUs')}
+                  </p>
+                  <div className="flex justify-center gap-4">
+                    {socialLinks.map((social) => {
+                      const IconComponent = social.icon
+                      return (
+                        <a
+                          key={social.name}
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            "flex items-center justify-center",
+                            "w-14 h-14 rounded-xl",
+                            "bg-neutral-100 dark:bg-neutral-800/50 hover:bg-neutral-200 dark:hover:bg-neutral-800",
+                            "border border-neutral-200 dark:border-neutral-700/50 hover:border-neutral-300 dark:hover:border-neutral-600",
+                            "transition-all duration-200",
+                            "min-h-[56px] min-w-[56px]"
+                          )}
+                          aria-label={`Visit ${social.name}`}
+                        >
+                          <IconComponent className={cn("w-6 h-6", social.color)} />
+                        </a>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                {/* CTA Button at Bottom */}
+                <div className="pt-6 border-t border-neutral-200 dark:border-neutral-800/50 pb-safe">
+                  <Button
+                    size="xl"
+                    variant="gradient"
+                    className="w-full min-h-[64px] text-lg font-semibold"
+                    icon={<Rocket className="w-5 h-5" />}
+                    onClick={() => {
+                      window.open('https://app.spectra-audit.com', '_blank')
+                      setIsMobileMenuOpen(false)
+                    }}
+                  >
+                    {t('nav.launchApp')}
+                  </Button>
+                  <p className="text-center text-neutral-400 dark:text-neutral-500 text-xs mt-4">
+                    {t('navbar.mobileMenu.freeAnalysis')}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

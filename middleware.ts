@@ -8,8 +8,8 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale,
 
-  // Optional: Configure path strategy
-  localePrefix: 'as-needed', // 'always' or 'as-needed'
+  // Use 'always' to ensure locale is always in the URL for proper routing
+  localePrefix: 'always',
 
   // Optional: Configure locale detection
   localeDetection: true,

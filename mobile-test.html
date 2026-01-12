@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsiveness Test - Spectra Landing</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .device-frame {
+            border: 2px solid #333;
+            border-radius: 12px;
+            margin: 20px 0;
+            background: #000;
+            overflow: hidden;
+        }
+        .device-header {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .device-viewport {
+            transform-origin: top left;
+            border: 1px solid #555;
+        }
+        .iframe-container {
+            width: 100%;
+            height: 600px;
+            background: #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .checklist {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #444;
+        }
+        .checklist li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>📱 Mobile Responsiveness Test - Spectra Landing Page</h1>
+
+        <div class="checklist">
+            <h3>✅ Mobile Optimizations Implemented</h3>
+            <ul>
+                <li>Viewport meta tag with proper configuration</li>
+                <li>Touch targets >= 44px (Apple HIG compliance)</li>
+                <li>Responsive typography scaling from 320px to 768px+</li>
+                <li>Mobile-first navigation with hamburger menu</li>
+                <li>Optimized form layout for mobile input</li>
+                <li>Reduced motion for performance and accessibility</li>
+                <li>Touch-friendly button spacing and sizing</li>
+                <li>Mobile-optimized component layouts</li>
+                <li>Performance optimizations for low-end devices</li>
+                <li>Cross-browser mobile compatibility</li>
+            </ul>
+        </div>
+
+        <!-- iPhone SE (320px) -->
+        <div class="device-frame">
+            <div class="device-header">📱 iPhone SE - 320px width</div>
+            <div class="device-viewport" style="width: 320px; margin: 0 auto;">
+                <div class="iframe-container">
+                    <iframe src="http://localhost:3000?width=320" title="iPhone SE View"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone 12 (375px) -->
+        <div class="device-frame">
+            <div class="device-header">📱 iPhone 12 - 375px width</div>
+            <div class="device-viewport" style="width: 375px; margin: 0 auto;">
+                <div class="iframe-container">
+                    <iframe src="http://localhost:3000?width=375" title="iPhone 12 View"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone 12 Pro Max (414px) -->
+        <div class="device-frame">
+            <div class="device-header">📱 iPhone 12 Pro Max - 414px width</div>
+            <div class="device-viewport" style="width: 414px; margin: 0 auto;">
+                <div class="iframe-container">
+                    <iframe src="http://localhost:3000?width=414" title="iPhone 12 Pro Max View"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPad (768px) -->
+        <div class="device-frame">
+            <div class="device-header">📱 iPad - 768px width</div>
+            <div class="device-viewport" style="width: 768px; margin: 0 auto;">
+                <div class="iframe-container">
+                    <iframe src="http://localhost:3000?width=768" title="iPad View"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>🔍 Manual Testing Checklist</h3>
+            <ul>
+                <li><strong>320px (iPhone SE):</strong> All text readable, no horizontal scroll</li>
+                <li><strong>375px (iPhone 12):</strong> Touch targets easily accessible</li>
+                <li><strong>414px (iPhone 12 Pro Max):</strong> Layout adapts properly</li>
+                <li><strong>768px (iPad):</strong> Tablet-optimized layout</li>
+                <li><strong>Navigation:</strong> Hamburger menu works smoothly</li>
+                <li><strong>Forms:</strong> Input fields usable on mobile</li>
+                <li><strong>Buttons:</strong> Minimum 44px touch targets</li>
+                <li><strong>Performance:</strong> Smooth scrolling and interactions</li>
+            </ul>
+        </div>
+
+        <div class="checklist">
+            <h3>⚡ Performance Tests</h3>
+            <ul>
+                <li><strong>Load Time:</strong> Test on 3G/4G connections</li>
+                <li><strong>Animations:</strong> Should be smooth on mobile devices</li>
+                <li><strong>Memory:</strong> Monitor for memory leaks</li>
+                <li><strong>CPU:</strong> Check for high CPU usage on mobile</li>
+                <li><strong>Network:</strong> Test on slow connections</li>
+            </ul>
+        </div>
+
+        <div class="checklist">
+            <h3>🌐 Cross-Browser Testing</h3>
+            <ul>
+                <li><strong>Safari iOS:</strong> Test on iPhone/iPad</li>
+                <li><strong>Chrome Mobile:</strong> Test on Android devices</li>
+                <li><strong> Samsung Internet:</strong> Samsung browser compatibility</li>
+                <li><strong>Firefox Mobile:</strong> Firefox Android testing</li>
+                <li><strong>Edge Mobile:</strong> Microsoft Edge testing</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add device simulation controls
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Mobile test page loaded. Use browser dev tools to test different device sizes.');
+
+            // You can add interactive controls here for testing different breakpoints
+            iframes = document.querySelectorAll('iframe');
+            iframes.forEach((iframe, index) => {
+                iframe.onload = function() {
+                    console.log(`Frame ${index + 1} loaded successfully`);
+                };
+                iframe.onerror = function() {
+                    console.error(`Failed to load frame ${index + 1}`);
+                };
+            });
+        });
+    </script>
+</body>
+</html>

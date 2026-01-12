@@ -3,7 +3,7 @@
 import React from 'react'
 import { Sun, Moon, Monitor } from 'lucide-react'
 import { useTheme } from '@/contexts/ThemeContext'
-import Button from './Button'
+import Button from '@/components/ui/Button'
 
 interface ThemeToggleProps {
   variant?: 'button' | 'toggle'
@@ -22,13 +22,13 @@ export default function ThemeToggle({
 
   if (variant === 'toggle') {
     return (
-      <div className={`flex items-center bg-neutral-700/50 rounded-lg p-1 ${className}`}>
+      <div className={`flex items-center bg-neutral-200 dark:bg-neutral-700/50 rounded-lg p-1 ${className}`}>
         <button
           onClick={() => setTheme('light')}
           className={`flex items-center gap-2 px-3 py-2 rounded-md transition-all ${
             theme === 'light'
-              ? 'bg-white text-neutral-900'
-              : 'text-neutral-400 hover:text-white'
+              ? 'bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white shadow-sm'
+              : 'text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-white'
           }`}
           aria-label="Light mode"
           title="Light mode"
@@ -41,8 +41,8 @@ export default function ThemeToggle({
           onClick={() => setTheme('dark')}
           className={`flex items-center gap-2 px-3 py-2 rounded-md transition-all ${
             theme === 'dark'
-              ? 'bg-white text-neutral-900'
-              : 'text-neutral-400 hover:text-white'
+              ? 'bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white shadow-sm'
+              : 'text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-white'
           }`}
           aria-label="Dark mode"
           title="Dark mode"
@@ -55,8 +55,8 @@ export default function ThemeToggle({
           onClick={() => setTheme('system')}
           className={`flex items-center gap-2 px-3 py-2 rounded-md transition-all ${
             theme === 'system'
-              ? 'bg-white text-neutral-900'
-              : 'text-neutral-400 hover:text-white'
+              ? 'bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white shadow-sm'
+              : 'text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-white'
           }`}
           aria-label="System theme"
           title="System theme"

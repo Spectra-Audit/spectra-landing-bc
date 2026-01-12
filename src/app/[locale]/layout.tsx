@@ -1,83 +1,50 @@
-import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
-import { notFound } from 'next/navigation'
-import { locales, defaultLocale } from '@/i18n/config'
-import { ErrorBoundary } from '@/components/ui/ErrorBoundary'
+import { locales, isRtlLocale } from '@/i18n/config'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params
-  const safeLocale = locale || defaultLocale
-  const t = await getTranslations({ locale: safeLocale, namespace: 'meta' })
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
+}
 
-  // Import messages directly to access keywords array
-  const messages = (await import(`@/i18n/locales/${safeLocale}.json`)).default
-  const keywords = messages.meta?.keywords || []
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata' })
 
   return {
-    title: {
-      default: t('title'),
-      template: `%s | ${t('title').split(' - ')[0] || 'Spectra'}`
-    },
+    title: t('title'),
     description: t('description'),
-    keywords: Array.isArray(keywords) ? keywords.join(', ') : keywords,
-    authors: [{ name: 'Spectra Security' }],
-    creator: 'Spectra Security',
-    publisher: 'Spectra Security',
-    formatDetection: {
-      email: false,
-      address: false,
-      telephone: false,
-    },
-    metadataBase: new URL('https://spectra.security'),
-    alternates: {
-      canonical: `/${safeLocale === 'en' ? '' : safeLocale}`,
-      languages: {
-        'en': '/',
-        'es': '/es',
-        'fr': '/fr',
-        'de': '/de',
-        'ja': '/ja',
-        'zh': '/zh',
-        'ko': '/ko'
-      }
-    },
+    keywords: t('keywords'),
     openGraph: {
+      title: t('og.title'),
+      description: t('og.description'),
       type: 'website',
-      locale: safeLocale === 'zh' ? 'zh_CN' : safeLocale === 'ja' ? 'ja_JP' : safeLocale === 'ko' ? 'ko_KR' : `${safeLocale}_${safeLocale.toUpperCase()}`,
-      url: `https://spectra.security${safeLocale === 'en' ? '' : `/${safeLocale}`}`,
-      title: t('title'),
-      description: t('description'),
-      siteName: 'Spectra Security',
+      url: `https://spectra-audit.com/${locale}`,
       images: [
         {
-          url: '/og-image.jpg',
+          url: 'https://spectra-audit.com/images/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: t('title'),
+          alt: t('og.imageAlt'),
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('title'),
-      description: t('description'),
-      images: ['/og-image.jpg'],
+      title: t('og.title'),
+      description: t('og.description'),
+      images: ['https://spectra-audit.com/images/og-image.jpg'],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+    alternates: {
+      canonical: `https://spectra-audit.com/${locale}`,
+      languages: {
+        ...locales.reduce((acc, loc) => {
+          acc[loc] = `https://spectra-audit.com/${loc}`
+          return acc
+        }, {} as Record<string, string>),
+        'x-default': 'https://spectra-audit.com/en',
       },
-    },
-    verification: {
-      google: 'your-google-verification-code',
     },
   }
 }
@@ -90,26 +57,23 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const safeLocale = locale || defaultLocale
 
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(safeLocale as any)) {
+  if (!locales.includes(locale as any)) {
     notFound()
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages()
+  // Get messages specifically for this locale
+  const messages = await getMessages({ locale })
+  const dir = isRtlLocale(locale as any) ? 'rtl' : 'ltr'
 
   return (
-    <div className="scroll-smooth" lang={safeLocale}>
-      <NextIntlClientProvider messages={messages}>
-        <ThemeProvider>
-          <ErrorBoundary>
-            {children}
-          </ErrorBoundary>
-        </ThemeProvider>
+    <ThemeProvider>
+      <NextIntlClientProvider messages={messages} locale={locale}>
+        <div dir={dir}>
+          {children}
+        </div>
       </NextIntlClientProvider>
-    </div>
+    </ThemeProvider>
   )
 }

@@ -7,7 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "images:generate": "node scripts/generate-protocol-logos.js && node scripts/generate-social-images.js",
+    "images:protocols": "node scripts/generate-protocol-logos.js",
+    "images:social": "node scripts/generate-social-images.js",
+    "optimize:images": "npm run images:generate && npm run build"
   },
   "dependencies": {
     "@types/node": "^24.10.0",
@@ -29,7 +37,14 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.19",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "lucide-react": "^0.553.0",
-    "tailwindcss": "^3.4.18"
+    "tailwindcss": "^3.4.18",
+    "web-vitals": "^5.1.0"
   }
 }

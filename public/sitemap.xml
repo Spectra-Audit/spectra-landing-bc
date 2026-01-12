@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main Landing Page - Root (English Default) -->
+  <url>
+    <loc>https://spectra.shield.network/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spectra.shield.network/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://spectra.shield.network/de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spectra.shield.network/fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://spectra.shield.network/es" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://spectra.shield.network/ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://spectra.shield.network/zh" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://spectra.shield.network/ko" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://spectra.shield.network/pt" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://spectra.shield.network/ru" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://spectra.shield.network/tr" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://spectra.shield.network/ar" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://spectra.shield.network/hi" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://spectra.shield.network/bn" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://spectra.shield.network/mr" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://spectra.shield.network/ta" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://spectra.shield.network/te" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spectra.shield.network/en" />
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://spectra.shield.network/en</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- German -->
+  <url>
+    <loc>https://spectra.shield.network/de</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- French -->
+  <url>
+    <loc>https://spectra.shield.network/fr</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://spectra.shield.network/es</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Japanese -->
+  <url>
+    <loc>https://spectra.shield.network/ja</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chinese (Simplified) -->
+  <url>
+    <loc>https://spectra.shield.network/zh</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Korean -->
+  <url>
+    <loc>https://spectra.shield.network/ko</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Portuguese -->
+  <url>
+    <loc>https://spectra.shield.network/pt</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Russian -->
+  <url>
+    <loc>https://spectra.shield.network/ru</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Turkish -->
+  <url>
+    <loc>https://spectra.shield.network/tr</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Arabic -->
+  <url>
+    <loc>https://spectra.shield.network/ar</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hindi -->
+  <url>
+    <loc>https://spectra.shield.network/hi</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bengali -->
+  <url>
+    <loc>https://spectra.shield.network/bn</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Marathi -->
+  <url>
+    <loc>https://spectra.shield.network/mr</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tamil -->
+  <url>
+    <loc>https://spectra.shield.network/ta</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Telugu -->
+  <url>
+    <loc>https://spectra.shield.network/te</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Whitepaper (English) -->
+  <url>
+    <loc>https://spectra.shield.network/en/whitepaper</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

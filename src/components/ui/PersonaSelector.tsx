@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { Shield, BarChart3, Lock, TrendingUp, ChevronRight, Check } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Button from './Button'
 import Card from './Card'
 
@@ -18,39 +19,6 @@ interface Persona {
   ctaSubtext: string
 }
 
-const personas: Persona[] = [
-  {
-    id: 'passive-saver',
-    name: 'Simple Protection',
-    title: 'Passive Savers',
-    description: 'Secure, low-maintenance protection for your crypto investments',
-    icon: <Shield className="w-6 h-6" />,
-    benefits: [
-      'Automatic 24/7 monitoring',
-      'Simple security grades (A-F)',
-      'Instant alerts on risks',
-      'No technical knowledge needed'
-    ],
-    ctaText: 'Protect My Assets',
-    ctaSubtext: 'Start protecting in 30 seconds'
-  },
-  {
-    id: 'power-analyst',
-    name: 'Advanced Analysis',
-    title: 'Power Analysts',
-    description: 'Comprehensive security analytics with detailed technical insights',
-    icon: <BarChart3 className="w-6 h-6" />,
-    benefits: [
-      'Detailed vulnerability reports',
-      'API access for integration',
-      'Custom alert configurations',
-      'Advanced threat detection'
-    ],
-    ctaText: 'Analyze Security',
-    ctaSubtext: 'Get comprehensive technical analysis'
-  }
-]
-
 interface PersonaSelectorProps {
   onPersonaSelect: (persona: PersonaType) => void
   selectedPersona?: PersonaType
@@ -58,16 +26,50 @@ interface PersonaSelectorProps {
 
 export default function PersonaSelector({ onPersonaSelect, selectedPersona }: PersonaSelectorProps) {
   const [focusedPersona, setFocusedPersona] = useState<PersonaType | null>(null)
+  const t = useTranslations()
+
+  const personas: Persona[] = [
+    {
+      id: 'passive-saver',
+      name: t('persona.passiveSaver.name'),
+      title: t('persona.passiveSaver.title'),
+      description: t('persona.passiveSaver.description'),
+      icon: <Shield className="w-6 h-6" />,
+      benefits: [
+        t('persona.passiveSaver.benefits.0'),
+        t('persona.passiveSaver.benefits.1'),
+        t('persona.passiveSaver.benefits.2'),
+        t('persona.passiveSaver.benefits.3')
+      ],
+      ctaText: t('persona.passiveSaver.cta'),
+      ctaSubtext: t('persona.passiveSaver.ctaSubtext')
+    },
+    {
+      id: 'power-analyst',
+      name: t('persona.powerAnalyst.name'),
+      title: t('persona.powerAnalyst.title'),
+      description: t('persona.powerAnalyst.description'),
+      icon: <BarChart3 className="w-6 h-6" />,
+      benefits: [
+        t('persona.powerAnalyst.benefits.0'),
+        t('persona.powerAnalyst.benefits.1'),
+        t('persona.powerAnalyst.benefits.2'),
+        t('persona.powerAnalyst.benefits.3')
+      ],
+      ctaText: t('persona.powerAnalyst.cta'),
+      ctaSubtext: t('persona.powerAnalyst.ctaSubtext')
+    }
+  ]
 
   return (
     <div className="max-w-5xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Choose your security approach
+          {t('persona.title')}
         </h2>
         <p className="text-lg text-neutral-300">
-          Different users need different security approaches. Which describes you best?
+          {t('persona.subtitle')}
         </p>
       </div>
 
@@ -175,7 +177,7 @@ export default function PersonaSelector({ onPersonaSelect, selectedPersona }: Pe
           className="text-neutral-400 hover:text-neutral-300 text-sm underline transition-colors"
           aria-label="Skip persona selection and continue with default option"
         >
-          Skip and continue with simple protection
+          {t('persona.skip')}
         </button>
       </div>
     </div>

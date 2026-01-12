@@ -4,6 +4,30 @@
 
 @layer base {
   :root {
+    /* Spectra Brand Color Variables */
+    --spectra-blue-500: #0066FF;
+    --spectra-green-500: #00D084;
+    --spectra-purple-500: #6366F1;
+
+    /* Typography System */
+    --font-display: 'SF Pro Display', -apple-system, 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Type Scale */
+    --text-display-xl: 4.5rem;      /* 72px */
+    --text-display-lg: 3.75rem;     /* 60px */
+    --text-display-md: 3rem;        /* 48px */
+    --text-h1: 2.5rem;              /* 40px */
+    --text-h2: 2rem;                /* 32px */
+    --text-h3: 1.5rem;              /* 24px */
+    --text-h4: 1.25rem;             /* 20px */
+    --text-lg: 1.125rem;            /* 18px */
+    --text-base: 1rem;              /* 16px */
+    --text-sm: 0.875rem;            /* 14px */
+    --text-xs: 0.75rem;             /* 12px */
+
+    /* Original CSS variables (keep for backward compatibility) */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -27,6 +51,7 @@
   }
 
   .dark {
+    /* Dark theme variables */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -56,6 +81,7 @@
 
   body {
     @apply bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100;
+    font-family: var(--font-body);
     font-feature-settings: "rlig" 1, "calt" 1, "liga" 1, "kern" 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -67,63 +93,154 @@
   }
 }
 
+/* Enhanced Typography Classes */
 @layer components {
-  /* Glass morphism effects */
+  /* Font Family Classes */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Display Typography - Large, impactful headlines */
+  .text-display-xl {
+    font-size: var(--text-display-xl);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .text-display-lg {
+    font-size: var(--text-display-lg);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+
+  .text-display-md {
+    font-size: var(--text-display-md);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* Gradient Text Utility - Animated Spectra gradient */
+  .text-gradient-spectra {
+    @apply bg-gradient-to-r from-spectra-blue-500 via-spectra-purple-500 to-spectra-green-500;
+    @apply bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Glass morphism effects - Enhanced */
   .glass {
-    @apply backdrop-blur-md bg-white/5 border border-white/10;
+    @apply backdrop-blur-md bg-white/60 dark:bg-white/5 border border-white/20 dark:border-white/10;
   }
 
   .glass-dark {
     @apply backdrop-blur-md bg-neutral-900/50 border border-neutral-700/50;
   }
 
-  /* Gradient text */
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent;
+  .glass-spectra {
+    background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
-  /* Security grade colors */
+  .dark .glass-spectra {
+    background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.03) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Security grade colors - Enhanced with Spectra colors */
   .grade-a {
-    @apply text-security-green;
+    @apply text-spectra-green-500;
   }
 
   .grade-b {
-    @apply text-yellow-500;
+    @apply text-spectra-blue-500;
   }
 
   .grade-c {
-    @apply text-security-red;
+    @apply text-warning-primary;
   }
 
-  /* Hover effects */
+  .grade-d {
+    @apply text-orange-400;
+  }
+
+  .grade-f {
+    @apply text-error-primary;
+  }
+
+  /* Hover effects - Enhanced */
   .hover-lift {
     @apply transition-transform duration-300 hover:-translate-y-1;
   }
 
   .hover-glow {
-    @apply transition-shadow duration-300 hover:shadow-glow;
+    @apply transition-shadow duration-300 hover:shadow-glow-spectra;
   }
 
-  /* Custom scrollbar */
+  /* Legacy gradient text (keep for backward compatibility) */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  /* Custom scrollbar - Enhanced with Spectra colors */
   ::-webkit-scrollbar {
     width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-neutral-900;
+    @apply bg-neutral-200 dark:bg-neutral-900;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-neutral-700 rounded-full;
+    @apply bg-spectra-blue-500/50 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-neutral-600;
+    @apply bg-spectra-blue-500/70;
   }
 
-  /* Focus styles */
+  /* Focus styles - Enhanced with Spectra colors */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-neutral-900;
+    @apply focus:outline-none focus:ring-2 focus:ring-spectra-blue-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-900;
+  }
+
+  /* Loading state styles */
+  .loading-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
   }
 }
 
@@ -132,7 +249,116 @@ img {
   @apply select-none;
 }
 
-/* Smooth animations */
+/* Mobile-specific optimizations - Enhanced */
+@media (max-width: 768px) {
+  /* Responsive Typography - Scale down for mobile */
+  .text-display-xl {
+    font-size: 2.5rem;  /* 40px */
+    line-height: 1.2;
+  }
+
+  .text-display-lg {
+    font-size: 2rem;  /* 32px */
+    line-height: 1.2;
+  }
+
+  .text-display-md {
+    font-size: 1.75rem;  /* 28px */
+    line-height: 1.3;
+  }
+
+  /* Improve touch interactions */
+  button, a, input, textarea, select {
+    touch-action: manipulation;
+  }
+
+  /* Optimize text rendering for mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Prevent double-tap zoom on touch targets */
+  .no-double-tap-zoom {
+    touch-action: manipulation;
+  }
+
+  /* Improve scroll performance */
+  .scroll-smooth-mobile {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Reduce complex animations on mobile */
+  .mobile-performance .animate-float,
+  .mobile-performance .animate-glow,
+  .mobile-performance .animate-pulse-glow {
+    animation: none !important;
+  }
+
+  /* Simplify shadows and effects */
+  .mobile-performance .shadow-glow,
+  .mobile-performance .shadow-glow-lg,
+  .mobile-performance .shadow-glow-spectra,
+  .mobile-performance .shadow-glow-spectra-lg {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  /* Optimize backdrop blur for performance */
+  .mobile-performance .backdrop-blur-md,
+  .mobile-performance .backdrop-blur-lg {
+    backdrop-filter: saturate(180%) blur(8px) !important;
+  }
+
+  /* Optimize gradients for mobile */
+  .mobile-performance .bg-gradient-to-br,
+  .mobile-performance .glass-spectra {
+    background-image: linear-gradient(135deg, #1f2937 0%, #374151 100%) !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 384px) {
+  /* Further reduce font sizes for very small screens */
+  .text-responsive {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .text-display-xl {
+    font-size: 2rem;  /* 32px */
+    line-height: 1.2;
+  }
+
+  .text-display-lg {
+    font-size: 1.75rem;  /* 28px */
+    line-height: 1.2;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-display-xl {
+    font-size: 3.5rem;  /* 56px */
+    line-height: 1.15;
+  }
+
+  .text-display-lg {
+    font-size: 3rem;  /* 48px */
+    line-height: 1.15;
+  }
+}
+
+/* Low-end device optimizations */
+@media (resolution: 1dppx) {
+  .mobile-performance .backdrop-blur-md,
+  .mobile-performance .backdrop-blur-lg {
+    backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -140,6 +366,34 @@ img {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Motion reduce class */
+.motion-reduce {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Touch-friendly classes */
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* Performance class for will-change optimization */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Connection-aware loading */
+@media (prefers-reduced-data: reduce) {
+  .data-intensive {
+    display: none !important;
   }
 }
 

@@ -1,13 +1,6 @@
 'use client'
 
 import React, { Component, ErrorInfo, ReactNode } from 'react'
-
-// Declare global gtag function for TypeScript
-declare global {
-  interface Window {
-    gtag?: (command: string, target: string, config?: any) => void
-  }
-}
 import { AlertTriangle, RefreshCw } from 'lucide-react'
 import Button from './Button'
 

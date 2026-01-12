@@ -1,25 +1,48 @@
 {
+  "metadata": {
+    "title": "Spectra - AI-Powered Blockchain Security Audits",
+    "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
+    "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection",
+    "og": {
+      "title": "Spectra - AI-Powered Blockchain Security Audits",
+      "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify.",
+      "imageAlt": "Spectra AI Security Audit Platform"
+    }
+  },
   "meta": {
     "title": "Spectra - AI-Powered Blockchain Security Audits",
     "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
-    "keywords": ["blockchain security", "AI audit", "smart contract security", "crypto safety", "DeFi protection"]
+    "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection"
   },
   "nav": {
     "features": "Features",
     "pricing": "Pricing",
     "documentation": "Documentation",
+    "whitepaper": "Whitepaper",
     "contact": "Contact",
     "getStarted": "Get Started",
-    "language": "Language"
+    "language": "Language",
+    "launchApp": "Launch App"
+  },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "Language",
+      "themeLabel": "Theme",
+      "connectWithUs": "Connect with us",
+      "freeAnalysis": "Free instant analysis • No registration required"
+    }
   },
   "hero": {
     "authority": {
-      "isoCertified": "ISO 27001 Certified",
-      "soc2Compliant": "SOC 2 Type II",
+      "securityFirst": "Security-First Architecture",
+      "bestPractices": "Industry Best Practices",
       "openSource": "Open Source"
     },
-    "headline": "One clear security grade with the evidence behind it",
-    "subheadline": "Real-time AI audits you can verify. Stop relying on static PDFs and get continuous, transparent security monitoring for your blockchain investments.",
+    "headline": "Research Project Security Before You Invest",
+    "subheadline": "Multi-dimensional security scores for 1000+ DeFi protocols. Understand risks before you invest with comprehensive analysis you can verify.",
+    "addressPlaceholder": "Enter your Ethereum address",
+    "getAuditReport": "Get Audit Report",
+    "getReport": "Get Report",
     "trustMetrics": {
       "activeUsers": "Active Users",
       "accuracy": "Accuracy",
@@ -27,20 +50,135 @@
       "protectedUsers": "Protected Users",
       "uptime": "Uptime",
       "detectionRate": "Detection Rate",
-      "threatTypes": "Threat Types"
+      "threatTypes": "Threat Types",
+      "projectsAnalyzed": "Projects Analyzed",
+      "riskFlagsIdentified": "Risk Flags Identified"
     },
     "cta": {
-      "primary": "Get My Free Audit",
-      "secondary": "View Sample Report"
+      "primary": "Explore Projects",
+      "secondary": "Learn How Scores Work"
     },
     "riskWarning": {
-      "threatsPrevented": "23 threats prevented this week",
-      "message": "Don't wait for the next exploit. Real-time protection prevents vulnerabilities before they can be exploited."
+      "threatsPrevented": "Threats prevented continuously",
+      "message": "Stay ahead of vulnerabilities with proactive protection. Real-time monitoring helps prevent security issues before they impact your investments."
     },
     "socialProof": {
       "trustedBy": "Trusted by leading protocols",
       "defiLeader": "DeFi Security Leader",
-      "protocols": "1000+ Integrated Protocols"
+      "protocols": "1000+ Integrated Protocols",
+      "disclaimer": "As of January 2026 - tracked internally"
+    },
+    "page": {
+      "heroTitle": "Smart Contract Security Audits",
+      "heroSubtitle": "in Seconds, Not Weeks",
+      "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security audits in under 30 seconds. No registration required.",
+      "securityAuditTitle": "Professionally Audited & Verified",
+      "securityAuditSubtitle": "Security you can trust, verified by leading experts",
+      "thirdPartyAudited": "Third-Party Audited",
+      "thirdPartyAuditedDesc": "Security reviewed by leading crypto audit firms",
+      "verified": "Verified",
+      "openSource": "Open Source",
+      "openSourceDesc": "Publicly verifiable code on GitHub",
+      "transparent": "Transparent",
+      "trustMessage": "Our codebase has undergone comprehensive security audits by reputable blockchain security firms. We're committed to continuous security improvements and transparency.",
+      "featuresTitle": "Next-Generation Security Audits",
+      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
+      "realTimeMonitoring": "Real-time AI Monitoring",
+      "realTimeMonitoringDesc": "Continuous AI-powered scanning detects vulnerabilities the moment they're introduced. Get instant alerts when code changes affect your security posture, with 30-second average scan time.",
+      "avgScanTime": "30s",
+      "avgScanTimeLabel": "Avg. scan time",
+      "fasterThanAudits": "2.4x",
+      "fasterThanAuditsLabel": "Faster than audits",
+      "automated": "Fully",
+      "automatedLabel": "Automated scanning",
+      "verifiableEvidence": "Verifiable Evidence",
+      "verifiableEvidenceDesc": "Every security claim includes reproducible AI diffs and evidence. See exactly how we found each issue with fully transparent methodology.",
+      "openSourceCodebase": "Open source codebase",
+      "publicGitHubRepo": "Public GitHub repository",
+      "comprehensiveCoverage": "Comprehensive Coverage",
+      "comprehensiveCoverageDesc": "Advanced AI models catch more vulnerability types than traditional auditors. From smart contract bugs to economic attack vectors.",
+      "vulnerabilityCategories": "15+ vulnerability categories",
+      "detectionRate": "Up to 95% detection of known issues",
+      "productionReady": "Production-Ready Security",
+      "productionReadyDesc": "Built for developers who need reliable smart contract security analysis. Third-party audited and open source, with verifiable audit reports.",
+      "thirdPartyVerified": "Third-Party Verified",
+      "sourceCode": "Source Code",
+      "scanTime": "<30 Second Scans",
+      "aiPoweredAnalysis": "AI-Powered Analysis",
+      "aiPoweredAnalysisDesc": "Fast, automated security scanning",
+      "highAccuracy": "High Accuracy",
+      "highAccuracyDesc": "AI-verified results you can trust",
+      "multiDimensional": "Multi-Dimensional",
+      "multiDimensionalDesc": "5-factor security scoring",
+      "liveStatusTitle": "Comprehensive security analysis",
+      "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
+      "scanTimeValue": "<30s",
+      "scanTimeLabel": "Average scan time",
+      "scanTimeBadge": "Fast analysis",
+      "dimensionsValue": "5",
+      "dimensionsLabel": "Security dimensions",
+      "dimensionsBadge": "Multi-factor scoring",
+      "aiPoweredValue": "AI",
+      "aiPoweredLabel": "Powered analysis",
+      "aiPoweredBadge": "Smart detection",
+      "transparentValue": "Fully",
+      "transparentLabel": "Transparent methodology",
+      "transparentBadge": "Verifiable results",
+      "systemReady": "System ready • Start your audit in seconds",
+      "finalCtaTitle": "Security in seconds. Ready to verify?",
+      "finalCtaSubtitle": "Stay ahead of vulnerabilities with proactive protection. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
+      "noCreditCardRequired": "No credit card required • 30-second setup",
+      "quickSetup": "Quick Setup",
+      "quickSetupDesc": "Get started with comprehensive security audits",
+      "expertSupport": "Expert Support",
+      "expertSupportDesc": "Security team available when you need help",
+      "communityDriven": "Community-Driven",
+      "communityDrivenDesc": "Open source with transparent development"
+    }
+  },
+  "howScoresWork": {
+    "title": "Understanding Security Scores",
+    "subtitle": "Our multi-dimensional analysis goes beyond code to evaluate real project risks.",
+    "description": "Each dimension is scored 0-100 and combines into your Overall Security Score. This comprehensive approach helps you identify risks that traditional code-only audits miss.",
+    "dimensions": {
+      "codeSecurity": {
+        "title": "Code Security",
+        "score": "0-100",
+        "description": "Smart contract vulnerabilities, audit history, bug bounties, and common attack vectors like reentrancy and overflow issues."
+      },
+      "tokenomics": {
+        "title": "Tokenomics",
+        "score": "0-100",
+        "description": "Supply mechanics, inflation schedules, token distribution analysis, vesting review, and economic model viability."
+      },
+      "liquidity": {
+        "title": "Liquidity Health",
+        "score": "0-100",
+        "description": "Pool depth, lock-up periods, withdrawal risk assessment, slippage analysis, and initial distribution quality."
+      },
+      "distribution": {
+        "title": "Holder Distribution",
+        "score": "0-100",
+        "description": "Concentration analysis, whale risk assessment, anonymous holder flags, team token tracking, and decentralization score."
+      },
+      "team": {
+        "title": "Team & Sentiment",
+        "score": "0-100",
+        "description": "Background verification, past project history, community health signals, social sentiment analysis, and public trust indicators.",
+        "comingSoon": "Coming Soon"
+      }
+    },
+    "overallScore": {
+      "title": "Overall Security Score",
+      "description": "All dimensions combined into a single, easy-to-understand grade.",
+      "excellent": "85+ = Excellent",
+      "good": "70-84 = Good",
+      "fair": "55-69 = Fair",
+      "needsImprovement": "<55 = Needs Improvement"
+    },
+    "cta": {
+      "exploreProjects": "Explore Projects",
+      "viewSampleReport": "View Sample Report"
     }
   },
   "persona": {
@@ -75,7 +213,7 @@
     "skip": "Skip and continue with simple protection"
   },
   "features": {
-    "title": "Security audits that actually work",
+    "title": "Next-Generation Security Audits",
     "subtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
     "monitoring": {
       "title": "Real-time Monitoring",
@@ -86,38 +224,38 @@
     "verifiable": {
       "title": "Verifiable Evidence",
       "description": "Every security claim includes reproducible AI diffs and evidence you can verify. No more taking audit reports on faith - see exactly how we found each issue.",
-      "metric": "100% transparent methodology",
+      "metric": "Fully transparent methodology",
       "detail": "Open source with public GitHub repository"
     },
     "comprehensive": {
       "title": "Comprehensive Coverage",
       "description": "Advanced AI models catch more vulnerability types than human auditors. From smart contract bugs to economic attack vectors, we've got you covered.",
       "metric": "15+ vulnerability categories",
-      "detail": "Detects 95% of known exploits before deployment"
+      "detail": "Helps detect up to 95% of known exploits before deployment"
     },
     "trustIndicators": {
       "monitoring": "24/7 Monitoring",
-      "zeroFalsePositives": "Zero False Positives Guarantee",
+      "zeroFalsePositives": "High Accuracy Detection",
       "uptime": "99.9% Uptime SLA"
     },
-    "lossPrevention": "Prevented $47M in potential losses this month"
+    "lossPrevention": "Advanced threat detection for DeFi protocols"
   },
   "liveStatus": {
     "title": "Live protection for active protocols",
     "subtitle": "Join thousands of users who trust Spectra for continuous security monitoring.",
     "contracts": "Contracts monitored",
-    "threatsPrevented": "Threats prevented this week",
+    "threatsPrevented": "Threats prevented",
     "valueProtected": "Value protected",
     "uptimeSLA": "Uptime SLA",
-    "growth": "+12% this month",
-    "savedLosses": "Saved $4.7M in losses",
+    "growth": "Growing community",
+    "savedLosses": "Protecting user assets",
     "defiProtocols": "Across DeFi protocols",
     "last30Days": "Last 30 days",
     "systemStatus": "All systems operational • Last scan: 2 seconds ago"
   },
   "cta": {
     "title": "Security in seconds. Ready to verify?",
-    "subtitle": "Don't wait for the next exploit. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
+    "subtitle": "Stay ahead of vulnerabilities with proactive protection. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
     "button": "Start Your Free Audit Now",
     "noCreditCard": "No credit card required • 30-second setup",
     "trustBuilders": {
@@ -131,10 +269,11 @@
       },
       "communityTrusted": {
         "title": "Community Trusted",
-        "description": "1,250+ protocols protected with $2.4B assets"
+        "description": "1,250+ protocols protected with $2.4B assets",
+        "disclaimer": "As of January 2026"
       }
     },
-    "urgency": "Limited: Free comprehensive audits available for the next 47 users"
+    "urgency": "Start your free comprehensive audit today"
   },
   "theme": {
     "toggle": "Toggle theme",
@@ -146,6 +285,12 @@
     "closeModal": "Close persona selector",
     "selectPersona": "Select {persona} persona"
   },
+  "customerLogos": {
+    "title": "Trusted by leading DeFi protocols",
+    "liveAudits": "Live audits running",
+    "enterpriseSecurity": "Enterprise-grade security",
+    "protected": "$2.4B protected"
+  },
   "errors": {
     "somethingWentWrong": "Something went wrong",
     "errorDescription": "We encountered an unexpected error. This has been logged and our team will investigate.",
@@ -153,5 +298,256 @@
     "tryAgain": "Try Again",
     "reloadPage": "Reload Page",
     "contactSupport": "If this problem persists, please contact our security team at"
+  },
+  "whitepaper": {
+    "badge": "Whitepaper v1.0",
+    "hero": {
+      "title": "The 5-Dimensional",
+      "subtitle": "Security Audit Framework",
+      "description": "Discover how Spectra revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
+      "buttons": {
+        "exploreDimensions": "Explore Dimensions",
+        "scoringAlgorithm": "Scoring Algorithm",
+        "viewRoadmap": "View Roadmap"
+      }
+    },
+    "introduction": {
+      "title": "Why Multi-Dimensional Analysis?",
+      "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
+      "paragraph2": {
+        "before": "Spectra's ",
+        "highlight": "5-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
+      },
+      "stats": {
+        "coreDimensions": {
+          "value": "5",
+          "label": "Core Dimensions"
+        },
+        "detectionRate": {
+          "value": "95%",
+          "label": "Detection Rate"
+        },
+        "analysisTime": {
+          "value": "<30s",
+          "label": "Analysis Time"
+        },
+        "riskCategories": {
+          "value": "15+",
+          "label": "Risk Categories"
+        }
+      }
+    },
+    "dimensions": {
+      "title": {
+        "before": "The ",
+        "highlight": "5 Dimensions",
+        "after": ""
+      },
+      "subtitle": "Each dimension provides unique insights. Together, they deliver complete security intelligence.",
+      "convergeLabel": "5 dimensions converge",
+      "scoreDisplay": {
+        "score": "95",
+        "label": "Security Score",
+        "excellent": "Excellent"
+      },
+      "weightDistribution": {
+        "title": "Weight Distribution",
+        "totalLabel": "Total:",
+        "totalValue": "100%"
+      },
+      "items": {
+        "sentiment": {
+          "name": "Sentiment Analysis",
+          "shortName": "Sentiment",
+          "description": "AI-powered analysis of community sentiment across social platforms, forums, and developer discussions.",
+          "details": {
+            "socialVolume": "Social volume tracking",
+            "sentimentScoring": "Sentiment scoring",
+            "influencerAnalysis": "Influencer analysis",
+            "communityHealth": "Community health index",
+            "fudFomoDetection": "FUD/FOMO detection"
+          },
+          "weight": "15"
+        },
+        "code": {
+          "name": "Code Security",
+          "shortName": "Code",
+          "description": "Deep static and dynamic analysis of smart contract code to identify vulnerabilities and security patterns.",
+          "details": {
+            "vulnerabilityDetection": "Vulnerability detection",
+            "codeQuality": "Code quality scoring",
+            "auditVerification": "Audit report verification",
+            "dependencyAnalysis": "Dependency analysis",
+            "bestPractices": "Best practices check"
+          },
+          "weight": "30"
+        },
+        "tokenomics": {
+          "name": "Tokenomics Health",
+          "shortName": "Tokenomics",
+          "description": "Comprehensive evaluation of token distribution, vesting schedules, inflation mechanics, and economic sustainability.",
+          "details": {
+            "supplyDistribution": "Supply distribution",
+            "vestingAnalysis": "Vesting analysis",
+            "inflationRates": "Inflation rates",
+            "economicModel": "Economic model validation",
+            "unlockSchedule": "Unlock schedule tracking"
+          },
+          "weight": "20"
+        },
+        "liquidity": {
+          "name": "Liquidity Depth",
+          "shortName": "Liquidity",
+          "description": "Real-time assessment of liquidity pools, trading volumes, slippage tolerance, and market depth across DEXs.",
+          "details": {
+            "poolDepth": "Pool depth analysis",
+            "volumeTrends": "Volume trends",
+            "slippageCalc": "Slippage calculation",
+            "dexCoverage": "DEX coverage",
+            "liquidityConcentration": "Liquidity concentration"
+          },
+          "weight": "20"
+        },
+        "distribution": {
+          "name": "Distribution Analysis",
+          "shortName": "Distribution",
+          "description": "Evaluation of token holder concentration, whale activity, airdrop distributions, and decentralization metrics.",
+          "details": {
+            "holderConcentration": "Holder concentration",
+            "whaleTracking": "Whale tracking",
+            "decentralizationScore": "Decentralization score",
+            "airdropAnalysis": "Airdrop analysis",
+            "walletDistribution": "Wallet distribution"
+          },
+          "weight": "15"
+        }
+      }
+    },
+    "scoring": {
+      "badge": "Algorithm",
+      "title": {
+        "before": "AI-Optimized ",
+        "highlight": "Security Score",
+        "after": " Calculation"
+      },
+      "subtitle": "Our scoring algorithm uses dynamic weighted averages, continuously fine-tuned by machine learning for maximum predictive accuracy.",
+      "formula": {
+        "title": "Security Score Formula",
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
+        "dynamicWeights": "Dynamic Weights",
+        "aiAdjustments": "AI Adjustments",
+        "accuracy": "Accuracy"
+      },
+      "weightDistribution": {
+        "title": "Dynamic Weight Distribution",
+        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+      },
+      "aiOptimization": {
+        "title": "AI Optimization Layer",
+        "description": "Machine learning models continuously refine weights based on:",
+        "factors": {
+          "exploitPatterns": "Exploit pattern analysis",
+          "marketCorrelation": "Market condition correlation",
+          "projectCategorization": "Project type categorization",
+          "threatIntelligence": "Real-time threat intelligence",
+          "communityFeedback": "Community feedback integration"
+        }
+      },
+      "calculationExample": {
+        "title": "Calculation Example",
+        "comment": "// Example: Project with varying dimension scores",
+        "baseScore": "Base Score:",
+        "aiAdjustment": "AI Adjustment:",
+        "aiEnhancedTitle": "AI-Enhanced Accuracy",
+        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+      }
+    },
+    "howItWorks": {
+      "title": {
+        "before": "How ",
+        "highlight": "It",
+        "after": " Works"
+      },
+      "subtitle": "Our AI-powered system continuously monitors and analyzes projects across all dimensions.",
+      "steps": {
+        "dataCollection": {
+          "title": "1. Data Collection",
+          "description": "Real-time ingestion of on-chain data, social signals, code repositories, and market data."
+        },
+        "aiAnalysis": {
+          "title": "2. AI Analysis",
+          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+        },
+        "riskScoring": {
+          "title": "3. Risk Scoring",
+          "description": "AI-optimized weighted scores with verifiable evidence provide complete security assessment."
+        }
+      }
+    },
+    "roadmap": {
+      "title": {
+        "before": "Product ",
+        "highlight": "Roadmap",
+        "after": ""
+      },
+      "subtitle": "Our journey to expand security intelligence with new dimensions and enhanced research capabilities.",
+      "phases": {
+        "q1_2025": {
+          "phase": "Q1 2025",
+          "title": "Foundation",
+          "items": [
+            "Launch 5-dimensional audit system",
+            "Integrate major blockchain networks",
+            "Deploy real-time monitoring infrastructure",
+            "Establish security partnerships"
+          ]
+        },
+        "q2_2025": {
+          "phase": "Q2 2025",
+          "title": "Enhancement",
+          "items": [
+            "Add Governance dimension analysis",
+            "Introduce cross-chain bridge security",
+            "Launch API for enterprise integration",
+            "Mobile application release"
+          ]
+        },
+        "q3_2025": {
+          "phase": "Q3 2025",
+          "title": "Expansion",
+          "items": [
+            "Insurance risk dimension",
+            "Regulatory compliance checks",
+            "Advanced ML-based threat prediction",
+            "Community governance features"
+          ]
+        },
+        "q4_2025": {
+          "phase": "Q4 2025+",
+          "title": "Evolution",
+          "items": [
+            "Additional research dimensions based on market needs",
+            "Enhanced AI research factor optimization",
+            "Decentralized audit network",
+            "Real-time exploit prevention system"
+          ]
+        }
+      },
+      "status": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "upcoming": "Upcoming"
+      },
+      "expansion": {
+        "title": "Continuous Expansion",
+        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+      }
+    },
+    "cta": {
+      "title": "Ready for Deeper Security Insights?",
+      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get comprehensive security audits in under 30 seconds.",
+      "button": "Start Your First Audit"
+    }
   }
 }

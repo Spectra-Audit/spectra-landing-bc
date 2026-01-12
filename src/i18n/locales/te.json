@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "title": "Spectra - AI మద్దతు బ్లాక్‌చైన్ భద్రతా ఆడిట్",
+    "description": "ఒక స్పష్టమైన భద్రత రేటింగ్ - దాని వెనున ఆధారాలతో. మీరు ధృవీకరించగల రియల్-టైమ్ AI ఆడిట్‌లు. నిరంతర, పారదర్శకమైన భద్రత మానిటరింగ్‌తో మీ క్రిప్టో పెట్టులను రక్షించండి.",
+    "keywords": "బ్లాక్‌చైన్ భద్రత, AI ఆడిట్, స్మార్ట్ ఒప్పందాల భద్రత, క్రిప్టో భద్రత, DeFi రక్షణ",
+    "og": {
+      "title": "Spectra - AI మద్దతు బ్లాక్‌చైన్ భద్రతా ఆడిట్",
+      "description": "ఒక స్పష్టమైన భద్రత రేటింగ్ - దాని వెనున ఆధారాలతో. మీరు ధృవీకరించగల రియల్-టైమ్ AI ఆడిట్‌లు.",
+      "imageAlt": "Spectra AI భద్రతా ఆడిట్ ప్లాట్‌ఫారమ్"
+    }
+  },
+  "meta": {
+    "title": "Spectra - AI మద్దతు బ్లాక్‌చైన్ భద్రతా ఆడిట్",
+    "description": "ఒక స్పష్టమైన భద్రత రేటింగ్ - దాని వెనున ఆధారాలతో. మీరు ధృవీకరించగల రియల్-టైమ్ AI ఆడిట్‌లు. నిరంతర, పారదర్శకమైన భద్రత మానిటరింగ్‌తో మీ క్రిప్టో పెట్టులను రక్షించండి.",
+    "keywords": "బ్లాక్‌చైన్ భద్రత, AI ఆడిట్, స్మార్ట్ ఒప్పందాల భద్రత, క్రిప్టో భద్రత, DeFi రక్షణ"
+  },
+  "nav": {
+    "features": "ఫీచర్లు",
+    "pricing": "ధర మాన్యూ",
+    "documentation": "డాక్యుమెంటేషన్",
+    "whitepaper": "Whitepaper",
+    "contact": "సంప్రదించు",
+    "getStarted": "ప్రారంభించు",
+    "language": "భాష",
+    "launchApp": "యాప్‌ని ప్రారంభించండి"
+  },
+  "hero": {
+    "authority": {
+      "securityFirst": "భద్రత మొదట ఆర్కిటెక్చర్",
+      "bestPractices": "ఉత్తమ అభ్యాసాలు",
+      "openSource": "ఓపెన్ సోర్స్"
+    },
+    "headline": "పెట్టుబడి ముందు ప్రాజెక్ట్ భద్రతను పరిశోధించండి",
+    "subheadline": "1000+ DeFi నెటివర్క్‌ల కోసం బహుళ-కొలమానం భద్రత స్కోర్‌లు. ధృవీకరించగల సమగ్ర విశ్లేషణతో పెట్టుబడి ముందు ప్రమాదాలను అర్థం చేసుకోండి.",
+    "addressPlaceholder": "మీ Ethereum చిరునామా ప్రవేశపెట్టండి",
+    "getAuditReport": "ఆడిట్ నివేదికను పొందండి",
+    "getReport": "నివేదికను పొందండి",
+    "trustMetrics": {
+      "activeUsers": "చురుకుగా ఉన్నవినియోగదారులు",
+      "accuracy": "కచ్చితత్వం",
+      "scanTime": "స్కాన్ సమయం",
+      "protectedUsers": "రక్షించబడిన వినియోగదారులు",
+      "uptime": "అప్‌టైమ్",
+      "detectionRate": "గుర్తింపు రేటు",
+      "threatTypes": "ముప్పు రకాలు",
+      "projectsAnalyzed": "విశ్లేషించిన ప్రాజెక్ట్‌లు",
+      "riskFlagsIdentified": "గుర్తించిన రిస్క్ ఫ్లాగ్‌లు"
+    },
+    "cta": {
+      "primary": "ప్రాజెక్ట్‌లను అన్వేషించండి",
+      "secondary": "స్కోర్‌లు ఎలా పనిచేస్తాయో తెలుసుకోండి"
+    },
+    "riskWarning": {
+      "threatsPrevented": "ముప్పులు నిరంతరాయితంగా నిరోధించబడుతున్నాయి",
+      "message": "తదుపరి exploit కోసం వేచించుకోవద్దు. రియల్-టైమ్ రక్షణ బలహీనతలు భాగలు ఉపయోగించకుండా ముందు నిరోధిస్తుంది."
+    },
+    "socialProof": {
+      "trustedBy": "ప్రముఖ ప్రోటోకాల్ ద్వారా నమ్మకం",
+      "defiLeader": "DeFi భద్రత నాయకుడు",
+      "protocols": "1000+ ఇంటిగ్రేటెడ్ ప్రోటోకాల్"
+    },
+    "page": {
+      "heroTitle": "Smart Contract Security Audits",
+      "heroSubtitle": "in Seconds, Not Weeks",
+      "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security audits in under 30 seconds. No registration required.",
+      "securityAuditTitle": "Professionally Audited & Verified",
+      "securityAuditSubtitle": "Security you can trust, verified by leading experts",
+      "thirdPartyAudited": "Third-Party Audited",
+      "thirdPartyAuditedDesc": "Security reviewed by leading crypto audit firms",
+      "verified": "Verified",
+      "openSource": "Open Source",
+      "openSourceDesc": "Publicly verifiable code on GitHub",
+      "transparent": "Transparent",
+      "trustMessage": "Our codebase has undergone comprehensive security audits by reputable blockchain security firms. We're committed to continuous security improvements and transparency.",
+      "featuresTitle": "Security audits that actually work",
+      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
+      "realTimeMonitoring": "Real-time AI Monitoring",
+      "realTimeMonitoringDesc": "Continuous AI-powered scanning detects vulnerabilities the moment they're introduced. Get instant alerts when code changes affect your security posture, with 30-second average scan time.",
+      "avgScanTime": "30s",
+      "avgScanTimeLabel": "Avg. scan time",
+      "fasterThanAudits": "2.4x",
+      "fasterThanAuditsLabel": "Faster than audits",
+      "automated": "100%",
+      "automatedLabel": "Automated",
+      "verifiableEvidence": "Verifiable Evidence",
+      "verifiableEvidenceDesc": "Every security claim includes reproducible AI diffs and evidence. See exactly how we found each issue with 100% transparency.",
+      "openSourceCodebase": "Open source codebase",
+      "publicGitHubRepo": "Public GitHub repository",
+      "comprehensiveCoverage": "Comprehensive Coverage",
+      "comprehensiveCoverageDesc": "Advanced AI models catch more vulnerability types than traditional auditors. From smart contract bugs to economic attack vectors.",
+      "vulnerabilityCategories": "15+ vulnerability categories",
+      "detectionRate": "95% detection rate",
+      "productionReady": "Production-Ready Security",
+      "productionReadyDesc": "Built for developers who need reliable smart contract security analysis. Third-party audited and open source, with verifiable audit reports.",
+      "thirdPartyVerified": "Third-Party Verified",
+      "sourceCode": "Source Code",
+      "scanTime": "<30 Second Scans",
+      "aiPoweredAnalysis": "AI-Powered Analysis",
+      "aiPoweredAnalysisDesc": "Fast, automated security scanning",
+      "highAccuracy": "High Accuracy",
+      "highAccuracyDesc": "AI-verified results you can trust",
+      "multiDimensional": "Multi-Dimensional",
+      "multiDimensionalDesc": "5-factor security scoring",
+      "liveStatusTitle": "Comprehensive security analysis",
+      "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
+      "scanTimeValue": "<30s",
+      "scanTimeLabel": "Average scan time",
+      "scanTimeBadge": "Fast analysis",
+      "dimensionsValue": "5",
+      "dimensionsLabel": "Security dimensions",
+      "dimensionsBadge": "Multi-factor scoring",
+      "aiPoweredValue": "AI",
+      "aiPoweredLabel": "Powered analysis",
+      "aiPoweredBadge": "Smart detection",
+      "transparentValue": "100%",
+      "transparentLabel": "Transparent methodology",
+      "transparentBadge": "Verifiable results",
+      "systemReady": "System ready • Start your audit in seconds",
+      "finalCtaTitle": "Security in seconds. Ready to verify?",
+      "finalCtaSubtitle": "Don't wait for the next exploit. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
+      "noCreditCardRequired": "No credit card required • 30-second setup",
+      "quickSetup": "Quick Setup",
+      "quickSetupDesc": "Get started with comprehensive security audits",
+      "expertSupport": "Expert Support",
+      "expertSupportDesc": "Security team available when you need help",
+      "communityDriven": "Community-Driven",
+      "communityDrivenDesc": "Open source with transparent development"
+    }
+  },
+  "howScoresWork": {
+    "title": "భద్రత స్కోర్‌లను అర్థం చేసుకోండి",
+    "subtitle": "మా బహుళ-కొలమాన విశ్లేషణ వాస్తవ ప్రాజెక్ట్ ప్రమాదాలను అంచనా వేయడి కోడ్‌కు అంతులు దాటి వెళుతుంది.",
+    "description": "ప్రతి కొలమానం 0-100 నుండి స్కోర్ చేయబడుతుంది మరియు మీ మొత్తం భద్రత స్కోర్‌లో కలిపి ఉంటుంది. ఈ సమగ్ర విధానం సంప్రదాయ కేవల్-కోడ్ ఆడిట్‌లు కోల్పోయే ప్రమాదాలను గుర్తించడంలో మిమ్మలను సహాయపడుతుంది.",
+    "dimensions": {
+      "codeSecurity": {
+        "title": "కోడ్ భద్రత",
+        "score": "0-100",
+        "description": "స్మార్ట్ ఒప్పందాల బలహీనతలు, ఆడిట్ చరిత్ర, బగ్ బౌంటీ కార్యక్రమాలు మరియు రీ-ఎంట్రన్సీ మరియు ఓవర్‌ఫ్లో సమస్యలు వంటి సాధారణ దాడి వేక్టార్‌లు."
+      },
+      "tokenomics": {
+        "title": "టోకెనోమిక్స్",
+        "score": "0-100",
+        "description": "సరఫరా విధానాలు, ద్రవ్యోల్బణ కార్యక్రమాలు, టోకెన్ పంపిణీ విశ్లేషణ, వెస్టింగ్ సమీక్ష మరియు ఆర్థిక నమూనా సాధ్యత."
+      },
+      "liquidity": {
+        "title": "లిక్విడిటీ ఆరోగ్యం",
+        "score": "0-100",
+        "description": "పూల్ లోతు, లాక్ కాలాలు, ఉపసంహరణ ప్రమాద అంచనా, స్లిప్పేజ్ విశ్లేషణ మరియు ప్రారంభ పంపిణీ నాణ్యత."
+      },
+      "distribution": {
+        "title": "హోల్డర్ పంపిణీ",
+        "score": "0-100",
+        "description": "కేంద్రీకరణ విశ్లేషణ, తిమింగల ప్రమాద అంచనా, అనామక హోల్డర్ ఫ్లాగ్‌లు, బృంద టోకెన్ ట్రాకింగ్ మరియు వికేంద్రీకరణ స్కోర్."
+      },
+      "team": {
+        "title": "బృందం మరియు సెంటిమెంట్",
+        "score": "0-100",
+        "description": "నేపథ్య తనిఖీ, గత ప్రాజెక్ట్ చరిత్ర, కమ్యూనిటీ హెల్త్ సిగ్నల్స్, సోషల్ సెంటిమెంట్ విశ్లేషణ మరియు పబ్లిక్ ట్రస్ట్ సూచకాలు.",
+        "comingSoon": "త్వరలో"
+      }
+    },
+    "overallScore": {
+      "title": "మొత్తం భద్రత స్కోర్",
+      "description": "అన్ని కొలమానాలు అర్థం కాబడే ఏక గ్రేడ్‌గా కలిపి ఉంటాయి.",
+      "excellent": "85+ = అద్భుతం",
+      "good": "70-84 = మంచి",
+      "fair": "55-69 = సరసత",
+      "needsImprovement": "<55 = మెరుగుదల అవసరం"
+    },
+    "cta": {
+      "exploreProjects": "ప్రాజెక్ట్‌లను అన్వేషించండి",
+      "viewSampleReport": "నమూన నివేదికను చూడండి"
+    }
+  },
+  "persona": {
+    "title": "మీ భద్రత విధానాన్ని ఎంచుకోండి",
+    "subtitle": "విభిన్న వినియోగదారులకు విభిన్న భద్రత విధానాల అవసరం. మీకు సబచే ఎవరు వర్ణించబడుతుంది?",
+    "passiveSaver": {
+      "name": "సాధారణ రక్షణ",
+      "title": "పాసివ్ సేవర్లు",
+      "description": "మీ క్రిప్టో పెట్టుల కోసం సురక్షితం, తక్కువ మర్యక్షణతో రక్షణ.",
+      "benefits": [
+        "స్వయంచాలక 24/7 మానిటరింగ్",
+        "సరళ భద్రత రేటింగ్‌లు (A-F)",
+        "తక్షణ ప్రమాద హెచ్చరికెలు",
+        "సాంకేతిక జ్ఞానం అవసరం లేదు"
+      ],
+      "cta": "నా ఆస్తులను రక్షించు",
+      "ctaSubtext": "30 సెకన్లలో రక్షణ ప్రారంభించు"
+    },
+    "powerAnalyst": {
+      "name": "అధునాత్మక విశ్లేషణ",
+      "title": "పవర్ అనలిస్ట్లు",
+      "description": "విస్తృత సాంకేతిక అంతర్దృష్టులతో కూడిన భద్రత విశ్లేషణలు.",
+      "benefits": [
+        "వివరిత బలహీనత నివేదికలు",
+        "ఏకీకరణ కోసం API యాక్సెస్",
+        "కస్టమ్ హెచ్చరికెల కాన్ఫిగరేషన్",
+        "అధునాత్మ ముప్పు గుర్తింపు"
+      ],
+      "cta": "భద్రతను విశ్లేషించు",
+      "ctaSubtext": "సమగ్ర సాంకేతిక విశ్లేషణ పొందండి"
+    },
+    "skip": "దాటవేయి మరియు సాధారణ రక్షణతో కొనసాగించు"
+  },
+  "features": {
+    "title": "నిజంగా పనిచేసే భద్రత ఆడిట్‌లు",
+    "subtitle": "సంప్రదాయ ఆడిట్‌లు నెమ్ముగా, ఖర్చీకరింగి మరియు త్వరలో పాత పోతుంటాయి. Spectra మీ కోడ్‌తో ఏకటికలు ఉంటూని సతత యాచాఇగ్యోగ్య భద్రత మానిటరింగ్ అందిస్తుంది.",
+    "monitoring": {
+      "title": "రియల్-టైమ్ మానిటరింగ్",
+      "description": "నిరంతర AI-ఆధారిత స్కానింగ్ బలహీనతలు కనిపిత్తున్నప్పుడు గుర్తిస్తుంది. కోడ్ మార్పులు మీ భద్రత స్థితిని ప్రభావితం చేసినప్పుడు తక్షణమే హెచ్చరికెలు అందుకోండి.",
+      "metric": "సగటీ 30-సెకన్ల స్కాన్ సమయం",
+      "comparison": "సంప్రదాయ ఆడిట్‌ల కంటే 2.4x వేగవంతం"
+    },
+    "verifiable": {
+      "title": "ధృవీకరించగల పురామాలు",
+      "description": "ప్రతి భద్రత ప్రకటన మీరు ధృవీకరించగల AI-డిఫ్‌లు మరియు పురామాలు కలిగి ఉంటుంది వీటికి మీరు తనిఖీలు చేయవచ్చు. ఆడిట్ నివేదికలపై మీరు అంధ విశ్వాసం పెట్టండి - మేము ప్�తి సమస్యను ఎలా కనుగొన్నామో చూడండి.",
+      "metric": "100% పారదర్శకమైన పద్ధతి",
+      "detail": "పబ్లిక్ GitHub రిపోజిటరీతో ఓపెన్ సోర్స్"
+    },
+    "comprehensive": {
+      "title": "సమగ్ర కవరేజ్",
+      "description": "అధునాత్మ AI మోడల్స్ మానవ ఆడిటర్ల కంటే ఎక్కువ రకాల బలహీనత ప్రకారాలను సంగ్రహిస్తుంది. స్మార్ట్ ఒప్పందా బగ్‌ల నుండి ఆర్థిక దాడి వేక్టార్‌ల వరకు, మేము మిమలను కవర్ చేస్తున్నాము.",
+      "metric": "15+ బలహీనత వర్గాలు",
+      "detail": "డిప్లాయ్మెంట్ ముందు తెలిసిన exploits యొక్క 95% సంగ్రహిస్తుంది"
+    },
+    "trustIndicators": {
+      "monitoring": "24/7 మానిటరింగ్",
+      "zeroFalsePositives": "సున్న తప్పుడు పాజిటివ్ల హామీ",
+      "uptime": "99.9% అప్‌టైమ్ SLA"
+    },
+    "lossPrevention": "ముఖ్యమైనది: ఈ నెల సంభావ్యత నష్టాని నిరోధించబడింది"
+  },
+  "liveStatus": {
+    "title": "క్రియాశీల ప్రోటోకాల కోసం లైవ్ రక్షణ",
+    "subtitle": "నిరంతర భద్రత మానిటరింగ్ కోసం Spectra నమ్మకున వేలున్నార్లలో చేరండి.",
+    "contracts": "మానిటర్ చేస్తున్న ఒప్పందాలు",
+    "threatsPrevented": "ఈ వారం నిరోధించిన ముప్పులు",
+    "valueProtected": "రక్షించిన విలువలు",
+    "uptimeSLA": "అప్‌టైమ్ SLA",
+    "growth": "ఈ నెల +12%",
+    "savedLosses": "$4.7M నష్టాన్లు గళ్లబెట్టాయి",
+    "defiProtocols": "DeFi ప్రోటోకాల అంతా",
+    "last30Days": "గత 30 రోజులు",
+    "systemStatus": "అన్ని వ్యవస్థలు ఆపరేషనలో ఉన్నాయం • చివరి స్కాన్: 2 సెకన్ల క్రితం"
+  },
+  "cta": {
+    "title": "సెకన్లలో భద్రత. ధృవీకరించడానికి సిద్ధున్నారా?",
+    "subtitle": "తదుపరి exploit కోసం వేచించుకోవద్దు. ఈరోజు Spectra తో ప్రారంభించి మరియు యాచాఇగ్యోగ్య రియల్-టైమ్ భద్రత మానిటరింగ్‌తో మీ పెట్టులను రక్షించండి.",
+    "button": "ఇప్పుడు మీ స్వచ్ఛందన ఆడిట్‌ను ప్రారంభించు",
+    "noCreditCard": "క్రెడిట్ కార్డు అవసరం లేదు • 30-సెకన్లలో సెటప్",
+    "trustBuilders": {
+      "riskFree": {
+        "title": "రిస్క్-ఫ్రీ ట్రయల్",
+        "description": "పూర్తి-విశిష్టత 14-రోజుల ట్రయల్, క్రెడిట్ కార్డు అవసరం లేదు"
+      },
+      "expertSupport": {
+        "title": "నిపుణ మద్దతు",
+        "description": "అత్యవశ్యక విషయాల కోసం 24/7 భద్రత బృందం అందుబాటు"
+      },
+      "communityTrusted": {
+        "title": "సంఘం ద్వారా విశ్వసనీయం",
+        "description": "$2.4B ఆస్తులతో 1,250+ రక్షిత ప్రోటోకాలు"
+      }
+    },
+    "urgency": "ఇప్పుడు మీ స్వచ్ఛందన సమగ్ర ఆడిట్‌ను ప్రారంభించు"
+  },
+  "theme": {
+    "toggle": "థీమ్ మార్చు",
+    "light": "లైట్ మోడ్",
+    "dark": "డార్క్ మోడ్"
+  },
+  "accessibility": {
+    "skipToMain": "ప్రధాన విషయానికి దాటవెళ్లండి",
+    "closeModal": "పర్సోనా ఎంపికను మూసివేయండి",
+    "selectPersona": "{persona} పర్సోనా ఎంచుకోండి"
+  },
+  "errors": {
+    "somethingWentWrong": "ఏదో తప్పటి జరిగింది",
+    "errorDescription": "మేము అనిరీక్షిత లోపును ఎదుర్కరొన్నాము. ఇది నమోదుగా ఉంది మరియు మా బృందం దీనిత జరిగింది.",
+    "errorId": "లోపు ID",
+    "tryAgain": "మళ్లి ప్రయత్నించు",
+    "reloadPage": "పేజీని రీలోడ్ చేయండి",
+    "contactSupport": "ఈ సమస్య కొనసగి ఉంటే దయచేసి మా భద్రత బృందాన్ని సంప్రదించు"
+  },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "భాష",
+      "themeLabel": "థీమ్",
+      "connectWithUs": "మాతో కనెక్ట్ అవ్వండి",
+      "freeAnalysis": "ఉచిత తక్షణ విశ్లేషణ • నమోదు అవసరం లేదు"
+    }
+  },
+  "customerLogos": {
+    "title": "ప్రముఖ DeFi ప్రోటోకాల్‌ల ద్వారా నమ్మకమైనది",
+    "liveAudits": "లైవ్ ఆడిట్లు అమలులో ఉన్నాయి",
+    "enterpriseSecurity": "ఎంటర్‌ప్రైజ్-గ్రేడ్ భద్రత",
+    "protected": "$2.4B రక్షించబడింది"
+  },
+  "whitepaper": {
+    "badge": "Whitepaper v1.0",
+    "hero": {
+      "title": "5 కొలమానాలు",
+      "subtitle": "భద్రతా ఆడిట్ ఫ్రేమ్‌వర్క్",
+      "description": "Spectra సమగ్ర బహుళ-కొలమాన విశ్లేషణ ద్వారా బ్లాక్‌చైన్ భద్రతను ఎలా విప్లవాత్మకంగా మారుస్తుంది మరియు సాంప్రదాయక ఆడిట్‌ల కంటే లోతైన అంతర్దృష్టులను అందిస్తుందో కనుగొనండి.",
+      "buttons": {
+        "exploreDimensions": "కొలమానాలను అన్వేషించండి",
+        "scoringAlgorithm": "స్కోరింగ్ అల్గారిథం",
+        "viewRoadmap": "రోడ్‌మ్యాప్ చూడండి"
+      }
+    },
+    "introduction": {
+      "title": "ఎందుకు బహుళ-కొలమాన విశ్లేషణ?",
+      "paragraph1": "సాంప్రదాయక స్మార్ట్ ఒప్పందాల ఆడిట్లు కోడ్ భద్రతపై మాత్రమే దృష్టి సారిస్తాయి. ముఖ్యమైనప్పటికీ, ఈ ఏకకాలిక విధానం కీలకమైన రిస్క్ కారకాలను కోల్పోతుంది, ఇది చాలా DeFi ఎక్స్‌ప్లాయిట్లు మరియు ప్రాజెక్ట్ వైఫల్యాలకు దారితీస్తుంది.",
+      "paragraph2": {
+        "before": "Spectra యొక్క",
+        "highlight": "5-కొలమాన ఆడిట్ ఫ్రేమ్‌వర్క్",
+        "after": " సెంటిమెంట్, కోడ్, టోకెనోమిక్స్, లిక్విడిటీ మరియు పంపిణీ అంతటా ప్రాజెక్ట్‌లను సమగ్రంగా విశ్లేషిస్తుందি——కోడ్ ఆడిట్లు మాత్రమే గుర్తించలేని ముప్పుల నుండి పెట్టుబడిదారులను రక్షించే పూర్తి భద్రత చిత్రాన్ని అందిస్తుంది."
+      },
+      "stats": {
+        "coreDimensions": {
+          "value": "5",
+          "label": "Core Dimensions"
+        },
+        "detectionRate": {
+          "value": "95%",
+          "label": "Detection Rate"
+        },
+        "analysisTime": {
+          "value": "<30s",
+          "label": "Analysis Time"
+        },
+        "riskCategories": {
+          "value": "15+",
+          "label": "Risk Categories"
+        }
+      }
+    },
+    "dimensions": {
+      "title": {
+        "before": "",
+        "highlight": "5 కొలమానాలు",
+        "after": ""
+      },
+      "subtitle": "ప్రతి కొలమానం ప్రత్యేకమైన అంతర్దృష్టులను అందిస్తుంది. కలిసి, వారు సంపూర్ణ భద్రత ఇంటెలిజెన్స్‌ను అందిస్తారు.",
+      "convergeLabel": "5 dimensions converge",
+      "scoreDisplay": {
+        "score": "95",
+        "label": "Security Score",
+        "excellent": "Excellent"
+      },
+      "weightDistribution": {
+        "title": "Weight Distribution",
+        "totalLabel": "Total:",
+        "totalValue": "100%"
+      },
+      "items": {
+        "sentiment": {
+          "name": "Sentiment Analysis",
+          "shortName": "Sentiment",
+          "description": "AI-powered analysis of community sentiment across social platforms, forums, and developer discussions.",
+          "details": {
+            "socialVolume": "Social volume tracking",
+            "sentimentScoring": "Sentiment scoring",
+            "influencerAnalysis": "Influencer analysis",
+            "communityHealth": "Community health index",
+            "fudFomoDetection": "FUD/FOMO detection"
+          },
+          "weight": "15"
+        },
+        "code": {
+          "name": "Code Security",
+          "shortName": "Code",
+          "description": "Deep static and dynamic analysis of smart contract code to identify vulnerabilities and security patterns.",
+          "details": {
+            "vulnerabilityDetection": "Vulnerability detection",
+            "codeQuality": "Code quality scoring",
+            "auditVerification": "Audit report verification",
+            "dependencyAnalysis": "Dependency analysis",
+            "bestPractices": "Best practices check"
+          },
+          "weight": "30"
+        },
+        "tokenomics": {
+          "name": "Tokenomics Health",
+          "shortName": "Tokenomics",
+          "description": "Comprehensive evaluation of token distribution, vesting schedules, inflation mechanics, and economic sustainability.",
+          "details": {
+            "supplyDistribution": "Supply distribution",
+            "vestingAnalysis": "Vesting analysis",
+            "inflationRates": "Inflation rates",
+            "economicModel": "Economic model validation",
+            "unlockSchedule": "Unlock schedule tracking"
+          },
+          "weight": "20"
+        },
+        "liquidity": {
+          "name": "Liquidity Depth",
+          "shortName": "Liquidity",
+          "description": "Real-time assessment of liquidity pools, trading volumes, slippage tolerance, and market depth across DEXs.",
+          "details": {
+            "poolDepth": "Pool depth analysis",
+            "volumeTrends": "Volume trends",
+            "slippageCalc": "Slippage calculation",
+            "dexCoverage": "DEX coverage",
+            "liquidityConcentration": "Liquidity concentration"
+          },
+          "weight": "20"
+        },
+        "distribution": {
+          "name": "Distribution Analysis",
+          "shortName": "Distribution",
+          "description": "Evaluation of token holder concentration, whale activity, airdrop distributions, and decentralization metrics.",
+          "details": {
+            "holderConcentration": "Holder concentration",
+            "whaleTracking": "Whale tracking",
+            "decentralizationScore": "Decentralization score",
+            "airdropAnalysis": "Airdrop analysis",
+            "walletDistribution": "Wallet distribution"
+          },
+          "weight": "15"
+        }
+      }
+    },
+    "scoring": {
+      "badge": "అల్గారిథం",
+      "title": {
+        "before": "AI-ఆప్టిమైజ్డ్",
+        "highlight": "భద్రతా స్కోర్",
+        "after": " లెక్కింపు"
+      },
+      "subtitle": "మా స్కోరింగ్ అల్గారిథం డైనమిక్ వేటెడ్ సగటులను ఉపయోగిస్తుంది, గరిష్ఠ అంచనా కచ్చితత్వం కోసం మెషిన్ లెర్నింగ్ ద్వారా నిరంతరాయుతంగా ఫైన్-ట్యూన్ చేయబడుతుంది.",
+      "formula": {
+        "title": "Security Score Formula",
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
+        "dynamicWeights": "Dynamic Weights",
+        "aiAdjustments": "AI Adjustments",
+        "accuracy": "Accuracy"
+      },
+      "weightDistribution": {
+        "title": "Dynamic Weight Distribution",
+        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+      },
+      "aiOptimization": {
+        "title": "AI Optimization Layer",
+        "description": "Machine learning models continuously refine weights based on:",
+        "factors": {
+          "exploitPatterns": "Exploit pattern analysis",
+          "marketCorrelation": "Market condition correlation",
+          "projectCategorization": "Project type categorization",
+          "threatIntelligence": "Real-time threat intelligence",
+          "communityFeedback": "Community feedback integration"
+        }
+      },
+      "calculationExample": {
+        "title": "Calculation Example",
+        "comment": "// Example: Project with varying dimension scores",
+        "baseScore": "Base Score:",
+        "aiAdjustment": "AI Adjustment:",
+        "aiEnhancedTitle": "AI-Enhanced Accuracy",
+        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+      }
+    },
+    "howItWorks": {
+      "title": {
+        "before": "",
+        "highlight": "ఇది ఎలా పనిచేస్తుంది",
+        "after": ""
+      },
+      "subtitle": "మా AI-ఆధారిత వ్యవస్థ అన్ని కొలమానాలలో ప్రాజెక్ట్‌లను నిరంతరం పర్యవేక్షిస్తుంది మరియు విశ్లేషిస్తుంది.",
+      "steps": {
+        "dataCollection": {
+          "title": "1. Data Collection",
+          "description": "Real-time ingestion of on-chain data, social signals, code repositories, and market data."
+        },
+        "aiAnalysis": {
+          "title": "2. AI Analysis",
+          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+        },
+        "riskScoring": {
+          "title": "3. Risk Scoring",
+          "description": "AI-optimized weighted scores with verifiable evidence provide complete security assessment."
+        }
+      }
+    },
+    "roadmap": {
+      "title": {
+        "before": "ఉత్పత్తి",
+        "highlight": "రోడ్‌మ్యాప్",
+        "after": ""
+      },
+      "subtitle": "కొత్త కొలమానాలు మరియు మెరుగైన రీసెర్చ్ సామర్థ్యాలతో భద్రతా ఇంటెలిజెన్స్‌ను విస్తరించడానికి మా ప్రయాణం.",
+      "phases": {
+        "q1_2025": {
+          "phase": "Q1 2025",
+          "title": "Foundation",
+          "items": [
+            "Launch 5-dimensional audit system",
+            "Integrate major blockchain networks",
+            "Deploy real-time monitoring infrastructure",
+            "Establish security partnerships"
+          ]
+        },
+        "q2_2025": {
+          "phase": "Q2 2025",
+          "title": "Enhancement",
+          "items": [
+            "Add Governance dimension analysis",
+            "Introduce cross-chain bridge security",
+            "Launch API for enterprise integration",
+            "Mobile application release"
+          ]
+        },
+        "q3_2025": {
+          "phase": "Q3 2025",
+          "title": "Expansion",
+          "items": [
+            "Insurance risk dimension",
+            "Regulatory compliance checks",
+            "Advanced ML-based threat prediction",
+            "Community governance features"
+          ]
+        },
+        "q4_2025": {
+          "phase": "Q4 2025+",
+          "title": "Evolution",
+          "items": [
+            "Additional research dimensions based on market needs",
+            "Enhanced AI research factor optimization",
+            "Decentralized audit network",
+            "Real-time exploit prevention system"
+          ]
+        }
+      },
+      "status": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "upcoming": "Upcoming"
+      },
+      "expansion": {
+        "title": "Continuous Expansion",
+        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+      }
+    },
+    "cta": {
+      "title": "Ready for Deeper Security Insights?",
+      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get comprehensive security audits in under 30 seconds.",
+      "button": "Start Your First Audit"
+    }
+  }
+}

@@ -22,6 +22,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const stored = localStorage.getItem('theme') as Theme | null
     if (stored && ['dark', 'light', 'system'].includes(stored)) {
       setTheme(stored)
+    } else {
+      // Set default theme to system
+      setTheme('system')
     }
   }, [])
 
@@ -94,4 +97,21 @@ export function cn(...classes: (string | undefined | null | false)[]): string {
 // Theme-aware class generator
 export function themeClasses(baseClasses: string, darkClasses?: string, lightClasses?: string) {
   return `${baseClasses} ${darkClasses || ''} ${lightClasses || ''}`
+}
+
+// Hook for theme-aware classes
+export function useThemeClasses() {
+  const { resolvedTheme } = useTheme()
+
+  return {
+    bg: resolvedTheme === 'dark' ? 'bg-neutral-900' : 'bg-neutral-50',
+    text: resolvedTheme === 'dark' ? 'text-white' : 'text-neutral-900',
+    textSecondary: resolvedTheme === 'dark' ? 'text-neutral-300' : 'text-neutral-600',
+    border: resolvedTheme === 'dark' ? 'border-neutral-700' : 'border-neutral-200',
+    card: resolvedTheme === 'dark' ? 'bg-neutral-800' : 'bg-white',
+    input: resolvedTheme === 'dark' ? 'bg-neutral-800/50' : 'bg-neutral-100/50',
+    gradient: resolvedTheme === 'dark'
+      ? 'from-neutral-900 via-neutral-800 to-neutral-900'
+      : 'from-neutral-50 via-white to-neutral-50'
+  }
 }

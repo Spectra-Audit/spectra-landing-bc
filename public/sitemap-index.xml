@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Landing Page Sitemap -->
+  <sitemap>
+    <loc>https://spectra.shield.network/sitemap.xml</loc>
+    <lastmod>2026-01-07</lastmod>
+  </sitemap>
+
+  <!-- Project Landing Page Sitemap -->
+  <sitemap>
+    <loc>https://project.spectra.shield.network/sitemap.xml</loc>
+    <lastmod>2026-01-07</lastmod>
+  </sitemap>
+
+  <!-- Application Sitemap -->
+  <sitemap>
+    <loc>https://app.spectra.shield.network/sitemap.xml</loc>
+    <lastmod>2026-01-07</lastmod>
+  </sitemap>
+
+</sitemapindex>
