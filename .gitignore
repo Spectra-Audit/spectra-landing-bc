@@ -56,3 +56,10 @@ Thumbs.db
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Development documentation (keep README.md)
+*.md
+!README.md
+
+# Claude Code settings
+.claude/
