@@ -1,14 +1,16 @@
 [build]
-  base = "Frontend/Target BC"
   command = "npm run build"
   publish = ".next"
-  functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "18"
-  NPM_VERSION = "9"
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
   NEXT_TELEMETRY_DISABLED = "1"
   NEXT_PUBLIC_SITE_URL = "https://spectra-audit.com"
+
+# Essential plugin for Next.js on Netlify - handles SSR, i18n, and API routes
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[headers]]
   for = "/*"
@@ -29,6 +31,12 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 301
+  force = false
 
 [[redirects]]
   from = "/audit"
