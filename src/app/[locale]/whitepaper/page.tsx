@@ -650,7 +650,9 @@ export default function WhitepaperPage() {
               {t('cta.description')}
             </p>
             <a
-              href="../"
+              href="https://app.spectra-audit.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-spectra-blue-500 to-spectra-purple-500 text-white font-semibold text-lg hover:opacity-90 transition-opacity"
             >
               <Search className="w-5 h-5" />

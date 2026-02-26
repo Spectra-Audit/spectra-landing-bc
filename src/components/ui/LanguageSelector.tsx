@@ -6,10 +6,9 @@ import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
 import Card from './Card'
 import Button from './Button'
-import { type Locale } from '@/i18n/config'
+import { type Locale, locales } from '@/i18n/config'
 
-// Debug: Define the locales directly to test
-const allLocales = ['en', 'es', 'pt', 'fr', 'de', 'zh', 'ja', 'ko', 'ar', 'ru', 'tr', 'hi', 'bn', 'te', 'ta', 'mr'] as const
+// Locale data directly defined for reliability
 const allLocaleNames: Record<Locale, { native: string; english: string }> = {
   en: { native: 'English', english: 'English' },
   es: { native: 'Español', english: 'Spanish' },
@@ -52,13 +51,12 @@ export default function LanguageSelector({
   const router = useRouter()
   const pathname = usePathname()
 
-  
   const handleLanguageChange = (newLocale: Locale) => {
     // Get the current path without locale prefix
     const segments = pathname.split('/').filter(Boolean)
 
     // Remove the locale if it's the first segment
-    if (segments.length > 0 && allLocales.includes(segments[0] as Locale)) {
+    if (segments.length > 0 && locales.includes(segments[0] as Locale)) {
       segments.shift()
     }
 
@@ -67,6 +65,7 @@ export default function LanguageSelector({
       ? `/${newLocale}/${segments.join('/')}`
       : `/${newLocale}`
 
+    // Use router.push with locale to navigate
     router.push(newPathname)
     setIsOpen(false)
   }
@@ -107,7 +106,7 @@ export default function LanguageSelector({
                 </div>
 
                 <div className="grid gap-3">
-                  {allLocales.map((lang) => {
+                  {locales.map((lang) => {
                     const isSelected = lang === locale
                     const langInfo = allLocaleNames[lang]
                     const flag = allLocaleFlags[lang]
@@ -171,7 +170,7 @@ export default function LanguageSelector({
           />
           <Card variant="glass" className="absolute top-full right-0 mt-2 w-64 z-20 border border-neutral-200 dark:border-neutral-700 max-h-96 overflow-y-auto">
             <div className="p-2" role="listbox">
-              {allLocales.map((lang) => {
+              {locales.map((lang) => {
                 const isSelected = lang === locale
                 const langInfo = allLocaleNames[lang]
                 const flag = allLocaleFlags[lang]

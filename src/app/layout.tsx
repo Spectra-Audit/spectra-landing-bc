@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Mobile Viewport Configuration */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
@@ -71,10 +71,26 @@ export default function RootLayout({
           }
         />
       </head>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased transition-colors duration-300 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white`}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased transition-colors duration-300 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white`} suppressHydrationWarning>
         <UmamiProvider>
           {children}
         </UmamiProvider>
+
+        {/* Theme initialization script to prevent flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme') || 'system';
+                if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `
+          }}
+        />
 
         {/* Privacy-Compliant Analytics */}
         <Analytics />

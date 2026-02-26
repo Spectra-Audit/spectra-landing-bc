@@ -496,7 +496,7 @@ export default function HomePage() {
                     variant="gradient"
                     className="px-6 py-3"
                     icon={<Search className="w-4 h-4" />}
-                    onClick={() => setShowPersonaSelector(true)}
+                    onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
                   >
                     {t('howScoresWork.cta.exploreProjects')}
                   </Button>
@@ -785,10 +785,7 @@ export default function HomePage() {
                 variant="gradient"
                 className="text-lg px-8 py-4"
                 icon={<Search className="w-5 h-5" />}
-                onClick={() => {
-                  trackHeroCtaClicked(personaContent.ctaText, 'primary')
-                  setShowPersonaSelector(true)
-                }}
+                onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
                 {personaContent.ctaText}
               </Button>
