@@ -52,21 +52,61 @@ export default function LanguageSelector({
   const pathname = usePathname()
 
   const handleLanguageChange = (newLocale: Locale) => {
-    // Get the current path without locale prefix
-    const segments = pathname.split('/').filter(Boolean)
+    // The locale root is always a safe destination. Anything we can't fully
+    // validate below collapses to it rather than being forwarded into
+    // router.push() unchecked.
+    const localeRoot = `/${newLocale}`
 
-    // Remove the locale if it's the first segment
+    // Defensive: only navigate to a locale we actually ship. newLocale is typed
+    // as Locale, but the click handlers ultimately read from runtime config.
+    if (!locales.includes(newLocale)) {
+      router.push('/')
+      setIsOpen(false)
+      return
+    }
+
+    // Split the current path and drop a leading known-locale segment so we can
+    // swap in the new one.
+    const segments = pathname.split('/').filter(Boolean)
     if (segments.length > 0 && locales.includes(segments[0] as Locale)) {
       segments.shift()
     }
 
-    // Construct the new path with the new locale
-    const newPathname = segments.length > 0
-      ? `/${newLocale}/${segments.join('/')}`
-      : `/${newLocale}`
+    // A remaining segment is only safe if it's a plain in-app route token:
+    // ASCII alphanumerics plus a few separators, with dots allowed ONLY between
+    // tokens (never a standalone "." / ".." or a leading/trailing dot). Because
+    // nothing outside this allow-list is permitted, a single test rejects every
+    // class called out in the bug report at once:
+    //   - path traversal: "." / ".." and their encoded forms (%2e / %2E) — the
+    //     standalone dots and the "%" are both outside the allow-list
+    //   - encoded separators: "%2f" / "%5c" — the "%" is rejected
+    //   - null bytes & control chars (\x00, \x01–\x1f, \x7f) — not allow-listed
+    //   - Unicode bidi/override & zero-width chars (e.g. ‮) — not allow-listed
+    //   - URI schemes ("javascript:", "data:") — the ":" is rejected
+    //   - HTML/XSS metacharacters ("<", ">", quotes) — not allow-listed
+    // The pattern uses a single character class (no overlapping alternation), so
+    // it runs in linear time and is not vulnerable to ReDoS on adversarial input.
+    const SAFE_SEGMENT = /^[A-Za-z0-9_~-]+(?:\.[A-Za-z0-9_~-]+)*$/
+    const segmentsAreSafe = segments.every((segment) => SAFE_SEGMENT.test(segment))
 
-    // Use router.push with locale to navigate
-    router.push(newPathname)
+    // On ANY suspicious segment, discard the whole tail and fall back to the
+    // locale root — we never reconstruct an attacker-influenced path.
+    const target =
+      segmentsAreSafe && segments.length > 0
+        ? `${localeRoot}/${segments.join('/')}`
+        : localeRoot
+
+    // Belt-and-suspenders: the assembled target must be a clean, root-anchored,
+    // in-app path — no protocol-relative "//", no traversal "..", nothing but
+    // allow-listed characters. If it isn't, fall back to the locale root.
+    const SAFE_PATH = /^\/[A-Za-z0-9/._~-]*$/
+    const safeTarget =
+      SAFE_PATH.test(target) && !target.includes('..') && !target.startsWith('//')
+        ? target
+        : localeRoot
+
+    // Navigate only to the validated, '/'-anchored in-app route.
+    router.push(safeTarget)
     setIsOpen(false)
   }
 
