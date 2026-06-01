@@ -3,8 +3,21 @@
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
 import { Search, Home, ArrowLeft } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function NotFound() {
+  const [homePath, setHomePath] = useState('/')
+
+  useEffect(() => {
+    // With 'as-needed' locale prefix:
+    // - English (default) -> /
+    // - Other locales -> /es, /fr, etc.
+    const pathLocale = window.location.pathname.split('/')[1]
+    const supportedLocales = ['es', 'pt', 'fr', 'de', 'zh', 'ja', 'ko', 'ar', 'ru', 'tr', 'hi', 'bn', 'te', 'ta', 'mr']
+    // If the first path segment is a non-English locale, use it; otherwise use root for English
+    setHomePath(supportedLocales.includes(pathLocale) ? `/${pathLocale}` : '/')
+  }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-900 via-black to-neutral-900 flex items-center justify-center px-4">
       <div className="text-center max-w-md">
@@ -26,7 +39,7 @@ export default function NotFound() {
         </div>
 
         <div className="space-y-4">
-          <Link href="/">
+          <Link href={homePath}>
             <Button
               variant="security"
               size="lg"
@@ -52,7 +65,7 @@ export default function NotFound() {
           <p className="text-sm text-neutral-500 mb-4">Looking for something specific?</p>
           <div className="grid grid-cols-2 gap-3">
             <Link
-              href="/#features"
+              href={`${homePath}#features`}
               className="p-3 bg-neutral-800/50 rounded-lg border border-neutral-700/50 hover:border-primary-500/50 transition-all hover:bg-neutral-800/70 group"
             >
               <span className="text-sm text-neutral-300 group-hover:text-primary-400 transition-colors">
@@ -60,7 +73,7 @@ export default function NotFound() {
               </span>
             </Link>
             <Link
-              href="/#security"
+              href={`${homePath}#security`}
               className="p-3 bg-neutral-800/50 rounded-lg border border-neutral-700/50 hover:border-primary-500/50 transition-all hover:bg-neutral-800/70 group"
             >
               <span className="text-sm text-neutral-300 group-hover:text-primary-400 transition-colors">
@@ -68,7 +81,7 @@ export default function NotFound() {
               </span>
             </Link>
             <Link
-              href="/#pricing"
+              href={`${homePath}#pricing`}
               className="p-3 bg-neutral-800/50 rounded-lg border border-neutral-700/50 hover:border-primary-500/50 transition-all hover:bg-neutral-800/70 group"
             >
               <span className="text-sm text-neutral-300 group-hover:text-primary-400 transition-colors">
@@ -76,7 +89,7 @@ export default function NotFound() {
               </span>
             </Link>
             <Link
-              href="/#contact"
+              href={`${homePath}#contact`}
               className="p-3 bg-neutral-800/50 rounded-lg border border-neutral-700/50 hover:border-primary-500/50 transition-all hover:bg-neutral-800/70 group"
             >
               <span className="text-sm text-neutral-300 group-hover:text-primary-400 transition-colors">

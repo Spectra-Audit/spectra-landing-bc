@@ -124,37 +124,7 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin'
           },
-          {
-            key: 'Content-Security-Policy',
-            value: process.env.NODE_ENV === 'production' ? [
-              "default-src 'self';",
-              "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;",
-              "style-src 'self' 'unsafe-inline';",
-              "img-src 'self' data: blob: https:;",
-              "font-src 'self' data:;",
-              "connect-src 'self' https://api.spectra.shield.network;",
-              "media-src 'self';",
-              "object-src 'none';",
-              "base-uri 'self';",
-              "form-action 'self';",
-              "frame-ancestors 'none';",
-              "upgrade-insecure-requests;",
-              "block-all-mixed-content;"
-            ].join(' ') : [
-              "default-src 'self';",
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com;",
-              "style-src 'self' 'unsafe-inline';",
-              "img-src 'self' data: blob: https://*.githubusercontent.com;",
-              "font-src 'self' data:;",
-              "connect-src 'self' https://www.google-analytics.com;",
-              "media-src 'self';",
-              "object-src 'none';",
-              "base-uri 'self';",
-              "form-action 'self';",
-              "frame-ancestors 'none';",
-              "upgrade-insecure-requests;"
-            ].join(' ')
-          },
+          // Note: CSP is handled in layout.tsx meta tag to avoid conflicts
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()'
@@ -188,15 +158,11 @@ const nextConfig = {
     ]
   },
 
-  // Redirects for legacy routes
+  // Redirects for legacy routes - note: locale prefix handling is done by middleware
   async redirects() {
     return [
-      // Redirect root to default locale
-      {
-        source: '/',
-        destination: '/en',
-        permanent: false,
-      },
+      // Legacy redirects - these are handled by middleware for i18n
+      // No need to redirect root here as middleware handles locale prefix
     ]
   }
 }

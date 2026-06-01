@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Shield, Github, Twitter, MessageCircle } from 'lucide-react'
@@ -11,6 +11,16 @@ import { cn } from '@/lib/utils'
 
 interface NavbarProps {
   className?: string
+}
+
+// Helper function to create locale-aware paths with 'as-needed' prefix
+function localePath(locale: string, path: string = ''): string {
+  // With 'as-needed' prefix, English (default) has no prefix
+  if (locale === 'en') {
+    return path ? `/${path}` : '/'
+  }
+  // Other locales have the prefix
+  return path ? `/${locale}/${path}` : `/${locale}`
 }
 
 export function Navbar({ className }: NavbarProps) {
@@ -45,6 +55,10 @@ export function Navbar({ className }: NavbarProps) {
     setIsHydrated(true)
   }, [])
 
+  // Memoize locale-aware paths
+  const homePath = useMemo(() => localePath(locale), [locale])
+  const whitepaperPath = useMemo(() => localePath(locale, 'whitepaper'), [locale])
+
   // Default fallback translations (English) for SSR
   const fallbackNavItems = [
     {
@@ -55,7 +69,7 @@ export function Navbar({ className }: NavbarProps) {
     },
     {
       label: 'Whitepaper',
-      href: `/${locale}/whitepaper`,
+      href: whitepaperPath,
       icon: <FileText className="w-5 h-5" />,
       external: false
     },
@@ -77,7 +91,7 @@ export function Navbar({ className }: NavbarProps) {
     },
     {
       label: t('nav.whitepaper'),
-      href: `/${locale}/whitepaper`,
+      href: whitepaperPath,
       icon: <FileText className="w-5 h-5" />,
       external: false
     },
@@ -108,7 +122,7 @@ export function Navbar({ className }: NavbarProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href={`/${locale}`} className="flex items-center space-x-2">
+            <Link href={homePath} className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <Shield className="w-5 h-5 text-white" />
               </div>

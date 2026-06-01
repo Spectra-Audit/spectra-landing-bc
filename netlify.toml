@@ -12,6 +12,7 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -20,7 +21,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), browsing-topics=()"
-    Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/_next/static/*"
@@ -31,32 +31,6 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=86400"
-
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/audit"
-  to = "/"
-  status = 302
-
-[[redirects]]
-  from = "/security"
-  to = "/"
-  status = 302
-
-[[redirects]]
-  from = "/smart-contract"
-  to = "/"
-  status = 302
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
 
 # Next.js specific configuration
 [dev]

@@ -38,36 +38,22 @@ export default function RootLayout({
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
 
-        {/* Content Security Policy */}
+        {/* Content Security Policy - Use same for both dev and production to ensure compatibility */}
         <meta
           httpEquiv="Content-Security-Policy"
           content={
-            process.env.NODE_ENV === 'production'
-              ? `
-                default-src 'self';
-                script-src 'self' https://www.googletagmanager.com https://cloud.umami.is;
-                style-src 'self' https://fonts.googleapis.com;
-                font-src 'self' https://fonts.gstatic.com;
-                img-src 'self' data: https: blob:;
-                connect-src 'self' https://api.spectra-audit.com https://cloud.umami.is;
-                frame-src 'none';
-                object-src 'none';
-                base-uri 'self';
-                form-action 'self';
-                upgrade-insecure-requests;
-              `.trim().replace(/\s+/g, ' ')
-              : `
-                default-src 'self';
-                script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://cloud.umami.is;
-                style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-                font-src 'self' https://fonts.gstatic.com;
-                img-src 'self' data: https: blob:;
-                connect-src 'self' https://api.spectra-audit.com https://cloud.umami.is;
-                frame-src 'none';
-                object-src 'none';
-                base-uri 'self';
-                form-action 'self';
-              `.trim().replace(/\s+/g, ' ')
+            `
+              default-src 'self';
+              script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://cloud.umami.is;
+              style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+              font-src 'self' https://fonts.gstatic.com data:;
+              img-src 'self' data: https: blob:;
+              connect-src 'self' https://api.spectra-audit.com https://cloud.umami.is https://*.netlify.com https://*.netlify.app;
+              frame-src 'none';
+              object-src 'none';
+              base-uri 'self';
+              form-action 'self';
+            `.trim().replace(/\s+/g, ' ')
           }
         />
       </head>

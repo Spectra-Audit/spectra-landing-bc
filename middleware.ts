@@ -8,8 +8,9 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale,
 
-  // Use 'always' to ensure locale is always in the URL for proper routing
-  localePrefix: 'always',
+  // Use 'as-needed' for better Netlify compatibility
+  // This means the default locale (en) doesn't need a prefix
+  localePrefix: 'as-needed',
 
   // Optional: Configure locale detection
   localeDetection: true,
@@ -19,6 +20,12 @@ export default createMiddleware({
 })
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/((?!api|_next|_vercel|.*\\..*).*)']
+  // Match all pathnames except for:
+  // - API routes (/api/*)
+  // - Next.js internal routes (_next/*)
+  // - Static files with extensions
+  matcher: [
+    // Match all paths that don't start with api, _next, or have a file extension
+    '/((?!api|_next|_vercel|.*\\..*).*)',
+  ]
 }
