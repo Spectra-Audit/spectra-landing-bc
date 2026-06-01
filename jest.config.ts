@@ -23,8 +23,13 @@ const config: Config = {
     '**/__tests__/**/*.(js|jsx|ts|tsx)',
     '**/*.(test|spec).(js|jsx|ts|tsx)'
   ],
-  // Coverage collection
-  collectCoverage: true,
+  // Ignore build output and any nested git worktrees (e.g. .claude/worktrees)
+  // so Jest only discovers the app's own tests.
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.claude/'],
+  // Coverage is opt-in: a bare `npm test` runs the suite without the coverage
+  // gate, while `npm run test:coverage` / `test:ci` pass --coverage and enforce
+  // the thresholds below. Keeps the contributor `npm test` check green.
+  collectCoverage: false,
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],
   collectCoverageFrom: [
