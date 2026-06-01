@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Shield, Github, Twitter, MessageCircle } from 'lucide-react'
@@ -26,7 +26,13 @@ function localePath(locale: string, path: string = ''): string {
 export function Navbar({ className }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isHydrated, setIsHydrated] = useState(false)
+  // useSyncExternalStore gives false on the server and true on the client,
+  // preserving SSR/hydration parity without set-in-effect.
+  const isHydrated = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
   const t = useTranslations()
   const locale = useLocale()
 
@@ -50,10 +56,6 @@ export function Navbar({ className }: NavbarProps) {
       document.body.style.overflow = ''
     }
   }, [isMobileMenuOpen])
-
-  useEffect(() => {
-    setIsHydrated(true)
-  }, [])
 
   // Memoize locale-aware paths
   const homePath = useMemo(() => localePath(locale), [locale])

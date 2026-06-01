@@ -3,20 +3,23 @@
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
 import { Search, Home, ArrowLeft } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
+
+const SUPPORTED_LOCALES = ['es', 'pt', 'fr', 'de', 'zh', 'ja', 'ko', 'ar', 'ru', 'tr', 'hi', 'bn', 'te', 'ta', 'mr']
+
+function getHomePath(): string {
+  // With 'as-needed' locale prefix:
+  // - English (default) -> /
+  // - Other locales -> /es, /fr, etc.
+  if (typeof window === 'undefined') return '/'
+  const pathLocale = window.location.pathname.split('/')[1]
+  return SUPPORTED_LOCALES.includes(pathLocale) ? `/${pathLocale}` : '/'
+}
 
 export default function NotFound() {
-  const [homePath, setHomePath] = useState('/')
-
-  useEffect(() => {
-    // With 'as-needed' locale prefix:
-    // - English (default) -> /
-    // - Other locales -> /es, /fr, etc.
-    const pathLocale = window.location.pathname.split('/')[1]
-    const supportedLocales = ['es', 'pt', 'fr', 'de', 'zh', 'ja', 'ko', 'ar', 'ru', 'tr', 'hi', 'bn', 'te', 'ta', 'mr']
-    // If the first path segment is a non-English locale, use it; otherwise use root for English
-    setHomePath(supportedLocales.includes(pathLocale) ? `/${pathLocale}` : '/')
-  }, [])
+  // Server snapshot '/' prevents hydration mismatch on non-English 404 pages.
+  // After hydration the real locale prefix is adopted from window.location.
+  const homePath = useSyncExternalStore(() => () => {}, getHomePath, () => '/')
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-900 via-black to-neutral-900 flex items-center justify-center px-4">
@@ -33,8 +36,8 @@ export default function NotFound() {
           </h2>
 
           <p className="text-neutral-400 mb-8 leading-relaxed">
-            The page you're looking for doesn't exist or has been moved.
-            Let's get you back to safety.
+            The page you&apos;re looking for doesn&apos;t exist or has been moved.
+            Let&apos;s get you back to safety.
           </p>
         </div>
 

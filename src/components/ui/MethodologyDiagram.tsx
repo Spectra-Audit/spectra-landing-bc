@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useSyncExternalStore } from 'react'
 import { Code2, Users, Coins, Droplets, MessageSquare, Target } from 'lucide-react'
 
 export interface MethodologyDiagramProps {
@@ -17,29 +17,45 @@ export interface MethodologyDiagramProps {
  * Animation respects `prefers-reduced-motion`:
  * - CSS opacity pulse: handled globally in globals.css (animation-duration override).
  * - SVG SMIL <animateMotion>: NOT affected by CSS overrides, so we conditionally
- *   skip rendering the dots via the matchMedia hook below.
+ *   skip rendering the dots via the useSyncExternalStore hook below.
  */
+
+// ---------------------------------------------------------------------------
+// Module-level store for prefers-reduced-motion
+// ---------------------------------------------------------------------------
+
+function subscribe(cb: () => void): () => void {
+  if (typeof window === 'undefined' || !window.matchMedia) return () => {}
+  const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+  // Modern browsers
+  if (mq.addEventListener) {
+    mq.addEventListener('change', cb)
+    return () => mq.removeEventListener('change', cb)
+  }
+  // Legacy fallback
+  mq.addListener(cb)
+  return () => mq.removeListener(cb)
+}
+
+function getSnapshot(): boolean {
+  if (typeof window === 'undefined' || !window.matchMedia) return false
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
+function getServerSnapshot(): boolean {
+  return false
+}
+
+// ---------------------------------------------------------------------------
+// Component
+// ---------------------------------------------------------------------------
+
 export default function MethodologyDiagram({
   className = '',
   ariaLabel = 'Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.'
 }: MethodologyDiagramProps) {
-  // Scoped reduced-motion guard for SMIL animations (which ignore the global CSS rule).
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
-
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.matchMedia) return
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setPrefersReducedMotion(mq.matches)
-    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches)
-    // Modern browsers
-    if (mq.addEventListener) {
-      mq.addEventListener('change', handler)
-      return () => mq.removeEventListener('change', handler)
-    }
-    // Legacy fallback
-    mq.addListener(handler)
-    return () => mq.removeListener(handler)
-  }, [])
+  // Hydration-safe: server renders false, client adopts real matchMedia value after hydration.
+  const prefersReducedMotion = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   const width = 500
   const height = 360

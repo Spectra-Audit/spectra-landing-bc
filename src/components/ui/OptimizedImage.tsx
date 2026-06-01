@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useSyncExternalStore } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
@@ -72,12 +72,13 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
   const [imageSrc, setImageSrc] = useState(src)
-  const [mounted, setMounted] = useState(false)
-
-  // Prevent hydration mismatch
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  // useSyncExternalStore gives false on the server and true on the client,
+  // preventing hydration mismatch without set-in-effect.
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
 
   // Generate blur placeholder if not provided (client-side only)
   const generateBlurDataURL = (w: number, h: number): string => {

@@ -23,35 +23,28 @@ interface ConsentData {
   timestamp: number
 }
 
-export default function Analytics() {
-  const [consent, setConsent] = useState<ConsentData | null>(null)
-  const [showBanner, setShowBanner] = useState(false)
-
-  useEffect(() => {
-    // Check for existing consent
+function readStoredConsent(): ConsentData | null {
+  if (typeof window === 'undefined') return null
+  try {
     const storedConsent = localStorage.getItem('cookie_consent')
-    if (storedConsent) {
-      try {
-        const parsed = JSON.parse(storedConsent)
-        // Check if consent is older than 1 year
-        const oneYear = 365 * 24 * 60 * 60 * 1000
-        if (Date.now() - parsed.timestamp < oneYear) {
-          setConsent(parsed)
-          if (parsed.analytics) {
-            loadAnalytics()
-          }
-        } else {
-          // Consent expired, show banner again
-          setShowBanner(true)
-        }
-      } catch (error) {
-        console.warn('Failed to parse consent data:', error)
-        setShowBanner(true)
-      }
-    } else {
-      setShowBanner(true)
-    }
-  }, [])
+    if (!storedConsent) return null
+    const parsed = JSON.parse(storedConsent)
+    const oneYear = 365 * 24 * 60 * 60 * 1000
+    if (Date.now() - parsed.timestamp >= oneYear) return null
+    return parsed as ConsentData
+  } catch {
+    return null
+  }
+}
+
+export default function Analytics() {
+  // Lazy initializer reads localStorage once on mount — no set-in-effect needed
+  const [consent, setConsent] = useState<ConsentData | null>(readStoredConsent)
+  const [showBanner, setShowBanner] = useState<boolean>(() => {
+    const stored = readStoredConsent()
+    // Show banner when there is no valid stored consent
+    return stored === null
+  })
 
   const loadAnalytics = () => {
     // Only load in production environment
@@ -134,6 +127,14 @@ export default function Analytics() {
       })
     }
   }
+
+  // On mount: if valid analytics consent already exists, load analytics scripts.
+  // State is already initialized via lazy useState above — no setState needed here.
+  useEffect(() => {
+    if (consent?.analytics) {
+      loadAnalytics()
+    }
+  }, [])
 
   const handleAccept = (preferences: Partial<ConsentData>) => {
     const newConsent: ConsentData = {

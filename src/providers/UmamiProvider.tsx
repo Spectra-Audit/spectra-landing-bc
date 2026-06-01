@@ -101,6 +101,25 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
     initializeSession();
   }, [])
 
+  // trackEvent is declared first so that the script-load effect below and the
+  // identifyUser/resetSession callbacks below can reference it without triggering
+  // the react-hooks/immutability "accessed before declared" error.
+  const trackEvent = useCallback((eventName: string, eventData?: Record<string, unknown>) => {
+    // Enrich all events with session and user data
+    const enrichedData = {
+      ...eventData,
+      session_id: currentUser.sessionId,
+      ...(currentUser.userId && { user_id: currentUser.userId }),
+      ...(currentUser.walletAddress && { wallet_hash: currentUser.walletAddress }),
+    };
+
+    if (window.umami && typeof window.umami.track === 'function') {
+      window.umami.track(eventName, enrichedData)
+    } else {
+      console.log('Umami not ready, queuing event:', eventName, enrichedData)
+    }
+  }, [currentUser]);
+
   // Load the Umami script only when:
   //   1. a website ID is configured (env-gated — no hardcoded ID in source),
   //   2. we are in production (matches Analytics.tsx's loadAnalytics gate), and
@@ -187,7 +206,7 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
       has_wallet: !!walletAddress,
       session_id: currentUser.sessionId,
     });
-  }, [currentUser.sessionId]);
+  }, [currentUser.sessionId, trackEvent]);
 
   const getCurrentUser = useCallback(() => {
     if (currentUser.userId || currentUser.walletAddress) {
@@ -216,23 +235,7 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
     trackEvent('session_reset', {
       new_session_id: newSessionId,
     });
-  }, []);
-
-  const trackEvent = useCallback((eventName: string, eventData?: Record<string, unknown>) => {
-    // Enrich all events with session and user data
-    const enrichedData = {
-      ...eventData,
-      session_id: currentUser.sessionId,
-      ...(currentUser.userId && { user_id: currentUser.userId }),
-      ...(currentUser.walletAddress && { wallet_hash: currentUser.walletAddress }),
-    };
-
-    if (window.umami && typeof window.umami.track === 'function') {
-      window.umami.track(eventName, enrichedData)
-    } else {
-      console.log('Umami not ready, queuing event:', eventName, enrichedData)
-    }
-  }, [currentUser]);
+  }, [trackEvent]);
 
   const value: UmamiContextValue = {
     trackEvent,

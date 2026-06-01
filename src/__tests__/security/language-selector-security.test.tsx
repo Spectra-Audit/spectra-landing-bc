@@ -38,19 +38,25 @@ jest.mock('@/i18n/config', () => ({
 }))
 
 jest.mock('@/components/ui/Card', () => {
-  return ({ children, ...props }: any) => (
-    <div data-testid="card" {...props}>
-      {children}
-    </div>
-  )
+  function MockCard({ children, ...props }: any) {
+    return (
+      <div data-testid="card" {...props}>
+        {children}
+      </div>
+    )
+  }
+  return MockCard
 })
 
 jest.mock('@/components/ui/Button', () => {
-  return ({ children, onClick, ...props }: any) => (
-    <button onClick={onClick} data-testid="button" {...props}>
-      {children}
-    </button>
-  )
+  function MockButton({ children, onClick, ...props }: any) {
+    return (
+      <button onClick={onClick} data-testid="button" {...props}>
+        {children}
+      </button>
+    )
+  }
+  return MockButton
 })
 
 jest.mock('lucide-react', () => ({

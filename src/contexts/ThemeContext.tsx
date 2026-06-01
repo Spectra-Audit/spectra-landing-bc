@@ -1,6 +1,6 @@
 'use client'
 
-import React, { createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect, useCallback, useSyncExternalStore } from 'react'
 
 type Theme = 'dark' | 'light' | 'system'
 
@@ -13,59 +13,93 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('system')
-  const [resolvedTheme, setResolvedTheme] = useState<'dark' | 'light'>('dark')
+// ---------------------------------------------------------------------------
+// Module-level store for the persisted theme preference
+// ---------------------------------------------------------------------------
 
-  // Initialize theme from localStorage or system preference
-  useEffect(() => {
-    const stored = localStorage.getItem('theme') as Theme | null
-    if (stored && ['dark', 'light', 'system'].includes(stored)) {
-      setTheme(stored)
-    } else {
-      // Set default theme to system
-      setTheme('system')
-    }
+const themeListeners = new Set<() => void>()
+
+function notifyThemeListeners() {
+  themeListeners.forEach(cb => cb())
+}
+
+function subscribeTheme(cb: () => void): () => void {
+  themeListeners.add(cb)
+  // Also listen for cross-tab storage events
+  window.addEventListener('storage', cb)
+  return () => {
+    themeListeners.delete(cb)
+    window.removeEventListener('storage', cb)
+  }
+}
+
+function getStoredTheme(): Theme {
+  const stored = localStorage.getItem('theme')
+  if (stored && (['dark', 'light', 'system'] as string[]).includes(stored)) {
+    return stored as Theme
+  }
+  return 'system'
+}
+
+function getServerTheme(): Theme {
+  // SSR default — must match initial document class to avoid hydration mismatch
+  return 'system'
+}
+
+// ---------------------------------------------------------------------------
+// Module-level store for the OS colour-scheme preference
+// ---------------------------------------------------------------------------
+
+function subscribeSystem(cb: () => void): () => void {
+  const mq = window.matchMedia('(prefers-color-scheme: dark)')
+  mq.addEventListener('change', cb)
+  return () => mq.removeEventListener('change', cb)
+}
+
+function getSystemSnapshot(): 'dark' | 'light' {
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+function getServerSystem(): 'dark' | 'light' {
+  // SSR default — must match the class applied by the server to avoid hydration mismatch
+  return 'dark'
+}
+
+// ---------------------------------------------------------------------------
+// Provider
+// ---------------------------------------------------------------------------
+
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const theme = useSyncExternalStore(subscribeTheme, getStoredTheme, getServerTheme)
+  const systemResolvedTheme = useSyncExternalStore(subscribeSystem, getSystemSnapshot, getServerSystem)
+
+  // Computed during render — no extra state needed
+  const resolvedTheme: 'dark' | 'light' = theme === 'system' ? systemResolvedTheme : theme
+
+  // VALUE form: consumers call setTheme('light') etc.
+  const setTheme = useCallback((next: Theme) => {
+    localStorage.setItem('theme', next)
+    notifyThemeListeners()
   }, [])
 
-  // Apply theme to document and resolve system theme
+  // Preserve original cycle: dark → light → system → dark
+  const toggleTheme = useCallback(() => {
+    const next: Theme =
+      theme === 'dark' ? 'light' :
+      theme === 'light' ? 'system' :
+      'dark'
+    setTheme(next)
+  }, [theme, setTheme])
+
+  // Apply resolved class to document — client-only side effect, no setState
+  // Apply the resolved theme class to <html>. Persistence is handled by setTheme
+  // (the only place a user-chosen value is written); writing here would run with the
+  // transient SSR snapshot during hydration and could clobber a saved preference.
   useEffect(() => {
     const root = window.document.documentElement
     root.classList.remove('light', 'dark')
-
-    let resolved: 'dark' | 'light'
-    if (theme === 'system') {
-      resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    } else {
-      resolved = theme
-    }
-
-    root.classList.add(resolved)
-    setResolvedTheme(resolved)
-    localStorage.setItem('theme', theme)
-
-    // Listen for system theme changes
-    if (theme === 'system') {
-      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-      const handleChange = () => {
-        const newResolved = mediaQuery.matches ? 'dark' : 'light'
-        root.classList.remove('light', 'dark')
-        root.classList.add(newResolved)
-        setResolvedTheme(newResolved)
-      }
-
-      mediaQuery.addEventListener('change', handleChange)
-      return () => mediaQuery.removeEventListener('change', handleChange)
-    }
-  }, [theme])
-
-  const toggleTheme = () => {
-    setTheme(current => {
-      if (current === 'dark') return 'light'
-      if (current === 'light') return 'system'
-      return 'dark'
-    })
-  }
+    root.classList.add(resolvedTheme)
+  }, [resolvedTheme])
 
   const value = {
     theme,
