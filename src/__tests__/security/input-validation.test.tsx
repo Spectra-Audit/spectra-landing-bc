@@ -1,9 +1,14 @@
 import React from 'react'
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { render, screen } from '@testing-library/react'
 import HomePage from '@/app/[locale]/page'
 
-// Mock components to isolate testing to security issues
+// Mock components to isolate testing to security-relevant behaviour.
+//
+// NOTE: the page does NOT render an Ethereum-address <input> (nor any form).
+// The earlier "Ethereum Address Input" assertions targeted UI that no longer
+// exists; the remaining tests exercise the real rendered output: structured
+// data scripts, absence of injected DOM nodes, effect cleanup on unmount, and
+// graceful handling of missing translations.
 jest.mock('@/components/ui', () => ({
   Button: ({ children, onClick, ...props }: any) => (
     <button onClick={onClick} data-testid="button" {...props}>
@@ -25,6 +30,12 @@ jest.mock('@/components/ui', () => ({
       Grade: {grade}
     </div>
   ),
+  UnifiedGradeDisplay: ({ score, ...props }: any) => (
+    <div data-testid="unified-grade-display" data-score={score} {...props} />
+  ),
+  MethodologyDiagram: (props: any) => <div data-testid="methodology-diagram" {...props} />,
+  LearningLoopDiagram: (props: any) => <div data-testid="learning-loop-diagram" {...props} />,
+  DisclaimerFooter: (props: any) => <div data-testid="disclaimer-footer" {...props} />,
   Navbar: () => <div data-testid="navbar">Navigation</div>,
   StatsBanner: () => <div data-testid="stats-banner">Stats</div>,
 }))
@@ -61,156 +72,41 @@ jest.mock('@/components/ui/ThemeToggle', () => ({
   default: () => <div data-testid="theme-toggle">Theme Toggle</div>,
 }))
 
+jest.mock('lucide-react', () => ({
+  Activity: () => <div data-testid="activity-icon" />,
+  X: () => <div data-testid="x-icon" />,
+  Shield: () => <div data-testid="shield-icon" />,
+  Search: () => <div data-testid="search-icon" />,
+  BarChart3: () => <div data-testid="barchart-icon" />,
+  Lock: () => <div data-testid="lock-icon" />,
+  CheckCircle: () => <div data-testid="checkcircle-icon" />,
+  TrendingUp: () => <div data-testid="trendingup-icon" />,
+  Zap: () => <div data-testid="zap-icon" />,
+  Eye: () => <div data-testid="eye-icon" />,
+  Award: () => <div data-testid="award-icon" />,
+  Clock: () => <div data-testid="clock-icon" />,
+  Users: () => <div data-testid="users-icon" />,
+  GitBranch: () => <div data-testid="gitbranch-icon" />,
+  Cpu: () => <div data-testid="cpu-icon" />,
+  Layers: () => <div data-testid="layers-icon" />,
+  ThumbsUp: () => <div data-testid="thumbsup-icon" />,
+  Brain: () => <div data-testid="brain-icon" />,
+  RefreshCw: () => <div data-testid="refreshcw-icon" />,
+  FileCheck: () => <div data-testid="filecheck-icon" />,
+}))
+
 describe('Input Validation Security Tests', () => {
   beforeEach(() => {
     // Clear all mocks before each test
     jest.clearAllMocks()
   })
 
-  describe('Ethereum Address Input Security', () => {
-    it('should reject script injection attempts', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-
-      // Test XSS attempt
-      const xssPayload = '<script>alert("xss")</script>'
-      await user.type(addressInput, xssPayload)
-
-      expect(addressInput).toHaveValue(xssPayload)
-
-      // Verify no script execution occurs
-      expect(() => {
-        const scripts = document.querySelectorAll('script')
-        scripts.forEach(script => {
-          if (script.textContent?.includes('alert("xss")')) {
-            throw new Error('XSS payload found in script tag')
-          }
-        })
-      }).not.toThrow()
-    })
-
-    it('should reject JavaScript protocol injection', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const jsProtocol = 'javascript:alert("xss")'
-
-      await user.type(addressInput, jsProtocol)
-
-      expect(addressInput).toHaveValue(jsProtocol)
-
-      // Verify no script execution
-      expect(() => {
-        eval(jsProtocol)
-      }).not.toThrow()
-    })
-
-    it('should reject data URL injection', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const dataUrl = 'data:text/html,<script>alert("xss")</script>'
-
-      await user.type(addressInput, dataUrl)
-
-      expect(addressInput).toHaveValue(dataUrl)
-
-      // Verify no HTML parsing occurs
-      expect(addressInput.tagName).toBe('INPUT')
-    })
-
-    it('should handle extremely long input without crashing', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const longInput = 'a'.repeat(100000) // 100KB input
-
-      await user.type(addressInput, longInput)
-
-      expect(addressInput).toHaveValue(longInput)
-      // Should not cause performance issues
-      expect(screen.getByTestId('button')).toBeInTheDocument()
-    })
-
-    it('should handle null bytes and control characters', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const maliciousInput = '\x00\x01\x02\x03<script>'
-
-      await user.type(addressInput, maliciousInput)
-
-      expect(addressInput).toHaveValue(maliciousInput)
-      // Should not cause injection
-      expect(addressInput.tagName).toBe('INPUT')
-    })
-
-    it('should validate Ethereum address format (basic validation)', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-
-      // Test invalid addresses
-      const invalidAddresses = [
-        '0x', // Incomplete
-        '0x123', // Too short
-        '0xGHIJKLMNOPQRSTUVWXYZ123456789012345678901234567890', // Invalid characters
-        '1234567890123456789012345678901234567890', // Missing 0x prefix
-      ]
-
-      for (const invalidAddr of invalidAddresses) {
-        await user.clear(addressInput)
-        await user.type(addressInput, invalidAddr)
-
-        // Input should accept but validation should occur on submit
-        expect(addressInput).toHaveValue(invalidAddr)
-      }
-    })
-
-    it('should handle Unicode and international characters safely', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const unicodeInput = '🚀✨💎0x1234567890123456789012345678901234567890💰🔥'
-
-      await user.type(addressInput, unicodeInput)
-
-      expect(addressInput).toHaveValue(unicodeInput)
-      // Should not cause encoding issues
-      expect(addressInput).toBeInstanceOf(HTMLInputElement)
-    })
-
-    it('should prevent form submission with invalid data', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
-
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
-      const submitButton = screen.getByText('Get Audit Report')
-
-      // Test with clearly invalid data
-      await user.type(addressInput, 'not-an-address')
-      await user.click(submitButton)
-
-      // Persona selector should appear (current behavior)
-      await waitFor(() => {
-        expect(screen.getByTestId('persona-selector')).toBeInTheDocument()
-      })
-    })
-  })
-
   describe('DOM Injection Prevention', () => {
     it('should sanitize rendered content', () => {
       render(<HomePage />)
 
-      // Check that no script tags exist except for structured data
+      // Only the structured-data JSON-LD scripts are allowed. Any other script
+      // tag in the rendered output would indicate unsanitized content injection.
       const scripts = document.querySelectorAll('script')
       scripts.forEach(script => {
         if (!script.getAttribute('data-testid')?.startsWith('structured-data')) {
@@ -219,49 +115,37 @@ describe('Input Validation Security Tests', () => {
       })
     })
 
-    it('should handle malformed input gracefully', async () => {
-      const user = userEvent.setup()
-      render(<HomePage />)
+    it('should not inject untrusted DOM nodes or inline event handlers', () => {
+      const { container } = render(<HomePage />)
 
-      const addressInput = screen.getByPlaceholderText('Enter your Ethereum address')
+      // The page renders no <img>/<iframe> nodes from untrusted content.
+      expect(container.querySelectorAll('img, iframe')).toHaveLength(0)
 
-      // Test various edge cases
-      const edgeCases = [
-        '<img src=x onerror=alert("xss")>',
-        '"><script>alert("xss")</script>',
-        'javascript:void(0)',
-        'vbscript:msgbox("xss")',
-        '<iframe src="javascript:alert(1)"></iframe>',
-      ]
-
-      for (const edgeCase of edgeCases) {
-        await user.clear(addressInput)
-        await user.type(addressInput, edgeCase)
-
-        expect(addressInput).toHaveValue(edgeCase)
-        // Should not inject elements
-        expect(document.querySelectorAll('img, iframe')).toHaveLength(0)
-      }
+      // No element should carry inline on* event-handler attributes that could
+      // execute injected script (e.g. onerror/onload from a markup-injection).
+      const allElements = Array.from(container.querySelectorAll('*'))
+      const withInlineHandlers = allElements.filter(el =>
+        Array.from(el.attributes).some(attr => /^on[a-z]+$/i.test(attr.name))
+      )
+      expect(withInlineHandlers).toHaveLength(0)
     })
   })
 
   describe('Memory Leak Prevention', () => {
-    it('should not accumulate event listeners on re-renders', () => {
+    it('should not break across repeated re-renders', () => {
       const { rerender } = render(<HomePage />)
 
-      // Re-render multiple times
+      // Re-render multiple times to surface any unstable mount/cleanup behaviour.
       for (let i = 0; i < 100; i++) {
         rerender(<HomePage />)
       }
 
-      // Component should still be functional
-      expect(screen.getByPlaceholderText('Enter your Ethereum address')).toBeInTheDocument()
+      // Component should still render its headline after repeated re-renders.
+      expect(screen.getByText('hero.page.heroTitle')).toBeInTheDocument()
     })
 
     it('should clean up intervals and timeouts on unmount', () => {
-      const { unmount } = render(<HomePage />)
-
-      // Mock setInterval to track cleanup
+      // Track that the interval registered by the page's effect is cleared on unmount.
       const originalSetInterval = window.setInterval
       const originalClearInterval = window.clearInterval
       const intervals = new Set<number>()
@@ -272,10 +156,14 @@ describe('Input Validation Security Tests', () => {
         return id
       }) as unknown as typeof window.setInterval
 
-      window.clearInterval = jest.fn((id?: number) => {
+      const clearSpy = jest.fn((id?: number) => {
         if (id !== undefined) intervals.delete(id)
         return originalClearInterval(id)
-      }) as unknown as typeof window.clearInterval
+      })
+      window.clearInterval = clearSpy as unknown as typeof window.clearInterval
+
+      const { unmount } = render(<HomePage />)
+      const intervalsRegistered = intervals.size
 
       unmount()
 
@@ -283,8 +171,17 @@ describe('Input Validation Security Tests', () => {
       window.setInterval = originalSetInterval
       window.clearInterval = originalClearInterval
 
-      // Component should unmount without errors
-      expect(document.body).toBeEmptyDOMElement()
+      // The page registers an engagement-milestone interval in useEffect and must
+      // clear it on unmount. Verify clearInterval ran and no interval leaked.
+      // (We assert clean teardown rather than an empty <body>, since React Testing
+      // Library leaves its own container <div> attached until auto-cleanup.)
+      if (intervalsRegistered > 0) {
+        expect(clearSpy).toHaveBeenCalled()
+      }
+      expect(intervals.size).toBe(0)
+
+      // The rendered component content is gone after unmount.
+      expect(screen.queryByText('hero.page.heroTitle')).not.toBeInTheDocument()
     })
   })
 
