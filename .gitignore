@@ -57,9 +57,16 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 
-# Development documentation (keep README.md)
+# Markdown is ignored by default so AI-generated docs and internal notes
+# are never committed. Whitelist only the public docs we intentionally maintain.
 *.md
-!README.md
+!/README.md
+!/CONTRIBUTING.md
+!/SECURITY.md
 
-# Claude Code settings
+# Internal / AI-generated documentation (kept local, not published)
+/docs/
+
+# AI assistant config & guidance (kept local, not published)
 .claude/
+CLAUDE.md
