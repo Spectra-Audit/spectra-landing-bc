@@ -2,9 +2,26 @@
 
 import { useEffect, useState, createContext, useContext, ReactNode, useCallback } from 'react'
 
-// Umami Website ID for Target B
-const UMAMI_WEBSITE_ID = 'acdf9f95-bc94-40e1-a3f6-3a952c4c6728'
-const UMAMI_HOST = 'https://cloud.umami.is'
+// Umami config is supplied via environment variables. If NEXT_PUBLIC_UMAMI_WEBSITE_ID
+// is not set, Umami is a clean no-op and no script is ever injected.
+const UMAMI_WEBSITE_ID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
+const UMAMI_HOST = process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is'
+
+// Returns true only when the visitor has granted analytics cookie consent.
+// Mirrors the consent contract used by Analytics.tsx (the cookie banner).
+function hasAnalyticsConsent(): boolean {
+  if (typeof window === 'undefined') return false
+  try {
+    const stored = localStorage.getItem('cookie_consent')
+    if (!stored) return false
+    const parsed = JSON.parse(stored)
+    const oneYear = 365 * 24 * 60 * 60 * 1000
+    if (Date.now() - parsed.timestamp >= oneYear) return false
+    return parsed.analytics === true
+  } catch {
+    return false
+  }
+}
 
 // Type declarations for Umami
 declare global {
@@ -82,40 +99,68 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
     };
 
     initializeSession();
+  }, [])
 
-    // Load Umami script
-    const script = document.createElement('script')
-    script.async = true
-    script.defer = true
-    script.src = `${UMAMI_HOST}/script.js`
-    script.setAttribute('data-website-id', UMAMI_WEBSITE_ID)
-    script.setAttribute('data-auto-track', 'false')
+  // Load the Umami script only when:
+  //   1. a website ID is configured (env-gated — no hardcoded ID in source),
+  //   2. we are in production (matches Analytics.tsx's loadAnalytics gate), and
+  //   3. the visitor has granted analytics cookie consent (same banner as GA).
+  // Until consent is resolved we poll the consent flag, since the cookie banner
+  // (Analytics.tsx) writes localStorage in the same tab without emitting an event.
+  useEffect(() => {
+    if (!UMAMI_WEBSITE_ID) return
+    if (process.env.NODE_ENV !== 'production') return
 
-    script.onload = () => {
-      const checkUmami = () => {
-        if (window.umami) {
-          setIsReady(true)
-          trackEvent('session_started', {
-            session_id: currentUser.sessionId,
-            is_new_session: !localStorage.getItem('umami_session_returning'),
-            has_existing_user: !!localStorage.getItem('umami_user_id'),
-          })
-          localStorage.setItem('umami_session_returning', 'true')
-        } else {
-          setTimeout(checkUmami, 100)
+    let script: HTMLScriptElement | null = null
+    let consentPoll: ReturnType<typeof setInterval> | undefined
+
+    const injectScript = () => {
+      script = document.createElement('script')
+      script.async = true
+      script.defer = true
+      script.src = `${UMAMI_HOST}/script.js`
+      script.setAttribute('data-website-id', UMAMI_WEBSITE_ID as string)
+      script.setAttribute('data-auto-track', 'false')
+
+      script.onload = () => {
+        const checkUmami = () => {
+          if (window.umami) {
+            setIsReady(true)
+            trackEvent('session_started', {
+              session_id: currentUser.sessionId,
+              is_new_session: !localStorage.getItem('umami_session_returning'),
+              has_existing_user: !!localStorage.getItem('umami_user_id'),
+            })
+            localStorage.setItem('umami_session_returning', 'true')
+          } else {
+            setTimeout(checkUmami, 100)
+          }
         }
+        checkUmami()
       }
-      checkUmami()
+
+      script.onerror = () => {
+        console.warn('Failed to load Umami analytics')
+      }
+
+      document.head.appendChild(script)
     }
 
-    script.onerror = () => {
-      console.warn('Failed to load Umami analytics')
+    if (hasAnalyticsConsent()) {
+      injectScript()
+    } else {
+      consentPoll = setInterval(() => {
+        if (hasAnalyticsConsent()) {
+          if (consentPoll) clearInterval(consentPoll)
+          consentPoll = undefined
+          injectScript()
+        }
+      }, 1000)
     }
-
-    document.head.appendChild(script)
 
     return () => {
-      if (script.parentNode) {
+      if (consentPoll) clearInterval(consentPoll)
+      if (script && script.parentNode) {
         script.parentNode.removeChild(script)
       }
     }

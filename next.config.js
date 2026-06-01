@@ -80,14 +80,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.spectra.shield.network',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.spectra.shield.network',
-      },
-      {
-        protocol: 'https',
         hostname: 'githubusercontent.com',
       },
       {

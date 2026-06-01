@@ -88,6 +88,8 @@ No environment variables are required to run the site locally, and there is **no
 | `NEXT_PUBLIC_SITE_URL` | Canonical/absolute URLs (set to `https://spectra-audit.com` in deploys) | No (defaults are fine locally) |
 | `NEXT_PUBLIC_GA_ID` | Google Analytics 4 measurement ID; analytics only loads in production **and** after cookie consent | No |
 | `NEXT_PUBLIC_ANALYTICS_ENDPOINT` | Optional custom analytics endpoint for event forwarding | No |
+| `NEXT_PUBLIC_UMAMI_WEBSITE_ID` | Umami analytics website ID; Umami only loads in production **and** after cookie consent, and is fully disabled if unset | No |
+| `NEXT_PUBLIC_UMAMI_HOST` | Umami script host (defaults to `https://cloud.umami.is`) | No |
 
 To set any of these locally, create a `.env.local` file (it is git-ignored) and add the variables you need:
 

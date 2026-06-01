@@ -25,7 +25,7 @@ If you are unsure whether something is in scope, report it anyway and we will ro
 
 **Please report security issues privately. Do not open a public GitHub issue, pull request, or discussion for a suspected vulnerability**, as that could put users at risk before a fix is available.
 
-Email us at **security@spectra-audit.com** with the details. If you would like to encrypt your report or need an alternative channel, mention that in an initial (non-sensitive) message and we will coordinate.
+Email us at **support@spectra-audit.com** with the details. If you would like to encrypt your report or need an alternative channel, mention that in an initial (non-sensitive) message and we will coordinate.
 
 ### What to include
 
