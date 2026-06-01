@@ -70,3 +70,8 @@ next-env.d.ts
 # AI assistant config & guidance (kept local, not published)
 .claude/
 CLAUDE.md
+
+# One-off AI/dev helper scripts and test artifacts (kept local, not published)
+/add_translations.js
+/add_whitepaper_translations.py
+/mobile-test.html
