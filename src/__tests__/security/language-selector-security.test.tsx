@@ -411,8 +411,8 @@ describe('LanguageSelector Security Tests', () => {
 
     it('should handle large numbers of locales efficiently', () => {
       const manyLocales = Array.from({ length: 1000 }, (_, i) => `locale-${i}`)
-      const manyLocaleNames = {}
-      const manyLocaleFlags = {}
+      const manyLocaleNames: Record<string, { native: string; english: string }> = {}
+      const manyLocaleFlags: Record<string, string> = {}
 
       manyLocales.forEach(locale => {
         manyLocaleNames[locale] = { native: locale, english: locale }

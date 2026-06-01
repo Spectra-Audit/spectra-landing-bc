@@ -73,11 +73,6 @@ jest.mock('@/components/ui/ThemeToggle', () => ({
   default: () => <div data-testid="theme-toggle">Theme Toggle</div>,
 }))
 
-jest.mock('@/app/[locale]/TrendingProtocols', () => ({
-  __esModule: true,
-  default: () => <div data-testid="trending-protocols">Trending Protocols</div>,
-}))
-
 jest.mock('lucide-react', () => ({
   Activity: () => <div data-testid="activity-icon" />,
   X: () => <div data-testid="x-icon" />,

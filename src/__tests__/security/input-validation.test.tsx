@@ -61,11 +61,6 @@ jest.mock('@/components/ui/ThemeToggle', () => ({
   default: () => <div data-testid="theme-toggle">Theme Toggle</div>,
 }))
 
-jest.mock('../../app/[locale]/TrendingProtocols', () => ({
-  __esModule: true,
-  default: () => <div data-testid="trending-protocols">Trending Protocols</div>,
-}))
-
 describe('Input Validation Security Tests', () => {
   beforeEach(() => {
     // Clear all mocks before each test
@@ -271,16 +266,16 @@ describe('Input Validation Security Tests', () => {
       const originalClearInterval = window.clearInterval
       const intervals = new Set<number>()
 
-      window.setInterval = jest.fn((callback, delay) => {
-        const id = originalSetInterval(callback, delay) as number
+      window.setInterval = jest.fn((callback: Parameters<typeof originalSetInterval>[0], delay?: number) => {
+        const id = originalSetInterval(callback, delay) as unknown as number
         intervals.add(id)
         return id
-      })
+      }) as unknown as typeof window.setInterval
 
-      window.clearInterval = jest.fn((id) => {
-        intervals.delete(id)
+      window.clearInterval = jest.fn((id?: number) => {
+        if (id !== undefined) intervals.delete(id)
         return originalClearInterval(id)
-      })
+      }) as unknown as typeof window.clearInterval
 
       unmount()
 
