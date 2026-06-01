@@ -3,16 +3,23 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import LanguageSelector from '@/components/ui/LanguageSelector'
 
-// Mock next-intl and next/navigation
+// next/navigation is mocked once, at module scope, BEFORE LanguageSelector is
+// imported. Per-test overrides go through the mutable `mockPathname` variable
+// (and the shared `mockPush` spy) rather than `jest.doMock`, because the
+// component is imported statically above: a `jest.doMock` here (without
+// `jest.resetModules()` + a dynamic re-import) never reaches the already-loaded
+// module, so the spy would record zero calls. The mutable-variable pattern lets
+// each test drive `usePathname()` and observe `router.push()` for real.
+let mockPathname = '/test-path'
+const mockPush = jest.fn()
+
 jest.mock('next-intl', () => ({
   useLocale: () => 'en',
 }))
 
 jest.mock('next/navigation', () => ({
-  useRouter: () => ({
-    push: jest.fn(),
-  }),
-  usePathname: () => '/test-path',
+  useRouter: () => ({ push: mockPush }),
+  usePathname: () => mockPathname,
 }))
 
 jest.mock('@/i18n/config', () => ({
@@ -67,16 +74,12 @@ jest.mock('lucide-react', () => ({
 describe('LanguageSelector Security Tests', () => {
   beforeEach(() => {
     jest.clearAllMocks()
+    mockPathname = '/test-path'
   })
 
   describe('Path Traversal Prevention', () => {
     it('should sanitize pathname to prevent path traversal attacks', async () => {
-      const mockPush = jest.fn()
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => '/../../../etc/passwd',
-        useLocale: () => 'en',
-      }))
+      mockPathname = '/../../../etc/passwd'
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -100,12 +103,7 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should handle encoded path traversal attempts', async () => {
-      const mockPush = jest.fn()
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => '/%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd',
-        useLocale: () => 'en',
-      }))
+      mockPathname = '/%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd'
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -126,12 +124,7 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should handle null byte injection attempts', async () => {
-      const mockPush = jest.fn()
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => '/path\x00malicious',
-        useLocale: () => 'en',
-      }))
+      mockPathname = '/path\x00malicious'
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -151,12 +144,7 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should normalize Unicode path traversal attempts', async () => {
-      const mockPush = jest.fn()
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => '/path\u202e..malicious', // Right-to-left override
-        useLocale: () => 'en',
-      }))
+      mockPathname = '/path‮..malicious' // Right-to-left override
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -178,13 +166,8 @@ describe('LanguageSelector Security Tests', () => {
 
   describe('URL Manipulation Prevention', () => {
     it('should handle XSS in pathname', async () => {
-      const mockPush = jest.fn()
       const xssPath = '/<script>alert("xss")</script>'
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => xssPath,
-        useLocale: () => 'en',
-      }))
+      mockPathname = xssPath
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -196,7 +179,7 @@ describe('LanguageSelector Security Tests', () => {
         expect(screen.getByTestId('card')).toBeInTheDocument()
       })
 
-      const chineseOption = screen.getByText('中文')
+      const chineseOption = screen.getByText('简体中文')
       await user.click(chineseOption)
 
       expect(mockPush).toHaveBeenCalledWith('/zh')
@@ -205,13 +188,8 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should handle JavaScript protocol injection', async () => {
-      const mockPush = jest.fn()
       const jsPath = 'javascript:alert("xss")'
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => jsPath,
-        useLocale: () => 'en',
-      }))
+      mockPathname = jsPath
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -231,13 +209,8 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should handle data URL injection', async () => {
-      const mockPush = jest.fn()
       const dataUrl = 'data:text/html,<script>alert("xss")</script>'
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => dataUrl,
-        useLocale: () => 'en',
-      }))
+      mockPathname = dataUrl
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -259,14 +232,9 @@ describe('LanguageSelector Security Tests', () => {
 
   describe('Regex Security', () => {
     it('should prevent ReDoS attacks with complex pathnames', async () => {
-      const mockPush = jest.fn()
       // Create a pathname that could cause catastrophic backtracking
       const complexPath = '/' + 'a'.repeat(1000) + '(' + 'a'.repeat(1000) + ')*' + 'b'.repeat(1000)
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => complexPath,
-        useLocale: () => 'en',
-      }))
+      mockPathname = complexPath
 
       const startTime = Date.now()
       const user = userEvent.setup()
@@ -290,12 +258,7 @@ describe('LanguageSelector Security Tests', () => {
     })
 
     it('should handle invalid locale patterns safely', async () => {
-      const mockPush = jest.fn()
-      jest.doMock('next/navigation', () => ({
-        useRouter: () => ({ push: mockPush }),
-        usePathname: () => '/invalid-locale-with-dashes-and-numbers-123',
-        useLocale: () => 'en',
-      }))
+      mockPathname = '/invalid-locale-with-dashes-and-numbers-123'
 
       const user = userEvent.setup()
       render(<LanguageSelector />)
@@ -310,8 +273,11 @@ describe('LanguageSelector Security Tests', () => {
       const germanOption = screen.getByText('Deutsch')
       await user.click(germanOption)
 
-      expect(mockPush).toHaveBeenCalledWith('/de')
-      // Should handle gracefully without errors
+      // Under `as-needed` locale prefixing the leading segment is a legitimate
+      // (non-locale) in-app route, not a locale to strip, so it is preserved
+      // under the new locale. The point is it is handled safely — no traversal,
+      // no throw, a clean '/'-anchored route.
+      expect(mockPush).toHaveBeenCalledWith('/de/invalid-locale-with-dashes-and-numbers-123')
     })
   })
 
@@ -406,9 +372,10 @@ describe('LanguageSelector Security Tests', () => {
           expect(screen.getByTestId('card')).toBeInTheDocument()
         })
 
-        // Close dropdown
-        const clickOutside = document.body
-        await user.click(clickOutside)
+        // Close the dropdown by toggling the trigger again (the dropdown closes
+        // via its own overlay/trigger, not a bare document.body click), so each
+        // iteration starts from a closed state and the open/close cycle repeats.
+        await user.click(languageButton)
       }
 
       // Should complete without memory issues
