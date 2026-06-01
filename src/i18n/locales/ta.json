@@ -1,130 +1,139 @@
 {
   "metadata": {
-    "title": "Spectra - AI ஆதரவு ப்ளாக்செயின் பாதுகாப்பு தணிக்கை",
-    "description": "ஒரு தெளிவான பாதுகாப்பு தரநிலை - அதன் பின்னால் ஆதாரங்களுடன். நீங்கள் சரிபார்க்கக்கூடிய நேரடி AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
-    "keywords": "ப்ளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு",
+    "title": "Spectra - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
+    "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
+    "keywords": "பிளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு",
     "og": {
-      "title": "Spectra - AI ஆதரவு ப்ளாக்செயின் பாதுகாப்பு தணிக்கை",
-      "description": "ஒரு தெளிவான பாதுகாப்பு தரநிலை - அதன் பின்னால் ஆதாரங்களுடன். நீங்கள் சரிபார்க்கக்கூடிய நேரடி AI தணிக்கைகள்.",
+      "title": "Spectra - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
+      "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள்.",
       "imageAlt": "Spectra AI பாதுகாப்பு தணிக்கை தளம்"
     }
   },
   "meta": {
-    "title": "Spectra - AI ஆதரவு ப்ளாக்செயின் பாதுகாப்பு தணிக்கை",
-    "description": "ஒரு தெளிவான பாதுகாப்பு தரநிலை - அதன் பின்னால் ஆதாரங்களுடன். நீங்கள் சரிபார்க்கக்கூடிய நேரடி AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
-    "keywords": "ப்ளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு"
+    "title": "Spectra - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
+    "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
+    "keywords": "பிளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு"
   },
   "nav": {
     "features": "அம்சங்கள்",
     "pricing": "விலை நிர்ணயம்",
-    "documentation": "ஆவணமாக்கம்",
+    "documentation": "ஆவணப்படுத்தல்",
     "whitepaper": "Whitepaper",
     "contact": "தொடர்பு",
-    "getStarted": "தொடங்கு",
+    "getStarted": "தொடங்குங்கள்",
     "language": "மொழி",
-    "launchApp": "பயன்பாட்டைத் தொடங்கு"
+    "launchApp": "செயலி தொடங்கவும்"
+  },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "மொழி",
+      "themeLabel": "தீம்",
+      "connectWithUs": "எங்களுடன் இணைக்கவும்",
+      "freeAnalysis": "இலவச உடனடி பகுப்பாய்வு • பதிவு தேவையில்லை"
+    }
   },
   "hero": {
     "authority": {
-      "securityFirst": "பாதுகாப்பு முன்னணிஈ கட்டமைந்தம்",
-      "bestPractices": "துல்லியமான நடைகள்",
+      "securityFirst": "பாதுகாப்பு முதலில் கட்டிடம்",
+      "bestPractices": "தொழில் சிறந்த நடைமுறைகள்",
       "openSource": "திறந்த மூலம்"
     },
-    "headline": "முதலீடு செய்வதற்கு முன் திட்ட பாதுகாப்பை ஆராயுங்கள்",
-    "subheadline": "1000+ DeFi நெறிமுறைகளுக்கு பல பரிமாண பாதுகாப்பு மதிப்பெண்கள். சரிபார்க்கக்கூடிய விரிவான பகுப்பாய்வுடன் முதலீடு செய்வதற்கு முன் ஆபத்துகளைப் புரிந்துகொள்ளுங்கள்.",
+    "headline": "முதலீடு செய்வதற்கு முன்பு திட்ட பாதுகாப்பை ஆராயுங்கள்",
+    "subheadline": "பல DeFi சுற்றுச்சூழல் முறைகள் முழுவதும் பல பரிமாண பாதுகாப்பு மதிப்பெண்கள். சரிபார்க்கக்கூடிய விரிவான பகுப்பாய்வுடன் முதலீட்டிற்கு முன் அபாயங்களை புரிந்து கொள்ளுங்கள்.",
     "addressPlaceholder": "உங்கள் Ethereum முகவரியை உள்ளிடவும்",
     "getAuditReport": "தணிக்கை அறிக்கையைப் பெறுங்கள்",
     "getReport": "அறிக்கையைப் பெறுங்கள்",
     "trustMetrics": {
       "activeUsers": "செயலில் உள்ள பயனர்கள்",
-      "accuracy": "துல்லியம்",
-      "scanTime": "ஸ்கேன் நேரம்",
+      "accuracy": "அறியப்பட்ட பாதிப்பு கண்டறிதல்",
+      "scanTime": "நிமிட வழக்கமான நேரம்",
       "protectedUsers": "பாதுகாக்கப்பட்ட பயனர்கள்",
-      "uptime": "செயல்படுத்த நேரம்",
-      "detectionRate": "கண்டறியல் விகிதம்",
-      "threatTypes": "அச்சுறுத்தி வகைகள்",
-      "projectsAnalyzed": "பகுப்பாய்வு செய்யப்பட்ட திட்டங்கள்",
+      "uptime": "செயல்படும் நேரம்",
+      "detectionRate": "அறியப்பட்ட பாதிப்பு கண்டறிதல்",
+      "threatTypes": "மதிப்பெண் பரிமாணங்கள்",
+      "projectsAnalyzed": "மதிப்பெண் பரிமாணங்கள்",
       "riskFlagsIdentified": "அடையாளம் காணப்பட்ட ஆபத்து கொடிகள்"
     },
     "cta": {
       "primary": "திட்டங்களை ஆராயுங்கள்",
-      "secondary": "மதிப்பெண்கள் எப்படி வேலை செய்கின்றன என்று கற்றுக்கொள்ளுங்கள்"
+      "secondary": "மதிப்பெண்கள் எவ்வாறு வேலை செய்கின்றன என்பதைக் கற்றுக்கொள்ளுங்கள்"
     },
     "riskWarning": {
-      "threatsPrevented": "அச்சுறுத்தல்கள் தொடர்ந்து தடுக்கப்படுகின்றன",
-      "message": "அடுத்த exploit ஐ எதிர்நோக்கி காத்திருக்க வேண்டாம். நிகழ்நேர பாதுகாப்பு பாதிப்புகள் பயன்படுத்தப்படுவதற்கு முன் தடுக்கிறது."
+      "threatsPrevented": "பொதுவான பாதிப்பு வகைகள் கண்டறியப்பட்டுள்ளன",
+      "message": "மூலதனத்தை ஈடுபடுத்துவதற்கு முன் பாதுகாப்பு அபாயங்களை புரிந்துகொள்ளுங்கள். தேவைக்கேற்ற AI பகுப்பாய்வு ஒரு திட்டத்தில் பொதுவான பாதிப்பு வடிவங்களையும் குவியப்பு அபாயங்களையும் வெளிப்படுத்த உதவுகிறது."
     },
     "socialProof": {
-      "trustedBy": "முன்னணி நெறிமுறைகளால் நம்பப்படுகிறது",
-      "defiLeader": "DeFi பாதுகாப்பு தலைவர்",
-      "protocols": "1000+ ஒருங்கிணைந்த நெறிமுறைகள்"
+      "trustedBy": "Web3 சுற்றுச்சூழலுக்காக கட்டப்பட்டது",
+      "defiLeader": "DeFi பாதுகாப்பு நுண்ணறிவுகள்",
+      "protocols": "பல-சேயின் ஆதரவு",
+      "disclaimer": "திறந்த-மூல தளம்"
     },
     "page": {
-      "heroTitle": "Smart Contract Security Audits",
-      "heroSubtitle": "in Seconds, Not Weeks",
-      "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security audits in under 30 seconds. No registration required.",
-      "securityAuditTitle": "Professionally Audited & Verified",
-      "securityAuditSubtitle": "Security you can trust, verified by leading experts",
-      "thirdPartyAudited": "Third-Party Audited",
-      "thirdPartyAuditedDesc": "Security reviewed by leading crypto audit firms",
-      "verified": "Verified",
-      "openSource": "Open Source",
-      "openSourceDesc": "Publicly verifiable code on GitHub",
-      "transparent": "Transparent",
-      "trustMessage": "Our codebase has undergone comprehensive security audits by reputable blockchain security firms. We're committed to continuous security improvements and transparency.",
-      "featuresTitle": "Security audits that actually work",
-      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
-      "realTimeMonitoring": "Real-time AI Monitoring",
-      "realTimeMonitoringDesc": "Continuous AI-powered scanning detects vulnerabilities the moment they're introduced. Get instant alerts when code changes affect your security posture, with 30-second average scan time.",
-      "avgScanTime": "30s",
-      "avgScanTimeLabel": "Avg. scan time",
-      "fasterThanAudits": "2.4x",
-      "fasterThanAuditsLabel": "Faster than audits",
-      "automated": "100%",
-      "automatedLabel": "Automated",
-      "verifiableEvidence": "Verifiable Evidence",
-      "verifiableEvidenceDesc": "Every security claim includes reproducible AI diffs and evidence. See exactly how we found each issue with 100% transparency.",
-      "openSourceCodebase": "Open source codebase",
-      "publicGitHubRepo": "Public GitHub repository",
-      "comprehensiveCoverage": "Comprehensive Coverage",
-      "comprehensiveCoverageDesc": "Advanced AI models catch more vulnerability types than traditional auditors. From smart contract bugs to economic attack vectors.",
-      "vulnerabilityCategories": "15+ vulnerability categories",
-      "detectionRate": "95% detection rate",
-      "productionReady": "Production-Ready Security",
-      "productionReadyDesc": "Built for developers who need reliable smart contract security analysis. Third-party audited and open source, with verifiable audit reports.",
-      "thirdPartyVerified": "Third-Party Verified",
-      "sourceCode": "Source Code",
-      "scanTime": "<30 Second Scans",
-      "aiPoweredAnalysis": "AI-Powered Analysis",
-      "aiPoweredAnalysisDesc": "Fast, automated security scanning",
-      "highAccuracy": "High Accuracy",
-      "highAccuracyDesc": "AI-verified results you can trust",
-      "multiDimensional": "Multi-Dimensional",
-      "multiDimensionalDesc": "5-factor security scoring",
-      "liveStatusTitle": "Comprehensive security analysis",
-      "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
-      "scanTimeValue": "<30s",
-      "scanTimeLabel": "Average scan time",
-      "scanTimeBadge": "Fast analysis",
+      "heroTitle": "ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு தணிக்கைகள்",
+      "heroSubtitle": "வாரங்களில் அல்ல, நொடிகளில்",
+      "heroDescription": "சரிபார்க்கக்கூடிய ஆதாரத்துடன் AI-இயக்கப்படும் ஸ்மார்ட் ஒப்பந்தம் பகுப்பாய்வு. 20 நிமிடங்களுக்குள் விரிவான பாதுகாப்பு பகுப்பாய்வைப் பெறுங்கள். பதிவு தேவையில்லை.",
+      "securityAuditTitle": "திறந்த மூலம் — பொதுவில் சரிபார்க்கக்கூடியது",
+      "securityAuditSubtitle": "நீங்கள் ஆராய்ந்து, தணிக்கை செய்து, மீண்டும் உருவாக்கக்கூடிய வெளிப்படையான முறை",
+      "thirdPartyAudited": "திறந்த மூலம்",
+      "thirdPartyAuditedDesc": "ஒவ்வொரு கண்டுபிடிப்பும் அதன் பின்னால் உள்ள ஆதாரம் மற்றும் காரணத்துடன் வருகிறது",
+      "verified": "சரிபார்க்கக்கூடியது",
+      "openSource": "திறந்த மூலம்",
+      "openSourceDesc": "GitHub இல் பொதுவில் சரிபார்க்கக்கூடிய குறியீடு மற்றும் பகுப்பாய்வு பைப்லைன்",
+      "transparent": "வெளிப்படையானது",
+      "trustMessage": "பொதுவில் சரிபார்க்கக்கூடிய தணிக்கை முறையுடன் திறந்த-மூல தளம்",
+      "featuresTitle": "அடுத்த தலைமுறை பாதுகாப்பு தணிக்கைகள்",
+      "featuresSubtitle": "பாரம்பரிய தணிக்கைகள் மெதுவானவை, செலவானவை மற்றும் விரைவாக பழுதுபடுகின்றன. Spectra உங்கள் குறியீட்டுடன் தொடர்ந்து, சரிபார்க்கக்கூடிய பாதுகாப்பு கண்காணிப்பை வழங்குகிறது.",
+      "realTimeMonitoring": "தேவை-நேர AI பகுப்பாய்வு",
+      "realTimeMonitoringDesc": "திட்டங்கள் சமர்ப்பிக்கப்படும்போது தேவை-நேர AI-இயக்கப்படும் பகுப்பாய்வு. விரிவான 5-பரிமாண பாதுகாப்பு மதிப்பாய்வு ஒரு தணிக்கைக்கு 20 நிமிடங்களுக்குள் முடிகிறது.",
+      "avgScanTime": "≤20நி",
+      "avgScanTimeLabel": "வழக்கமான தணிக்கை நேரம்",
+      "fasterThanAudits": ">2.4×",
+      "fasterThanAuditsLabel": "பாரம்பரிய தணிக்கைகளை விட வேகமானது",
+      "automated": "முழுமையாக",
+      "automatedLabel": "AI-ஒருங்கிணைக்கப்பட்ட பகுப்பாய்வு",
+      "verifiableEvidence": "சரிபார்க்கக்கூடிய ஆதாரங்கள்",
+      "verifiableEvidenceDesc": "ஒவ்வொரு பாதுகாப்பு கோரிக்கையும் மீண்டும் உருவாக்கக்கூடிய AI diffs மற்றும் ஆதாரங்களைக் கொண்டுள்ளது. முழுமையாக வெளிப்படையான முறையுடன் ஒவ்வொரு பிரச்சினையையும் எப்படி கண்டுபிடித்தோம் என்பதை சரியாகப் பாருங்கள்.",
+      "openSourceCodebase": "திறந்த மூல குறியீட்டுத்தளம்",
+      "publicGitHubRepo": "பொது GitHub களஞ்சியம்",
+      "comprehensiveCoverage": "விரிவான கவரேஜ்",
+      "comprehensiveCoverageDesc": "மேம்படுத்தப்பட்ட AI மாதிரிகள் அறியப்பட்ட பாதிப்பு வகுப்புகளின் பரந்த வரம்பை கண்டறிகின்றன — ஸ்மார்ட் ஒப்பந்தம் பிழைகள், பொருளாதார தாக்குதல் திசைகள் மற்றும் செறிவு அபாயங்கள்.",
+      "vulnerabilityCategories": "15+ பாதிப்பு வகைகள்",
+      "detectionRate": "அறியப்பட்ட பிரச்சினைகளில் 95% வரை கண்டறிதல்",
+      "productionReady": "சரிபார்க்கக்கூடிய மற்றும் திறந்த மூலம்",
+      "productionReadyDesc": "தணிக்கையின் ஒவ்வொரு படியையும் ஆராய, மீண்டும் உருவாக்க மற்றும் சரிபார்க்க விரும்பும் டெவலப்பர்கள் மற்றும் ஆராய்ச்சியாளர்களுக்காக கட்டப்பட்ட திறந்த-மூல பகுப்பாய்வு பைப்லைன்.",
+      "thirdPartyVerified": "திறந்த மூலம்",
+      "sourceCode": "மூலக் குறியீடு",
+      "scanTime": "≤20-நிமிட தணிக்கைகள்",
+      "aiPoweredAnalysis": "AI-இயக்கப்படும் பகுப்பாய்வு",
+      "aiPoweredAnalysisDesc": "வேகமான, தானியங்கி பாதுகாப்பு ஸ்கேனிங்",
+      "highAccuracy": "உயர் துல்லியம்",
+      "highAccuracyDesc": "நீங்கள் நம்பக்கூடிய AI-சரிபார்க்கப்பட்ட முடிவுகள்",
+      "multiDimensional": "பல பரிமாண",
+      "multiDimensionalDesc": "5-காரணி பாதுகாப்பு மதிப்பெண்",
+      "liveStatusTitle": "விரிவான பாதுகாப்பு பகுப்பாய்வு",
+      "liveStatusSubtitle": "முழுமையான ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு மதிப்பீட்டிற்கான பல பரிமாண மதிப்பெண்.",
+      "scanTimeValue": "≤20நி",
+      "scanTimeLabel": "வழக்கமான தணிக்கை நேரம்",
+      "scanTimeBadge": "வேகமான பகுப்பாய்வு",
       "dimensionsValue": "5",
-      "dimensionsLabel": "Security dimensions",
-      "dimensionsBadge": "Multi-factor scoring",
+      "dimensionsLabel": "பாதுகாப்பு பரிமாணங்கள்",
+      "dimensionsBadge": "பல காரணி மதிப்பெண்",
       "aiPoweredValue": "AI",
-      "aiPoweredLabel": "Powered analysis",
-      "aiPoweredBadge": "Smart detection",
-      "transparentValue": "100%",
-      "transparentLabel": "Transparent methodology",
-      "transparentBadge": "Verifiable results",
-      "systemReady": "System ready • Start your audit in seconds",
-      "finalCtaTitle": "Security in seconds. Ready to verify?",
-      "finalCtaSubtitle": "Don't wait for the next exploit. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
-      "noCreditCardRequired": "No credit card required • 30-second setup",
-      "quickSetup": "Quick Setup",
-      "quickSetupDesc": "Get started with comprehensive security audits",
-      "expertSupport": "Expert Support",
-      "expertSupportDesc": "Security team available when you need help",
-      "communityDriven": "Community-Driven",
-      "communityDrivenDesc": "Open source with transparent development"
+      "aiPoweredLabel": "இயக்கப்படும் பகுப்பாய்வு",
+      "aiPoweredBadge": "ஸ்மார்ட் கண்டறிதல்",
+      "transparentValue": "முழுமையாக",
+      "transparentLabel": "வெளிப்படையான முறை",
+      "transparentBadge": "சரிபார்க்கக்கூடிய முடிவுகள்",
+      "systemReady": "சிஸ்டம் தயார் • நொடிகளில் உங்கள் தணிக்கையைத் தொடங்கவும்",
+      "finalCtaTitle": "நொடிகளில் பாதுகாப்பு. சரிபார்க்கத் தயாரா?",
+      "finalCtaSubtitle": "முன்னெச்சரிக்கை பாதுகாப்புடன் பாதிப்புகளுக்கு முன்னே செல்லுங்கள். இன்றே Spectra உடன் தொடங்கி, சரிபார்க்கக்கூடிய நிகழ்நேர பாதுகாப்பு கண்காணிப்புடன் உங்கள் முதலீடுகளைப் பாதுகாக்கவும்.",
+      "noCreditCardRequired": "கிரெடிட் கார்டு தேவையில்லை • விரைவான அமைப்பு",
+      "quickSetup": "விரைவான அமைப்பு",
+      "quickSetupDesc": "விரிவான பாதுகாப்பு தணிக்கைகளுடன் தொடங்கவும்",
+      "expertSupport": "ஆவணப்படுத்தல் & சமூக ஆதரவு",
+      "expertSupportDesc": "கண்டுபிடிப்புகளை விளக்க உதவும் திறந்த ஆவணப்படுத்தல் மற்றும் சமூக வளங்கள்",
+      "communityDriven": "சமூகம்-உந்துதல்",
+      "communityDrivenDesc": "வெளிப்படையான வளர்ச்சியுடன் திறந்த மூலம்"
     }
   },
   "howScoresWork": {
@@ -180,13 +189,13 @@
       "title": "அடக்க முதலீட்டாளர்கள்",
       "description": "உங்கள் கிரிப்டோ முதலீடுகளுக்கு பாதுகாப்பான, குறைந்த பராமரிப்பு பாதுகாப்பு.",
       "benefits": [
-        "தானியங்கி 24/7 கண்காணிப்பு",
+        "தேவைக்கேற்ற AI பாதுகாப்பு பகுப்பாய்வு",
         "எளிய பாதுகாப்பு தரவரிசைகள் (A-F)",
         "உடனடி ஆபத்து எச்சரிக்கைகள்",
         "தொழில்நுட்ப அறிவு தேவையில்லை"
       ],
       "cta": "எனது சொத்துகளைப் பாதுகாக்கவும்",
-      "ctaSubtext": "30 நொடிகளில் பாதுகாப்பைத் தொடங்கவும்"
+      "ctaSubtext": "வாரங்களில் அல்ல, நிமிடங்களில் நுண்ணறிவைப் பெறுங்கள்"
     },
     "powerAnalyst": {
       "name": "மேம்பட்ட பகுப்பாய்வு",
@@ -204,348 +213,414 @@
     "skip": "தவிர்த்து எளிய பாதுகாப்புடன் தொடரவும்"
   },
   "features": {
-    "title": "உண்மையில் வேலை செய்யும் பாதுகாப்பு தணிக்கைகள்",
-    "subtitle": "பாரம்பரிய தணிக்கைகள் மெதுவானவை, செலவானவை மற்றும் விரைவாக பழுதுபடுகின்றன. Spectra உங்கள் குறியீட்டுடன் தொடர்ந்து, சரிபார்க்கக்கூடிய பாதுகாப்பு கண்காணிப்பை வழங்குகிறது.",
+    "title": "அடுத்த தலைமுறை பாதுகாப்பு தணிக்கைகள்",
+    "subtitle": "பாரம்பரிய தணிக்கைகள் மெதுவானவை மற்றும் செலவானவை. Spectra நீங்கள் ஆராய்ந்து மீண்டும் உருவாக்கக்கூடிய AI-ஒருங்கிணைக்கப்பட்ட, சரிபார்க்கக்கூடிய பாதுகாப்பு பகுப்பாய்வை வழங்குகிறது.",
     "monitoring": {
-      "title": "நிகழ்நேர கண்காணிப்பு",
-      "description": "தொடர்ச்சியான AI-இயக்கப்படும் ஸ்கேனிங் பாதிப்புகள் தோன்றும் போதே அடையாளம் காணும். குறியீடு மாற்றங்கள் உங்கள் பாதுகாப்பு நிலையை பாதிக்கும் போது உடனடி எச்சரிக்கைகளைப் பெறுங்கள்.",
-      "metric": "சராசரி 30-நொடி ஸ்கேன் நேரம்",
-      "comparison": "பாரம்பரிய தணிக்கைகளை விட 2.4x வேகமானது"
+      "title": "வேகமான AI பகுப்பாய்வு",
+      "description": "AI-ஒருங்கிணைக்கப்பட்ட பகுப்பாய்வு 5 பரிமாணங்களில் இணையாக இயங்குகிறது — குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு — கண்காணிக்கக்கூடிய ஆதாரத்துடன் ஒரு கூட்டு மதிப்பெண்ணை உருவாக்குகிறது.",
+      "metric": "வழக்கமாக ஒரு தணிக்கைக்கு 20 நிமிடங்களுக்கும் குறைவாக",
+      "comparison": "பாரம்பரிய கைமுறை தணிக்கைகளை விட 2.4× க்கும் அதிக வேகமானது"
     },
     "verifiable": {
       "title": "சரிபார்க்கக்கூடிய ஆதாரங்கள்",
-      "description": "ஒவ்வொரு பாதுகாப்பு கோரிக்கையும் நீங்கள் சரிபார்க்கக்கூடிய மறு உருவாக்கக்கூடிய AI diffs மற்றும் ஆதாரங்களைக் கொண்டுள்ளது. தணிக்கை அறிக்கைகளில் கண்ணாடி நம்பிக்கை வைக்க வேண்டாம் - ஒவ்வொரு பிரச்சினையையும் எப்படி கண்டுபிடித்தோம் என்பதைச் சரியாகப் பாருங்கள்.",
-      "metric": "100% வெளிப்படையான முறை",
+      "description": "ஒவ்வொரு கண்டுபிடிப்பும் அதன் பின்னால் உள்ள காரணம், மூல தரவு மற்றும் மீண்டும் உருவாக்கக்கூடிய ஆதாரங்களை உள்ளடக்கியது. ஒவ்வொரு பிரச்சினையும் எப்படி அடையாளம் காணப்பட்டது என்பதைச் சரியாகப் பாருங்கள் — கறுப்பு பெட்டிகள் இல்லை.",
+      "metric": "முழுமையாக வெளிப்படையான முறை",
       "detail": "பொது GitHub களஞ்சியத்துடன் திறந்த மூலம்"
     },
     "comprehensive": {
       "title": "விரிவான கவரேஜ்",
-      "description": "மேம்படுத்தப்பட்ட AI மாதிரிகள் மனித தணிக்கையாளர்களை விட அதிக பாதிப்பு வகைகளைக் கைப்பற்றுகின்றன. ஸ்மார்ட் ஒப்பந்தம் பிழைகளிலிருந்து பொருளாதார தாக்குதல் திசைகள் வரை, நாங்கள் உங்களை கவர் செய்கிறோம்.",
+      "description": "மேம்படுத்தப்பட்ட AI மாதிரிகள் அறியப்பட்ட பாதிப்பு வகுப்புகளின் பரந்த வரம்பை கண்டறிகின்றன — ஸ்மார்ட் ஒப்பந்தம் பிழைகளிலிருந்து பொருளாதார தாக்குதல் திசைகள் மற்றும் செறிவு அபாயங்கள் வரை.",
       "metric": "15+ பாதிப்பு வகைகள்",
-      "detail": "வரிசைப்படுத்துவதற்கு முன் அறிந்த exploits இன் 95% கண்டறிகிறது"
+      "detail": "வரிசைப்படுத்துவதற்கு முன் அறிந்த exploits இன் 95% வரை கண்டறிய உதவுகிறது"
     },
     "trustIndicators": {
-      "monitoring": "24/7 கண்காணிப்பு",
-      "zeroFalsePositives": "பூஜ்ஜிய தவறான நேர்மறை உத்தரவாதம்",
-      "uptime": "99.9% அப்டைம் SLA"
+      "monitoring": "தேவை-நேர பகுப்பாய்வு",
+      "zeroFalsePositives": "உயர்-துல்லிய கண்டறிதல்",
+      "uptime": "உயர்-கிடைப்பு உள்கட்டமைப்பு"
     },
-    "lossPrevention": "முக்கியமானது: இந்த மாதம் சாத்தியமான இழப்பு தடுக்கப்பட்டது"
+    "lossPrevention": "DeFi நெறிமுறைகளுக்கான மேம்பட்ட அச்சுறுத்தல் கண்டறிதல்"
   },
   "liveStatus": {
-    "title": "செயலில் உள்ள நெறிமுறைகளுக்கு நேரடி பாதுகாப்பு",
-    "subtitle": "தொடர்ச்சியான பாதுகாப்பு கண்காணிப்பிற்கு Spectra நம்பிக்கையுடன் ஆயிரக்கணக்கான பயனர்களுடன் இணையுங்கள்.",
-    "contracts": "கண்காணிக்கப்படும் ஒப்பந்தங்கள்",
-    "threatsPrevented": "இந்த வாரம் தடுக்கப்பட்ட அச்சுறுத்தல்கள்",
-    "valueProtected": "பாதுகாக்கப்பட்ட மதிப்பு",
-    "uptimeSLA": "அப்டைம் SLA",
-    "growth": "இந்த மாதம் +12%",
-    "savedLosses": "$4.7M இழப்புகள் சேமிக்கப்பட்டன",
+    "title": "செயலில் உள்ள நெறிமுறைகளுக்கான நேரடி பாதுகாப்பு",
+    "subtitle": "தளம் பகுப்பாய்வு செயல்பாட்டின் நிகழ்நேர பார்வை.",
+    "contracts": "பகுப்பாய்வு செய்யப்பட்ட ஒப்பந்தங்கள்",
+    "threatsPrevented": "வெளிப்படுத்தப்பட்ட கண்டுபிடிப்புகள்",
+    "valueProtected": "உள்ளடக்கிய திட்டங்கள்",
+    "uptimeSLA": "தளம் கிடைப்பு",
+    "growth": "வளர்ந்து வரும் சமூகம்",
+    "savedLosses": "பயனர்களுக்கு அபாயங்களை வெளிப்படுத்துதல்",
     "defiProtocols": "DeFi நெறிமுறைகள் முழுவதும்",
     "last30Days": "கடந்த 30 நாட்கள்",
-    "systemStatus": "அனைத்து அமைப்புகளும் செயல்பாட்டில் உள்ளன • கடைசி ஸ்கேன்: 2 நொடிகளுக்கு முன்"
+    "systemStatus": "அனைத்து கணினிகளும் இயங்குகின்றன"
   },
   "cta": {
     "title": "நொடிகளில் பாதுகாப்பு. சரிபார்க்கத் தயாரா?",
-    "subtitle": "அடுத்த exploit ஐ எதிர்நோக்கி காத்திருக்க வேண்டாம். இன்று Spectra உடன் தொடங்கவும் மற்றும் சரிபார்க்கக்கூடிய நிகழ்நேர பாதுகாப்பு கண்காணிப்புடன் உங்கள் முதலீடுகளைப் பாதுகாக்கவும்.",
-    "button": "இப்போது உங்கள் இலவச தணிக்கையைத் தொடங்குங்கள்",
-    "noCreditCard": "கடன் அட்டை தேவையில்லை • 30-நொடிகளில் அமைப்பு",
+    "subtitle": "சரிபார்க்கக்கூடிய AI-இயக்கப்படும் பகுப்பாய்வுடன் பாதிப்புகளுக்கு முன்னே செல்லுங்கள். Spectra உடன் தொடங்கவும் மற்றும் ஒரு திட்டத்தின் பாதுகாப்பு நிலையை நிமிடங்களில் ஆராயவும்.",
+    "button": "இப்போதே உங்கள் இலவச தணிக்கையைத் தொடங்கவும்",
+    "noCreditCard": "கிரெடிட் கார்டு தேவையில்லை • விரைவான அமைப்பு",
     "trustBuilders": {
-      "riskFree": {
-        "title": "ஆபத்து-இல்லாத சோதனை",
-        "description": "முழு அம்சங்களுடன் 14-நாள் சோதனை, கடன் அட்டை தேவையில்லை"
-      },
       "expertSupport": {
-        "title": "நிபுணர் ஆதரவு",
-        "description": "அவசர விஷயங்களுக்கு 24/7 பாதுகாப்பு குழு கிடைக்கும்"
+        "title": "ஆவணப்படுத்தல் & சமூக ஆதரவு",
+        "description": "கண்டுபிடிப்புகளை விளக்க உதவும் திறந்த ஆவணப்படுத்தல் மற்றும் சமூக வளங்கள்"
       },
       "communityTrusted": {
-        "title": "சமூகத்தால் நம்பகமானது",
-        "description": "$2.4B சொத்துக்களுடன் 1,250+ பாதுகாக்கப்பட்ட நெறிமுறைகள்"
+        "title": "சமூக-உந்துதல் நுண்ணறிவுகள்",
+        "description": "Web3 சுற்றுச்சூழலுக்கான சமூக-உந்துதல் பாதுகாப்பு நுண்ணறிவுகள்",
+        "disclaimer": "திறந்த-மூல தளம்"
       }
     },
-    "urgency": "இப்போது உங்கள் இலவச விரிவான தணிக்கையைத் தொடங்குங்கள்"
+    "urgency": "இன்றே உங்கள் இலவச விரிவான தணிக்கையைத் தொடங்கவும்"
   },
   "theme": {
-    "toggle": "தீம் மாற்று",
-    "light": "லைட் மோடு",
-    "dark": "டார்க் மோடு"
+    "toggle": "தீம் மாற்றவும்",
+    "light": "லைட் முறை",
+    "dark": "டார்க் முறை"
   },
   "accessibility": {
-    "skipToMain": "முக்கிய உள்ளடக்கத்திற்கு செல்லுங்கள்",
-    "closeModal": "பர்சோனா தேர்வியை மூடு",
-    "selectPersona": "{persona} பர்சோனாவைத் தேர்ந்தெடுக்கவும்"
+    "skipToMain": "முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்",
+    "closeModal": "பெர்சோனா தேர்வாளரை மூடவும்",
+    "selectPersona": "{persona} பெர்சோனாவைத் தேர்வுசெய்க"
+  },
+  "customerLogos": {
+    "title": "Web3 சுற்றுச்சூழலுக்காக கட்டப்பட்டது",
+    "liveAudits": "தேவை-நேரத்தில் இயங்கும் தணிக்கைகள்",
+    "enterpriseSecurity": "திறந்த-மூல பாதுகாப்பு",
+    "protected": "சமூகம்-உந்துதல்"
+  },
+  "statsBanner": {
+    "header": {
+      "title": "ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு நுண்ணறிவுகள்",
+      "subtitle": "20 நிமிடங்களுக்குள் விரிவான பாதுகாப்பு பகுப்பாய்வை பெறுங்கள். Spectra இன் AI-இயக்கப்படும் தளம் ஒரு திட்டத்தின் பின்னால் உள்ள பாதுகாப்பு கருத்துக்களை புரிந்து கொள்ள உதவுகிறது."
+    },
+    "footer": "சரிபார்க்கக்கூடிய முடிவுகளுடன் பிளாக்செயினின் ஃபோர்க் செய்யப்பட்ட பிரதியில் அனைத்து தணிக்கைகளும் செய்யப்படுகின்றன."
   },
   "errors": {
-    "somethingWentWrong": "ஏதோ தவறு நடந்தது",
-    "errorDescription": "எங்கள் ஒரு எதிர்பாராத பிழையை எதிர்கொண்டோம். இது பதிவு செய்யப்பட்டுள்ளது மற்றும் எங்கள் குழு இதை விசாரிக்கும்.",
+    "somethingWentWrong": "ஏதோ தவறு நடந்துள்ளது",
+    "errorDescription": "எதிர்பாராத பிழையை நாங்கள் சந்தித்தோம். இது பதிவு செய்யப்பட்டது மற்றும் எங்கள் குழு விசாரிக்கும்.",
     "errorId": "பிழை ID",
     "tryAgain": "மீண்டும் முயற்சிக்கவும்",
     "reloadPage": "பக்கத்தை மீண்டும் ஏற்றவும்",
-    "contactSupport": "இந்த சிக்கல் தொடர்ந்தால், தயவுசெய்து எங்கள் பாதுகாப்பு குழுவைத் தொடர்பு கொள்ளவும்"
-  },
-  "navbar": {
-    "mobileMenu": {
-      "languageLabel": "மொழி",
-      "themeLabel": "கருப்பொருள்",
-      "connectWithUs": "எங்களுடன் இணைக்க",
-      "freeAnalysis": "இலவச உடனடி பகுப்பாய்வு • பதிவு தேவையில்லை"
-    }
-  },
-  "customerLogos": {
-    "title": "முன்னணி DeFi நெறிமுறைகளால் நம்பப்படுகிறது",
-    "liveAudits": "நேரடி தணிக்கைகள் இயங்குகின்றன",
-    "enterpriseSecurity": "நிறுவன நிலை பாதுகாப்பு",
-    "protected": "2.4 பில்லியன் டாலர் பாதுகாக்கப்பட்டது"
+    "contactSupport": "இந்த பிரச்சினை தொடர்ந்தால், எங்கள் பாதுகாப்பு குழுவைத் தொடர்பு கொள்ளவும்"
   },
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The 5-Dimensional",
-      "subtitle": "Security Audit Framework",
-      "description": "Discover how Spectra revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
+      "title": "5-பரிமாண",
+      "subtitle": "பாதுகாப்பு தணிக்கை கட்டமைப்பு",
+      "description": "Spectra விரிவான பல பரிமாண பகுப்பாய்வு மூலம் பிளாக்செயின் பாதுகாப்பை எவ்வாறு புரட்சிகரமாக மாற்றுகிறது மற்றும் பாரம்பரிய தணிக்கைகளை விட ஆழமான நுண்ணறிவுகளை எவ்வாறு வழங்குகிறது என்பதைக் கண்டறியுங்கள்.",
       "buttons": {
-        "exploreDimensions": "Explore Dimensions",
-        "scoringAlgorithm": "Scoring Algorithm",
-        "viewRoadmap": "View Roadmap"
+        "exploreDimensions": "பரிமாணங்களை ஆராயுங்கள்",
+        "scoringAlgorithm": "மதிப்பெண் வழிமுறை",
+        "viewRoadmap": "ரோட்மேப்பை காண்க"
       }
     },
     "introduction": {
-      "title": "Why Multi-Dimensional Analysis?",
-      "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
+      "title": "ஏன் பல பரிமாண பகுப்பாய்வு?",
+      "paragraph1": "பாரம்பரிய ஸ்மார்ட் ஒப்பந்தம் தணிக்கைகள் குறியீடு பாதுகாப்பில் மட்டுமே கவனம் செலுத்துகின்றன. முக்கியமானது என்றாலும், இந்த ஒற்றை-லென்ஸ் அணுகுமுறை பெரும்பாலான DeFi exploits மற்றும் திட்ட தோல்விகளுக்கு வழிவகுக்கும் முக்கியமான ஆபத்து காரணிகளை தவறவிடுகிறது.",
       "paragraph2": {
-        "before": "Spectra's ",
-        "highlight": "5-dimensional audit framework",
-        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
+        "before": "Spectra இன் ",
+        "highlight": "5-பரிமாண தணிக்கை கட்டமைப்பு",
+        "after": " உணர்வு, குறியீடு, டோக்கனோமிக்ஸ், தரமின்மை மற்றும் விநியோகம் முழுவதும் திட்டங்களை விரிவாக பகுப்பாய்வு செய்கிறது—குறியீடு தணிக்கைகள் மட்டும் கண்டறிய முடியாத அச்சுறுத்தல்களிலிருந்து முதலீட்டாளர்களைப் பாதுகாக்கும் முழுமையான பாதுகாப்பு படத்தை வழங்குகிறது."
       },
       "stats": {
         "coreDimensions": {
           "value": "5",
-          "label": "Core Dimensions"
+          "label": "முக்கிய பரிமாணங்கள்"
         },
         "detectionRate": {
           "value": "95%",
-          "label": "Detection Rate"
+          "label": "கண்டறிதல் விகிதம்"
         },
         "analysisTime": {
-          "value": "<30s",
-          "label": "Analysis Time"
+          "value": "≤20 நிமிடம்",
+          "label": "பகுப்பாய்வு நேரம்"
         },
         "riskCategories": {
           "value": "15+",
-          "label": "Risk Categories"
+          "label": "ஆபத்து வகைகள்"
         }
       }
     },
     "dimensions": {
       "title": {
-        "before": "The ",
-        "highlight": "5 Dimensions",
+        "before": "",
+        "highlight": "5 பரிமாணங்கள்",
         "after": ""
       },
-      "subtitle": "Each dimension provides unique insights. Together, they deliver complete security intelligence.",
-      "convergeLabel": "5 dimensions converge",
+      "subtitle": "ஒவ்வொரு பரிமாணமும் தனித்துவமான நுண்ணறிவுகளை வழங்குகிறது. ஒன்றாக, அவை முழுமையான பாதுகாப்பு புத்திசாலித்தனத்தை வழங்குகின்றன.",
+      "convergeLabel": "5 பரிமாணங்கள் ஒன்றிணைகின்றன",
       "scoreDisplay": {
         "score": "95",
-        "label": "Security Score",
-        "excellent": "Excellent"
+        "label": "பாதுகாப்பு மதிப்பெண்",
+        "excellent": "சிறப்பானது"
       },
       "weightDistribution": {
-        "title": "Weight Distribution",
-        "totalLabel": "Total:",
+        "title": "எடை விநியோகம்",
+        "totalLabel": "மொத்தம்:",
         "totalValue": "100%"
       },
       "items": {
         "sentiment": {
-          "name": "Sentiment Analysis",
-          "shortName": "Sentiment",
-          "description": "AI-powered analysis of community sentiment across social platforms, forums, and developer discussions.",
+          "name": "உணர்வு பகுப்பாய்வு",
+          "shortName": "உணர்வு",
+          "description": "சமூக தளங்கள், மன்றங்கள் மற்றும் டெவலப்பர் விவாதங்கள் முழுவதும் சமூக உணர்வின் AI-இயக்கப்படும் பகுப்பாய்வு.",
           "details": {
-            "socialVolume": "Social volume tracking",
-            "sentimentScoring": "Sentiment scoring",
-            "influencerAnalysis": "Influencer analysis",
-            "communityHealth": "Community health index",
-            "fudFomoDetection": "FUD/FOMO detection"
+            "socialVolume": "சமூக அளவு கண்காணிப்பு",
+            "sentimentScoring": "உணர்வு மதிப்பெண்",
+            "influencerAnalysis": "செல்வாக்காளர் பகுப்பாய்வு",
+            "communityHealth": "சமூக ஆரோக்கிய குறியீடு",
+            "fudFomoDetection": "FUD/FOMO கண்டறிதல்"
+          },
+          "weight": "10",
+          "weightNote": "டோக்கன் இல்லாத திட்டங்களுக்கு 30%"
+        },
+        "code": {
+          "name": "குறியீடு பாதுகாப்பு",
+          "shortName": "குறியீடு",
+          "description": "பாதிப்புகள் மற்றும் பாதுகாப்பு வடிவங்களை அடையாளம் காண ஸ்மார்ட் ஒப்பந்தம் குறியீட்டின் ஆழமான நிலையான மற்றும் இயக்கவியல் பகுப்பாய்வு.",
+          "details": {
+            "vulnerabilityDetection": "பாதிப்பு கண்டறிதல்",
+            "codeQuality": "குறியீடு தர மதிப்பெண்",
+            "auditVerification": "தணிக்கை அறிக்கை சரிபார்ப்பு",
+            "dependencyAnalysis": "சார்பு பகுப்பாய்வு",
+            "bestPractices": "சிறந்த நடைமுறைகள் சரிபார்ப்பு"
+          },
+          "weight": "45",
+          "weightNote": "டோக்கன் இல்லாத திட்டங்களுக்கு 70%"
+        },
+        "tokenomics": {
+          "name": "டோக்கனோமிக்ஸ் ஆரோக்கியம்",
+          "shortName": "டோக்கனோமிக்ஸ்",
+          "description": "டோக்கன் விநியோகம், வெஸ்டிங் அட்டவணைகள், பணவீக்கம் வழிமுறைகள் மற்றும் பொருளாதார நிலைத்தன்மை பற்றிய விரிவான மதிப்பீடு.",
+          "details": {
+            "supplyDistribution": "வழங்கல் விநியோகம்",
+            "vestingAnalysis": "வெஸ்டிங் பகுப்பாய்வு",
+            "inflationRates": "பணவீக்க விகிதங்கள்",
+            "economicModel": "பொருளாதார மாதிரி சரிபார்ப்பு",
+            "unlockSchedule": "திறப்பு அட்டவணை கண்காணிப்பு"
           },
           "weight": "15"
         },
-        "code": {
-          "name": "Code Security",
-          "shortName": "Code",
-          "description": "Deep static and dynamic analysis of smart contract code to identify vulnerabilities and security patterns.",
-          "details": {
-            "vulnerabilityDetection": "Vulnerability detection",
-            "codeQuality": "Code quality scoring",
-            "auditVerification": "Audit report verification",
-            "dependencyAnalysis": "Dependency analysis",
-            "bestPractices": "Best practices check"
-          },
-          "weight": "30"
-        },
-        "tokenomics": {
-          "name": "Tokenomics Health",
-          "shortName": "Tokenomics",
-          "description": "Comprehensive evaluation of token distribution, vesting schedules, inflation mechanics, and economic sustainability.",
-          "details": {
-            "supplyDistribution": "Supply distribution",
-            "vestingAnalysis": "Vesting analysis",
-            "inflationRates": "Inflation rates",
-            "economicModel": "Economic model validation",
-            "unlockSchedule": "Unlock schedule tracking"
-          },
-          "weight": "20"
-        },
         "liquidity": {
-          "name": "Liquidity Depth",
-          "shortName": "Liquidity",
-          "description": "Real-time assessment of liquidity pools, trading volumes, slippage tolerance, and market depth across DEXs.",
+          "name": "தரமின்மை ஆழம்",
+          "shortName": "தரமின்மை",
+          "description": "DEX கள் முழுவதும் தரமின்மை குளங்கள், வர்த்தக அளவுகள், ஸ்லிப்பேஜ் சகிப்புத்தன்மை மற்றும் சந்தை ஆழம் பற்றிய நிகழ்நேர மதிப்பீடு.",
           "details": {
-            "poolDepth": "Pool depth analysis",
-            "volumeTrends": "Volume trends",
-            "slippageCalc": "Slippage calculation",
-            "dexCoverage": "DEX coverage",
-            "liquidityConcentration": "Liquidity concentration"
+            "poolDepth": "குள ஆழம் பகுப்பாய்வு",
+            "volumeTrends": "அளவு போக்குகள்",
+            "slippageCalc": "ஸ்லிப்பேஜ் கணக்கீடு",
+            "dexCoverage": "DEX கவரேஜ்",
+            "liquidityConcentration": "தரமின்மை செறிவு"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "distribution": {
-          "name": "Distribution Analysis",
-          "shortName": "Distribution",
-          "description": "Evaluation of token holder concentration, whale activity, airdrop distributions, and decentralization metrics.",
+          "name": "விநியோக பகுப்பாய்வு",
+          "shortName": "விநியோகம்",
+          "description": "டோக்கன் ஹோல்டர் செறிவு, திமிங்கல் செயல்பாடு, எயர்ட்ராப் விநியோகம் மற்றும் மையப்படுத்தல் அளவீடுகளின் மதிப்பீடு.",
           "details": {
-            "holderConcentration": "Holder concentration",
-            "whaleTracking": "Whale tracking",
-            "decentralizationScore": "Decentralization score",
-            "airdropAnalysis": "Airdrop analysis",
-            "walletDistribution": "Wallet distribution"
+            "holderConcentration": "ஹோல்டர் செறிவு",
+            "whaleTracking": "திமிங்கல் கண்காணிப்பு",
+            "decentralizationScore": "மையப்படுத்தல் மதிப்பெண்",
+            "airdropAnalysis": "எயர்ட்ராப் பகுப்பாய்வு",
+            "walletDistribution": "பணப்பை விநியோகம்"
           },
           "weight": "15"
         }
+      },
+      "weightTable": {
+        "title": "திட்ட வகை மூலம் மதிப்பெண் எடைகள்",
+        "subtitle": "திட்டத்திற்கு வர்த்தகம் செய்யக்கூடிய டோக்கன் உள்ளதா இல்லையா என்பதன் அடிப்படையில் எடைகள் பயன்படுத்தப்படுகின்றன. டோக்கன் இல்லாத திட்டங்கள் (பயன்பாட்டு நெறிமுறைகள், உள்கட்டமைப்பு, முதலியன) விநியோகம் மற்றும் தரமின்மை அளவீடுகள் பொருந்தாததால் குறியீடு மற்றும் உணர்வை அதிகமாக வலியுறுத்துகின்றன.",
+        "headerDimension": "பரிமாணம்",
+        "headerHasToken": "டோக்கன் உள்ளது",
+        "headerNoToken": "டோக்கன் இல்லை",
+        "rowCode": "குறியீடு பகுப்பாய்வு",
+        "rowDistribution": "டோக்கன் விநியோகம்",
+        "rowTokenomics": "டோக்கனோமிக்ஸ்",
+        "rowLiquidity": "தரமின்மை",
+        "rowSentiment": "உணர்வு",
+        "notApplicable": "பொருந்தாது",
+        "footnote": "உண்மையான எடைகள் பின்-நிலைய மதிப்பெண் சேவையில் ஒவ்வொரு தணிக்கை வகைக்கும் கட்டமைக்கப்படுகின்றன மற்றும் மாதிரி மீண்டும்-அளவீடு செய்யப்படும்போது காலப்போக்கில் சரிசெய்யப்படலாம்."
       }
     },
     "scoring": {
-      "badge": "Algorithm",
+      "badge": "வழிமுறை",
       "title": {
-        "before": "AI-Optimized ",
-        "highlight": "Security Score",
-        "after": " Calculation"
+        "before": "AI-உகந்த ",
+        "highlight": "பாதுகாப்பு மதிப்பெண்",
+        "after": " கணக்கீடு"
       },
-      "subtitle": "Our scoring algorithm uses dynamic weighted averages, continuously fine-tuned by machine learning for maximum predictive accuracy.",
+      "subtitle": "எங்கள் மதிப்பெண் வழிமுறை அதிகபட்ச கணிப்பு துல்லியத்திற்காக இயந்திர கற்றலால் தொடர்ந்து நன்றாக-ட்யூன் செய்யப்படும் டைனமிக் வெயிட்டட் சராசரிகளைப் பயன்படுத்துகிறது.",
       "formula": {
-        "title": "Security Score Formula",
+        "title": "பாதுகாப்பு மதிப்பெண் சூத்திரம்",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Dynamic Weights",
-        "aiAdjustments": "AI Adjustments",
-        "accuracy": "Accuracy"
+        "dynamicWeights": "டைனமிக் எடைகள்",
+        "aiAdjustments": "AI சரிசெய்தல்கள்",
+        "accuracy": "துல்லியம்"
       },
       "weightDistribution": {
-        "title": "Dynamic Weight Distribution",
-        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+        "title": "டைனமிக் எடை விநியோகம்",
+        "description": "வரலாற்று தாக்க பகுப்பாய்வின் அடிப்படையில் ஒவ்வொரு பரிமாணத்திற்கும் அடிப்படை எடைகள் ஒதுக்கப்படுகின்றன:"
       },
       "aiOptimization": {
-        "title": "AI Optimization Layer",
-        "description": "Machine learning models continuously refine weights based on:",
+        "title": "AI உகப்பாக்கல் அடுக்கு",
+        "description": "இயந்திர கற்றல் மாதிரிகள் கீழ்க்கண்டவற்றின் அடிப்படையில் எடைகளை தொடர்ந்து செம்மைப்படுத்துகின்றன:",
         "factors": {
-          "exploitPatterns": "Exploit pattern analysis",
-          "marketCorrelation": "Market condition correlation",
-          "projectCategorization": "Project type categorization",
-          "threatIntelligence": "Real-time threat intelligence",
-          "communityFeedback": "Community feedback integration"
+          "exploitPatterns": "Exploit முறை பகுப்பாய்வு",
+          "marketCorrelation": "சந்தை நிலை தொடர்பு",
+          "projectCategorization": "திட்ட வகை வகைப்படுத்தல்",
+          "threatIntelligence": "நிகழ்நேர அச்சுறுத்தல் புத்திசாலித்தனம்",
+          "communityFeedback": "சமூக பின்னூட்ட ஒருங்கிணைப்பு"
         }
       },
       "calculationExample": {
-        "title": "Calculation Example",
-        "comment": "// Example: Project with varying dimension scores",
-        "baseScore": "Base Score:",
-        "aiAdjustment": "AI Adjustment:",
-        "aiEnhancedTitle": "AI-Enhanced Accuracy",
-        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+        "title": "கணக்கீடு உதாரணம்",
+        "comment": "// உதாரணம்: டோக்கன் கொண்ட திட்டம் — எடைகள் மொத்தம் 100%",
+        "codeLabel": "குறியீடு பாதுகாப்பு",
+        "distributionLabel": "விநியோகம்",
+        "tokenomicsLabel": "டோக்கனோமிக்ஸ்",
+        "liquidityLabel": "தரமின்மை",
+        "sentimentLabel": "உணர்வு",
+        "compositeScore": "கூட்டு மதிப்பெண்:",
+        "baseScore": "அடிப்படை மதிப்பெண்:",
+        "aiAdjustment": "AI சரிசெய்தல்:",
+        "aiEnhancedTitle": "AI-மேம்படுத்தப்பட்ட துல்லியம்",
+        "aiEnhancedDescription": "AI சரிசெய்தல் காரணி குறுக்கு-பரிமாண தொடர்புகள், திட்ட முதிர்ச்சி, சந்தை நிலைமைகள் மற்றும் நிகழ்நேர அச்சுறுத்தல் தரவை கருதி உண்மையான பாதுகாப்பு ஆபத்தை சிறப்பாக பிரதிபலிக்கும் ஒரு மதிப்பெண்ணை வழங்குகிறது."
       }
     },
     "howItWorks": {
       "title": {
-        "before": "How ",
-        "highlight": "It",
-        "after": " Works"
+        "before": "",
+        "highlight": "இது எப்படி வேலை செய்கிறது",
+        "after": ""
       },
-      "subtitle": "Our AI-powered system continuously monitors and analyzes projects across all dimensions.",
+      "subtitle": "எங்கள் AI-இயக்கப்படும் கணினி அனைத்து மதிப்பெண் பரிமாணங்களிலும் திட்டங்களை தேவை-நேரத்தில் பகுப்பாய்வு செய்கிறது.",
       "steps": {
         "dataCollection": {
-          "title": "1. Data Collection",
-          "description": "Real-time ingestion of on-chain data, social signals, code repositories, and market data."
+          "title": "1. தரவு சேகரிப்பு",
+          "description": "ஆன்-செயின் தரவு, சமூக சமிக்ஞைகள், குறியீடு களஞ்சியங்கள் மற்றும் சந்தை தரவுகளின் நிகழ்நேர உள்வாங்கல்."
         },
         "aiAnalysis": {
-          "title": "2. AI Analysis",
-          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+          "title": "2. AI பகுப்பாய்வு",
+          "description": "மேம்படுத்தப்பட்ட ML மாதிரிகள் டைனமிக் எடை உகப்பாக்கலுடன் அனைத்து 5 பரிமாணங்களிலும் தரவை செயலாக்குகின்றன."
         },
         "riskScoring": {
-          "title": "3. Risk Scoring",
-          "description": "AI-optimized weighted scores with verifiable evidence provide complete security assessment."
+          "title": "3. ஆபத்து மதிப்பெண்",
+          "description": "சரிபார்க்கக்கூடிய ஆதாரத்துடன் AI-உகந்த வெயிட்டட் மதிப்பெண்கள் முழுமையான பாதுகாப்பு மதிப்பீட்டை வழங்குகின்றன."
         }
       }
     },
     "roadmap": {
       "title": {
-        "before": "Product ",
-        "highlight": "Roadmap",
+        "before": "தயாரிப்பு ",
+        "highlight": "ரோட்மேப்",
         "after": ""
       },
-      "subtitle": "Our journey to expand security intelligence with new dimensions and enhanced research capabilities.",
+      "subtitle": "புதிய பரிமாணங்கள் மற்றும் மேம்படுத்தப்பட்ட ஆராய்ச்சி திறன்களுடன் பாதுகாப்பு புத்திசாலித்தனத்தை விரிவாக்கும் எங்கள் பயணம்.",
       "phases": {
         "q1_2025": {
           "phase": "Q1 2025",
-          "title": "Foundation",
+          "title": "அடித்தளம்",
           "items": [
-            "Launch 5-dimensional audit system",
-            "Integrate major blockchain networks",
-            "Deploy real-time monitoring infrastructure",
-            "Establish security partnerships"
+            "5-பரிமாண தணிக்கை அமைப்பை தொடங்கவும்",
+            "முக்கிய பிளாக்செயின் வலையமைப்புகளை ஒருங்கிணைக்கவும்",
+            "நிகழ்நேர கண்காணிப்பு உள்கட்டமைப்பை வரிசைப்படுத்தவும்",
+            "பாதுகாப்பு கூட்டாண்மைகளை நிறுவவும்"
           ]
         },
         "q2_2025": {
           "phase": "Q2 2025",
-          "title": "Enhancement",
+          "title": "மேம்படுத்தல்",
           "items": [
-            "Add Governance dimension analysis",
-            "Introduce cross-chain bridge security",
-            "Launch API for enterprise integration",
-            "Mobile application release"
+            "ஆளுகை பரிமாண பகுப்பாய்வைச் சேர்க்கவும்",
+            "குறுக்கு-சேயின் பாலம் பாதுகாப்பை அறிமுகப்படுத்தவும்",
+            "நிறுவன ஒருங்கிணைப்பிற்கான API ஐ தொடங்கவும்",
+            "மொபைல் பயன்பாட்டு வெளியீடு"
           ]
         },
         "q3_2025": {
           "phase": "Q3 2025",
-          "title": "Expansion",
+          "title": "விரிவாக்கம்",
           "items": [
-            "Insurance risk dimension",
-            "Regulatory compliance checks",
-            "Advanced ML-based threat prediction",
-            "Community governance features"
+            "காப்பீட்டு ஆபத்து பரிமாணம்",
+            "ஒழுங்குமுறை இணக்கம் சோதனைகள்",
+            "மேம்பட்ட ML-அடிப்படையிலான அச்சுறுத்தல் கணிப்பு",
+            "சமூக ஆளுகை அம்சங்கள்"
           ]
         },
         "q4_2025": {
           "phase": "Q4 2025+",
-          "title": "Evolution",
+          "title": "பரிணாமம்",
           "items": [
-            "Additional research dimensions based on market needs",
-            "Enhanced AI research factor optimization",
-            "Decentralized audit network",
-            "Real-time exploit prevention system"
+            "சந்தை தேவைகளின் அடிப்படையில் கூடுதல் ஆராய்ச்சி பரிமாணங்கள்",
+            "மேம்படுத்தப்பட்ட AI ஆராய்ச்சி காரணி உகப்பாக்கல்",
+            "மையமற்ற தணிக்கை வலையமைப்பு",
+            "நிகழ்நேர exploit தடுப்பு அமைப்பு"
           ]
         }
       },
       "status": {
-        "completed": "Completed",
-        "inProgress": "In Progress",
-        "upcoming": "Upcoming"
+        "completed": "முடிந்தது",
+        "inProgress": "முன்னேற்றத்தில்",
+        "upcoming": "வரவிருக்கிறது"
       },
       "expansion": {
-        "title": "Continuous Expansion",
-        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+        "title": "தொடர்ச்சியான விரிவாக்கம்",
+        "description": "Q4 2025 க்கு பிறகு, வளர்ந்து வரும் சந்தை தேவைகள், தொழில்நுட்ப முன்னேற்றங்கள் மற்றும் சமூக கருத்துகளின் அடிப்படையில் புதிய ஆராய்ச்சி பரிமாணங்கள் மற்றும் மேம்படுத்தப்பட்ட பகுப்பாய்வு காரணிகளை தொடர்ந்து சேர்க்க நாங்கள் உறுதியளிக்கிறோம். எங்கள் கட்டமைப்பு பிளாக்செயின் சுற்றுச்சூழலுடன் வளர வடிவமைக்கப்பட்டுள்ளது."
       }
     },
     "cta": {
-      "title": "Ready for Deeper Security Insights?",
-      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get comprehensive security audits in under 30 seconds.",
-      "button": "Start Your First Audit"
+      "title": "ஆழமான பாதுகாப்பு நுண்ணறிவுகளுக்கு தயாரா?",
+      "description": "AI-உகந்த மதிப்பெண்ணுடன் 5-பரிமாண பகுப்பாய்வின் சக்தியை அனுபவிக்கவும். வாரங்களில் அல்ல, நிமிடங்களில் விரிவான பாதுகாப்பு தணிக்கையைப் பெறுங்கள்.",
+      "button": "உங்கள் முதல் தணிக்கையைத் தொடங்கவும்"
     }
+  },
+  "methodology": {
+    "title": "அதிநவீன தணிக்கை செயல்முறை",
+    "subtitle": "ஒவ்வொரு தணிக்கையும் பிளாக்செயினின் சாண்ட்பாக்ஸ் ஃபோர்க்கில் இயங்குகிறது — நேரடி பரிவர்த்தனைகள் இல்லை, பகுப்பாய்வின் போது பயனர் நிதிகளுக்கு எந்த ஆபத்தும் இல்லை.",
+    "forkTesting": {
+      "title": "ஃபோர்க் அடிப்படையிலான உருவகப்படுத்தல்",
+      "description": "ஸ்மார்ட் ஒப்பந்தம் இடைவினைகள் தனிமைப்படுத்தப்பட்ட மெயின்நெட் ஃபோர்க்கில் மீண்டும் இயக்கப்படுகின்றன. நேரடி வலையமைப்பிற்கு பரிவர்த்தனைகளை ஒளிபரப்பாமல் நாங்கள் நடத்தையை கவனிக்கிறோம்."
+    },
+    "aiOrchestration": {
+      "title": "AI-ஒருங்கிணைக்கப்பட்ட பகுப்பாய்வு",
+      "description": "பல சிறப்பு AI முகவர்கள் குறியீடு மதிப்பாய்வு, பொருளாதார மாதிரியாக்கம் மற்றும் ஆன்-செயின் தரவு முழுவதும் ஒருங்கிணைக்கின்றன — எந்த ஒற்றை பகுப்பாய்விப்பாளர் தனியாக வெளிப்படுத்த முடியாத கண்டுபிடிப்புகளை உருவாக்குகின்றன."
+    },
+    "staticAnalysis": {
+      "title": "பைட்கோடு & ABI நிலையான பகுப்பாய்வு",
+      "description": "எங்கள் ஸ்கேனர் தொகுக்கப்பட்ட பைட்கோடு மற்றும் ABI களை நேரடியாக ஆராய்கிறது, மூல குறியீடு கிடைக்காதபோது அல்லது ஓரளவு மட்டுமே சரிபார்க்கப்பட்டுள்ள போதும் ஒப்பந்தங்களின் பகுப்பாய்வை அனுமதிக்கிறது."
+    },
+    "multiDimensional": {
+      "title": "5-பரிமாண மதிப்பெண்",
+      "description": "குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு இணையாக சுயாதீனமாக மதிப்பிடப்படுகின்றன — பின்னர் கூட்டு பாதுகாப்பு மதிப்பெண்ணில் எடையிடப்படுகின்றன."
+    }
+  },
+  "learningLoop": {
+    "title": "மதிப்பெண்கள் காலப்போக்கில் எவ்வாறு துல்லியமாக இருக்கின்றன",
+    "subtitle": "Spectra நிஜ உலக பின்னூட்டம் மற்றும் வரலாற்று தணிக்கைகளுக்கு எதிராக அளவீடு மூலம் தொடர்ந்து மேம்படுகிறது — ஒவ்வொரு பகுப்பாய்வும் அடுத்ததைத் தெரிவிக்கிறது.",
+    "userFeedback": {
+      "title": "பயனர் பின்னூட்ட ஒருங்கிணைப்பு",
+      "description": "ஒவ்வொரு கண்டுபிடிப்பிலும் சமூக மதிப்பீடுகள் மற்றும் நிபுணர் மதிப்பாய்வுகள் மாதிரியில் மீண்டும் ஊட்டப்படுகின்றன. தவறான நேர்மறைகள், தவறவிட்ட பாதிப்புகள் மற்றும் தீவிரத்தன்மை மோதல்கள் கண்காணிக்கப்பட்டு, மதிப்பெண் எடைகளை மீண்டும்-அளவீடு செய்ய பயன்படுத்தப்படுகின்றன."
+    },
+    "calibration": {
+      "title": "ஒத்த திட்டங்களுக்கு எதிராக அளவீடு",
+      "description": "ஒவ்வொரு புதிய தணிக்கையும் கட்டமைப்பு ரீதியாக ஒத்த ஒப்பந்தங்கள் மற்றும் டோக்கனோமிக்ஸ் இன் வரலாற்று தணிக்கைகளுடன் குறுக்கு-குறிப்பிடப்படுகிறது. கடந்த திட்டங்களில் இருந்து வடிவங்கள் வெவ்வேறு ஆபத்து சுயவிவரங்களை சுட்டிக்காட்டும்போது மதிப்பெண்கள் சரிசெய்யப்படுகின்றன."
+    },
+    "aiOptimization": {
+      "title": "தொடர்ச்சியான AI உகப்பாக்கல்",
+      "description": "ஆன்-செயினில் புதிய exploit வடிவங்கள் தோன்றி புதிய பாதிப்பு வகுப்புகள் வெளிப்படும்போது, எங்கள் AI மாதிரிகள் காலந்தோறும் மீண்டும்-பயிற்றுவிக்கப்படுகின்றன. கணினி அது செயலாக்கும் ஒவ்வொரு தணிக்கையின் மூலம் புத்திசாலியாகிறது."
+    },
+    "externalAudits": {
+      "title": "வெளிப்புற தணிக்கை குறுக்கு-குறிப்பு",
+      "description": "ஒரு திட்டத்திற்கு தொழில்முறை மனித தணிக்கைகள் கிடைக்கும்போது, எங்கள் கண்டுபிடிப்புகள் அறிக்கையுடன் ஒப்பிடப்படுகின்றன. முரண்பாடுகள் மாதிரி செம்மைப்படுத்தலுக்கு மீண்டும் ஊட்டப்படுகின்றன."
+    }
+  },
+  "disclaimer": {
+    "title": "முக்கியமான மறுப்பு",
+    "aiGenerated": "அனைத்து கண்டுபிடிப்புகளும் AI பகுப்பாய்வு மூலம் உருவாக்கப்படுகின்றன — மனித பாதுகாப்பு தணிக்கையாளர்கள் அல்ல.",
+    "forkTesting": "ஒப்பந்த நடத்தை நேரடி மெயின்நெட்டில் அல்ல, பிளாக்செயினின் ஃபோர்க் செய்யப்பட்ட பிரதியில் பகுப்பாய்வு செய்யப்படுகிறது.",
+    "noGuarantee": "உயர் பாதுகாப்பு மதிப்பெண் ஒரு திட்டம் பாதுகாப்பானது என்பதற்கு உத்தரவாதம் இல்லை. மதிப்பெண்கள் பகுப்பாய்வின் போது கிடைக்கும் தரவின் நிலையைப் பிரதிபலிக்கின்றன.",
+    "doYourResearch": "எந்தவொரு முதலீடு, வரிசைப்படுத்தல் அல்லது ஒருங்கிணைப்பு முடிவுகளை எடுக்கும் முன் எப்போதும் உங்கள் சொந்த ஆராய்ச்சியை (DYOR) நடத்தவும்.",
+    "toolPurpose": "Spectra ஒரு திட்டத்தின் பின்னால் உள்ள பாதுகாப்பு கருத்துகளை புரிந்து கொள்ள பயனர்களுக்கு உதவ வடிவமைக்கப்பட்ட ஒரு தகவல் கருவியாகும். இது நிதி, சட்ட அல்லது முதலீட்டு ஆலோசனை அல்ல."
   }
 }

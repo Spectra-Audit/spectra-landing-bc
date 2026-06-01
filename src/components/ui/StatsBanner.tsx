@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { TrendingUp, Shield, CheckCircle, Zap, Clock } from 'lucide-react'
 import Card from './Card'
 import { cn } from '@/lib/utils'
@@ -23,6 +24,7 @@ interface StatsBannerProps {
 
 export function StatsBanner({ className }: StatsBannerProps) {
   const [isVisible, setIsVisible] = useState(false)
+  const t = useTranslations('statsBanner')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,21 +37,21 @@ export function StatsBanner({ className }: StatsBannerProps) {
   // Enhanced stats - solution-focused with Spectra brand colors
   const stats: StatItem[] = [
     {
-      value: '30',
-      suffix: 'seconds',
-      label: 'Average Audit Time',
-      description: '2.4x faster than traditional audits',
-      prefix: '',
+      value: '20',
+      suffix: 'min',
+      label: 'Typical Audit Time',
+      description: 'More than 2.4× faster than traditional manual audits',
+      prefix: '≤',
       icon: <Zap className="w-5 h-5 text-spectra-green-500" />,
       delay: 0,
       trend: 'down',
       variant: 'success'
     },
     {
-      value: '99.9',
+      value: '95',
       suffix: '%',
-      label: 'Detection Accuracy',
-      description: 'AI-powered vulnerability scanning',
+      label: 'Known Vulnerability Detection',
+      description: 'AI-powered analysis of known exploit patterns',
       prefix: '',
       icon: <Shield className="w-5 h-5 text-spectra-blue-500" />,
       delay: 200,
@@ -57,10 +59,10 @@ export function StatsBanner({ className }: StatsBannerProps) {
       variant: 'info'
     },
     {
-      value: '24',
-      suffix: '/7',
-      label: 'Continuous Monitoring',
-      description: 'Real-time threat protection',
+      value: '5',
+      suffix: '',
+      label: 'Scoring Dimensions',
+      description: 'Code, Distribution, Tokenomics, Liquidity, Sentiment',
       prefix: '',
       icon: <Clock className="w-5 h-5 text-spectra-purple-500" />,
       delay: 400,
@@ -111,12 +113,11 @@ export function StatsBanner({ className }: StatsBannerProps) {
           <div className="flex items-center justify-center gap-2 mb-4">
             <CheckCircle className="w-6 h-6 text-spectra-green-500" />
             <h2 className="text-2xl md:text-3xl font-bold text-white">
-              Proactive Security for Smart Contracts
+              {t('header.title')}
             </h2>
           </div>
           <p className="text-neutral-300 max-w-3xl mx-auto text-base md:text-lg">
-            Get comprehensive security audits in seconds, not weeks. Spectra's AI-powered platform
-            protects your assets with continuous monitoring and verifiable results.
+            {t('header.subtitle')}
           </p>
         </div>
 
@@ -213,7 +214,7 @@ export function StatsBanner({ className }: StatsBannerProps) {
             <span className="text-spectra-blue-400 font-semibold">→</span> Ready to protect your smart contracts?
           </p>
           <p className="text-xs text-neutral-500">
-            Independent verification available. All audits performed on-chain with verifiable results.
+            {t('footer')}
           </p>
         </div>
       </div>

@@ -43,3 +43,14 @@ export { default as PerformanceMonitor } from './PerformanceMonitor'
 // NEW: CustomerLogos - Displays customer/protocol logos in a grid
 export { CustomerLogos } from './CustomerLogos'
 export type { CustomerLogosProps } from './CustomerLogos'
+
+// Animated diagrams for methodology + learning loop sections
+export { default as MethodologyDiagram } from './MethodologyDiagram'
+export type { MethodologyDiagramProps } from './MethodologyDiagram'
+
+export { default as LearningLoopDiagram } from './LearningLoopDiagram'
+export type { LearningLoopDiagramProps } from './LearningLoopDiagram'
+
+// Persistent disclaimer shared across landing + whitepaper pages
+export { default as DisclaimerFooter } from './DisclaimerFooter'
+export type { DisclaimerFooterProps } from './DisclaimerFooter'

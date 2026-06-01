@@ -24,6 +24,14 @@
     "language": "Dil",
     "launchApp": "Uygulamayı Başlat"
   },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "Dil",
+      "themeLabel": "Tema",
+      "connectWithUs": "Bizimle iletişime geçin",
+      "freeAnalysis": "Ücretsiz anlık analiz • Kayıt gerekmez"
+    }
+  },
   "hero": {
     "authority": {
       "securityFirst": "Öncelikli Güvenlik Mimarisi",
@@ -31,19 +39,19 @@
       "openSource": "Açık Kaynak"
     },
     "headline": "Yatırımdan Önce Proje Güvenliğini Araştırın",
-    "subheadline": "1000+ DeFi protokolü için çok boyutlu güvenlik skorları. Doğrulanabilir kapsamlı analiz ile yatırım öncesi riskleri anlayın.",
+    "subheadline": "Birden fazla DeFi ekosisteminde çok boyutlu güvenlik skorları. Doğrulanabilir kapsamlı analiz ile yatırım öncesi riskleri anlayın.",
     "addressPlaceholder": "Ethereum adresinizi girin",
     "getAuditReport": "Denetim Raporunu Al",
     "getReport": "Rapor Al",
     "trustMetrics": {
       "activeUsers": "Aktif Kullanıcılar",
-      "accuracy": "Doğruluk",
-      "scanTime": "Saniye Tarama",
+      "accuracy": "Bilinen Açık Tespiti",
+      "scanTime": "dakika Tipik Süre",
       "protectedUsers": "Korunan Kullanıcılar",
       "uptime": "Çalışma Süresi",
-      "detectionRate": "Tespit Oranı",
-      "threatTypes": "Tehdit Türleri",
-      "projectsAnalyzed": "Analiz Edilen Projeler",
+      "detectionRate": "Bilinen Açık Tespiti",
+      "threatTypes": "Skorlama Boyutları",
+      "projectsAnalyzed": "Skorlama Boyutları",
       "riskFlagsIdentified": "Belirlenen Risk Bayrakları"
     },
     "cta": {
@@ -51,80 +59,81 @@
       "secondary": "Skorların Nasıl Çalıştığını Öğrenin"
     },
     "riskWarning": {
-      "threatsPrevented": "Sürekli tehditler engelleniyor",
-      "message": "Bir sonraki exploit'i beklemeyin. Gerçek zamanlı koruma, açıkların exploit edilmesinden önce önler."
+      "threatsPrevented": "Yaygın güvenlik açığı sınıfları tespit edildi",
+      "message": "Sermaye yatırmadan önce güvenlik risklerini anlayın. Talebe bağlı AI analizi, bir projedeki yaygın güvenlik açığı kalıplarını ve yoğunlaşma risklerini ortaya çıkarmaya yardımcı olur."
     },
     "socialProof": {
-      "trustedBy": "Önde gelen protokoller tarafından güveniliyor",
-      "defiLeader": "DeFi Güvenlik Lideri",
-      "protocols": "1000+ Entegre Protokol"
+      "trustedBy": "Web3 ekosistemi için inşa edildi",
+      "defiLeader": "DeFi Güvenlik Öngörüleri",
+      "protocols": "Çoklu Zincir Desteği",
+      "disclaimer": "Açık kaynak platform"
     },
     "page": {
-      "heroTitle": "Smart Contract Security Audits",
-      "heroSubtitle": "in Seconds, Not Weeks",
-      "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security audits in under 30 seconds. No registration required.",
-      "securityAuditTitle": "Professionally Audited & Verified",
-      "securityAuditSubtitle": "Security you can trust, verified by leading experts",
-      "thirdPartyAudited": "Third-Party Audited",
-      "thirdPartyAuditedDesc": "Security reviewed by leading crypto audit firms",
-      "verified": "Verified",
-      "openSource": "Open Source",
-      "openSourceDesc": "Publicly verifiable code on GitHub",
-      "transparent": "Transparent",
-      "trustMessage": "Our codebase has undergone comprehensive security audits by reputable blockchain security firms. We're committed to continuous security improvements and transparency.",
-      "featuresTitle": "Security audits that actually work",
-      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
-      "realTimeMonitoring": "Real-time AI Monitoring",
-      "realTimeMonitoringDesc": "Continuous AI-powered scanning detects vulnerabilities the moment they're introduced. Get instant alerts when code changes affect your security posture, with 30-second average scan time.",
-      "avgScanTime": "30s",
-      "avgScanTimeLabel": "Avg. scan time",
-      "fasterThanAudits": "2.4x",
-      "fasterThanAuditsLabel": "Faster than audits",
-      "automated": "100%",
-      "automatedLabel": "Automated",
-      "verifiableEvidence": "Verifiable Evidence",
-      "verifiableEvidenceDesc": "Every security claim includes reproducible AI diffs and evidence. See exactly how we found each issue with 100% transparency.",
-      "openSourceCodebase": "Open source codebase",
-      "publicGitHubRepo": "Public GitHub repository",
-      "comprehensiveCoverage": "Comprehensive Coverage",
-      "comprehensiveCoverageDesc": "Advanced AI models catch more vulnerability types than traditional auditors. From smart contract bugs to economic attack vectors.",
-      "vulnerabilityCategories": "15+ vulnerability categories",
-      "detectionRate": "95% detection rate",
-      "productionReady": "Production-Ready Security",
-      "productionReadyDesc": "Built for developers who need reliable smart contract security analysis. Third-party audited and open source, with verifiable audit reports.",
-      "thirdPartyVerified": "Third-Party Verified",
-      "sourceCode": "Source Code",
-      "scanTime": "<30 Second Scans",
-      "aiPoweredAnalysis": "AI-Powered Analysis",
-      "aiPoweredAnalysisDesc": "Fast, automated security scanning",
-      "highAccuracy": "High Accuracy",
-      "highAccuracyDesc": "AI-verified results you can trust",
-      "multiDimensional": "Multi-Dimensional",
-      "multiDimensionalDesc": "5-factor security scoring",
-      "liveStatusTitle": "Comprehensive security analysis",
-      "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
-      "scanTimeValue": "<30s",
-      "scanTimeLabel": "Average scan time",
-      "scanTimeBadge": "Fast analysis",
+      "heroTitle": "Akıllı Sözleşme Güvenlik Denetimleri",
+      "heroSubtitle": "saniyeler içinde, haftalar değil",
+      "heroDescription": "Doğrulanabilir kanıtlarla AI destekli akıllı sözleşme analizi. 20 dakikanın altında kapsamlı güvenlik analizi alın. Kayıt gerekmez.",
+      "securityAuditTitle": "Açık Kaynak — Herkese Açık Şekilde Doğrulanabilir",
+      "securityAuditSubtitle": "İnceleyebileceğiniz, denetleyebileceğiniz ve yeniden üretebileceğiniz şeffaf metodoloji",
+      "thirdPartyAudited": "Açık Kaynak",
+      "thirdPartyAuditedDesc": "Her bulgu, arkasındaki kanıt ve gerekçeyle birlikte gelir",
+      "verified": "Doğrulanabilir",
+      "openSource": "Açık Kaynak",
+      "openSourceDesc": "GitHub'da herkese açık şekilde doğrulanabilir kod ve analiz hattı",
+      "transparent": "Şeffaf",
+      "trustMessage": "Herkese açık şekilde doğrulanabilir denetim metodolojisine sahip açık kaynak platform",
+      "featuresTitle": "Yeni Nesil Güvenlik Denetimleri",
+      "featuresSubtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
+      "realTimeMonitoring": "Talep Üzerine AI Analizi",
+      "realTimeMonitoringDesc": "Projeler gönderildiğinde talep üzerine AI destekli analiz. Kapsamlı 5 boyutlu güvenlik incelemesi denetim başına 20 dakikanın altında tamamlanır.",
+      "avgScanTime": "≤20dk",
+      "avgScanTimeLabel": "Tipik denetim süresi",
+      "fasterThanAudits": ">2.4×",
+      "fasterThanAuditsLabel": "Geleneksel denetimlerden daha hızlı",
+      "automated": "Tamamen",
+      "automatedLabel": "AI tarafından düzenlenen analiz",
+      "verifiableEvidence": "Doğrulanabilir Kanıt",
+      "verifiableEvidenceDesc": "Her güvenlik iddiası yeniden üretilebilir AI farkları ve kanıtlar içerir. Tamamen şeffaf bir metodolojiyle her sorunu nasıl bulduğumuzu tam olarak görün.",
+      "openSourceCodebase": "Açık kaynak kod tabanı",
+      "publicGitHubRepo": "Herkese açık GitHub deposu",
+      "comprehensiveCoverage": "Kapsamlı Kapsama",
+      "comprehensiveCoverageDesc": "Gelişmiş AI modelleri bilinen geniş bir güvenlik açığı sınıfı yelpazesini tespit eder — akıllı sözleşme hataları, ekonomik saldırı vektörleri ve yoğunlaşma riskleri.",
+      "vulnerabilityCategories": "15+ güvenlik açığı kategorisi",
+      "detectionRate": "Bilinen sorunların %95'ine kadar tespiti",
+      "productionReady": "Doğrulanabilir ve Açık Kaynak",
+      "productionReadyDesc": "Denetimin her adımını incelemek, yeniden üretmek ve doğrulamak isteyen geliştiriciler ve araştırmacılar için inşa edilen açık kaynak analiz hattı.",
+      "thirdPartyVerified": "Açık Kaynak",
+      "sourceCode": "Kaynak Kodu",
+      "scanTime": "≤20 Dakika Denetimler",
+      "aiPoweredAnalysis": "AI Destekli Analiz",
+      "aiPoweredAnalysisDesc": "Hızlı, otomatik güvenlik taraması",
+      "highAccuracy": "Yüksek Doğruluk",
+      "highAccuracyDesc": "Güvenebileceğiniz AI doğrulanmış sonuçlar",
+      "multiDimensional": "Çok Boyutlu",
+      "multiDimensionalDesc": "5 faktörlü güvenlik skoru",
+      "liveStatusTitle": "Kapsamlı güvenlik analizi",
+      "liveStatusSubtitle": "Eksiksiz akıllı sözleşme güvenlik değerlendirmesi için çok boyutlu skor.",
+      "scanTimeValue": "≤20dk",
+      "scanTimeLabel": "Tipik denetim süresi",
+      "scanTimeBadge": "Hızlı analiz",
       "dimensionsValue": "5",
-      "dimensionsLabel": "Security dimensions",
-      "dimensionsBadge": "Multi-factor scoring",
+      "dimensionsLabel": "Güvenlik boyutları",
+      "dimensionsBadge": "Çok faktörlü skor",
       "aiPoweredValue": "AI",
-      "aiPoweredLabel": "Powered analysis",
-      "aiPoweredBadge": "Smart detection",
-      "transparentValue": "100%",
-      "transparentLabel": "Transparent methodology",
-      "transparentBadge": "Verifiable results",
-      "systemReady": "System ready • Start your audit in seconds",
-      "finalCtaTitle": "Security in seconds. Ready to verify?",
-      "finalCtaSubtitle": "Don't wait for the next exploit. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
-      "noCreditCardRequired": "No credit card required • 30-second setup",
-      "quickSetup": "Quick Setup",
-      "quickSetupDesc": "Get started with comprehensive security audits",
-      "expertSupport": "Expert Support",
-      "expertSupportDesc": "Security team available when you need help",
-      "communityDriven": "Community-Driven",
-      "communityDrivenDesc": "Open source with transparent development"
+      "aiPoweredLabel": "Destekli analiz",
+      "aiPoweredBadge": "Akıllı tespit",
+      "transparentValue": "Tamamen",
+      "transparentLabel": "Şeffaf metodoloji",
+      "transparentBadge": "Doğrulanabilir sonuçlar",
+      "systemReady": "Sistem hazır • Denetiminizi saniyeler içinde başlatın",
+      "finalCtaTitle": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
+      "finalCtaSubtitle": "Proaktif korumayla açıkların önünde olun. Bugün Spectra ile başlayın ve yatırımlarınızı doğrulanabilir gerçek zamanlı güvenlik izleme ile koruyun.",
+      "noCreditCardRequired": "Kredi kartı gerekmez • Hızlı kurulum",
+      "quickSetup": "Hızlı Kurulum",
+      "quickSetupDesc": "Kapsamlı güvenlik denetimleriyle başlayın",
+      "expertSupport": "Dokümantasyon ve Topluluk Desteği",
+      "expertSupportDesc": "Bulguları yorumlamanıza yardımcı olacak açık dokümantasyon ve topluluk kaynakları",
+      "communityDriven": "Topluluk Tabanlı",
+      "communityDrivenDesc": "Şeffaf geliştirmeyle açık kaynak"
     }
   },
   "howScoresWork": {
@@ -180,13 +189,13 @@
       "title": "Pasif Yatırımcılar",
       "description": "Kripto yatırımlarınız için güvenli, düşük bakımlı koruma.",
       "benefits": [
-        "Otomatik 24/7 izleme",
+        "Talebe bağlı AI güvenlik analizi",
         "Basit güvenlik derecelendirmeleri (A-F)",
         "Anında risk uyarıları",
         "Teknik bilgi gerektirmez"
       ],
       "cta": "Varlıklarımı Koru",
-      "ctaSubtext": "30 saniyede korumaya başlayın"
+      "ctaSubtext": "Haftalarda değil, dakikalarda içgörü alın"
     },
     "powerAnalyst": {
       "name": "Gelişmiş Analiz",
@@ -204,66 +213,63 @@
     "skip": "Atla ve basit korumaya devam et"
   },
   "features": {
-    "title": "Gerçekten işe yarayan güvenlik denetimleri",
-    "subtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
+    "title": "Yeni Nesil Güvenlik Denetimleri",
+    "subtitle": "Geleneksel denetimler yavaş ve pahalı. Spectra, inceleyebileceğiniz ve yeniden üretebileceğiniz AI tarafından düzenlenen doğrulanabilir güvenlik analizi sunar.",
     "monitoring": {
-      "title": "Gerçek Zamanlı İzleme",
-      "description": "Sürekli AI tabanlı tarama, açıkların ortaya çıktığı anda tespit eder. Kod değişiklikleri güvenlik durumunuzu etkilediğinde anında uyarılar alın.",
-      "metric": "Ortalama 30 saniye tarama süresi",
-      "comparison": "Geleneksel denetimlerden 2.4x daha hızlı"
+      "title": "Hızlı AI Analizi",
+      "description": "AI tarafından düzenlenen analiz 5 boyutta paralel olarak çalışır — kod, dağıtım, tokenomik, likidite ve sentiment — izlenebilir kanıtlarla birlikte birleşik skor üretir.",
+      "metric": "Genellikle denetim başına 20 dakikanın altında",
+      "comparison": "Geleneksel manuel denetimlerden 2,4× daha hızlı"
     },
     "verifiable": {
       "title": "Doğrulanabilir Kanıtlar",
-      "description": "Her güvenlik iddiası, doğrulayabileceğiniz yeniden üretilebilir AI diff'leri ve kanıtlar içerir. Artık denetim raporlarına körü körüne inanmayın - her sorunu nasıl bulduğumuzu tam olarak görün.",
-      "metric": "%100 şeffaf metodoloji",
+      "description": "Her bulgu, arkasındaki mantığı, kaynak verileri ve yeniden üretilebilir kanıtları içerir. Her sorunun nasıl tanımlandığını tam olarak görün — kara kutu yok.",
+      "metric": "Tamamen şeffaf metodoloji",
       "detail": "Açık kaynaklı herkese açık GitHub deposu ile"
     },
     "comprehensive": {
       "title": "Kapsamlı Kapsama",
-      "description": "Gelişmiş AI modelleri, insan denetçilerinden daha fazla açıklama türünü yakalar. Akıllı sözleşme hatalarından ekonomik saldırı vektörlerine kadar, sizi koruyoruz.",
+      "description": "Gelişmiş AI modelleri, bilinen geniş bir güvenlik açığı sınıfı yelpazesini tespit eder — akıllı sözleşme hatalarından ekonomik saldırı vektörlerine ve yoğunlaşma risklerine kadar.",
       "metric": "15+ açıklama kategorisi",
-      "detail": "Dağıtımdan önce bilinen exploit'lerin %95'ini tespit eder"
+      "detail": "Dağıtımdan önce bilinen exploit'lerin %95'ine kadar tespit edilmesine yardımcı olur"
     },
     "trustIndicators": {
-      "monitoring": "24/7 İzleme",
-      "zeroFalsePositives": "Sıfır Yanlış Pozitif Garantisi",
-      "uptime": "%99.9 Çalışma Süresi SLA"
+      "monitoring": "Talep Üzerine Analiz",
+      "zeroFalsePositives": "Yüksek Hassasiyetli Tespit",
+      "uptime": "Yüksek Erişilebilirlik Altyapısı"
     },
-    "lossPrevention": "Önemli: Bu ay potansiyel kayıp önlendi"
+    "lossPrevention": "DeFi protokolleri için gelişmiş tehdit tespiti"
   },
   "liveStatus": {
     "title": "Aktif protokoller için gerçek zamanlı koruma",
-    "subtitle": "Spectra'yı sürekli güvenlik izleme için güvenen binlerce kullanıcıya katılın.",
-    "contracts": "İzlenen sözleşmeler",
-    "threatsPrevented": "Bu hafta engellenen tehditler",
-    "valueProtected": "Korunan değer",
-    "uptimeSLA": "Çalışma Süresi SLA",
-    "growth": "Bu ay +%12",
-    "savedLosses": "$4.7M kayıp önlendi",
+    "subtitle": "Platform analiz etkinliğinin gerçek zamanlı görünümü.",
+    "contracts": "Analiz edilen sözleşmeler",
+    "threatsPrevented": "Ortaya çıkarılan bulgular",
+    "valueProtected": "Kapsanan projeler",
+    "uptimeSLA": "Platform kullanılabilirliği",
+    "growth": "Büyüyen topluluk",
+    "savedLosses": "Kullanıcılara riskleri ortaya çıkarma",
     "defiProtocols": "DeFi protokolleri genelinde",
     "last30Days": "Son 30 gün",
-    "systemStatus": "Tüm sistemler operasyonel • Son tarama: 2 saniye önce"
+    "systemStatus": "Tüm sistemler operasyonel"
   },
   "cta": {
     "title": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
-    "subtitle": "Bir sonraki exploit'i beklemeyin. Bugün Spectra ile başlayın ve yatırımlarınızı doğrulanabilir gerçek zamanlı güvenlik izleme ile koruyun.",
+    "subtitle": "Doğrulanabilir AI destekli analizle açıkların önünde olun. Spectra ile başlayın ve bir projenin güvenlik durumunu dakikalar içinde inceleyin.",
     "button": "Ücretsiz Denetiminizi Şimdi Başlatın",
-    "noCreditCard": "Kredi kartı gerekmez • 30 saniyede kurulum",
+    "noCreditCard": "Kredi kartı gerekmez • Hızlı kurulum",
     "trustBuilders": {
-      "riskFree": {
-        "title": "Risk Ücretsiz Deneme",
-        "description": "Kredi kartı gerekmez, tam özellikli 14 günlük deneme"
-      },
       "expertSupport": {
-        "title": "Uzman Destek",
-        "description": "Acil konular için 7/24 güvenlik ekibi mevcuttur"
+        "title": "Dokümantasyon ve Topluluk Desteği",
+        "description": "Bulguları yorumlamanıza yardımcı olacak açık dokümantasyon ve topluluk kaynakları"
       },
       "communityTrusted": {
-        "title": "Topluluk Tarafından Güvenilen",
-        "description": "$2.4B varlık ile 1.250+ korunan protokol"
+        "title": "Topluluk Tabanlı Öngörüler",
+        "description": "Web3 ekosistemi için topluluk tabanlı güvenlik öngörüleri",
+        "disclaimer": "Açık kaynak platform"
       }
     },
-    "urgency": "Ücretsiz kapsamlı denetiminizi şimdi başlatın"
+    "urgency": "Ücretsiz kapsamlı denetiminizi bugün başlatın"
   },
   "theme": {
     "toggle": "Temayı değiştir",
@@ -275,6 +281,19 @@
     "closeModal": "Persona seçicisini kapat",
     "selectPersona": "{persona} personasını seç"
   },
+  "customerLogos": {
+    "title": "Web3 ekosistemi için inşa edildi",
+    "liveAudits": "Talep üzerine çalışan denetimler",
+    "enterpriseSecurity": "Açık kaynak güvenlik",
+    "protected": "Topluluk tabanlı"
+  },
+  "statsBanner": {
+    "header": {
+      "title": "Akıllı Sözleşme Güvenlik Öngörüleri",
+      "subtitle": "20 dakikanın altında kapsamlı güvenlik analizi alın. Spectra'nın AI destekli platformu, bir projenin arkasındaki güvenlik hususlarını anlamanıza yardımcı olur."
+    },
+    "footer": "Tüm denetimler, doğrulanabilir sonuçlarla blockchain'in fork edilmiş bir kopyası üzerinde gerçekleştirilir."
+  },
   "errors": {
     "somethingWentWrong": "Bir şey yanlış gitti",
     "errorDescription": "Beklenmeyen bir hatayla karşılaştık. Bu kaydedildi ve ekibimiz inceleyecek.",
@@ -283,269 +302,325 @@
     "reloadPage": "Sayfayı Yeniden Yükle",
     "contactSupport": "Bu sorun devam ederse, lütfen güvenlik ekibimizle iletişime geçin"
   },
-  "navbar": {
-    "mobileMenu": {
-      "languageLabel": "Dil",
-      "themeLabel": "Tema",
-      "connectWithUs": "Bizimle iletişime geçin",
-      "freeAnalysis": "Ücretsiz anlık analiz • Kayıt gerekmez"
-    }
-  },
-  "customerLogos": {
-    "title": "Önde gelen DeFi protokolleri tarafından güvenilir",
-    "liveAudits": "Canlı denetimler çalışıyor",
-    "enterpriseSecurity": "Kurumsal düzeyde güvenlik",
-    "protected": "2,4 milyar $ korumalı"
-  },
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The 5-Dimensional",
-      "subtitle": "Security Audit Framework",
-      "description": "Discover how Spectra revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
+      "title": "5 Boyutlu",
+      "subtitle": "Güvenlik Denetim Çerçevesi",
+      "description": "Spectra'nın kapsamlı çok boyutlu analizle blockchain güvenliğini nasıl devrimleştirdiğini ve geleneksel denetimlerin sağlayabileceğinden daha derin öngörüler sunduğunu keşfedin.",
       "buttons": {
-        "exploreDimensions": "Explore Dimensions",
-        "scoringAlgorithm": "Scoring Algorithm",
-        "viewRoadmap": "View Roadmap"
+        "exploreDimensions": "Boyutları Keşfet",
+        "scoringAlgorithm": "Skorlama Algoritması",
+        "viewRoadmap": "Yol Haritasını Görüntüle"
       }
     },
     "introduction": {
-      "title": "Why Multi-Dimensional Analysis?",
-      "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
+      "title": "Neden Çok Boyutlu Analiz?",
+      "paragraph1": "Geleneksel akıllı sözleşme denetimleri yalnızca kod güvenliğine odaklanır. Önemli olmakla birlikte, bu tek mercekli yaklaşım, çoğu DeFi exploit'ine ve proje başarısızlığına yol açan kritik risk faktörlerini kaçırır.",
       "paragraph2": {
-        "before": "Spectra's ",
-        "highlight": "5-dimensional audit framework",
-        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
+        "before": "Spectra'nın ",
+        "highlight": "5 boyutlu denetim çerçevesi",
+        "after": " projeleri sentiment, kod, tokenomik, likidite ve dağıtım açısından kapsamlı olarak analiz eder; tek başına kod denetimlerinin tespit edemediği tehditlerden yatırımcıları koruyan eksiksiz bir güvenlik tablosu sunar."
       },
       "stats": {
         "coreDimensions": {
           "value": "5",
-          "label": "Core Dimensions"
+          "label": "Çekirdek Boyutlar"
         },
         "detectionRate": {
-          "value": "95%",
-          "label": "Detection Rate"
+          "value": "%95",
+          "label": "Tespit Oranı"
         },
         "analysisTime": {
-          "value": "<30s",
-          "label": "Analysis Time"
+          "value": "≤20 dk",
+          "label": "Analiz Süresi"
         },
         "riskCategories": {
           "value": "15+",
-          "label": "Risk Categories"
+          "label": "Risk Kategorileri"
         }
       }
     },
     "dimensions": {
       "title": {
-        "before": "The ",
-        "highlight": "5 Dimensions",
+        "before": "",
+        "highlight": "5 Boyut",
         "after": ""
       },
-      "subtitle": "Each dimension provides unique insights. Together, they deliver complete security intelligence.",
-      "convergeLabel": "5 dimensions converge",
+      "subtitle": "Her boyut benzersiz öngörüler sunar. Birlikte, eksiksiz güvenlik zekası sağlarlar.",
+      "convergeLabel": "5 boyut birleşir",
       "scoreDisplay": {
         "score": "95",
-        "label": "Security Score",
-        "excellent": "Excellent"
+        "label": "Güvenlik Skoru",
+        "excellent": "Mükemmel"
       },
       "weightDistribution": {
-        "title": "Weight Distribution",
-        "totalLabel": "Total:",
+        "title": "Ağırlık Dağılımı",
+        "totalLabel": "Toplam:",
         "totalValue": "100%"
       },
       "items": {
         "sentiment": {
-          "name": "Sentiment Analysis",
+          "name": "Sentiment Analizi",
           "shortName": "Sentiment",
-          "description": "AI-powered analysis of community sentiment across social platforms, forums, and developer discussions.",
+          "description": "Sosyal platformlar, forumlar ve geliştirici tartışmalarında topluluk sentiment'inin AI destekli analizi.",
           "details": {
-            "socialVolume": "Social volume tracking",
-            "sentimentScoring": "Sentiment scoring",
-            "influencerAnalysis": "Influencer analysis",
-            "communityHealth": "Community health index",
-            "fudFomoDetection": "FUD/FOMO detection"
+            "socialVolume": "Sosyal hacim takibi",
+            "sentimentScoring": "Sentiment skorlaması",
+            "influencerAnalysis": "Etkileyici analizi",
+            "communityHealth": "Topluluk sağlığı endeksi",
+            "fudFomoDetection": "FUD/FOMO tespiti"
+          },
+          "weight": "10",
+          "weightNote": "Token'sız projeler için %30"
+        },
+        "code": {
+          "name": "Kod Güvenliği",
+          "shortName": "Kod",
+          "description": "Açıkları ve güvenlik kalıplarını belirlemek için akıllı sözleşme kodunun derin statik ve dinamik analizi.",
+          "details": {
+            "vulnerabilityDetection": "Açık tespiti",
+            "codeQuality": "Kod kalite skorlaması",
+            "auditVerification": "Denetim raporu doğrulaması",
+            "dependencyAnalysis": "Bağımlılık analizi",
+            "bestPractices": "En iyi uygulama kontrolü"
+          },
+          "weight": "45",
+          "weightNote": "Token'sız projeler için %70"
+        },
+        "tokenomics": {
+          "name": "Tokenomik Sağlığı",
+          "shortName": "Tokenomik",
+          "description": "Token dağıtımı, vesting programları, enflasyon mekanikleri ve ekonomik sürdürülebilirliğin kapsamlı değerlendirmesi.",
+          "details": {
+            "supplyDistribution": "Arz dağıtımı",
+            "vestingAnalysis": "Vesting analizi",
+            "inflationRates": "Enflasyon oranları",
+            "economicModel": "Ekonomik model doğrulaması",
+            "unlockSchedule": "Kilit açma programı takibi"
           },
           "weight": "15"
         },
-        "code": {
-          "name": "Code Security",
-          "shortName": "Code",
-          "description": "Deep static and dynamic analysis of smart contract code to identify vulnerabilities and security patterns.",
-          "details": {
-            "vulnerabilityDetection": "Vulnerability detection",
-            "codeQuality": "Code quality scoring",
-            "auditVerification": "Audit report verification",
-            "dependencyAnalysis": "Dependency analysis",
-            "bestPractices": "Best practices check"
-          },
-          "weight": "30"
-        },
-        "tokenomics": {
-          "name": "Tokenomics Health",
-          "shortName": "Tokenomics",
-          "description": "Comprehensive evaluation of token distribution, vesting schedules, inflation mechanics, and economic sustainability.",
-          "details": {
-            "supplyDistribution": "Supply distribution",
-            "vestingAnalysis": "Vesting analysis",
-            "inflationRates": "Inflation rates",
-            "economicModel": "Economic model validation",
-            "unlockSchedule": "Unlock schedule tracking"
-          },
-          "weight": "20"
-        },
         "liquidity": {
-          "name": "Liquidity Depth",
-          "shortName": "Liquidity",
-          "description": "Real-time assessment of liquidity pools, trading volumes, slippage tolerance, and market depth across DEXs.",
+          "name": "Likidite Derinliği",
+          "shortName": "Likidite",
+          "description": "DEX'ler arasında likidite havuzları, işlem hacimleri, slippage toleransı ve pazar derinliğinin gerçek zamanlı değerlendirmesi.",
           "details": {
-            "poolDepth": "Pool depth analysis",
-            "volumeTrends": "Volume trends",
-            "slippageCalc": "Slippage calculation",
-            "dexCoverage": "DEX coverage",
-            "liquidityConcentration": "Liquidity concentration"
+            "poolDepth": "Havuz derinlik analizi",
+            "volumeTrends": "Hacim eğilimleri",
+            "slippageCalc": "Slippage hesaplama",
+            "dexCoverage": "DEX kapsamı",
+            "liquidityConcentration": "Likidite konsantrasyonu"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "distribution": {
-          "name": "Distribution Analysis",
-          "shortName": "Distribution",
-          "description": "Evaluation of token holder concentration, whale activity, airdrop distributions, and decentralization metrics.",
+          "name": "Dağıtım Analizi",
+          "shortName": "Dağıtım",
+          "description": "Token holder konsantrasyonu, balina etkinliği, airdrop dağıtımları ve merkeziyetsizlik metriklerinin değerlendirilmesi.",
           "details": {
-            "holderConcentration": "Holder concentration",
-            "whaleTracking": "Whale tracking",
-            "decentralizationScore": "Decentralization score",
-            "airdropAnalysis": "Airdrop analysis",
-            "walletDistribution": "Wallet distribution"
+            "holderConcentration": "Holder konsantrasyonu",
+            "whaleTracking": "Balina takibi",
+            "decentralizationScore": "Merkeziyetsizlik skoru",
+            "airdropAnalysis": "Airdrop analizi",
+            "walletDistribution": "Cüzdan dağıtımı"
           },
           "weight": "15"
         }
+      },
+      "weightTable": {
+        "title": "Proje Türüne Göre Skorlama Ağırlıkları",
+        "subtitle": "Ağırlıklar, projenin işlem yapılabilir bir token'a sahip olup olmamasına göre uygulanır. Token'sız projeler (yardımcı protokoller, altyapı vb.) dağıtım ve likidite metrikleri geçerli olmadığından kod ve sentiment'i daha fazla vurgular.",
+        "headerDimension": "Boyut",
+        "headerHasToken": "Token Var",
+        "headerNoToken": "Token Yok",
+        "rowCode": "Kod Analizi",
+        "rowDistribution": "Token Dağıtımı",
+        "rowTokenomics": "Tokenomik",
+        "rowLiquidity": "Likidite",
+        "rowSentiment": "Sentiment",
+        "notApplicable": "Uygulanamaz",
+        "footnote": "Gerçek ağırlıklar backend skorlama hizmetinde denetim türüne göre yapılandırılır ve model yeniden kalibre edildikçe zaman içinde ayarlanabilir."
       }
     },
     "scoring": {
-      "badge": "Algorithm",
+      "badge": "Algoritma",
       "title": {
-        "before": "AI-Optimized ",
-        "highlight": "Security Score",
-        "after": " Calculation"
+        "before": "AI Optimize Edilmiş ",
+        "highlight": "Güvenlik Skoru",
+        "after": " Hesaplaması"
       },
-      "subtitle": "Our scoring algorithm uses dynamic weighted averages, continuously fine-tuned by machine learning for maximum predictive accuracy.",
+      "subtitle": "Skorlama algoritmamız, maksimum tahmin doğruluğu için makine öğrenmesi tarafından sürekli ince ayarlı dinamik ağırlıklı ortalamalar kullanır.",
       "formula": {
-        "title": "Security Score Formula",
+        "title": "Güvenlik Skoru Formülü",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Dynamic Weights",
-        "aiAdjustments": "AI Adjustments",
-        "accuracy": "Accuracy"
+        "dynamicWeights": "Dinamik Ağırlıklar",
+        "aiAdjustments": "AI Ayarlamaları",
+        "accuracy": "Doğruluk"
       },
       "weightDistribution": {
-        "title": "Dynamic Weight Distribution",
-        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+        "title": "Dinamik Ağırlık Dağılımı",
+        "description": "Temel ağırlıklar, geçmiş etki analizine dayalı olarak her boyuta atanır:"
       },
       "aiOptimization": {
-        "title": "AI Optimization Layer",
-        "description": "Machine learning models continuously refine weights based on:",
+        "title": "AI Optimizasyon Katmanı",
+        "description": "Makine öğrenmesi modelleri aşağıdakilere göre ağırlıkları sürekli iyileştirir:",
         "factors": {
-          "exploitPatterns": "Exploit pattern analysis",
-          "marketCorrelation": "Market condition correlation",
-          "projectCategorization": "Project type categorization",
-          "threatIntelligence": "Real-time threat intelligence",
-          "communityFeedback": "Community feedback integration"
+          "exploitPatterns": "Exploit kalıbı analizi",
+          "marketCorrelation": "Pazar koşulu korelasyonu",
+          "projectCategorization": "Proje türü kategorizasyonu",
+          "threatIntelligence": "Gerçek zamanlı tehdit istihbaratı",
+          "communityFeedback": "Topluluk geri bildirim entegrasyonu"
         }
       },
       "calculationExample": {
-        "title": "Calculation Example",
-        "comment": "// Example: Project with varying dimension scores",
-        "baseScore": "Base Score:",
-        "aiAdjustment": "AI Adjustment:",
-        "aiEnhancedTitle": "AI-Enhanced Accuracy",
-        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+        "title": "Hesaplama Örneği",
+        "comment": "// Örnek: Token'lı proje — ağırlıklar toplam %100",
+        "codeLabel": "Kod Güvenliği",
+        "distributionLabel": "Dağıtım",
+        "tokenomicsLabel": "Tokenomik",
+        "liquidityLabel": "Likidite",
+        "sentimentLabel": "Sentiment",
+        "compositeScore": "Birleşik Skor:",
+        "baseScore": "Temel Skor:",
+        "aiAdjustment": "AI Ayarı:",
+        "aiEnhancedTitle": "AI Geliştirilmiş Doğruluk",
+        "aiEnhancedDescription": "AI ayar faktörü, gerçek güvenlik riskini daha iyi yansıtan bir skor sağlamak için boyutlar arası korelasyonları, proje olgunluğunu, pazar koşullarını ve gerçek zamanlı tehdit verilerini dikkate alır."
       }
     },
     "howItWorks": {
       "title": {
-        "before": "How ",
-        "highlight": "It",
-        "after": " Works"
+        "before": "Nasıl ",
+        "highlight": "Çalışır",
+        "after": ""
       },
-      "subtitle": "Our AI-powered system continuously monitors and analyzes projects across all dimensions.",
+      "subtitle": "AI destekli sistemimiz, projeleri tüm skorlama boyutlarında talep üzerine analiz eder.",
       "steps": {
         "dataCollection": {
-          "title": "1. Data Collection",
-          "description": "Real-time ingestion of on-chain data, social signals, code repositories, and market data."
+          "title": "1. Veri Toplama",
+          "description": "Zincir üstü verilerin, sosyal sinyallerin, kod depolarının ve pazar verilerinin gerçek zamanlı alımı."
         },
         "aiAnalysis": {
-          "title": "2. AI Analysis",
-          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+          "title": "2. AI Analizi",
+          "description": "Gelişmiş ML modelleri, dinamik ağırlık optimizasyonu ile 5 boyutta verileri işler."
         },
         "riskScoring": {
-          "title": "3. Risk Scoring",
-          "description": "AI-optimized weighted scores with verifiable evidence provide complete security assessment."
+          "title": "3. Risk Skorlaması",
+          "description": "Doğrulanabilir kanıtlarla AI optimize edilmiş ağırlıklı skorlar, eksiksiz güvenlik değerlendirmesi sağlar."
         }
       }
     },
     "roadmap": {
       "title": {
-        "before": "Product ",
-        "highlight": "Roadmap",
+        "before": "Ürün ",
+        "highlight": "Yol Haritası",
         "after": ""
       },
-      "subtitle": "Our journey to expand security intelligence with new dimensions and enhanced research capabilities.",
+      "subtitle": "Yeni boyutlar ve gelişmiş araştırma yetenekleriyle güvenlik istihbaratını genişletme yolculuğumuz.",
       "phases": {
         "q1_2025": {
           "phase": "Q1 2025",
-          "title": "Foundation",
+          "title": "Temel",
           "items": [
-            "Launch 5-dimensional audit system",
-            "Integrate major blockchain networks",
-            "Deploy real-time monitoring infrastructure",
-            "Establish security partnerships"
+            "5 boyutlu denetim sisteminin başlatılması",
+            "Ana blockchain ağlarının entegrasyonu",
+            "Gerçek zamanlı izleme altyapısının dağıtılması",
+            "Güvenlik ortaklıklarının kurulması"
           ]
         },
         "q2_2025": {
           "phase": "Q2 2025",
-          "title": "Enhancement",
+          "title": "Geliştirme",
           "items": [
-            "Add Governance dimension analysis",
-            "Introduce cross-chain bridge security",
-            "Launch API for enterprise integration",
-            "Mobile application release"
+            "Yönetişim boyut analizinin eklenmesi",
+            "Çapraz zincir köprü güvenliğinin tanıtılması",
+            "Kurumsal entegrasyon için API başlatılması",
+            "Mobil uygulama sürümü"
           ]
         },
         "q3_2025": {
           "phase": "Q3 2025",
-          "title": "Expansion",
+          "title": "Genişleme",
           "items": [
-            "Insurance risk dimension",
-            "Regulatory compliance checks",
-            "Advanced ML-based threat prediction",
-            "Community governance features"
+            "Sigorta risk boyutu",
+            "Düzenleyici uyumluluk kontrolleri",
+            "Gelişmiş ML tabanlı tehdit tahmini",
+            "Topluluk yönetişim özellikleri"
           ]
         },
         "q4_2025": {
           "phase": "Q4 2025+",
-          "title": "Evolution",
+          "title": "Evrim",
           "items": [
-            "Additional research dimensions based on market needs",
-            "Enhanced AI research factor optimization",
-            "Decentralized audit network",
-            "Real-time exploit prevention system"
+            "Pazar ihtiyaçlarına dayalı ek araştırma boyutları",
+            "Gelişmiş AI araştırma faktör optimizasyonu",
+            "Merkeziyetsiz denetim ağı",
+            "Gerçek zamanlı exploit önleme sistemi"
           ]
         }
       },
       "status": {
-        "completed": "Completed",
-        "inProgress": "In Progress",
-        "upcoming": "Upcoming"
+        "completed": "Tamamlandı",
+        "inProgress": "Devam Ediyor",
+        "upcoming": "Yaklaşan"
       },
       "expansion": {
-        "title": "Continuous Expansion",
-        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+        "title": "Sürekli Genişleme",
+        "description": "Q4 2025'ten sonra, gelişen pazar ihtiyaçlarına, teknolojik ilerlemelere ve topluluk geri bildirimlerine dayalı olarak yeni araştırma boyutları ve gelişmiş analiz faktörleri eklemeye devam etmeyi taahhüt ediyoruz. Çerçevemiz, blockchain ekosistemiyle birlikte gelişecek şekilde tasarlanmıştır."
       }
     },
     "cta": {
-      "title": "Ready for Deeper Security Insights?",
-      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get comprehensive security audits in under 30 seconds.",
-      "button": "Start Your First Audit"
+      "title": "Daha Derin Güvenlik Öngörülerine Hazır mısınız?",
+      "description": "AI optimize edilmiş skorlama ile 5 boyutlu analizin gücünü deneyimleyin. Haftalar değil dakikalar içinde kapsamlı bir güvenlik denetimi alın.",
+      "button": "İlk Denetiminizi Başlatın"
     }
+  },
+  "methodology": {
+    "title": "Son Teknoloji Denetim Süreci",
+    "subtitle": "Her denetim, blockchain'in sanal alana alınmış bir fork'unda çalışır — analiz sırasında canlı işlem yok, kullanıcı fonları için risk yok.",
+    "forkTesting": {
+      "title": "Fork Tabanlı Simülasyon",
+      "description": "Akıllı sözleşme etkileşimleri, izole edilmiş bir mainnet fork'unda yeniden oynatılır. Davranışı, canlı ağa işlem yayınlamadan gözlemleriz."
+    },
+    "aiOrchestration": {
+      "title": "AI Tarafından Düzenlenen Analiz",
+      "description": "Birden fazla özelleştirilmiş AI ajanı, kod incelemesi, ekonomik modelleme ve zincir üstü veriler arasında koordine olur — tek bir analizörün başına bulamayacağı bulgular üretir."
+    },
+    "staticAnalysis": {
+      "title": "Bytecode ve ABI Statik Analizi",
+      "description": "Tarayıcımız, derlenmiş bytecode'u ve ABI'ları doğrudan inceler ve kaynak kodu mevcut olmasa veya kısmen doğrulanmış olsa bile sözleşmelerin analizine olanak tanır."
+    },
+    "multiDimensional": {
+      "title": "5 Boyutlu Skorlama",
+      "description": "Kod, Dağıtım, Tokenomik, Likidite ve Sentiment paralel olarak bağımsız şekilde puanlanır — ardından birleşik bir güvenlik skoruna ağırlıklandırılır."
+    }
+  },
+  "learningLoop": {
+    "title": "Skorlar Zamanla Nasıl Doğru Kalır",
+    "subtitle": "Spectra, gerçek dünya geri bildirimleri ve geçmiş denetimlere karşı kalibrasyon yoluyla sürekli gelişir — her analiz bir sonrakine bilgi sağlar.",
+    "userFeedback": {
+      "title": "Kullanıcı Geri Bildirim Entegrasyonu",
+      "description": "Her bulguya yönelik topluluk derecelendirmeleri ve uzman incelemeleri modele geri besler. Yanlış pozitifler, kaçırılan güvenlik açıkları ve şiddet tartışmaları takip edilir ve skorlama ağırlıklarını yeniden kalibre etmek için kullanılır."
+    },
+    "calibration": {
+      "title": "Benzer Projelere Karşı Kalibrasyon",
+      "description": "Her yeni denetim, yapısal olarak benzer sözleşmelerin ve tokenomiğin geçmiş denetimleriyle çapraz referanslanır. Geçmiş projelerden gelen kalıplar farklı risk profilleri önerdiğinde skorlar ayarlanır."
+    },
+    "aiOptimization": {
+      "title": "Sürekli AI Optimizasyonu",
+      "description": "Zincir üstünde yeni exploit kalıpları ortaya çıkıp yeni güvenlik açığı sınıfları açıklandıkça AI modellerimiz periyodik olarak yeniden eğitilir. Sistem, işlediği her denetimle daha akıllı hale gelir."
+    },
+    "externalAudits": {
+      "title": "Harici Denetim Çapraz Referansı",
+      "description": "Bir proje için profesyonel insan denetimleri mevcut olduğunda, bulgularımız rapora kıyasla karşılaştırılır. Tutarsızlıklar model iyileştirmesine geri besler."
+    }
+  },
+  "disclaimer": {
+    "title": "Önemli Yasal Uyarı",
+    "aiGenerated": "Tüm bulgular AI analizi tarafından üretilir — insan güvenlik denetçileri tarafından değil.",
+    "forkTesting": "Sözleşme davranışı, canlı mainnet'te değil, blockchain'in fork edilmiş bir kopyasında analiz edilir.",
+    "noGuarantee": "Yüksek bir güvenlik skoru, bir projenin güvenli olduğunu GARANTİ ETMEZ. Skorlar, analiz sırasında mevcut verilerin durumunu yansıtır.",
+    "doYourResearch": "Herhangi bir yatırım, dağıtım veya entegrasyon kararı vermeden önce her zaman kendi araştırmanızı yapın (DYOR).",
+    "toolPurpose": "Spectra, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir."
   }
 }

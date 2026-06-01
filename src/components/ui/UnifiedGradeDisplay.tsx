@@ -209,13 +209,6 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
                   {normalizedScore >= 90 ? 'A+' : normalizedScore >= 75 ? 'A' : 'B'}
                 </div>
               </div>
-              <div className="w-px h-8 bg-neutral-300 dark:bg-neutral-700" />
-              <div className="text-center">
-                <div className="text-xs text-neutral-600 dark:text-neutral-500 uppercase tracking-wide">Reliability</div>
-                <div className={cn('font-mono font-bold', config.color)}>
-                  {normalizedScore >= 80 ? '99.9%' : '98.5%'}
-                </div>
-              </div>
             </div>
           )}
         </div>

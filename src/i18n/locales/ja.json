@@ -24,6 +24,14 @@
     "language": "言語",
     "launchApp": "アプリを起動"
   },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "言語",
+      "themeLabel": "テーマ",
+      "connectWithUs": "私たちとつながる",
+      "freeAnalysis": "無料即時分析 • 登録不要"
+    }
+  },
   "hero": {
     "authority": {
       "securityFirst": "セキュリティファースト設計",
@@ -31,19 +39,19 @@
       "openSource": "オープンソース"
     },
     "headline": "投資前にプロジェクトのセキュリティを調査",
-    "subheadline": "1000以上のDeFiプロトコル向け多次元セキュリティスコア。検証可能な包括的な分析で、投資前にリスクを理解できます。",
+    "subheadline": "複数のDeFiエコシステムにわたる多次元セキュリティスコア。検証可能な包括的な分析で、投資前にリスクを理解できます。",
     "addressPlaceholder": "Ethereumアドレスを入力",
     "getAuditReport": "監査レポートを取得",
     "getReport": "レポートを取得",
     "trustMetrics": {
       "activeUsers": "アクティブユーザー",
-      "accuracy": "精度",
-      "scanTime": "スキャン時間 (秒)",
+      "accuracy": "既知の脆弱性検出",
+      "scanTime": "分 標準時間",
       "protectedUsers": "保護されたユーザー",
       "uptime": "稼働時間",
-      "detectionRate": "検出率",
-      "threatTypes": "脅威の種類",
-      "projectsAnalyzed": "分析済みプロジェクト",
+      "detectionRate": "既知の脆弱性検出",
+      "threatTypes": "スコアリング次元",
+      "projectsAnalyzed": "スコアリング次元",
       "riskFlagsIdentified": "特定されたリスクフラグ"
     },
     "cta": {
@@ -51,50 +59,51 @@
       "secondary": "スコアの仕組みを学ぶ"
     },
     "riskWarning": {
-      "threatsPrevented": "今週23件の脅威を阻止",
-      "message": "次の攻撃を待つ必要はありません。リアルタイムの保護機能が、脆弱性の悪用を未然に防ぎます。"
+      "threatsPrevented": "一般的な脆弱性クラスを検出します",
+      "message": "資金を投じる前にセキュリティリスクを把握しましょう。オンデマンドのAI分析により、プロジェクト全体にわたる一般的な脆弱性のパターンや集中リスクを明らかにします。"
     },
     "socialProof": {
-      "trustedBy": "主要プロトコルから信頼されています",
-      "defiLeader": "DeFiセキュリティのリーダー",
-      "protocols": "1000以上のプロトコルが導入"
+      "trustedBy": "Web3エコシステムのために構築",
+      "defiLeader": "DeFiセキュリティインサイト",
+      "protocols": "マルチチェーンサポート",
+      "disclaimer": "オープンソースプラットフォーム"
     },
     "page": {
       "heroTitle": "スマートコントラクトセキュリティ監査",
       "heroSubtitle": "数秒で、数週間ではなく",
-      "heroDescription": "検証可能なエビデンス付きのAI駆動スマートコントラクト分析。30秒以内包括的なセキュリティ監査を取得。登録不要。",
-      "securityAuditTitle": "専門的に監査・検証済み",
-      "securityAuditSubtitle": "リーディングな専門家によって検証された信頼できるセキュリティ",
-      "thirdPartyAudited": "第三者監査済み",
-      "thirdPartyAuditedDesc": "主要な暗号監査会社によるセキュリティレビュー",
-      "verified": "検証済み",
+      "heroDescription": "検証可能なエビデンス付きのAI駆動スマートコントラクト分析。20分以内に包括的なセキュリティ分析を取得。登録不要。",
+      "securityAuditTitle": "オープンソース — 公開検証可能",
+      "securityAuditSubtitle": "検査、監査、再現が可能な透明性のある方法論",
+      "thirdPartyAudited": "オープンソース",
+      "thirdPartyAuditedDesc": "すべての発見には、その根拠となる証拠と推論が付随します",
+      "verified": "検証可能",
       "openSource": "オープンソース",
-      "openSourceDesc": "GitHub で公開可能なコード",
+      "openSourceDesc": "GitHubで公開検証可能なコードと分析パイプライン",
       "transparent": "透明性",
-      "trustMessage": "私たちのコードベースは、有名なブロックチェーンセキュリティ企業による包括的なセキュリティ監査を受けています。継続的なセキュリティ改善と透明性に取り組んでいます。",
+      "trustMessage": "公開検証可能な監査方法論を持つオープンソースプラットフォームです",
       "featuresTitle": "次世代のセキュリティ監査",
       "featuresSubtitle": "従来の監査は遅く、高価で、すぐに古くなります。Spectra は、あなたのコードに合わせて進化する継続的で検証可能なセキュリティ監視を提供します。",
-      "realTimeMonitoring": "リアルタイム AI 監視",
-      "realTimeMonitoringDesc": "継続的な AI 駆動スキャンは、脆弱性が導入された瞬間に検出します。コード変更がセキュリティポスチャーに影響を与えるときに即座にアラートを受け取り、平均スキャン時間は 30 秒です。",
-      "avgScanTime": "30秒",
-      "avgScanTimeLabel": "平均スキャン時間",
-      "fasterThanAudits": "2.4倍",
-      "fasterThanAuditsLabel": "監査より高速",
-      "automated": "100%",
-      "automatedLabel": "自動化",
+      "realTimeMonitoring": "オンデマンドAI分析",
+      "realTimeMonitoringDesc": "プロジェクトが提出されたときに行われるオンデマンドのAI駆動分析。包括的な5次元セキュリティレビューは、監査ごとに20分以内に完了します。",
+      "avgScanTime": "≤20分",
+      "avgScanTimeLabel": "標準的な監査時間",
+      "fasterThanAudits": ">2.4×",
+      "fasterThanAuditsLabel": "従来の監査より高速",
+      "automated": "完全に",
+      "automatedLabel": "AIオーケストレーション分析",
       "verifiableEvidence": "検証可能なエビデンス",
-      "verifiableEvidenceDesc": "各セキュリティ主張には、再現可能な AI diffs と検証可能なエビデンスが含まれます。監査報告書を盲目的に信頼する必要はもうありません - 各問題を特定した方法を正確に確認できます。",
+      "verifiableEvidenceDesc": "各セキュリティ主張には、再現可能なAI diffsとエビデンスが含まれます。完全に透明な方法論で、各問題を特定した方法を正確に確認できます。",
       "openSourceCodebase": "オープンソースコードベース",
       "publicGitHubRepo": "パブリック GitHub リポジトリ",
       "comprehensiveCoverage": "包括的なカバレッジ",
-      "comprehensiveCoverageDesc": "高度な AI モデルは、人間の監査員よりも多くの脆弱性タイプをキャッチします。スマートコントラクトのバグから経済的攻撃ベクトルまで。",
+      "comprehensiveCoverageDesc": "高度なAIモデルは、既知の脆弱性クラスの幅広い範囲を検出します — スマートコントラクトのバグ、経済攻撃ベクトル、集中度リスク。",
       "vulnerabilityCategories": "15+ 脆弱性カテゴリー",
-      "detectionRate": "既知のエクスプロイトの 95% を検出",
-      "productionReady": "本番対応セキュリティ",
-      "productionReadyDesc": "信頼できるスマートコントラクトセキュリティ分析を必要とする開発者のために構築。第三者監査とオープンソース、検証可能な監査レポート付き。",
-      "thirdPartyVerified": "第三者検証済み",
+      "detectionRate": "既知の問題を最大95%検出",
+      "productionReady": "検証可能でオープンソース",
+      "productionReadyDesc": "監査のすべてのステップを検査、再現、検証したい開発者と研究者のために構築されたオープンソースの分析パイプライン。",
+      "thirdPartyVerified": "オープンソース",
       "sourceCode": "ソースコード",
-      "scanTime": "<30秒スキャン",
+      "scanTime": "≤20分監査",
       "aiPoweredAnalysis": "AI駆動分析",
       "aiPoweredAnalysisDesc": "高速、自動化されたセキュリティスキャン",
       "highAccuracy": "高精度",
@@ -103,8 +112,8 @@
       "multiDimensionalDesc": "5因子セキュリティスコアリング",
       "liveStatusTitle": "包括的なセキュリティ分析",
       "liveStatusSubtitle": "完全なスマートコントラクトセキュリティ評価のための多次元スコアリング。",
-      "scanTimeValue": "<30秒",
-      "scanTimeLabel": "平均スキャン時間",
+      "scanTimeValue": "≤20分",
+      "scanTimeLabel": "標準的な監査時間",
       "scanTimeBadge": "高速分析",
       "dimensionsValue": "5",
       "dimensionsLabel": "セキュリティ次元",
@@ -112,17 +121,17 @@
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "AI駆動分析",
       "aiPoweredBadge": "スマート検出",
-      "transparentValue": "100%",
+      "transparentValue": "完全に",
       "transparentLabel": "透明な方法論",
       "transparentBadge": "検証可能な結果",
       "systemReady": "システム準備完了 • 数秒で監査を開始",
       "finalCtaTitle": "数秒でセキュリティ。検証準備完了？",
-      "finalCtaSubtitle": "次のエクスプロイトを待たないでください。今日 Spectra を開始し、検証可能なリアルタイムセキュリティ監視で投資を保護してください。",
-      "noCreditCardRequired": "クレジットカード不要 • 30秒設定",
+      "finalCtaSubtitle": "プロアクティブな保護で脆弱性に先手を打ちましょう。今日 Spectra を開始し、検証可能なリアルタイムセキュリティ監視で投資を保護してください。",
+      "noCreditCardRequired": "クレジットカード不要 • クイック設定",
       "quickSetup": "クイック設定",
       "quickSetupDesc": "包括的なセキュリティ監査を開始",
-      "expertSupport": "専門家サポート",
-      "expertSupportDesc": "必要なときにヘルプが利用可能なセキュリティチーム",
+      "expertSupport": "ドキュメント & コミュニティサポート",
+      "expertSupportDesc": "発見を解釈するのに役立つオープンなドキュメントとコミュニティリソース",
       "communityDriven": "コミュニティ主導",
       "communityDrivenDesc": "透明な開発によるオープンソース"
     }
@@ -180,13 +189,13 @@
       "title": "パッシブセーバー",
       "description": "暗号資産を、手間なく安全に保護します。",
       "benefits": [
-        "24時間365日の自動監視",
+        "オンデマンドのAIセキュリティ分析",
         "シンプルなセキュリティ評価（A～F）",
         "リスクの即時通知",
         "専門知識は不要"
       ],
       "cta": "資産を保護",
-      "ctaSubtext": "わずか30秒で保護を開始"
+      "ctaSubtext": "数週間ではなく、数分で洞察を取得"
     },
     "powerAnalyst": {
       "name": "高度な分析",
@@ -205,62 +214,59 @@
   },
   "features": {
     "title": "次世代のセキュリティ監査",
-    "subtitle": "従来の監査は、時間がかかり高コストな上、すぐに陳腐化します。Spectraは、コードの変更に追随し、継続的で検証可能なセキュリティ監視を提供します。",
+    "subtitle": "従来の監査は遅く高コストです。Spectraは、検査と再現が可能なAIオーケストレーションによる検証可能なセキュリティ分析を提供します。",
     "monitoring": {
-      "title": "リアルタイム監視",
-      "description": "AIによる継続的なスキャンが、脆弱性が生じた瞬間を検知。コードの変更がセキュリティ体制に影響を与える場合、即座にアラートを送信します。",
-      "metric": "平均30秒のスキャン時間",
-      "comparison": "従来の監査の2.4倍の速さ"
+      "title": "高速なAI分析",
+      "description": "AIオーケストレーション分析が5つの次元 — コード、分布、トコノミクス、流動性、センチメント — を並行して実行し、追跡可能なエビデンスを伴う複合スコアを生成します。",
+      "metric": "通常、監査ごとに20分以下",
+      "comparison": "従来の手動監査の2.4倍以上の速さ"
     },
     "verifiable": {
       "title": "検証可能な証拠",
-      "description": "すべてのセキュリティ評価は、検証・再現可能なAIによる差分分析と証拠に基づいています。監査レポートをただ信じるのではなく、各問題がどのように検出されたかを正確に確認できます。",
-      "metric": "100%透明な方法論",
+      "description": "すべての発見には、その背後にある推論、ソースデータ、再現可能なエビデンスが含まれます。各問題がどのように識別されたかを正確に確認できます — ブラックボックスはありません。",
+      "metric": "完全に透明な方法論",
       "detail": "オープンソースとしてGitHubリポジトリで公開"
     },
     "comprehensive": {
       "title": "包括的なカバレッジ",
-      "description": "高度なAIモデルが、人間の監査員よりも多くの種類の脆弱性を検出。スマートコントラクトのバグから経済的な攻撃ベクトルまで、幅広くカバーします。",
+      "description": "高度なAIモデルが既知の脆弱性クラスの幅広い範囲を検出します — スマートコントラクトのバグから経済的な攻撃ベクトル、集中度リスクまで。",
       "metric": "15以上の脆弱性カテゴリー",
-      "detail": "デプロイ前に既知の脆弱性の最大95%を検出"
+      "detail": "デプロイ前に既知の脆弱性の最大95%を検出するのに役立ちます"
     },
     "trustIndicators": {
-      "monitoring": "24時間365日監視",
+      "monitoring": "オンデマンド分析",
       "zeroFalsePositives": "高精度な検出",
-      "uptime": "99.9%稼働時間SLA"
+      "uptime": "高可用性インフラストラクチャ"
     },
     "lossPrevention": "DeFiプロトコル向けの高度な脅威検出"
   },
   "liveStatus": {
     "title": "稼働中プロトコルのリアルタイム保護",
-    "subtitle": "継続的なセキュリティ監視でSpectraを信頼する、数千のユーザーの仲間入りを。",
-    "contracts": "監視中のコントラクト",
-    "threatsPrevented": "今週阻止した脅威",
-    "valueProtected": "保護されている資産価値",
-    "uptimeSLA": "稼働時間SLA",
+    "subtitle": "プラットフォーム分析活動のリアルタイムビュー。",
+    "contracts": "分析されたコントラクト",
+    "threatsPrevented": "明らかになった発見",
+    "valueProtected": "カバーされたプロジェクト",
+    "uptimeSLA": "プラットフォーム可用性",
     "growth": "成長中のコミュニティ",
-    "savedLosses": "ユーザーアセットを保護中",
+    "savedLosses": "ユーザーにリスクを明らかにする",
     "defiProtocols": "全DeFiプロトコル",
     "last30Days": "過去30日間",
-    "systemStatus": "全システム正常稼働中 • 最終スキャン: 2秒前"
+    "systemStatus": "全システム正常稼働中"
   },
   "cta": {
     "title": "セキュリティを数秒で。検証の準備はいいですか？",
-    "subtitle": "次の攻撃を待つ必要はありません。今すぐSpectraを始め、検証可能なリアルタイムのセキュリティ監視であなたの資産を守りましょう。",
+    "subtitle": "検証可能なAI駆動分析で脆弱性に先手を打ちましょう。Spectraを始めて、プロジェクトのセキュリティ姿勢を数分で検査してください。",
     "button": "今すぐ無料監査を開始",
-    "noCreditCard": "クレジットカード不要 • 30秒で設定完了",
+    "noCreditCard": "クレジットカード不要 • クイック設定",
     "trustBuilders": {
-      "riskFree": {
-        "title": "リスクなしのトライアル",
-        "description": "全機能を14日間、クレジットカード不要でお試しいただけます"
-      },
       "expertSupport": {
-        "title": "エキスパートによるサポート",
-        "description": "緊急時にはセキュリティチームが24時間365日対応"
+        "title": "ドキュメント & コミュニティサポート",
+        "description": "発見を解釈するのに役立つオープンなドキュメントとコミュニティリソース"
       },
       "communityTrusted": {
-        "title": "コミュニティからの信頼",
-        "description": "1250以上のプロトコル、24億ドル相当の資産を保護"
+        "title": "コミュニティ主導のインサイト",
+        "description": "Web3エコシステムのためのコミュニティ主導のセキュリティインサイト",
+        "disclaimer": "オープンソースプラットフォーム"
       }
     },
     "urgency": "今日、無料の包括的な監査を開始してください"
@@ -275,6 +281,19 @@
     "closeModal": "ペルソナセレクターを閉じる",
     "selectPersona": "ペルソナ「{persona}」を選択"
   },
+  "customerLogos": {
+    "title": "Web3エコシステムのために構築",
+    "liveAudits": "オンデマンドで実行される監査",
+    "enterpriseSecurity": "オープンソースセキュリティ",
+    "protected": "コミュニティ主導"
+  },
+  "statsBanner": {
+    "header": {
+      "title": "スマートコントラクトセキュリティインサイト",
+      "subtitle": "20分以内に包括的なセキュリティ分析を入手。SpectraのAI搭載プラットフォームは、プロジェクトの背後にあるセキュリティ上の考慮事項を理解するのに役立ちます。"
+    },
+    "footer": "すべての監査は、検証可能な結果を伴うブロックチェーンのフォークレプリカ上で実行されます。"
+  },
   "errors": {
     "somethingWentWrong": "問題が発生しました",
     "errorDescription": "予期せぬエラーが発生しました。この問題は記録され、私たちのチームが調査します。",
@@ -282,20 +301,6 @@
     "tryAgain": "再試行",
     "reloadPage": "ページを再読み込み",
     "contactSupport": "問題が解決しない場合は、サポートチームまでお問い合わせください"
-  },
-  "navbar": {
-    "mobileMenu": {
-      "languageLabel": "言語",
-      "themeLabel": "テーマ",
-      "connectWithUs": "私たちとつながる",
-      "freeAnalysis": "無料即時分析 • 登録不要"
-    }
-  },
-  "customerLogos": {
-    "title": "主要なDeFiプロトコルに信頼されています",
-    "liveAudits": "ライブ監査実行中",
-    "enterpriseSecurity": "エンタープライズ級セキュリティ",
-    "protected": "24億ドルを保護"
   },
   "whitepaper": {
     "badge": "Whitepaper v1.0",
@@ -327,7 +332,7 @@
           "label": "検出率"
         },
         "analysisTime": {
-          "value": "<30s",
+          "value": "≤20 分",
           "label": "分析時間"
         },
         "riskCategories": {
@@ -366,7 +371,8 @@
             "communityHealth": "コミュニティヘルス指数",
             "fudFomoDetection": "FUD/FOMO検出"
           },
-          "weight": "15"
+          "weight": "10",
+          "weightNote": "トークンなしプロジェクトでは30%"
         },
         "code": {
           "name": "コードセキュリティ",
@@ -379,7 +385,8 @@
             "dependencyAnalysis": "依存関係分析",
             "bestPractices": "ベストプラクティスチェック"
           },
-          "weight": "30"
+          "weight": "45",
+          "weightNote": "トークンなしプロジェクトでは70%"
         },
         "tokenomics": {
           "name": "トコノミクスヘルス",
@@ -392,20 +399,20 @@
             "economicModel": "経済モデル検証",
             "unlockSchedule": "アンロックスケジュール追跡"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "liquidity": {
           "name": "流動性深さ",
           "shortName": "流動性",
-          "description": "DEX全体の流動性プール、取引量、スリッpage許容度、マーケット深さのリアルタイム評価。",
+          "description": "DEX全体の流動性プール、取引量、スリッページ許容度、マーケット深さのリアルタイム評価。",
           "details": {
             "poolDepth": "プール深度分析",
             "volumeTrends": "ボリュームトレンド",
-            "slippageCalc": "スリッpage計算",
+            "slippageCalc": "スリッページ計算",
             "dexCoverage": "DEXカバレッジ",
             "liquidityConcentration": "流動性集中度"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "distribution": {
           "name": "配分分析",
@@ -420,6 +427,20 @@
           },
           "weight": "15"
         }
+      },
+      "weightTable": {
+        "title": "プロジェクトタイプ別のスコアリング重み",
+        "subtitle": "重みは、プロジェクトが取引可能なトークンを持っているかどうかに基づいて適用されます。トークンなしのプロジェクト（ユーティリティプロトコル、インフラストラクチャなど）では、配布や流動性の指標が適用されないため、コードとセンチメントをより重視します。",
+        "headerDimension": "次元",
+        "headerHasToken": "トークンあり",
+        "headerNoToken": "トークンなし",
+        "rowCode": "コード分析",
+        "rowDistribution": "トークン配分",
+        "rowTokenomics": "トコノミクス",
+        "rowLiquidity": "流動性",
+        "rowSentiment": "センチメント",
+        "notApplicable": "N/A",
+        "footnote": "実際の重みはバックエンドのスコアリングサービスで監査タイプごとに設定され、モデルが再調整されるにつれて時間とともに調整される可能性があります。"
       }
     },
     "scoring": {
@@ -454,7 +475,13 @@
       },
       "calculationExample": {
         "title": "計算例",
-        "comment": "// 例: 様々な次元スコアを持つプロジェクト",
+        "comment": "// 例：トークンありプロジェクト — 重みの合計は100%",
+        "codeLabel": "コードセキュリティ",
+        "distributionLabel": "配分",
+        "tokenomicsLabel": "トコノミクス",
+        "liquidityLabel": "流動性",
+        "sentimentLabel": "センチメント",
+        "compositeScore": "複合スコア：",
         "baseScore": "基本スコア:",
         "aiAdjustment": "AI調整:",
         "aiEnhancedTitle": "AI強化精度",
@@ -467,7 +494,7 @@
         "highlight": "仕組み",
         "after": ""
       },
-      "subtitle": "AI駆動システムがすべての次元にわたってプロジェクトを継続的に監視および分析します。",
+      "subtitle": "AI駆動システムがすべてのスコアリング次元にわたってプロジェクトをオンデマンドで分析します。",
       "steps": {
         "dataCollection": {
           "title": "1. データ収集",
@@ -539,13 +566,61 @@
       },
       "expansion": {
         "title": "継続的拡張",
-        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+        "description": "Q4 2025以降、新興市場のニーズ、技術の進歩、コミュニティのフィードバックに基づき、新しい研究次元と強化された分析因子を継続的に追加することに尽力します。私たちのフレームワークは、ブロックチェーンエコシステムとともに進化するように設計されています。"
       }
     },
     "cta": {
       "title": "より深いセキュリティインサイトの準備はできましたか？",
-      "description": "AI最適化スコアリングによる5次元分析の力を体験してください。30秒以内で包括的なセキュリティ監査を取得してください。",
+      "description": "AI最適化スコアリングによる5次元分析の力を体験してください。数週間ではなく、数分で包括的なセキュリティ監査を取得してください。",
       "button": "最初の監査を開始"
     }
+  },
+  "methodology": {
+    "title": "最先端の監査プロセス",
+    "subtitle": "すべての監査は、ブロックチェーンのサンドボックスフォーク上で実行されます — ライブトランザクションなし、分析中のユーザー資金へのリスクなし。",
+    "forkTesting": {
+      "title": "フォークベースのシミュレーション",
+      "description": "スマートコントラクトのインタラクションは、分離されたメインネットフォーク上で再生されます。ライブネットワークにトランザクションをブロードキャストすることなく、動作を観察します。"
+    },
+    "aiOrchestration": {
+      "title": "AIオーケストレーション分析",
+      "description": "複数の専門AIエージェントが、コードレビュー、経済モデリング、オンチェーンデータにわたって連携し — 単一のアナライザーでは明らかにできない発見を生み出します。"
+    },
+    "staticAnalysis": {
+      "title": "バイトコード & ABI静的分析",
+      "description": "スキャナーはコンパイル済みバイトコードとABIを直接検査するため、ソースコードが利用できない場合や部分的にしか検証されていない場合でもコントラクトを分析できます。"
+    },
+    "multiDimensional": {
+      "title": "5次元スコアリング",
+      "description": "コード、配分、トコノミクス、流動性、センチメントは並行して独立してスコア化され — 複合セキュリティスコアに重み付けされます。"
+    }
+  },
+  "learningLoop": {
+    "title": "スコアが時間とともに正確であり続ける方法",
+    "subtitle": "Spectraは、現実世界のフィードバックと過去の監査との校正を通じて継続的に改善されます — すべての分析が次の分析に情報を提供します。",
+    "userFeedback": {
+      "title": "ユーザーフィードバック統合",
+      "description": "各発見に対するコミュニティの評価と専門家のレビューがモデルにフィードバックされます。誤検出、見逃された脆弱性、深刻度の論争が追跡され、スコアリング重みの再調整に使用されます。"
+    },
+    "calibration": {
+      "title": "類似プロジェクトとの校正",
+      "description": "新しい監査は、構造的に類似したコントラクトとトコノミクスの過去の監査と相互参照されます。過去のプロジェクトのパターンが異なるリスクプロファイルを示唆する場合、スコアが調整されます。"
+    },
+    "aiOptimization": {
+      "title": "継続的なAI最適化",
+      "description": "オンチェーンで新しいエクスプロイトパターンが発生し、新しい脆弱性クラスが開示されると、AIモデルは定期的に再トレーニングされます。システムは処理する監査ごとに賢くなります。"
+    },
+    "externalAudits": {
+      "title": "外部監査クロスリファレンス",
+      "description": "プロジェクトに対する専門的な人間の監査が利用可能になると、私たちの発見はレポートと比較されます。不一致はモデルの改良にフィードバックされます。"
+    }
+  },
+  "disclaimer": {
+    "title": "重要な免責事項",
+    "aiGenerated": "すべての発見はAI分析によって生成されています — 人間のセキュリティ監査人によるものではありません。",
+    "forkTesting": "コントラクトの動作は、ライブメインネットではなく、ブロックチェーンのフォークレプリカ上で分析されます。",
+    "noGuarantee": "高いセキュリティスコアはプロジェクトが安全であることを保証するものではありません。スコアは分析時点で利用可能なデータの状態を反映します。",
+    "doYourResearch": "投資、デプロイ、統合の意思決定を行う前に、必ず自分自身のリサーチ（DYOR）を行ってください。",
+    "toolPurpose": "Spectraは、ユーザーがプロジェクトの背後にあるセキュリティ上の考慮事項を理解するのに役立つように設計された情報ツールです。財務、法律、投資の助言ではありません。"
   }
 }

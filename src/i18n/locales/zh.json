@@ -24,6 +24,14 @@
     "language": "语言",
     "launchApp": "启动应用"
   },
+  "navbar": {
+    "mobileMenu": {
+      "languageLabel": "语言",
+      "themeLabel": "主题",
+      "connectWithUs": "联系我们",
+      "freeAnalysis": "免费即时分析 • 无需注册"
+    }
+  },
   "hero": {
     "authority": {
       "securityFirst": "安全优先设计",
@@ -31,19 +39,19 @@
       "openSource": "开源"
     },
     "headline": "投资前调研项目安全性",
-    "subheadline": "覆盖 1000+ DeFi 协议的多维度安全评分。通过可验证的全面分析，在投资前了解潜在风险。",
+    "subheadline": "覆盖多个 DeFi 生态系统的多维度安全评分。通过可验证的全面分析，在投资前了解潜在风险。",
     "addressPlaceholder": "输入以太坊地址或合约地址",
     "getAuditReport": "获取审计报告",
     "getReport": "获取报告",
     "trustMetrics": {
       "activeUsers": "活跃用户",
-      "accuracy": "审计精度",
-      "scanTime": "秒级扫描",
+      "accuracy": "已知漏洞检测",
+      "scanTime": "分钟典型时间",
       "protectedUsers": "受保护用户",
       "uptime": "正常运行时间",
-      "detectionRate": "威胁检测率",
-      "threatTypes": "威胁类型",
-      "projectsAnalyzed": "已分析项目",
+      "detectionRate": "已知漏洞检测",
+      "threatTypes": "评分维度",
+      "projectsAnalyzed": "评分维度",
       "riskFlagsIdentified": "识别的风险标记"
     },
     "cta": {
@@ -51,50 +59,51 @@
       "secondary": "了解评分机制"
     },
     "riskWarning": {
-      "threatsPrevented": "本周已阻止 23 个威胁",
-      "message": "切勿坐等下一次漏洞攻击。实时防护，防患于未然。"
+      "threatsPrevented": "已识别常见漏洞类别",
+      "message": "在投入资金之前先了解安全风险。按需 AI 分析可帮助揭示项目中常见的漏洞模式和集中度风险。"
     },
     "socialProof": {
-      "trustedBy": "深受主流协议信赖",
-      "defiLeader": "DeFi 安全领导者",
-      "protocols": "1000+ 协议集成"
+      "trustedBy": "为 Web3 生态系统打造",
+      "defiLeader": "DeFi 安全洞察",
+      "protocols": "多链支持",
+      "disclaimer": "开源平台"
     },
     "page": {
       "heroTitle": "智能合约安全审计",
       "heroSubtitle": "秒级完成，而非数周",
-      "heroDescription": "AI 驱动的智能合约分析，附带可验证的证据。30秒内获取全面的安全审计。无需注册。",
-      "securityAuditTitle": "专业审计与验证",
-      "securityAuditSubtitle": "您可信赖的安全保障，由顶级专家验证",
-      "thirdPartyAudited": "第三方审计",
-      "thirdPartyAuditedDesc": "由领先加密货币审计公司审查安全性",
-      "verified": "已验证",
+      "heroDescription": "AI 驱动的智能合约分析，附带可验证的证据。20分钟内获取全面的安全分析。无需注册。",
+      "securityAuditTitle": "开源 — 可公开验证",
+      "securityAuditSubtitle": "透明的方法论，您可以检查、审计和复现",
+      "thirdPartyAudited": "开源",
+      "thirdPartyAuditedDesc": "每个发现都附有支撑证据和推理过程",
+      "verified": "可验证",
       "openSource": "开源",
-      "openSourceDesc": "GitHub 上公开可验证的代码",
+      "openSourceDesc": "GitHub 上可公开验证的代码和分析流水线",
       "transparent": "透明",
-      "trustMessage": "我们的代码库已经过知名区块链安全公司的全面安全审计。我们致力于持续的安全改进和透明度。",
-      "featuresTitle": "次世代安全审计",
+      "trustMessage": "开源平台，审计方法论可公开验证",
+      "featuresTitle": "新一代安全审计",
       "featuresSubtitle": "传统审计缓慢、昂贵且很快过时。Spectra 提供持续、可验证的安全监控，与您的代码保持同步。",
-      "realTimeMonitoring": "实时 AI 监控",
-      "realTimeMonitoringDesc": "持续的 AI 驱动扫描能在漏洞引入时立即检测。当代码变更影响您的安全状况时，即时获取警报，平均扫描时间为 30 秒。",
-      "avgScanTime": "30秒",
-      "avgScanTimeLabel": "平均扫描时间",
-      "fasterThanAudits": "2.4倍",
-      "fasterThanAuditsLabel": "比审计更快",
-      "automated": "100%",
-      "automatedLabel": "自动化",
+      "realTimeMonitoring": "按需 AI 分析",
+      "realTimeMonitoringDesc": "项目提交时进行按需 AI 驱动分析。全面的 5 维安全审查每次审计在 20 分钟内完成。",
+      "avgScanTime": "≤20分钟",
+      "avgScanTimeLabel": "典型审计时间",
+      "fasterThanAudits": ">2.4×",
+      "fasterThanAuditsLabel": "比传统审计更快",
+      "automated": "完全",
+      "automatedLabel": "AI 编排分析",
       "verifiableEvidence": "可验证的证据",
-      "verifiableEvidenceDesc": "每个安全声明都包含可复现的 AI 差异和可验证的证据。无需盲目信任审计报告——准确查看我们发现每个问题的方式。",
+      "verifiableEvidenceDesc": "每个安全声明都包含可复现的 AI 差异和证据。通过完全透明的方法论，准确查看我们发现每个问题的方式。",
       "openSourceCodebase": "开源代码库",
       "publicGitHubRepo": "GitHub 公开仓库",
       "comprehensiveCoverage": "全面覆盖",
-      "comprehensiveCoverageDesc": "先进的 AI 模型比人类审计员检测更多类型的漏洞。从智能合约 bug 到经济攻击向量。",
+      "comprehensiveCoverageDesc": "先进的 AI 模型检测广泛的已知漏洞类别 — 智能合约缺陷、经济攻击向量和集中度风险。",
       "vulnerabilityCategories": "15+ 漏洞类别",
-      "detectionRate": "检测 95% 已知漏洞利用",
-      "productionReady": "生产就绪的安全",
-      "productionReadyDesc": "为需要可靠智能合约安全分析的开发者构建。第三方审计和开源，附带可验证的审计报告。",
-      "thirdPartyVerified": "第三方验证",
+      "detectionRate": "最高可检测 95% 的已知问题",
+      "productionReady": "可验证且开源",
+      "productionReadyDesc": "为希望检查、复现和验证审计每一步的开发者和研究人员构建的开源分析流水线。",
+      "thirdPartyVerified": "开源",
       "sourceCode": "源代码",
-      "scanTime": "<30 秒扫描",
+      "scanTime": "≤20 分钟审计",
       "aiPoweredAnalysis": "AI 驱动分析",
       "aiPoweredAnalysisDesc": "快速、自动化的安全扫描",
       "highAccuracy": "高精度",
@@ -103,8 +112,8 @@
       "multiDimensionalDesc": "5 因子安全评分",
       "liveStatusTitle": "全面安全分析",
       "liveStatusSubtitle": "完整的智能合约安全评估多维评分。",
-      "scanTimeValue": "<30秒",
-      "scanTimeLabel": "平均扫描时间",
+      "scanTimeValue": "≤20分钟",
+      "scanTimeLabel": "典型审计时间",
       "scanTimeBadge": "快速分析",
       "dimensionsValue": "5",
       "dimensionsLabel": "安全维度",
@@ -112,17 +121,17 @@
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "AI 驱动分析",
       "aiPoweredBadge": "智能检测",
-      "transparentValue": "100%",
+      "transparentValue": "完全",
       "transparentLabel": "透明方法",
       "transparentBadge": "可验证结果",
       "systemReady": "系统就绪 • 秒内启动审计",
       "finalCtaTitle": "秒级安全。准备好验证了吗？",
-      "finalCtaSubtitle": "切勿坐等下一次漏洞攻击。立即开始使用 Spectra，通过可验证的实时安全监控，守护您的资产安全。",
-      "noCreditCardRequired": "无需信用卡 • 30 秒快速设置",
+      "finalCtaSubtitle": "通过主动防护抢先一步发现漏洞。立即开始使用 Spectra，通过可验证的实时安全监控，守护您的资产安全。",
+      "noCreditCardRequired": "无需信用卡 • 快速设置",
       "quickSetup": "快速设置",
       "quickSetupDesc": "开始全面的安全审计",
-      "expertSupport": "专家支持",
-      "expertSupportDesc": "安全团队随时为您提供帮助",
+      "expertSupport": "文档与社区支持",
+      "expertSupportDesc": "开放的文档和社区资源帮助您解读审计发现",
       "communityDriven": "社区驱动",
       "communityDrivenDesc": "开源与透明开发"
     }
@@ -180,13 +189,13 @@
       "title": "被动投资者",
       "description": "为您的加密资产提供安全、省心的自动化保护。",
       "benefits": [
-        "全天候自动化监控",
+        "按需 AI 安全分析",
         "简明的安全评级 (A-F)",
         "风险即时警报",
         "无需技术背景"
       ],
       "cta": "保护我的资产",
-      "ctaSubtext": "30 秒开启保护"
+      "ctaSubtext": "数分钟内获取洞察，而非数周"
     },
     "powerAnalyst": {
       "name": "高级分析",
@@ -204,63 +213,60 @@
     "skip": "跳过，使用标准防护"
   },
   "features": {
-    "title": "次世代安全审计",
-    "subtitle": "传统审计流程缓慢、成本高昂且结果易过时。Spectra 提供持续、可验证的安全监控，与您的代码更新同步。",
+    "title": "新一代安全审计",
+    "subtitle": "传统审计缓慢且昂贵。Spectra 提供 AI 编排的、可验证的安全分析，您可以检查和复现。",
     "monitoring": {
-      "title": "实时监控",
-      "description": "持续的 AI 驱动扫描能在漏洞引入时立即检测。当代码变更影响您的安全状况时，立即获得警报。",
-      "metric": "平均扫描时间 30 秒",
-      "comparison": "比传统审计快 2.4 倍"
+      "title": "快速 AI 分析",
+      "description": "AI 编排分析跨 5 个维度并行运行 — 代码、分布、代币经济学、流动性和情绪 — 生成带有可追溯证据的综合评分。",
+      "metric": "通常每次审计不到 20 分钟",
+      "comparison": "比传统手动审计快 2.4 倍以上"
     },
     "verifiable": {
       "title": "可验证的证据",
-      "description": "每一项安全声明都附有可复现的 AI 分析路径和可验证的证据。无需盲目信任审计报告——我们公开发现每一处问题的具体方法。",
-      "metric": "100% 透明的方法论",
+      "description": "每一项发现都附有支撑推理、来源数据和可复现的证据。准确查看每个问题是如何被识别的 — 没有黑盒。",
+      "metric": "完全透明的方法论",
       "detail": "核心代码开源，拥有公开的 GitHub 仓库"
     },
     "comprehensive": {
       "title": "全面覆盖",
-      "description": "先进的 AI 模型能比人类审计员捕获更多类型的漏洞。从智能合约逻辑错误到经济模型攻击向量，我们为您提供全面防护。",
+      "description": "先进的 AI 模型检测广泛的已知漏洞类别 — 从智能合约缺陷到经济攻击向量和集中度风险。",
       "metric": "覆盖 15+ 种漏洞类别",
-      "detail": "在部署前检测 95% 的已知漏洞利用"
+      "detail": "有助于在部署前检测最高 95% 的已知漏洞利用"
     },
     "trustIndicators": {
-      "monitoring": "7x24 小时监控",
+      "monitoring": "按需分析",
       "zeroFalsePositives": "高精度检测",
-      "uptime": "99.9% 正常运行时间 SLA"
+      "uptime": "高可用性基础设施"
     },
-    "lossPrevention": "DeFi协议的高级威胁检测"
+    "lossPrevention": "DeFi 协议的高级威胁检测"
   },
   "liveStatus": {
     "title": "为活跃协议提供实时保护",
-    "subtitle": "加入数千名用户的行列，信赖 Spectra 为您提供持续的安全监控。",
-    "contracts": "受监控合约",
-    "threatsPrevented": "本周已阻止威胁",
-    "valueProtected": "受保护总价值",
-    "uptimeSLA": "正常运行时间 SLA",
+    "subtitle": "实时查看平台分析活动。",
+    "contracts": "已分析合约",
+    "threatsPrevented": "已揭示的发现",
+    "valueProtected": "已覆盖项目",
+    "uptimeSLA": "平台可用性",
     "growth": "增长中的社区",
-    "savedLosses": "保护用户资产",
+    "savedLosses": "向用户揭示风险",
     "defiProtocols": "跨 DeFi 协议",
     "last30Days": "过去 30 天",
-    "systemStatus": "所有系统运行正常 • 上次扫描：2秒前"
+    "systemStatus": "所有系统运行正常"
   },
   "cta": {
     "title": "安全审计，仅需数秒。准备好亲自验证了吗？",
-    "subtitle": "切勿坐等下一次漏洞攻击。立即开始使用 Spectra，通过可验证的实时安全监控，守护您的资产安全。",
+    "subtitle": "通过 AI 驱动的可验证分析抢先一步发现漏洞。立即开始使用 Spectra，几分钟内检查一个项目的安全状况。",
     "button": "立即开始免费审计",
-    "noCreditCard": "无需信用卡 • 30 秒快速设置",
+    "noCreditCard": "无需信用卡 • 快速设置",
     "trustBuilders": {
-      "riskFree": {
-        "title": "无风险试用",
-        "description": "功能齐全的 14 天试用，无需提供信用卡"
-      },
       "expertSupport": {
-        "title": "专家支持",
-        "description": "安全团队 7x24 小时响应紧急事件"
+        "title": "文档与社区支持",
+        "description": "开放的文档和社区资源帮助您解读审计发现"
       },
       "communityTrusted": {
-        "title": "社区信赖",
-        "description": "保护 1250+ 协议，守护 24 亿美元资产"
+        "title": "社区驱动的洞察",
+        "description": "为 Web3 生态系统提供社区驱动的安全洞察",
+        "disclaimer": "开源平台"
       }
     },
     "urgency": "今天开始您的免费综合审计"
@@ -275,6 +281,19 @@
     "closeModal": "关闭角色选择器",
     "selectPersona": "选择 {persona} 角色"
   },
+  "customerLogos": {
+    "title": "为 Web3 生态系统打造",
+    "liveAudits": "按需运行的审计",
+    "enterpriseSecurity": "开源安全",
+    "protected": "社区驱动"
+  },
+  "statsBanner": {
+    "header": {
+      "title": "智能合约安全洞察",
+      "subtitle": "在 20 分钟内获取全面的安全分析。Spectra 的 AI 驱动平台帮助您理解项目背后的安全考量。"
+    },
+    "footer": "所有审计均在区块链的分叉副本上执行，结果可验证。"
+  },
   "errors": {
     "somethingWentWrong": "发生未知错误",
     "errorDescription": "我们遇到了一个意外错误。该问题已被记录，我们的团队将立即跟进调查。",
@@ -282,20 +301,6 @@
     "tryAgain": "重试",
     "reloadPage": "重新加载页面",
     "contactSupport": "若问题仍然存在，请联系我们的安全团队"
-  },
-  "navbar": {
-    "mobileMenu": {
-      "languageLabel": "语言",
-      "themeLabel": "主题",
-      "connectWithUs": "联系我们",
-      "freeAnalysis": "免费即时分析 • 无需注册"
-    }
-  },
-  "customerLogos": {
-    "title": "深受主流 DeFi 协议信赖",
-    "liveAudits": "实时审计运行中",
-    "enterpriseSecurity": "企业级安全",
-    "protected": "保护 24 亿美元"
   },
   "whitepaper": {
     "badge": "Whitepaper v1.0",
@@ -327,7 +332,7 @@
           "label": "检测率"
         },
         "analysisTime": {
-          "value": "<30s",
+          "value": "≤20 分钟",
           "label": "分析时间"
         },
         "riskCategories": {
@@ -366,7 +371,8 @@
             "communityHealth": "社区健康指数",
             "fudFomoDetection": "FUD/FOMO检测"
           },
-          "weight": "15"
+          "weight": "10",
+          "weightNote": "无代币项目为 30%"
         },
         "code": {
           "name": "代码安全",
@@ -379,7 +385,8 @@
             "dependencyAnalysis": "依赖关系分析",
             "bestPractices": "最佳实践检查"
           },
-          "weight": "30"
+          "weight": "45",
+          "weightNote": "无代币项目为 70%"
         },
         "tokenomics": {
           "name": "代币经济学健康度",
@@ -392,7 +399,7 @@
             "economicModel": "经济模型验证",
             "unlockSchedule": "解锁时间表追踪"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "liquidity": {
           "name": "流动性深度",
@@ -405,7 +412,7 @@
             "dexCoverage": "DEX覆盖",
             "liquidityConcentration": "流动性集中度"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "distribution": {
           "name": "分配分析",
@@ -420,6 +427,20 @@
           },
           "weight": "15"
         }
+      },
+      "weightTable": {
+        "title": "按项目类型划分的评分权重",
+        "subtitle": "权重根据项目是否拥有可交易代币而应用。无代币项目（实用协议、基础设施等）更强调代码和情绪，因为分布和流动性指标不适用。",
+        "headerDimension": "维度",
+        "headerHasToken": "有代币",
+        "headerNoToken": "无代币",
+        "rowCode": "代码分析",
+        "rowDistribution": "代币分布",
+        "rowTokenomics": "代币经济学",
+        "rowLiquidity": "流动性",
+        "rowSentiment": "情绪",
+        "notApplicable": "不适用",
+        "footnote": "实际权重在后端评分服务中按审计类型配置，可能会随着模型重新校准而调整。"
       }
     },
     "scoring": {
@@ -454,7 +475,13 @@
       },
       "calculationExample": {
         "title": "计算示例",
-        "comment": "// 示例：具有不同维度评分的项目",
+        "comment": "// 示例：有代币项目 — 权重总和为 100%",
+        "codeLabel": "代码安全",
+        "distributionLabel": "分布",
+        "tokenomicsLabel": "代币经济学",
+        "liquidityLabel": "流动性",
+        "sentimentLabel": "情绪",
+        "compositeScore": "综合评分：",
         "baseScore": "基础评分:",
         "aiAdjustment": "AI调整:",
         "aiEnhancedTitle": "AI增强精度",
@@ -467,7 +494,7 @@
         "highlight": "工作原理",
         "after": ""
       },
-      "subtitle": "我们的 AI 驱动系统持续监控和分析所有维度的项目。",
+      "subtitle": "我们的 AI 驱动系统按需跨所有评分维度分析项目。",
       "steps": {
         "dataCollection": {
           "title": "1. 数据收集",
@@ -539,13 +566,61 @@
       },
       "expansion": {
         "title": "持续扩展",
-        "description": "Beyond Q4 2025, we are committed to continuously adding new research dimensions and enhanced analysis factors based on emerging market needs, technological advancements, and community feedback. Our framework is designed to evolve with the blockchain ecosystem."
+        "description": "在 Q4 2025 之后，我们致力于根据新兴市场需求、技术进步和社区反馈，持续添加新的研究维度和增强分析因子。我们的框架旨在与区块链生态系统共同演进。"
       }
     },
     "cta": {
       "title": "准备好获得更深入的安全洞察了吗？",
-      "description": "体验AI优化评分的5维分析的力量。在30秒内获得全面的安全审计。",
+      "description": "体验AI优化评分的5维分析的力量。在几分钟内获得全面的安全审计 — 而非数周。",
       "button": "开始您的首次审计"
     }
+  },
+  "methodology": {
+    "title": "最先进的审计流程",
+    "subtitle": "每次审计都在区块链的沙盒分叉上运行 — 没有实时交易，分析期间用户资金零风险。",
+    "forkTesting": {
+      "title": "基于分叉的模拟",
+      "description": "智能合约交互在隔离的主网分叉上重放。我们观察其行为，从不向实时网络广播交易。"
+    },
+    "aiOrchestration": {
+      "title": "AI 编排分析",
+      "description": "多个专业 AI 代理协调进行代码审查、经济建模和链上数据分析 — 产生单个分析器无法独立揭示的发现。"
+    },
+    "staticAnalysis": {
+      "title": "字节码与 ABI 静态分析",
+      "description": "我们的扫描器直接检查编译后的字节码和 ABI，即使在源代码不可用或仅部分验证时，也能分析合约。"
+    },
+    "multiDimensional": {
+      "title": "5 维评分",
+      "description": "代码、分布、代币经济学、流动性和情绪并行独立评分 — 然后加权为综合安全评分。"
+    }
+  },
+  "learningLoop": {
+    "title": "评分如何随着时间保持准确",
+    "subtitle": "Spectra 通过真实世界反馈和与历史审计的校准持续改进 — 每次分析都会启发下一次。",
+    "userFeedback": {
+      "title": "用户反馈集成",
+      "description": "社区对每个发现的评分和专家评审将反馈回模型。误报、遗漏的漏洞和严重程度争议会被追踪，并用于重新校准评分权重。"
+    },
+    "calibration": {
+      "title": "与相似项目的校准",
+      "description": "每次新审计都会与结构相似的合约和代币经济学的历史审计交叉参考。当过往项目的模式表明不同的风险特征时，评分会被调整。"
+    },
+    "aiOptimization": {
+      "title": "持续 AI 优化",
+      "description": "随着链上出现新的漏洞利用模式和新的漏洞类别被披露，我们的 AI 模型会定期重新训练。系统处理的每次审计都使其变得更智能。"
+    },
+    "externalAudits": {
+      "title": "外部审计交叉参考",
+      "description": "当项目获得专业人工审计时，我们的发现会与报告进行比较。差异将反馈到模型优化中。"
+    }
+  },
+  "disclaimer": {
+    "title": "重要免责声明",
+    "aiGenerated": "所有发现均由 AI 分析产生 — 而非人类安全审计员。",
+    "forkTesting": "合约行为在区块链的分叉副本上分析，而非实时主网。",
+    "noGuarantee": "高安全评分不保证项目是安全的。评分反映分析时可用数据的状态。",
+    "doYourResearch": "在做出任何投资、部署或集成决策之前，请始终进行自己的研究 (DYOR)。",
+    "toolPurpose": "Spectra 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。"
   }
 }

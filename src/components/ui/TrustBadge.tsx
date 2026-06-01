@@ -183,7 +183,7 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
             case 'speed':
               return 'Average time to complete a full security scan'
             case 'uptime':
-              return 'System availability for continuous monitoring'
+              return 'High availability infrastructure'
             case 'threats':
               return 'Security threats detected and prevented this month'
             case 'value':

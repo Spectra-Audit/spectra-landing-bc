@@ -39,19 +39,19 @@
       "openSource": "Código Abierto"
     },
     "headline": "Investigue la Seguridad del Proyecto Antes de Invertir",
-    "subheadline": "Puntuaciones de seguridad multidimensionales para más de 1000 protocolos DeFi. Comprenda los riesgos antes de invertir con un análisis exhaustivo que puede verificar.",
+    "subheadline": "Puntuaciones de seguridad multidimensionales en múltiples ecosistemas DeFi. Comprenda los riesgos antes de invertir con un análisis exhaustivo que puede verificar.",
     "addressPlaceholder": "Introduce tu dirección de Ethereum",
     "getAuditReport": "Obtener Informe de Auditoría",
     "getReport": "Obtener Informe",
     "trustMetrics": {
       "activeUsers": "Usuarios Activos",
-      "accuracy": "Precisión",
-      "scanTime": "Tiempo de Escaneo",
+      "accuracy": "Detección de Vulnerabilidades Conocidas",
+      "scanTime": "Min Tiempo Típico",
       "protectedUsers": "Usuarios Protegidos",
       "uptime": "Disponibilidad",
-      "detectionRate": "Tasa de Detección",
-      "threatTypes": "Tipos de Amenazas",
-      "projectsAnalyzed": "Proyectos Analizados",
+      "detectionRate": "Detección de Vulnerabilidades Conocidas",
+      "threatTypes": "Dimensiones de Puntuación",
+      "projectsAnalyzed": "Dimensiones de Puntuación",
       "riskFlagsIdentified": "Banderas de Riesgo Identificadas"
     },
     "cta": {
@@ -59,50 +59,51 @@
       "secondary": "Aprende Cómo Funcionan las Puntuaciones"
     },
     "riskWarning": {
-      "threatsPrevented": "Amenazas prevenidas continuamente",
-      "message": "No esperes al próximo exploit. La protección en tiempo real previene vulnerabilidades antes de que puedan ser explotadas."
+      "threatsPrevented": "Clases comunes de vulnerabilidades detectadas",
+      "message": "Comprende los riesgos de seguridad antes de comprometer capital. El análisis con IA bajo demanda ayuda a revelar patrones de vulnerabilidades comunes y riesgos de concentración en un proyecto."
     },
     "socialProof": {
-      "trustedBy": "Con la confianza de protocolos líderes",
-      "defiLeader": "Líder en Seguridad DeFi",
-      "protocols": "Más de 1000 Protocolos Integrados"
+      "trustedBy": "Construido para el ecosistema Web3",
+      "defiLeader": "Perspectivas de Seguridad DeFi",
+      "protocols": "Soporte Multi-Cadena",
+      "disclaimer": "Plataforma de código abierto"
     },
     "page": {
       "heroTitle": "Auditorías de Seguridad de Contratos Inteligentes",
       "heroSubtitle": "en Segundos, No Semanas",
-      "heroDescription": "Análisis de contratos inteligentes potenciado por IA con evidencia verificable. Obtén auditorías de seguridad integrales en menos de 30 segundos. Sin registro requerido.",
-      "securityAuditTitle": "Auditado y Verificado Profesionalmente",
-      "securityAuditSubtitle": "Seguridad en la que puedes confiar, verificada por expertos líderes",
-      "thirdPartyAudited": "Auditado por Terceros",
-      "thirdPartyAuditedDesc": "Seguridad revisada por firmas líderes de auditoría cripto",
-      "verified": "Verificado",
+      "heroDescription": "Análisis de contratos inteligentes potenciado por IA con evidencia verificable. Obtén análisis de seguridad integral en menos de 20 minutos. Sin registro requerido.",
+      "securityAuditTitle": "Código Abierto — Verificable Públicamente",
+      "securityAuditSubtitle": "Metodología transparente que puedes inspeccionar, auditar y reproducir",
+      "thirdPartyAudited": "Código Abierto",
+      "thirdPartyAuditedDesc": "Cada hallazgo se acompaña de la evidencia y el razonamiento detrás de él",
+      "verified": "Verificable",
       "openSource": "Código Abierto",
-      "openSourceDesc": "Código verificable públicamente en GitHub",
+      "openSourceDesc": "Código y pipeline de análisis verificables públicamente en GitHub",
       "transparent": "Transparente",
-      "trustMessage": "Nuestra base de código ha sometido a auditorías de seguridad integrales por firmas de seguridad blockchain de reputación. Estamos comprometidos con mejoras de seguridad continuas y transparencia.",
-      "featuresTitle": "Auditorías de seguridad que realmente funcionan",
+      "trustMessage": "Plataforma de código abierto con metodología de auditoría verificable públicamente",
+      "featuresTitle": "Auditorías de Seguridad de Nueva Generación",
       "featuresSubtitle": "Las auditorías tradicionales son lentas, costosas y rápidamente obsoletas. Spectra proporciona monitoreo de seguridad continuo y verificable que se mantiene al día con tu código.",
-      "realTimeMonitoring": "Monitoreo de IA en Tiempo Real",
-      "realTimeMonitoringDesc": "El escaneo continuo potenciado por IA detecta vulnerabilidades en el momento en que se introducen. Obtén alertas instantáneas cuando los cambios de código afecten tu postura de seguridad, con tiempo promedio de escaneo de 30 segundos.",
-      "avgScanTime": "30s",
-      "avgScanTimeLabel": "Tiempo prom. de escaneo",
-      "fasterThanAudits": "2.4x",
-      "fasterThanAuditsLabel": "Más rápido que auditorías",
-      "automated": "100%",
-      "automatedLabel": "Automatizado",
+      "realTimeMonitoring": "Análisis IA Bajo Demanda",
+      "realTimeMonitoringDesc": "Análisis bajo demanda potenciado por IA cuando se envían los proyectos. La revisión de seguridad integral de 5 dimensiones se completa en menos de 20 minutos por auditoría.",
+      "avgScanTime": "≤20m",
+      "avgScanTimeLabel": "Tiempo típico de auditoría",
+      "fasterThanAudits": ">2.4×",
+      "fasterThanAuditsLabel": "Más rápido que auditorías tradicionales",
+      "automated": "Totalmente",
+      "automatedLabel": "Análisis orquestado por IA",
       "verifiableEvidence": "Evidencia Verificable",
-      "verifiableEvidenceDesc": "Cada afirmación de seguridad incluye diffs de IA reproducibles y evidencia. Vea exactamente cómo encontramos cada problema con 100% de transparencia.",
+      "verifiableEvidenceDesc": "Cada afirmación de seguridad incluye diffs de IA reproducibles y evidencia. Vea exactamente cómo encontramos cada problema con una metodología totalmente transparente.",
       "openSourceCodebase": "Base de código de código abierto",
       "publicGitHubRepo": "Repositorio público en GitHub",
       "comprehensiveCoverage": "Cobertura Integral",
-      "comprehensiveCoverageDesc": "Los modelos de IA avanzados detectan más tipos de vulnerabilidades que los auditores tradicionales. Desde bugs de contratos inteligentes hasta vectores de ataque económicos.",
+      "comprehensiveCoverageDesc": "Los modelos de IA avanzados detectan una amplia gama de clases de vulnerabilidades conocidas — errores de contratos inteligentes, vectores de ataque económicos y riesgos de concentración.",
       "vulnerabilityCategories": "15+ categorías de vulnerabilidades",
-      "detectionRate": "95% de tasa de detección",
-      "productionReady": "Seguridad Lista para Producción",
-      "productionReadyDesc": "Construido para desarrolladores que necesitan análisis de seguridad de contratos inteligentes confiable. Auditado por terceros y de código abierto, con informes de auditoría verificables.",
-      "thirdPartyVerified": "Verificado por Terceros",
+      "detectionRate": "Hasta el 95% de detección de problemas conocidos",
+      "productionReady": "Verificable y de Código Abierto",
+      "productionReadyDesc": "Pipeline de análisis de código abierto creado para desarrolladores e investigadores que quieren inspeccionar, reproducir y verificar cada paso de la auditoría.",
+      "thirdPartyVerified": "Código Abierto",
       "sourceCode": "Código Fuente",
-      "scanTime": "Escaneos de <30 Segundos",
+      "scanTime": "Auditorías ≤20 Min",
       "aiPoweredAnalysis": "Análisis Potenciado por IA",
       "aiPoweredAnalysisDesc": "Escaneo de seguridad automatizado rápido",
       "highAccuracy": "Alta Precisión",
@@ -111,8 +112,8 @@
       "multiDimensionalDesc": "Puntuación de seguridad de 5 factores",
       "liveStatusTitle": "Análisis de seguridad integral",
       "liveStatusSubtitle": "Puntuación multidimensional para evaluación completa de seguridad de contratos inteligentes.",
-      "scanTimeValue": "<30s",
-      "scanTimeLabel": "Tiempo promedio de escaneo",
+      "scanTimeValue": "≤20m",
+      "scanTimeLabel": "Tiempo típico de auditoría",
       "scanTimeBadge": "Análisis rápido",
       "dimensionsValue": "5",
       "dimensionsLabel": "Dimensiones de seguridad",
@@ -120,17 +121,17 @@
       "aiPoweredValue": "IA",
       "aiPoweredLabel": "Análisis potenciado",
       "aiPoweredBadge": "Detección inteligente",
-      "transparentValue": "100%",
+      "transparentValue": "Totalmente",
       "transparentLabel": "Metodología transparente",
       "transparentBadge": "Resultados verificables",
       "systemReady": "Sistema listo • Inicia tu auditoría en segundos",
       "finalCtaTitle": "Seguridad en segundos. ¿Listo para verificar?",
-      "finalCtaSubtitle": "No esperes al próximo exploit. Comienza con Spectra hoy y protege tus inversiones con monitoreo de seguridad verificable y en tiempo real.",
-      "noCreditCardRequired": "No se requiere tarjeta de crédito • Configuración en 30 segundos",
+      "finalCtaSubtitle": "Adelántate a las vulnerabilidades con protección proactiva. Comienza con Spectra hoy y protege tus inversiones con monitoreo de seguridad verificable y en tiempo real.",
+      "noCreditCardRequired": "No se requiere tarjeta de crédito • Configuración rápida",
       "quickSetup": "Configuración Rápida",
       "quickSetupDesc": "Comienza con auditorías de seguridad integrales",
-      "expertSupport": "Soporte Experto",
-      "expertSupportDesc": "Equipo de seguridad disponible cuando necesitas ayuda",
+      "expertSupport": "Documentación y Soporte de la Comunidad",
+      "expertSupportDesc": "Documentación abierta y recursos comunitarios para ayudarte a interpretar los hallazgos",
       "communityDriven": "Impulsado por la Comunidad",
       "communityDrivenDesc": "Código abierto con desarrollo transparente"
     }
@@ -188,13 +189,13 @@
       "title": "Inversores Pasivos",
       "description": "Protección segura y de bajo mantenimiento para tus inversiones en criptomonedas.",
       "benefits": [
-        "Monitoreo automático 24/7",
+        "Análisis de seguridad con IA bajo demanda",
         "Calificaciones de seguridad simples (A-F)",
         "Alertas de riesgo instantáneas",
         "No se requieren conocimientos técnicos"
       ],
       "cta": "Proteger Mis Activos",
-      "ctaSubtext": "Comienza a proteger en 30 segundos"
+      "ctaSubtext": "Obtén información en minutos, no semanas"
     },
     "powerAnalyst": {
       "name": "Análisis Avanzado",
@@ -212,66 +213,63 @@
     "skip": "Omitir y continuar con protección simple"
   },
   "features": {
-    "title": "Auditorías de seguridad que realmente funcionan",
-    "subtitle": "Las auditorías tradicionales son lentas, costosas y se quedan obsoletas rápidamente. Spectra proporciona un monitoreo de seguridad verificable y continuo que se mantiene actualizado con tu código.",
+    "title": "Auditorías de Seguridad de Nueva Generación",
+    "subtitle": "Las auditorías tradicionales son lentas y costosas. Spectra ofrece un análisis de seguridad orquestado por IA y verificable que puedes inspeccionar y reproducir.",
     "monitoring": {
-      "title": "Monitoreo en Tiempo Real",
-      "description": "El escaneo continuo con IA detecta vulnerabilidades en el momento en que se introducen. Recibe alertas instantáneas cuando los cambios de código afecten tu postura de seguridad.",
-      "metric": "Tiempo promedio de escaneo de 30 segundos",
-      "comparison": "2.4 veces más rápido que las auditorías tradicionales"
+      "title": "Análisis Rápido con IA",
+      "description": "El análisis orquestado por IA se ejecuta en 5 dimensiones en paralelo — código, distribución, tokenomía, liquidez y sentimiento — produciendo una puntuación compuesta con evidencia rastreable.",
+      "metric": "Normalmente menos de 20 minutos por auditoría",
+      "comparison": "Más de 2.4× más rápido que las auditorías manuales tradicionales"
     },
     "verifiable": {
       "title": "Evidencia Verificable",
-      "description": "Cada afirmación de seguridad incluye 'diffs' de IA reproducibles y evidencia que puedes verificar. No más confianza ciega en los informes de auditoría: mira exactamente cómo encontramos cada problema.",
-      "metric": "Metodología 100% transparente",
+      "description": "Cada hallazgo incluye el razonamiento, los datos de origen y la evidencia reproducible detrás de él. Vea exactamente cómo se identificó cada problema — sin cajas negras.",
+      "metric": "Metodología totalmente transparente",
       "detail": "Código abierto con repositorio público en GitHub"
     },
     "comprehensive": {
       "title": "Cobertura Exhaustiva",
-      "description": "Modelos de IA avanzados detectan más tipos de vulnerabilidades que los auditores humanos. Desde errores en contratos inteligentes hasta vectores de ataque económicos, estás cubierto.",
+      "description": "Los modelos de IA avanzados detectan una amplia gama de clases de vulnerabilidades conocidas — desde errores de contratos inteligentes hasta vectores de ataque económicos y riesgos de concentración.",
       "metric": "Más de 15 categorías de vulnerabilidades",
-      "detail": "Detecta el 95% de los exploits conocidos antes del despliegue"
+      "detail": "Ayuda a detectar hasta el 95% de los exploits conocidos antes del despliegue"
     },
     "trustIndicators": {
-      "monitoring": "Monitoreo 24/7",
-      "zeroFalsePositives": "Garantía de Cero Falsos Positivos",
-      "uptime": "SLA de Disponibilidad del 99.9%"
+      "monitoring": "Análisis Bajo Demanda",
+      "zeroFalsePositives": "Detección de Alta Precisión",
+      "uptime": "Infraestructura de Alta Disponibilidad"
     },
-    "lossPrevention": "Importante: Pérdidas potenciales prevenidas este mes"
+    "lossPrevention": "Detección avanzada de amenazas para protocolos DeFi"
   },
   "liveStatus": {
     "title": "Protección en tiempo real para protocolos activos",
-    "subtitle": "Únete a miles de usuarios que confían en Spectra para un monitoreo de seguridad continuo.",
-    "contracts": "Contratos monitoreados",
-    "threatsPrevented": "Amenazas evitadas esta semana",
-    "valueProtected": "Valor protegido",
-    "uptimeSLA": "SLA de Disponibilidad",
-    "growth": "+12% este mes",
-    "savedLosses": "Se ahorraron $4.7M en pérdidas",
+    "subtitle": "Vista en tiempo real de la actividad de análisis de la plataforma.",
+    "contracts": "Contratos analizados",
+    "threatsPrevented": "Hallazgos surgidos",
+    "valueProtected": "Proyectos cubiertos",
+    "uptimeSLA": "Disponibilidad de la plataforma",
+    "growth": "Comunidad en crecimiento",
+    "savedLosses": "Surfaceando riesgos para los usuarios",
     "defiProtocols": "A través de protocolos DeFi",
     "last30Days": "Últimos 30 días",
-    "systemStatus": "Todos los sistemas operativos • Último escaneo: hace 2 segundos"
+    "systemStatus": "Todos los sistemas operativos"
   },
   "cta": {
     "title": "Seguridad en segundos. ¿Listo para verificar?",
-    "subtitle": "No esperes al próximo exploit. Comienza con Spectra hoy y protege tus inversiones con un monitoreo de seguridad verificable y en tiempo real.",
+    "subtitle": "Adelántate a las vulnerabilidades con análisis verificable impulsado por IA. Comienza con Spectra e inspecciona la postura de seguridad de un proyecto en minutos.",
     "button": "Comienza Tu Auditoría Gratuita Ahora",
-    "noCreditCard": "No se requiere tarjeta de crédito • Configuración en 30 segundos",
+    "noCreditCard": "No se requiere tarjeta de crédito • Configuración rápida",
     "trustBuilders": {
-      "riskFree": {
-        "title": "Prueba Sin Riesgo",
-        "description": "Prueba completa de 14 días, no se requiere tarjeta de crédito"
-      },
       "expertSupport": {
-        "title": "Soporte Experto",
-        "description": "Equipo de seguridad 24/7 disponible para asuntos urgentes"
+        "title": "Documentación y Soporte de la Comunidad",
+        "description": "Documentación abierta y recursos comunitarios para ayudarte a interpretar los hallazgos"
       },
       "communityTrusted": {
-        "title": "Confiado por la Comunidad",
-        "description": "Más de 1,250 protocolos protegidos con $2.4B en activos"
+        "title": "Perspectivas Impulsadas por la Comunidad",
+        "description": "Perspectivas de seguridad impulsadas por la comunidad para el ecosistema Web3",
+        "disclaimer": "Plataforma de código abierto"
       }
     },
-    "urgency": "Comienza tu auditoría completa gratuita ahora"
+    "urgency": "Comienza tu auditoría completa gratuita hoy"
   },
   "theme": {
     "toggle": "Cambiar tema",
@@ -284,10 +282,17 @@
     "selectPersona": "Seleccionar persona {persona}"
   },
   "customerLogos": {
-    "title": "Confianza de los protocolos DeFi líderes",
-    "liveAudits": "Auditorías en vivo ejecutándose",
-    "enterpriseSecurity": "Seguridad de nivel empresarial",
-    "protected": "$2.4B protegidos"
+    "title": "Construido para el ecosistema Web3",
+    "liveAudits": "Auditorías ejecutándose bajo demanda",
+    "enterpriseSecurity": "Seguridad de código abierto",
+    "protected": "Impulsado por la comunidad"
+  },
+  "statsBanner": {
+    "header": {
+      "title": "Perspectivas de Seguridad de Contratos Inteligentes",
+      "subtitle": "Obtén análisis de seguridad integral en menos de 20 minutos. La plataforma de Spectra impulsada por IA te ayuda a entender las consideraciones de seguridad detrás de un proyecto."
+    },
+    "footer": "Todas las auditorías se realizan sobre una réplica forkeada de la blockchain con resultados verificables."
   },
   "errors": {
     "somethingWentWrong": "Algo salió mal",
@@ -327,7 +332,7 @@
           "label": "Tasa de Detección"
         },
         "analysisTime": {
-          "value": "<30s",
+          "value": "≤20 min",
           "label": "Tiempo de Análisis"
         },
         "riskCategories": {
@@ -366,7 +371,8 @@
             "communityHealth": "Índice de salud comunitaria",
             "fudFomoDetection": "Detección FUD/FOMO"
           },
-          "weight": "15"
+          "weight": "10",
+          "weightNote": "30% para proyectos sin token"
         },
         "code": {
           "name": "Seguridad del Código",
@@ -379,7 +385,8 @@
             "dependencyAnalysis": "Análisis de dependencias",
             "bestPractices": "Verificación de mejores prácticas"
           },
-          "weight": "30"
+          "weight": "45",
+          "weightNote": "70% para proyectos sin token"
         },
         "tokenomics": {
           "name": "Salud de Tokenomía",
@@ -392,7 +399,7 @@
             "economicModel": "Validación de modelo económico",
             "unlockSchedule": "Seguimiento de calendario de desbloqueo"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "liquidity": {
           "name": "Profundidad de Liquidez",
@@ -405,7 +412,7 @@
             "dexCoverage": "Cobertura DEX",
             "liquidityConcentration": "Concentración de liquidez"
           },
-          "weight": "20"
+          "weight": "15"
         },
         "distribution": {
           "name": "Análisis de Distribución",
@@ -420,6 +427,20 @@
           },
           "weight": "15"
         }
+      },
+      "weightTable": {
+        "title": "Pesos de Puntuación por Tipo de Proyecto",
+        "subtitle": "Los pesos se aplican en función de si el proyecto tiene un token negociable. Los proyectos sin token (protocolos de utilidad, infraestructura, etc.) enfatizan más el código y el sentimiento, ya que las métricas de distribución y liquidez no aplican.",
+        "headerDimension": "Dimensión",
+        "headerHasToken": "Con Token",
+        "headerNoToken": "Sin Token",
+        "rowCode": "Análisis de Código",
+        "rowDistribution": "Distribución de Tokens",
+        "rowTokenomics": "Tokenomía",
+        "rowLiquidity": "Liquidez",
+        "rowSentiment": "Sentimiento",
+        "notApplicable": "N/A",
+        "footnote": "Los pesos reales se configuran por tipo de auditoría en el servicio de puntuación del backend y pueden ajustarse con el tiempo a medida que se recalibra el modelo."
       }
     },
     "scoring": {
@@ -454,7 +475,13 @@
       },
       "calculationExample": {
         "title": "Ejemplo de Cálculo",
-        "comment": "// Ejemplo: Proyecto con puntuaciones de dimensión variables",
+        "comment": "// Ejemplo: Proyecto con token — los pesos suman 100%",
+        "codeLabel": "Seguridad del Código",
+        "distributionLabel": "Distribución",
+        "tokenomicsLabel": "Tokenomía",
+        "liquidityLabel": "Liquidez",
+        "sentimentLabel": "Sentimiento",
+        "compositeScore": "Puntuación Compuesta:",
         "baseScore": "Puntuación Base:",
         "aiAdjustment": "Ajuste IA:",
         "aiEnhancedTitle": "Precisión Mejorada por IA",
@@ -467,7 +494,7 @@
         "highlight": "Funciona",
         "after": ""
       },
-      "subtitle": "Nuestro sistema potenciado por IA monitorea y analiza continuamente proyectos a través de todas las dimensiones.",
+      "subtitle": "Nuestro sistema potenciado por IA analiza proyectos bajo demanda a través de todas las dimensiones de puntuación.",
       "steps": {
         "dataCollection": {
           "title": "1. Recolección de Datos",
@@ -544,8 +571,56 @@
     },
     "cta": {
       "title": "¿Listo para Perspectivas de Seguridad Más Profundas?",
-      "description": "Experimenta el poder del análisis de 5 dimensiones con puntuación optimizada por IA. Obtén auditorías de seguridad integrales en menos de 30 segundos.",
+      "description": "Experimenta el poder del análisis de 5 dimensiones con puntuación optimizada por IA. Obtén una auditoría de seguridad integral en minutos — no semanas.",
       "button": "Inicia Tu Primera Auditoría"
     }
+  },
+  "methodology": {
+    "title": "Proceso de Auditoría de Última Generación",
+    "subtitle": "Cada auditoría se ejecuta en un fork sandbox de la blockchain — sin transacciones en vivo, sin riesgo para los fondos de los usuarios durante el análisis.",
+    "forkTesting": {
+      "title": "Simulación Basada en Fork",
+      "description": "Las interacciones de contratos inteligentes se reproducen en un fork aislado de la mainnet. Observamos el comportamiento sin transmitir transacciones a la red en vivo."
+    },
+    "aiOrchestration": {
+      "title": "Análisis Orquestado por IA",
+      "description": "Múltiples agentes de IA especializados coordinan a través de la revisión de código, modelado económico y datos on-chain — produciendo hallazgos que ningún analizador único podría descubrir solo."
+    },
+    "staticAnalysis": {
+      "title": "Análisis Estático de Bytecode y ABI",
+      "description": "Nuestro escáner inspecciona el bytecode compilado y los ABIs directamente, permitiendo el análisis de contratos incluso cuando el código fuente no está disponible o solo está parcialmente verificado."
+    },
+    "multiDimensional": {
+      "title": "Puntuación de 5 Dimensiones",
+      "description": "Código, Distribución, Tokenomía, Liquidez y Sentimiento se puntúan independientemente en paralelo — luego se ponderan en una puntuación de seguridad compuesta."
+    }
+  },
+  "learningLoop": {
+    "title": "Cómo las Puntuaciones Se Mantienen Precisas con el Tiempo",
+    "subtitle": "Spectra mejora continuamente a través de retroalimentación del mundo real y calibración contra auditorías históricas — cada análisis informa al siguiente.",
+    "userFeedback": {
+      "title": "Integración de Retroalimentación del Usuario",
+      "description": "Las calificaciones de la comunidad y las revisiones de expertos sobre cada hallazgo se incorporan al modelo. Los falsos positivos, vulnerabilidades omitidas y disputas de severidad se rastrean y se utilizan para recalibrar los pesos de puntuación."
+    },
+    "calibration": {
+      "title": "Calibración Contra Proyectos Similares",
+      "description": "Cada nueva auditoría se contrasta con auditorías históricas de contratos y tokenomía estructuralmente similares. Las puntuaciones se ajustan cuando los patrones de proyectos pasados sugieren perfiles de riesgo diferentes."
+    },
+    "aiOptimization": {
+      "title": "Optimización Continua de IA",
+      "description": "A medida que emergen nuevos patrones de exploits on-chain y se divulgan nuevas clases de vulnerabilidades, nuestros modelos de IA se reentrenan periódicamente. El sistema se vuelve más inteligente con cada auditoría que procesa."
+    },
+    "externalAudits": {
+      "title": "Referencia Cruzada de Auditorías Externas",
+      "description": "Cuando las auditorías humanas profesionales están disponibles para un proyecto, nuestros hallazgos se comparan con el informe. Las discrepancias se incorporan al refinamiento del modelo."
+    }
+  },
+  "disclaimer": {
+    "title": "Aviso Importante",
+    "aiGenerated": "Todos los hallazgos son producidos por análisis de IA — no por auditores de seguridad humanos.",
+    "forkTesting": "El comportamiento de los contratos se analiza en una réplica forkeada de la blockchain, no en la mainnet en vivo.",
+    "noGuarantee": "Una puntuación de seguridad alta NO garantiza que un proyecto sea seguro. Las puntuaciones reflejan el estado de los datos disponibles en el momento del análisis.",
+    "doYourResearch": "Realice siempre su propia investigación (DYOR) antes de tomar cualquier decisión de inversión, despliegue o integración.",
+    "toolPurpose": "Spectra es una herramienta informativa diseñada para ayudar a los usuarios a entender las consideraciones de seguridad detrás de un proyecto. No constituye asesoramiento financiero, legal ni de inversión."
   }
 }

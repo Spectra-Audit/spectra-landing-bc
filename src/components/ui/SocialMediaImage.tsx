@@ -20,7 +20,7 @@ export interface SocialMediaImageProps {
 const SocialMediaImage: React.FC<SocialMediaImageProps> = ({
   type,
   title = 'Spectra - AI-Powered Smart Contract Security Audits',
-  description = 'Get comprehensive security audits with verifiable evidence in under 30 seconds. Protect your DeFi protocols with real-time AI-powered security monitoring.',
+  description = 'Get comprehensive security audits with verifiable evidence in under 20 minutes. Protect your DeFi protocols with real-time AI-powered security monitoring.',
   image = '/images/social/og-default.jpg',
   width,
   height,
@@ -75,13 +75,6 @@ const SocialMediaImage: React.FC<SocialMediaImageProps> = ({
           price: '0',
           priceCurrency: 'USD',
           description: 'Free security audit trials available',
-        },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          ratingCount: '1250',
-          bestRating: '5',
-          worstRating: '1',
         },
       }
     }

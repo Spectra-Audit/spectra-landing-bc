@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
-import { Navbar } from '@/components/ui'
+import { Navbar, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
 import {
   Shield,
@@ -324,7 +324,7 @@ export default function WhitepaperPage() {
                           <div className="h-2.5 bg-neutral-200 dark:bg-neutral-800 rounded-full overflow-hidden">
                             <div
                               className={`h-full bg-gradient-to-r ${dim.gradient} transition-all duration-700 ease-out`}
-                              style={{ width: `${dim.weight * 3}%` }}
+                              style={{ width: `${Math.min(dim.weight * 2, 100)}%` }}
                             />
                           </div>
                         </div>
@@ -457,44 +457,38 @@ export default function WhitepaperPage() {
                   <div className="text-neutral-500 dark:text-neutral-400 mb-4">{t('scoring.calculationExample.comment')}</div>
                   <div className="space-y-2">
                     <div>
-                      <span className="text-green-600 dark:text-green-400">Code Security</span>
+                      <span className="text-green-600 dark:text-green-400">{t('scoring.calculationExample.codeLabel')}</span>
                       <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 85/100 × 30% = 25.5</span>
+                      <span className="text-neutral-900 dark:text-white"> 85/100 × 45% = 38.25</span>
                     </div>
                     <div>
-                      <span className="text-purple-600 dark:text-purple-400">Tokenomics</span>
+                      <span className="text-orange-600 dark:text-orange-400">{t('scoring.calculationExample.distributionLabel')}</span>
                       <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 92/100 × 20% = 18.4</span>
+                      <span className="text-neutral-900 dark:text-white"> 72/100 × 15% = 10.80</span>
                     </div>
                     <div>
-                      <span className="text-cyan-600 dark:text-cyan-400">Liquidity</span>
+                      <span className="text-purple-600 dark:text-purple-400">{t('scoring.calculationExample.tokenomicsLabel')}</span>
                       <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 78/100 × 20% = 15.6</span>
+                      <span className="text-neutral-900 dark:text-white"> 68/100 × 15% = 10.20</span>
                     </div>
                     <div>
-                      <span className="text-blue-600 dark:text-blue-400">Sentiment</span>
+                      <span className="text-cyan-600 dark:text-cyan-400">{t('scoring.calculationExample.liquidityLabel')}</span>
                       <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 88/100 × 15% = 13.2</span>
+                      <span className="text-neutral-900 dark:text-white"> 75/100 × 15% = 11.25</span>
                     </div>
                     <div>
-                      <span className="text-orange-600 dark:text-orange-400">Distribution</span>
+                      <span className="text-blue-600 dark:text-blue-400">{t('scoring.calculationExample.sentimentLabel')}</span>
                       <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 70/100 × 15% = 10.5</span>
+                      <span className="text-neutral-900 dark:text-white"> 80/100 × 10% =  8.00</span>
                     </div>
                     <div className="border-t border-neutral-300 dark:border-neutral-700 pt-2 mt-2">
-                      <span className="text-neutral-400">{t('scoring.calculationExample.baseScore')}</span>
-                      <span className="text-neutral-900 dark:text-white"> Σ = 83.2</span>
-                    </div>
-                    <div>
-                      <span className="text-spectra-purple-600 dark:text-spectra-purple-400">{t('scoring.calculationExample.aiAdjustment')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> × 1.12 (high confidence) = </span>
-                      <span className="text-spectra-green-600 dark:text-spectra-green-400 font-bold">93.2</span>
+                      <span className="text-spectra-green-600 dark:text-spectra-green-400 font-semibold">{t('scoring.calculationExample.compositeScore')}</span>
+                      <span className="text-spectra-green-600 dark:text-spectra-green-400 font-bold"> 78.50/100</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-4 bg-spectra-green-500/10 dark:bg-spectra-green-500/5 border border-spectra-green-500/30 rounded-lg">
+                <div className="flex items-start gap-3 p-4 bg-spectra-green-500/10 dark:bg-spectra-green-500/5 border border-spectra-green-500/30 rounded-lg mb-8">
                   <CheckCircle className="w-5 h-5 text-spectra-green-600 dark:text-spectra-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-spectra-green-600 dark:text-spectra-green-400 font-semibold mb-1">{t('scoring.calculationExample.aiEnhancedTitle')}</div>
@@ -502,6 +496,83 @@ export default function WhitepaperPage() {
                       {t('scoring.calculationExample.aiEnhancedDescription')}
                     </p>
                   </div>
+                </div>
+
+                {/* Weight Table — has-token vs no-token comparison */}
+                <div className="mt-4">
+                  <div className="mb-4">
+                    <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2 flex items-center gap-2">
+                      <Sliders className="w-5 h-5 text-spectra-blue-500" />
+                      {t('dimensions.weightTable.title')}
+                    </h4>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                      {t('dimensions.weightTable.subtitle')}
+                    </p>
+                  </div>
+
+                  <div className="overflow-x-auto rounded-xl border border-neutral-200 dark:border-neutral-700">
+                    <table className="w-full text-sm">
+                      <thead className="bg-neutral-100 dark:bg-neutral-900/50">
+                        <tr>
+                          <th className="text-left px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700">
+                            {t('dimensions.weightTable.headerDimension')}
+                          </th>
+                          <th className="text-center px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700">
+                            {t('dimensions.weightTable.headerHasToken')}
+                          </th>
+                          <th className="text-center px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-700">
+                            {t('dimensions.weightTable.headerNoToken')}
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white dark:bg-neutral-800/50">
+                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
+                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                            <Code className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0" />
+                            {t('dimensions.weightTable.rowCode')}
+                          </td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">45%</td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-purple-600 dark:text-spectra-purple-400">70%</td>
+                        </tr>
+                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
+                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                            <Users className="w-4 h-4 text-orange-600 dark:text-orange-400 flex-shrink-0" />
+                            {t('dimensions.weightTable.rowDistribution')}
+                          </td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
+                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
+                        </tr>
+                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
+                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                            <TrendingUp className="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0" />
+                            {t('dimensions.weightTable.rowTokenomics')}
+                          </td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
+                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
+                        </tr>
+                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
+                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                            <Droplets className="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0" />
+                            {t('dimensions.weightTable.rowLiquidity')}
+                          </td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
+                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                            <MessageSquare className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                            {t('dimensions.weightTable.rowSentiment')}
+                          </td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">10%</td>
+                          <td className="px-4 py-3 text-center font-bold text-spectra-purple-600 dark:text-spectra-purple-400">30%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed italic">
+                    {t('dimensions.weightTable.footnote')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -660,6 +731,9 @@ export default function WhitepaperPage() {
             </a>
           </div>
         </section>
+
+        {/* Persistent disclaimer footer — same shared component used on landing page */}
+        <DisclaimerFooter />
       </div>
     </MobileOptimized>
   )

@@ -223,12 +223,7 @@ export const createSoftwareSchema = (): SoftwareApplicationSchema => ({
     '@type': 'Offer',
     price: '0',
     priceCurrency: 'USD',
-    description: 'Free security audit with comprehensive vulnerability detection'
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '247'
+    description: 'Free AI-powered security analysis with comprehensive vulnerability detection'
   },
   provider: {
     '@type': 'Organization',
@@ -302,7 +297,7 @@ export const createFAQSchema = (): FAQSchema => ({
       name: 'How long does a security audit take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra provides comprehensive security audits in under 30 seconds, compared to traditional audits that take weeks.'
+        text: 'Spectra completes audits in 20 minutes or less — more than 2.4 times faster than traditional manual audits.'
       }
     },
     {
@@ -326,7 +321,7 @@ export const createFAQSchema = (): FAQSchema => ({
       name: 'How accurate are Spectra\'s security findings?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra achieves 99% accuracy with zero false positives guarantee. All findings include verifiable evidence and AI diffs you can inspect.'
+        text: 'Spectra detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.'
       }
     },
     {
@@ -344,7 +339,7 @@ export const createServiceSchema = (): ServiceSchema => ({
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'AI-Powered Security Audit Service',
-  description: 'Continuous AI-powered security monitoring and auditing for blockchain smart contracts and DeFi protocols.',
+  description: 'AI-powered security analysis for blockchain smart contracts and DeFi protocols.',
   provider: {
     '@type': 'Organization',
     name: 'Spectra Security',
@@ -357,31 +352,11 @@ export const createServiceSchema = (): ServiceSchema => ({
     itemListElement: [
       {
         '@type': 'Offer',
-        name: 'Free Security Audit',
-        description: 'Comprehensive smart contract security audit with AI-powered vulnerability detection',
+        name: 'AI-Powered Security Analysis',
+        description: '5-dimensional smart contract security analysis with AI-powered vulnerability detection',
         offers: {
           '@type': 'Offer',
           price: '0',
-          priceCurrency: 'USD'
-        }
-      },
-      {
-        '@type': 'Offer',
-        name: 'Premium Monitoring',
-        description: 'Continuous real-time security monitoring with instant alerts',
-        offers: {
-          '@type': 'Offer',
-          price: '299',
-          priceCurrency: 'USD'
-        }
-      },
-      {
-        '@type': 'Offer',
-        name: 'Enterprise Protection',
-        description: 'Advanced security features with dedicated support and custom integrations',
-        offers: {
-          '@type': 'Offer',
-          price: '999',
           priceCurrency: 'USD'
         }
       }
