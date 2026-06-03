@@ -65,13 +65,13 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
           animated && 'animate-pulse-glow'
         )}>
           {showIcon && (
-            <div className="text-success-primary">
+            <div className="text-spectra-green-700 dark:text-spectra-green-400">
               {icons[type]}
             </div>
           )}
 
           <div className="flex flex-col">
-            <span className="text-sm font-semibold text-success-primary dark:text-success-primary">
+            <span className="text-sm font-semibold text-spectra-green-700 dark:text-spectra-green-400">
               {label}
             </span>
             {description && (
@@ -160,7 +160,7 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
             <TrendingUp
               className={cn(
                 'w-3 h-3',
-                trend === 'up' ? 'text-spectra-green-600 dark:text-security-green' : 'text-red-600 dark:text-red-400',
+                trend === 'up' ? 'text-spectra-green-700 dark:text-security-green' : 'text-red-600 dark:text-red-400',
                 trend === 'down' && 'rotate-180'
               )}
             />

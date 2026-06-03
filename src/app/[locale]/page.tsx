@@ -214,12 +214,12 @@ export default function HomePage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     {/* Reproducible Findings */}
                     <div className="text-center p-6 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 shadow-sm">
-                      <div className="inline-flex p-3 rounded-full bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-600 dark:text-spectra-green-500 mb-4">
+                      <div className="inline-flex p-3 rounded-full bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500 mb-4">
                         <FileCheck className="w-8 h-8" />
                       </div>
                       <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">{t('hero.page.thirdPartyAudited')}</h4>
                       <p className="text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.thirdPartyAuditedDesc')}</p>
-                      <div className="mt-3 inline-flex items-center gap-1 text-xs text-spectra-green-600 dark:text-spectra-green-500">
+                      <div className="mt-3 inline-flex items-center gap-1 text-xs text-spectra-green-700 dark:text-spectra-green-500">
                         <CheckCircle className="w-3 h-3" />
                         {t('hero.page.verified')}
                       </div>
@@ -274,7 +274,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-green-500/20 text-spectra-green-600 dark:text-spectra-green-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
                       <Shield className="w-6 h-6" />
                     </div>
                   </div>
@@ -282,7 +282,7 @@ export default function HomePage() {
                     <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
                       {t('howScoresWork.dimensions.codeSecurity.title')}
                     </h3>
-                    <div className="inline-block px-2 py-1 rounded bg-spectra-green-500/20 text-spectra-green-600 dark:text-spectra-green-500 text-xs font-mono font-semibold mb-3">
+                    <div className="inline-block px-2 py-1 rounded bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500 text-xs font-mono font-semibold mb-3">
                       {t('howScoresWork.dimensions.codeSecurity.score')}
                     </div>
                     <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
@@ -340,7 +340,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-yellow-500/20 text-spectra-yellow-600 dark:text-spectra-yellow-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-yellow-500/20 text-spectra-yellow-700 dark:text-spectra-yellow-500">
                       <Users className="w-6 h-6" />
                     </div>
                   </div>
@@ -348,7 +348,7 @@ export default function HomePage() {
                     <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
                       {t('howScoresWork.dimensions.distribution.title')}
                     </h3>
-                    <div className="inline-block px-2 py-1 rounded bg-spectra-yellow-500/20 text-spectra-yellow-600 dark:text-spectra-yellow-500 text-xs font-mono font-semibold mb-3">
+                    <div className="inline-block px-2 py-1 rounded bg-spectra-yellow-500/20 text-spectra-yellow-700 dark:text-spectra-yellow-500 text-xs font-mono font-semibold mb-3">
                       {t('howScoresWork.dimensions.distribution.score')}
                     </div>
                     <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
@@ -363,7 +363,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex flex-col md:flex-row items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-3 rounded-xl bg-spectra-cyan-500/20 text-spectra-cyan-600 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-3 rounded-xl bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
                         <Award className="w-6 h-6" />
                       </div>
                     </div>
@@ -376,7 +376,7 @@ export default function HomePage() {
                           {t('howScoresWork.dimensions.team.comingSoon')}
                         </span>
                       </div>
-                      <div className="inline-block px-2 py-1 rounded bg-spectra-cyan-500/20 text-spectra-cyan-600 dark:text-spectra-cyan-500 text-xs font-mono font-semibold mb-3">
+                      <div className="inline-block px-2 py-1 rounded bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500 text-xs font-mono font-semibold mb-3">
                         {t('howScoresWork.dimensions.team.score')}
                       </div>
                       <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
@@ -399,7 +399,7 @@ export default function HomePage() {
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                   <div className="p-3 rounded-lg bg-spectra-green-500/10 border border-spectra-green-500/20">
-                    <div className="text-sm font-bold text-spectra-green-600 dark:text-spectra-green-500">85+</div>
+                    <div className="text-sm font-bold text-spectra-green-700 dark:text-spectra-green-500">85+</div>
                     <div className="text-xs text-neutral-500 dark:text-neutral-400">Excellent</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-blue-500/10 border border-spectra-blue-500/20">
@@ -407,7 +407,7 @@ export default function HomePage() {
                     <div className="text-xs text-neutral-500 dark:text-neutral-400">Good</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-yellow-500/10 border border-spectra-yellow-500/20">
-                    <div className="text-sm font-bold text-spectra-yellow-600 dark:text-spectra-yellow-500">55-69</div>
+                    <div className="text-sm font-bold text-spectra-yellow-700 dark:text-spectra-yellow-500">55-69</div>
                     <div className="text-xs text-neutral-500 dark:text-neutral-400">Fair</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-red-500/10 border border-spectra-red-500/20">
@@ -487,14 +487,14 @@ export default function HomePage() {
                   <div className="flex flex-col md:flex-row gap-6 sm:gap-8">
                     {/* Icon */}
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-4 sm:p-5 rounded-2xl bg-spectra-green-500/20 text-spectra-green-600 dark:text-spectra-green-500 group-hover:bg-spectra-green-500/30 transition-all">
+                      <div className="inline-flex p-4 sm:p-5 rounded-2xl bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500 group-hover:bg-spectra-green-500/30 transition-all">
                         <Zap className="w-8 h-8 sm:w-10 sm:h-10" />
                       </div>
                     </div>
 
                     {/* Content */}
                     <div className="flex-1">
-                      <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-spectra-green-600 dark:group-hover:text-spectra-green-400 transition-colors">
+                      <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-spectra-green-700 dark:group-hover:text-spectra-green-400 transition-colors">
                         {t('hero.page.realTimeMonitoring')}
                       </h3>
                       <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed mb-4">
@@ -504,7 +504,7 @@ export default function HomePage() {
                       {/* Metrics */}
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div>
-                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-600 dark:text-spectra-green-500 mb-1">{t('hero.page.avgScanTime')}</div>
+                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-1">{t('hero.page.avgScanTime')}</div>
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.avgScanTimeLabel')}</div>
                         </div>
                         <div>
@@ -598,7 +598,7 @@ export default function HomePage() {
                       {/* Metrics */}
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div>
-                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-600 dark:text-spectra-green-500 mb-1">Audit</div>
+                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-1">Audit</div>
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.thirdPartyVerified')}</div>
                         </div>
                         <div>
@@ -619,7 +619,7 @@ export default function HomePage() {
             {/* Additional Trust Indicators Row */}
             <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
               <Card variant="stats" className="text-center">
-                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-green-600 dark:text-spectra-green-500 mx-auto mb-3" />
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
                 <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.aiPoweredAnalysis')}</div>
                 <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.aiPoweredAnalysisDesc')}</div>
               </Card>
@@ -705,7 +705,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-600 dark:text-spectra-green-500">
+                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
                         <Search className="w-5 h-5" />
                       </div>
                     </div>
@@ -723,7 +723,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-600 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
                         <Layers className="w-5 h-5" />
                       </div>
                     </div>
@@ -772,7 +772,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-600 dark:text-spectra-green-500">
+                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
                         <ThumbsUp className="w-5 h-5" />
                       </div>
                     </div>
@@ -808,7 +808,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-600 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
                         <Brain className="w-5 h-5" />
                       </div>
                     </div>
@@ -868,12 +868,12 @@ export default function HomePage() {
                   <div className="text-xs text-spectra-blue-600 dark:text-spectra-blue-500 mt-1">{t('hero.page.scanTimeBadge')}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-spectra-green-600 dark:text-spectra-green-500 mb-2 flex items-center justify-center gap-2">
+                  <div className="text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-2 flex items-center justify-center gap-2">
                     {t('hero.page.dimensionsValue')}
                     <Shield className="w-5 h-5" />
                   </div>
                   <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.dimensionsLabel')}</div>
-                  <div className="text-xs text-spectra-green-600 dark:text-spectra-green-500 mt-1">{t('hero.page.dimensionsBadge')}</div>
+                  <div className="text-xs text-spectra-green-700 dark:text-spectra-green-500 mt-1">{t('hero.page.dimensionsBadge')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 mb-2">{t('hero.page.aiPoweredValue')}</div>
@@ -891,7 +891,7 @@ export default function HomePage() {
               <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-700/50">
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 bg-spectra-green-600 dark:bg-spectra-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm text-spectra-green-600 dark:text-spectra-green-500">{t('hero.page.systemReady')}</span>
+                  <span className="text-sm text-spectra-green-700 dark:text-spectra-green-500">{t('hero.page.systemReady')}</span>
                 </div>
               </div>
             </Card>
@@ -921,7 +921,7 @@ export default function HomePage() {
                 {personaContent.ctaText}
               </Button>
               <div className="flex items-center gap-4 text-neutral-500 dark:text-neutral-400 text-sm">
-                <CheckCircle className="w-5 h-5 text-spectra-green-600 dark:text-spectra-green-500" />
+                <CheckCircle className="w-5 h-5 text-spectra-green-700 dark:text-spectra-green-500" />
                 {t('hero.page.noCreditCardRequired')}
               </div>
             </div>
@@ -929,7 +929,7 @@ export default function HomePage() {
             {/* Trust Builders */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
               <div className="text-center">
-                <Shield className="w-8 h-8 text-spectra-green-600 dark:text-spectra-green-500 mx-auto mb-3" />
+                <Shield className="w-8 h-8 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
                 <h3 className="text-neutral-900 dark:text-white font-medium mb-2">{t('hero.page.quickSetup')}</h3>
                 <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   {t('hero.page.quickSetupDesc')}
