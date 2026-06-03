@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Search, ThumbsUp, BarChart3, Brain } from 'lucide-react'
+import { Search, ThumbsUp, Scale, BarChart3, Brain } from 'lucide-react'
 
 export interface LearningLoopDiagramProps {
   className?: string
@@ -11,38 +11,38 @@ export interface LearningLoopDiagramProps {
 type Pt = { x: number; y: number }
 
 /**
- * Shield-shaped animated SVG echoing the Spectra logo. Four nodes sit at the
- * corners of the shield, connected in a continuous feedback loop:
- * Audit -> User Feedback -> Calibration -> Model Retraining -> Audit
+ * Shield-shaped animated SVG echoing the Spectra logo. Five nodes sit around
+ * the shield outline, connected in a continuous feedback loop:
+ * Audit -> User Feedback -> Evaluation -> Calibration -> Model Retraining -> Audit
  *
- * The "circuit" is the shield outline itself; energy flows along the edge via
- * an animated stroke-dashoffset, so the shield stays put rather than spinning.
- * Animation respects `prefers-reduced-motion` (handled here and globally).
+ * Evaluation weighs feedback by reviewer reputation before it calibrates the
+ * system; Calibration sits at the shield's point. The "circuit" is the shield
+ * outline itself; energy flows along the edge via an animated stroke-dashoffset,
+ * so the shield stays put rather than spinning. Respects `prefers-reduced-motion`.
  */
 export default function LearningLoopDiagram({
   className = '',
-  ariaLabel = 'Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which informs calibration, which retrains the model, which improves the next audit.'
+  ariaLabel = 'Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.'
 }: LearningLoopDiagramProps) {
   const size = 400
 
   // --- Shield silhouette (matches the Spectra logo) -----------------------
-  // Widest across the shoulders, tapering to a point at the bottom. A node
-  // sits at each of the four corners; the bottom point is the shield tip.
-  const audit: Pt = { x: 118, y: 126 } // top-left corner
-  const feedback: Pt = { x: 282, y: 126 } // top-right corner
-  const calibration: Pt = { x: 282, y: 228 } // lower-right corner (waist)
-  const retraining: Pt = { x: 118, y: 228 } // lower-left corner (waist)
-  const tip: Pt = { x: 200, y: 348 } // bottom point
+  // Widest across the shoulders, tapering to a point at the bottom. Five nodes
+  // sit around the outline; Calibration sits at the shield's point.
+  const audit: Pt = { x: 112, y: 118 } // top-left corner
+  const feedback: Pt = { x: 288, y: 118 } // top-right corner
+  const evaluation: Pt = { x: 256, y: 234 } // right side, lower
+  const calibration: Pt = { x: 200, y: 328 } // bottom point (shield tip)
+  const retraining: Pt = { x: 144, y: 234 } // left side, lower
 
-  // Five quadratic segments traced clockwise from the top-left corner.
-  // Vertical-ish sides in the upper body, tapering to a rounded point —
+  // Five quadratic segments traced clockwise from the top-left corner —
   // the silhouette of the Spectra logo shield. Each entry is [from, control, to].
   const segs: [Pt, Pt, Pt][] = [
-    [audit, { x: 200, y: 110 }, feedback], // flat top (gently rounded)
-    [feedback, { x: 290, y: 177 }, calibration], // right side
-    [calibration, { x: 274, y: 300 }, tip], // taper to point (right)
-    [tip, { x: 126, y: 300 }, retraining], // taper from point (left)
-    [retraining, { x: 110, y: 177 }, audit] // left side
+    [audit, { x: 200, y: 102 }, feedback], // flat top (gently rounded)
+    [feedback, { x: 298, y: 176 }, evaluation], // right upper side
+    [evaluation, { x: 244, y: 296 }, calibration], // taper to the point (right)
+    [calibration, { x: 156, y: 296 }, retraining], // taper from the point (left)
+    [retraining, { x: 102, y: 176 }, audit] // left upper side
   ]
 
   const shieldPath =
@@ -58,14 +58,8 @@ export default function LearningLoopDiagram({
     angle: (Math.atan2(p2.y - p0.y, p2.x - p0.x) * 180) / Math.PI
   })
 
-  // One directional arrow per loop transition (clockwise). The bottom
-  // transition (Calibration -> Model Retraining) is drawn at the tip.
-  const arrows = [
-    segArrow(segs[0]), // Audit -> Feedback (top)
-    segArrow(segs[1]), // Feedback -> Calibration (right)
-    { x: tip.x, y: tip.y - 6, angle: 180 }, // Calibration -> Retraining (tip)
-    segArrow(segs[4]) // Retraining -> Audit (left)
-  ]
+  // One directional flow arrow per loop transition (clockwise around the shield).
+  const arrows = segs.map(segArrow)
 
   const nodes = [
     {
@@ -76,7 +70,7 @@ export default function LearningLoopDiagram({
       color: 'text-spectra-blue-500',
       bg: 'fill-spectra-blue-500/15',
       stroke: 'stroke-spectra-blue-500/50',
-      labelDy: -50
+      labelDy: -48
     },
     {
       ...feedback,
@@ -86,7 +80,17 @@ export default function LearningLoopDiagram({
       color: 'text-spectra-green-500',
       bg: 'fill-spectra-green-500/15',
       stroke: 'stroke-spectra-green-500/50',
-      labelDy: -50
+      labelDy: -48
+    },
+    {
+      ...evaluation,
+      key: 'evaluation',
+      label: 'Evaluation',
+      Icon: Scale,
+      color: 'text-spectra-yellow-500',
+      bg: 'fill-spectra-yellow-500/15',
+      stroke: 'stroke-spectra-yellow-500/50',
+      labelDy: 50
     },
     {
       ...calibration,
@@ -96,7 +100,7 @@ export default function LearningLoopDiagram({
       color: 'text-spectra-purple-500',
       bg: 'fill-spectra-purple-500/15',
       stroke: 'stroke-spectra-purple-500/50',
-      labelDy: 56
+      labelDy: 50
     },
     {
       ...retraining,
@@ -106,7 +110,7 @@ export default function LearningLoopDiagram({
       color: 'text-spectra-cyan-500',
       bg: 'fill-spectra-cyan-500/15',
       stroke: 'stroke-spectra-cyan-500/50',
-      labelDy: 56
+      labelDy: 50
     }
   ]
 
