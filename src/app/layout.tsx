@@ -3,6 +3,8 @@ import '@/globals.css'
 import Analytics from '@/components/ui/Analytics'
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor'
 import { UmamiProvider } from '@/providers/UmamiProvider'
+import { getLocale } from 'next-intl/server'
+import { isRtlLocale, type Locale } from '@/i18n/config'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,13 +18,23 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 })
 
-export default function RootLayout({
+// <html lang>/<dir> below is derived from getLocale(), which resolves the active
+// locale from the request at runtime. This root layout sits above the [locale]
+// segment, so it has no params.locale and can't know the locale statically.
+// Force dynamic rendering so the root layout re-renders per request and emits the
+// correct lang/dir per locale — a static shell would bake in the default locale.
+export const dynamic = 'force-dynamic'
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const locale = await getLocale()
+  const dir = isRtlLocale(locale as Locale) ? 'rtl' : 'ltr'
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
       <head>
         {/* Mobile Viewport Configuration */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />

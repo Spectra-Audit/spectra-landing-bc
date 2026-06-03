@@ -1,9 +1,14 @@
 import { getRequestConfig } from 'next-intl/server'
 import { locales, defaultLocale } from './config'
 
-export default getRequestConfig(async ({ locale }) => {
-  // Ensure we have a valid locale
-  const safeLocale = locale && locales.includes(locale as any) ? locale : defaultLocale
+export default getRequestConfig(async ({ requestLocale }) => {
+  // `requestLocale` resolves to the locale the middleware matched for this
+  // request, or to an explicit locale passed to awaitable next-intl APIs
+  // (e.g. getTranslations({ locale })). The deprecated `locale` param is only
+  // populated for the latter, so reading it alone left getLocale() — which
+  // passes no explicit locale — always falling back to the default locale.
+  const requested = await requestLocale
+  const safeLocale = requested && locales.includes(requested as any) ? requested : defaultLocale
 
   try {
     // Import the messages for the requested locale
