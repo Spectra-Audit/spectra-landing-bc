@@ -19,7 +19,7 @@ export interface SocialMediaImageProps {
  */
 const SocialMediaImage: React.FC<SocialMediaImageProps> = ({
   type,
-  title = 'Spectra - AI-Powered Smart Contract Security Audits',
+  title = 'Spectra Audit - AI-Powered Smart Contract Security Audits',
   description = 'Get comprehensive security audits with verifiable evidence in under 20 minutes. Protect your DeFi protocols with real-time AI-powered security monitoring.',
   image = '/images/social/og-default.jpg',
   width,
@@ -45,15 +45,15 @@ const SocialMediaImage: React.FC<SocialMediaImageProps> = ({
       width: width || 32,
       height: height || 32,
       src: '/images/social/favicon-32x32.png',
-      alt: 'Spectra Security Platform Favicon',
-      title: 'Spectra Favicon',
+      alt: 'Spectra Audit Platform Favicon',
+      title: 'Spectra Audit Favicon',
     },
     icon: {
       width: width || 192,
       height: height || 192,
       src: '/images/social/icon-192x192.png',
-      alt: 'Spectra Security Platform Icon',
-      title: 'Spectra Platform Icon',
+      alt: 'Spectra Audit Platform Icon',
+      title: 'Spectra Audit Platform Icon',
     },
   }
 

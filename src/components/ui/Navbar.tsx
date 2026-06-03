@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect, useMemo, useSyncExternalStore } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
-import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Shield, Github, Twitter, MessageCircle } from 'lucide-react'
+import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Github, Twitter, MessageCircle } from 'lucide-react'
 import Button from './Button'
 import LanguageSelector from './LanguageSelector'
 import ThemeToggle from './ThemeToggle'
@@ -125,10 +126,15 @@ export function Navbar({ className }: NavbarProps) {
           {/* Logo */}
           <div className="flex items-center">
             <Link href={homePath} className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-neutral-900 dark:text-white">Spectra</span>
+              <Image
+                src="/spectra-logo.png"
+                alt="Spectra Audit"
+                width={32}
+                height={32}
+                priority
+                className="w-8 h-8 object-contain"
+              />
+              <span className="text-xl font-bold text-neutral-900 dark:text-white">Spectra Audit</span>
             </Link>
           </div>
 

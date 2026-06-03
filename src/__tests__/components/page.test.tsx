@@ -47,8 +47,8 @@ jest.mock('@/components/ui/StructuredData', () => ({
       {JSON.stringify(data)}
     </script>
   ),
-  createSoftwareSchema: () => ({ '@type': 'SoftwareApplication', name: 'Spectra' }),
-  createOrganizationSchema: () => ({ '@type': 'Organization', name: 'Spectra Security' }),
+  createSoftwareSchema: () => ({ '@type': 'SoftwareApplication', name: 'Spectra Audit' }),
+  createOrganizationSchema: () => ({ '@type': 'Organization', name: 'Spectra Audit' }),
 }))
 
 jest.mock('@/components/ui/LanguageSelector', () => ({

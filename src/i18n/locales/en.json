@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Spectra - AI-Powered Blockchain Security Audits",
+    "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
     "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection",
     "og": {
-      "title": "Spectra - AI-Powered Blockchain Security Audits",
+      "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
       "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI Security Audit Platform"
     }
   },
   "meta": {
-    "title": "Spectra - AI-Powered Blockchain Security Audits",
+    "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
     "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection"
   },
@@ -82,7 +82,7 @@
       "transparent": "Transparent",
       "trustMessage": "Open-source platform with publicly verifiable audit methodology. Anyone can inspect our scoring logic, analysis pipeline, and findings reproducibility on GitHub.",
       "featuresTitle": "Next-Generation Security Audits",
-      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra provides continuous, verifiable security monitoring that keeps up with your code.",
+      "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra Audit provides continuous, verifiable security monitoring that keeps up with your code.",
       "realTimeMonitoring": "On-Demand AI Analysis",
       "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive 5-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20m",
@@ -126,7 +126,7 @@
       "transparentBadge": "Verifiable results",
       "systemReady": "System ready • Start your audit in seconds",
       "finalCtaTitle": "Security in seconds. Ready to verify?",
-      "finalCtaSubtitle": "Stay ahead of vulnerabilities with proactive protection. Get started with Spectra today and protect your investments with real-time, verifiable security monitoring.",
+      "finalCtaSubtitle": "Stay ahead of vulnerabilities with proactive protection. Get started with Spectra Audit today and protect your investments with real-time, verifiable security monitoring.",
       "noCreditCardRequired": "No credit card required • Quick setup",
       "quickSetup": "Quick Setup",
       "quickSetupDesc": "Get started with comprehensive security audits",
@@ -214,7 +214,7 @@
   },
   "features": {
     "title": "Next-Generation Security Audits",
-    "subtitle": "Traditional audits are slow and expensive. Spectra provides AI-orchestrated, verifiable security analysis you can inspect and reproduce.",
+    "subtitle": "Traditional audits are slow and expensive. Spectra Audit provides AI-orchestrated, verifiable security analysis you can inspect and reproduce.",
     "monitoring": {
       "title": "Fast AI Analysis",
       "description": "AI-orchestrated analysis runs across 5 dimensions in parallel — code, distribution, tokenomics, liquidity, and sentiment — producing a composite score with traceable evidence.",
@@ -255,7 +255,7 @@
   },
   "cta": {
     "title": "Security in seconds. Ready to verify?",
-    "subtitle": "Stay ahead of vulnerabilities with verifiable AI-driven analysis. Get started with Spectra and inspect a project's security posture in minutes.",
+    "subtitle": "Stay ahead of vulnerabilities with verifiable AI-driven analysis. Get started with Spectra Audit and inspect a project's security posture in minutes.",
     "button": "Start Your Free Audit Now",
     "noCreditCard": "No credit card required • Quick setup",
     "trustBuilders": {
@@ -290,7 +290,7 @@
   "statsBanner": {
     "header": {
       "title": "Smart Contract Security Insights",
-      "subtitle": "Get comprehensive security analysis in under 20 minutes. Spectra's AI-powered platform helps you understand the safety considerations behind a project."
+      "subtitle": "Get comprehensive security analysis in under 20 minutes. Spectra Audit's AI-powered platform helps you understand the safety considerations behind a project."
     },
     "footer": "All audits performed on a forked replica of the blockchain with verifiable results."
   },
@@ -307,7 +307,7 @@
     "hero": {
       "title": "The 5-Dimensional",
       "subtitle": "Security Audit Framework",
-      "description": "Discover how Spectra revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
+      "description": "Discover how Spectra Audit revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
       "buttons": {
         "exploreDimensions": "Explore Dimensions",
         "scoringAlgorithm": "Scoring Algorithm",
@@ -318,7 +318,7 @@
       "title": "Why Multi-Dimensional Analysis?",
       "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
       "paragraph2": {
-        "before": "Spectra's ",
+        "before": "Spectra Audit's ",
         "highlight": "5-dimensional audit framework",
         "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
@@ -597,7 +597,7 @@
   },
   "learningLoop": {
     "title": "How Scores Stay Accurate Over Time",
-    "subtitle": "Spectra continuously improves through real-world feedback and calibration against historical audits — every analysis informs the next.",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits — every analysis informs the next.",
     "userFeedback": {
       "title": "User Feedback Integration",
       "description": "Community ratings and expert reviews on every finding feed back into the model. False positives, missed vulnerabilities, and severity disputes are tracked and used to recalibrate scoring weights."
@@ -621,6 +621,6 @@
     "forkTesting": "Contract behavior is analyzed on a forked replica of the blockchain, not the live mainnet.",
     "noGuarantee": "A high security score does NOT guarantee a project is safe. Scores reflect the state of available data at the time of analysis.",
     "doYourResearch": "Always conduct your own research (DYOR) before making any investment, deployment, or integration decisions.",
-    "toolPurpose": "Spectra is an informational tool designed to help users understand the security considerations behind a project. It is not financial, legal, or investment advice."
+    "toolPurpose": "Spectra Audit is an informational tool designed to help users understand the security considerations behind a project. It is not financial, legal, or investment advice."
   }
 }
