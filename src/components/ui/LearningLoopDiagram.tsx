@@ -1,77 +1,118 @@
 'use client'
 
 import React from 'react'
-import { Search, ThumbsUp, BarChart3, Brain } from 'lucide-react'
+import { Search, ThumbsUp, Scale, BarChart3, Brain } from 'lucide-react'
 
 export interface LearningLoopDiagramProps {
   className?: string
   ariaLabel?: string
 }
 
+type Pt = { x: number; y: number }
+
 /**
- * Circular animated SVG showing 4 nodes connected in a feedback loop:
- * Audit -> User Feedback -> Calibration -> Model Retraining -> Audit
+ * Shield-shaped animated SVG echoing the Spectra logo. Five nodes sit around
+ * the shield outline, connected in a continuous feedback loop:
+ * Audit -> User Feedback -> Evaluation -> Calibration -> Model Retraining -> Audit
  *
- * Animation respects `prefers-reduced-motion` (handled globally in globals.css).
+ * Evaluation weighs feedback by reviewer reputation before it calibrates the
+ * system; Calibration sits at the shield's point. The "circuit" is the shield
+ * outline itself; energy flows along the edge via an animated stroke-dashoffset,
+ * so the shield stays put rather than spinning. Respects `prefers-reduced-motion`.
  */
 export default function LearningLoopDiagram({
   className = '',
-  ariaLabel = 'Continuous improvement feedback loop: audits inform user feedback, which informs calibration, which retrains the model, which improves the next audit.'
+  ariaLabel = 'Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.'
 }: LearningLoopDiagramProps) {
   const size = 400
-  const center = size / 2
-  const radius = 140
 
-  // 4 nodes evenly distributed around the circle
+  // --- Shield silhouette (matches the Spectra logo) -----------------------
+  // Widest across the shoulders, tapering to a point at the bottom. Five nodes
+  // sit around the outline; Calibration sits at the shield's point.
+  const audit: Pt = { x: 112, y: 118 } // top-left corner
+  const feedback: Pt = { x: 288, y: 118 } // top-right corner
+  const evaluation: Pt = { x: 256, y: 234 } // right side, lower
+  const calibration: Pt = { x: 200, y: 328 } // bottom point (shield tip)
+  const retraining: Pt = { x: 144, y: 234 } // left side, lower
+
+  // Five quadratic segments traced clockwise from the top-left corner —
+  // the silhouette of the Spectra logo shield. Each entry is [from, control, to].
+  const segs: [Pt, Pt, Pt][] = [
+    [audit, { x: 200, y: 102 }, feedback], // flat top (gently rounded)
+    [feedback, { x: 298, y: 176 }, evaluation], // right upper side
+    [evaluation, { x: 244, y: 296 }, calibration], // taper to the point (right)
+    [calibration, { x: 156, y: 296 }, retraining], // taper from the point (left)
+    [retraining, { x: 102, y: 176 }, audit] // left upper side
+  ]
+
+  const shieldPath =
+    `M ${audit.x} ${audit.y} ` +
+    segs.map(([, c, to]) => `Q ${c.x} ${c.y} ${to.x} ${to.y}`).join(' ') +
+    ' Z'
+
+  // Midpoint & tangent of a quadratic at t=0.5. The tangent direction at the
+  // midpoint of a quadratic Bézier equals the chord direction (P2 - P0).
+  const segArrow = ([p0, p1, p2]: [Pt, Pt, Pt]) => ({
+    x: 0.25 * p0.x + 0.5 * p1.x + 0.25 * p2.x,
+    y: 0.25 * p0.y + 0.5 * p1.y + 0.25 * p2.y,
+    angle: (Math.atan2(p2.y - p0.y, p2.x - p0.x) * 180) / Math.PI
+  })
+
+  // One directional flow arrow per loop transition (clockwise around the shield).
+  const arrows = segs.map(segArrow)
+
   const nodes = [
     {
+      ...audit,
       key: 'audit',
       label: 'Audit',
       Icon: Search,
       color: 'text-spectra-blue-500',
       bg: 'fill-spectra-blue-500/15',
       stroke: 'stroke-spectra-blue-500/50',
-      angle: -90 // Top
+      labelDy: -48
     },
     {
+      ...feedback,
       key: 'feedback',
       label: 'User Feedback',
       Icon: ThumbsUp,
       color: 'text-spectra-green-500',
       bg: 'fill-spectra-green-500/15',
       stroke: 'stroke-spectra-green-500/50',
-      angle: 0 // Right
+      labelDy: -48
     },
     {
+      ...evaluation,
+      key: 'evaluation',
+      label: 'Evaluation',
+      Icon: Scale,
+      color: 'text-spectra-yellow-500',
+      bg: 'fill-spectra-yellow-500/15',
+      stroke: 'stroke-spectra-yellow-500/50',
+      labelDy: 50
+    },
+    {
+      ...calibration,
       key: 'calibration',
       label: 'Calibration',
       Icon: BarChart3,
       color: 'text-spectra-purple-500',
       bg: 'fill-spectra-purple-500/15',
       stroke: 'stroke-spectra-purple-500/50',
-      angle: 90 // Bottom
+      labelDy: 50
     },
     {
+      ...retraining,
       key: 'retraining',
       label: 'Model Retraining',
       Icon: Brain,
       color: 'text-spectra-cyan-500',
       bg: 'fill-spectra-cyan-500/15',
       stroke: 'stroke-spectra-cyan-500/50',
-      angle: 180 // Left
+      labelDy: 50
     }
   ]
-
-  // Convert angle (degrees) to x/y on circle
-  const toXY = (angleDeg: number) => {
-    const rad = (angleDeg * Math.PI) / 180
-    return {
-      x: center + radius * Math.cos(rad),
-      y: center + radius * Math.sin(rad)
-    }
-  }
-
-  const nodePoints = nodes.map((n) => ({ ...n, ...toXY(n.angle) }))
 
   return (
     <div className={`relative w-full max-w-[400px] mx-auto ${className}`}>
@@ -82,44 +123,26 @@ export default function LearningLoopDiagram({
         aria-label={ariaLabel}
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Defs: gradient + animated dash */}
+        {/* Defs: edge gradient + inner glow */}
         <defs>
           <linearGradient id="loop-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.6" />
-            <stop offset="50%" stopColor="rgb(168, 85, 247)" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="rgb(34, 197, 94)" stopOpacity="0.6" />
+            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.75" />
+            <stop offset="50%" stopColor="rgb(99, 102, 241)" stopOpacity="0.75" />
+            <stop offset="100%" stopColor="rgb(0, 208, 132)" stopOpacity="0.75" />
           </linearGradient>
 
-          <radialGradient id="loop-center-glow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.2" />
+          <radialGradient id="loop-center-glow" cx="50%" cy="45%" r="55%">
+            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.18" />
             <stop offset="100%" stopColor="rgb(0, 102, 255)" stopOpacity="0" />
           </radialGradient>
         </defs>
 
-        {/* Central glow */}
-        <circle cx={center} cy={center} r={radius - 30} fill="url(#loop-center-glow)" />
+        {/* Inner shield glow */}
+        <path d={shieldPath} fill="url(#loop-center-glow)" />
 
-        {/* Connecting circle (the loop itself) */}
-        <circle
-          cx={center}
-          cy={center}
-          r={radius}
-          fill="none"
-          stroke="url(#loop-grad)"
-          strokeWidth="2"
-          strokeDasharray="8 6"
-          className="loop-rotate"
-          style={{
-            transformOrigin: `${center}px ${center}px`,
-            animation: 'spectra-loop-rotate 12s linear infinite'
-          }}
-        />
-
-        {/* Static guide circle (subtle) */}
-        <circle
-          cx={center}
-          cy={center}
-          r={radius}
+        {/* Static guide outline (subtle) */}
+        <path
+          d={shieldPath}
           fill="none"
           stroke="currentColor"
           strokeOpacity="0.08"
@@ -127,33 +150,30 @@ export default function LearningLoopDiagram({
           className="text-neutral-400"
         />
 
-        {/* Arrow markers between nodes — small directional triangles at 4 midpoints */}
-        {nodePoints.map((node, i) => {
-          const next = nodePoints[(i + 1) % nodePoints.length]
-          // Midpoint angle for arrow
-          const midAngle = (node.angle + (i === nodePoints.length - 1 ? node.angle + 90 : next.angle)) / 2
-          // Handle wraparound for last node (180 -> -90 = wrap to 270)
-          const startAngle = node.angle
-          let endAngle = next.angle
-          if (endAngle < startAngle) endAngle += 360
-          const midAng = (startAngle + endAngle) / 2
-          const { x: ax, y: ay } = toXY(midAng)
-          // Direction of arrow (tangent — perpendicular to radius)
-          const tangentAngle = midAng + 90
-          return (
-            <g key={`arrow-${i}`}>
-              <polygon
-                points="0,-6 10,0 0,6"
-                fill="currentColor"
-                className="text-spectra-blue-500/70"
-                transform={`translate(${ax} ${ay}) rotate(${tangentAngle})`}
-              />
-            </g>
-          )
-        })}
+        {/* Animated circuit — flowing dashes along the shield edge */}
+        <path
+          d={shieldPath}
+          fill="none"
+          stroke="url(#loop-grad)"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeDasharray="9 7"
+          className="loop-circuit"
+        />
 
-        {/* Nodes */}
-        {nodePoints.map((node) => {
+        {/* Directional flow arrows (one per loop transition) */}
+        {arrows.map((a, i) => (
+          <polygon
+            key={`arrow-${i}`}
+            points="0,-5 9,0 0,5"
+            fill="currentColor"
+            className="text-spectra-blue-500/70"
+            transform={`translate(${a.x} ${a.y}) rotate(${a.angle})`}
+          />
+        ))}
+
+        {/* Nodes at each corner of the shield */}
+        {nodes.map((node) => {
           const NodeIcon = node.Icon
           return (
             <g key={node.key}>
@@ -161,7 +181,7 @@ export default function LearningLoopDiagram({
               <circle
                 cx={node.x}
                 cy={node.y}
-                r="34"
+                r="32"
                 className={`${node.bg} ${node.stroke}`}
                 strokeWidth="2"
               />
@@ -180,7 +200,7 @@ export default function LearningLoopDiagram({
               {/* Label */}
               <text
                 x={node.x}
-                y={node.y + 56}
+                y={node.y + node.labelDy}
                 textAnchor="middle"
                 className="fill-neutral-700 dark:fill-neutral-200 text-[12px] font-semibold"
                 style={{ fontFamily: 'inherit' }}
@@ -193,8 +213,8 @@ export default function LearningLoopDiagram({
 
         {/* Center label */}
         <text
-          x={center}
-          y={center - 4}
+          x={200}
+          y={172}
           textAnchor="middle"
           className="fill-neutral-900 dark:fill-white text-[14px] font-bold"
           style={{ fontFamily: 'inherit' }}
@@ -202,8 +222,8 @@ export default function LearningLoopDiagram({
           Continuous
         </text>
         <text
-          x={center}
-          y={center + 14}
+          x={200}
+          y={190}
           textAnchor="middle"
           className="fill-neutral-500 dark:fill-neutral-400 text-[11px]"
           style={{ fontFamily: 'inherit' }}
@@ -212,18 +232,20 @@ export default function LearningLoopDiagram({
         </text>
       </svg>
 
-      {/* Local keyframes (scoped via style tag is acceptable for this single use) */}
+      {/* Local keyframes. Defining AND referencing the animation inside the
+          same styled-jsx block keeps the scoped keyframe name in sync (an
+          inline `style` animation would reference the un-scoped name). */}
       <style jsx>{`
-        @keyframes spectra-loop-rotate {
-          from {
-            transform: rotate(0deg);
-          }
+        .loop-circuit {
+          animation: spectra-circuit-flow 1.1s linear infinite;
+        }
+        @keyframes spectra-circuit-flow {
           to {
-            transform: rotate(360deg);
+            stroke-dashoffset: -16;
           }
         }
         @media (prefers-reduced-motion: reduce) {
-          :global(.loop-rotate) {
+          .loop-circuit {
             animation: none !important;
           }
         }

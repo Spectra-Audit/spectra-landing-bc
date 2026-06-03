@@ -12,6 +12,8 @@ module.exports = {
     'spectra-blue',
     'spectra-green',
     'spectra-purple',
+    'spectra-cyan',
+    'spectra-yellow',
     // Keep animation classes
     'animate-pulse',
     'animate-ping',
@@ -147,6 +149,32 @@ module.exports = {
             800: '#3730A3',
             900: '#312E81',
             950: '#1e1b4b',
+          },
+          cyan: {
+            50: '#E0FBFF',
+            100: '#B3F3FF',
+            200: '#80EAFF',
+            300: '#4DE0FF',
+            400: '#1AD4FF',
+            500: '#06B6D4',  // Tech cyan - retraining / intelligence
+            600: '#0496B0',
+            700: '#03738A',
+            800: '#025463',
+            900: '#01323B',
+            950: '#001A1F',
+          },
+          yellow: {
+            50: '#FFFBEB',
+            100: '#FEF3C7',
+            200: '#FDE68A',
+            300: '#FCD34D',
+            400: '#FBBF24',
+            500: '#F59E0B',  // Caution / evaluation - reputation, judgment
+            600: '#D97706',
+            700: '#B45309',
+            800: '#92400E',
+            900: '#78350F',
+            950: '#451A03',
           }
         },
         // Semantic Colors - consistent meaning across the app

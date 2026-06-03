@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { createPortal } from 'react-dom'
 import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Github, Twitter, MessageCircle } from 'lucide-react'
 import Button from './Button'
@@ -195,12 +196,17 @@ export function Navbar({ className }: NavbarProps) {
           </div>
         </div>
 
-        {/* ENHANCED Full-Screen Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
+        {/* ENHANCED Full-Screen Mobile Menu Overlay.
+            Portaled to <body> so it escapes the navbar's stacking context: once
+            scrolled, the nav gains `backdrop-blur`, which makes it the containing
+            block for `position: fixed` descendants and would collapse this
+            overlay to the 64px nav height (the menu then appears not to open).
+            Rendering into <body> keeps it relative to the viewport at any scroll. */}
+        {isMobileMenuOpen && createPortal(
           <div
             className={cn(
               "fixed inset-0 z-50 md:hidden",
-              "bg-white/98 dark:bg-neutral-900/98 backdrop-blur-lg",
+              "bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg",
               "transition-opacity duration-300 ease-in-out",
               isMobileMenuOpen ? "opacity-100" : "opacity-0"
             )}
@@ -298,7 +304,8 @@ export function Navbar({ className }: NavbarProps) {
                 </div>
               </div>
             </div>
-          </div>
+          </div>,
+          document.body
         )}
       </div>
     </nav>
