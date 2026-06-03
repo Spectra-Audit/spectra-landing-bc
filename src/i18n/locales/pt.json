@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Spectra - Auditorias de Segurança Blockchain com IA",
+    "title": "Spectra Audit - Auditorias de Segurança Blockchain com IA",
     "description": "Uma classificação de segurança clara respaldada por evidências. Auditorias de IA em tempo real que você pode verificar. Proteja seus investimentos em criptomoedas com monitoramento de segurança contínuo e transparente.",
     "keywords": "segurança blockchain, auditoria IA, segurança de contratos inteligentes, segurança cripto, proteção DeFi",
     "og": {
-      "title": "Spectra - Auditorias de Segurança Blockchain com IA",
+      "title": "Spectra Audit - Auditorias de Segurança Blockchain com IA",
       "description": "Uma classificação de segurança clara respaldada por evidências. Auditorias de IA em tempo real que você pode verificar.",
-      "imageAlt": "Plataforma de Auditoria de Segurança Spectra IA"
+      "imageAlt": "Plataforma de Auditoria de Segurança Spectra Audit IA"
     }
   },
   "meta": {
-    "title": "Spectra - Auditorias de Segurança Blockchain com IA",
+    "title": "Spectra Audit - Auditorias de Segurança Blockchain com IA",
     "description": "Uma classificação de segurança clara respaldada por evidências. Auditorias de IA em tempo real que você pode verificar. Proteja seus investimentos em criptomoedas com monitoramento de segurança contínuo e transparente.",
     "keywords": "segurança blockchain, auditoria IA, segurança de contratos inteligentes, segurança cripto, proteção DeFi"
   },
@@ -82,7 +82,7 @@
       "transparent": "Transparente",
       "trustMessage": "Cada auditoria vem acompanhada de evidências verificáveis publicamente. Qualquer um pode reproduzir nossas descobertas de forma independente com base em dados on-chain e inspecionar o raciocínio por trás de cada pontuação.",
       "featuresTitle": "Auditorias de Segurança de Próxima Geração",
-      "featuresSubtitle": "As auditorias tradicionais são lentas, caras e rapidamente obsoletas. Spectra fornece monitoramento de segurança contínuo e verificável que se mantém atualizado com seu código.",
+      "featuresSubtitle": "As auditorias tradicionais são lentas, caras e rapidamente obsoletas. Spectra Audit fornece monitoramento de segurança contínuo e verificável que se mantém atualizado com seu código.",
       "realTimeMonitoring": "Análise IA Sob Demanda",
       "realTimeMonitoringDesc": "Análise sob demanda alimentada por IA quando os projetos são submetidos. Análise de segurança abrangente de 5 dimensões é concluída em menos de 20 minutos por auditoria.",
       "avgScanTime": "≤20m",
@@ -126,7 +126,7 @@
       "transparentBadge": "Resultados verificáveis",
       "systemReady": "Sistema pronto • Inicie sua auditoria em segundos",
       "finalCtaTitle": "Segurança em segundos. Pronto para verificar?",
-      "finalCtaSubtitle": "Antecipe-se às vulnerabilidades com proteção proativa. Comece com Spectra hoje e proteja seus investimentos com monitoramento de segurança verificável e em tempo real.",
+      "finalCtaSubtitle": "Antecipe-se às vulnerabilidades com proteção proativa. Comece com Spectra Audit hoje e proteja seus investimentos com monitoramento de segurança verificável e em tempo real.",
       "noCreditCardRequired": "Não requer cartão de crédito • Configuração rápida",
       "quickSetup": "Configuração Rápida",
       "quickSetupDesc": "Comece com auditorias de segurança abrangentes",
@@ -214,7 +214,7 @@
   },
   "features": {
     "title": "Auditorias de Segurança de Próxima Geração",
-    "subtitle": "As auditorias tradicionais são lentas e caras. Spectra fornece análise de segurança orquestrada por IA e verificável que você pode inspecionar e reproduzir.",
+    "subtitle": "As auditorias tradicionais são lentas e caras. Spectra Audit fornece análise de segurança orquestrada por IA e verificável que você pode inspecionar e reproduzir.",
     "monitoring": {
       "title": "Análise Rápida com IA",
       "description": "A análise orquestrada por IA roda em 5 dimensões em paralelo — código, distribuição, tokenomia, liquidez e sentimento — produzindo uma pontuação composta com evidências rastreáveis.",
@@ -255,7 +255,7 @@
   },
   "cta": {
     "title": "Segurança em segundos. Pronto para verificar?",
-    "subtitle": "Antecipe-se às vulnerabilidades com análise verificável impulsionada por IA. Comece com Spectra e inspecione a postura de segurança de um projeto em minutos.",
+    "subtitle": "Antecipe-se às vulnerabilidades com análise verificável impulsionada por IA. Comece com Spectra Audit e inspecione a postura de segurança de um projeto em minutos.",
     "button": "Comece Sua Auditoria Gratuita Agora",
     "noCreditCard": "Não requer cartão de crédito • Configuração rápida",
     "trustBuilders": {
@@ -290,7 +290,7 @@
   "statsBanner": {
     "header": {
       "title": "Insights de Segurança de Contratos Inteligentes",
-      "subtitle": "Obtenha análise de segurança abrangente em menos de 20 minutos. A plataforma de Spectra alimentada por IA o ajuda a entender as considerações de segurança por trás de um projeto."
+      "subtitle": "Obtenha análise de segurança abrangente em menos de 20 minutos. A plataforma de Spectra Audit alimentada por IA o ajuda a entender as considerações de segurança por trás de um projeto."
     },
     "footer": "Todas as auditorias são realizadas em uma réplica forkada da blockchain com resultados verificáveis."
   },
@@ -307,7 +307,7 @@
     "hero": {
       "title": "O 5-Dimensional",
       "subtitle": "Framework de Auditoria de Segurança",
-      "description": "Descubra como o Spectra revoluciona a segurança blockchain através de análise multidimensional abrangente, fornecendo insights mais profundos do que auditorias tradicionais jamais poderiam.",
+      "description": "Descubra como o Spectra Audit revoluciona a segurança blockchain através de análise multidimensional abrangente, fornecendo insights mais profundos do que auditorias tradicionais jamais poderiam.",
       "buttons": {
         "exploreDimensions": "Explorar Dimensões",
         "scoringAlgorithm": "Algoritmo de Pontuação",
@@ -320,7 +320,7 @@
       "paragraph2": {
         "before": "O framework de auditoria de ",
         "highlight": "5 dimensões",
-        "after": " do Spectra analisa projetos abrangentemente através de sentimento, código, tokenomia, liquidez e distribuição—fornecendo uma imagem de segurança completa que protege investidores de ameaças que auditorias de código sozinhas não podem detectar."
+        "after": " do Spectra Audit analisa projetos abrangentemente através de sentimento, código, tokenomia, liquidez e distribuição—fornecendo uma imagem de segurança completa que protege investidores de ameaças que auditorias de código sozinhas não podem detectar."
       },
       "stats": {
         "coreDimensions": {
@@ -597,7 +597,7 @@
   },
   "learningLoop": {
     "title": "Como as Pontuações Mantêm-se Precisas ao Longo do Tempo",
-    "subtitle": "Spectra melhora continuamente através de feedback do mundo real e calibração contra auditorias históricas — cada análise informa a próxima.",
+    "subtitle": "Spectra Audit melhora continuamente através de feedback do mundo real e calibração contra auditorias históricas — cada análise informa a próxima.",
     "userFeedback": {
       "title": "Integração de Feedback do Usuário",
       "description": "Avaliações da comunidade e revisões de especialistas em cada descoberta retornam ao modelo. Falsos positivos, vulnerabilidades omitidas e disputas de severidade são rastreados e usados para recalibrar pesos de pontuação."
@@ -621,6 +621,6 @@
     "forkTesting": "O comportamento dos contratos é analisado em uma réplica forkada da blockchain, não na mainnet ao vivo.",
     "noGuarantee": "Uma pontuação de segurança alta NÃO garante que um projeto seja seguro. As pontuações refletem o estado dos dados disponíveis no momento da análise.",
     "doYourResearch": "Sempre realize sua própria pesquisa (DYOR) antes de tomar qualquer decisão de investimento, implantação ou integração.",
-    "toolPurpose": "Spectra é uma ferramenta informativa projetada para ajudar os usuários a entender as considerações de segurança por trás de um projeto. Não constitui aconselhamento financeiro, jurídico ou de investimento."
+    "toolPurpose": "Spectra Audit é uma ferramenta informativa projetada para ajudar os usuários a entender as considerações de segurança por trás de um projeto. Não constitui aconselhamento financeiro, jurídico ou de investimento."
   }
 }

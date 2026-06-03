@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Spectra - AI Destekli Blockchain Güvenlik Denetimleri",
+    "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
     "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri. Kripto yatırımlarınızı sürekli, şeffaf güvenlik izleme ile koruyun.",
     "keywords": "blockchain güvenliği, AI denetimi, akıllı sözleşme güvenliği, kripto güvenliği, DeFi koruması",
     "og": {
-      "title": "Spectra - AI Destekli Blockchain Güvenlik Denetimleri",
+      "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
       "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri.",
       "imageAlt": "Spectra AI Güvenlik Denetimi Platformu"
     }
   },
   "meta": {
-    "title": "Spectra - AI Destekli Blockchain Güvenlik Denetimleri",
+    "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
     "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri. Kripto yatırımlarınızı sürekli, şeffaf güvenlik izleme ile koruyun.",
     "keywords": "blockchain güvenliği, AI denetimi, akıllı sözleşme güvenliği, kripto güvenliği, DeFi koruması"
   },
@@ -82,7 +82,7 @@
       "transparent": "Şeffaf",
       "trustMessage": "Her denetim, herkese açık şekilde doğrulanabilir kanıtlarla birlikte gelir. Herkes bulgularımızı zincir üstü verilere karşı bağımsız olarak yeniden üretebilir ve her skorun arkasındaki mantığı inceleyebilir.",
       "featuresTitle": "Yeni Nesil Güvenlik Denetimleri",
-      "featuresSubtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
+      "featuresSubtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra Audit, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
       "realTimeMonitoring": "Talep Üzerine AI Analizi",
       "realTimeMonitoringDesc": "Projeler gönderildiğinde talep üzerine AI destekli analiz. Kapsamlı 5 boyutlu güvenlik incelemesi denetim başına 20 dakikanın altında tamamlanır.",
       "avgScanTime": "≤20dk",
@@ -126,7 +126,7 @@
       "transparentBadge": "Doğrulanabilir sonuçlar",
       "systemReady": "Sistem hazır • Denetiminizi saniyeler içinde başlatın",
       "finalCtaTitle": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
-      "finalCtaSubtitle": "Proaktif korumayla açıkların önünde olun. Bugün Spectra ile başlayın ve yatırımlarınızı doğrulanabilir gerçek zamanlı güvenlik izleme ile koruyun.",
+      "finalCtaSubtitle": "Proaktif korumayla açıkların önünde olun. Bugün Spectra Audit ile başlayın ve yatırımlarınızı doğrulanabilir gerçek zamanlı güvenlik izleme ile koruyun.",
       "noCreditCardRequired": "Kredi kartı gerekmez • Hızlı kurulum",
       "quickSetup": "Hızlı Kurulum",
       "quickSetupDesc": "Kapsamlı güvenlik denetimleriyle başlayın",
@@ -214,7 +214,7 @@
   },
   "features": {
     "title": "Yeni Nesil Güvenlik Denetimleri",
-    "subtitle": "Geleneksel denetimler yavaş ve pahalı. Spectra, inceleyebileceğiniz ve yeniden üretebileceğiniz AI tarafından düzenlenen doğrulanabilir güvenlik analizi sunar.",
+    "subtitle": "Geleneksel denetimler yavaş ve pahalı. Spectra Audit, inceleyebileceğiniz ve yeniden üretebileceğiniz AI tarafından düzenlenen doğrulanabilir güvenlik analizi sunar.",
     "monitoring": {
       "title": "Hızlı AI Analizi",
       "description": "AI tarafından düzenlenen analiz 5 boyutta paralel olarak çalışır — kod, dağıtım, tokenomik, likidite ve sentiment — izlenebilir kanıtlarla birlikte birleşik skor üretir.",
@@ -255,7 +255,7 @@
   },
   "cta": {
     "title": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
-    "subtitle": "Doğrulanabilir AI destekli analizle açıkların önünde olun. Spectra ile başlayın ve bir projenin güvenlik durumunu dakikalar içinde inceleyin.",
+    "subtitle": "Doğrulanabilir AI destekli analizle açıkların önünde olun. Spectra Audit ile başlayın ve bir projenin güvenlik durumunu dakikalar içinde inceleyin.",
     "button": "Ücretsiz Denetiminizi Şimdi Başlatın",
     "noCreditCard": "Kredi kartı gerekmez • Hızlı kurulum",
     "trustBuilders": {
@@ -290,7 +290,7 @@
   "statsBanner": {
     "header": {
       "title": "Akıllı Sözleşme Güvenlik Öngörüleri",
-      "subtitle": "20 dakikanın altında kapsamlı güvenlik analizi alın. Spectra'nın AI destekli platformu, bir projenin arkasındaki güvenlik hususlarını anlamanıza yardımcı olur."
+      "subtitle": "20 dakikanın altında kapsamlı güvenlik analizi alın. Spectra Audit'nın AI destekli platformu, bir projenin arkasındaki güvenlik hususlarını anlamanıza yardımcı olur."
     },
     "footer": "Tüm denetimler, doğrulanabilir sonuçlarla blockchain'in fork edilmiş bir kopyası üzerinde gerçekleştirilir."
   },
@@ -307,7 +307,7 @@
     "hero": {
       "title": "5 Boyutlu",
       "subtitle": "Güvenlik Denetim Çerçevesi",
-      "description": "Spectra'nın kapsamlı çok boyutlu analizle blockchain güvenliğini nasıl devrimleştirdiğini ve geleneksel denetimlerin sağlayabileceğinden daha derin öngörüler sunduğunu keşfedin.",
+      "description": "Spectra Audit'nın kapsamlı çok boyutlu analizle blockchain güvenliğini nasıl devrimleştirdiğini ve geleneksel denetimlerin sağlayabileceğinden daha derin öngörüler sunduğunu keşfedin.",
       "buttons": {
         "exploreDimensions": "Boyutları Keşfet",
         "scoringAlgorithm": "Skorlama Algoritması",
@@ -318,7 +318,7 @@
       "title": "Neden Çok Boyutlu Analiz?",
       "paragraph1": "Geleneksel akıllı sözleşme denetimleri yalnızca kod güvenliğine odaklanır. Önemli olmakla birlikte, bu tek mercekli yaklaşım, çoğu DeFi exploit'ine ve proje başarısızlığına yol açan kritik risk faktörlerini kaçırır.",
       "paragraph2": {
-        "before": "Spectra'nın ",
+        "before": "Spectra Audit'nın ",
         "highlight": "5 boyutlu denetim çerçevesi",
         "after": " projeleri sentiment, kod, tokenomik, likidite ve dağıtım açısından kapsamlı olarak analiz eder; tek başına kod denetimlerinin tespit edemediği tehditlerden yatırımcıları koruyan eksiksiz bir güvenlik tablosu sunar."
       },
@@ -597,7 +597,7 @@
   },
   "learningLoop": {
     "title": "Skorlar Zamanla Nasıl Doğru Kalır",
-    "subtitle": "Spectra, gerçek dünya geri bildirimleri ve geçmiş denetimlere karşı kalibrasyon yoluyla sürekli gelişir — her analiz bir sonrakine bilgi sağlar.",
+    "subtitle": "Spectra Audit, gerçek dünya geri bildirimleri ve geçmiş denetimlere karşı kalibrasyon yoluyla sürekli gelişir — her analiz bir sonrakine bilgi sağlar.",
     "userFeedback": {
       "title": "Kullanıcı Geri Bildirim Entegrasyonu",
       "description": "Her bulguya yönelik topluluk derecelendirmeleri ve uzman incelemeleri modele geri besler. Yanlış pozitifler, kaçırılan güvenlik açıkları ve şiddet tartışmaları takip edilir ve skorlama ağırlıklarını yeniden kalibre etmek için kullanılır."
@@ -621,6 +621,6 @@
     "forkTesting": "Sözleşme davranışı, canlı mainnet'te değil, blockchain'in fork edilmiş bir kopyasında analiz edilir.",
     "noGuarantee": "Yüksek bir güvenlik skoru, bir projenin güvenli olduğunu GARANTİ ETMEZ. Skorlar, analiz sırasında mevcut verilerin durumunu yansıtır.",
     "doYourResearch": "Herhangi bir yatırım, dağıtım veya entegrasyon kararı vermeden önce her zaman kendi araştırmanızı yapın (DYOR).",
-    "toolPurpose": "Spectra, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir."
+    "toolPurpose": "Spectra Audit, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir."
   }
 }

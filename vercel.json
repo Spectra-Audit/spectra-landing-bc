@@ -3,7 +3,7 @@
   "name": "spectra-security",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install",
+  "installCommand": "npm install --include=dev",
   "framework": "nextjs",
   "regions": ["iad1"],
   "build": {

@@ -211,11 +211,11 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
   )
 }
 
-// Helper functions to create structured data for Spectra
+// Helper functions to create structured data for Spectra Audit
 export const createSoftwareSchema = (): SoftwareApplicationSchema => ({
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Spectra - AI-Powered Security Audits',
+  name: 'Spectra Audit - AI-Powered Security Audits',
   description: 'Real-time AI audits you can verify. Continuous security monitoring for blockchain smart contracts and DeFi protocols.',
   applicationCategory: 'SecurityApplication',
   operatingSystem: 'Web Browser',
@@ -227,14 +227,14 @@ export const createSoftwareSchema = (): SoftwareApplicationSchema => ({
   },
   provider: {
     '@type': 'Organization',
-    name: 'Spectra Security'
+    name: 'Spectra Audit'
   }
 })
 
 export const createOrganizationSchema = (): OrganizationSchema => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Spectra Security',
+  name: 'Spectra Audit',
   url: 'https://spectra-audit.com',
   logo: 'https://spectra-audit.com/logo.png',
   description: 'Leading blockchain security platform providing AI-powered smart contract audits and continuous security monitoring.',
@@ -266,13 +266,13 @@ export const createSecurityAuditSchema = (contractName: string, grade: string): 
 export const createWebPageSchema = (): WebPageSchema => ({
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Spectra - AI-Powered Security Audits | Smart Contract Security',
+  name: 'Spectra Audit - AI-Powered Security Audits | Smart Contract Security',
   description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in seconds, not weeks. Continuous monitoring for blockchain protocols.',
   url: 'https://spectra-audit.com',
   inLanguage: 'en',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'Spectra Security',
+    name: 'Spectra Audit',
     url: 'https://spectra-audit.com'
   },
   about: [
@@ -284,7 +284,7 @@ export const createWebPageSchema = (): WebPageSchema => ({
   ],
   mainEntity: {
     '@type': 'SoftwareApplication',
-    name: 'Spectra Security Platform'
+    name: 'Spectra Audit Platform'
   }
 })
 
@@ -297,39 +297,39 @@ export const createFAQSchema = (): FAQSchema => ({
       name: 'How long does a security audit take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra completes audits in 20 minutes or less — more than 2.4 times faster than traditional manual audits.'
+        text: 'Spectra Audit completes audits in 20 minutes or less — more than 2.4 times faster than traditional manual audits.'
       }
     },
     {
       '@type': 'Question',
-      name: 'What types of vulnerabilities can Spectra detect?',
+      name: 'What types of vulnerabilities can Spectra Audit detect?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra detects 15+ vulnerability categories including reentrancy, overflow/underflow, access control issues, and economic attack vectors.'
+        text: 'Spectra Audit detects 15+ vulnerability categories including reentrancy, overflow/underflow, access control issues, and economic attack vectors.'
       }
     },
     {
       '@type': 'Question',
-      name: 'Is Spectra\'s security audit really free?',
+      name: 'Is Spectra Audit\'s security audit really free?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, Spectra offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.'
+        text: 'Yes, Spectra Audit offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.'
       }
     },
     {
       '@type': 'Question',
-      name: 'How accurate are Spectra\'s security findings?',
+      name: 'How accurate are Spectra Audit\'s security findings?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.'
+        text: 'Spectra Audit detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.'
       }
     },
     {
       '@type': 'Question',
-      name: 'Does Spectra support multiple blockchains?',
+      name: 'Does Spectra Audit support multiple blockchains?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Spectra supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains.'
+        text: 'Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains.'
       }
     }
   ]
@@ -342,7 +342,7 @@ export const createServiceSchema = (): ServiceSchema => ({
   description: 'AI-powered security analysis for blockchain smart contracts and DeFi protocols.',
   provider: {
     '@type': 'Organization',
-    name: 'Spectra Security',
+    name: 'Spectra Audit',
     url: 'https://spectra-audit.com'
   },
   serviceType: 'Security Audit Service',

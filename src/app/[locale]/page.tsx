@@ -4,30 +4,19 @@ import React, { useState, Suspense, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
-import LazyWrapper from '@/components/ui/LazyWrapper'
 import MobileOptimized from '@/components/ui/MobileOptimized'
-import { Shield, Search, BarChart3, CheckCircle, TrendingUp, Zap, Eye, Award, Clock, Users, X, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck } from 'lucide-react'
+import { Shield, Search, BarChart3, CheckCircle, TrendingUp, Zap, Eye, Award, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck } from 'lucide-react'
 import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
 
 // Dynamic imports for heavy components
-const PersonaSelector = dynamic(() => import('@/components/ui/PersonaSelector'), {
-  loading: () => <LazyWrapper className="h-96" />,
-  ssr: false
-})
-
 const StructuredData = dynamic(() => import('@/components/ui/StructuredData'), {
   ssr: true
 })
-
-// Import types separately
-type PersonaType = 'passive-saver' | 'power-analyst'
 
 // Import schema creators from StructuredData component
 import { createSoftwareSchema, createOrganizationSchema } from '@/components/ui/StructuredData'
 
 export default function HomePage() {
-  const [selectedPersona, setSelectedPersona] = useState<PersonaType | null>(null)
-  const [showPersonaSelector, setShowPersonaSelector] = useState(false)
   const [timeOnPage, setTimeOnPage] = useState(0)
   const t = useTranslations()
   const {
@@ -38,8 +27,7 @@ export default function HomePage() {
     trackEngagementMilestone,
     trackFeatureViewed,
     trackPageExit,
-    trackNavClicked,
-    track
+    trackNavClicked
   } = useUmamiAnalytics()
 
   // Track page view and engagement
@@ -87,60 +75,24 @@ export default function HomePage() {
     }
   }, [])
 
-  const handlePersonaSelect = (persona: PersonaType) => {
-    setSelectedPersona(persona)
-    setShowPersonaSelector(false)
-    track('persona_selected', { persona })
-  }
-
   // Fallback translations for SSR
   const fallbackHeadline = "Smart Contract Security Audits in Seconds, Not Weeks"
   const fallbackSubheadline = "AI-powered smart contract analysis. Get comprehensive security audits with verifiable evidence in under 20 minutes."
 
-  // Verifiable trust metrics — no fabricated counters.
-  // Values reflect real platform capabilities: 5 scoring dimensions,
-  // 95% known-vulnerability detection, ≤20-minute typical audit time.
-  const getPersonaSpecificContent = () => {
-    if (selectedPersona === 'passive-saver') {
-      return {
-        headline: t('hero.headline'),
-        subheadline: t('hero.subheadline'),
-        ctaText: t('persona.passiveSaver.cta'),
-        trustMetrics: [
-          { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.detectionRate') },
-          { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
-          { type: 'compliance' as const, value: 5, label: t('hero.trustMetrics.threatTypes') }
-        ]
-      }
-    }
-
-    if (selectedPersona === 'power-analyst') {
-      return {
-        headline: t('hero.headline'),
-        subheadline: t('hero.subheadline'),
-        ctaText: t('persona.powerAnalyst.cta'),
-        trustMetrics: [
-          { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.accuracy') },
-          { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
-          { type: 'compliance' as const, value: 5, label: t('hero.trustMetrics.threatTypes') }
-        ]
-      }
-    }
-
-    // Default content - Research/Investor focused
-    return {
-      headline: t('hero.headline'),
-      subheadline: t('hero.subheadline'),
-      ctaText: t('hero.cta.primary'),
-      trustMetrics: [
-        { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.detectionRate') },
-        { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
-        { type: 'compliance' as const, value: 5, label: t('hero.trustMetrics.threatTypes') }
-      ]
-    }
+  // Hero / final-CTA content. Persona-specific variants were retired when the
+  // CTAs were repointed to app.spectra-audit.com, so only the default remains.
+  //
+  // Verifiable trust metrics — no fabricated counters. Values reflect real
+  // platform capabilities: 5 scoring dimensions, 95% known-vulnerability
+  // detection, ≤20-minute typical audit time.
+  const personaContent = {
+    ctaText: t('hero.cta.primary'),
+    trustMetrics: [
+      { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.detectionRate') },
+      { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
+      { type: 'compliance' as const, value: 5, label: t('hero.trustMetrics.threatTypes') }
+    ]
   }
-
-  const personaContent = getPersonaSpecificContent()
 
   return (
     <>
@@ -299,32 +251,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* Persona Selector Modal */}
-        {showPersonaSelector && (
-          <div className="fixed inset-0 bg-black/50 dark:bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-xl">
-              <div className="p-8">
-                <div className="flex justify-between items-center mb-8">
-                  <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">Choose Your Security Approach</h2>
-                  <button
-                    onClick={() => setShowPersonaSelector(false)}
-                    className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-white transition-colors"
-                    aria-label="Close persona selector"
-                  >
-                    <X className="w-6 h-6" />
-                  </button>
-                </div>
-                <Suspense fallback={<LazyWrapper className="h-96" />}>
-                  <PersonaSelector
-                    onPersonaSelect={handlePersonaSelect}
-                    selectedPersona={selectedPersona || undefined}
-                  />
-                </Suspense>
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* How Security Scores Work - NEW SECTION */}
         <section className="py-16 sm:py-20 md:py-24 relative bg-white dark:bg-neutral-900">

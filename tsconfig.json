@@ -52,7 +52,7 @@
     "node_modules",
     "jest.config.ts",
     "jest.setup.js",
-    "src/__tests__/**/*",
+    "src/__tests__/**",
     "**/*.test.ts",
     "**/*.test.tsx",
     "**/*.spec.ts",

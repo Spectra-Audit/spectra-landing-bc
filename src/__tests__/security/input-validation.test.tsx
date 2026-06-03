@@ -40,17 +40,6 @@ jest.mock('@/components/ui', () => ({
   StatsBanner: () => <div data-testid="stats-banner">Stats</div>,
 }))
 
-jest.mock('@/components/ui/PersonaSelector', () => ({
-  __esModule: true,
-  default: ({ onPersonaSelect }: any) => (
-    <div data-testid="persona-selector">
-      <button onClick={() => onPersonaSelect('passive-saver')}>Passive Saver</button>
-      <button onClick={() => onPersonaSelect('power-analyst')}>Power Analyst</button>
-    </div>
-  ),
-  PersonaType: 'passive-saver' as const,
-}))
-
 jest.mock('@/components/ui/StructuredData', () => ({
   __esModule: true,
   default: ({ type, data }: any) => (

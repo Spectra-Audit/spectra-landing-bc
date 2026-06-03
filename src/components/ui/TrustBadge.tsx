@@ -177,7 +177,7 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
         {description || (() => {
           switch (type) {
             case 'users':
-              return 'Active users trusting Spectra with their security'
+              return 'Active users trusting Spectra Audit with their security'
             case 'accuracy':
               return 'Detection accuracy across all vulnerability categories'
             case 'speed':
@@ -187,7 +187,7 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
             case 'threats':
               return 'Security threats detected and prevented this month'
             case 'value':
-              return 'Total value of assets protected by Spectra'
+              return 'Total value of assets protected by Spectra Audit'
             default:
               return ''
           }
