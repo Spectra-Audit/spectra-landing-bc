@@ -1,0 +1,290 @@
+{
+  "en": {
+    "m": {
+      "ariaLabel": "Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.",
+      "compositeLine1": "Composite",
+      "compositeLine2": "Score",
+      "subtitle": "5 analyzers running in parallel → weighted composite"
+    },
+    "l": {
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.",
+      "audit": "Audit",
+      "feedback": "User Feedback",
+      "evaluation": "Evaluation",
+      "calibration": "Calibration",
+      "retraining": "Model Retraining",
+      "centerLine1": "Continuous",
+      "centerLine2": "Learning Loop"
+    }
+  },
+  "es": {
+    "m": {
+      "ariaLabel": "Canalización de auditoría paralela: cinco analizadores independientes — Código, Distribución, Tokenomía, Liquidez y Sentimiento — se ejecutan simultáneamente y convergen en una única puntuación de seguridad compuesta.",
+      "compositeLine1": "Puntuación",
+      "compositeLine2": "Compuesta",
+      "subtitle": "5 analizadores en paralelo → compuesto ponderado"
+    },
+    "l": {
+      "ariaLabel": "Bucle de retroalimentación de mejora continua con forma de escudo: las auditorías informan los comentarios de los usuarios, que se ponderan según la reputación del revisor durante la evaluación y luego se usan para calibrar y reentrenar el modelo para la siguiente auditoría.",
+      "audit": "Auditoría",
+      "feedback": "Comentarios",
+      "evaluation": "Evaluación",
+      "calibration": "Calibración",
+      "retraining": "Reentrenamiento",
+      "centerLine1": "Aprendizaje",
+      "centerLine2": "Continuo"
+    }
+  },
+  "pt": {
+    "m": {
+      "ariaLabel": "Pipeline de auditoria paralela: cinco analisadores independentes — Código, Distribuição, Tokenomia, Liquidez e Sentimento — são executados simultaneamente e convergem para uma única pontuação de segurança composta.",
+      "compositeLine1": "Pontuação",
+      "compositeLine2": "Composta",
+      "subtitle": "5 analisadores em paralelo → composto ponderado"
+    },
+    "l": {
+      "ariaLabel": "Ciclo de feedback de melhoria contínua em forma de escudo: as auditorias informam o feedback dos usuários, que é ponderado pela reputação do revisor durante a avaliação e então usado para calibrar e retreinar o modelo para a próxima auditoria.",
+      "audit": "Auditoria",
+      "feedback": "Feedback",
+      "evaluation": "Avaliação",
+      "calibration": "Calibração",
+      "retraining": "Retreinamento",
+      "centerLine1": "Aprendizado",
+      "centerLine2": "Contínuo"
+    }
+  },
+  "fr": {
+    "m": {
+      "ariaLabel": "Pipeline d'audit parallèle : cinq analyseurs indépendants — Code, Distribution, Tokenomics, Liquidité et Sentiment — s'exécutent simultanément et convergent vers un score de sécurité composite unique.",
+      "compositeLine1": "Score",
+      "compositeLine2": "Composite",
+      "subtitle": "5 analyseurs en parallèle → composite pondéré"
+    },
+    "l": {
+      "ariaLabel": "Boucle de rétroaction d'amélioration continue en forme de bouclier : les audits alimentent les retours des utilisateurs, qui sont pondérés selon la réputation de l'évaluateur lors de l'évaluation, puis utilisés pour calibrer et réentraîner le modèle pour le prochain audit.",
+      "audit": "Audit",
+      "feedback": "Retours",
+      "evaluation": "Évaluation",
+      "calibration": "Calibration",
+      "retraining": "Réentraînement",
+      "centerLine1": "Apprentissage",
+      "centerLine2": "Continu"
+    }
+  },
+  "de": {
+    "m": {
+      "ariaLabel": "Parallele Audit-Pipeline: Fünf unabhängige Analysatoren — Code, Verteilung, Tokenomics, Liquidität und Stimmung — laufen gleichzeitig und münden in eine einzige zusammengesetzte Sicherheitsbewertung.",
+      "compositeLine1": "Gesamt-",
+      "compositeLine2": "Bewertung",
+      "subtitle": "5 Analysatoren parallel → gewichtetes Gesamtergebnis"
+    },
+    "l": {
+      "ariaLabel": "Schildförmige Feedback-Schleife zur kontinuierlichen Verbesserung: Audits liefern Nutzer-Feedback, das während der Bewertung anhand der Reputation des Prüfers gewichtet und dann zur Kalibrierung und zum erneuten Training des Modells für das nächste Audit verwendet wird.",
+      "audit": "Audit",
+      "feedback": "Nutzer-Feedback",
+      "evaluation": "Bewertung",
+      "calibration": "Kalibrierung",
+      "retraining": "Modelltraining",
+      "centerLine1": "Kontinuierliches",
+      "centerLine2": "Lernen"
+    }
+  },
+  "ru": {
+    "m": {
+      "ariaLabel": "Параллельный конвейер аудита: пять независимых анализаторов — Код, Распределение, Токеномика, Ликвидность и Настроения — работают одновременно и сходятся в единую составную оценку безопасности.",
+      "compositeLine1": "Составная",
+      "compositeLine2": "оценка",
+      "subtitle": "5 анализаторов параллельно → взвешенная составная"
+    },
+    "l": {
+      "ariaLabel": "Щитовидный цикл обратной связи для непрерывного улучшения: аудиты формируют отзывы пользователей, которые взвешиваются по репутации рецензента во время оценки, а затем используются для калибровки и переобучения модели для следующего аудита.",
+      "audit": "Аудит",
+      "feedback": "Отзывы",
+      "evaluation": "Оценка",
+      "calibration": "Калибровка",
+      "retraining": "Переобучение",
+      "centerLine1": "Непрерывное",
+      "centerLine2": "обучение"
+    }
+  },
+  "tr": {
+    "m": {
+      "ariaLabel": "Paralel denetim hattı: beş bağımsız analizör — Kod, Dağıtım, Tokenomik, Likidite ve Sentiment — aynı anda çalışır ve tek bir birleşik güvenlik skorunda birleşir.",
+      "compositeLine1": "Birleşik",
+      "compositeLine2": "Skor",
+      "subtitle": "5 analizör paralel → ağırlıklı birleşik"
+    },
+    "l": {
+      "ariaLabel": "Kalkan şeklinde sürekli iyileştirme geri bildirim döngüsü: denetimler kullanıcı geri bildirimini besler, bu geri bildirim değerlendirme sırasında inceleyenin itibarına göre ağırlıklandırılır ve ardından bir sonraki denetim için modeli kalibre etmek ve yeniden eğitmek için kullanılır.",
+      "audit": "Denetim",
+      "feedback": "Geri Bildirim",
+      "evaluation": "Değerlendirme",
+      "calibration": "Kalibrasyon",
+      "retraining": "Yeniden Eğitim",
+      "centerLine1": "Sürekli",
+      "centerLine2": "Öğrenme"
+    }
+  },
+  "zh": {
+    "m": {
+      "ariaLabel": "并行审计流水线：五个独立分析器——代码、分配、代币经济学、流动性和情绪——同时运行并汇聚成单一的综合安全评分。",
+      "compositeLine1": "综合",
+      "compositeLine2": "评分",
+      "subtitle": "5 个分析器并行运行 → 加权综合"
+    },
+    "l": {
+      "ariaLabel": "盾牌形状的持续改进反馈循环：审计为用户反馈提供依据，用户反馈在评估期间根据审阅者信誉进行加权，然后用于校准和重新训练模型以进行下一次审计。",
+      "audit": "审计",
+      "feedback": "用户反馈",
+      "evaluation": "评估",
+      "calibration": "校准",
+      "retraining": "模型再训练",
+      "centerLine1": "持续",
+      "centerLine2": "学习循环"
+    }
+  },
+  "ja": {
+    "m": {
+      "ariaLabel": "並列監査パイプライン：5つの独立した分析エンジン（コード、配分、トコノミクス、流動性、センチメント）が同時に実行され、単一の複合セキュリティスコアに収束します。",
+      "compositeLine1": "複合",
+      "compositeLine2": "スコア",
+      "subtitle": "5つの分析エンジンが並列実行 → 加重複合スコア"
+    },
+    "l": {
+      "ariaLabel": "盾の形をした継続的改善フィードバックループ：監査がユーザーフィードバックに情報を提供し、それが評価時にレビュアーの信頼度に基づいて重み付けされ、次の監査に向けてモデルの較正と再学習に使用されます。",
+      "audit": "監査",
+      "feedback": "ユーザーフィードバック",
+      "evaluation": "評価",
+      "calibration": "較正",
+      "retraining": "モデル再学習",
+      "centerLine1": "継続的",
+      "centerLine2": "学習ループ"
+    }
+  },
+  "ko": {
+    "m": {
+      "ariaLabel": "병렬 감사 파이프라인: 코드, 분포, 토크노믹스, 유동성, 감성의 다섯 가지 독립 분석기가 동시에 실행되어 하나의 복합 보안 점수로 수렴합니다.",
+      "compositeLine1": "복합",
+      "compositeLine2": "점수",
+      "subtitle": "5개 분석기 병렬 실행 → 가중 복합 점수"
+    },
+    "l": {
+      "ariaLabel": "방패 모양의 지속적 개선 피드백 루프: 감사가 사용자 피드백에 반영되고, 이 피드백은 평가 시 검토자 평판에 따라 가중치가 부여된 후 다음 감사를 위해 모델을 보정하고 재학습하는 데 사용됩니다.",
+      "audit": "감사",
+      "feedback": "사용자 피드백",
+      "evaluation": "평가",
+      "calibration": "보정",
+      "retraining": "모델 재학습",
+      "centerLine1": "지속적",
+      "centerLine2": "학습 루프"
+    }
+  },
+  "ar": {
+    "m": {
+      "ariaLabel": "خط أنابيب تدقيق متوازٍ: خمسة محللات مستقلة — الكود، التوزيع، التوكينوميكس، السيولة، والمشاعر — تعمل في وقت واحد وتتقارب في درجة أمان مركبة واحدة.",
+      "compositeLine1": "الدرجة",
+      "compositeLine2": "المركبة",
+      "subtitle": "5 محللات تعمل بالتوازي ← مركب مُرجَّح"
+    },
+    "l": {
+      "ariaLabel": "حلقة تغذية راجعة للتحسين المستمر على شكل درع: عمليات التدقيق تُثري تعليقات المستخدمين، التي يتم ترجيحها حسب سمعة المراجع أثناء التقييم، ثم تُستخدم لمعايرة النموذج وإعادة تدريبه للتدقيق التالي.",
+      "audit": "التدقيق",
+      "feedback": "تعليقات المستخدم",
+      "evaluation": "التقييم",
+      "calibration": "المعايرة",
+      "retraining": "إعادة تدريب النموذج",
+      "centerLine1": "التعلم",
+      "centerLine2": "المستمر"
+    }
+  },
+  "hi": {
+    "m": {
+      "ariaLabel": "समानांतर ऑडिट पाइपलाइन: पाँच स्वतंत्र विश्लेषक — कोड, वितरण, टोकनॉमिक्स, लिक्विडिटी और सेंटीमेंट — एक साथ चलते हैं और एकल संयुक्त सुरक्षा स्कोर में मिलते हैं।",
+      "compositeLine1": "संयुक्त",
+      "compositeLine2": "स्कोर",
+      "subtitle": "5 विश्लेषक समानांतर में → भारित संयुक्त"
+    },
+    "l": {
+      "ariaLabel": "ढाल के आकार का निरंतर सुधार फीडबैक लूप: ऑडिट उपयोगकर्ता फीडबैक को सूचित करते हैं, जिसे मूल्यांकन के दौरान समीक्षक की प्रतिष्ठा के अनुसार महत्व दिया जाता है, फिर अगले ऑडिट के लिए मॉडल को कैलिब्रेट और पुनः प्रशिक्षित करने के लिए उपयोग किया जाता है।",
+      "audit": "ऑडिट",
+      "feedback": "उपयोगकर्ता फीडबैक",
+      "evaluation": "मूल्यांकन",
+      "calibration": "कैलिब्रेशन",
+      "retraining": "मॉडल पुनःप्रशिक्षण",
+      "centerLine1": "निरंतर",
+      "centerLine2": "लर्निंग लूप"
+    }
+  },
+  "bn": {
+    "m": {
+      "ariaLabel": "সমান্তরাল অডিট পাইপলাইন: পাঁচটি স্বতন্ত্র বিশ্লেষক — কোড, বিতরণ, টোকেনোমিক্স, লিকুইডিটি এবং সেন্টিমেন্ট — একসাথে চলে এবং একটি একক যৌগিক নিরাপত্তা স্কোরে মিলিত হয়।",
+      "compositeLine1": "যৌগিক",
+      "compositeLine2": "স্কোর",
+      "subtitle": "5টি বিশ্লেষক সমান্তরালে → ভারিত যৌগিক"
+    },
+    "l": {
+      "ariaLabel": "ঢালের আকৃতির ক্রমাগত উন্নতির ফিডব্যাক লুপ: অডিট ব্যবহারকারীর ফিডব্যাককে অবহিত করে, যা মূল্যায়নের সময় পর্যালোচকের সুনাম অনুসারে ওজন করা হয়, এরপর পরবর্তী অডিটের জন্য মডেল ক্যালিব্রেট ও পুনঃপ্রশিক্ষণে ব্যবহৃত হয়।",
+      "audit": "অডিট",
+      "feedback": "ব্যবহারকারীর ফিডব্যাক",
+      "evaluation": "মূল্যায়ন",
+      "calibration": "ক্যালিব্রেশন",
+      "retraining": "মডেল পুনঃপ্রশিক্ষণ",
+      "centerLine1": "ক্রমাগত",
+      "centerLine2": "লার্নিং লুপ"
+    }
+  },
+  "te": {
+    "m": {
+      "ariaLabel": "సమాంతర ఆడిట్ పైప్‌లైన్: కోడ్, పంపిణీ, టోకెనోమిక్స్, లిక్విడిటీ మరియు సెంటిమెంట్ అనే ఐదు స్వతంత్ర విశ్లేషకాలు ఏకకాలంలో పనిచేసి ఒకే సమ్మిళిత భద్రతా స్కోర్‌గా కలుస్తాయి.",
+      "compositeLine1": "సమ్మిళిత",
+      "compositeLine2": "స్కోర్",
+      "subtitle": "5 విశ్లేషకాలు సమాంతరంగా → బరువైన సమ్మిళితం"
+    },
+    "l": {
+      "ariaLabel": "షీల్డ్ ఆకారంలో నిరంతర మెరుగుదల ఫీడ్‌బ్యాక్ లూప్: ఆడిట్‌లు వినియోగదారు ఫీడ్‌బ్యాక్‌ను తెలియజేస్తాయి, ఇది మూల్యాంకన సమయంలో సమీక్షకుని ప్రతిష్ఠ ఆధారంగా బరువు ఇవ్వబడుతుంది, ఆపై తదుపరి ఆడిట్ కోసం మోడల్‌ను క్యాలిబ్రేట్ చేసి మళ్లీ శిక్షణ ఇవ్వడానికి ఉపయోగించబడుతుంది.",
+      "audit": "ఆడిట్",
+      "feedback": "వినియోగదారు ఫీడ్‌బ్యాక్",
+      "evaluation": "మూల్యాంకనం",
+      "calibration": "క్యాలిబ్రేషన్",
+      "retraining": "మోడల్ పునఃశిక్షణ",
+      "centerLine1": "నిరంతర",
+      "centerLine2": "లెర్నింగ్ లూప్"
+    }
+  },
+  "ta": {
+    "m": {
+      "ariaLabel": "இணை தணிக்கை பைப்லைன்: குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு ஆகிய ஐந்து சுயாதீன பகுப்பாய்விகள் ஒரே நேரத்தில் இயங்கி ஒற்றை கூட்டு பாதுகாப்பு மதிப்பெண்ணாக ஒன்றிணைகின்றன.",
+      "compositeLine1": "கூட்டு",
+      "compositeLine2": "மதிப்பெண்",
+      "subtitle": "5 பகுப்பாய்விகள் இணையாக → எடையிட்ட கூட்டு"
+    },
+    "l": {
+      "ariaLabel": "கேடயம் வடிவ தொடர்ச்சியான மேம்பாட்டு பின்னூட்ட சுழற்சி: தணிக்கைகள் பயனர் பின்னூட்டத்தை வழங்குகின்றன, இது மதிப்பீட்டின் போது மதிப்பாய்வாளரின் நற்பெயரின் அடிப்படையில் எடையிடப்பட்டு, அடுத்த தணிக்கைக்காக மாதிரியை அளவீடு செய்து மீண்டும் பயிற்சி அளிக்கப் பயன்படுத்தப்படுகிறது.",
+      "audit": "தணிக்கை",
+      "feedback": "பயனர் பின்னூட்டம்",
+      "evaluation": "மதிப்பீடு",
+      "calibration": "அளவீடு",
+      "retraining": "மாதிரி மறுபயிற்சி",
+      "centerLine1": "தொடர்ச்சியான",
+      "centerLine2": "கற்றல் சுழற்சி"
+    }
+  },
+  "mr": {
+    "m": {
+      "ariaLabel": "समांतर ऑडिट पाइपलाइन: कोड, वितरण, टोकनॉमिक्स, लिक्विडिटी आणि भावना हे पाच स्वतंत्र विश्लेषक एकाच वेळी चालतात आणि एकाच संमिश्र सुरक्षा स्कोअरमध्ये एकत्र येतात.",
+      "compositeLine1": "संमिश्र",
+      "compositeLine2": "स्कोअर",
+      "subtitle": "5 विश्लेषक समांतर → भारित संमिश्र"
+    },
+    "l": {
+      "ariaLabel": "ढालीच्या आकाराचे सतत सुधारणा अभिप्राय लूप: ऑडिट वापरकर्त्याच्या अभिप्रायाला माहिती देतात, ज्याचे मूल्यांकनादरम्यान समीक्षकाच्या प्रतिष्ठेनुसार वजन केले जाते आणि नंतर पुढील ऑडिटसाठी मॉडेल कॅलिब्रेट आणि पुन्हा प्रशिक्षित करण्यासाठी वापरले जाते.",
+      "audit": "ऑडिट",
+      "feedback": "वापरकर्ता अभिप्राय",
+      "evaluation": "मूल्यांकन",
+      "calibration": "कॅलिब्रेशन",
+      "retraining": "मॉडेल पुनःप्रशिक्षण",
+      "centerLine1": "सतत",
+      "centerLine2": "लर्निंग लूप"
+    }
+  }
+}

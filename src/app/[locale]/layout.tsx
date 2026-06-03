@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { locales, isRtlLocale } from '@/i18n/config'
 import { ThemeProvider } from '@/contexts/ThemeContext'
+import Analytics from '@/components/ui/Analytics'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -65,14 +66,23 @@ export default async function LocaleLayout({
 
   // Get messages specifically for this locale
   const messages = await getMessages({ locale })
+  const t = await getTranslations({ locale, namespace: 'accessibility' })
   const dir = isRtlLocale(locale as any) ? 'rtl' : 'ltr'
 
   return (
     <ThemeProvider>
       <NextIntlClientProvider messages={messages} locale={locale}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded z-50"
+        >
+          {t('skipToMain')}
+        </a>
         <div dir={dir}>
           {children}
         </div>
+        {/* Privacy-Compliant Analytics + cookie consent (inside the locale provider so the banner is translated) */}
+        <Analytics />
       </NextIntlClientProvider>
     </ThemeProvider>
   )

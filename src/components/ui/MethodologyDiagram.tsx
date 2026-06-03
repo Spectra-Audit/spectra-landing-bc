@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useSyncExternalStore } from 'react'
+import { useTranslations } from 'next-intl'
 import { Code2, Users, Coins, Droplets, MessageSquare, Target } from 'lucide-react'
 
 export interface MethodologyDiagramProps {
@@ -52,10 +53,13 @@ function getServerSnapshot(): boolean {
 
 export default function MethodologyDiagram({
   className = '',
-  ariaLabel = 'Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.'
+  ariaLabel
 }: MethodologyDiagramProps) {
+  const t = useTranslations('methodology.diagram')
   // Hydration-safe: server renders false, client adopts real matchMedia value after hydration.
   const prefersReducedMotion = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
+  // Prop overrides the translated label when provided (e.g. for a custom description).
+  const resolvedAriaLabel = ariaLabel ?? t('ariaLabel')
 
   const width = 520
   const height = 360
@@ -68,7 +72,7 @@ export default function MethodologyDiagram({
   const lanes = [
     {
       key: 'code',
-      label: 'Code',
+      label: t('lanes.code'),
       Icon: Code2,
       color: 'rgb(34, 197, 94)', // green
       colorClass: 'text-spectra-green-500',
@@ -76,7 +80,7 @@ export default function MethodologyDiagram({
     },
     {
       key: 'distribution',
-      label: 'Distribution',
+      label: t('lanes.distribution'),
       Icon: Users,
       color: 'rgb(234, 179, 8)', // yellow
       colorClass: 'text-spectra-yellow-500',
@@ -84,7 +88,7 @@ export default function MethodologyDiagram({
     },
     {
       key: 'tokenomics',
-      label: 'Tokenomics',
+      label: t('lanes.tokenomics'),
       Icon: Coins,
       color: 'rgb(0, 102, 255)', // blue
       colorClass: 'text-spectra-blue-500',
@@ -92,7 +96,7 @@ export default function MethodologyDiagram({
     },
     {
       key: 'liquidity',
-      label: 'Liquidity',
+      label: t('lanes.liquidity'),
       Icon: Droplets,
       color: 'rgb(168, 85, 247)', // purple
       colorClass: 'text-spectra-purple-500',
@@ -100,7 +104,7 @@ export default function MethodologyDiagram({
     },
     {
       key: 'sentiment',
-      label: 'Sentiment',
+      label: t('lanes.sentiment'),
       Icon: MessageSquare,
       color: 'rgb(6, 182, 212)', // cyan
       colorClass: 'text-spectra-cyan-500',
@@ -119,7 +123,7 @@ export default function MethodologyDiagram({
         viewBox={`0 0 ${width} ${height}`}
         className="w-full h-auto"
         role="img"
-        aria-label={ariaLabel}
+        aria-label={resolvedAriaLabel}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
@@ -242,7 +246,7 @@ export default function MethodologyDiagram({
             className="fill-neutral-900 dark:fill-white text-[12px] font-bold"
             style={{ fontFamily: 'inherit' }}
           >
-            Composite
+            {t('compositeLine1')}
           </text>
           <text
             x={finalNodeX}
@@ -251,7 +255,7 @@ export default function MethodologyDiagram({
             className="fill-neutral-500 dark:fill-neutral-400 text-[11px]"
             style={{ fontFamily: 'inherit' }}
           >
-            Score
+            {t('compositeLine2')}
           </text>
         </g>
 
@@ -263,7 +267,7 @@ export default function MethodologyDiagram({
           className="fill-neutral-500 dark:fill-neutral-400 text-[10px] italic"
           style={{ fontFamily: 'inherit' }}
         >
-          5 analyzers running in parallel → weighted composite
+          {t('subtitle')}
         </text>
       </svg>
 
