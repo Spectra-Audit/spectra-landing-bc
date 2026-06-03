@@ -57,10 +57,11 @@ export default function MethodologyDiagram({
   // Hydration-safe: server renders false, client adopts real matchMedia value after hydration.
   const prefersReducedMotion = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
-  const width = 500
+  const width = 520
   const height = 360
   const startX = 20
-  const endX = width - 80
+  const boxWidth = 132 // wide enough for the longest label ("Distribution")
+  const laneStartX = startX + boxWidth // where the lane connector lines begin
   const laneHeight = 56
   const lanesTop = 30
 
@@ -107,10 +108,10 @@ export default function MethodologyDiagram({
     }
   ]
 
-  const convergeX = endX
   const convergeY = lanesTop + (lanes.length * laneHeight) / 2
-  const finalNodeX = endX + 50
+  const finalNodeX = width - 68 // keep the node + its 50px glow inside the viewBox
   const finalNodeY = convergeY
+  const convergeX = finalNodeX - 34 // lanes meet the left edge of the composite node
 
   return (
     <div className={`relative w-full max-w-[500px] mx-auto ${className}`}>
@@ -138,11 +139,12 @@ export default function MethodologyDiagram({
         {lanes.map((lane, i) => {
           const y = lanesTop + i * laneHeight + laneHeight / 2
           const LaneIcon = lane.Icon
+          const lanePath = `M ${laneStartX} ${y} L ${convergeX - 40} ${y} Q ${convergeX - 12} ${y}, ${convergeX} ${convergeY}`
           return (
             <g key={lane.key}>
               {/* Lane connector to converge point — curve */}
               <path
-                d={`M ${startX + 100} ${y} L ${convergeX - 60} ${y} Q ${convergeX - 20} ${y}, ${convergeX} ${convergeY}`}
+                d={lanePath}
                 fill="none"
                 stroke={lane.color}
                 strokeOpacity="0.4"
@@ -163,7 +165,7 @@ export default function MethodologyDiagram({
                     dur="3s"
                     repeatCount="indefinite"
                     begin={`${i * 0.4}s`}
-                    path={`M ${startX + 100} ${y} L ${convergeX - 60} ${y} Q ${convergeX - 20} ${y}, ${convergeX} ${convergeY}`}
+                    path={lanePath}
                   />
                 </circle>
               )}
@@ -173,7 +175,7 @@ export default function MethodologyDiagram({
                 <rect
                   x={startX}
                   y={y - 18}
-                  width="100"
+                  width={boxWidth}
                   height="36"
                   rx="10"
                   fill={lane.color}
