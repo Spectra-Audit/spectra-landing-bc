@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "セキュリティファースト設計",
       "bestPractices": "業界ベストプラクティス",
-      "openSource": "オープンソース"
+      "openSource": "公開検証可能"
     },
     "headline": "投資前にプロジェクトのセキュリティを調査",
     "subheadline": "複数のDeFiエコシステムにわたる多次元セキュリティスコア。検証可能な包括的な分析で、投資前にリスクを理解できます。",
@@ -66,21 +66,21 @@
       "trustedBy": "Web3エコシステムのために構築",
       "defiLeader": "DeFiセキュリティインサイト",
       "protocols": "マルチチェーンサポート",
-      "disclaimer": "オープンソースプラットフォーム"
+      "disclaimer": "公開検証可能なプラットフォーム"
     },
     "page": {
       "heroTitle": "スマートコントラクトセキュリティ監査",
       "heroSubtitle": "数秒で、数週間ではなく",
       "heroDescription": "検証可能なエビデンス付きのAI駆動スマートコントラクト分析。20分以内に包括的なセキュリティ分析を取得。登録不要。",
-      "securityAuditTitle": "オープンソース — 公開検証可能",
+      "securityAuditTitle": "公開検証可能な監査",
       "securityAuditSubtitle": "検査、監査、再現が可能な透明性のある方法論",
-      "thirdPartyAudited": "オープンソース",
+      "thirdPartyAudited": "再現可能な発見",
       "thirdPartyAuditedDesc": "すべての発見には、その根拠となる証拠と推論が付随します",
       "verified": "検証可能",
-      "openSource": "オープンソース",
-      "openSourceDesc": "GitHubで公開検証可能なコードと分析パイプライン",
+      "openSource": "公開検証可能",
+      "openSourceDesc": "誰でも独立して検証できる監査結果とオンチェーンデータ",
       "transparent": "透明性",
-      "trustMessage": "公開検証可能な監査方法論を持つオープンソースプラットフォームです",
+      "trustMessage": "すべての監査には公開検証可能なエビデンスが付随します。誰でもオンチェーンデータと照合して私たちの発見を独立して再現でき、各スコアの根拠となる推論を検査できます。",
       "featuresTitle": "次世代のセキュリティ監査",
       "featuresSubtitle": "従来の監査は遅く、高価で、すぐに古くなります。Spectra は、あなたのコードに合わせて進化する継続的で検証可能なセキュリティ監視を提供します。",
       "realTimeMonitoring": "オンデマンドAI分析",
@@ -93,16 +93,16 @@
       "automatedLabel": "AIオーケストレーション分析",
       "verifiableEvidence": "検証可能なエビデンス",
       "verifiableEvidenceDesc": "各セキュリティ主張には、再現可能なAI diffsとエビデンスが含まれます。完全に透明な方法論で、各問題を特定した方法を正確に確認できます。",
-      "openSourceCodebase": "オープンソースコードベース",
-      "publicGitHubRepo": "パブリック GitHub リポジトリ",
+      "openSourceCodebase": "再現可能な発見",
+      "publicGitHubRepo": "オンチェーンデータと照合して検証可能",
       "comprehensiveCoverage": "包括的なカバレッジ",
       "comprehensiveCoverageDesc": "高度なAIモデルは、既知の脆弱性クラスの幅広い範囲を検出します — スマートコントラクトのバグ、経済攻撃ベクトル、集中度リスク。",
       "vulnerabilityCategories": "15+ 脆弱性カテゴリー",
       "detectionRate": "既知の問題を最大95%検出",
-      "productionReady": "検証可能でオープンソース",
-      "productionReadyDesc": "監査のすべてのステップを検査、再現、検証したい開発者と研究者のために構築されたオープンソースの分析パイプライン。",
-      "thirdPartyVerified": "オープンソース",
-      "sourceCode": "ソースコード",
+      "productionReady": "検証可能で透明",
+      "productionReadyDesc": "監査のすべてのステップを検査、再現、検証したい開発者と研究者のために構築された、透明性のある分析パイプライン。",
+      "thirdPartyVerified": "検証可能な結果",
+      "sourceCode": "透明",
       "scanTime": "≤20分監査",
       "aiPoweredAnalysis": "AI駆動分析",
       "aiPoweredAnalysisDesc": "高速、自動化されたセキュリティスキャン",
@@ -133,7 +133,7 @@
       "expertSupport": "ドキュメント & コミュニティサポート",
       "expertSupportDesc": "発見を解釈するのに役立つオープンなドキュメントとコミュニティリソース",
       "communityDriven": "コミュニティ主導",
-      "communityDrivenDesc": "透明な開発によるオープンソース"
+      "communityDrivenDesc": "透明性が高く、コミュニティ主導の開発"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "検証可能な証拠",
       "description": "すべての発見には、その背後にある推論、ソースデータ、再現可能なエビデンスが含まれます。各問題がどのように識別されたかを正確に確認できます — ブラックボックスはありません。",
       "metric": "完全に透明な方法論",
-      "detail": "オープンソースとしてGitHubリポジトリで公開"
+      "detail": "オンチェーンデータと照合して検証可能な発見"
     },
     "comprehensive": {
       "title": "包括的なカバレッジ",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "コミュニティ主導のインサイト",
         "description": "Web3エコシステムのためのコミュニティ主導のセキュリティインサイト",
-        "disclaimer": "オープンソースプラットフォーム"
+        "disclaimer": "公開検証可能なプラットフォーム"
       }
     },
     "urgency": "今日、無料の包括的な監査を開始してください"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Web3エコシステムのために構築",
     "liveAudits": "オンデマンドで実行される監査",
-    "enterpriseSecurity": "オープンソースセキュリティ",
+    "enterpriseSecurity": "公開検証可能",
     "protected": "コミュニティ主導"
   },
   "statsBanner": {

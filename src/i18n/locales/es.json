@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "Arquitectura Prioritaria de Seguridad",
       "bestPractices": "Mejores Prácticas",
-      "openSource": "Código Abierto"
+      "openSource": "Verificable Públicamente"
     },
     "headline": "Investigue la Seguridad del Proyecto Antes de Invertir",
     "subheadline": "Puntuaciones de seguridad multidimensionales en múltiples ecosistemas DeFi. Comprenda los riesgos antes de invertir con un análisis exhaustivo que puede verificar.",
@@ -66,21 +66,21 @@
       "trustedBy": "Construido para el ecosistema Web3",
       "defiLeader": "Perspectivas de Seguridad DeFi",
       "protocols": "Soporte Multi-Cadena",
-      "disclaimer": "Plataforma de código abierto"
+      "disclaimer": "Plataforma verificable públicamente"
     },
     "page": {
       "heroTitle": "Auditorías de Seguridad de Contratos Inteligentes",
       "heroSubtitle": "en Segundos, No Semanas",
       "heroDescription": "Análisis de contratos inteligentes potenciado por IA con evidencia verificable. Obtén análisis de seguridad integral en menos de 20 minutos. Sin registro requerido.",
-      "securityAuditTitle": "Código Abierto — Verificable Públicamente",
+      "securityAuditTitle": "Auditorías Verificables Públicamente",
       "securityAuditSubtitle": "Metodología transparente que puedes inspeccionar, auditar y reproducir",
-      "thirdPartyAudited": "Código Abierto",
+      "thirdPartyAudited": "Hallazgos reproducibles",
       "thirdPartyAuditedDesc": "Cada hallazgo se acompaña de la evidencia y el razonamiento detrás de él",
       "verified": "Verificable",
-      "openSource": "Código Abierto",
-      "openSourceDesc": "Código y pipeline de análisis verificables públicamente en GitHub",
+      "openSource": "Verificable Públicamente",
+      "openSourceDesc": "Hallazgos de auditoría y datos on-chain que cualquiera puede verificar de forma independiente",
       "transparent": "Transparente",
-      "trustMessage": "Plataforma de código abierto con metodología de auditoría verificable públicamente",
+      "trustMessage": "Cada auditoría se entrega con evidencia verificable públicamente. Cualquiera puede reproducir de forma independiente nuestros hallazgos contra los datos on-chain e inspeccionar el razonamiento detrás de cada puntuación.",
       "featuresTitle": "Auditorías de Seguridad de Nueva Generación",
       "featuresSubtitle": "Las auditorías tradicionales son lentas, costosas y rápidamente obsoletas. Spectra proporciona monitoreo de seguridad continuo y verificable que se mantiene al día con tu código.",
       "realTimeMonitoring": "Análisis IA Bajo Demanda",
@@ -93,16 +93,16 @@
       "automatedLabel": "Análisis orquestado por IA",
       "verifiableEvidence": "Evidencia Verificable",
       "verifiableEvidenceDesc": "Cada afirmación de seguridad incluye diffs de IA reproducibles y evidencia. Vea exactamente cómo encontramos cada problema con una metodología totalmente transparente.",
-      "openSourceCodebase": "Base de código de código abierto",
-      "publicGitHubRepo": "Repositorio público en GitHub",
+      "openSourceCodebase": "Hallazgos reproducibles",
+      "publicGitHubRepo": "Verificable contra datos on-chain",
       "comprehensiveCoverage": "Cobertura Integral",
       "comprehensiveCoverageDesc": "Los modelos de IA avanzados detectan una amplia gama de clases de vulnerabilidades conocidas — errores de contratos inteligentes, vectores de ataque económicos y riesgos de concentración.",
       "vulnerabilityCategories": "15+ categorías de vulnerabilidades",
       "detectionRate": "Hasta el 95% de detección de problemas conocidos",
-      "productionReady": "Verificable y de Código Abierto",
-      "productionReadyDesc": "Pipeline de análisis de código abierto creado para desarrolladores e investigadores que quieren inspeccionar, reproducir y verificar cada paso de la auditoría.",
-      "thirdPartyVerified": "Código Abierto",
-      "sourceCode": "Código Fuente",
+      "productionReady": "Verificable y Transparente",
+      "productionReadyDesc": "Un pipeline de análisis transparente creado para desarrolladores e investigadores que quieren inspeccionar, reproducir y verificar cada paso de la auditoría.",
+      "thirdPartyVerified": "Resultados Verificables",
+      "sourceCode": "Transparente",
       "scanTime": "Auditorías ≤20 Min",
       "aiPoweredAnalysis": "Análisis Potenciado por IA",
       "aiPoweredAnalysisDesc": "Escaneo de seguridad automatizado rápido",
@@ -133,7 +133,7 @@
       "expertSupport": "Documentación y Soporte de la Comunidad",
       "expertSupportDesc": "Documentación abierta y recursos comunitarios para ayudarte a interpretar los hallazgos",
       "communityDriven": "Impulsado por la Comunidad",
-      "communityDrivenDesc": "Código abierto con desarrollo transparente"
+      "communityDrivenDesc": "Desarrollo transparente e impulsado por la comunidad"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "Evidencia Verificable",
       "description": "Cada hallazgo incluye el razonamiento, los datos de origen y la evidencia reproducible detrás de él. Vea exactamente cómo se identificó cada problema — sin cajas negras.",
       "metric": "Metodología totalmente transparente",
-      "detail": "Código abierto con repositorio público en GitHub"
+      "detail": "Hallazgos verificables contra datos on-chain"
     },
     "comprehensive": {
       "title": "Cobertura Exhaustiva",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "Perspectivas Impulsadas por la Comunidad",
         "description": "Perspectivas de seguridad impulsadas por la comunidad para el ecosistema Web3",
-        "disclaimer": "Plataforma de código abierto"
+        "disclaimer": "Plataforma verificable públicamente"
       }
     },
     "urgency": "Comienza tu auditoría completa gratuita hoy"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Construido para el ecosistema Web3",
     "liveAudits": "Auditorías ejecutándose bajo demanda",
-    "enterpriseSecurity": "Seguridad de código abierto",
+    "enterpriseSecurity": "Verificable públicamente",
     "protected": "Impulsado por la comunidad"
   },
   "statsBanner": {

@@ -177,8 +177,8 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-center gap-3 mb-8 animate-slide-up">
                 <TrustBadge
                   type="secure"
-                  label="Open Source"
-                  description="Publicly verifiable code"
+                  label="Publicly Verifiable"
+                  description="Audit data anyone can check"
                   size="sm"
                   variant="authority"
                   showIcon={true}
@@ -273,7 +273,7 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {/* Open Source */}
+                    {/* Publicly Verifiable */}
                     <div className="text-center p-6 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 shadow-sm">
                       <div className="inline-flex p-3 rounded-full bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500 mb-4">
                         <Shield className="w-8 h-8" />
@@ -676,7 +676,7 @@ export default function HomePage() {
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.thirdPartyVerified')}</div>
                         </div>
                         <div>
-                          <div className="text-2xl sm:text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 mb-1">Open</div>
+                          <div className="text-2xl sm:text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 mb-1">100%</div>
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.sourceCode')}</div>
                         </div>
                         <div>

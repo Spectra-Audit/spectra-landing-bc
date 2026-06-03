@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "보안 우선 아키텍처",
       "bestPractices": "업계 최우수 사례",
-      "openSource": "오픈소스"
+      "openSource": "공개 검증 가능"
     },
     "headline": "투자 전 프로젝트 보안 조사",
     "subheadline": "여러 DeFi 생태계에 걸친 다차원 보안 점수. 검증 가능한 포괄적인 분석으로 투자 전 위험을 이해하세요.",
@@ -66,21 +66,21 @@
       "trustedBy": "Web3 생태계를 위해 구축",
       "defiLeader": "DeFi 보안 인사이트",
       "protocols": "멀티체인 지원",
-      "disclaimer": "오픈소스 플랫폼"
+      "disclaimer": "공개적으로 검증 가능한 플랫폼"
     },
     "page": {
       "heroTitle": "스마트 컨트랙트 보안 감사",
       "heroSubtitle": "수초만에, 몇 주가 아니라",
       "heroDescription": "검증 가능한 증거가 포함된 AI 기반 스마트 컨트랙트 분석. 20분 이내에 포괄적인 보안 분석을 받으세요. 등록 불필요.",
-      "securityAuditTitle": "오픈소스 — 공개적으로 검증 가능",
+      "securityAuditTitle": "공개적으로 검증 가능한 감사",
       "securityAuditSubtitle": "검사, 감사, 재현 가능한 투명한 방법론",
-      "thirdPartyAudited": "오픈소스",
+      "thirdPartyAudited": "재현 가능한 발견 사항",
       "thirdPartyAuditedDesc": "모든 발견에는 그 근거가 되는 증거와 추론이 포함됩니다",
       "verified": "검증 가능",
-      "openSource": "오픈 소스",
-      "openSourceDesc": "GitHub에서 공개적으로 검증 가능한 코드와 분석 파이프라인",
+      "openSource": "공개 검증 가능",
+      "openSourceDesc": "누구나 독립적으로 검증할 수 있는 감사 결과 및 온체인 데이터",
       "transparent": "투명",
-      "trustMessage": "공개적으로 검증 가능한 감사 방법론을 갖춘 오픈소스 플랫폼",
+      "trustMessage": "모든 감사에는 공개적으로 검증 가능한 증거가 함께 제공됩니다. 누구나 온체인 데이터를 기준으로 발견 사항을 독립적으로 재현하고 모든 점수의 근거가 되는 추론을 검사할 수 있습니다.",
       "featuresTitle": "차세대 보안 감사",
       "featuresSubtitle": "기존 감사는 느리고 비용이 많이 들며 빠르게 구식이 됩니다. Spectra는 귀하의 코드와 함께 발전하는 지속적이고 검증 가능한 보안 모니터링을 제공합니다.",
       "realTimeMonitoring": "온디맨드 AI 분석",
@@ -93,16 +93,16 @@
       "automatedLabel": "AI 오케스트레이션 분석",
       "verifiableEvidence": "검증 가능한 증거",
       "verifiableEvidenceDesc": "각 보안 주장에는 재현 가능한 AI diffs와 증거가 포함됩니다. 완전히 투명한 방법론으로 각 문제를 발견한 방법을 정확히 확인하세요.",
-      "openSourceCodebase": "오픈 소스 코드베이스",
-      "publicGitHubRepo": "공개 GitHub 저장소",
+      "openSourceCodebase": "재현 가능한 발견 사항",
+      "publicGitHubRepo": "온체인 데이터로 검증 가능",
       "comprehensiveCoverage": "포괄적인 커버리지",
       "comprehensiveCoverageDesc": "고급 AI 모델이 알려진 취약점 클래스의 광범위한 범위를 탐지합니다 — 스마트 컨트랙트 버그, 경제적 공격 벡터 및 집중도 리스크.",
       "vulnerabilityCategories": "15+ 취약점 카테고리",
       "detectionRate": "알려진 문제의 최대 95% 탐지",
-      "productionReady": "검증 가능하고 오픈소스",
-      "productionReadyDesc": "감사의 모든 단계를 검사, 재현 및 검증하려는 개발자 및 연구자를 위해 구축된 오픈 소스 분석 파이프라인.",
-      "thirdPartyVerified": "오픈소스",
-      "sourceCode": "소스 코드",
+      "productionReady": "검증 가능하고 투명함",
+      "productionReadyDesc": "감사의 모든 단계를 검사, 재현 및 검증하려는 개발자 및 연구자를 위해 구축된 투명한 분석 파이프라인.",
+      "thirdPartyVerified": "검증 가능한 결과",
+      "sourceCode": "투명",
       "scanTime": "≤20분 감사",
       "aiPoweredAnalysis": "AI 기반 분석",
       "aiPoweredAnalysisDesc": "빠른 자동화된 보안 스캔",
@@ -133,7 +133,7 @@
       "expertSupport": "문서 및 커뮤니티 지원",
       "expertSupportDesc": "발견 사항을 해석하는 데 도움이 되는 공개 문서 및 커뮤니티 리소스",
       "communityDriven": "커뮤니티 주도",
-      "communityDrivenDesc": "투명한 개발의 오픈 소스"
+      "communityDrivenDesc": "투명하고 커뮤니티 주도적인 개발"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "검증 가능한 증거",
       "description": "모든 발견에는 그 뒤에 있는 추론, 소스 데이터 및 재현 가능한 증거가 포함됩니다. 각 문제가 식별된 방법을 정확히 확인하세요 — 블랙박스가 없습니다.",
       "metric": "완전히 투명한 방법론",
-      "detail": "공개 GitHub 리포지토리를 통해 오픈소스로 제공"
+      "detail": "온체인 데이터로 검증 가능한 발견 사항"
     },
     "comprehensive": {
       "title": "포괄적인 범위",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "커뮤니티 주도 인사이트",
         "description": "Web3 생태계를 위한 커뮤니티 주도 보안 인사이트",
-        "disclaimer": "오픈소스 플랫폼"
+        "disclaimer": "공개적으로 검증 가능한 플랫폼"
       }
     },
     "urgency": "지금 무료 종합 감사 시작"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Web3 생태계를 위해 구축",
     "liveAudits": "온디맨드로 실행되는 감사",
-    "enterpriseSecurity": "오픈 소스 보안",
+    "enterpriseSecurity": "공개적으로 검증 가능",
     "protected": "커뮤니티 주도"
   },
   "statsBanner": {

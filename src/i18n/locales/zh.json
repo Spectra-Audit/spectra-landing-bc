@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "安全优先设计",
       "bestPractices": "行业最佳实践",
-      "openSource": "开源"
+      "openSource": "可公开验证"
     },
     "headline": "投资前调研项目安全性",
     "subheadline": "覆盖多个 DeFi 生态系统的多维度安全评分。通过可验证的全面分析，在投资前了解潜在风险。",
@@ -66,21 +66,21 @@
       "trustedBy": "为 Web3 生态系统打造",
       "defiLeader": "DeFi 安全洞察",
       "protocols": "多链支持",
-      "disclaimer": "开源平台"
+      "disclaimer": "可公开验证的平台"
     },
     "page": {
       "heroTitle": "智能合约安全审计",
       "heroSubtitle": "秒级完成，而非数周",
       "heroDescription": "AI 驱动的智能合约分析，附带可验证的证据。20分钟内获取全面的安全分析。无需注册。",
-      "securityAuditTitle": "开源 — 可公开验证",
+      "securityAuditTitle": "可公开验证的审计",
       "securityAuditSubtitle": "透明的方法论，您可以检查、审计和复现",
-      "thirdPartyAudited": "开源",
+      "thirdPartyAudited": "可复现的发现",
       "thirdPartyAuditedDesc": "每个发现都附有支撑证据和推理过程",
       "verified": "可验证",
-      "openSource": "开源",
-      "openSourceDesc": "GitHub 上可公开验证的代码和分析流水线",
+      "openSource": "可公开验证",
+      "openSourceDesc": "审计发现与链上数据，任何人都可独立验证",
       "transparent": "透明",
-      "trustMessage": "开源平台，审计方法论可公开验证",
+      "trustMessage": "每次审计都附带可公开验证的证据。任何人都能基于链上数据独立复现我们的发现，并查看每项评分背后的推理过程。",
       "featuresTitle": "新一代安全审计",
       "featuresSubtitle": "传统审计缓慢、昂贵且很快过时。Spectra 提供持续、可验证的安全监控，与您的代码保持同步。",
       "realTimeMonitoring": "按需 AI 分析",
@@ -93,16 +93,16 @@
       "automatedLabel": "AI 编排分析",
       "verifiableEvidence": "可验证的证据",
       "verifiableEvidenceDesc": "每个安全声明都包含可复现的 AI 差异和证据。通过完全透明的方法论，准确查看我们发现每个问题的方式。",
-      "openSourceCodebase": "开源代码库",
-      "publicGitHubRepo": "GitHub 公开仓库",
+      "openSourceCodebase": "可复现的发现",
+      "publicGitHubRepo": "可基于链上数据验证",
       "comprehensiveCoverage": "全面覆盖",
       "comprehensiveCoverageDesc": "先进的 AI 模型检测广泛的已知漏洞类别 — 智能合约缺陷、经济攻击向量和集中度风险。",
       "vulnerabilityCategories": "15+ 漏洞类别",
       "detectionRate": "最高可检测 95% 的已知问题",
-      "productionReady": "可验证且开源",
-      "productionReadyDesc": "为希望检查、复现和验证审计每一步的开发者和研究人员构建的开源分析流水线。",
-      "thirdPartyVerified": "开源",
-      "sourceCode": "源代码",
+      "productionReady": "可验证且透明",
+      "productionReadyDesc": "为希望检查、复现和验证审计每一步的开发者和研究人员构建的透明分析流水线。",
+      "thirdPartyVerified": "可验证的结果",
+      "sourceCode": "透明",
       "scanTime": "≤20 分钟审计",
       "aiPoweredAnalysis": "AI 驱动分析",
       "aiPoweredAnalysisDesc": "快速、自动化的安全扫描",
@@ -133,7 +133,7 @@
       "expertSupport": "文档与社区支持",
       "expertSupportDesc": "开放的文档和社区资源帮助您解读审计发现",
       "communityDriven": "社区驱动",
-      "communityDrivenDesc": "开源与透明开发"
+      "communityDrivenDesc": "透明、社区驱动的开发"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "可验证的证据",
       "description": "每一项发现都附有支撑推理、来源数据和可复现的证据。准确查看每个问题是如何被识别的 — 没有黑盒。",
       "metric": "完全透明的方法论",
-      "detail": "核心代码开源，拥有公开的 GitHub 仓库"
+      "detail": "发现可基于链上数据进行验证"
     },
     "comprehensive": {
       "title": "全面覆盖",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "社区驱动的洞察",
         "description": "为 Web3 生态系统提供社区驱动的安全洞察",
-        "disclaimer": "开源平台"
+        "disclaimer": "可公开验证的平台"
       }
     },
     "urgency": "今天开始您的免费综合审计"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "为 Web3 生态系统打造",
     "liveAudits": "按需运行的审计",
-    "enterpriseSecurity": "开源安全",
+    "enterpriseSecurity": "可公开验证",
     "protected": "社区驱动"
   },
   "statsBanner": {
