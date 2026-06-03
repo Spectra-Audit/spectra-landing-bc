@@ -61,8 +61,10 @@ export default function MobileOptimized({
     // Touch optimizations
     isMobile && 'touch-pan-y touch-manipulation',
 
-    // Performance optimizations for low-end devices
-    isLowEndDevice && 'will-change-transform',
+    // NOTE: never add `will-change-transform` / transform / filter to this
+    // wrapper. It becomes the containing block for the fixed <Navbar>, which
+    // then scrolls off-screen on low-end devices (the hamburger "disappears"
+    // when you scroll). Keep this wrapper free of fixed-containing-block props.
 
     // Reduced motion support (only after client-side hydration)
     reducedMotion && (isLowEndDevice || prefersReducedMotion) && 'motion-reduce',
