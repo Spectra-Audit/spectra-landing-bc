@@ -1,0 +1,99 @@
+{
+  "_meta": "New strings for the full i18n sweep (grade display, hero authority badges, feature badge descriptions, stat values). Reused values (grade 'excellent', authority labels 'Publicly Verifiable'/'Verifiable Results', stat 'Audit') are pulled from existing keys by the merge script and NOT listed here.",
+  "en": {
+    "grades": { "good": "Good", "fair": "Fair", "poor": "Poor", "critical": "Critical", "needsWork": "Needs Work", "security": "Security", "labelFormat": "Grade {letter} - {label}", "descExcellent": "No critical vulnerabilities found", "descGood": "Minor issues identified", "descFair": "Moderate security risks", "descPoor": "Significant security concerns", "descCritical": "Multiple critical vulnerabilities" },
+    "authority": { "pvDesc": "Audit data anyone can check", "vrDesc": "Transparent audit methodology", "aioLabel": "AI-Orchestrated", "aioDesc": "5-dimensional analysis pipeline" },
+    "features": { "monitoringDesc": "AI-powered analysis on submission", "accuracyDesc": "AI-verified accuracy", "uptimeDesc": "High availability infrastructure" },
+    "stats": { "fastValue": "Fast" }
+  },
+  "es": {
+    "grades": { "good": "Bueno", "fair": "Aceptable", "poor": "Deficiente", "critical": "Crítico", "needsWork": "Necesita Mejoras", "security": "Seguridad", "labelFormat": "Grado {letter} - {label}", "descExcellent": "No se encontraron vulnerabilidades críticas", "descGood": "Problemas menores identificados", "descFair": "Riesgos de seguridad moderados", "descPoor": "Problemas de seguridad significativos", "descCritical": "Múltiples vulnerabilidades críticas" },
+    "authority": { "pvDesc": "Datos de auditoría que cualquiera puede verificar", "vrDesc": "Metodología de auditoría transparente", "aioLabel": "Orquestado por IA", "aioDesc": "Pipeline de análisis de 5 dimensiones" },
+    "features": { "monitoringDesc": "Análisis con IA al enviar", "accuracyDesc": "Precisión verificada por IA", "uptimeDesc": "Infraestructura de alta disponibilidad" },
+    "stats": { "fastValue": "Rápido" }
+  },
+  "pt": {
+    "grades": { "good": "Bom", "fair": "Razoável", "poor": "Fraco", "critical": "Crítico", "needsWork": "Precisa Melhorar", "security": "Segurança", "labelFormat": "Nota {letter} - {label}", "descExcellent": "Nenhuma vulnerabilidade crítica encontrada", "descGood": "Problemas menores identificados", "descFair": "Riscos de segurança moderados", "descPoor": "Problemas de segurança significativos", "descCritical": "Múltiplas vulnerabilidades críticas" },
+    "authority": { "pvDesc": "Dados de auditoria que qualquer um pode verificar", "vrDesc": "Metodologia de auditoria transparente", "aioLabel": "Orquestrado por IA", "aioDesc": "Pipeline de análise de 5 dimensões" },
+    "features": { "monitoringDesc": "Análise por IA no envio", "accuracyDesc": "Precisão verificada por IA", "uptimeDesc": "Infraestrutura de alta disponibilidade" },
+    "stats": { "fastValue": "Rápido" }
+  },
+  "fr": {
+    "grades": { "good": "Bon", "fair": "Correct", "poor": "Faible", "critical": "Critique", "needsWork": "À Améliorer", "security": "Sécurité", "labelFormat": "Note {letter} - {label}", "descExcellent": "Aucune vulnérabilité critique détectée", "descGood": "Problèmes mineurs identifiés", "descFair": "Risques de sécurité modérés", "descPoor": "Problèmes de sécurité importants", "descCritical": "Multiples vulnérabilités critiques" },
+    "authority": { "pvDesc": "Données d'audit vérifiables par tous", "vrDesc": "Méthodologie d'audit transparente", "aioLabel": "Orchestré par IA", "aioDesc": "Pipeline d'analyse à 5 dimensions" },
+    "features": { "monitoringDesc": "Analyse par IA à la soumission", "accuracyDesc": "Précision vérifiée par IA", "uptimeDesc": "Infrastructure à haute disponibilité" },
+    "stats": { "fastValue": "Rapide" }
+  },
+  "de": {
+    "grades": { "good": "Gut", "fair": "Ausreichend", "poor": "Mangelhaft", "critical": "Kritisch", "needsWork": "Verbesserung nötig", "security": "Sicherheit", "labelFormat": "Note {letter} - {label}", "descExcellent": "Keine kritischen Schwachstellen gefunden", "descGood": "Geringfügige Probleme erkannt", "descFair": "Moderate Sicherheitsrisiken", "descPoor": "Erhebliche Sicherheitsbedenken", "descCritical": "Mehrere kritische Schwachstellen" },
+    "authority": { "pvDesc": "Audit-Daten, die jeder prüfen kann", "vrDesc": "Transparente Audit-Methodik", "aioLabel": "KI-orchestriert", "aioDesc": "5-dimensionale Analyse-Pipeline" },
+    "features": { "monitoringDesc": "KI-gestützte Analyse bei Einreichung", "accuracyDesc": "KI-verifizierte Genauigkeit", "uptimeDesc": "Hochverfügbare Infrastruktur" },
+    "stats": { "fastValue": "Schnell" }
+  },
+  "ru": {
+    "grades": { "good": "Хорошо", "fair": "Удовлетворительно", "poor": "Слабо", "critical": "Критично", "needsWork": "Требует доработки", "security": "Безопасность", "labelFormat": "Оценка {letter} - {label}", "descExcellent": "Критических уязвимостей не обнаружено", "descGood": "Выявлены незначительные проблемы", "descFair": "Умеренные риски безопасности", "descPoor": "Серьёзные проблемы безопасности", "descCritical": "Множественные критические уязвимости" },
+    "authority": { "pvDesc": "Данные аудита, которые может проверить каждый", "vrDesc": "Прозрачная методология аудита", "aioLabel": "Оркестрация ИИ", "aioDesc": "5-мерный конвейер анализа" },
+    "features": { "monitoringDesc": "Анализ с помощью ИИ при отправке", "accuracyDesc": "Точность, проверенная ИИ", "uptimeDesc": "Высокодоступная инфраструктура" },
+    "stats": { "fastValue": "Быстро" }
+  },
+  "tr": {
+    "grades": { "good": "İyi", "fair": "Orta", "poor": "Zayıf", "critical": "Kritik", "needsWork": "Geliştirilmeli", "security": "Güvenlik", "labelFormat": "Not {letter} - {label}", "descExcellent": "Kritik güvenlik açığı bulunamadı", "descGood": "Küçük sorunlar tespit edildi", "descFair": "Orta düzey güvenlik riskleri", "descPoor": "Önemli güvenlik endişeleri", "descCritical": "Birden fazla kritik güvenlik açığı" },
+    "authority": { "pvDesc": "Herkesin doğrulayabileceği denetim verileri", "vrDesc": "Şeffaf denetim metodolojisi", "aioLabel": "AI Tarafından Yönetilen", "aioDesc": "5 boyutlu analiz hattı" },
+    "features": { "monitoringDesc": "Gönderimde AI destekli analiz", "accuracyDesc": "AI ile doğrulanmış doğruluk", "uptimeDesc": "Yüksek kullanılabilirlikli altyapı" },
+    "stats": { "fastValue": "Hızlı" }
+  },
+  "zh": {
+    "grades": { "good": "良好", "fair": "一般", "poor": "较差", "critical": "严重", "needsWork": "需改进", "security": "安全", "labelFormat": "{letter} 级 - {label}", "descExcellent": "未发现严重漏洞", "descGood": "发现轻微问题", "descFair": "中等安全风险", "descPoor": "重大安全隐患", "descCritical": "多个严重漏洞" },
+    "authority": { "pvDesc": "任何人都可核查的审计数据", "vrDesc": "透明的审计方法", "aioLabel": "AI 编排", "aioDesc": "5 维分析流水线" },
+    "features": { "monitoringDesc": "提交时进行 AI 分析", "accuracyDesc": "AI 验证的准确性", "uptimeDesc": "高可用基础设施" },
+    "stats": { "fastValue": "快速" }
+  },
+  "ja": {
+    "grades": { "good": "良好", "fair": "普通", "poor": "不十分", "critical": "重大", "needsWork": "要改善", "security": "セキュリティ", "labelFormat": "グレード {letter} - {label}", "descExcellent": "重大な脆弱性は見つかりませんでした", "descGood": "軽微な問題を検出", "descFair": "中程度のセキュリティリスク", "descPoor": "重大なセキュリティ上の懸念", "descCritical": "複数の重大な脆弱性" },
+    "authority": { "pvDesc": "誰でも確認できる監査データ", "vrDesc": "透明性のある監査手法", "aioLabel": "AIオーケストレーション", "aioDesc": "5次元分析パイプライン" },
+    "features": { "monitoringDesc": "提出時にAIで分析", "accuracyDesc": "AIで検証された精度", "uptimeDesc": "高可用性インフラ" },
+    "stats": { "fastValue": "高速" }
+  },
+  "ko": {
+    "grades": { "good": "양호", "fair": "보통", "poor": "미흡", "critical": "심각", "needsWork": "개선 필요", "security": "보안", "labelFormat": "{letter}등급 - {label}", "descExcellent": "심각한 취약점이 발견되지 않음", "descGood": "사소한 문제 발견", "descFair": "중간 수준의 보안 위험", "descPoor": "중대한 보안 우려", "descCritical": "여러 심각한 취약점" },
+    "authority": { "pvDesc": "누구나 확인할 수 있는 감사 데이터", "vrDesc": "투명한 감사 방법론", "aioLabel": "AI 오케스트레이션", "aioDesc": "5차원 분석 파이프라인" },
+    "features": { "monitoringDesc": "제출 시 AI 분석", "accuracyDesc": "AI로 검증된 정확성", "uptimeDesc": "고가용성 인프라" },
+    "stats": { "fastValue": "빠름" }
+  },
+  "ar": {
+    "grades": { "good": "جيد", "fair": "مقبول", "poor": "ضعيف", "critical": "حرج", "needsWork": "يحتاج تحسين", "security": "الأمان", "labelFormat": "الدرجة {letter} - {label}", "descExcellent": "لم يُعثر على ثغرات حرجة", "descGood": "تم تحديد مشكلات طفيفة", "descFair": "مخاطر أمنية متوسطة", "descPoor": "مخاوف أمنية كبيرة", "descCritical": "ثغرات حرجة متعددة" },
+    "authority": { "pvDesc": "بيانات تدقيق يمكن لأي شخص التحقق منها", "vrDesc": "منهجية تدقيق شفافة", "aioLabel": "مُنسَّق بالذكاء الاصطناعي", "aioDesc": "خط تحليل خماسي الأبعاد" },
+    "features": { "monitoringDesc": "تحليل بالذكاء الاصطناعي عند الإرسال", "accuracyDesc": "دقة مُتحقَّق منها بالذكاء الاصطناعي", "uptimeDesc": "بنية تحتية عالية التوافر" },
+    "stats": { "fastValue": "سريع" }
+  },
+  "hi": {
+    "grades": { "good": "अच्छा", "fair": "ठीक-ठाक", "poor": "कमज़ोर", "critical": "गंभीर", "needsWork": "सुधार आवश्यक", "security": "सुरक्षा", "labelFormat": "ग्रेड {letter} - {label}", "descExcellent": "कोई गंभीर भेद्यता नहीं मिली", "descGood": "मामूली समस्याएँ पाई गईं", "descFair": "मध्यम सुरक्षा जोखिम", "descPoor": "महत्वपूर्ण सुरक्षा चिंताएँ", "descCritical": "कई गंभीर भेद्यताएँ" },
+    "authority": { "pvDesc": "ऑडिट डेटा जिसे कोई भी जाँच सकता है", "vrDesc": "पारदर्शी ऑडिट पद्धति", "aioLabel": "AI द्वारा संचालित", "aioDesc": "5-आयामी विश्लेषण पाइपलाइन" },
+    "features": { "monitoringDesc": "सबमिशन पर AI-संचालित विश्लेषण", "accuracyDesc": "AI-सत्यापित सटीकता", "uptimeDesc": "उच्च उपलब्धता अवसंरचना" },
+    "stats": { "fastValue": "तेज़" }
+  },
+  "bn": {
+    "grades": { "good": "ভালো", "fair": "মোটামুটি", "poor": "দুর্বল", "critical": "গুরুতর", "needsWork": "উন্নতি প্রয়োজন", "security": "নিরাপত্তা", "labelFormat": "গ্রেড {letter} - {label}", "descExcellent": "কোনো গুরুতর দুর্বলতা পাওয়া যায়নি", "descGood": "সামান্য সমস্যা শনাক্ত হয়েছে", "descFair": "মাঝারি নিরাপত্তা ঝুঁকি", "descPoor": "উল্লেখযোগ্য নিরাপত্তা উদ্বেগ", "descCritical": "একাধিক গুরুতর দুর্বলতা" },
+    "authority": { "pvDesc": "অডিট ডেটা যা যে কেউ যাচাই করতে পারে", "vrDesc": "স্বচ্ছ অডিট পদ্ধতি", "aioLabel": "AI-পরিচালিত", "aioDesc": "৫-মাত্রিক বিশ্লেষণ পাইপলাইন" },
+    "features": { "monitoringDesc": "জমা দেওয়ার সময় AI-চালিত বিশ্লেষণ", "accuracyDesc": "AI-যাচাইকৃত নির্ভুলতা", "uptimeDesc": "উচ্চ উপলব্ধতার অবকাঠামো" },
+    "stats": { "fastValue": "দ্রুত" }
+  },
+  "te": {
+    "grades": { "good": "మంచిది", "fair": "ఫర్వాలేదు", "poor": "బలహీనం", "critical": "క్లిష్టం", "needsWork": "మెరుగుదల అవసరం", "security": "భద్రత", "labelFormat": "గ్రేడ్ {letter} - {label}", "descExcellent": "క్లిష్టమైన దుర్బలత్వాలు కనుగొనబడలేదు", "descGood": "చిన్న సమస్యలు గుర్తించబడ్డాయి", "descFair": "మధ్యస్థ భద్రతా ప్రమాదాలు", "descPoor": "గణనీయమైన భద్రతా ఆందోళనలు", "descCritical": "అనేక క్లిష్టమైన దుర్బలత్వాలు" },
+    "authority": { "pvDesc": "ఎవరైనా తనిఖీ చేయగల ఆడిట్ డేటా", "vrDesc": "పారదర్శక ఆడిట్ పద్ధతి", "aioLabel": "AI ఆర్కెస్ట్రేటెడ్", "aioDesc": "5-డైమెన్షనల్ విశ్లేషణ పైప్‌లైన్" },
+    "features": { "monitoringDesc": "సమర్పణ సమయంలో AI-ఆధారిత విశ్లేషణ", "accuracyDesc": "AI-ధృవీకరించిన ఖచ్చితత్వం", "uptimeDesc": "అధిక లభ్యత మౌలిక సదుపాయం" },
+    "stats": { "fastValue": "వేగవంతం" }
+  },
+  "ta": {
+    "grades": { "good": "நல்லது", "fair": "சுமார்", "poor": "மோசம்", "critical": "ஆபத்தானது", "needsWork": "மேம்பாடு தேவை", "security": "பாதுகாப்பு", "labelFormat": "தரம் {letter} - {label}", "descExcellent": "முக்கியமான பாதிப்புகள் எதுவும் இல்லை", "descGood": "சிறிய சிக்கல்கள் கண்டறியப்பட்டன", "descFair": "மிதமான பாதுகாப்பு அபாயங்கள்", "descPoor": "குறிப்பிடத்தக்க பாதுகாப்பு கவலைகள்", "descCritical": "பல முக்கியமான பாதிப்புகள்" },
+    "authority": { "pvDesc": "யாரும் சரிபார்க்கக்கூடிய தணிக்கை தரவு", "vrDesc": "வெளிப்படையான தணிக்கை முறை", "aioLabel": "AI ஒருங்கிணைப்பு", "aioDesc": "5-பரிமாண பகுப்பாய்வு பைப்லைன்" },
+    "features": { "monitoringDesc": "சமர்ப்பிக்கும்போது AI பகுப்பாய்வு", "accuracyDesc": "AI சரிபார்க்கப்பட்ட துல்லியம்", "uptimeDesc": "உயர் கிடைக்கும் தன்மை உள்கட்டமைப்பு" },
+    "stats": { "fastValue": "வேகம்" }
+  },
+  "mr": {
+    "grades": { "good": "चांगले", "fair": "बरे", "poor": "कमकुवत", "critical": "गंभीर", "needsWork": "सुधारणा आवश्यक", "security": "सुरक्षा", "labelFormat": "श्रेणी {letter} - {label}", "descExcellent": "कोणतीही गंभीर असुरक्षा आढळली नाही", "descGood": "किरकोळ समस्या आढळल्या", "descFair": "मध्यम सुरक्षा धोके", "descPoor": "लक्षणीय सुरक्षा चिंता", "descCritical": "अनेक गंभीर असुरक्षा" },
+    "authority": { "pvDesc": "कोणीही तपासू शकेल असा ऑडिट डेटा", "vrDesc": "पारदर्शक ऑडिट पद्धत", "aioLabel": "AI-नियंत्रित", "aioDesc": "5-आयामी विश्लेषण पाइपलाइन" },
+    "features": { "monitoringDesc": "सबमिशनवर AI-आधारित विश्लेषण", "accuracyDesc": "AI-सत्यापित अचूकता", "uptimeDesc": "उच्च उपलब्धता पायाभूत सुविधा" },
+    "stats": { "fastValue": "जलद" }
+  }
+}

@@ -1,6 +1,5 @@
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import '@/globals.css'
-import Analytics from '@/components/ui/Analytics'
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor'
 import { UmamiProvider } from '@/providers/UmamiProvider'
 
@@ -78,9 +77,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Privacy-Compliant Analytics */}
-        <Analytics />
-
         {/* Performance Monitoring */}
         <PerformanceMonitor />
 
@@ -99,15 +95,6 @@ export default function RootLayout({
                   domContentLoaded: perfData.domContentLoadedEventEnd - perfData.navigationStart,
                   firstPaint: perfData.responseStart - perfData.navigationStart
                 };
-              });
-
-              // Accessibility enhancement: skip to main content
-              document.addEventListener('DOMContentLoaded', function() {
-                const skipLink = document.createElement('a');
-                skipLink.href = '#main-content';
-                skipLink.className = 'sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded z-50';
-                skipLink.textContent = 'Skip to main content';
-                document.body.insertBefore(skipLink, document.body.firstChild);
               });
 
               // Error tracking

@@ -133,7 +133,23 @@
       "expertSupport": "Documentation et Support de la Communauté",
       "expertSupportDesc": "Documentation ouverte et ressources communautaires pour vous aider à interpréter les constats",
       "communityDriven": "Axé sur la Communauté",
-      "communityDrivenDesc": "Développement transparent et axé sur la communauté"
+      "communityDrivenDesc": "Développement transparent et axé sur la communauté",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "Vérifiable Publiquement",
+          "description": "Données d'audit vérifiables par tous"
+        },
+        "verifiableResults": {
+          "label": "Résultats Vérifiables",
+          "description": "Méthodologie d'audit transparente"
+        },
+        "aiOrchestrated": {
+          "label": "Orchestré par IA",
+          "description": "Pipeline d'analyse à 5 dimensions"
+        }
+      },
+      "auditMetricValue": "Audit",
+      "fastMetricValue": "Rapide"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "Analyse à la Demande",
       "zeroFalsePositives": "Détection de Haute Précision",
-      "uptime": "Infrastructure de Haute Disponibilité"
+      "uptime": "Infrastructure de Haute Disponibilité",
+      "monitoringDesc": "Analyse par IA à la soumission",
+      "zeroFalsePositivesDesc": "Précision vérifiée par IA",
+      "uptimeDesc": "Infrastructure à haute disponibilité"
     },
     "lossPrevention": "Détection avancée de menaces pour les protocoles DeFi"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "Scoring à 5 Dimensions",
       "description": "Code, Distribution, Tokenomique, Liquidité et Sentiment sont notés indépendamment en parallèle — puis pondérés en un score de sécurité composite."
+    },
+    "diagram": {
+      "ariaLabel": "Pipeline d'audit parallèle : cinq analyseurs indépendants — Code, Distribution, Tokenomics, Liquidité et Sentiment — s'exécutent simultanément et convergent vers un score de sécurité composite unique.",
+      "lanes": {
+        "code": "Code",
+        "distribution": "Distribution",
+        "tokenomics": "Tokenomics",
+        "liquidity": "Liquidité",
+        "sentiment": "Sentiment"
+      },
+      "compositeLine1": "Score",
+      "compositeLine2": "Composite",
+      "subtitle": "5 analyseurs en parallèle → composite pondéré"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "Référence Croisée avec Audits Externes",
       "description": "Lorsque des audits humains professionnels sont disponibles pour un projet, nos constats sont comparés au rapport. Les divergences alimentent le raffinement du modèle."
+    },
+    "diagram": {
+      "ariaLabel": "Boucle de rétroaction d'amélioration continue en forme de bouclier : les audits alimentent les retours des utilisateurs, qui sont pondérés selon la réputation de l'évaluateur lors de l'évaluation, puis utilisés pour calibrer et réentraîner le modèle pour le prochain audit.",
+      "nodes": {
+        "audit": "Audit",
+        "feedback": "Retours",
+        "evaluation": "Évaluation",
+        "calibration": "Calibration",
+        "retraining": "Réentraînement"
+      },
+      "centerLine1": "Apprentissage",
+      "centerLine2": "Continu"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "Un score de sécurité élevé NE garantit PAS qu'un projet est sûr. Les scores reflètent l'état des données disponibles au moment de l'analyse.",
     "doYourResearch": "Effectuez toujours vos propres recherches (DYOR) avant de prendre toute décision d'investissement, de déploiement ou d'intégration.",
     "toolPurpose": "Spectra Audit est un outil informatif conçu pour aider les utilisateurs à comprendre les considérations de sécurité derrière un projet. Il ne constitue pas un conseil financier, juridique ou d'investissement."
+  },
+  "grades": {
+    "excellent": "Excellent",
+    "good": "Bon",
+    "fair": "Correct",
+    "poor": "Faible",
+    "critical": "Critique",
+    "needsWork": "À Améliorer",
+    "security": "Sécurité",
+    "labelFormat": "Note {letter} - {label}",
+    "descriptions": {
+      "excellent": "Aucune vulnérabilité critique détectée",
+      "good": "Problèmes mineurs identifiés",
+      "fair": "Risques de sécurité modérés",
+      "poor": "Problèmes de sécurité importants",
+      "critical": "Multiples vulnérabilités critiques"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "Avis de Confidentialité :",
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic du site.",
+    "details": "Les cookies essentiels sont nécessaires au fonctionnement de base. Les cookies analytiques nous aident à améliorer notre service.",
+    "acceptEssential": "Accepter les Essentiels",
+    "acceptAll": "Tout Accepter",
+    "rejectAll": "Tout Refuser"
   }
 }

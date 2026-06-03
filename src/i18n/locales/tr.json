@@ -133,7 +133,23 @@
       "expertSupport": "Dokümantasyon ve Topluluk Desteği",
       "expertSupportDesc": "Bulguları yorumlamanıza yardımcı olacak açık dokümantasyon ve topluluk kaynakları",
       "communityDriven": "Topluluk Tabanlı",
-      "communityDrivenDesc": "Şeffaf, topluluk tabanlı geliştirme"
+      "communityDrivenDesc": "Şeffaf, topluluk tabanlı geliştirme",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "Herkese Açık Şekilde Doğrulanabilir",
+          "description": "Herkesin doğrulayabileceği denetim verileri"
+        },
+        "verifiableResults": {
+          "label": "Doğrulanabilir Sonuçlar",
+          "description": "Şeffaf denetim metodolojisi"
+        },
+        "aiOrchestrated": {
+          "label": "AI Tarafından Yönetilen",
+          "description": "5 boyutlu analiz hattı"
+        }
+      },
+      "auditMetricValue": "Denetim",
+      "fastMetricValue": "Hızlı"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "Talep Üzerine Analiz",
       "zeroFalsePositives": "Yüksek Hassasiyetli Tespit",
-      "uptime": "Yüksek Erişilebilirlik Altyapısı"
+      "uptime": "Yüksek Erişilebilirlik Altyapısı",
+      "monitoringDesc": "Gönderimde AI destekli analiz",
+      "zeroFalsePositivesDesc": "AI ile doğrulanmış doğruluk",
+      "uptimeDesc": "Yüksek kullanılabilirlikli altyapı"
     },
     "lossPrevention": "DeFi protokolleri için gelişmiş tehdit tespiti"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "5 Boyutlu Skorlama",
       "description": "Kod, Dağıtım, Tokenomik, Likidite ve Sentiment paralel olarak bağımsız şekilde puanlanır — ardından birleşik bir güvenlik skoruna ağırlıklandırılır."
+    },
+    "diagram": {
+      "ariaLabel": "Paralel denetim hattı: beş bağımsız analizör — Kod, Dağıtım, Tokenomik, Likidite ve Sentiment — aynı anda çalışır ve tek bir birleşik güvenlik skorunda birleşir.",
+      "lanes": {
+        "code": "Kod",
+        "distribution": "Dağıtım",
+        "tokenomics": "Tokenomik",
+        "liquidity": "Likidite",
+        "sentiment": "Sentiment"
+      },
+      "compositeLine1": "Birleşik",
+      "compositeLine2": "Skor",
+      "subtitle": "5 analizör paralel → ağırlıklı birleşik"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "Harici Denetim Çapraz Referansı",
       "description": "Bir proje için profesyonel insan denetimleri mevcut olduğunda, bulgularımız rapora kıyasla karşılaştırılır. Tutarsızlıklar model iyileştirmesine geri besler."
+    },
+    "diagram": {
+      "ariaLabel": "Kalkan şeklinde sürekli iyileştirme geri bildirim döngüsü: denetimler kullanıcı geri bildirimini besler, bu geri bildirim değerlendirme sırasında inceleyenin itibarına göre ağırlıklandırılır ve ardından bir sonraki denetim için modeli kalibre etmek ve yeniden eğitmek için kullanılır.",
+      "nodes": {
+        "audit": "Denetim",
+        "feedback": "Geri Bildirim",
+        "evaluation": "Değerlendirme",
+        "calibration": "Kalibrasyon",
+        "retraining": "Yeniden Eğitim"
+      },
+      "centerLine1": "Sürekli",
+      "centerLine2": "Öğrenme"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "Yüksek bir güvenlik skoru, bir projenin güvenli olduğunu GARANTİ ETMEZ. Skorlar, analiz sırasında mevcut verilerin durumunu yansıtır.",
     "doYourResearch": "Herhangi bir yatırım, dağıtım veya entegrasyon kararı vermeden önce her zaman kendi araştırmanızı yapın (DYOR).",
     "toolPurpose": "Spectra Audit, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir."
+  },
+  "grades": {
+    "excellent": "Mükemmel",
+    "good": "İyi",
+    "fair": "Orta",
+    "poor": "Zayıf",
+    "critical": "Kritik",
+    "needsWork": "Geliştirilmeli",
+    "security": "Güvenlik",
+    "labelFormat": "Not {letter} - {label}",
+    "descriptions": {
+      "excellent": "Kritik güvenlik açığı bulunamadı",
+      "good": "Küçük sorunlar tespit edildi",
+      "fair": "Orta düzey güvenlik riskleri",
+      "poor": "Önemli güvenlik endişeleri",
+      "critical": "Birden fazla kritik güvenlik açığı"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "Gizlilik Bildirimi:",
+    "message": "Deneyiminizi geliştirmek ve site trafiğini analiz etmek için çerezleri kullanıyoruz.",
+    "details": "Temel çerezler temel işlevsellik için gereklidir. Analitik çerezler hizmetimizi geliştirmemize yardımcı olur.",
+    "acceptEssential": "Temel Çerezleri Kabul Et",
+    "acceptAll": "Tümünü Kabul Et",
+    "rejectAll": "Tümünü Reddet"
   }
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import { Search, ThumbsUp, Scale, BarChart3, Brain } from 'lucide-react'
 
 export interface LearningLoopDiagramProps {
@@ -22,8 +23,11 @@ type Pt = { x: number; y: number }
  */
 export default function LearningLoopDiagram({
   className = '',
-  ariaLabel = 'Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.'
+  ariaLabel
 }: LearningLoopDiagramProps) {
+  const t = useTranslations('learningLoop.diagram')
+  // Prop overrides the translated label when provided (e.g. for a custom description).
+  const resolvedAriaLabel = ariaLabel ?? t('ariaLabel')
   const size = 400
 
   // --- Shield silhouette (matches the Spectra logo) -----------------------
@@ -65,7 +69,7 @@ export default function LearningLoopDiagram({
     {
       ...audit,
       key: 'audit',
-      label: 'Audit',
+      label: t('nodes.audit'),
       Icon: Search,
       color: 'text-spectra-blue-500',
       bg: 'fill-spectra-blue-500/15',
@@ -75,7 +79,7 @@ export default function LearningLoopDiagram({
     {
       ...feedback,
       key: 'feedback',
-      label: 'User Feedback',
+      label: t('nodes.feedback'),
       Icon: ThumbsUp,
       color: 'text-spectra-green-500',
       bg: 'fill-spectra-green-500/15',
@@ -85,7 +89,7 @@ export default function LearningLoopDiagram({
     {
       ...evaluation,
       key: 'evaluation',
-      label: 'Evaluation',
+      label: t('nodes.evaluation'),
       Icon: Scale,
       color: 'text-spectra-yellow-500',
       bg: 'fill-spectra-yellow-500/15',
@@ -95,7 +99,7 @@ export default function LearningLoopDiagram({
     {
       ...calibration,
       key: 'calibration',
-      label: 'Calibration',
+      label: t('nodes.calibration'),
       Icon: BarChart3,
       color: 'text-spectra-purple-500',
       bg: 'fill-spectra-purple-500/15',
@@ -105,7 +109,7 @@ export default function LearningLoopDiagram({
     {
       ...retraining,
       key: 'retraining',
-      label: 'Model Retraining',
+      label: t('nodes.retraining'),
       Icon: Brain,
       color: 'text-spectra-cyan-500',
       bg: 'fill-spectra-cyan-500/15',
@@ -120,7 +124,7 @@ export default function LearningLoopDiagram({
         viewBox={`0 0 ${size} ${size}`}
         className="w-full h-auto"
         role="img"
-        aria-label={ariaLabel}
+        aria-label={resolvedAriaLabel}
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Defs: edge gradient + inner glow */}
@@ -219,7 +223,7 @@ export default function LearningLoopDiagram({
           className="fill-neutral-900 dark:fill-white text-[14px] font-bold"
           style={{ fontFamily: 'inherit' }}
         >
-          Continuous
+          {t('centerLine1')}
         </text>
         <text
           x={200}
@@ -228,7 +232,7 @@ export default function LearningLoopDiagram({
           className="fill-neutral-500 dark:fill-neutral-400 text-[11px]"
           style={{ fontFamily: 'inherit' }}
         >
-          Learning Loop
+          {t('centerLine2')}
         </text>
       </svg>
 

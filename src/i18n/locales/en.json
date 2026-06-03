@@ -133,7 +133,23 @@
       "expertSupport": "Documentation & Community Support",
       "expertSupportDesc": "Open documentation and community resources to help you interpret findings",
       "communityDriven": "Community-Driven",
-      "communityDrivenDesc": "Transparent, community-driven development"
+      "communityDrivenDesc": "Transparent, community-driven development",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "Publicly Verifiable",
+          "description": "Audit data anyone can check"
+        },
+        "verifiableResults": {
+          "label": "Verifiable Results",
+          "description": "Transparent audit methodology"
+        },
+        "aiOrchestrated": {
+          "label": "AI-Orchestrated",
+          "description": "5-dimensional analysis pipeline"
+        }
+      },
+      "auditMetricValue": "Audit",
+      "fastMetricValue": "Fast"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "On-Demand Analysis",
       "zeroFalsePositives": "High Accuracy Detection",
-      "uptime": "High Availability Infrastructure"
+      "uptime": "High Availability Infrastructure",
+      "monitoringDesc": "AI-powered analysis on submission",
+      "zeroFalsePositivesDesc": "AI-verified accuracy",
+      "uptimeDesc": "High availability infrastructure"
     },
     "lossPrevention": "Advanced threat detection for DeFi protocols"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "5-Dimensional Scoring",
       "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel — then weighted into a composite security score."
+    },
+    "diagram": {
+      "ariaLabel": "Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.",
+      "lanes": {
+        "code": "Code",
+        "distribution": "Distribution",
+        "tokenomics": "Tokenomics",
+        "liquidity": "Liquidity",
+        "sentiment": "Sentiment"
+      },
+      "compositeLine1": "Composite",
+      "compositeLine2": "Score",
+      "subtitle": "5 analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "External Audit Cross-Reference",
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies feed back into model refinement."
+    },
+    "diagram": {
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.",
+      "nodes": {
+        "audit": "Audit",
+        "feedback": "User Feedback",
+        "evaluation": "Evaluation",
+        "calibration": "Calibration",
+        "retraining": "Model Retraining"
+      },
+      "centerLine1": "Continuous",
+      "centerLine2": "Learning Loop"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "A high security score does NOT guarantee a project is safe. Scores reflect the state of available data at the time of analysis.",
     "doYourResearch": "Always conduct your own research (DYOR) before making any investment, deployment, or integration decisions.",
     "toolPurpose": "Spectra Audit is an informational tool designed to help users understand the security considerations behind a project. It is not financial, legal, or investment advice."
+  },
+  "grades": {
+    "excellent": "Excellent",
+    "good": "Good",
+    "fair": "Fair",
+    "poor": "Poor",
+    "critical": "Critical",
+    "needsWork": "Needs Work",
+    "security": "Security",
+    "labelFormat": "Grade {letter} - {label}",
+    "descriptions": {
+      "excellent": "No critical vulnerabilities found",
+      "good": "Minor issues identified",
+      "fair": "Moderate security risks",
+      "poor": "Significant security concerns",
+      "critical": "Multiple critical vulnerabilities"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "Privacy Notice:",
+    "message": "We use cookies to enhance your experience and analyze site traffic.",
+    "details": "Essential cookies are required for basic functionality. Analytics cookies help us improve our service.",
+    "acceptEssential": "Accept Essential",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All"
   }
 }

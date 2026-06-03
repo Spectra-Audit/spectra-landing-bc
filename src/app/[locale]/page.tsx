@@ -129,24 +129,24 @@ export default function HomePage() {
               <div className="flex flex-wrap justify-center gap-3 mb-8 animate-slide-up">
                 <TrustBadge
                   type="secure"
-                  label="Publicly Verifiable"
-                  description="Audit data anyone can check"
+                  label={t('hero.page.authorityBadges.publiclyVerifiable.label')}
+                  description={t('hero.page.authorityBadges.publiclyVerifiable.description')}
                   size="sm"
                   variant="authority"
                   showIcon={true}
                 />
                 <TrustBadge
                   type="transparent"
-                  label="Verifiable Results"
-                  description="Transparent audit methodology"
+                  label={t('hero.page.authorityBadges.verifiableResults.label')}
+                  description={t('hero.page.authorityBadges.verifiableResults.description')}
                   size="sm"
                   variant="authority"
                   showIcon={true}
                 />
                 <TrustBadge
                   type="verified"
-                  label="AI-Orchestrated"
-                  description="5-dimensional analysis pipeline"
+                  label={t('hero.page.authorityBadges.aiOrchestrated.label')}
+                  description={t('hero.page.authorityBadges.aiOrchestrated.description')}
                   size="sm"
                   variant="authority"
                   showIcon={true}
@@ -400,19 +400,19 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                   <div className="p-3 rounded-lg bg-spectra-green-500/10 border border-spectra-green-500/20">
                     <div className="text-sm font-bold text-spectra-green-700 dark:text-spectra-green-500">85+</div>
-                    <div className="text-xs text-neutral-500 dark:text-neutral-400">Excellent</div>
+                    <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.excellent')}</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-blue-500/10 border border-spectra-blue-500/20">
                     <div className="text-sm font-bold text-spectra-blue-600 dark:text-spectra-blue-500">70-84</div>
-                    <div className="text-xs text-neutral-500 dark:text-neutral-400">Good</div>
+                    <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.good')}</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-yellow-500/10 border border-spectra-yellow-500/20">
                     <div className="text-sm font-bold text-spectra-yellow-700 dark:text-spectra-yellow-500">55-69</div>
-                    <div className="text-xs text-neutral-500 dark:text-neutral-400">Fair</div>
+                    <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.fair')}</div>
                   </div>
                   <div className="p-3 rounded-lg bg-spectra-red-500/10 border border-spectra-red-500/20">
                     <div className="text-sm font-bold text-spectra-red-600 dark:text-spectra-red-500">&lt;55</div>
-                    <div className="text-xs text-neutral-500 dark:text-neutral-400">Needs Work</div>
+                    <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.needsWork')}</div>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -455,7 +455,7 @@ export default function HomePage() {
                 <TrustBadge
                   type="transparent"
                   label={t('features.trustIndicators.monitoring')}
-                  description="AI-powered analysis on submission"
+                  description={t('features.trustIndicators.monitoringDesc')}
                   variant="default"
                   size="sm"
                   showIcon={false}
@@ -463,7 +463,7 @@ export default function HomePage() {
                 <TrustBadge
                   type="verified"
                   label={t('features.trustIndicators.zeroFalsePositives')}
-                  description="AI-verified accuracy"
+                  description={t('features.trustIndicators.zeroFalsePositivesDesc')}
                   variant="default"
                   size="sm"
                   showIcon={false}
@@ -471,7 +471,7 @@ export default function HomePage() {
                 <TrustBadge
                   type="secure"
                   label={t('features.trustIndicators.uptime')}
-                  description="High availability infrastructure"
+                  description={t('features.trustIndicators.uptimeDesc')}
                   variant="default"
                   size="sm"
                   showIcon={false}
@@ -598,7 +598,7 @@ export default function HomePage() {
                       {/* Metrics */}
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         <div>
-                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-1">Audit</div>
+                          <div className="text-2xl sm:text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-1">{t('hero.page.auditMetricValue')}</div>
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.thirdPartyVerified')}</div>
                         </div>
                         <div>
@@ -606,7 +606,7 @@ export default function HomePage() {
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.sourceCode')}</div>
                         </div>
                         <div>
-                          <div className="text-2xl sm:text-3xl font-bold text-spectra-purple-600 dark:text-spectra-purple-500 mb-1">Fast</div>
+                          <div className="text-2xl sm:text-3xl font-bold text-spectra-purple-600 dark:text-spectra-purple-500 mb-1">{t('hero.page.fastMetricValue')}</div>
                           <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.scanTime')}</div>
                         </div>
                       </div>

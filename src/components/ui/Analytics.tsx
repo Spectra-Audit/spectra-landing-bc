@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 // Type declaration for gtag
 declare global {
@@ -38,6 +39,7 @@ function readStoredConsent(): ConsentData | null {
 }
 
 export default function Analytics() {
+  const t = useTranslations('cookieConsent')
   // Lazy initializer reads localStorage once on mount — no set-in-effect needed
   const [consent, setConsent] = useState<ConsentData | null>(readStoredConsent)
   const [showBanner, setShowBanner] = useState<boolean>(() => {
@@ -186,10 +188,10 @@ export default function Analytics() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex-1">
             <p className="text-white text-sm mb-2">
-              <span className="font-medium">Privacy Notice:</span> We use cookies to enhance your experience and analyze site traffic.
+              <span className="font-medium">{t('noticeLabel')}</span> {t('message')}
             </p>
             <p className="text-neutral-400 text-xs">
-              Essential cookies are required for basic functionality. Analytics cookies help us improve our service.
+              {t('details')}
             </p>
           </div>
 
@@ -198,19 +200,19 @@ export default function Analytics() {
               onClick={() => handleAccept({ analytics: true, marketing: false })}
               className="px-4 py-2 bg-security-green text-white rounded hover:bg-security-green/90 transition-colors text-sm font-medium"
             >
-              Accept Essential
+              {t('acceptEssential')}
             </button>
             <button
               onClick={() => handleAccept({ analytics: true, marketing: true })}
               className="px-4 py-2 bg-primary-600 text-white rounded hover:bg-primary-700 transition-colors text-sm font-medium"
             >
-              Accept All
+              {t('acceptAll')}
             </button>
             <button
               onClick={handleReject}
               className="px-4 py-2 border border-neutral-600 text-neutral-300 rounded hover:bg-neutral-800 transition-colors text-sm"
             >
-              Reject All
+              {t('rejectAll')}
             </button>
           </div>
         </div>

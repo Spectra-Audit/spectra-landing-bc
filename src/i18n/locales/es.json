@@ -133,7 +133,23 @@
       "expertSupport": "Documentación y Soporte de la Comunidad",
       "expertSupportDesc": "Documentación abierta y recursos comunitarios para ayudarte a interpretar los hallazgos",
       "communityDriven": "Impulsado por la Comunidad",
-      "communityDrivenDesc": "Desarrollo transparente e impulsado por la comunidad"
+      "communityDrivenDesc": "Desarrollo transparente e impulsado por la comunidad",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "Verificable Públicamente",
+          "description": "Datos de auditoría que cualquiera puede verificar"
+        },
+        "verifiableResults": {
+          "label": "Resultados Verificables",
+          "description": "Metodología de auditoría transparente"
+        },
+        "aiOrchestrated": {
+          "label": "Orquestado por IA",
+          "description": "Pipeline de análisis de 5 dimensiones"
+        }
+      },
+      "auditMetricValue": "Auditoría",
+      "fastMetricValue": "Rápido"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "Análisis Bajo Demanda",
       "zeroFalsePositives": "Detección de Alta Precisión",
-      "uptime": "Infraestructura de Alta Disponibilidad"
+      "uptime": "Infraestructura de Alta Disponibilidad",
+      "monitoringDesc": "Análisis con IA al enviar",
+      "zeroFalsePositivesDesc": "Precisión verificada por IA",
+      "uptimeDesc": "Infraestructura de alta disponibilidad"
     },
     "lossPrevention": "Detección avanzada de amenazas para protocolos DeFi"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "Puntuación de 5 Dimensiones",
       "description": "Código, Distribución, Tokenomía, Liquidez y Sentimiento se puntúan independientemente en paralelo — luego se ponderan en una puntuación de seguridad compuesta."
+    },
+    "diagram": {
+      "ariaLabel": "Canalización de auditoría paralela: cinco analizadores independientes — Código, Distribución, Tokenomía, Liquidez y Sentimiento — se ejecutan simultáneamente y convergen en una única puntuación de seguridad compuesta.",
+      "lanes": {
+        "code": "Código",
+        "distribution": "Distribución",
+        "tokenomics": "Tokenomía",
+        "liquidity": "Liquidez",
+        "sentiment": "Sentimiento"
+      },
+      "compositeLine1": "Puntuación",
+      "compositeLine2": "Compuesta",
+      "subtitle": "5 analizadores en paralelo → compuesto ponderado"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "Referencia Cruzada de Auditorías Externas",
       "description": "Cuando las auditorías humanas profesionales están disponibles para un proyecto, nuestros hallazgos se comparan con el informe. Las discrepancias se incorporan al refinamiento del modelo."
+    },
+    "diagram": {
+      "ariaLabel": "Bucle de retroalimentación de mejora continua con forma de escudo: las auditorías informan los comentarios de los usuarios, que se ponderan según la reputación del revisor durante la evaluación y luego se usan para calibrar y reentrenar el modelo para la siguiente auditoría.",
+      "nodes": {
+        "audit": "Auditoría",
+        "feedback": "Comentarios",
+        "evaluation": "Evaluación",
+        "calibration": "Calibración",
+        "retraining": "Reentrenamiento"
+      },
+      "centerLine1": "Aprendizaje",
+      "centerLine2": "Continuo"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "Una puntuación de seguridad alta NO garantiza que un proyecto sea seguro. Las puntuaciones reflejan el estado de los datos disponibles en el momento del análisis.",
     "doYourResearch": "Realice siempre su propia investigación (DYOR) antes de tomar cualquier decisión de inversión, despliegue o integración.",
     "toolPurpose": "Spectra Audit es una herramienta informativa diseñada para ayudar a los usuarios a entender las consideraciones de seguridad detrás de un proyecto. No constituye asesoramiento financiero, legal ni de inversión."
+  },
+  "grades": {
+    "excellent": "Excelente",
+    "good": "Bueno",
+    "fair": "Aceptable",
+    "poor": "Deficiente",
+    "critical": "Crítico",
+    "needsWork": "Necesita Mejoras",
+    "security": "Seguridad",
+    "labelFormat": "Grado {letter} - {label}",
+    "descriptions": {
+      "excellent": "No se encontraron vulnerabilidades críticas",
+      "good": "Problemas menores identificados",
+      "fair": "Riesgos de seguridad moderados",
+      "poor": "Problemas de seguridad significativos",
+      "critical": "Múltiples vulnerabilidades críticas"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "Aviso de Privacidad:",
+    "message": "Usamos cookies para mejorar tu experiencia y analizar el tráfico del sitio.",
+    "details": "Las cookies esenciales son necesarias para la funcionalidad básica. Las cookies de análisis nos ayudan a mejorar nuestro servicio.",
+    "acceptEssential": "Aceptar Esenciales",
+    "acceptAll": "Aceptar Todas",
+    "rejectAll": "Rechazar Todas"
   }
 }

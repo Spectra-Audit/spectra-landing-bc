@@ -133,7 +133,23 @@
       "expertSupport": "문서 및 커뮤니티 지원",
       "expertSupportDesc": "발견 사항을 해석하는 데 도움이 되는 공개 문서 및 커뮤니티 리소스",
       "communityDriven": "커뮤니티 주도",
-      "communityDrivenDesc": "투명하고 커뮤니티 주도적인 개발"
+      "communityDrivenDesc": "투명하고 커뮤니티 주도적인 개발",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "공개 검증 가능",
+          "description": "누구나 확인할 수 있는 감사 데이터"
+        },
+        "verifiableResults": {
+          "label": "검증 가능한 결과",
+          "description": "투명한 감사 방법론"
+        },
+        "aiOrchestrated": {
+          "label": "AI 오케스트레이션",
+          "description": "5차원 분석 파이프라인"
+        }
+      },
+      "auditMetricValue": "감사",
+      "fastMetricValue": "빠름"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "온디맨드 분석",
       "zeroFalsePositives": "고정밀 탐지",
-      "uptime": "고가용성 인프라"
+      "uptime": "고가용성 인프라",
+      "monitoringDesc": "제출 시 AI 분석",
+      "zeroFalsePositivesDesc": "AI로 검증된 정확성",
+      "uptimeDesc": "고가용성 인프라"
     },
     "lossPrevention": "DeFi 프로토콜을 위한 고급 위협 탐지"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "5차원 스코어링",
       "description": "코드, 분배, 토크노믹스, 유동성, 감성이 병렬로 독립적으로 채점됩니다 — 그런 다음 복합 보안 점수로 가중치가 부여됩니다."
+    },
+    "diagram": {
+      "ariaLabel": "병렬 감사 파이프라인: 코드, 분포, 토크노믹스, 유동성, 감성의 다섯 가지 독립 분석기가 동시에 실행되어 하나의 복합 보안 점수로 수렴합니다.",
+      "lanes": {
+        "code": "코드",
+        "distribution": "분포",
+        "tokenomics": "토크노믹스",
+        "liquidity": "유동성",
+        "sentiment": "감성"
+      },
+      "compositeLine1": "복합",
+      "compositeLine2": "점수",
+      "subtitle": "5개 분석기 병렬 실행 → 가중 복합 점수"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "외부 감사 교차 참조",
       "description": "프로젝트에 대한 전문 인간 감사가 제공되면 우리의 발견이 보고서와 비교됩니다. 불일치는 모델 개선에 피드백됩니다."
+    },
+    "diagram": {
+      "ariaLabel": "방패 모양의 지속적 개선 피드백 루프: 감사가 사용자 피드백에 반영되고, 이 피드백은 평가 시 검토자 평판에 따라 가중치가 부여된 후 다음 감사를 위해 모델을 보정하고 재학습하는 데 사용됩니다.",
+      "nodes": {
+        "audit": "감사",
+        "feedback": "사용자 피드백",
+        "evaluation": "평가",
+        "calibration": "보정",
+        "retraining": "모델 재학습"
+      },
+      "centerLine1": "지속적",
+      "centerLine2": "학습 루프"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "높은 보안 점수가 프로젝트가 안전하다는 것을 보장하지는 않습니다. 점수는 분석 시점에 사용 가능한 데이터의 상태를 반영합니다.",
     "doYourResearch": "투자, 배포 또는 통합 결정을 내리기 전에 항상 자신의 조사(DYOR)를 수행하십시오.",
     "toolPurpose": "Spectra Audit는 사용자가 프로젝트 뒤의 보안 고려 사항을 이해하는 데 도움이 되도록 설계된 정보 도구입니다. 재무, 법률 또는 투자 조언이 아닙니다."
+  },
+  "grades": {
+    "excellent": "우수",
+    "good": "양호",
+    "fair": "보통",
+    "poor": "미흡",
+    "critical": "심각",
+    "needsWork": "개선 필요",
+    "security": "보안",
+    "labelFormat": "{letter}등급 - {label}",
+    "descriptions": {
+      "excellent": "심각한 취약점이 발견되지 않음",
+      "good": "사소한 문제 발견",
+      "fair": "중간 수준의 보안 위험",
+      "poor": "중대한 보안 우려",
+      "critical": "여러 심각한 취약점"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "개인정보 고지:",
+    "message": "당사는 사용자 경험 향상과 사이트 트래픽 분석을 위해 쿠키를 사용합니다.",
+    "details": "필수 쿠키는 기본 기능에 필요합니다. 분석 쿠키는 서비스 개선에 도움이 됩니다.",
+    "acceptEssential": "필수만 허용",
+    "acceptAll": "모두 허용",
+    "rejectAll": "모두 거부"
   }
 }

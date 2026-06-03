@@ -133,7 +133,23 @@
       "expertSupport": "ドキュメント & コミュニティサポート",
       "expertSupportDesc": "発見を解釈するのに役立つオープンなドキュメントとコミュニティリソース",
       "communityDriven": "コミュニティ主導",
-      "communityDrivenDesc": "透明性が高く、コミュニティ主導の開発"
+      "communityDrivenDesc": "透明性が高く、コミュニティ主導の開発",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "公開検証可能",
+          "description": "誰でも確認できる監査データ"
+        },
+        "verifiableResults": {
+          "label": "検証可能な結果",
+          "description": "透明性のある監査手法"
+        },
+        "aiOrchestrated": {
+          "label": "AIオーケストレーション",
+          "description": "5次元分析パイプライン"
+        }
+      },
+      "auditMetricValue": "監査",
+      "fastMetricValue": "高速"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "オンデマンド分析",
       "zeroFalsePositives": "高精度な検出",
-      "uptime": "高可用性インフラストラクチャ"
+      "uptime": "高可用性インフラストラクチャ",
+      "monitoringDesc": "提出時にAIで分析",
+      "zeroFalsePositivesDesc": "AIで検証された精度",
+      "uptimeDesc": "高可用性インフラ"
     },
     "lossPrevention": "DeFiプロトコル向けの高度な脅威検出"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "5次元スコアリング",
       "description": "コード、配分、トコノミクス、流動性、センチメントは並行して独立してスコア化され — 複合セキュリティスコアに重み付けされます。"
+    },
+    "diagram": {
+      "ariaLabel": "並列監査パイプライン：5つの独立した分析エンジン（コード、配分、トコノミクス、流動性、センチメント）が同時に実行され、単一の複合セキュリティスコアに収束します。",
+      "lanes": {
+        "code": "コード",
+        "distribution": "配分",
+        "tokenomics": "トコノミクス",
+        "liquidity": "流動性",
+        "sentiment": "センチメント"
+      },
+      "compositeLine1": "複合",
+      "compositeLine2": "スコア",
+      "subtitle": "5つの分析エンジンが並列実行 → 加重複合スコア"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "外部監査クロスリファレンス",
       "description": "プロジェクトに対する専門的な人間の監査が利用可能になると、私たちの発見はレポートと比較されます。不一致はモデルの改良にフィードバックされます。"
+    },
+    "diagram": {
+      "ariaLabel": "盾の形をした継続的改善フィードバックループ：監査がユーザーフィードバックに情報を提供し、それが評価時にレビュアーの信頼度に基づいて重み付けされ、次の監査に向けてモデルの較正と再学習に使用されます。",
+      "nodes": {
+        "audit": "監査",
+        "feedback": "ユーザーフィードバック",
+        "evaluation": "評価",
+        "calibration": "較正",
+        "retraining": "モデル再学習"
+      },
+      "centerLine1": "継続的",
+      "centerLine2": "学習ループ"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "高いセキュリティスコアはプロジェクトが安全であることを保証するものではありません。スコアは分析時点で利用可能なデータの状態を反映します。",
     "doYourResearch": "投資、デプロイ、統合の意思決定を行う前に、必ず自分自身のリサーチ（DYOR）を行ってください。",
     "toolPurpose": "Spectra Auditは、ユーザーがプロジェクトの背後にあるセキュリティ上の考慮事項を理解するのに役立つように設計された情報ツールです。財務、法律、投資の助言ではありません。"
+  },
+  "grades": {
+    "excellent": "優秀",
+    "good": "良好",
+    "fair": "普通",
+    "poor": "不十分",
+    "critical": "重大",
+    "needsWork": "要改善",
+    "security": "セキュリティ",
+    "labelFormat": "グレード {letter} - {label}",
+    "descriptions": {
+      "excellent": "重大な脆弱性は見つかりませんでした",
+      "good": "軽微な問題を検出",
+      "fair": "中程度のセキュリティリスク",
+      "poor": "重大なセキュリティ上の懸念",
+      "critical": "複数の重大な脆弱性"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "プライバシー通知：",
+    "message": "当サイトでは、体験向上とトラフィック分析のために Cookie を使用しています。",
+    "details": "必須 Cookie は基本機能に必要です。分析 Cookie はサービス改善に役立ちます。",
+    "acceptEssential": "必須のみ許可",
+    "acceptAll": "すべて許可",
+    "rejectAll": "すべて拒否"
   }
 }

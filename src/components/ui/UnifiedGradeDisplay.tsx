@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import { Shield, ShieldCheck, ShieldAlert, ShieldX, ShieldMinus, CheckCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -30,6 +31,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
   className,
   variant = 'default'
 }) => {
+  const t = useTranslations('grades')
   // Normalize score to 0-100 range
   const normalizedScore = Math.max(0, Math.min(100, score))
 
@@ -47,8 +49,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
       return {
         icon: ShieldCheck,
         gradeLetter: 'A',
-        label: 'Excellent',
-        description: 'No critical vulnerabilities found',
+        tier: 'excellent' as const,
         color: 'text-spectra-green-700 dark:text-spectra-green-500',
         bgGradient: 'from-spectra-green-500 to-spectra-green-600',
         borderColor: 'border-spectra-green-500/50',
@@ -59,8 +60,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
       return {
         icon: Shield,
         gradeLetter: 'B',
-        label: 'Good',
-        description: 'Minor issues identified',
+        tier: 'good' as const,
         color: 'text-spectra-blue-700 dark:text-spectra-blue-500',
         bgGradient: 'from-spectra-blue-500 to-spectra-blue-600',
         borderColor: 'border-spectra-blue-500/50',
@@ -71,8 +71,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
       return {
         icon: ShieldAlert,
         gradeLetter: 'C',
-        label: 'Fair',
-        description: 'Moderate security risks',
+        tier: 'fair' as const,
         color: 'text-yellow-700 dark:text-warning-primary',
         bgGradient: 'from-warning-primary to-warning-secondary',
         borderColor: 'border-warning-primary/50',
@@ -83,8 +82,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
       return {
         icon: ShieldMinus,
         gradeLetter: 'D',
-        label: 'Poor',
-        description: 'Significant security concerns',
+        tier: 'poor' as const,
         color: 'text-orange-700 dark:text-orange-400',
         bgGradient: 'from-orange-500 to-red-500',
         borderColor: 'border-orange-500/50 dark:border-orange-400/50',
@@ -95,8 +93,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
       return {
         icon: ShieldX,
         gradeLetter: 'F',
-        label: 'Critical',
-        description: 'Multiple critical vulnerabilities',
+        tier: 'critical' as const,
         color: 'text-red-700 dark:text-error-primary',
         bgGradient: 'from-error-primary to-error-secondary',
         borderColor: 'border-error-primary/50',
@@ -108,6 +105,8 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
 
   const config = getGradeConfig(normalizedScore)
   const Icon = config.icon
+  const label = t(config.tier)
+  const description = t(`descriptions.${config.tier}`)
 
   if (variant === 'compact') {
     return (
@@ -127,7 +126,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
           </span>
           {showLabel && (
             <span className={cn('text-sm font-medium', config.color)}>
-              {config.label}
+              {label}
             </span>
           )}
         </div>
@@ -190,13 +189,13 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
         <div className="text-center space-y-2">
           {/* Grade Letter */}
           <div className={cn('font-display font-extrabold', fontSize, config.color, 'text-gradient-spectra')}>
-            Grade {config.gradeLetter} - {config.label}
+            {t('labelFormat', { letter: config.gradeLetter, label })}
           </div>
 
           {/* Description */}
           {showDescription && (
             <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-[250px] leading-relaxed">
-              {config.description}
+              {description}
             </p>
           )}
 
@@ -204,7 +203,7 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
           {variant === 'detailed' && (
             <div className="flex items-center justify-center gap-4 mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-700/50">
               <div className="text-center">
-                <div className="text-xs text-neutral-600 dark:text-neutral-500 uppercase tracking-wide">Security</div>
+                <div className="text-xs text-neutral-600 dark:text-neutral-500 uppercase tracking-wide">{t('security')}</div>
                 <div className={cn('font-mono font-bold', config.color)}>
                   {normalizedScore >= 90 ? 'A+' : normalizedScore >= 75 ? 'A' : 'B'}
                 </div>

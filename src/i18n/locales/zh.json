@@ -133,7 +133,23 @@
       "expertSupport": "文档与社区支持",
       "expertSupportDesc": "开放的文档和社区资源帮助您解读审计发现",
       "communityDriven": "社区驱动",
-      "communityDrivenDesc": "透明、社区驱动的开发"
+      "communityDrivenDesc": "透明、社区驱动的开发",
+      "authorityBadges": {
+        "publiclyVerifiable": {
+          "label": "可公开验证",
+          "description": "任何人都可核查的审计数据"
+        },
+        "verifiableResults": {
+          "label": "可验证的结果",
+          "description": "透明的审计方法"
+        },
+        "aiOrchestrated": {
+          "label": "AI 编排",
+          "description": "5 维分析流水线"
+        }
+      },
+      "auditMetricValue": "审计",
+      "fastMetricValue": "快速"
     }
   },
   "howScoresWork": {
@@ -236,7 +252,10 @@
     "trustIndicators": {
       "monitoring": "按需分析",
       "zeroFalsePositives": "高精度检测",
-      "uptime": "高可用性基础设施"
+      "uptime": "高可用性基础设施",
+      "monitoringDesc": "提交时进行 AI 分析",
+      "zeroFalsePositivesDesc": "AI 验证的准确性",
+      "uptimeDesc": "高可用基础设施"
     },
     "lossPrevention": "DeFi 协议的高级威胁检测"
   },
@@ -593,6 +612,19 @@
     "multiDimensional": {
       "title": "5 维评分",
       "description": "代码、分布、代币经济学、流动性和情绪并行独立评分 — 然后加权为综合安全评分。"
+    },
+    "diagram": {
+      "ariaLabel": "并行审计流水线：五个独立分析器——代码、分配、代币经济学、流动性和情绪——同时运行并汇聚成单一的综合安全评分。",
+      "lanes": {
+        "code": "代码",
+        "distribution": "分配",
+        "tokenomics": "代币经济学",
+        "liquidity": "流动性",
+        "sentiment": "情绪"
+      },
+      "compositeLine1": "综合",
+      "compositeLine2": "评分",
+      "subtitle": "5 个分析器并行运行 → 加权综合"
     }
   },
   "learningLoop": {
@@ -613,6 +645,18 @@
     "externalAudits": {
       "title": "外部审计交叉参考",
       "description": "当项目获得专业人工审计时，我们的发现会与报告进行比较。差异将反馈到模型优化中。"
+    },
+    "diagram": {
+      "ariaLabel": "盾牌形状的持续改进反馈循环：审计为用户反馈提供依据，用户反馈在评估期间根据审阅者信誉进行加权，然后用于校准和重新训练模型以进行下一次审计。",
+      "nodes": {
+        "audit": "审计",
+        "feedback": "用户反馈",
+        "evaluation": "评估",
+        "calibration": "校准",
+        "retraining": "模型再训练"
+      },
+      "centerLine1": "持续",
+      "centerLine2": "学习循环"
     }
   },
   "disclaimer": {
@@ -622,5 +666,30 @@
     "noGuarantee": "高安全评分不保证项目是安全的。评分反映分析时可用数据的状态。",
     "doYourResearch": "在做出任何投资、部署或集成决策之前，请始终进行自己的研究 (DYOR)。",
     "toolPurpose": "Spectra Audit 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。"
+  },
+  "grades": {
+    "excellent": "优秀",
+    "good": "良好",
+    "fair": "一般",
+    "poor": "较差",
+    "critical": "严重",
+    "needsWork": "需改进",
+    "security": "安全",
+    "labelFormat": "{letter} 级 - {label}",
+    "descriptions": {
+      "excellent": "未发现严重漏洞",
+      "good": "发现轻微问题",
+      "fair": "中等安全风险",
+      "poor": "重大安全隐患",
+      "critical": "多个严重漏洞"
+    }
+  },
+  "cookieConsent": {
+    "noticeLabel": "隐私声明：",
+    "message": "我们使用 Cookie 来提升您的体验并分析网站流量。",
+    "details": "基本 Cookie 是基本功能所必需的。分析 Cookie 帮助我们改进服务。",
+    "acceptEssential": "接受基本",
+    "acceptAll": "全部接受",
+    "rejectAll": "全部拒绝"
   }
 }
