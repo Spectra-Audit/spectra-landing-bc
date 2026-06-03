@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "Security-First Architecture",
       "bestPractices": "Industry Best Practices",
-      "openSource": "Open Source"
+      "openSource": "Publicly Verifiable"
     },
     "headline": "Research Project Security Before You Invest",
     "subheadline": "Multi-dimensional security scores across multiple DeFi ecosystems. Understand risks before you invest with comprehensive analysis you can verify.",
@@ -66,21 +66,21 @@
       "trustedBy": "Built for the Web3 ecosystem",
       "defiLeader": "DeFi Security Insights",
       "protocols": "Multi-Chain Support",
-      "disclaimer": "Open-source platform"
+      "disclaimer": "Publicly verifiable platform"
     },
     "page": {
       "heroTitle": "Smart Contract Security Audits",
       "heroSubtitle": "in Seconds, Not Weeks",
       "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security analysis in under 20 minutes. No registration required.",
-      "securityAuditTitle": "Open Source — Publicly Verifiable",
+      "securityAuditTitle": "Publicly Verifiable Audits",
       "securityAuditSubtitle": "Transparent methodology you can inspect, audit, and reproduce",
       "thirdPartyAudited": "Reproducible Findings",
       "thirdPartyAuditedDesc": "Every finding ships with the evidence and reasoning behind it",
       "verified": "Verifiable",
-      "openSource": "Open Source",
-      "openSourceDesc": "Publicly verifiable code and analysis pipeline on GitHub",
+      "openSource": "Publicly Verifiable",
+      "openSourceDesc": "Audit findings and on-chain data anyone can independently verify",
       "transparent": "Transparent",
-      "trustMessage": "Open-source platform with publicly verifiable audit methodology. Anyone can inspect our scoring logic, analysis pipeline, and findings reproducibility on GitHub.",
+      "trustMessage": "Every audit ships with publicly verifiable evidence. Anyone can independently reproduce our findings against on-chain data and inspect the reasoning behind every score.",
       "featuresTitle": "Next-Generation Security Audits",
       "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra Audit provides continuous, verifiable security monitoring that keeps up with your code.",
       "realTimeMonitoring": "On-Demand AI Analysis",
@@ -93,16 +93,16 @@
       "automatedLabel": "AI-orchestrated analysis",
       "verifiableEvidence": "Verifiable Evidence",
       "verifiableEvidenceDesc": "Every security claim includes reproducible AI diffs and evidence. See exactly how we found each issue with fully transparent methodology.",
-      "openSourceCodebase": "Open source codebase",
-      "publicGitHubRepo": "Public GitHub repository",
+      "openSourceCodebase": "Reproducible findings",
+      "publicGitHubRepo": "Verifiable against on-chain data",
       "comprehensiveCoverage": "Comprehensive Coverage",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes — smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ vulnerability categories",
       "detectionRate": "Up to 95% detection of known issues",
-      "productionReady": "Verifiable & Open Source",
-      "productionReadyDesc": "Open-source analysis pipeline built for developers and researchers who want to inspect, reproduce, and verify every step of the audit.",
-      "thirdPartyVerified": "Open Source",
-      "sourceCode": "Source Code",
+      "productionReady": "Verifiable & Transparent",
+      "productionReadyDesc": "A transparent analysis pipeline built for developers and researchers who want to inspect, reproduce, and verify every step of the audit.",
+      "thirdPartyVerified": "Verifiable Results",
+      "sourceCode": "Transparent",
       "scanTime": "≤20-Min Audits",
       "aiPoweredAnalysis": "AI-Powered Analysis",
       "aiPoweredAnalysisDesc": "Fast, automated security scanning",
@@ -133,7 +133,7 @@
       "expertSupport": "Documentation & Community Support",
       "expertSupportDesc": "Open documentation and community resources to help you interpret findings",
       "communityDriven": "Community-Driven",
-      "communityDrivenDesc": "Open source with transparent development"
+      "communityDrivenDesc": "Transparent, community-driven development"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "Verifiable Evidence",
       "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified — no black boxes.",
       "metric": "Fully transparent methodology",
-      "detail": "Open source with public GitHub repository"
+      "detail": "Findings verifiable against on-chain data"
     },
     "comprehensive": {
       "title": "Comprehensive Coverage",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "Community-Driven Insights",
         "description": "Community-driven security insights for the Web3 ecosystem",
-        "disclaimer": "Open-source platform"
+        "disclaimer": "Publicly verifiable platform"
       }
     },
     "urgency": "Start your free comprehensive audit today"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Built for the Web3 ecosystem",
     "liveAudits": "Audits running on-demand",
-    "enterpriseSecurity": "Open-source security",
+    "enterpriseSecurity": "Publicly verifiable",
     "protected": "Community-driven"
   },
   "statsBanner": {

@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "Sicherheitsorientierte Architektur",
       "bestPractices": "Industry-Best-Practices",
-      "openSource": "Open Source"
+      "openSource": "Öffentlich verifizierbar"
     },
     "headline": "Projektsicherheit vor Investition prüfen",
     "subheadline": "Multidimensionale Sicherheitsbewertungen über mehrere DeFi-Ökosysteme. Verstehen Sie Risiken vor der Investition mit umfassender Analyse, die Sie verifizieren können.",
@@ -66,21 +66,21 @@
       "trustedBy": "Für das Web3-Ökosystem entwickelt",
       "defiLeader": "DeFi-Sicherheitsinformationen",
       "protocols": "Multi-Chain-Unterstützung",
-      "disclaimer": "Open-Source-Plattform"
+      "disclaimer": "Öffentlich verifizierbare Plattform"
     },
     "page": {
       "heroTitle": "Smart Contract Sicherheitsaudits",
       "heroSubtitle": "in Sekunden, nicht Wochen",
       "heroDescription": "KI-gestützte Smart Contract Analyse mit verifizierbaren Nachweisen. Erhalten Sie umfassende Sicherheitsanalysen in unter 20 Minuten. Keine Registrierung erforderlich.",
-      "securityAuditTitle": "Open Source — Öffentlich Verifizierbar",
+      "securityAuditTitle": "Öffentlich verifizierbare Audits",
       "securityAuditSubtitle": "Transparente Methodik, die Sie inspizieren, auditieren und reproduzieren können",
-      "thirdPartyAudited": "Open Source",
+      "thirdPartyAudited": "Reproduzierbare Befunde",
       "thirdPartyAuditedDesc": "Jeder Befund kommt mit den Beweisen und der Begründung dahinter",
       "verified": "Verifizierbar",
-      "openSource": "Open Source",
-      "openSourceDesc": "Öffentlich verifizierbarer Code und Analyse-Pipeline auf GitHub",
+      "openSource": "Öffentlich verifizierbar",
+      "openSourceDesc": "Audit-Befunde und On-Chain-Daten, die jeder unabhängig verifizieren kann",
       "transparent": "Transparent",
-      "trustMessage": "Open-Source-Plattform mit öffentlich verifizierbarer Audit-Methodik",
+      "trustMessage": "Jedes Audit wird mit öffentlich verifizierbaren Belegen ausgeliefert. Jeder kann unsere Befunde unabhängig anhand von On-Chain-Daten reproduzieren und die Begründung hinter jeder Bewertung einsehen.",
       "featuresTitle": "Sicherheitsaudits der nächsten Generation",
       "featuresSubtitle": "Traditionelle Audits sind langsam, teuer und schnell veraltet. Spectra Audit bietet kontinuierliche, verifizierbare Sicherheitsüberwachung, die mit Ihrem Code Schritt hält.",
       "realTimeMonitoring": "KI-Analyse auf Abruf",
@@ -93,16 +93,16 @@
       "automatedLabel": "KI-orchestrierte Analyse",
       "verifiableEvidence": "Verifizierbare Nachweise",
       "verifiableEvidenceDesc": "Jede Sicherheitsbehauptung enthält reproduzierbare KI-Diffs und Nachweise. Sehen Sie genau, wie wir jedes Problem mit vollständig transparenter Methodik gefunden haben.",
-      "openSourceCodebase": "Open-Source-Codebasis",
-      "publicGitHubRepo": "Öffentliches GitHub-Repository",
+      "openSourceCodebase": "Reproduzierbare Befunde",
+      "publicGitHubRepo": "Anhand von On-Chain-Daten verifizierbar",
       "comprehensiveCoverage": "Umfassende Abdeckung",
       "comprehensiveCoverageDesc": "Fortschrittliche KI-Modelle erkennen ein breites Spektrum bekannter Schwachstellenklassen — Smart Contract Bugs, wirtschaftliche Angriffsvektoren und Konzentrationsrisiken.",
       "vulnerabilityCategories": "15+ Schwachstellenkategorien",
       "detectionRate": "Bis zu 95% Erkennung bekannter Probleme",
-      "productionReady": "Verifizierbar & Open Source",
-      "productionReadyDesc": "Open-Source-Analyse-Pipeline, entwickelt für Entwickler und Forscher, die jeden Schritt des Audits inspizieren, reproduzieren und verifizieren möchten.",
-      "thirdPartyVerified": "Open Source",
-      "sourceCode": "Quellcode",
+      "productionReady": "Verifizierbar & transparent",
+      "productionReadyDesc": "Eine transparente Analyse-Pipeline, entwickelt für Entwickler und Forscher, die jeden Schritt des Audits inspizieren, reproduzieren und verifizieren möchten.",
+      "thirdPartyVerified": "Verifizierbare Ergebnisse",
+      "sourceCode": "Transparent",
       "scanTime": "≤20-Min Audits",
       "aiPoweredAnalysis": "KI-gestützte Analyse",
       "aiPoweredAnalysisDesc": "Schnelle, automatisierte Sicherheitsprüfung",
@@ -133,7 +133,7 @@
       "expertSupport": "Dokumentation & Community-Support",
       "expertSupportDesc": "Offene Dokumentation und Community-Ressourcen, die Ihnen helfen, Befunde zu interpretieren",
       "communityDriven": "Community-Getrieben",
-      "communityDrivenDesc": "Open Source mit transparenter Entwicklung"
+      "communityDrivenDesc": "Transparente, community-getriebene Entwicklung"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "Verifizierbare Nachweise",
       "description": "Jeder Befund enthält die Begründung, die Quelldaten und die reproduzierbaren Beweise dahinter. Sehen Sie genau, wie jedes Problem identifiziert wurde — keine Black Boxes.",
       "metric": "Vollständig transparente Methodik",
-      "detail": "Open Source mit öffentlichem GitHub-Repository"
+      "detail": "Befunde anhand von On-Chain-Daten verifizierbar"
     },
     "comprehensive": {
       "title": "Umfassende Abdeckung",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "Community-getriebene Einblicke",
         "description": "Community-getriebene Sicherheitsinformationen für das Web3-Ökosystem",
-        "disclaimer": "Open-Source-Plattform"
+        "disclaimer": "Öffentlich verifizierbare Plattform"
       }
     },
     "urgency": "Starten Sie noch heute Ihr kostenloses, umfassendes Audit"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Für das Web3-Ökosystem entwickelt",
     "liveAudits": "Audits auf Abruf",
-    "enterpriseSecurity": "Open-Source-Sicherheit",
+    "enterpriseSecurity": "Öffentlich verifizierbar",
     "protected": "Community-getrieben"
   },
   "statsBanner": {

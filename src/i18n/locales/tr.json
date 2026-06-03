@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "Öncelikli Güvenlik Mimarisi",
       "bestPractices": "En İyi Uygulamalar",
-      "openSource": "Açık Kaynak"
+      "openSource": "Herkese Açık Şekilde Doğrulanabilir"
     },
     "headline": "Yatırımdan Önce Proje Güvenliğini Araştırın",
     "subheadline": "Birden fazla DeFi ekosisteminde çok boyutlu güvenlik skorları. Doğrulanabilir kapsamlı analiz ile yatırım öncesi riskleri anlayın.",
@@ -66,21 +66,21 @@
       "trustedBy": "Web3 ekosistemi için inşa edildi",
       "defiLeader": "DeFi Güvenlik Öngörüleri",
       "protocols": "Çoklu Zincir Desteği",
-      "disclaimer": "Açık kaynak platform"
+      "disclaimer": "Herkese açık şekilde doğrulanabilir platform"
     },
     "page": {
       "heroTitle": "Akıllı Sözleşme Güvenlik Denetimleri",
       "heroSubtitle": "saniyeler içinde, haftalar değil",
       "heroDescription": "Doğrulanabilir kanıtlarla AI destekli akıllı sözleşme analizi. 20 dakikanın altında kapsamlı güvenlik analizi alın. Kayıt gerekmez.",
-      "securityAuditTitle": "Açık Kaynak — Herkese Açık Şekilde Doğrulanabilir",
+      "securityAuditTitle": "Herkese Açık Şekilde Doğrulanabilir Denetimler",
       "securityAuditSubtitle": "İnceleyebileceğiniz, denetleyebileceğiniz ve yeniden üretebileceğiniz şeffaf metodoloji",
-      "thirdPartyAudited": "Açık Kaynak",
+      "thirdPartyAudited": "Yeniden üretilebilir bulgular",
       "thirdPartyAuditedDesc": "Her bulgu, arkasındaki kanıt ve gerekçeyle birlikte gelir",
       "verified": "Doğrulanabilir",
-      "openSource": "Açık Kaynak",
-      "openSourceDesc": "GitHub'da herkese açık şekilde doğrulanabilir kod ve analiz hattı",
+      "openSource": "Herkese Açık Şekilde Doğrulanabilir",
+      "openSourceDesc": "Herkesin bağımsız olarak doğrulayabileceği denetim bulguları ve zincir üstü veriler",
       "transparent": "Şeffaf",
-      "trustMessage": "Herkese açık şekilde doğrulanabilir denetim metodolojisine sahip açık kaynak platform",
+      "trustMessage": "Her denetim, herkese açık şekilde doğrulanabilir kanıtlarla birlikte gelir. Herkes bulgularımızı zincir üstü verilere karşı bağımsız olarak yeniden üretebilir ve her skorun arkasındaki mantığı inceleyebilir.",
       "featuresTitle": "Yeni Nesil Güvenlik Denetimleri",
       "featuresSubtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra Audit, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
       "realTimeMonitoring": "Talep Üzerine AI Analizi",
@@ -93,16 +93,16 @@
       "automatedLabel": "AI tarafından düzenlenen analiz",
       "verifiableEvidence": "Doğrulanabilir Kanıt",
       "verifiableEvidenceDesc": "Her güvenlik iddiası yeniden üretilebilir AI farkları ve kanıtlar içerir. Tamamen şeffaf bir metodolojiyle her sorunu nasıl bulduğumuzu tam olarak görün.",
-      "openSourceCodebase": "Açık kaynak kod tabanı",
-      "publicGitHubRepo": "Herkese açık GitHub deposu",
+      "openSourceCodebase": "Yeniden üretilebilir bulgular",
+      "publicGitHubRepo": "Zincir üstü verilere karşı doğrulanabilir",
       "comprehensiveCoverage": "Kapsamlı Kapsama",
       "comprehensiveCoverageDesc": "Gelişmiş AI modelleri bilinen geniş bir güvenlik açığı sınıfı yelpazesini tespit eder — akıllı sözleşme hataları, ekonomik saldırı vektörleri ve yoğunlaşma riskleri.",
       "vulnerabilityCategories": "15+ güvenlik açığı kategorisi",
       "detectionRate": "Bilinen sorunların %95'ine kadar tespiti",
-      "productionReady": "Doğrulanabilir ve Açık Kaynak",
-      "productionReadyDesc": "Denetimin her adımını incelemek, yeniden üretmek ve doğrulamak isteyen geliştiriciler ve araştırmacılar için inşa edilen açık kaynak analiz hattı.",
-      "thirdPartyVerified": "Açık Kaynak",
-      "sourceCode": "Kaynak Kodu",
+      "productionReady": "Doğrulanabilir ve Şeffaf",
+      "productionReadyDesc": "Denetimin her adımını incelemek, yeniden üretmek ve doğrulamak isteyen geliştiriciler ve araştırmacılar için inşa edilen şeffaf bir analiz hattı.",
+      "thirdPartyVerified": "Doğrulanabilir Sonuçlar",
+      "sourceCode": "Şeffaf",
       "scanTime": "≤20 Dakika Denetimler",
       "aiPoweredAnalysis": "AI Destekli Analiz",
       "aiPoweredAnalysisDesc": "Hızlı, otomatik güvenlik taraması",
@@ -133,7 +133,7 @@
       "expertSupport": "Dokümantasyon ve Topluluk Desteği",
       "expertSupportDesc": "Bulguları yorumlamanıza yardımcı olacak açık dokümantasyon ve topluluk kaynakları",
       "communityDriven": "Topluluk Tabanlı",
-      "communityDrivenDesc": "Şeffaf geliştirmeyle açık kaynak"
+      "communityDrivenDesc": "Şeffaf, topluluk tabanlı geliştirme"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "Doğrulanabilir Kanıtlar",
       "description": "Her bulgu, arkasındaki mantığı, kaynak verileri ve yeniden üretilebilir kanıtları içerir. Her sorunun nasıl tanımlandığını tam olarak görün — kara kutu yok.",
       "metric": "Tamamen şeffaf metodoloji",
-      "detail": "Açık kaynaklı herkese açık GitHub deposu ile"
+      "detail": "Bulgular zincir üstü verilere karşı doğrulanabilir"
     },
     "comprehensive": {
       "title": "Kapsamlı Kapsama",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "Topluluk Tabanlı Öngörüler",
         "description": "Web3 ekosistemi için topluluk tabanlı güvenlik öngörüleri",
-        "disclaimer": "Açık kaynak platform"
+        "disclaimer": "Herkese açık şekilde doğrulanabilir platform"
       }
     },
     "urgency": "Ücretsiz kapsamlı denetiminizi bugün başlatın"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Web3 ekosistemi için inşa edildi",
     "liveAudits": "Talep üzerine çalışan denetimler",
-    "enterpriseSecurity": "Açık kaynak güvenlik",
+    "enterpriseSecurity": "Herkese açık şekilde doğrulanabilir",
     "protected": "Topluluk tabanlı"
   },
   "statsBanner": {

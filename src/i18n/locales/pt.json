@@ -36,7 +36,7 @@
     "authority": {
       "securityFirst": "Arquitetura Prioritária de Segurança",
       "bestPractices": "Melhores Práticas",
-      "openSource": "Código Aberto"
+      "openSource": "Verificável Publicamente"
     },
     "headline": "Pesquise a Segurança do Projeto Antes de Investir",
     "subheadline": "Pontuações de segurança multidimensionais em múltiplos ecossistemas DeFi. Entenda os riscos antes de investir com análise abrangente que você pode verificar.",
@@ -66,21 +66,21 @@
       "trustedBy": "Construído para o ecossistema Web3",
       "defiLeader": "Insights de Segurança DeFi",
       "protocols": "Suporte Multi-Cadeia",
-      "disclaimer": "Plataforma de código aberto"
+      "disclaimer": "Plataforma verificável publicamente"
     },
     "page": {
       "heroTitle": "Auditorias de Segurança de Contratos Inteligentes",
       "heroSubtitle": "em Segundos, Não Semanas",
       "heroDescription": "Análise de contratos inteligentes com IA e evidência verificável. Obtenha análise de segurança abrangente em menos de 20 minutos. Sem registro necessário.",
-      "securityAuditTitle": "Código Aberto — Verificável Publicamente",
+      "securityAuditTitle": "Auditorias Verificáveis Publicamente",
       "securityAuditSubtitle": "Metodologia transparente que você pode inspecionar, auditar e reproduzir",
-      "thirdPartyAudited": "Código Aberto",
+      "thirdPartyAudited": "Descobertas reproduzíveis",
       "thirdPartyAuditedDesc": "Cada descoberta é acompanhada pela evidência e raciocínio por trás dela",
       "verified": "Verificável",
-      "openSource": "Código Aberto",
-      "openSourceDesc": "Código e pipeline de análise verificáveis publicamente no GitHub",
+      "openSource": "Verificável Publicamente",
+      "openSourceDesc": "Descobertas de auditoria e dados on-chain que qualquer um pode verificar de forma independente",
       "transparent": "Transparente",
-      "trustMessage": "Plataforma de código aberto com metodologia de auditoria verificável publicamente",
+      "trustMessage": "Cada auditoria vem acompanhada de evidências verificáveis publicamente. Qualquer um pode reproduzir nossas descobertas de forma independente com base em dados on-chain e inspecionar o raciocínio por trás de cada pontuação.",
       "featuresTitle": "Auditorias de Segurança de Próxima Geração",
       "featuresSubtitle": "As auditorias tradicionais são lentas, caras e rapidamente obsoletas. Spectra Audit fornece monitoramento de segurança contínuo e verificável que se mantém atualizado com seu código.",
       "realTimeMonitoring": "Análise IA Sob Demanda",
@@ -93,16 +93,16 @@
       "automatedLabel": "Análise orquestrada por IA",
       "verifiableEvidence": "Evidências Verificáveis",
       "verifiableEvidenceDesc": "Cada afirmação de segurança inclui diffs de IA reproduzíveis e evidências. Veja exatamente como encontramos cada problema com metodologia totalmente transparente.",
-      "openSourceCodebase": "Base de código de código aberto",
-      "publicGitHubRepo": "Repositório público no GitHub",
+      "openSourceCodebase": "Descobertas reproduzíveis",
+      "publicGitHubRepo": "Verificável com base em dados on-chain",
       "comprehensiveCoverage": "Cobertura Abrangente",
       "comprehensiveCoverageDesc": "Modelos de IA avançados detectam uma ampla gama de classes de vulnerabilidades conhecidas — erros de contratos inteligentes, vetores de ataque econômicos e riscos de concentração.",
       "vulnerabilityCategories": "Mais de 15 categorias de vulnerabilidades",
       "detectionRate": "Até 95% de detecção de problemas conhecidos",
-      "productionReady": "Verificável e de Código Aberto",
-      "productionReadyDesc": "Pipeline de análise de código aberto construído para desenvolvedores e pesquisadores que querem inspecionar, reproduzir e verificar cada etapa da auditoria.",
-      "thirdPartyVerified": "Código Aberto",
-      "sourceCode": "Código Fonte",
+      "productionReady": "Verificável e Transparente",
+      "productionReadyDesc": "Um pipeline de análise transparente construído para desenvolvedores e pesquisadores que querem inspecionar, reproduzir e verificar cada etapa da auditoria.",
+      "thirdPartyVerified": "Resultados Verificáveis",
+      "sourceCode": "Transparente",
       "scanTime": "Auditorias ≤20 Min",
       "aiPoweredAnalysis": "Análise Potenciada por IA",
       "aiPoweredAnalysisDesc": "Varredura de segurança automatizada rápida",
@@ -133,7 +133,7 @@
       "expertSupport": "Documentação e Suporte da Comunidade",
       "expertSupportDesc": "Documentação aberta e recursos comunitários para ajudá-lo a interpretar as descobertas",
       "communityDriven": "Impulsionado pela Comunidade",
-      "communityDrivenDesc": "Código aberto com desenvolvimento transparente"
+      "communityDrivenDesc": "Desenvolvimento transparente e impulsionado pela comunidade"
     }
   },
   "howScoresWork": {
@@ -225,7 +225,7 @@
       "title": "Evidências Verificáveis",
       "description": "Cada descoberta inclui o raciocínio, os dados de origem e a evidência reproduzível por trás dela. Veja exatamente como cada problema foi identificado — sem caixas-pretas.",
       "metric": "Metodologia totalmente transparente",
-      "detail": "Código aberto com repositório público no GitHub"
+      "detail": "Descobertas verificáveis com base em dados on-chain"
     },
     "comprehensive": {
       "title": "Cobertura Abrangente",
@@ -266,7 +266,7 @@
       "communityTrusted": {
         "title": "Insights Impulsionados pela Comunidade",
         "description": "Insights de segurança impulsionados pela comunidade para o ecossistema Web3",
-        "disclaimer": "Plataforma de código aberto"
+        "disclaimer": "Plataforma verificável publicamente"
       }
     },
     "urgency": "Comece sua auditoria completa gratuita hoje"
@@ -284,7 +284,7 @@
   "customerLogos": {
     "title": "Construído para o ecossistema Web3",
     "liveAudits": "Auditorias rodando sob demanda",
-    "enterpriseSecurity": "Segurança de código aberto",
+    "enterpriseSecurity": "Verificável publicamente",
     "protected": "Impulsionado pela comunidade"
   },
   "statsBanner": {
