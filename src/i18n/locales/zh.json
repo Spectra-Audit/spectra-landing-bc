@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Spectra - AI 驱动的智能合约安全审计平台",
+    "title": "Spectra Audit - AI 驱动的智能合约安全审计平台",
     "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计，通过持续透明的安全监控，守护您的加密资产安全。",
     "keywords": "区块链安全, 人工智能审计, 智能合约安全, 加密货币安全, DeFi 安全",
     "og": {
-      "title": "Spectra - AI 驱动的智能合约安全审计",
+      "title": "Spectra Audit - AI 驱动的智能合约安全审计",
       "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计。",
       "imageAlt": "Spectra AI 安全审计平台界面"
     }
   },
   "meta": {
-    "title": "Spectra - AI 驱动的智能合约安全审计平台",
+    "title": "Spectra Audit - AI 驱动的智能合约安全审计平台",
     "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计，通过持续透明的安全监控，守护您的加密资产安全。",
     "keywords": "区块链安全, 人工智能审计, 智能合约安全, 加密货币安全, DeFi 安全"
   },
@@ -82,7 +82,7 @@
       "transparent": "透明",
       "trustMessage": "开源平台，审计方法论可公开验证",
       "featuresTitle": "新一代安全审计",
-      "featuresSubtitle": "传统审计缓慢、昂贵且很快过时。Spectra 提供持续、可验证的安全监控，与您的代码保持同步。",
+      "featuresSubtitle": "传统审计缓慢、昂贵且很快过时。Spectra Audit 提供持续、可验证的安全监控，与您的代码保持同步。",
       "realTimeMonitoring": "按需 AI 分析",
       "realTimeMonitoringDesc": "项目提交时进行按需 AI 驱动分析。全面的 5 维安全审查每次审计在 20 分钟内完成。",
       "avgScanTime": "≤20分钟",
@@ -126,7 +126,7 @@
       "transparentBadge": "可验证结果",
       "systemReady": "系统就绪 • 秒内启动审计",
       "finalCtaTitle": "秒级安全。准备好验证了吗？",
-      "finalCtaSubtitle": "通过主动防护抢先一步发现漏洞。立即开始使用 Spectra，通过可验证的实时安全监控，守护您的资产安全。",
+      "finalCtaSubtitle": "通过主动防护抢先一步发现漏洞。立即开始使用 Spectra Audit，通过可验证的实时安全监控，守护您的资产安全。",
       "noCreditCardRequired": "无需信用卡 • 快速设置",
       "quickSetup": "快速设置",
       "quickSetupDesc": "开始全面的安全审计",
@@ -214,7 +214,7 @@
   },
   "features": {
     "title": "新一代安全审计",
-    "subtitle": "传统审计缓慢且昂贵。Spectra 提供 AI 编排的、可验证的安全分析，您可以检查和复现。",
+    "subtitle": "传统审计缓慢且昂贵。Spectra Audit 提供 AI 编排的、可验证的安全分析，您可以检查和复现。",
     "monitoring": {
       "title": "快速 AI 分析",
       "description": "AI 编排分析跨 5 个维度并行运行 — 代码、分布、代币经济学、流动性和情绪 — 生成带有可追溯证据的综合评分。",
@@ -255,7 +255,7 @@
   },
   "cta": {
     "title": "安全审计，仅需数秒。准备好亲自验证了吗？",
-    "subtitle": "通过 AI 驱动的可验证分析抢先一步发现漏洞。立即开始使用 Spectra，几分钟内检查一个项目的安全状况。",
+    "subtitle": "通过 AI 驱动的可验证分析抢先一步发现漏洞。立即开始使用 Spectra Audit，几分钟内检查一个项目的安全状况。",
     "button": "立即开始免费审计",
     "noCreditCard": "无需信用卡 • 快速设置",
     "trustBuilders": {
@@ -290,7 +290,7 @@
   "statsBanner": {
     "header": {
       "title": "智能合约安全洞察",
-      "subtitle": "在 20 分钟内获取全面的安全分析。Spectra 的 AI 驱动平台帮助您理解项目背后的安全考量。"
+      "subtitle": "在 20 分钟内获取全面的安全分析。Spectra Audit 的 AI 驱动平台帮助您理解项目背后的安全考量。"
     },
     "footer": "所有审计均在区块链的分叉副本上执行，结果可验证。"
   },
@@ -307,7 +307,7 @@
     "hero": {
       "title": "5 维度",
       "subtitle": "安全审计框架",
-      "description": "了解 Spectra 如何通过全面的多维度分析彻底变革区块链安全，提供比传统审计更深入的洞察。",
+      "description": "了解 Spectra Audit 如何通过全面的多维度分析彻底变革区块链安全，提供比传统审计更深入的洞察。",
       "buttons": {
         "exploreDimensions": "探索维度",
         "scoringAlgorithm": "评分算法",
@@ -318,7 +318,7 @@
       "title": "为什么需要多维度分析？",
       "paragraph1": "传统的智能合约审计仅关注代码安全性。虽然重要，但这种单一视角的方法忽略了导致大多数 DeFi 漏洞利用和项目失败的关键风险因素。",
       "paragraph2": {
-        "before": "Spectra 的",
+        "before": "Spectra Audit 的",
         "highlight": "5 维度审计框架",
         "after": "从情绪、代码、代币经济学、流动性和分布全面分析项目——提供完整的安全图景，保护投资者免受仅代码审计无法检测到的威胁。"
       },
@@ -597,7 +597,7 @@
   },
   "learningLoop": {
     "title": "评分如何随着时间保持准确",
-    "subtitle": "Spectra 通过真实世界反馈和与历史审计的校准持续改进 — 每次分析都会启发下一次。",
+    "subtitle": "Spectra Audit 通过真实世界反馈和与历史审计的校准持续改进 — 每次分析都会启发下一次。",
     "userFeedback": {
       "title": "用户反馈集成",
       "description": "社区对每个发现的评分和专家评审将反馈回模型。误报、遗漏的漏洞和严重程度争议会被追踪，并用于重新校准评分权重。"
@@ -621,6 +621,6 @@
     "forkTesting": "合约行为在区块链的分叉副本上分析，而非实时主网。",
     "noGuarantee": "高安全评分不保证项目是安全的。评分反映分析时可用数据的状态。",
     "doYourResearch": "在做出任何投资、部署或集成决策之前，请始终进行自己的研究 (DYOR)。",
-    "toolPurpose": "Spectra 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。"
+    "toolPurpose": "Spectra Audit 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。"
   }
 }
