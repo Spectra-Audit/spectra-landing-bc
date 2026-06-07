@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "智能合约安全审计",
-      "heroSubtitle": "秒级完成，而非数周",
+      "heroSubtitle": "分钟级完成，而非数周",
       "heroDescription": "AI 驱动的智能合约分析，附带可验证的证据。20分钟内获取全面的安全分析。无需注册。",
       "securityAuditTitle": "可公开验证的审计",
       "securityAuditSubtitle": "透明的方法论，您可以检查、审计和复现",
@@ -124,8 +124,8 @@
       "transparentValue": "完全",
       "transparentLabel": "透明方法",
       "transparentBadge": "可验证结果",
-      "systemReady": "系统就绪 • 秒内启动审计",
-      "finalCtaTitle": "秒级安全。准备好验证了吗？",
+      "systemReady": "系统就绪 • 分钟内启动审计",
+      "finalCtaTitle": "分钟级安全。准备好验证了吗？",
       "finalCtaSubtitle": "通过主动防护抢先一步发现漏洞。立即开始使用 Spectra Audit，通过可验证的实时安全监控，守护您的资产安全。",
       "noCreditCardRequired": "无需信用卡 • 快速设置",
       "quickSetup": "快速设置",
@@ -273,7 +273,7 @@
     "systemStatus": "所有系统运行正常"
   },
   "cta": {
-    "title": "安全审计，仅需数秒。准备好亲自验证了吗？",
+    "title": "安全审计，仅需数分钟。准备好亲自验证了吗？",
     "subtitle": "通过 AI 驱动的可验证分析抢先一步发现漏洞。立即开始使用 Spectra Audit，几分钟内检查一个项目的安全状况。",
     "button": "立即开始免费审计",
     "noCreditCard": "无需信用卡 • 快速设置",
@@ -628,7 +628,7 @@
     }
   },
   "learningLoop": {
-    "title": "评分如何随着时间保持准确",
+    "title": "Spectra 评分如何随着时间不断提升",
     "subtitle": "Spectra Audit 通过真实世界反馈和与历史审计的校准持续改进 — 每次分析都会启发下一次。",
     "userFeedback": {
       "title": "用户反馈集成",

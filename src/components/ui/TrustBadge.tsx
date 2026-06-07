@@ -1,4 +1,4 @@
-import { Shield, CheckCircle, Award, Users, Eye, Zap, Clock, TrendingUp, Lock, FileCheck } from 'lucide-react'
+import { Shield, CheckCircle, Users, Eye, Clock, TrendingUp, Lock, FileCheck, Gauge, Target, Coins } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export interface TrustBadgeProps {
@@ -28,12 +28,12 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
     verified: <CheckCircle className="w-4 h-4" />,
     secure: <Shield className="w-4 h-4" />,
     users: <Users className="w-4 h-4" />,
-    accuracy: <Award className="w-4 h-4" />,
-    speed: <Zap className="w-4 h-4" />,
+    accuracy: <Target className="w-4 h-4" />,
+    speed: <Gauge className="w-4 h-4" />,
     transparent: <Eye className="w-4 h-4" />,
     uptime: <Clock className="w-4 h-4" />,
     threats: <TrendingUp className="w-4 h-4" />,
-    value: <Award className="w-4 h-4" />,
+    value: <Coins className="w-4 h-4" />,
     compliance: <FileCheck className="w-4 h-4" />
   }
 

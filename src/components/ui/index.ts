@@ -20,9 +20,6 @@ export type { UnifiedGradeDisplayProps } from './UnifiedGradeDisplay'
 export { Navbar } from './Navbar'
 export type { NavbarProps } from './Navbar'
 
-export { StatsBanner } from './StatsBanner'
-export type { StatsBannerProps } from './StatsBanner'
-
 export { default as OptimizedImage } from './OptimizedImage'
 export type { OptimizedImageProps } from './OptimizedImage'
 
@@ -39,10 +36,6 @@ export { default as SocialMediaImage } from './SocialMediaImage'
 export type { SocialMediaImageProps } from './SocialMediaImage'
 
 export { default as PerformanceMonitor } from './PerformanceMonitor'
-
-// NEW: CustomerLogos - Displays customer/protocol logos in a grid
-export { CustomerLogos } from './CustomerLogos'
-export type { CustomerLogosProps } from './CustomerLogos'
 
 // Animated diagrams for methodology + learning loop sections
 export { default as MethodologyDiagram } from './MethodologyDiagram'

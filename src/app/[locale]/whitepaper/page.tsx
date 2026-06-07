@@ -12,9 +12,9 @@ import {
   Users,
   MessageSquare,
   Brain,
-  Zap,
+  Activity,
   Target,
-  Rocket,
+  Map,
   CheckCircle,
   ArrowRight,
   BookOpen,
@@ -24,7 +24,6 @@ import {
   Calculator,
   Sliders,
   Gauge,
-  Sparkles,
   Layers
 } from 'lucide-react'
 import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
@@ -147,7 +146,7 @@ export default function WhitepaperPage() {
                   href="#roadmap"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-neutral-300 dark:border-neutral-600 text-neutral-900 dark:text-white font-semibold hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
                 >
-                  <Rocket className="w-5 h-5" />
+                  <Map className="w-5 h-5" />
                   {t('hero.buttons.viewRoadmap')}
                 </a>
               </div>
@@ -176,7 +175,7 @@ export default function WhitepaperPage() {
                 {[
                   { value: t('introduction.stats.coreDimensions.value'), label: t('introduction.stats.coreDimensions.label'), icon: Layers },
                   { value: t('introduction.stats.detectionRate.value'), label: t('introduction.stats.detectionRate.label'), icon: Target },
-                  { value: t('introduction.stats.analysisTime.value'), label: t('introduction.stats.analysisTime.label'), icon: Zap },
+                  { value: t('introduction.stats.analysisTime.value'), label: t('introduction.stats.analysisTime.label'), icon: Gauge },
                   { value: t('introduction.stats.riskCategories.value'), label: t('introduction.stats.riskCategories.label'), icon: Shield }
                 ].map((stat, i) => (
                   <div key={i} className="text-center p-4 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 hover:border-neutral-300 dark:hover:border-neutral-600/50 transition-colors shadow-sm">
@@ -422,7 +421,7 @@ export default function WhitepaperPage() {
               {/* AI Optimization */}
               <div className="glass-spectra rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700/50 bg-white/80 dark:bg-neutral-800/80">
                 <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-spectra-purple-500" />
+                  <Brain className="w-5 h-5 text-spectra-purple-500" />
                   {t('scoring.aiOptimization.title')}
                 </h3>
                 <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
@@ -658,7 +657,7 @@ export default function WhitepaperPage() {
                       )}
                       {phase.status === 'current' && (
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 border border-spectra-blue-500/30 text-spectra-blue-600 dark:text-spectra-blue-400 text-sm font-semibold">
-                          <Zap className="w-4 h-4" />
+                          <Activity className="w-4 h-4" />
                           {t('roadmap.status.inProgress')}
                         </div>
                       )}

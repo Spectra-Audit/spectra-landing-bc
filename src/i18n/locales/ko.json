@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "스마트 컨트랙트 보안 감사",
-      "heroSubtitle": "수초만에, 몇 주가 아니라",
+      "heroSubtitle": "수분만에, 몇 주가 아니라",
       "heroDescription": "검증 가능한 증거가 포함된 AI 기반 스마트 컨트랙트 분석. 20분 이내에 포괄적인 보안 분석을 받으세요. 등록 불필요.",
       "securityAuditTitle": "공개적으로 검증 가능한 감사",
       "securityAuditSubtitle": "검사, 감사, 재현 가능한 투명한 방법론",
@@ -124,8 +124,8 @@
       "transparentValue": "완전",
       "transparentLabel": "투명한 방법론",
       "transparentBadge": "검증 가능한 결과",
-      "systemReady": "시스템 준비 • 몇 초 만에 감사 시작",
-      "finalCtaTitle": "몇 초 만에 보안. 검증할 준비되셨나요?",
+      "systemReady": "시스템 준비 • 몇 분 만에 감사 시작",
+      "finalCtaTitle": "몇 분 만에 보안. 검증할 준비되셨나요?",
       "finalCtaSubtitle": "선제적 보호로 취약점에 앞서 나가세요. 오늘 Spectra Audit를 시작하고 검증 가능한 실시간 보안 모니터링으로 투자를 보호하세요.",
       "noCreditCardRequired": "신용카드 불필요 • 빠른 설정",
       "quickSetup": "빠른 설정",
@@ -273,7 +273,7 @@
     "systemStatus": "모든 시스템 정상 운영 중"
   },
   "cta": {
-    "title": "단 몇 초 만에 시작하는 보안. 직접 검증할 준비가 되셨나요?",
+    "title": "단 몇 분 만에 시작하는 보안. 직접 검증할 준비가 되셨나요?",
     "subtitle": "검증 가능한 AI 기반 분석으로 취약점에 앞서 나가세요. Spectra Audit를 시작하고 프로젝트의 보안 상태를 몇 분 내에 검사하세요.",
     "button": "지금 무료 감사 시작하기",
     "noCreditCard": "신용카드 불필요 • 빠른 설정",
@@ -628,7 +628,7 @@
     }
   },
   "learningLoop": {
-    "title": "점수가 시간이 지나도 정확하게 유지되는 방법",
+    "title": "Spectra 점수가 시간이 지나면서 향상되는 방식",
     "subtitle": "Spectra Audit는 실제 피드백과 과거 감사에 대한 보정을 통해 지속적으로 개선됩니다 — 모든 분석이 다음 분석에 정보를 제공합니다.",
     "userFeedback": {
       "title": "사용자 피드백 통합",
