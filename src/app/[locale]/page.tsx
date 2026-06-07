@@ -75,6 +75,41 @@ export default function HomePage() {
     }
   }, [])
 
+  // Reveal sections as they scroll into view (progressive enhancement —
+  // the hidden state is gated on .reveal-init so no-JS users see everything).
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduce || !('IntersectionObserver' in window)) return
+
+    document.documentElement.classList.add('reveal-init')
+    const els = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
+    const reveal = (el: Element) => el.classList.add('is-visible')
+
+    // Trigger ~200px before an element enters the viewport so nothing pops in
+    // late. threshold 0 = reveal on the first visible pixel.
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target)
+            io.unobserve(entry.target)
+          }
+        })
+      },
+      { rootMargin: '0px 0px 200px 0px', threshold: 0 }
+    )
+    els.forEach((el) => io.observe(el))
+
+    // Failsafe: never leave content hidden. If the observer misses anything
+    // (fast scroll, restored scroll position, slow device), force-reveal all.
+    const failsafe = window.setTimeout(() => els.forEach(reveal), 2500)
+    return () => {
+      io.disconnect()
+      window.clearTimeout(failsafe)
+    }
+  }, [])
+
   // Fallback translations for SSR
   const fallbackHeadline = "Smart Contract Security Audits in Minutes, Not Weeks"
   const fallbackSubheadline = "AI-powered smart contract analysis. Get comprehensive security audits with verifiable evidence in under 20 minutes."
@@ -103,7 +138,7 @@ export default function HomePage() {
       </Suspense>
 
       <MobileOptimized>
-        <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 mobile-performance">
+        <div className="min-h-screen ambient-glow bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-ink-950 dark:via-ink-900 dark:to-ink-950 mobile-performance">
         {/* Navigation */}
         <Navbar />
 
@@ -111,7 +146,7 @@ export default function HomePage() {
         <section id="main-content" className="relative overflow-hidden pt-32 pb-20">
           {/* Enhanced Background Effects */}
           <div className="absolute inset-0 bg-gradient-hero dark:bg-gradient-hero-dark" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,102,255,0.1),transparent_50%)] dark:bg-[radial-gradient(ellipse_at_top,rgba(0,102,255,0.15),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,153,255,0.10),transparent_50%)] dark:bg-[radial-gradient(ellipse_at_top,rgba(0,153,255,0.20),transparent_55%)]" />
           <div className="absolute inset-0 bg-grid-white/5 dark:bg-grid-white/5 [mask-image:linear-gradient(to_bottom,white,transparent,transparent)]" />
 
           {/* Animated Grid Pattern */}
@@ -125,41 +160,24 @@ export default function HomePage() {
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
-              {/* Enhanced Authority Badges - Subtle Top Bar */}
-              <div className="flex flex-wrap justify-center gap-3 mb-8 animate-slide-up">
-                <TrustBadge
-                  type="secure"
-                  label={t('hero.page.authorityBadges.publiclyVerifiable.label')}
-                  description={t('hero.page.authorityBadges.publiclyVerifiable.description')}
-                  size="sm"
-                  variant="authority"
-                  showIcon={true}
-                />
-                <TrustBadge
-                  type="transparent"
-                  label={t('hero.page.authorityBadges.verifiableResults.label')}
-                  description={t('hero.page.authorityBadges.verifiableResults.description')}
-                  size="sm"
-                  variant="authority"
-                  showIcon={true}
-                />
-                <TrustBadge
-                  type="verified"
-                  label={t('hero.page.authorityBadges.aiOrchestrated.label')}
-                  description={t('hero.page.authorityBadges.aiOrchestrated.description')}
-                  size="sm"
-                  variant="authority"
-                  showIcon={true}
-                />
+              {/* Understated eyebrow — one human line instead of a badge wall */}
+              <div className="flex justify-center mb-8 animate-slide-up">
+                <div className="inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm font-medium backdrop-blur-sm bg-spectra-green-500/10 border border-spectra-green-500/25 text-spectra-green-700 dark:text-spectra-green-400">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-spectra-green-500/70" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-spectra-green-500" />
+                  </span>
+                  {t('hero.page.authorityBadges.publiclyVerifiable.label')}
+                </div>
               </div>
 
               {/* Dramatically Enhanced Headline with Gradient Text */}
               <h1 className="text-display-xl md:text-display-xl font-display font-extrabold mb-6 leading-tight animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                <span className="text-gradient-spectra">
+                <span className="text-neutral-900 dark:text-white neon-text">
                   {t('hero.page.heroTitle')}
                 </span>
                 <br />
-                <span className="text-neutral-900 dark:text-white">
+                <span className="text-gradient-spectra">
                   {t('hero.page.heroSubtitle')}
                 </span>
               </h1>
@@ -168,6 +186,33 @@ export default function HomePage() {
               <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 {t('hero.page.heroDescription')}
               </p>
+
+              {/* Primary hero CTAs — a landing hero needs a clear next step */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14 animate-slide-up" style={{ animationDelay: '0.25s' }}>
+                <Button
+                  size="lg"
+                  variant="gradient"
+                  className="px-8 dark:animate-pulse-neon"
+                  icon={<Search className="w-5 h-5" />}
+                  onClick={() => {
+                    trackHeroCtaClicked(t('hero.cta.primary'), 'primary')
+                    window.open('https://app.spectra-audit.com', '_blank')
+                  }}
+                >
+                  {t('hero.cta.primary')}
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8"
+                  onClick={() => {
+                    trackHeroCtaClicked(t('hero.cta.secondary'), 'secondary')
+                    document.getElementById('how-scores-work')?.scrollIntoView({ behavior: 'smooth' })
+                  }}
+                >
+                  {t('hero.cta.secondary')}
+                </Button>
+              </div>
 
               {/* Unified Grade Display - CENTERPIECE (Replaces SecurityIllustration + GradeBadge) */}
               <div className="mb-12 animate-scale-in" style={{ animationDelay: '0.3s' }}>
@@ -200,7 +245,7 @@ export default function HomePage() {
 
               {/* Security Audit Section */}
               <div className="max-w-4xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-                <div className="glass-spectra rounded-2xl p-8 md:p-10 shadow-2xl">
+                <div className="holographic-card dark:neon-glow rounded-2xl p-8 md:p-10 shadow-2xl">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-3">
                       {t('hero.page.securityAuditTitle')}
@@ -213,7 +258,7 @@ export default function HomePage() {
                   {/* Security Features */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     {/* Reproducible Findings */}
-                    <div className="text-center p-6 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 shadow-sm">
+                    <div className="text-center p-6 rounded-xl bg-white dark:bg-ink-850/70 border border-neutral-200 dark:border-white/5 shadow-sm transition-colors hover:border-spectra-blue-500/30">
                       <div className="inline-flex p-3 rounded-full bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500 mb-4">
                         <FileCheck className="w-8 h-8" />
                       </div>
@@ -226,7 +271,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Publicly Verifiable */}
-                    <div className="text-center p-6 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 shadow-sm">
+                    <div className="text-center p-6 rounded-xl bg-white dark:bg-ink-850/70 border border-neutral-200 dark:border-white/5 shadow-sm transition-colors hover:border-spectra-blue-500/30">
                       <div className="inline-flex p-3 rounded-full bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500 mb-4">
                         <Eye className="w-8 h-8" />
                       </div>
@@ -253,13 +298,14 @@ export default function HomePage() {
         </section>
 
         {/* How Security Scores Work - NEW SECTION */}
-        <section className="py-16 sm:py-20 md:py-24 relative bg-white dark:bg-neutral-900">
+        <section id="how-scores-work" className="py-16 sm:py-20 md:py-24 relative bg-white dark:bg-ink-950 scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white mb-6 px-4">
+            <div data-reveal className="text-center mb-12 sm:mb-16">
+              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6 px-4">
                 {t('howScoresWork.title')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto px-4 leading-relaxed">
                 {t('howScoresWork.subtitle')}
               </p>
@@ -269,7 +315,7 @@ export default function HomePage() {
             </div>
 
             {/* Dimensions Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div data-reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {/* Code Security */}
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
@@ -410,8 +456,8 @@ export default function HomePage() {
                     <div className="text-sm font-bold text-spectra-yellow-700 dark:text-spectra-yellow-500">55-69</div>
                     <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.fair')}</div>
                   </div>
-                  <div className="p-3 rounded-lg bg-spectra-red-500/10 border border-spectra-red-500/20">
-                    <div className="text-sm font-bold text-spectra-red-600 dark:text-spectra-red-500">&lt;55</div>
+                  <div className="p-3 rounded-lg bg-error-primary/10 border border-error-primary/20">
+                    <div className="text-sm font-bold text-error-primary">&lt;55</div>
                     <div className="text-xs text-neutral-500 dark:text-neutral-400">{t('grades.needsWork')}</div>
                   </div>
                 </div>
@@ -439,13 +485,14 @@ export default function HomePage() {
         </section>
 
         {/* ENHANCED Features Section - Phase 3 Redesign */}
-        <section className="py-16 sm:py-20 md:py-24 relative bg-neutral-100/50 dark:bg-neutral-800/20">
+        <section className="py-16 sm:py-20 md:py-24 relative bg-neutral-100/50 dark:bg-ink-900/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="text-center mb-12 sm:mb-16 md:mb-20">
-              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white mb-6 px-4">
+            <div data-reveal className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6 px-4">
                 {t('hero.page.featuresTitle')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto px-4 leading-relaxed">
                 {t('hero.page.featuresSubtitle')}
               </p>
@@ -480,7 +527,7 @@ export default function HomePage() {
             </div>
 
             {/* Asymmetrical Features Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div data-reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Feature 1 - Large (spans 2 columns on large screens) */}
               <div className="md:col-span-2 lg:col-span-2">
                 <Card variant="hero" hover className="h-full group">
@@ -642,16 +689,17 @@ export default function HomePage() {
         {/* Methodology Section — state-of-the-art audit process */}
         <section
           aria-labelledby="methodology-heading"
-          className="py-16 sm:py-20 md:py-24 relative bg-white dark:bg-neutral-900"
+          className="py-16 sm:py-20 md:py-24 relative bg-white dark:bg-ink-950"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 sm:mb-16">
+            <div data-reveal className="text-center mb-12 sm:mb-16">
               <h2
                 id="methodology-heading"
-                className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white mb-6 px-4"
+                className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6 px-4"
               >
                 {t('methodology.title')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto px-4 leading-relaxed">
                 {t('methodology.subtitle')}
               </p>
@@ -745,16 +793,17 @@ export default function HomePage() {
         {/* Learning Loop Section — how scores stay accurate over time */}
         <section
           aria-labelledby="learning-loop-heading"
-          className="py-16 sm:py-20 md:py-24 relative bg-neutral-100/50 dark:bg-neutral-800/20"
+          className="py-16 sm:py-20 md:py-24 relative bg-neutral-100/50 dark:bg-ink-900/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 sm:mb-16">
+            <div data-reveal className="text-center mb-12 sm:mb-16">
               <h2
                 id="learning-loop-heading"
-                className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white mb-6 px-4"
+                className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6 px-4"
               >
                 {t('learningLoop.title')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-base sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto px-4 leading-relaxed">
                 {t('learningLoop.subtitle')}
               </p>
@@ -846,10 +895,10 @@ export default function HomePage() {
         </section>
 
         {/* Live Status Section */}
-        <section className="py-24 relative bg-neutral-100/50 dark:bg-neutral-800/30">
+        <section className="py-24 relative bg-neutral-100/50 dark:bg-ink-900/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6">
+            <div data-reveal className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white neon-text mb-6">
                 {t('hero.page.liveStatusTitle')}
               </h2>
               <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
@@ -868,7 +917,7 @@ export default function HomePage() {
                   <div className="text-xs text-spectra-blue-600 dark:text-spectra-blue-500 mt-1">{t('hero.page.scanTimeBadge')}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-2 flex items-center justify-center gap-2">
+                  <div className="text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 dark:drop-shadow-glow mb-2 flex items-center justify-center gap-2">
                     {t('hero.page.dimensionsValue')}
                     <Layers className="w-5 h-5" />
                   </div>
@@ -876,12 +925,12 @@ export default function HomePage() {
                   <div className="text-xs text-spectra-green-700 dark:text-spectra-green-500 mt-1">{t('hero.page.dimensionsBadge')}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 mb-2">{t('hero.page.aiPoweredValue')}</div>
+                  <div className="text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 dark:drop-shadow-glow mb-2">{t('hero.page.aiPoweredValue')}</div>
                   <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.aiPoweredLabel')}</div>
                   <div className="text-xs text-spectra-blue-600 dark:text-spectra-blue-500 mt-1">{t('hero.page.aiPoweredBadge')}</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-spectra-purple-600 dark:text-spectra-purple-500 mb-2">{t('hero.page.transparentValue')}</div>
+                  <div className="text-3xl font-bold text-spectra-purple-600 dark:text-spectra-purple-500 dark:drop-shadow-glow mb-2">{t('hero.page.transparentValue')}</div>
                   <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.transparentLabel')}</div>
                   <div className="text-xs text-spectra-purple-600 dark:text-spectra-purple-500 mt-1">{t('hero.page.transparentBadge')}</div>
                 </div>
@@ -901,8 +950,8 @@ export default function HomePage() {
         {/* Final CTA Section */}
         <section className="py-24 relative">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6">
+            <div data-reveal className="mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white neon-text mb-6">
                 {t('hero.page.finalCtaTitle')}
               </h2>
               <p className="text-xl text-neutral-600 dark:text-neutral-300 mb-8">
@@ -914,7 +963,7 @@ export default function HomePage() {
               <Button
                 size="xl"
                 variant="gradient"
-                className="text-lg px-8 py-4"
+                className="text-lg px-8 py-4 dark:animate-pulse-neon"
                 icon={<Search className="w-5 h-5" />}
                 onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >

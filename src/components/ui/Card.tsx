@@ -24,35 +24,37 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     const variants = {
       // Default card - Standard
       default: cn(
-        'bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 backdrop-blur-sm',
-        'rounded-2xl'
+        'bg-white dark:bg-ink-850/70 border border-neutral-200 dark:border-white/5 backdrop-blur-sm',
+        'rounded-2xl dark:hover:border-spectra-blue-500/30'
       ),
 
       // Glass card - Subtle
       glass: cn(
-        'glass dark:glass-dark rounded-2xl'
+        'glass dark:glass-dark rounded-2xl dark:hover:border-spectra-blue-500/20'
       ),
 
-      // Spectra card - Branded with gradient
+      // Spectra card - Branded holographic surface with neon hover glow.
+      // .holographic-card (globals.css) styles both light + dark; the border
+      // comes from it, so hover utilities below just recolour/glow on top.
       spectra: cn(
-        'bg-gradient-card dark:bg-gradient-to-br from-spectra-blue-500/10 to-spectra-purple-500/5 border border-white/10 dark:border-white/5 backdrop-blur-md',
+        'holographic-card backdrop-blur-md',
         'rounded-2xl shadow-lg',
-        'hover:border-spectra-blue-500/30'
+        'hover:border-spectra-blue-500/40 dark:hover:shadow-glow-spectra'
       ),
 
-      // Hero card - Prominent with glow
+      // Hero card - Prominent with neon glow
       hero: cn(
-        'bg-gradient-to-br from-spectra-blue-500/15 to-spectra-purple-500/10',
+        'bg-gradient-to-br from-spectra-blue-500/15 to-spectra-green-500/10 dark:bg-ink-850',
         'border-2 border-spectra-blue-500/30 rounded-2xl',
         'shadow-glow-spectra-lg',
-        'hover:border-spectra-blue-500/50 hover:shadow-glow-spectra'
+        'hover:border-spectra-blue-500/50 hover:shadow-glow-spectra dark:hover:shadow-neon'
       ),
 
       // Stats card - Data focused
       stats: cn(
-        'bg-white dark:bg-neutral-800/30 border border-neutral-200 dark:border-neutral-700/30 backdrop-blur-sm',
+        'bg-white dark:bg-ink-850/50 border border-neutral-200 dark:border-white/5 backdrop-blur-sm',
         'rounded-xl',
-        'hover:border-spectra-blue-500/20'
+        'hover:border-spectra-blue-500/30'
       ),
 
       // Security card - Success state

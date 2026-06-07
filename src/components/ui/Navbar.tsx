@@ -118,7 +118,7 @@ export function Navbar({ className }: NavbarProps) {
     <nav className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
       isScrolled
-        ? 'bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800/50'
+        ? 'bg-white/95 dark:bg-ink-950/90 backdrop-blur-md border-b border-neutral-200 dark:border-white/5'
         : 'bg-transparent',
       className
     )}>
@@ -146,8 +146,9 @@ export function Navbar({ className }: NavbarProps) {
                 key={item.label}
                 href={item.href}
                 className={cn(
-                  "flex items-center space-x-1 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200",
-                  "text-sm font-medium"
+                  "relative flex items-center space-x-1 text-neutral-600 dark:text-neutral-300 hover:text-spectra-blue-600 dark:hover:text-spectra-blue-400 transition-colors duration-200",
+                  "text-sm font-medium",
+                  "after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-spectra-blue-500 after:transition-all after:duration-300 hover:after:w-full"
                 )}
                 {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
               >
@@ -169,7 +170,7 @@ export function Navbar({ className }: NavbarProps) {
             <div className="hidden md:block">
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium"
+                className="bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
                 icon={<ArrowUpRight className="w-4 h-4" />}
                 onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
@@ -206,7 +207,7 @@ export function Navbar({ className }: NavbarProps) {
           <div
             className={cn(
               "fixed inset-0 z-50 md:hidden",
-              "bg-white/95 dark:bg-neutral-900/95 backdrop-blur-lg",
+              "bg-white/95 dark:bg-ink-950/95 backdrop-blur-lg",
               "transition-opacity duration-300 ease-in-out",
               isMobileMenuOpen ? "opacity-100" : "opacity-0"
             )}

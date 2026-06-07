@@ -74,7 +74,7 @@ export default function MethodologyDiagram({
       key: 'code',
       label: t('lanes.code'),
       Icon: Code2,
-      color: 'rgb(34, 197, 94)', // green
+      color: 'rgb(0, 208, 132)', // spectra-green-500 #00D084
       colorClass: 'text-spectra-green-500',
       iconBg: 'bg-spectra-green-500/15'
     },
@@ -82,7 +82,7 @@ export default function MethodologyDiagram({
       key: 'distribution',
       label: t('lanes.distribution'),
       Icon: Users,
-      color: 'rgb(234, 179, 8)', // yellow
+      color: 'rgb(245, 158, 11)', // spectra-yellow-500 #F59E0B
       colorClass: 'text-spectra-yellow-500',
       iconBg: 'bg-spectra-yellow-500/15'
     },
@@ -90,7 +90,7 @@ export default function MethodologyDiagram({
       key: 'tokenomics',
       label: t('lanes.tokenomics'),
       Icon: Coins,
-      color: 'rgb(0, 102, 255)', // blue
+      color: 'rgb(0, 153, 255)', // spectra azure #0099FF
       colorClass: 'text-spectra-blue-500',
       iconBg: 'bg-spectra-blue-500/15'
     },
@@ -98,7 +98,7 @@ export default function MethodologyDiagram({
       key: 'liquidity',
       label: t('lanes.liquidity'),
       Icon: Droplets,
-      color: 'rgb(168, 85, 247)', // purple
+      color: 'rgb(99, 102, 241)', // spectra-purple-500 #6366F1
       colorClass: 'text-spectra-purple-500',
       iconBg: 'bg-spectra-purple-500/15'
     },
@@ -134,8 +134,8 @@ export default function MethodologyDiagram({
           </linearGradient>
 
           <radialGradient id="composite-glow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="rgb(0, 102, 255)" stopOpacity="0" />
+            <stop offset="0%" stopColor="rgb(0, 153, 255)" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="rgb(0, 153, 255)" stopOpacity="0" />
           </radialGradient>
         </defs>
 
@@ -221,9 +221,9 @@ export default function MethodologyDiagram({
             cx={finalNodeX}
             cy={finalNodeY}
             r="34"
-            fill="rgb(0, 102, 255)"
+            fill="rgb(0, 153, 255)"
             fillOpacity="0.15"
-            stroke="rgb(0, 102, 255)"
+            stroke="rgb(0, 153, 255)"
             strokeOpacity="0.6"
             strokeWidth="2"
           />

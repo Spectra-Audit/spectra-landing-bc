@@ -68,7 +68,7 @@ export default async function RootLayout({
           }
         />
       </head>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased transition-colors duration-300 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white`} suppressHydrationWarning>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased transition-colors duration-300 bg-white dark:bg-ink-950 text-neutral-900 dark:text-white`} suppressHydrationWarning>
         <UmamiProvider>
           {children}
         </UmamiProvider>

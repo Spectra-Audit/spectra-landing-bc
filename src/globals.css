@@ -34,43 +34,47 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 204 100% 45%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 210 40% 96%;
     --secondary-foreground: 222.2 84% 4.9%;
     --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
+    --accent: 204 100% 45%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 204 100% 45%;
     --radius: 0.75rem;
+    /* Audit-fever neon azure — drives .neon-text / .neon-glow.
+       Deeper in light mode for contrast on white. */
+    --neon: 204 100% 45%;
   }
 
   .dark {
-    /* Dark theme variables */
-    --background: 222.2 84% 4.9%;
+    /* Dark theme — audit-fever near-black, neon azure */
+    --background: 219 48% 5%;        /* ink-950 #070B14 */
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 217 46% 10%;             /* ink-850 #0E1626 */
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 217 47% 8%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
+    --primary: 200 100% 55%;         /* bright neon azure */
+    --primary-foreground: 219 48% 5%;
+    --secondary: 217 33% 15%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 217 33% 14%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --accent: 200 100% 55%;
+    --accent-foreground: 219 48% 5%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 94.1%;
+    --border: 215 30% 18%;
+    --input: 215 30% 18%;
+    --ring: 200 100% 55%;
+    --neon: 200 100% 55%;
   }
 }
 
@@ -80,7 +84,7 @@
   }
 
   body {
-    @apply bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100;
+    @apply bg-white dark:bg-ink-950 text-neutral-900 dark:text-neutral-100;
     font-family: var(--font-body);
     font-feature-settings: "rlig" 1, "calt" 1, "liga" 1, "kern" 1;
     text-rendering: optimizeLegibility;
@@ -130,9 +134,10 @@
     letter-spacing: -0.01em;
   }
 
-  /* Gradient Text Utility - Animated Spectra gradient */
+  /* Gradient Text Utility - Animated Spectra gradient (azure → cyan → green,
+     audit-fever's neon palette) */
   .text-gradient-spectra {
-    @apply bg-gradient-to-r from-spectra-blue-500 via-spectra-purple-500 to-spectra-green-500;
+    @apply bg-gradient-to-r from-spectra-blue-400 via-spectra-cyan-400 to-spectra-green-400;
     @apply bg-clip-text text-transparent;
     background-size: 200% 200%;
     animation: gradient-shift 3s ease infinite;
@@ -143,13 +148,103 @@
     50% { background-position: 100% 50%; }
   }
 
-  /* Glass morphism effects - Enhanced */
+  /* ── Audit-fever signature effects ──────────────────────────────────────
+     Neon glow is intentionally scoped to dark mode (where it reads as the
+     crypto/neon look) and kept subtle/absent in light mode so light stays
+     clean and legible. Driven by --neon (azure). */
+  .neon-text {
+    text-shadow: 0 0 6px hsl(var(--neon) / 0.18);
+  }
+  .dark .neon-text {
+    text-shadow:
+      0 0 8px hsl(var(--neon) / 0.45),
+      0 0 22px hsl(var(--neon) / 0.28),
+      0 0 40px hsl(var(--neon) / 0.14);
+  }
+
+  /* Glow in the element's own colour (audit-fever score numbers) */
+  .drop-shadow-glow {
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+  .dark .drop-shadow-glow {
+    filter: drop-shadow(0 0 10px currentColor) drop-shadow(0 0 22px currentColor);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 0 hsl(var(--neon) / 0);
+  }
+  .dark .neon-glow {
+    box-shadow:
+      0 0 12px hsl(var(--neon) / 0.30),
+      0 0 28px hsl(var(--neon) / 0.16),
+      0 0 48px hsl(var(--neon) / 0.08);
+  }
+
+  /* Holographic dark card — FUT-style surface used across audit-fever */
+  .holographic-card {
+    position: relative;
+    background:
+      linear-gradient(135deg, hsl(var(--neon) / 0.06) 0%, transparent 40%),
+      linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .dark .holographic-card {
+    background:
+      radial-gradient(120% 120% at 0% 0%, hsl(var(--neon) / 0.12) 0%, transparent 45%),
+      linear-gradient(180deg, #0E1626 0%, #0A1020 100%);
+    border: 1px solid hsl(var(--neon) / 0.14);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  }
+  .dark .holographic-card:hover {
+    border-color: hsl(var(--neon) / 0.32);
+  }
+
+  /* Scroll reveal — progressive enhancement. The hidden state only applies
+     once JS adds .reveal-init to <html>, so no-JS / crawlers see full content. */
+  .reveal-init [data-reveal] {
+    opacity: 0;
+    transform: translateY(26px);
+    will-change: opacity, transform;
+  }
+  .reveal-init [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-init [data-reveal] { opacity: 1; transform: none; }
+  }
+
+  /* Ambient page glow — audit-fever's soft corner radials (dark only) */
+  .ambient-glow {
+    position: relative;
+  }
+  .dark .ambient-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(40rem 30rem at 15% 0%, hsl(var(--neon) / 0.10), transparent 60%),
+      radial-gradient(36rem 28rem at 100% 8%, rgba(0, 208, 132, 0.06), transparent 60%);
+  }
+
+  /* Glass morphism effects - Enhanced.
+     Blur is set via raw backdrop-filter (not @apply backdrop-blur-md) to avoid
+     a Tailwind circular-dependency error: plain `.backdrop-blur-md` perf rules
+     also exist (mobile / 1dppx), and @apply-ing the same utility trips the
+     guard under the optimizeCss pipeline. */
   .glass {
-    @apply backdrop-blur-md bg-white/60 dark:bg-white/5 border border-white/20 dark:border-white/10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    @apply bg-white/60 dark:bg-white/5 border border-white/20 dark:border-white/10;
   }
 
   .glass-dark {
-    @apply backdrop-blur-md bg-neutral-900/50 border border-neutral-700/50;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    @apply bg-neutral-900/50 border border-neutral-700/50;
   }
 
   .glass-spectra {
@@ -310,10 +405,10 @@ img {
     backdrop-filter: saturate(180%) blur(8px) !important;
   }
 
-  /* Optimize gradients for mobile */
-  .mobile-performance .bg-gradient-to-br,
-  .mobile-performance .glass-spectra {
-    background-image: linear-gradient(135deg, #1f2937 0%, #374151 100%) !important;
+  /* Optimize gradients for mobile — dark only, so light cards stay light */
+  .dark .mobile-performance .bg-gradient-to-br,
+  .dark .mobile-performance .glass-spectra {
+    background-image: linear-gradient(135deg, #0E1626 0%, #0A1020 100%) !important;
   }
 }
 
@@ -349,12 +444,19 @@ img {
   }
 }
 
-/* Low-end device optimizations */
+/* Low-end device optimizations — drop expensive blur at standard DPI.
+   Previously this also forced background-color: rgba(0,0,0,0.8) on every
+   blurred surface, which painted all cards black in LIGHT mode on non-retina
+   (1dppx) displays. Removed: cards keep their own theme-correct background;
+   dark mode gets a near-black solid fallback only. */
 @media (resolution: 1dppx) {
   .mobile-performance .backdrop-blur-md,
   .mobile-performance .backdrop-blur-lg {
     backdrop-filter: none !important;
-    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  .dark .mobile-performance .backdrop-blur-md,
+  .dark .mobile-performance .backdrop-blur-lg {
+    background-color: rgba(10, 16, 32, 0.85) !important;
   }
 }
 
