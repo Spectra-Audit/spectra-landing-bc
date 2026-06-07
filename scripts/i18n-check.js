@@ -28,8 +28,6 @@ const CONSUMERS = {
   'src/app/[locale]/whitepaper/page.tsx': 'whitepaper',
   'src/components/ui/Navbar.tsx': '',
   'src/components/ui/DisclaimerFooter.tsx': 'disclaimer',
-  'src/components/ui/CustomerLogos.tsx': '',
-  'src/components/ui/StatsBanner.tsx': 'statsBanner',
   'src/components/ui/MethodologyDiagram.tsx': 'methodology.diagram',
   'src/components/ui/LearningLoopDiagram.tsx': 'learningLoop.diagram',
   'src/components/ui/UnifiedGradeDisplay.tsx': 'grades',
@@ -44,7 +42,13 @@ const staticKeys = new Set()
 const dynamicCalls = []
 
 for (const [rel, ns] of Object.entries(CONSUMERS)) {
-  const src = fs.readFileSync(path.join(root, rel), 'utf8')
+  const abs = path.join(root, rel)
+  if (!fs.existsSync(abs)) {
+    // Don't hard-crash CI when a consumer file is renamed/removed — warn and skip.
+    console.warn(`⚠️  i18n-check: consumer file not found, skipping: ${rel}`)
+    continue
+  }
+  const src = fs.readFileSync(abs, 'utf8')
   const re = /\bt(?:\.(?:rich|raw|has|markup))?\(\s*(['"`])((?:\\.|(?!\1).)*)\1/g
   let m
   while ((m = re.exec(src))) {

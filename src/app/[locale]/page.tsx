@@ -281,7 +281,7 @@ export default function HomePage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     {/* Reproducible Findings */}
                     <div className="flex items-start gap-3 text-left">
-                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500">
+                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500">
                         <FileCheck className="w-5 h-5" />
                       </div>
                       <div>
@@ -292,7 +292,7 @@ export default function HomePage() {
 
                     {/* Publicly Verifiable */}
                     <div className="flex items-start gap-3 text-left">
-                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500">
+                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500">
                         <Eye className="w-5 h-5" />
                       </div>
                       <div>
@@ -710,7 +710,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500">
                         <GitBranch className="w-5 h-5" />
                       </div>
                     </div>
@@ -728,7 +728,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
                         <Cpu className="w-5 h-5" />
                       </div>
                     </div>
@@ -746,7 +746,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
                         <Search className="w-5 h-5" />
                       </div>
                     </div>
@@ -764,7 +764,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
                         <Layers className="w-5 h-5" />
                       </div>
                     </div>
@@ -814,7 +814,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
                         <ThumbsUp className="w-5 h-5" />
                       </div>
                     </div>
@@ -832,7 +832,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
                         <BarChart3 className="w-5 h-5" />
                       </div>
                     </div>
@@ -850,7 +850,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
                         <Brain className="w-5 h-5" />
                       </div>
                     </div>
@@ -868,7 +868,7 @@ export default function HomePage() {
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-2.5 rounded-lg bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500">
+                      <div className="inline-flex p-2.5 rounded-lg transition-transform duration-300 group-hover:scale-110 bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500">
                         <RefreshCw className="w-5 h-5" />
                       </div>
                     </div>
@@ -891,9 +891,10 @@ export default function HomePage() {
         <section className="py-24 relative bg-neutral-100/50 dark:bg-ink-900/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div data-reveal className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white neon-text mb-6">
+              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6">
                 {t('hero.page.liveStatusTitle')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
                 {t('hero.page.liveStatusSubtitle')}
               </p>
@@ -944,9 +945,10 @@ export default function HomePage() {
         <section className="py-24 relative">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div data-reveal className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white neon-text mb-6">
+              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6">
                 {t('hero.page.finalCtaTitle')}
               </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
               <p className="text-xl text-neutral-600 dark:text-neutral-300 mb-8">
                 {t('hero.page.finalCtaSubtitle')}
               </p>
