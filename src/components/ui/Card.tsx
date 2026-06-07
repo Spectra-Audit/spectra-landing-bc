@@ -37,9 +37,9 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       // .holographic-card (globals.css) styles both light + dark; the border
       // comes from it, so hover utilities below just recolour/glow on top.
       spectra: cn(
-        'holographic-card backdrop-blur-md',
+        'group holographic-card backdrop-blur-md',
         'rounded-2xl shadow-lg',
-        'hover:border-spectra-blue-500/40 dark:hover:shadow-glow-spectra'
+        'hover:border-spectra-blue-500/40 hover:ring-1 hover:ring-spectra-blue-500/15 dark:hover:shadow-glow-spectra'
       ),
 
       // Hero card - Prominent with neon glow

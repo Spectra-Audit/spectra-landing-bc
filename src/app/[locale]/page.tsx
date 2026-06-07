@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
-import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Target, Wallet, LifeBuoy } from 'lucide-react'
+import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Wallet, LifeBuoy } from 'lucide-react'
 import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
 
 // Dynamic imports for heavy components
@@ -129,6 +129,17 @@ export default function HomePage() {
     ]
   }
 
+  // The five core audit pillars — our differentiator vs. code-only audits.
+  // Colours + icons mirror the dimension grid and the methodology diagram so
+  // the same visual language carries across the whole page.
+  const corePillars = [
+    { label: t('methodology.diagram.lanes.code'), Icon: Shield, color: 'text-spectra-green-500' },
+    { label: t('methodology.diagram.lanes.distribution'), Icon: Users, color: 'text-spectra-yellow-500' },
+    { label: t('methodology.diagram.lanes.tokenomics'), Icon: BarChart3, color: 'text-spectra-blue-500' },
+    { label: t('methodology.diagram.lanes.liquidity'), Icon: Droplets, color: 'text-spectra-purple-500' },
+    { label: t('methodology.diagram.lanes.sentiment'), Icon: MessagesSquare, color: 'text-spectra-cyan-500' }
+  ]
+
   return (
     <>
       {/* SEO Structured Data */}
@@ -214,6 +225,27 @@ export default function HomePage() {
                 </Button>
               </div>
 
+              {/* Five core audit pillars — the differentiator, surfaced high in the hero */}
+              <div className="mb-14 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-neutral-400 dark:text-neutral-500 mb-4">
+                  {t('hero.trustMetrics.threatTypes')}
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+                  {corePillars.map((pillar) => {
+                    const PillarIcon = pillar.Icon
+                    return (
+                      <span
+                        key={pillar.label}
+                        className="inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-white/10 bg-white/70 dark:bg-ink-850/60 px-4 py-2 text-sm font-medium text-neutral-700 dark:text-neutral-200 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-spectra-blue-500/40 dark:hover:shadow-glow-spectra"
+                      >
+                        <PillarIcon className={`w-4 h-4 ${pillar.color}`} />
+                        {pillar.label}
+                      </span>
+                    )
+                  })}
+                </div>
+              </div>
+
               {/* Unified Grade Display - CENTERPIECE (Replaces SecurityIllustration + GradeBadge) */}
               <div className="mb-12 animate-scale-in" style={{ animationDelay: '0.3s' }}>
                 <UnifiedGradeDisplay
@@ -243,50 +275,36 @@ export default function HomePage() {
                 ))}
               </div>
 
-              {/* Security Audit Section */}
-              <div className="max-w-4xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-                <div className="holographic-card dark:neon-glow rounded-2xl p-8 md:p-10 shadow-2xl">
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-3">
-                      {t('hero.page.securityAuditTitle')}
-                    </h3>
-                    <p className="text-neutral-600 dark:text-neutral-300 text-base md:text-lg">
-                      {t('hero.page.securityAuditSubtitle')}
-                    </p>
-                  </div>
-
-                  {/* Security Features */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {/* Trust strip — reproducible & publicly verifiable (condensed) */}
+              <div className="max-w-3xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
+                <div className="holographic-card dark:neon-glow rounded-2xl p-6 md:p-7 shadow-xl">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     {/* Reproducible Findings */}
-                    <div className="text-center p-6 rounded-xl bg-white dark:bg-ink-850/70 border border-neutral-200 dark:border-white/5 shadow-sm transition-colors hover:border-spectra-blue-500/30">
-                      <div className="inline-flex p-3 rounded-full bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500 mb-4">
-                        <FileCheck className="w-8 h-8" />
+                    <div className="flex items-start gap-3 text-left">
+                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg bg-spectra-green-500/20 dark:bg-spectra-green-500/10 text-spectra-green-700 dark:text-spectra-green-500">
+                        <FileCheck className="w-5 h-5" />
                       </div>
-                      <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">{t('hero.page.thirdPartyAudited')}</h4>
-                      <p className="text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.thirdPartyAuditedDesc')}</p>
-                      <div className="mt-3 inline-flex items-center gap-1 text-xs text-spectra-green-700 dark:text-spectra-green-500">
-                        <CheckCircle className="w-3 h-3" />
-                        {t('hero.page.verified')}
+                      <div>
+                        <h4 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.thirdPartyAudited')}</h4>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">{t('hero.page.thirdPartyAuditedDesc')}</p>
                       </div>
                     </div>
 
                     {/* Publicly Verifiable */}
-                    <div className="text-center p-6 rounded-xl bg-white dark:bg-ink-850/70 border border-neutral-200 dark:border-white/5 shadow-sm transition-colors hover:border-spectra-blue-500/30">
-                      <div className="inline-flex p-3 rounded-full bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500 mb-4">
-                        <Eye className="w-8 h-8" />
+                    <div className="flex items-start gap-3 text-left">
+                      <div className="flex-shrink-0 inline-flex p-2.5 rounded-lg bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500">
+                        <Eye className="w-5 h-5" />
                       </div>
-                      <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">{t('hero.page.openSource')}</h4>
-                      <p className="text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.openSourceDesc')}</p>
-                      <div className="mt-3 inline-flex items-center gap-1 text-xs text-spectra-blue-600 dark:text-spectra-blue-500">
-                        <CheckCircle className="w-3 h-3" />
-                        {t('hero.page.transparent')}
+                      <div>
+                        <h4 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.openSource')}</h4>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">{t('hero.page.openSourceDesc')}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Trust Message */}
-                  <div className="text-center pt-6 border-t border-neutral-200 dark:border-neutral-700/50">
-                    <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                  <div className="text-center mt-5 pt-5 border-t border-neutral-200 dark:border-white/5">
+                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
                       {t('hero.page.trustMessage')}
                     </p>
                   </div>
@@ -320,7 +338,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500 transition-transform duration-300 group-hover:scale-110">
                       <Shield className="w-6 h-6" />
                     </div>
                   </div>
@@ -342,7 +360,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500 transition-transform duration-300 group-hover:scale-110">
                       <BarChart3 className="w-6 h-6" />
                     </div>
                   </div>
@@ -364,7 +382,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500 transition-transform duration-300 group-hover:scale-110">
                       <Droplets className="w-6 h-6" />
                     </div>
                   </div>
@@ -386,7 +404,7 @@ export default function HomePage() {
               <Card variant="spectra" hover className="h-full">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex p-3 rounded-xl bg-spectra-yellow-500/20 text-spectra-yellow-700 dark:text-spectra-yellow-500">
+                    <div className="inline-flex p-3 rounded-xl bg-spectra-yellow-500/20 text-spectra-yellow-700 dark:text-spectra-yellow-500 transition-transform duration-300 group-hover:scale-110">
                       <Users className="w-6 h-6" />
                     </div>
                   </div>
@@ -404,24 +422,19 @@ export default function HomePage() {
                 </div>
               </Card>
 
-              {/* Team & Sentiment - Spans 2 columns */}
+              {/* Sentiment — live pillar, spans 2 columns to fill the row */}
               <div className="md:col-span-2 lg:col-span-2">
                 <Card variant="spectra" hover className="h-full">
                   <div className="flex flex-col md:flex-row items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-3 rounded-xl bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
+                      <div className="inline-flex p-3 rounded-xl bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500 transition-transform duration-300 group-hover:scale-110">
                         <MessagesSquare className="w-6 h-6" />
                       </div>
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-lg font-bold text-neutral-900 dark:text-white">
-                          {t('howScoresWork.dimensions.team.title')}
-                        </h3>
-                        <span className="inline-block px-2 py-1 rounded bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 text-xs font-semibold">
-                          {t('howScoresWork.dimensions.team.comingSoon')}
-                        </span>
-                      </div>
+                      <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
+                        {t('methodology.diagram.lanes.sentiment')}
+                      </h3>
                       <div className="inline-block px-2 py-1 rounded bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500 text-xs font-mono font-semibold mb-3">
                         {t('howScoresWork.dimensions.team.score')}
                       </div>
@@ -663,26 +676,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Additional Trust Indicators Row */}
-            <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-              <Card variant="stats" className="text-center">
-                <Cpu className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
-                <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.aiPoweredAnalysis')}</div>
-                <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.aiPoweredAnalysisDesc')}</div>
-              </Card>
-
-              <Card variant="stats" className="text-center">
-                <Target className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
-                <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.highAccuracy')}</div>
-                <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.highAccuracyDesc')}</div>
-              </Card>
-
-              <Card variant="stats" className="text-center">
-                <Layers className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-blue-600 dark:text-spectra-blue-500 mx-auto mb-3" />
-                <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.multiDimensional')}</div>
-                <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.multiDimensionalDesc')}</div>
-              </Card>
-            </div>
           </div>
         </section>
 
