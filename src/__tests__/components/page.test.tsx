@@ -37,7 +37,6 @@ jest.mock('@/components/ui', () => ({
   LearningLoopDiagram: (props: any) => <div data-testid="learning-loop-diagram" {...props} />,
   DisclaimerFooter: (props: any) => <div data-testid="disclaimer-footer" {...props} />,
   Navbar: () => <div data-testid="navbar">Navigation</div>,
-  StatsBanner: () => <div data-testid="stats-banner">Stats Banner</div>,
 }))
 
 jest.mock('@/components/ui/StructuredData', () => ({
