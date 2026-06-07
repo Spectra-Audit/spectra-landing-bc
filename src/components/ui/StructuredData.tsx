@@ -267,7 +267,7 @@ export const createWebPageSchema = (): WebPageSchema => ({
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Spectra Audit - AI-Powered Security Audits | Smart Contract Security',
-  description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in seconds, not weeks. Continuous monitoring for blockchain protocols.',
+  description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in minutes, not weeks. Continuous monitoring for blockchain protocols.',
   url: 'https://spectra-audit.com',
   inLanguage: 'en',
   isPartOf: {

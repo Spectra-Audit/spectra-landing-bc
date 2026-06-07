@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "スマートコントラクトセキュリティ監査",
-      "heroSubtitle": "数秒で、数週間ではなく",
+      "heroSubtitle": "数分で、数週間ではなく",
       "heroDescription": "検証可能なエビデンス付きのAI駆動スマートコントラクト分析。20分以内に包括的なセキュリティ分析を取得。登録不要。",
       "securityAuditTitle": "公開検証可能な監査",
       "securityAuditSubtitle": "検査、監査、再現が可能な透明性のある方法論",
@@ -124,8 +124,8 @@
       "transparentValue": "完全に",
       "transparentLabel": "透明な方法論",
       "transparentBadge": "検証可能な結果",
-      "systemReady": "システム準備完了 • 数秒で監査を開始",
-      "finalCtaTitle": "数秒でセキュリティ。検証準備完了？",
+      "systemReady": "システム準備完了 • 数分で監査を開始",
+      "finalCtaTitle": "数分でセキュリティ。検証準備完了？",
       "finalCtaSubtitle": "プロアクティブな保護で脆弱性に先手を打ちましょう。今日 Spectra Audit を開始し、検証可能なリアルタイムセキュリティ監視で投資を保護してください。",
       "noCreditCardRequired": "クレジットカード不要 • クイック設定",
       "quickSetup": "クイック設定",
@@ -254,7 +254,7 @@
     "systemStatus": "全システム正常稼働中"
   },
   "cta": {
-    "title": "セキュリティを数秒で。検証の準備はいいですか？",
+    "title": "セキュリティを数分で。検証の準備はいいですか？",
     "subtitle": "検証可能なAI駆動分析で脆弱性に先手を打ちましょう。Spectra Auditを始めて、プロジェクトのセキュリティ姿勢を数分で検査してください。",
     "button": "今すぐ無料監査を開始",
     "noCreditCard": "クレジットカード不要 • クイック設定",
@@ -596,7 +596,7 @@
     }
   },
   "learningLoop": {
-    "title": "スコアが時間とともに正確であり続ける方法",
+    "title": "Spectraスコアが時間とともに向上する仕組み",
     "subtitle": "Spectra Auditは、現実世界のフィードバックと過去の監査との校正を通じて継続的に改善されます — すべての分析が次の分析に情報を提供します。",
     "userFeedback": {
       "title": "ユーザーフィードバック統合",

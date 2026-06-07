@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "Smart Contract Sicherheitsaudits",
-      "heroSubtitle": "in Sekunden, nicht Wochen",
+      "heroSubtitle": "in Minuten, nicht Wochen",
       "heroDescription": "KI-gestützte Smart Contract Analyse mit verifizierbaren Nachweisen. Erhalten Sie umfassende Sicherheitsanalysen in unter 20 Minuten. Keine Registrierung erforderlich.",
       "securityAuditTitle": "Öffentlich verifizierbare Audits",
       "securityAuditSubtitle": "Transparente Methodik, die Sie inspizieren, auditieren und reproduzieren können",
@@ -124,8 +124,8 @@
       "transparentValue": "Vollständig",
       "transparentLabel": "Transparente Methodik",
       "transparentBadge": "Verifizierbare Ergebnisse",
-      "systemReady": "System bereit • Starten Sie Ihren Audit in Sekunden",
-      "finalCtaTitle": "Sicherheit in Sekunden. Bereit zu verifizieren?",
+      "systemReady": "System bereit • Starten Sie Ihren Audit in Minuten",
+      "finalCtaTitle": "Sicherheit in Minuten. Bereit zu verifizieren?",
       "finalCtaSubtitle": "Bleiben Sie Schwachstellen einen Schritt voraus mit proaktivem Schutz. Starten Sie noch heute mit Spectra Audit und schützen Sie Ihre Investitionen mit verifizierbarer Echtzeit-Sicherheitsüberwachung.",
       "noCreditCardRequired": "Keine Kreditkarte erforderlich • Schnelle Einrichtung",
       "quickSetup": "Schnelle Einrichtung",
@@ -254,7 +254,7 @@
     "systemStatus": "Alle Systeme betriebsbereit"
   },
   "cta": {
-    "title": "Sicherheit in Sekunden. Bereit zur Überprüfung?",
+    "title": "Sicherheit in Minuten. Bereit zur Überprüfung?",
     "subtitle": "Bleiben Sie Schwachstellen einen Schritt voraus mit verifizierbarer KI-gestützter Analyse. Starten Sie mit Spectra Audit und inspizieren Sie die Sicherheitslage eines Projekts in Minuten.",
     "button": "Starten Sie jetzt Ihr kostenloses Audit",
     "noCreditCard": "Keine Kreditkarte erforderlich • Schnelle Einrichtung",
@@ -596,7 +596,7 @@
     }
   },
   "learningLoop": {
-    "title": "Wie Bewertungen im Laufe der Zeit präzise bleiben",
+    "title": "Wie sich der Spectra-Score mit der Zeit verbessert",
     "subtitle": "Spectra Audit verbessert sich kontinuierlich durch reales Feedback und Kalibrierung gegen historische Audits — jede Analyse informiert die nächste.",
     "userFeedback": {
       "title": "Integration von Nutzer-Feedback",

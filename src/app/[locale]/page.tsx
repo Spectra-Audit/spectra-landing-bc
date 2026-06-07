@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import dynamic from 'next/dynamic'
 import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
-import { Shield, Search, BarChart3, CheckCircle, TrendingUp, Zap, Eye, Award, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck } from 'lucide-react'
+import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Target, Wallet, LifeBuoy } from 'lucide-react'
 import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
 
 // Dynamic imports for heavy components
@@ -76,7 +76,7 @@ export default function HomePage() {
   }, [])
 
   // Fallback translations for SSR
-  const fallbackHeadline = "Smart Contract Security Audits in Seconds, Not Weeks"
+  const fallbackHeadline = "Smart Contract Security Audits in Minutes, Not Weeks"
   const fallbackSubheadline = "AI-powered smart contract analysis. Get comprehensive security audits with verifiable evidence in under 20 minutes."
 
   // Hero / final-CTA content. Persona-specific variants were retired when the
@@ -228,7 +228,7 @@ export default function HomePage() {
                     {/* Publicly Verifiable */}
                     <div className="text-center p-6 rounded-xl bg-white dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700/50 shadow-sm">
                       <div className="inline-flex p-3 rounded-full bg-spectra-blue-500/20 dark:bg-spectra-blue-500/10 text-spectra-blue-600 dark:text-spectra-blue-500 mb-4">
-                        <Shield className="w-8 h-8" />
+                        <Eye className="w-8 h-8" />
                       </div>
                       <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">{t('hero.page.openSource')}</h4>
                       <p className="text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.openSourceDesc')}</p>
@@ -319,7 +319,7 @@ export default function HomePage() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
                     <div className="inline-flex p-3 rounded-xl bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500">
-                      <TrendingUp className="w-6 h-6" />
+                      <Droplets className="w-6 h-6" />
                     </div>
                   </div>
                   <div className="flex-1">
@@ -364,7 +364,7 @@ export default function HomePage() {
                   <div className="flex flex-col md:flex-row items-start gap-4">
                     <div className="flex-shrink-0">
                       <div className="inline-flex p-3 rounded-xl bg-spectra-cyan-500/20 text-spectra-cyan-700 dark:text-spectra-cyan-500">
-                        <Award className="w-6 h-6" />
+                        <MessagesSquare className="w-6 h-6" />
                       </div>
                     </div>
                     <div className="flex-1">
@@ -488,7 +488,7 @@ export default function HomePage() {
                     {/* Icon */}
                     <div className="flex-shrink-0">
                       <div className="inline-flex p-4 sm:p-5 rounded-2xl bg-spectra-green-500/20 text-spectra-green-700 dark:text-spectra-green-500 group-hover:bg-spectra-green-500/30 transition-all">
-                        <Zap className="w-8 h-8 sm:w-10 sm:h-10" />
+                        <ScanSearch className="w-8 h-8 sm:w-10 sm:h-10" />
                       </div>
                     </div>
 
@@ -553,7 +553,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="mb-4">
                     <div className="inline-flex p-3 rounded-xl bg-spectra-purple-500/20 text-spectra-purple-600 dark:text-spectra-purple-500 mb-4 group-hover:bg-spectra-purple-500/30 transition-all">
-                      <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7" />
+                      <Layers className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-spectra-purple-600 dark:group-hover:text-spectra-purple-400 transition-colors">
                       {t('hero.page.comprehensiveCoverage')}
@@ -582,7 +582,7 @@ export default function HomePage() {
                     {/* Icon */}
                     <div className="flex-shrink-0">
                       <div className="inline-flex p-4 sm:p-5 rounded-2xl bg-spectra-blue-500/20 text-spectra-blue-600 dark:text-spectra-blue-500 group-hover:bg-spectra-blue-500/30 transition-all">
-                        <Shield className="w-8 h-8 sm:w-10 sm:h-10" />
+                        <Workflow className="w-8 h-8 sm:w-10 sm:h-10" />
                       </div>
                     </div>
 
@@ -619,19 +619,19 @@ export default function HomePage() {
             {/* Additional Trust Indicators Row */}
             <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
               <Card variant="stats" className="text-center">
-                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
+                <Cpu className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
                 <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.aiPoweredAnalysis')}</div>
                 <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.aiPoweredAnalysisDesc')}</div>
               </Card>
 
               <Card variant="stats" className="text-center">
-                <Award className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
+                <Target className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
                 <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.highAccuracy')}</div>
                 <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.highAccuracyDesc')}</div>
               </Card>
 
               <Card variant="stats" className="text-center">
-                <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-blue-600 dark:text-spectra-blue-500 mx-auto mb-3" />
+                <Layers className="w-8 h-8 sm:w-10 sm:h-10 text-spectra-blue-600 dark:text-spectra-blue-500 mx-auto mb-3" />
                 <div className="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white mb-1">{t('hero.page.multiDimensional')}</div>
                 <div className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">{t('hero.page.multiDimensionalDesc')}</div>
               </Card>
@@ -870,7 +870,7 @@ export default function HomePage() {
                 <div>
                   <div className="text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 mb-2 flex items-center justify-center gap-2">
                     {t('hero.page.dimensionsValue')}
-                    <Shield className="w-5 h-5" />
+                    <Layers className="w-5 h-5" />
                   </div>
                   <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.dimensionsLabel')}</div>
                   <div className="text-xs text-spectra-green-700 dark:text-spectra-green-500 mt-1">{t('hero.page.dimensionsBadge')}</div>
@@ -929,14 +929,14 @@ export default function HomePage() {
             {/* Trust Builders */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
               <div className="text-center">
-                <Shield className="w-8 h-8 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
+                <Wallet className="w-8 h-8 text-spectra-green-700 dark:text-spectra-green-500 mx-auto mb-3" />
                 <h3 className="text-neutral-900 dark:text-white font-medium mb-2">{t('hero.page.quickSetup')}</h3>
                 <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   {t('hero.page.quickSetupDesc')}
                 </p>
               </div>
               <div className="text-center">
-                <Award className="w-8 h-8 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
+                <LifeBuoy className="w-8 h-8 text-yellow-600 dark:text-yellow-400 mx-auto mb-3" />
                 <h3 className="text-neutral-900 dark:text-white font-medium mb-2">{t('hero.page.expertSupport')}</h3>
                 <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   {t('hero.page.expertSupportDesc')}

@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "Smart Contract Security Audits",
-      "heroSubtitle": "in Seconds, Not Weeks",
+      "heroSubtitle": "in Minutes, Not Weeks",
       "heroDescription": "AI-powered smart contract analysis with verifiable evidence. Get comprehensive security analysis in under 20 minutes. No registration required.",
       "securityAuditTitle": "Publicly Verifiable Audits",
       "securityAuditSubtitle": "Transparent methodology you can inspect, audit, and reproduce",
@@ -124,8 +124,8 @@
       "transparentValue": "Fully",
       "transparentLabel": "Transparent methodology",
       "transparentBadge": "Verifiable results",
-      "systemReady": "System ready • Start your audit in seconds",
-      "finalCtaTitle": "Security in seconds. Ready to verify?",
+      "systemReady": "System ready • Start your audit in minutes",
+      "finalCtaTitle": "Security in minutes. Ready to verify?",
       "finalCtaSubtitle": "Stay ahead of vulnerabilities with proactive protection. Get started with Spectra Audit today and protect your investments with real-time, verifiable security monitoring.",
       "noCreditCardRequired": "No credit card required • Quick setup",
       "quickSetup": "Quick Setup",
@@ -254,7 +254,7 @@
     "systemStatus": "All systems operational"
   },
   "cta": {
-    "title": "Security in seconds. Ready to verify?",
+    "title": "Security in minutes. Ready to verify?",
     "subtitle": "Stay ahead of vulnerabilities with verifiable AI-driven analysis. Get started with Spectra Audit and inspect a project's security posture in minutes.",
     "button": "Start Your Free Audit Now",
     "noCreditCard": "No credit card required • Quick setup",
@@ -596,7 +596,7 @@
     }
   },
   "learningLoop": {
-    "title": "How Scores Stay Accurate Over Time",
+    "title": "How the Spectra Score Improves With Time",
     "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits — every analysis informs the next.",
     "userFeedback": {
       "title": "User Feedback Integration",

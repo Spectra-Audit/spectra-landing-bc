@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "Akıllı Sözleşme Güvenlik Denetimleri",
-      "heroSubtitle": "saniyeler içinde, haftalar değil",
+      "heroSubtitle": "dakikalar içinde, haftalar değil",
       "heroDescription": "Doğrulanabilir kanıtlarla AI destekli akıllı sözleşme analizi. 20 dakikanın altında kapsamlı güvenlik analizi alın. Kayıt gerekmez.",
       "securityAuditTitle": "Herkese Açık Şekilde Doğrulanabilir Denetimler",
       "securityAuditSubtitle": "İnceleyebileceğiniz, denetleyebileceğiniz ve yeniden üretebileceğiniz şeffaf metodoloji",
@@ -124,8 +124,8 @@
       "transparentValue": "Tamamen",
       "transparentLabel": "Şeffaf metodoloji",
       "transparentBadge": "Doğrulanabilir sonuçlar",
-      "systemReady": "Sistem hazır • Denetiminizi saniyeler içinde başlatın",
-      "finalCtaTitle": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
+      "systemReady": "Sistem hazır • Denetiminizi dakikalar içinde başlatın",
+      "finalCtaTitle": "Dakikalar içinde güvenlik. Doğrulamaya hazır mısınız?",
       "finalCtaSubtitle": "Proaktif korumayla açıkların önünde olun. Bugün Spectra Audit ile başlayın ve yatırımlarınızı doğrulanabilir gerçek zamanlı güvenlik izleme ile koruyun.",
       "noCreditCardRequired": "Kredi kartı gerekmez • Hızlı kurulum",
       "quickSetup": "Hızlı Kurulum",
@@ -254,7 +254,7 @@
     "systemStatus": "Tüm sistemler operasyonel"
   },
   "cta": {
-    "title": "Saniyeler içinde güvenlik. Doğrulamaya hazır mısınız?",
+    "title": "Dakikalar içinde güvenlik. Doğrulamaya hazır mısınız?",
     "subtitle": "Doğrulanabilir AI destekli analizle açıkların önünde olun. Spectra Audit ile başlayın ve bir projenin güvenlik durumunu dakikalar içinde inceleyin.",
     "button": "Ücretsiz Denetiminizi Şimdi Başlatın",
     "noCreditCard": "Kredi kartı gerekmez • Hızlı kurulum",
@@ -596,7 +596,7 @@
     }
   },
   "learningLoop": {
-    "title": "Skorlar Zamanla Nasıl Doğru Kalır",
+    "title": "Spectra Skoru Zamanla Nasıl Gelişir",
     "subtitle": "Spectra Audit, gerçek dünya geri bildirimleri ve geçmiş denetimlere karşı kalibrasyon yoluyla sürekli gelişir — her analiz bir sonrakine bilgi sağlar.",
     "userFeedback": {
       "title": "Kullanıcı Geri Bildirim Entegrasyonu",

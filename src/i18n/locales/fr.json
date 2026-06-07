@@ -70,7 +70,7 @@
     },
     "page": {
       "heroTitle": "Audits de Sécurité de Contrats Intelligents",
-      "heroSubtitle": "en Secondes, Pas Semaines",
+      "heroSubtitle": "en Minutes, Pas Semaines",
       "heroDescription": "Analyse de contrats intelligents par IA avec preuves vérifiables. Obtenez une analyse de sécurité complète en moins de 20 minutes. Aucune inscription requise.",
       "securityAuditTitle": "Audits Vérifiables Publiquement",
       "securityAuditSubtitle": "Méthodologie transparente que vous pouvez inspecter, auditer et reproduire",
@@ -124,8 +124,8 @@
       "transparentValue": "Entièrement",
       "transparentLabel": "Méthodologie transparente",
       "transparentBadge": "Résultats vérifiables",
-      "systemReady": "Système prêt • Commencez votre audit en secondes",
-      "finalCtaTitle": "Sécurité en secondes. Prêt à vérifier ?",
+      "systemReady": "Système prêt • Commencez votre audit en minutes",
+      "finalCtaTitle": "Sécurité en minutes. Prêt à vérifier ?",
       "finalCtaSubtitle": "Devancez les vulnérabilités avec une protection proactive. Commencez avec Spectra Audit aujourd'hui et protégez vos investissements avec une surveillance de sécurité vérifiable et en temps réel.",
       "noCreditCardRequired": "Aucune carte de crédit requise • Configuration rapide",
       "quickSetup": "Configuration Rapide",
@@ -254,7 +254,7 @@
     "systemStatus": "Tous les systèmes sont opérationnels"
   },
   "cta": {
-    "title": "La sécurité en quelques secondes. Prêt à vérifier ?",
+    "title": "La sécurité en quelques minutes. Prêt à vérifier ?",
     "subtitle": "Devancez les vulnérabilités avec une analyse vérifiable alimentée par IA. Démarrez avec Spectra Audit et inspectez la posture de sécurité d'un projet en quelques minutes.",
     "button": "Démarrer votre audit gratuit",
     "noCreditCard": "Aucune carte de crédit requise • Configuration rapide",
@@ -596,7 +596,7 @@
     }
   },
   "learningLoop": {
-    "title": "Comment les Scores Restent Précis dans le Temps",
+    "title": "Comment le Score Spectra S’améliore avec le Temps",
     "subtitle": "Spectra Audit s'améliore continuellement grâce aux retours du monde réel et à la calibration par rapport aux audits historiques — chaque analyse informe la suivante.",
     "userFeedback": {
       "title": "Intégration des Retours Utilisateurs",

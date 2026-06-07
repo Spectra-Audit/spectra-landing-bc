@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { createPortal } from 'react-dom'
 import { useTranslations, useLocale } from 'next-intl'
-import { Menu, X, ExternalLink, Rocket, FileText, DollarSign, Github, Twitter, MessageCircle } from 'lucide-react'
+import { Menu, X, ExternalLink, ArrowUpRight, FileText, DollarSign, Github, Twitter, MessageCircle } from 'lucide-react'
 import Button from './Button'
 import LanguageSelector from './LanguageSelector'
 import ThemeToggle from './ThemeToggle'
@@ -170,7 +170,7 @@ export function Navbar({ className }: NavbarProps) {
               <Button
                 size="sm"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium"
-                icon={<Rocket className="w-4 h-4" />}
+                icon={<ArrowUpRight className="w-4 h-4" />}
                 onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
                 {t('nav.launchApp')}
@@ -290,7 +290,7 @@ export function Navbar({ className }: NavbarProps) {
                     size="xl"
                     variant="gradient"
                     className="w-full min-h-[64px] text-lg font-semibold"
-                    icon={<Rocket className="w-5 h-5" />}
+                    icon={<ArrowUpRight className="w-5 h-5" />}
                     onClick={() => {
                       window.open('https://app.spectra-audit.com', '_blank')
                       setIsMobileMenuOpen(false)
