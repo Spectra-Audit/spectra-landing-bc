@@ -150,13 +150,12 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
           />
         )}
 
-        {/* Shield Shape with Score */}
+        {/* Score Shape — holographic surface; the score glows in its grade
+            colour (audit-fever look) instead of a flat coloured block */}
         <div
           className={cn(
-            'relative flex items-center justify-center rounded-2xl',
-            'bg-gradient-to-br',
-            config.bgGradient,
-            'border-2 backdrop-blur-sm',
+            'relative flex items-center justify-center rounded-3xl',
+            'holographic-card border-2 backdrop-blur-sm',
             config.borderColor,
             animated && 'animate-pulse-glow',
             config.shadowColor
@@ -164,15 +163,18 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
           style={{
             width: shieldSize,
             height: shieldSize,
-            boxShadow: animated ? `0 8px 32px ${config.glowColor}` : undefined
+            boxShadow: `0 8px 40px ${config.glowColor}`
           }}
         >
           {/* Score Number */}
-          <div className="text-center">
-            <div className="font-mono font-extrabold text-white" style={{ fontSize: shieldSize * 0.35 }}>
+          <div className="text-center leading-none">
+            <div
+              className={cn('font-mono font-extrabold drop-shadow-glow', config.color)}
+              style={{ fontSize: shieldSize * 0.4 }}
+            >
               {normalizedScore}
             </div>
-            <div className="text-white/80 text-sm">%</div>
+            <div className={cn('mt-1 text-sm font-semibold opacity-70', config.color)}>%</div>
           </div>
         </div>
 

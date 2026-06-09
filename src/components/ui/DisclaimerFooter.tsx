@@ -22,7 +22,7 @@ export default function DisclaimerFooter({ className = '' }: DisclaimerFooterPro
   return (
     <section
       aria-label="Disclaimer"
-      className={`border-t border-neutral-200 dark:border-neutral-800 bg-neutral-100/70 dark:bg-neutral-900/50 py-10 sm:py-12 ${className}`}
+      className={`border-t border-neutral-200 dark:border-white/5 bg-neutral-100/70 dark:bg-ink-900/40 py-10 sm:py-12 ${className}`}
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-start gap-3 sm:gap-4 mb-5">

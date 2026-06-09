@@ -92,7 +92,7 @@ const TrustBadge: React.FC<TrustBadgeProps> = ({
         <div className={cn(
           'flex items-center gap-3 px-6 py-4 rounded-2xl',
           'bg-spectra-blue-500/15 border border-spectra-blue-500/30',
-          'hover:bg-spectra-blue-500/20 hover:border-spectra-blue-500/50',
+          'hover:bg-spectra-blue-500/20 hover:border-spectra-blue-500/50 dark:hover:shadow-glow-spectra',
           'transition-all duration-300 hover:scale-105',
           animated && 'animate-pulse-glow'
         )}>

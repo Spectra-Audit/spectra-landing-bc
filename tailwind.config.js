@@ -31,6 +31,7 @@ module.exports = {
     'animate-success-pulse',
     'animate-slide-up',
     'animate-scale-in',
+    'animate-pulse-neon',
     // Keep essential utility classes that might be generated dynamically
     'bg-black/60',
     'bg-blue-500/20',
@@ -95,6 +96,7 @@ module.exports = {
     'bg-gradient-hero',
     'bg-gradient-hero-dark',
     'bg-gradient-card',
+    'bg-gradient-holo',
     'bg-gradient-shield-green',
     'bg-gradient-shield-blue',
     // Shadow classes
@@ -102,9 +104,15 @@ module.exports = {
     'shadow-glow-spectra-lg',
     'shadow-glow-green',
     'shadow-glow-green-lg',
+    'shadow-neon',
+    'shadow-neon-green',
     'shadow-card-hover',
     'shadow-cta-primary',
     'shadow-cta-primary-hover',
+    // Audit-fever utility classes (defined in globals.css)
+    'neon-text',
+    'neon-glow',
+    'holographic-card',
   ],
   theme: {
     extend: {
@@ -112,17 +120,19 @@ module.exports = {
         // Spectra Brand Colors - distinctive, professional palette
         spectra: {
           blue: {
-            50: '#E6F0FF',
-            100: '#B3D9FF',
-            200: '#80C2FF',
-            300: '#4DA8FF',
-            400: '#1A8FFF',
-            500: '#0066FF',  // Primary brand color - professional, trustworthy
-            600: '#0052CC',
-            700: '#003D99',
-            800: '#002966',
-            900: '#001433',
-            950: '#000a1a',
+            // Audit-fever azure — bright, neon-leaning cyan-blue (~hsl(202 100% 50%)).
+            // Brighter than the old #0066FF so glows read as the audit-fever cyan.
+            50: '#E6F4FF',
+            100: '#BDE4FF',
+            200: '#85CEFF',
+            300: '#4DB8FF',
+            400: '#1AA3FF',
+            500: '#0099FF',  // Primary brand color - neon azure
+            600: '#007ACC',
+            700: '#005C99',
+            800: '#003D66',
+            900: '#001F33',
+            950: '#00111F',
           },
           green: {
             50: '#E6FFF5',
@@ -232,38 +242,51 @@ module.exports = {
           800: '#262626',
           900: '#171717',
           950: '#0a0a0a',
+        },
+        // Audit-fever near-black dark surfaces — deep blue-black so the cyan
+        // ambient glow + neon accents pop the way they do on audit-fever.
+        ink: {
+          950: '#070B14',  // page background (near-black navy)
+          900: '#0A1020',  // raised / alternating sections
+          850: '#0E1626',  // card surface
+          800: '#13203A',  // hovered card / inset
         }
       },
       // Enhanced gradient system
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        // New Spectra gradients
-        'gradient-spectra': 'linear-gradient(135deg, #0066FF 0%, #6366F1 50%, #00D084 100%)',
-        'gradient-spectra-subtle': 'linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%)',
+        // New Spectra gradients — azure-led to match audit-fever's neon cyan
+        'gradient-spectra': 'linear-gradient(135deg, #0099FF 0%, #00C2FF 45%, #00D084 100%)',
+        'gradient-spectra-subtle': 'linear-gradient(135deg, rgba(0, 153, 255, 0.12) 0%, rgba(0, 194, 255, 0.05) 100%)',
         'gradient-hero': 'linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.02) 50%, rgba(15, 23, 42, 0) 100%)',
-        'gradient-hero-dark': 'linear-gradient(180deg, #0F172A 0%, #1E293B 50%, #0F172A 100%)',
+        'gradient-hero-dark': 'linear-gradient(180deg, #070B14 0%, #0A1020 50%, #070B14 100%)',
+        // Holographic dark card — audit-fever "FUT card" surface
         'gradient-card': 'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%)',
-        'gradient-cta': 'linear-gradient(135deg, #0066FF 0%, #00D084 100%)',
+        'gradient-holo': 'linear-gradient(135deg, rgba(0,153,255,0.10) 0%, rgba(14,22,38,0.6) 45%, rgba(0,208,132,0.06) 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #0099FF 0%, #00C8B4 100%)',
         'gradient-shield-green': 'linear-gradient(135deg, #00D084, #00A86B)',
-        'gradient-shield-blue': 'linear-gradient(135deg, #0066FF, #0052CC)',
+        'gradient-shield-blue': 'linear-gradient(135deg, #0099FF, #007ACC)',
         // Legacy gradients (keep for backward compatibility)
         'gradient-spectra-old': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         'hero-gradient': 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
       },
       // Enhanced shadow system
       boxShadow: {
-        'glow': '0 0 20px rgba(59, 130, 246, 0.5)',
-        'glow-lg': '0 0 40px rgba(59, 130, 246, 0.3)',
+        'glow': '0 0 20px rgba(0, 153, 255, 0.5)',
+        'glow-lg': '0 0 40px rgba(0, 153, 255, 0.3)',
         'inner-glow': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.1)',
-        // New Spectra shadows
-        'glow-spectra': '0 0 20px rgba(0, 102, 255, 0.5)',
-        'glow-spectra-lg': '0 0 40px rgba(0, 102, 255, 0.3)',
+        // New Spectra shadows — azure neon to match audit-fever
+        'glow-spectra': '0 0 20px rgba(0, 153, 255, 0.5)',
+        'glow-spectra-lg': '0 0 40px rgba(0, 153, 255, 0.3)',
         'glow-green': '0 0 20px rgba(0, 208, 132, 0.5)',
         'glow-green-lg': '0 0 40px rgba(0, 208, 132, 0.3)',
-        'card-hover': '0 12px 24px rgba(0, 0, 0, 0.3)',
-        'cta-primary': '0 4px 12px rgba(0, 102, 255, 0.4)',
-        'cta-primary-hover': '0 8px 20px rgba(0, 102, 255, 0.5)',
+        // Layered neon halo (audit-fever .neon-glow look)
+        'neon': '0 0 12px rgba(0,153,255,0.35), 0 0 28px rgba(0,153,255,0.20), 0 0 48px rgba(0,153,255,0.10)',
+        'neon-green': '0 0 12px rgba(0,208,132,0.35), 0 0 28px rgba(0,208,132,0.18)',
+        'card-hover': '0 12px 28px rgba(0, 0, 0, 0.45)',
+        'cta-primary': '0 4px 12px rgba(0, 153, 255, 0.4)',
+        'cta-primary-hover': '0 8px 24px rgba(0, 153, 255, 0.55)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -306,6 +329,7 @@ module.exports = {
         'glow': 'glow 2s ease-in-out infinite alternate',
         // New Spectra animations
         'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'pulse-neon': 'pulseNeon 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'success-pulse': 'successPulse 0.6s ease-out',
         'slide-up': 'slideUp 0.6s ease-out',
         'scale-in': 'scaleIn 0.3s ease-out',
@@ -347,6 +371,11 @@ module.exports = {
         pulseGlow: {
           '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
           '50%': { opacity: '1', transform: 'scale(1.1)' },
+        },
+        // Breathing neon halo for the primary CTA (audit-fever pulse-neon)
+        pulseNeon: {
+          '0%, 100%': { boxShadow: '0 0 8px rgba(0,153,255,0.45), 0 0 0 rgba(0,153,255,0)' },
+          '50%': { boxShadow: '0 0 18px rgba(0,153,255,0.85), 0 0 36px rgba(0,153,255,0.4), 0 0 56px rgba(0,153,255,0.2)' },
         },
         successPulse: {
           '0%': { transform: 'scale(1)' },

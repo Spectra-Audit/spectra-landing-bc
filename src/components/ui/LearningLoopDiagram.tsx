@@ -130,14 +130,14 @@ export default function LearningLoopDiagram({
         {/* Defs: edge gradient + inner glow */}
         <defs>
           <linearGradient id="loop-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.75" />
+            <stop offset="0%" stopColor="rgb(0, 153, 255)" stopOpacity="0.75" />
             <stop offset="50%" stopColor="rgb(99, 102, 241)" stopOpacity="0.75" />
             <stop offset="100%" stopColor="rgb(0, 208, 132)" stopOpacity="0.75" />
           </linearGradient>
 
           <radialGradient id="loop-center-glow" cx="50%" cy="45%" r="55%">
-            <stop offset="0%" stopColor="rgb(0, 102, 255)" stopOpacity="0.18" />
-            <stop offset="100%" stopColor="rgb(0, 102, 255)" stopOpacity="0" />
+            <stop offset="0%" stopColor="rgb(0, 153, 255)" stopOpacity="0.18" />
+            <stop offset="100%" stopColor="rgb(0, 153, 255)" stopOpacity="0" />
           </radialGradient>
         </defs>
 

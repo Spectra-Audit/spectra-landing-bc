@@ -178,9 +178,9 @@
         "description": "Concentration analysis, whale risk assessment, anonymous holder flags, team token tracking, and decentralization score."
       },
       "team": {
-        "title": "Team & Sentiment",
+        "title": "Sentiment",
         "score": "0-100",
-        "description": "Background verification, past project history, community health signals, social sentiment analysis, and public trust indicators.",
+        "description": "Community engagement and social-trust signals — votes, comments, follows, and reports — weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "Coming Soon"
       }
     },

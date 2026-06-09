@@ -8,7 +8,11 @@ const nextConfig = {
 
   // Performance optimizations
   experimental: {
-    optimizeCss: true,
+    // optimizeCss (critical-CSS inlining) intentionally NOT enabled: it relies
+    // on `critters`, which is deprecated and was never in the lockfile — so it
+    // already no-op'd on Vercel while silently running locally. Removing the
+    // flag makes local match prod. Revisit deliberately (measure FCP; use a
+    // supported inliner) if critical-CSS inlining is wanted.
     scrollRestoration: true,
     largePageDataBytes: 128 * 1000, // 128KB
   },
