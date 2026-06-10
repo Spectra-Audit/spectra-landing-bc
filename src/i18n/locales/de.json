@@ -592,6 +592,10 @@
       "title": "Bereit für tiefere Sicherheitseinblicke?",
       "description": "Erleben Sie die Leistung der 5-dimensionalen Analyse mit KI-optimierter Bewertung. Erhalten Sie ein umfassendes Sicherheitsaudit in Minuten — nicht Wochen.",
       "button": "Starten Sie Ihren ersten Audit"
+    },
+    "metadata": {
+      "title": "Das 5-dimensionale Sicherheits-Audit-Framework | Spectra Audit",
+      "description": "Wie Spectra Audit Smart Contracts nach Code, Verteilung, Tokenomics, Liquidität und Sentiment bewertet – eine transparente Note mit überprüfbaren Belegen."
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "Essenzielle akzeptieren",
     "acceptAll": "Alle akzeptieren",
     "rejectAll": "Alle ablehnen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Wie lange dauert ein Smart-Contract-Audit?",
+    "a1": "Spectra Audit schließt die meisten Audits in 20 Minuten oder weniger ab – statt der Tage oder Wochen eines traditionellen manuellen Audits.",
+    "q2": "Welche Arten von Schwachstellen erkennt Spectra Audit?",
+    "a2": "Spectra Audit erkennt über 15 Schwachstellen-Kategorien, darunter Reentrancy, Overflow/Underflow, Zugriffskontrollprobleme und ökonomische Angriffsvektoren.",
+    "q3": "Ist das Sicherheits-Audit von Spectra Audit wirklich kostenlos?",
+    "a3": "Ja. Spectra Audit bietet kostenlose, umfassende Sicherheits-Audits ohne Kreditkarte. Premium-Funktionen für erweitertes Monitoring sind verfügbar.",
+    "q4": "Wie genau sind die Ergebnisse von Spectra Audit?",
+    "a4": "Spectra Audit erkennt bis zu 95 % der bekannten Schwachstellenmuster. Alle Ergebnisse stammen aus KI-Analysen und enthalten überprüfbare Belege. Die Ergebnisse sind informativ und garantieren nicht die Sicherheit eines Projekts.",
+    "q5": "Unterstützt Spectra Audit mehrere Blockchains?",
+    "a5": "Ja. Spectra Audit unterstützt Ethereum, BSC, Polygon, Arbitrum, Optimism und weitere EVM-kompatible Blockchains."
   }
 }

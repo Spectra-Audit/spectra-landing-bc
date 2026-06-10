@@ -199,6 +199,13 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
       }
       break
     }
+
+    case 'faq': {
+      // FAQ data arrives as a complete schema.org FAQPage object (built from
+      // the active locale's translations so the markup matches visible text).
+      schema = data as FAQSchema
+      break
+    }
   }
 
   return (
@@ -235,14 +242,9 @@ export const createOrganizationSchema = (): OrganizationSchema => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Spectra Audit',
-  url: 'https://spectra-audit.com',
-  logo: 'https://spectra-audit.com/logo.png',
+  url: 'https://www.spectra-audit.com',
+  logo: 'https://www.spectra-audit.com/logo.png',
   description: 'Leading blockchain security platform providing AI-powered smart contract audits and continuous security monitoring.',
-  sameAs: [
-    'https://twitter.com/spectrasecurity',
-    'https://github.com/spectra-security',
-    'https://linkedin.com/company/spectra-security'
-  ],
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer support',
@@ -268,12 +270,12 @@ export const createWebPageSchema = (): WebPageSchema => ({
   '@type': 'WebPage',
   name: 'Spectra Audit - AI-Powered Security Audits | Smart Contract Security',
   description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in minutes, not weeks. Continuous monitoring for blockchain protocols.',
-  url: 'https://spectra-audit.com',
+  url: 'https://www.spectra-audit.com',
   inLanguage: 'en',
   isPartOf: {
     '@type': 'WebSite',
     name: 'Spectra Audit',
-    url: 'https://spectra-audit.com'
+    url: 'https://www.spectra-audit.com'
   },
   about: [
     'Smart Contract Security',
@@ -288,52 +290,9 @@ export const createWebPageSchema = (): WebPageSchema => ({
   }
 })
 
-export const createFAQSchema = (): FAQSchema => ({
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How long does a security audit take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Spectra Audit completes audits in 20 minutes or less — more than 2.4 times faster than traditional manual audits.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'What types of vulnerabilities can Spectra Audit detect?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Spectra Audit detects 15+ vulnerability categories including reentrancy, overflow/underflow, access control issues, and economic attack vectors.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Spectra Audit\'s security audit really free?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, Spectra Audit offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'How accurate are Spectra Audit\'s security findings?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Spectra Audit detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'Does Spectra Audit support multiple blockchains?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains.'
-      }
-    }
-  ]
-})
+// FAQ structured data is built from translations in the page that renders it
+// (see HomePage) so the JSON-LD always matches the visible, localized FAQ text.
+export type { FAQSchema }
 
 export const createServiceSchema = (): ServiceSchema => ({
   '@context': 'https://schema.org',
@@ -343,7 +302,7 @@ export const createServiceSchema = (): ServiceSchema => ({
   provider: {
     '@type': 'Organization',
     name: 'Spectra Audit',
-    url: 'https://spectra-audit.com'
+    url: 'https://www.spectra-audit.com'
   },
   serviceType: 'Security Audit Service',
   areaServed: 'Worldwide',

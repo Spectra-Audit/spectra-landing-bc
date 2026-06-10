@@ -140,12 +140,36 @@ export default function HomePage() {
     { label: t('methodology.diagram.lanes.sentiment'), Icon: MessagesSquare, color: 'text-spectra-cyan-500' }
   ]
 
+  const faqItems = [
+    { question: t('faq.q1'), answer: t('faq.a1') },
+    { question: t('faq.q2'), answer: t('faq.a2') },
+    { question: t('faq.q3'), answer: t('faq.a3') },
+    { question: t('faq.q4'), answer: t('faq.a4') },
+    { question: t('faq.q5'), answer: t('faq.a5') }
+  ]
+
+  // Built from the active locale's translations so the JSON-LD always matches
+  // the visible FAQ text — a requirement for FAQ rich-result eligibility.
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer
+      }
+    }))
+  }
+
   return (
     <>
       {/* SEO Structured Data */}
       <Suspense fallback={null}>
         <StructuredData type="software" data={createSoftwareSchema()} />
         <StructuredData type="organization" data={createOrganizationSchema()} />
+        <StructuredData type="faq" data={faqSchema} />
       </Suspense>
 
       <MobileOptimized>
@@ -938,6 +962,31 @@ export default function HomePage() {
                 </div>
               </div>
             </Card>
+          </div>
+        </section>
+
+        {/* FAQ Section — visible counterpart of the FAQPage structured data */}
+        <section id="faq" className="py-16 sm:py-20 md:py-24 relative">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-reveal className="text-center mb-16">
+              <h2 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 dark:text-white neon-text mb-6">
+                {t('faq.title')}
+              </h2>
+              <div className="mx-auto -mt-3 mb-6 h-1 w-16 rounded-full bg-gradient-to-r from-spectra-blue-500 to-spectra-green-500 dark:shadow-glow-spectra" />
+            </div>
+
+            <div className="space-y-4">
+              {faqItems.map(({ question, answer }) => (
+                <Card key={question} variant="glass" className="text-left">
+                  <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-2">
+                    {question}
+                  </h3>
+                  <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    {answer}
+                  </p>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 

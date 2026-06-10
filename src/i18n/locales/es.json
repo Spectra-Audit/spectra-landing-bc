@@ -592,6 +592,10 @@
       "title": "¿Listo para Perspectivas de Seguridad Más Profundas?",
       "description": "Experimenta el poder del análisis de 5 dimensiones con puntuación optimizada por IA. Obtén una auditoría de seguridad integral en minutos — no semanas.",
       "button": "Inicia Tu Primera Auditoría"
+    },
+    "metadata": {
+      "title": "El marco de auditoría de seguridad de 5 dimensiones | Spectra Audit",
+      "description": "Cómo Spectra Audit califica contratos inteligentes en código, distribución, tokenomics, liquidez y sentimiento: una calificación transparente con evidencia verificable."
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "Aceptar Esenciales",
     "acceptAll": "Aceptar Todas",
     "rejectAll": "Rechazar Todas"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Cuánto tarda una auditoría de contratos inteligentes?",
+    "a1": "Spectra Audit completa la mayoría de las auditorías en 20 minutos o menos, frente a los días o semanas de una auditoría manual tradicional.",
+    "q2": "¿Qué tipos de vulnerabilidades puede detectar Spectra Audit?",
+    "a2": "Spectra Audit detecta más de 15 categorías de vulnerabilidades, incluidas reentrancy, desbordamientos (overflow/underflow), problemas de control de acceso y vectores de ataque económicos.",
+    "q3": "¿La auditoría de seguridad de Spectra Audit es realmente gratuita?",
+    "a3": "Sí. Spectra Audit ofrece auditorías de seguridad completas y gratuitas, sin tarjeta de crédito. Hay funciones premium disponibles para monitoreo avanzado.",
+    "q4": "¿Qué tan precisos son los hallazgos de Spectra Audit?",
+    "a4": "Spectra Audit detecta hasta el 95 % de los patrones de vulnerabilidad conocidos. Todos los hallazgos provienen de análisis con IA e incluyen evidencia verificable que puedes inspeccionar. Los resultados son informativos y no garantizan la seguridad del proyecto.",
+    "q5": "¿Spectra Audit es compatible con varias blockchains?",
+    "a5": "Sí. Spectra Audit es compatible con Ethereum, BSC, Polygon, Arbitrum, Optimism y otras blockchains compatibles con EVM."
   }
 }

@@ -592,6 +592,10 @@
       "title": "Daha Derin Güvenlik Öngörülerine Hazır mısınız?",
       "description": "AI optimize edilmiş skorlama ile 5 boyutlu analizin gücünü deneyimleyin. Haftalar değil dakikalar içinde kapsamlı bir güvenlik denetimi alın.",
       "button": "İlk Denetiminizi Başlatın"
+    },
+    "metadata": {
+      "title": "5 Boyutlu Güvenlik Denetimi Çerçevesi | Spectra Audit",
+      "description": "Spectra Audit'in akıllı sözleşmeleri kod, dağıtım, tokenomik, likidite ve duyarlılık boyutlarında nasıl puanladığı — doğrulanabilir kanıtlarla şeffaf bir not."
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "Temel Çerezleri Kabul Et",
     "acceptAll": "Tümünü Kabul Et",
     "rejectAll": "Tümünü Reddet"
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "q1": "Bir akıllı sözleşme denetimi ne kadar sürer?",
+    "a1": "Spectra Audit çoğu denetimi 20 dakika veya daha kısa sürede tamamlar; geleneksel manuel denetimler ise günler hatta haftalar sürer.",
+    "q2": "Spectra Audit hangi tür güvenlik açıklarını tespit edebilir?",
+    "a2": "Spectra Audit; reentrancy, taşma (overflow/underflow), erişim kontrolü sorunları ve ekonomik saldırı vektörleri dahil 15'ten fazla güvenlik açığı kategorisini tespit eder.",
+    "q3": "Spectra Audit'in güvenlik denetimi gerçekten ücretsiz mi?",
+    "a3": "Evet. Spectra Audit, kredi kartı gerektirmeden ücretsiz kapsamlı güvenlik denetimleri sunar. Gelişmiş izleme için premium özellikler mevcuttur.",
+    "q4": "Spectra Audit'in bulguları ne kadar doğru?",
+    "a4": "Spectra Audit, bilinen güvenlik açığı kalıplarının %95'ine kadarını tespit eder. Tüm bulgular yapay zekâ analiziyle üretilir ve inceleyebileceğiniz doğrulanabilir kanıtlar içerir. Sonuçlar bilgilendirme amaçlıdır ve proje güvenliğini garanti etmez.",
+    "q5": "Spectra Audit birden fazla blokzinciri destekliyor mu?",
+    "a5": "Evet. Spectra Audit; Ethereum, BSC, Polygon, Arbitrum, Optimism ve diğer büyük EVM uyumlu blokzincirleri destekler."
   }
 }
