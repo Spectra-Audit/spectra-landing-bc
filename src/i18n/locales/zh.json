@@ -592,6 +592,10 @@
       "title": "准备好获得更深入的安全洞察了吗？",
       "description": "体验AI优化评分的5维分析的力量。在几分钟内获得全面的安全审计 — 而非数周。",
       "button": "开始您的首次审计"
+    },
+    "metadata": {
+      "title": "五维安全审计框架 | Spectra Audit",
+      "description": "了解 Spectra Audit 如何从代码、分布、代币经济学、流动性和情绪五个维度为智能合约评分——一个透明的等级，附可验证的证据。"
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "接受基本",
     "acceptAll": "全部接受",
     "rejectAll": "全部拒绝"
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "智能合约审计需要多长时间？",
+    "a1": "Spectra Audit 大多数审计可在 20 分钟内完成，而传统人工审计通常需要数天甚至数周。",
+    "q2": "Spectra Audit 能检测哪些类型的漏洞？",
+    "a2": "Spectra Audit 可检测 15 类以上的漏洞，包括重入攻击、上溢/下溢、访问控制缺陷以及经济攻击向量。",
+    "q3": "Spectra Audit 的安全审计真的免费吗？",
+    "a3": "是的。Spectra Audit 提供免费的全面安全审计，无需信用卡。高级监控功能可通过付费方案获得。",
+    "q4": "Spectra Audit 的检测结果有多准确？",
+    "a4": "Spectra Audit 可检测多达 95% 的已知漏洞模式。所有结果均由 AI 分析生成，并附带可供查验的证据。结果仅供参考，不构成项目安全的保证。",
+    "q5": "Spectra Audit 支持多条区块链吗？",
+    "a5": "支持。Spectra Audit 支持以太坊、BSC、Polygon、Arbitrum、Optimism 以及其他主流 EVM 兼容链。"
   }
 }

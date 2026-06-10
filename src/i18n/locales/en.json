@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-    "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
+    "description": "One clear security grade with the evidence behind it. Real-time AI audits you can verify — free smart contract analysis in minutes, no registration.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection",
     "og": {
       "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
@@ -592,6 +592,10 @@
       "title": "Ready for Deeper Security Insights?",
       "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes — not weeks.",
       "button": "Start Your First Audit"
+    },
+    "metadata": {
+      "title": "The 5-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, and sentiment — one transparent grade backed by verifiable evidence."
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "Accept Essential",
     "acceptAll": "Accept All",
     "rejectAll": "Reject All"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How long does a smart contract audit take?",
+    "a1": "Spectra Audit completes most audits in 20 minutes or less, compared to the days or weeks a traditional manual audit takes.",
+    "q2": "What types of vulnerabilities can Spectra Audit detect?",
+    "a2": "Spectra Audit detects 15+ vulnerability categories, including reentrancy, overflow/underflow, access control issues, and economic attack vectors.",
+    "q3": "Is Spectra Audit's security audit really free?",
+    "a3": "Yes. Spectra Audit offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.",
+    "q4": "How accurate are Spectra Audit's findings?",
+    "a4": "Spectra Audit detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.",
+    "q5": "Does Spectra Audit support multiple blockchains?",
+    "a5": "Yes. Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains."
   }
 }

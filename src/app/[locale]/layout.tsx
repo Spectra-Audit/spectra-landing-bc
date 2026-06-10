@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { locales, isRtlLocale } from '@/i18n/config'
+import { SITE_URL, localePath } from '@/lib/site'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Analytics from '@/components/ui/Analytics'
 
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: 'metadata' })
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
@@ -21,10 +23,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: t('og.title'),
       description: t('og.description'),
       type: 'website',
-      url: `https://spectra-audit.com/${locale}`,
+      siteName: 'Spectra Audit',
+      url: localePath(locale),
       images: [
         {
-          url: 'https://spectra-audit.com/images/og-image.jpg',
+          url: '/images/og-image.jpg',
           width: 1200,
           height: 630,
           alt: t('og.imageAlt'),
@@ -35,16 +38,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: t('og.title'),
       description: t('og.description'),
-      images: ['https://spectra-audit.com/images/og-image.jpg'],
+      images: ['/images/og-image.jpg'],
     },
     alternates: {
-      canonical: `https://spectra-audit.com/${locale}`,
+      canonical: localePath(locale),
       languages: {
         ...locales.reduce((acc, loc) => {
-          acc[loc] = `https://spectra-audit.com/${loc}`
+          acc[loc] = localePath(loc)
           return acc
         }, {} as Record<string, string>),
-        'x-default': 'https://spectra-audit.com/en',
+        'x-default': '/',
       },
     },
   }

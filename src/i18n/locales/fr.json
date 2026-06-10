@@ -592,6 +592,10 @@
       "title": "Prêt pour des Insights de Sécurité Plus Profonds?",
       "description": "Découvrez la puissance de l'analyse à 5 dimensions avec le scoring optimisé par IA. Obtenez un audit de sécurité complet en quelques minutes — pas semaines.",
       "button": "Commencez Votre Premier Audit"
+    },
+    "metadata": {
+      "title": "Le cadre d'audit de sécurité en 5 dimensions | Spectra Audit",
+      "description": "Comment Spectra Audit note les smart contracts selon le code, la distribution, la tokenomics, la liquidité et le sentiment — une note transparente avec des preuves vérifiables."
     }
   },
   "methodology": {
@@ -691,5 +695,18 @@
     "acceptEssential": "Accepter les Essentiels",
     "acceptAll": "Tout Accepter",
     "rejectAll": "Tout Refuser"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "q1": "Combien de temps dure un audit de smart contract ?",
+    "a1": "Spectra Audit termine la plupart des audits en 20 minutes ou moins, contre des jours, voire des semaines, pour un audit manuel traditionnel.",
+    "q2": "Quels types de vulnérabilités Spectra Audit peut-il détecter ?",
+    "a2": "Spectra Audit détecte plus de 15 catégories de vulnérabilités, dont la réentrance, les dépassements (overflow/underflow), les défauts de contrôle d'accès et les vecteurs d'attaque économiques.",
+    "q3": "L'audit de sécurité de Spectra Audit est-il vraiment gratuit ?",
+    "a3": "Oui. Spectra Audit propose des audits de sécurité complets et gratuits, sans carte bancaire. Des fonctionnalités premium sont disponibles pour la surveillance avancée.",
+    "q4": "Quelle est la précision des résultats de Spectra Audit ?",
+    "a4": "Spectra Audit détecte jusqu'à 95 % des schémas de vulnérabilité connus. Tous les résultats proviennent d'une analyse par IA et incluent des preuves vérifiables que vous pouvez inspecter. Ils sont fournis à titre informatif et ne garantissent pas la sûreté du projet.",
+    "q5": "Spectra Audit prend-il en charge plusieurs blockchains ?",
+    "a5": "Oui. Spectra Audit prend en charge Ethereum, BSC, Polygon, Arbitrum, Optimism et d'autres blockchains compatibles EVM."
   }
 }
