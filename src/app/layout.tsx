@@ -108,27 +108,6 @@ export default async function RootLayout({
                   firstPaint: perfData.responseStart - perfData.navigationStart
                 };
               });
-
-              // Error tracking
-              window.addEventListener('error', function(e) {
-                console.error('Application error:', e.error);
-                // Track to analytics if consent is given
-                if (window.analyticsConsent) {
-                  fetch('/api/errors', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                      error: e.error?.message || 'Unknown error',
-                      filename: e.filename,
-                      lineno: e.lineno,
-                      colno: e.colno,
-                      stack: e.error?.stack,
-                      url: window.location.href,
-                      timestamp: new Date().toISOString()
-                    })
-                  }).catch(() => {}); // Silently fail to not break user experience
-                }
-              });
             `
           }}
         />

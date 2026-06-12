@@ -8,7 +8,6 @@ declare global {
   interface Window {
     gtag?: (...args: any[]) => void
     dataLayer: any[]
-    analyticsConsent?: boolean
     performanceData?: {
       loadTime: number
       domContentLoaded: number
