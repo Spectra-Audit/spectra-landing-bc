@@ -8,7 +8,6 @@ declare global {
   interface Window {
     gtag?: (...args: any[]) => void
     dataLayer: any[]
-    analyticsConsent?: boolean
     performanceData?: {
       loadTime: number
       domContentLoaded: number
@@ -197,7 +196,7 @@ export default function Analytics() {
 
           <div className="flex flex-col sm:flex-row gap-2">
             <button
-              onClick={() => handleAccept({ analytics: true, marketing: false })}
+              onClick={() => handleAccept({ analytics: false, marketing: false })}
               className="px-4 py-2 bg-security-green text-white rounded hover:bg-security-green/90 transition-colors text-sm font-medium"
             >
               {t('acceptEssential')}
