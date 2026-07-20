@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { locales } from '@/i18n/config'
 import { localePath } from '@/lib/site'
 
@@ -7,6 +7,11 @@ import { localePath } from '@/lib/site'
 // and canonical — which told crawlers it was a duplicate of the homepage.
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+
+  // Enable static rendering — see app/[locale]/layout.tsx for why this is
+  // required (not just removing `force-dynamic`) to get SSG per locale.
+  setRequestLocale(locale)
+
   const t = await getTranslations({ locale, namespace: 'whitepaper.metadata' })
 
   return {
@@ -46,6 +51,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-export default function WhitepaperLayout({ children }: { children: React.ReactNode }) {
+export default async function WhitepaperLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
   return children
 }
