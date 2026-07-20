@@ -1,7 +1,5 @@
-'use client'
-
 import React from 'react'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { Search, ThumbsUp, Scale, BarChart3, Brain } from 'lucide-react'
 
 export interface LearningLoopDiagramProps {
@@ -19,13 +17,16 @@ type Pt = { x: number; y: number }
  * Evaluation weighs feedback by reviewer reputation before it calibrates the
  * system; Calibration sits at the shield's point. The "circuit" is the shield
  * outline itself; energy flows along the edge via an animated stroke-dashoffset,
- * so the shield stays put rather than spinning. Respects `prefers-reduced-motion`.
+ * so the shield stays put rather than spinning. The reduced-motion override
+ * below is pure CSS (`@media (prefers-reduced-motion: reduce)` inside the
+ * `style jsx` block), so — unlike MethodologyDiagram's SMIL dots — no
+ * `matchMedia` read is needed and this can stay a Server Component.
  */
-export default function LearningLoopDiagram({
+export default async function LearningLoopDiagram({
   className = '',
   ariaLabel
 }: LearningLoopDiagramProps) {
-  const t = useTranslations('learningLoop.diagram')
+  const t = await getTranslations('learningLoop.diagram')
   // Prop overrides the translated label when provided (e.g. for a custom description).
   const resolvedAriaLabel = ariaLabel ?? t('ariaLabel')
   const size = 400
@@ -236,10 +237,13 @@ export default function LearningLoopDiagram({
         </text>
       </svg>
 
-      {/* Local keyframes. Defining AND referencing the animation inside the
-          same styled-jsx block keeps the scoped keyframe name in sync (an
-          inline `style` animation would reference the un-scoped name). */}
-      <style jsx>{`
+      {/* Local keyframes, as a plain (non-styled-jsx) <style> tag: `style
+          jsx` requires a Client Component boundary, which would undo the
+          Server Component conversion above. `.loop-circuit` and
+          `spectra-circuit-flow` are already unique in the codebase (grepped)
+          and this component renders once per page, so a global <style> tag
+          is safe here. */}
+      <style>{`
         .loop-circuit {
           animation: spectra-circuit-flow 1.1s linear infinite;
         }

@@ -1,7 +1,5 @@
-'use client'
-
 import React from 'react'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { Info } from 'lucide-react'
 
 export interface DisclaimerFooterProps {
@@ -15,9 +13,15 @@ export interface DisclaimerFooterProps {
  * sync across locales. Uses a muted background, Info icon, bold title, and a
  * 5-bullet list covering: AI-generated findings, fork-based testing, score
  * caveats, "do your own research", and tool-purpose framing.
+ *
+ * Server Component — this only ever needed `useTranslations` (no hooks, no
+ * browser APIs), so it renders on the server via `getTranslations` and never
+ * ships to the client bundle. Relies on the ancestor route segment having
+ * already called `setRequestLocale` (see app/[locale]/layout.tsx) so this
+ * resolves the request-scoped locale statically.
  */
-export default function DisclaimerFooter({ className = '' }: DisclaimerFooterProps) {
-  const t = useTranslations('disclaimer')
+export default async function DisclaimerFooter({ className = '' }: DisclaimerFooterProps) {
+  const t = await getTranslations('disclaimer')
 
   return (
     <section
