@@ -1,118 +1,25 @@
-'use client'
-
-import React, { useState, Suspense, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
-import dynamic from 'next/dynamic'
+import React from 'react'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
+import PageAnalyticsTracker from '@/components/ui/PageAnalyticsTracker'
+import RevealOnScroll from '@/components/ui/RevealOnScroll'
+import TrackedCta from '@/components/ui/TrackedCta'
+import StructuredData, { createSoftwareSchema, createOrganizationSchema } from '@/components/ui/StructuredData'
 import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Wallet, LifeBuoy } from 'lucide-react'
-import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
 
-// Dynamic imports for heavy components
-const StructuredData = dynamic(() => import('@/components/ui/StructuredData'), {
-  ssr: true
-})
+export default async function HomePage({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
 
-// Import schema creators from StructuredData component
-import { createSoftwareSchema, createOrganizationSchema } from '@/components/ui/StructuredData'
+  // Enable static rendering for this segment — see app/[locale]/layout.tsx
+  // for why this must run before any next-intl API.
+  setRequestLocale(locale)
 
-export default function HomePage() {
-  const [timeOnPage, setTimeOnPage] = useState(0)
-  const t = useTranslations()
-  const {
-    trackPageView,
-    trackHeroCtaClicked,
-    trackLaunchAppClicked,
-    trackScrollDepth,
-    trackEngagementMilestone,
-    trackFeatureViewed,
-    trackPageExit,
-    trackNavClicked
-  } = useUmamiAnalytics()
-
-  // Track page view and engagement
-  useEffect(() => {
-    trackPageView('home', document.referrer)
-
-    // Track scroll depth
-    const handleScroll = () => {
-      const scrollPercent = Math.round(
-        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
-      )
-      if (scrollPercent >= 25 && scrollPercent < 50) {
-        trackScrollDepth(25)
-      } else if (scrollPercent >= 50 && scrollPercent < 75) {
-        trackScrollDepth(50)
-      } else if (scrollPercent >= 75 && scrollPercent < 90) {
-        trackScrollDepth(75)
-      } else if (scrollPercent >= 90) {
-        trackScrollDepth(90)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    // Track engagement milestones
-    const milestones = [10, 30, 60, 180, 300] // seconds
-    const milestoneInterval = setInterval(() => {
-      setTimeOnPage(prev => {
-        const newTime = prev + 1
-        if (milestones.includes(newTime)) {
-          trackEngagementMilestone(newTime)
-        }
-        return newTime
-      })
-    }, 1000)
-
-    // Track page exit
-    window.addEventListener('beforeunload', () => {
-      trackPageExit(timeOnPage)
-    })
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-      clearInterval(milestoneInterval)
-    }
-  }, [])
-
-  // Reveal sections as they scroll into view (progressive enhancement —
-  // the hidden state is gated on .reveal-init so no-JS users see everything).
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduce || !('IntersectionObserver' in window)) return
-
-    document.documentElement.classList.add('reveal-init')
-    const els = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
-    const reveal = (el: Element) => el.classList.add('is-visible')
-
-    // Trigger ~200px before an element enters the viewport so nothing pops in
-    // late. threshold 0 = reveal on the first visible pixel.
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            reveal(entry.target)
-            io.unobserve(entry.target)
-          }
-        })
-      },
-      { rootMargin: '0px 0px 200px 0px', threshold: 0 }
-    )
-    els.forEach((el) => io.observe(el))
-
-    // Failsafe: never leave content hidden. If the observer misses anything
-    // (fast scroll, restored scroll position, slow device), force-reveal all.
-    const failsafe = window.setTimeout(() => els.forEach(reveal), 2500)
-    return () => {
-      io.disconnect()
-      window.clearTimeout(failsafe)
-    }
-  }, [])
-
-  // Fallback translations for SSR
-  const fallbackHeadline = "Smart Contract Security Audits in Minutes, Not Weeks"
-  const fallbackSubheadline = "AI-powered smart contract analysis. Get comprehensive security audits with verifiable evidence in under 20 minutes."
+  const t = await getTranslations()
 
   // Hero / final-CTA content. Persona-specific variants were retired when the
   // CTAs were repointed to app.spectra-audit.com, so only the default remains.
@@ -165,12 +72,18 @@ export default function HomePage() {
 
   return (
     <>
-      {/* SEO Structured Data */}
-      <Suspense fallback={null}>
-        <StructuredData type="software" data={createSoftwareSchema()} />
-        <StructuredData type="organization" data={createOrganizationSchema()} />
-        <StructuredData type="faq" data={faqSchema} />
-      </Suspense>
+      {/* SEO Structured Data — StructuredData is a Server Component (pure
+          data -> <script type="application/ld+json">), so it renders inline
+          with the rest of the page; no client-side lazy-loading needed. */}
+      <StructuredData type="software" data={createSoftwareSchema()} />
+      <StructuredData type="organization" data={createOrganizationSchema()} />
+      <StructuredData type="faq" data={faqSchema} />
+
+      {/* Render-nothing client islands: page-view/scroll/engagement analytics
+          and the [data-reveal] scroll-reveal IntersectionObserver. Both
+          attach behavior to already-server-rendered content. */}
+      <PageAnalyticsTracker />
+      <RevealOnScroll />
 
       <MobileOptimized>
         <div className="min-h-screen ambient-glow bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-ink-950 dark:via-ink-900 dark:to-ink-950 mobile-performance">
@@ -224,29 +137,25 @@ export default function HomePage() {
 
               {/* Primary hero CTAs — a landing hero needs a clear next step */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14 animate-slide-up" style={{ animationDelay: '0.25s' }}>
-                <Button
+                <TrackedCta
                   size="lg"
                   variant="gradient"
                   className="px-8 dark:animate-pulse-neon"
                   icon={<Search className="w-5 h-5" />}
-                  onClick={() => {
-                    trackHeroCtaClicked(t('hero.cta.primary'), 'primary')
-                    window.open('https://app.spectra-audit.com', '_blank')
-                  }}
+                  action={{ type: 'openUrl', url: 'https://app.spectra-audit.com' }}
+                  heroCta={{ label: t('hero.cta.primary'), variant: 'primary' }}
                 >
                   {t('hero.cta.primary')}
-                </Button>
-                <Button
+                </TrackedCta>
+                <TrackedCta
                   size="lg"
                   variant="outline"
                   className="px-8"
-                  onClick={() => {
-                    trackHeroCtaClicked(t('hero.cta.secondary'), 'secondary')
-                    document.getElementById('how-scores-work')?.scrollIntoView({ behavior: 'smooth' })
-                  }}
+                  action={{ type: 'scrollTo', targetId: 'how-scores-work' }}
+                  heroCta={{ label: t('hero.cta.secondary'), variant: 'secondary' }}
                 >
                   {t('hero.cta.secondary')}
-                </Button>
+                </TrackedCta>
               </div>
 
               {/* Five core audit pillars — the differentiator, surfaced high in the hero */}
@@ -499,15 +408,15 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button
+                  <TrackedCta
                     size="lg"
                     variant="gradient"
                     className="px-6 py-3"
                     icon={<Search className="w-4 h-4" />}
-                    onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
+                    action={{ type: 'openUrl', url: 'https://app.spectra-audit.com' }}
                   >
                     {t('howScoresWork.cta.exploreProjects')}
-                  </Button>
+                  </TrackedCta>
                   <Button
                     size="lg"
                     variant="outline"
@@ -1004,15 +913,15 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-              <Button
+              <TrackedCta
                 size="xl"
                 variant="gradient"
                 className="text-lg px-8 py-4 dark:animate-pulse-neon"
                 icon={<Search className="w-5 h-5" />}
-                onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
+                action={{ type: 'openUrl', url: 'https://app.spectra-audit.com' }}
               >
                 {personaContent.ctaText}
-              </Button>
+              </TrackedCta>
               <div className="flex items-center gap-4 text-neutral-500 dark:text-neutral-400 text-sm">
                 <CheckCircle className="w-5 h-5 text-spectra-green-700 dark:text-spectra-green-500" />
                 {t('hero.page.noCreditCardRequired')}

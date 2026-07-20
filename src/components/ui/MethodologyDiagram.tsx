@@ -1,8 +1,7 @@
-'use client'
-
-import React, { useSyncExternalStore } from 'react'
-import { useTranslations } from 'next-intl'
+import React from 'react'
+import { getTranslations } from 'next-intl/server'
 import { Code2, Users, Coins, Droplets, MessageSquare, Target } from 'lucide-react'
+import MotionGate from './MotionGate'
 
 export interface MethodologyDiagramProps {
   className?: string
@@ -15,49 +14,19 @@ export interface MethodologyDiagramProps {
  * into a single "Composite Score" node. Each lane has pulsing dots flowing
  * left-to-right to convey parallel processing.
  *
- * Animation respects `prefers-reduced-motion`:
- * - CSS opacity pulse: handled globally in globals.css (animation-duration override).
- * - SVG SMIL <animateMotion>: NOT affected by CSS overrides, so we conditionally
- *   skip rendering the dots via the useSyncExternalStore hook below.
+ * Server Component: the translated labels are read via `getTranslations`.
+ * The one genuinely client-only piece — skipping the SVG SMIL
+ * <animateMotion> pulse under `prefers-reduced-motion` (a real `matchMedia`
+ * read, unlike the CSS opacity pulse handled globally in globals.css) — is
+ * extracted into the tiny `MotionGate` client island below, so this
+ * component itself needs no browser APIs.
  */
 
-// ---------------------------------------------------------------------------
-// Module-level store for prefers-reduced-motion
-// ---------------------------------------------------------------------------
-
-function subscribe(cb: () => void): () => void {
-  if (typeof window === 'undefined' || !window.matchMedia) return () => {}
-  const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-  // Modern browsers
-  if (mq.addEventListener) {
-    mq.addEventListener('change', cb)
-    return () => mq.removeEventListener('change', cb)
-  }
-  // Legacy fallback
-  mq.addListener(cb)
-  return () => mq.removeListener(cb)
-}
-
-function getSnapshot(): boolean {
-  if (typeof window === 'undefined' || !window.matchMedia) return false
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
-}
-
-function getServerSnapshot(): boolean {
-  return false
-}
-
-// ---------------------------------------------------------------------------
-// Component
-// ---------------------------------------------------------------------------
-
-export default function MethodologyDiagram({
+export default async function MethodologyDiagram({
   className = '',
   ariaLabel
 }: MethodologyDiagramProps) {
-  const t = useTranslations('methodology.diagram')
-  // Hydration-safe: server renders false, client adopts real matchMedia value after hydration.
-  const prefersReducedMotion = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
+  const t = await getTranslations('methodology.diagram')
   // Prop overrides the translated label when provided (e.g. for a custom description).
   const resolvedAriaLabel = ariaLabel ?? t('ariaLabel')
 
@@ -156,7 +125,7 @@ export default function MethodologyDiagram({
               />
 
               {/* Pulsing dot animation along the lane — skipped when reduced motion is preferred */}
-              {!prefersReducedMotion && (
+              <MotionGate>
                 <circle
                   r="4"
                   fill={lane.color}
@@ -172,7 +141,7 @@ export default function MethodologyDiagram({
                     path={lanePath}
                   />
                 </circle>
-              )}
+              </MotionGate>
 
               {/* Lane label node (left side) */}
               <g>
@@ -271,7 +240,12 @@ export default function MethodologyDiagram({
         </text>
       </svg>
 
-      <style jsx>{`
+      {/* Plain (non-styled-jsx) <style>: `style jsx` requires a Client
+          Component boundary, which would undo the Server Component
+          conversion above. These keyframe names are already unique in the
+          codebase (grepped) and this component renders once per page, so a
+          global <style> tag is safe — no scoping needed. */}
+      <style>{`
         @keyframes methodology-pulse-0 {
           0%, 100% { opacity: 0.4; }
           50% { opacity: 1; }

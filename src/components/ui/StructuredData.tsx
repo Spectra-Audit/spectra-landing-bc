@@ -1,5 +1,5 @@
-'use client'
-
+// Server Component — renders a static <script type="application/ld+json">
+// from plain data (no hooks, no browser APIs, no `'use client'` needed).
 interface SoftwareApplicationSchema {
   '@context': string
   '@type': string
