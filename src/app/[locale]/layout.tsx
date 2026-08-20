@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { locales, isRtlLocale } from '@/i18n/config'
 import { SITE_URL, localePath } from '@/lib/site'
+import { pickMessages } from '@/lib/pick-messages'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Analytics from '@/components/ui/Analytics'
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor'
@@ -11,6 +12,16 @@ import { inter, jetbrainsMono } from '@/lib/fonts'
 import SiteHeadMeta from '@/components/SiteHeadMeta'
 import ThemeInitScript from '@/components/ThemeInitScript'
 import '@/globals.css'
+
+// Namespaces the GLOBAL client islands actually read via `useTranslations`:
+//  - Navbar (rendered on every page): `nav.*`, `navbar.mobileMenu.*`
+//  - Analytics cookie-consent banner: `cookieConsent.*`
+// LanguageSelector, ThemeToggle, MobileOptimized, and PerformanceMonitor call
+// no next-intl hooks at all. Everything else that used to need the full
+// message bundle (DisclaimerFooter, MethodologyDiagram, LearningLoopDiagram,
+// UnifiedGradeDisplay, the home + whitepaper pages) is now a Server Component
+// reading via `getTranslations`, so it never touches this client provider.
+const GLOBAL_CLIENT_NAMESPACES = ['nav', 'navbar', 'cookieConsent'] as const
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -92,8 +103,14 @@ export default async function LocaleLayout({
   // generation (defeating `generateStaticParams` above).
   setRequestLocale(locale)
 
-  // Get messages specifically for this locale
+  // Get messages specifically for this locale, then narrow to just the
+  // namespaces the global client islands need before handing them to
+  // `NextIntlClientProvider` — see GLOBAL_CLIENT_NAMESPACES above. This is
+  // the whole point of the RSC conversion: without it, every client
+  // descendant would still receive the full ~30-76 KB locale JSON regardless
+  // of how many page components were converted to Server Components.
   const messages = await getMessages({ locale })
+  const clientMessages = pickMessages(messages, GLOBAL_CLIENT_NAMESPACES)
   const t = await getTranslations({ locale, namespace: 'accessibility' })
   const dir = isRtlLocale(locale as any) ? 'rtl' : 'ltr'
 
@@ -105,7 +122,7 @@ export default async function LocaleLayout({
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased transition-colors duration-300 bg-white dark:bg-ink-950 text-neutral-900 dark:text-white`} suppressHydrationWarning>
         <UmamiProvider>
           <ThemeProvider>
-            <NextIntlClientProvider messages={messages} locale={locale}>
+            <NextIntlClientProvider messages={clientMessages} locale={locale}>
               <a
                 href="#main-content"
                 className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded z-50"

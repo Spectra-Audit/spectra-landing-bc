@@ -1,9 +1,9 @@
-'use client'
-
-import React, { useState, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
+import React from 'react'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Navbar, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
+import WhitepaperAnalyticsTracker from '@/components/ui/WhitepaperAnalyticsTracker'
+import DimensionsGrid, { type DimensionsGridItem } from '@/components/ui/DimensionsGrid'
 import {
   Shield,
   Code,
@@ -19,25 +19,27 @@ import {
   ArrowRight,
   BookOpen,
   Search,
-  Award,
   GitBranch,
   Calculator,
   Sliders,
   Gauge,
   Layers
 } from 'lucide-react'
-import { useUmamiAnalytics } from '@/hooks/useUmamiAnalytics'
 
-export default function WhitepaperPage() {
-  const t = useTranslations('whitepaper')
-  const [hoveredDimension, setHoveredDimension] = useState<number | null>(null)
-  const { trackPageView, trackWhitepaperViewed, track } = useUmamiAnalytics()
+export default async function WhitepaperPage({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
 
-  // Track page view
-  useEffect(() => {
-    trackPageView('whitepaper', document.referrer)
-    trackWhitepaperViewed('en') // Will be dynamic based on locale
-  }, [])
+  // Enable static rendering for this segment — see app/[locale]/layout.tsx
+  // for why this must run before any next-intl API. (whitepaper/layout.tsx
+  // also calls this for its own generateMetadata/layout invocation; each
+  // route segment that reaches for a next-intl API needs its own call.)
+  setRequestLocale(locale)
+
+  const t = await getTranslations('whitepaper')
 
   // Dimension icons mapping
   const dimensionIcons = {
@@ -83,6 +85,25 @@ export default function WhitepaperPage() {
     }
   })
 
+  // Pre-rendered icon variant for the interactive DimensionsGrid client
+  // island — a component *type* (e.g. `MessageSquare`) can't be passed as a
+  // prop across the RSC boundary, but an already-rendered element can.
+  const dimensionsForGrid: DimensionsGridItem[] = dimensions.map((dimension) => {
+    const Icon = dimension.icon
+    return {
+      id: dimension.id,
+      name: dimension.name,
+      description: dimension.description,
+      details: dimension.details,
+      weight: dimension.weight,
+      color: dimension.color,
+      bgLight: dimension.bgLight,
+      text: dimension.text,
+      border: dimension.border,
+      icon: <Icon className={`w-8 h-8 ${dimension.text}`} />
+    }
+  })
+
   // Build roadmap array from translations
   const phaseKeys = ['q1_2025', 'q2_2025', 'q3_2025', 'q4_2025'] as const
   const roadmap = phaseKeys.map((key) => {
@@ -103,6 +124,10 @@ export default function WhitepaperPage() {
   return (
     <MobileOptimized>
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900">
+        {/* Render-nothing client island for the page-view / whitepaper-viewed
+            analytics side effect. */}
+        <WhitepaperAnalyticsTracker />
+
         <Navbar />
 
         {/* Hero Section */}
@@ -230,76 +255,9 @@ export default function WhitepaperPage() {
                 </div>
               </div>
 
-              {/* Dimensions Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {dimensions.map((dimension, index) => {
-                  const Icon = dimension.icon
-                  const isHovered = hoveredDimension === dimension.id
-
-                  return (
-                    <div
-                      key={dimension.id}
-                      className={`
-                        glass-spectra rounded-2xl p-6 border transition-all duration-300 relative
-                        dark:bg-neutral-800/80 bg-white/80
-                        ${isHovered
-                          ? `${dimension.border} scale-105 shadow-xl dark:shadow-${dimension.color}-500/20`
-                          : 'border-neutral-200 dark:border-neutral-700/50'
-                        }
-                      `}
-                      onMouseEnter={() => setHoveredDimension(dimension.id)}
-                      onMouseLeave={() => setHoveredDimension(null)}
-                    >
-                      {/* Header */}
-                      <div className="relative">
-                        <div className="flex items-start justify-between mb-4">
-                          <div className={`
-                            inline-flex p-4 rounded-xl transition-all duration-300
-                            ${dimension.bgLight} dark:${dimension.bgLight}
-                            ${isHovered ? 'scale-105' : ''}
-                          `}>
-                            <Icon className={`w-8 h-8 ${dimension.text}`} />
-                          </div>
-                          <div className="text-right">
-                            <div className={`
-                              text-2xl font-bold transition-all duration-300
-                              ${dimension.text}
-                              ${isHovered ? 'scale-105' : ''}
-                            `}>
-                              {dimension.weight}%
-                            </div>
-                            <div className="text-xs text-neutral-500 dark:text-neutral-400">Weight</div>
-                          </div>
-                        </div>
-
-                        {/* Title */}
-                        <h3 className={`
-                          text-xl font-bold mb-3
-                          text-neutral-900 dark:text-white
-                          ${dimension.text}
-                        `}>
-                          {dimension.name}
-                        </h3>
-
-                        {/* Description */}
-                        <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4 leading-relaxed">
-                          {dimension.description}
-                        </p>
-
-                        {/* Metrics */}
-                        <div className="space-y-2">
-                          {dimension.details.map((detail, i) => (
-                            <div key={i} className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-                              <CheckCircle className={`w-3.5 h-3.5 ${dimension.text} flex-shrink-0`} />
-                              <span>{detail}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
+              {/* Dimensions Grid — hover-state client island (the only
+                  interactive piece of this section) */}
+              <DimensionsGrid dimensions={dimensionsForGrid} />
             </div>
 
             {/* Weights Summary Bar */}

@@ -1,7 +1,5 @@
-'use client'
-
 import React from 'react'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { Shield, ShieldCheck, ShieldAlert, ShieldX, ShieldMinus, CheckCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -21,8 +19,13 @@ export interface UnifiedGradeDisplayProps {
  *
  * This component provides a comprehensive visual representation of
  * security audit scores with appropriate colors, icons, and descriptions.
+ *
+ * Server Component — only ever needed `useTranslations` (no hooks, no
+ * browser APIs), so it renders on the server via `getTranslations`. Declared
+ * as a plain async function (not `React.FC`, whose type doesn't model an
+ * async/Promise-returning Server Component).
  */
-const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
+async function UnifiedGradeDisplay({
   score,
   size = 'lg',
   animated = false,
@@ -30,8 +33,8 @@ const UnifiedGradeDisplay: React.FC<UnifiedGradeDisplayProps> = ({
   showDescription = true,
   className,
   variant = 'default'
-}) => {
-  const t = useTranslations('grades')
+}: UnifiedGradeDisplayProps) {
+  const t = await getTranslations('grades')
   // Normalize score to 0-100 range
   const normalizedScore = Math.max(0, Math.min(100, score))
 
