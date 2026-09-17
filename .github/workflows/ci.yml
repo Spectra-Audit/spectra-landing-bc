@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: "20"
           cache: npm
+      # package-lock.json is written by npm 11. npm 10 (bundled with Node 20/22) rejects it in `npm ci`
+      # ("Missing: @swc/helpers from lock file", an optional peer of next-intl's nested @swc/core).
+      - run: npm install -g npm@11
       - run: npm ci
       - run: npm run type-check
       # Plain `npx jest`, not `npm run test:ci`: that script adds --coverage and the jest config enforces an 80% threshold the repo currently fails at 9.4%.
