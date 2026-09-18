@@ -64,6 +64,25 @@ const eslintConfig = [
       'react-hooks/exhaustive-deps': 'warn',
     },
   },
+
+  // SpectraLoader.tsx is byte-identical across three apps (audit-fever-main,
+  // ai-admin-vision, and this one) and intentionally carries no inline
+  // eslint-disable directives, since the other two apps run
+  // eslint-plugin-react-hooks@5.2.0, which doesn't define
+  // `react-hooks/set-state-in-effect` — an inline disable comment for it
+  // there is a hard "rule not found" error, not a suppressed warning. Only
+  // this app runs plugin v7, where the rule exists and fires on the
+  // `setPhase('mounted')` call in the show/exit effect: that call is a
+  // same-value no-op in the common case, and its one meaningful branch (an
+  // in-flight exit re-entering 'mounted') needs the adjacent `clearTimeout`
+  // side effect, so it can't be moved into render without changing exit
+  // timing. Suppressed here, file-scoped, instead of inline.
+  {
+    files: ['src/components/ui/SpectraLoader.tsx'],
+    rules: {
+      'react-hooks/set-state-in-effect': 'off',
+    },
+  },
 ]
 
 // `compat` is intentionally exported-as-unused-friendly: referenced here to keep
