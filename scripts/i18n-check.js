@@ -81,6 +81,15 @@ for (const ph of PHASES) {
   dynamicKeys.add(`whitepaper.roadmap.phases.${ph}.title`)
   for (let i = 0; i < 4; i++) dynamicKeys.add(`whitepaper.roadmap.phases.${ph}.items.${i}`)
 }
+// whitepaper/page.tsx renders the scoring weight table AND its worked example from one
+// `weightRows` array: t(`dimensions.weightTable.${key}`). The keys must stay in step with
+// PHASE4_WEIGHTS_HAS_TOKEN in the backend's phase4_metrics.py.
+for (const row of [
+  'rowCode', 'rowDistribution', 'rowTokenomics', 'rowLiquidity', 'rowSentiment',
+  'rowVelocity', 'rowHolderGrowth', 'rowRealizedPnl', 'rowNetFlow', 'rowWhaleDumpRisk',
+]) {
+  dynamicKeys.add(`whitepaper.dimensions.weightTable.${row}`)
+}
 // UnifiedGradeDisplay resolves grade tier + description keys dynamically: t(config.tier), t(`descriptions.${tier}`)
 for (const tier of ['excellent', 'good', 'fair', 'poor', 'critical']) {
   dynamicKeys.add(`grades.${tier}`)

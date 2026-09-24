@@ -104,6 +104,35 @@ export default async function WhitepaperPage({
     }
   })
 
+  // The published scoring weights. Source of truth, and the only thing these
+  // two columns may ever be copied from:
+  //   spectra/services/scoring/phase4_metrics.py
+  //   PHASE4_WEIGHTS_HAS_TOKEN / PHASE4_WEIGHTS_NO_TOKEN
+  //
+  // What used to be here was the `TECHNICAL_WEIGHTS_WITH_TOKEN` table from
+  // sentiment.py (code 45 / distribution 15 / tokenomics 15 / liquidity 15),
+  // which produces `score_technical` — a display-only subscore that is not an
+  // input to the headline score at all. The no-token column was a 70/30
+  // two-input model that exists in no file.
+  //
+  // `sample` is the illustrative per-dimension score in the worked example
+  // below. The example's products and total are computed from these numbers
+  // rather than written out, so the two can't drift apart.
+  const weightRows = [
+    { key: 'rowCode', Icon: Code, tone: 'text-green-600 dark:text-green-400', hasToken: 35, noToken: 55, sample: 82 },
+    { key: 'rowDistribution', Icon: Users, tone: 'text-orange-600 dark:text-orange-400', hasToken: 10, noToken: null, sample: 71 },
+    { key: 'rowTokenomics', Icon: TrendingUp, tone: 'text-purple-600 dark:text-purple-400', hasToken: 10, noToken: null, sample: 64 },
+    { key: 'rowLiquidity', Icon: Droplets, tone: 'text-cyan-600 dark:text-cyan-400', hasToken: 10, noToken: null, sample: 77 },
+    { key: 'rowSentiment', Icon: MessageSquare, tone: 'text-blue-600 dark:text-blue-400', hasToken: 10, noToken: 25, sample: 80 },
+    { key: 'rowVelocity', Icon: Activity, tone: 'text-sky-600 dark:text-sky-400', hasToken: 5, noToken: null, sample: 55 },
+    { key: 'rowHolderGrowth', Icon: Users, tone: 'text-emerald-600 dark:text-emerald-400', hasToken: 5, noToken: null, sample: 62 },
+    { key: 'rowRealizedPnl', Icon: TrendingUp, tone: 'text-amber-600 dark:text-amber-400', hasToken: 5, noToken: null, sample: 48 },
+    { key: 'rowNetFlow', Icon: GitBranch, tone: 'text-indigo-600 dark:text-indigo-400', hasToken: 5, noToken: null, sample: 58 },
+    { key: 'rowWhaleDumpRisk', Icon: Shield, tone: 'text-rose-600 dark:text-rose-400', hasToken: 5, noToken: 20, sample: 69 }
+  ] as const
+
+  const exampleTotal = weightRows.reduce((sum, row) => sum + (row.sample * row.hasToken) / 100, 0)
+
   // Build roadmap array from translations
   const phaseKeys = ['q1_2025', 'q2_2025', 'q3_2025', 'q4_2025'] as const
   const roadmap = phaseKeys.map((key) => {
@@ -325,20 +354,27 @@ export default async function WhitepaperPage({
                     {t('scoring.formula.formula')}
                   </div>
                 </div>
-                <div className="flex items-center justify-center gap-4 text-sm text-neutral-500 dark:text-neutral-400">
+                {/*
+                  This row read "Dynamic Weights × AI Adjustments = Accuracy".
+                  `aggregate_scores` applies no adjustment factor and no
+                  accuracy term; it sums the measured dimensions against the
+                  published weights and divides by the weights it actually
+                  used. The three steps below are that, in order.
+                */}
+                <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-neutral-500 dark:text-neutral-400">
+                  <span className="flex items-center gap-1">
+                    <Layers className="w-4 h-4" />
+                    {t('scoring.formula.measuredDimensions')}
+                  </span>
+                  <span>→</span>
                   <span className="flex items-center gap-1">
                     <Sliders className="w-4 h-4" />
-                    {t('scoring.formula.dynamicWeights')}
+                    {t('scoring.formula.publishedWeights')}
                   </span>
-                  <span>×</span>
-                  <span className="flex items-center gap-1">
-                    <Brain className="w-4 h-4" />
-                    {t('scoring.formula.aiAdjustments')}
-                  </span>
-                  <span>=</span>
+                  <span>→</span>
                   <span className="flex items-center gap-1 text-spectra-green-600 dark:text-spectra-green-400">
                     <Target className="w-4 h-4" />
-                    {t('scoring.formula.accuracy')}
+                    {t('scoring.formula.securityScore')}
                   </span>
                 </div>
               </div>
@@ -413,34 +449,16 @@ export default async function WhitepaperPage({
                 <div className="bg-neutral-100 dark:bg-neutral-900/50 rounded-xl p-6 font-mono text-sm mb-6 border border-neutral-200 dark:border-neutral-700">
                   <div className="text-neutral-500 dark:text-neutral-400 mb-4">{t('scoring.calculationExample.comment')}</div>
                   <div className="space-y-2">
-                    <div>
-                      <span className="text-green-600 dark:text-green-400">{t('scoring.calculationExample.codeLabel')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 85/100 × 45% = 38.25</span>
-                    </div>
-                    <div>
-                      <span className="text-orange-600 dark:text-orange-400">{t('scoring.calculationExample.distributionLabel')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 72/100 × 15% = 10.80</span>
-                    </div>
-                    <div>
-                      <span className="text-purple-600 dark:text-purple-400">{t('scoring.calculationExample.tokenomicsLabel')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 68/100 × 15% = 10.20</span>
-                    </div>
-                    <div>
-                      <span className="text-cyan-600 dark:text-cyan-400">{t('scoring.calculationExample.liquidityLabel')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 75/100 × 15% = 11.25</span>
-                    </div>
-                    <div>
-                      <span className="text-blue-600 dark:text-blue-400">{t('scoring.calculationExample.sentimentLabel')}</span>
-                      <span className="text-neutral-400">:</span>
-                      <span className="text-neutral-900 dark:text-white"> 80/100 × 10% =  8.00</span>
-                    </div>
+                    {weightRows.map(({ key, tone, hasToken, sample }) => (
+                      <div key={key}>
+                        <span className={tone}>{t(`dimensions.weightTable.${key}`)}</span>
+                        <span className="text-neutral-400">:</span>
+                        <span className="text-neutral-900 dark:text-white">{` ${sample}/100 × ${hasToken}% = ${((sample * hasToken) / 100).toFixed(2)}`}</span>
+                      </div>
+                    ))}
                     <div className="border-t border-neutral-300 dark:border-neutral-700 pt-2 mt-2">
                       <span className="text-spectra-green-600 dark:text-spectra-green-400 font-semibold">{t('scoring.calculationExample.compositeScore')}</span>
-                      <span className="text-spectra-green-600 dark:text-spectra-green-400 font-bold"> 78.50/100</span>
+                      <span className="text-spectra-green-600 dark:text-spectra-green-400 font-bold">{` ${exampleTotal.toFixed(2)}/100`}</span>
                     </div>
                   </div>
                 </div>
@@ -448,9 +466,9 @@ export default async function WhitepaperPage({
                 <div className="flex items-start gap-3 p-4 bg-spectra-green-500/10 dark:bg-spectra-green-500/5 border border-spectra-green-500/30 rounded-lg mb-8">
                   <CheckCircle className="w-5 h-5 text-spectra-green-600 dark:text-spectra-green-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-spectra-green-600 dark:text-spectra-green-400 font-semibold mb-1">{t('scoring.calculationExample.aiEnhancedTitle')}</div>
+                    <div className="text-spectra-green-600 dark:text-spectra-green-400 font-semibold mb-1">{t('scoring.calculationExample.renormalisationTitle')}</div>
                     <p className="text-sm text-neutral-600 dark:text-neutral-300">
-                      {t('scoring.calculationExample.aiEnhancedDescription')}
+                      {t('scoring.calculationExample.renormalisationDescription')}
                     </p>
                   </div>
                 </div>
@@ -483,45 +501,30 @@ export default async function WhitepaperPage({
                         </tr>
                       </thead>
                       <tbody className="bg-white dark:bg-neutral-800/50">
-                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
-                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
-                            <Code className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0" />
-                            {t('dimensions.weightTable.rowCode')}
+                        {weightRows.map(({ key, Icon, tone, hasToken, noToken }) => (
+                          <tr key={key} className="border-b border-neutral-200 dark:border-neutral-700/50">
+                            <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
+                              <Icon className={`w-4 h-4 ${tone} flex-shrink-0`} />
+                              {t(`dimensions.weightTable.${key}`)}
+                            </td>
+                            <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">{hasToken}%</td>
+                            {noToken === null ? (
+                              <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
+                            ) : (
+                              <td className="px-4 py-3 text-center font-bold text-spectra-purple-600 dark:text-spectra-purple-400">{noToken}%</td>
+                            )}
+                          </tr>
+                        ))}
+                        <tr className="bg-neutral-50 dark:bg-neutral-900/40">
+                          <td className="px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-300">
+                            {t('dimensions.weightTable.rowTotal')}
                           </td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">45%</td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-purple-600 dark:text-spectra-purple-400">70%</td>
-                        </tr>
-                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
-                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
-                            <Users className="w-4 h-4 text-orange-600 dark:text-orange-400 flex-shrink-0" />
-                            {t('dimensions.weightTable.rowDistribution')}
+                          <td className="px-4 py-3 text-center font-bold text-neutral-700 dark:text-neutral-300">
+                            {weightRows.reduce((sum, row) => sum + row.hasToken, 0)}%
                           </td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
-                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
-                        </tr>
-                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
-                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
-                            <TrendingUp className="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0" />
-                            {t('dimensions.weightTable.rowTokenomics')}
+                          <td className="px-4 py-3 text-center font-bold text-neutral-700 dark:text-neutral-300">
+                            {weightRows.reduce((sum, row) => sum + (row.noToken ?? 0), 0)}%
                           </td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
-                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
-                        </tr>
-                        <tr className="border-b border-neutral-200 dark:border-neutral-700/50">
-                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
-                            <Droplets className="w-4 h-4 text-cyan-600 dark:text-cyan-400 flex-shrink-0" />
-                            {t('dimensions.weightTable.rowLiquidity')}
-                          </td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">15%</td>
-                          <td className="px-4 py-3 text-center text-neutral-400 dark:text-neutral-500 italic">{t('dimensions.weightTable.notApplicable')}</td>
-                        </tr>
-                        <tr>
-                          <td className="px-4 py-3 text-neutral-700 dark:text-neutral-300 flex items-center gap-2">
-                            <MessageSquare className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
-                            {t('dimensions.weightTable.rowSentiment')}
-                          </td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-blue-600 dark:text-spectra-blue-400">10%</td>
-                          <td className="px-4 py-3 text-center font-bold text-spectra-purple-600 dark:text-spectra-purple-400">30%</td>
                         </tr>
                       </tbody>
                     </table>

@@ -374,9 +374,9 @@
         "excellent": "Excellent"
       },
       "weightDistribution": {
-        "title": "Weight Distribution",
-        "totalLabel": "Total:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +390,7 @@
             "communityHealth": "Community health index",
             "fudFomoDetection": "FUD/FOMO detection"
           },
-          "weight": "10",
-          "weightNote": "30% for no-token projects"
+          "weight": "10"
         },
         "code": {
           "name": "Code Security",
@@ -404,8 +403,7 @@
             "dependencyAnalysis": "Dependency analysis",
             "bestPractices": "Best practices check"
           },
-          "weight": "45",
-          "weightNote": "70% for no-token projects"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "Tokenomics Health",
@@ -418,7 +416,7 @@
             "economicModel": "Economic model validation",
             "unlockSchedule": "Unlock schedule tracking"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "Liquidity Depth",
@@ -431,7 +429,7 @@
             "dexCoverage": "DEX coverage",
             "liquidityConcentration": "Liquidity concentration"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "Distribution Analysis",
@@ -444,12 +442,12 @@
             "airdropAnalysis": "Airdrop analysis",
             "walletDistribution": "Wallet distribution"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "Scoring Weights by Project Type",
-        "subtitle": "Weights are applied based on whether the project has a tradeable token. No-token projects (utility protocols, infrastructure, etc.) emphasize code and sentiment more heavily since distribution and liquidity metrics don't apply.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "Dimension",
         "headerHasToken": "Has Token",
         "headerNoToken": "No Token",
@@ -458,8 +456,14 @@
         "rowTokenomics": "Tokenomics",
         "rowLiquidity": "Liquidity",
         "rowSentiment": "Sentiment",
+        "rowVelocity": "Trading Velocity",
+        "rowHolderGrowth": "Holder Growth",
+        "rowRealizedPnl": "Realized PnL",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowWhaleDumpRisk": "Whale Dump Risk",
+        "rowTotal": "Total",
         "notApplicable": "N/A",
-        "footnote": "Actual weights are configured per audit type in the backend scoring service and may be tuned over time as the model is recalibrated."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published."
       }
     },
     "scoring": {
@@ -472,14 +476,14 @@
       "subtitle": "Our scoring algorithm uses dynamic weighted averages, continuously fine-tuned by machine learning for maximum predictive accuracy.",
       "formula": {
         "title": "Security Score Formula",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Dynamic Weights",
-        "aiAdjustments": "AI Adjustments",
-        "accuracy": "Accuracy"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "Dynamic Weight Distribution",
-        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "AI Optimization Layer",
@@ -494,17 +498,10 @@
       },
       "calculationExample": {
         "title": "Calculation Example",
-        "comment": "// Example: Has-token project — weights sum to 100%",
-        "codeLabel": "Code Security",
-        "distributionLabel": "Distribution",
-        "tokenomicsLabel": "Tokenomics",
-        "liquidityLabel": "Liquidity",
-        "sentimentLabel": "Sentiment",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "Composite Score:",
-        "baseScore": "Base Score:",
-        "aiAdjustment": "AI Adjustment:",
-        "aiEnhancedTitle": "AI-Enhanced Accuracy",
-        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+        "renormalisationTitle": "When a dimension cannot be measured",
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable."
       }
     },
     "howItWorks": {
