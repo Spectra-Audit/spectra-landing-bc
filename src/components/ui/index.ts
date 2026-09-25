@@ -26,9 +26,6 @@ export type { LazyImageProps } from './LazyImage'
 export { default as ProtocolLogo } from './ProtocolLogo'
 export type { ProtocolLogoProps } from './ProtocolLogo'
 
-export { default as SecurityIllustration } from './SecurityIllustration'
-export type { SecurityIllustrationProps } from './SecurityIllustration'
-
 export { default as SocialMediaImage } from './SocialMediaImage'
 export type { SocialMediaImageProps } from './SocialMediaImage'
 
