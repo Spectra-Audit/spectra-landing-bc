@@ -224,10 +224,14 @@ export default async function WhitepaperPage({
                 </p>
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+              {/*
+                Stats. The "5 / Core Dimensions" tile is gone: its whole content
+                was the number, and with ten weighted inputs for a project that
+                has a token and three for one that does not, there is no honest
+                number to show. Three tiles left, so md:grid-cols-3.
+              */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
                 {[
-                  { value: t('introduction.stats.coreDimensions.value'), label: t('introduction.stats.coreDimensions.label'), icon: Layers },
                   { value: t('introduction.stats.detectionRate.value'), label: t('introduction.stats.detectionRate.label'), icon: Target },
                   { value: t('introduction.stats.analysisTime.value'), label: t('introduction.stats.analysisTime.label'), icon: Gauge },
                   { value: t('introduction.stats.riskCategories.value'), label: t('introduction.stats.riskCategories.label'), icon: Shield }
@@ -243,7 +247,7 @@ export default async function WhitepaperPage({
           </div>
         </section>
 
-        {/* The 5 Dimensions - New Grid Layout */}
+        {/* The deep-analysis dimensions - New Grid Layout */}
         <section id="dimensions" className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">

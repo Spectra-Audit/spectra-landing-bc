@@ -25,18 +25,26 @@ export default async function HomePage({
   // CTAs were repointed to app.spectra-audit.com, so only the default remains.
   //
   // Verifiable trust metrics — no fabricated counters. Values reflect real
-  // platform capabilities: 5 scoring dimensions, 95% known-vulnerability
-  // detection, ≤20-minute typical audit time.
+  // platform capabilities: 95% known-vulnerability detection, ≤20-minute
+  // typical audit time.
+  //
+  // The third badge carried `value: 5` over "Scoring Dimensions". The scorer
+  // weights ten inputs for a project with a token and three for one without,
+  // so it now states the shape of the model instead of counting it. It also
+  // stops duplicating the label on the pillar row below, which uses the same
+  // `threatTypes` key as its eyebrow.
   const personaContent = {
     ctaText: t('hero.cta.primary'),
     trustMetrics: [
       { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.detectionRate') },
       { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
-      { type: 'compliance' as const, value: 5, label: t('hero.trustMetrics.threatTypes') }
+      { type: 'compliance' as const, value: undefined, label: t('hero.page.multiDimensional') }
     ]
   }
 
-  // The five core audit pillars — our differentiator vs. code-only audits.
+  // The deep-analysis audit pillars — our differentiator vs. code-only audits.
+  // Not the whole weight table: these five carry 75 of the 100 points for a
+  // project with a token, with the rest in on-chain behaviour metrics.
   // Colours + icons mirror the dimension grid and the methodology diagram so
   // the same visual language carries across the whole page.
   const corePillars = [
@@ -158,7 +166,7 @@ export default async function HomePage({
                 </TrackedCta>
               </div>
 
-              {/* Five core audit pillars — the differentiator, surfaced high in the hero */}
+              {/* The deep-analysis audit pillars — the differentiator, surfaced high in the hero */}
               <div className="mb-14 animate-slide-up" style={{ animationDelay: '0.3s' }}>
                 <p className="text-xs font-semibold uppercase tracking-[0.25em] text-neutral-400 dark:text-neutral-500 mb-4">
                   {t('hero.trustMetrics.threatTypes')}
@@ -834,7 +842,16 @@ export default async function HomePage({
             </div>
 
             <Card variant="glass" className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-4 gap-8 text-center">
+              {/*
+                Three tiles, not four. The fourth was a bare "5" over "Security
+                dimensions": a pure counter whose entire content was the number.
+                There are ten weighted inputs for a project with a token and
+                three for one without, so no fixed count is true, and unlike
+                the other tiles there is no honest value to put in its place.
+                md:grid-cols-3 so the row still fills at tablet width and up;
+                below md the grid was already one column per tile.
+              */}
+              <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-neutral-900 dark:text-white mb-2 flex items-center justify-center gap-2">
                     {t('hero.page.scanTimeValue')}
@@ -842,14 +859,6 @@ export default async function HomePage({
                   </div>
                   <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.scanTimeLabel')}</div>
                   <div className="text-xs text-spectra-blue-600 dark:text-spectra-blue-500 mt-1">{t('hero.page.scanTimeBadge')}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-spectra-green-700 dark:text-spectra-green-500 dark:drop-shadow-glow mb-2 flex items-center justify-center gap-2">
-                    {t('hero.page.dimensionsValue')}
-                    <Layers className="w-5 h-5" />
-                  </div>
-                  <div className="text-neutral-500 dark:text-neutral-400">{t('hero.page.dimensionsLabel')}</div>
-                  <div className="text-xs text-spectra-green-700 dark:text-spectra-green-500 mt-1">{t('hero.page.dimensionsBadge')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-spectra-blue-600 dark:text-spectra-blue-500 dark:drop-shadow-glow mb-2">{t('hero.page.aiPoweredValue')}</div>

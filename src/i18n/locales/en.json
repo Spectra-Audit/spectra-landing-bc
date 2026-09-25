@@ -84,7 +84,7 @@
       "featuresTitle": "Next-Generation Security Audits",
       "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra Audit provides continuous, verifiable security monitoring that keeps up with your code.",
       "realTimeMonitoring": "On-Demand AI Analysis",
-      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive 5-dimensional security review completes in under 20 minutes per audit.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20m",
       "avgScanTimeLabel": "Typical audit time",
       "fasterThanAudits": ">2.4×",
@@ -109,15 +109,12 @@
       "highAccuracy": "High Accuracy",
       "highAccuracyDesc": "AI-verified results you can trust",
       "multiDimensional": "Multi-Dimensional",
-      "multiDimensionalDesc": "5-factor security scoring",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "Comprehensive security analysis",
       "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
       "scanTimeValue": "≤20m",
       "scanTimeLabel": "Typical audit time",
       "scanTimeBadge": "Fast analysis",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "Security dimensions",
-      "dimensionsBadge": "Multi-factor scoring",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "Powered analysis",
       "aiPoweredBadge": "Smart detection",
@@ -145,7 +142,7 @@
         },
         "aiOrchestrated": {
           "label": "AI-Orchestrated",
-          "description": "5-dimensional analysis pipeline"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "Audit",
@@ -233,7 +230,7 @@
     "subtitle": "Traditional audits are slow and expensive. Spectra Audit provides AI-orchestrated, verifiable security analysis you can inspect and reproduce.",
     "monitoring": {
       "title": "Fast AI Analysis",
-      "description": "AI-orchestrated analysis runs across 5 dimensions in parallel — code, distribution, tokenomics, liquidity, and sentiment — producing a composite score with traceable evidence.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel — code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics — producing a composite score with traceable evidence.",
       "metric": "Typically under 20 minutes per audit",
       "comparison": "More than 2.4× faster than traditional manual audits"
     },
@@ -324,7 +321,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The 5-Dimensional",
+      "title": "The Multi-Dimensional",
       "subtitle": "Security Audit Framework",
       "description": "Discover how Spectra Audit revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
       "buttons": {
@@ -338,14 +335,10 @@
       "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
       "paragraph2": {
         "before": "Spectra Audit's ",
-        "highlight": "5-dimensional audit framework",
+        "highlight": "multi-dimensional audit framework",
         "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "Core Dimensions"
-        },
         "detectionRate": {
           "value": "95%",
           "label": "Detection Rate"
@@ -363,11 +356,11 @@
     "dimensions": {
       "title": {
         "before": "The ",
-        "highlight": "5 Dimensions",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "Each dimension provides unique insights. Together, they deliver complete security intelligence.",
-      "convergeLabel": "5 dimensions converge",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "Security Score",
@@ -518,7 +511,7 @@
         },
         "aiAnalysis": {
           "title": "2. AI Analysis",
-          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. Risk Scoring",
@@ -538,7 +531,7 @@
           "phase": "Q1 2025",
           "title": "Foundation",
           "items": [
-            "Launch 5-dimensional audit system",
+            "Launch the multi-dimensional audit system",
             "Integrate major blockchain networks",
             "Deploy real-time monitoring infrastructure",
             "Establish security partnerships"
@@ -587,11 +580,11 @@
     },
     "cta": {
       "title": "Ready for Deeper Security Insights?",
-      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes — not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes — not weeks.",
       "button": "Start Your First Audit"
     },
     "metadata": {
-      "title": "The 5-Dimensional Security Audit Framework | Spectra Audit",
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
       "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, and sentiment — one transparent grade backed by verifiable evidence."
     }
   },
@@ -611,11 +604,11 @@
       "description": "Our scanner inspects compiled bytecode and ABIs directly, allowing analysis of contracts even when source code is unavailable or partially verified."
     },
     "multiDimensional": {
-      "title": "5-Dimensional Scoring",
+      "title": "Multi-Dimensional Scoring",
       "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel — then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "Code",
         "distribution": "Distribution",
@@ -625,7 +618,7 @@
       },
       "compositeLine1": "Composite",
       "compositeLine2": "Score",
-      "subtitle": "5 analyzers running in parallel → weighted composite"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {

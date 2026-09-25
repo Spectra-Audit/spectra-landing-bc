@@ -218,67 +218,67 @@ FAQ = {
 
 WP_META = {
     'en': {
-        'title': 'The 5-Dimensional Security Audit Framework | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, and sentiment — one transparent grade backed by verifiable evidence.',
     },
     'es': {
-        'title': 'El marco de auditoría de seguridad de 5 dimensiones | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Cómo Spectra Audit califica contratos inteligentes en código, distribución, tokenomics, liquidez y sentimiento: una calificación transparente con evidencia verificable.',
     },
     'pt': {
-        'title': 'O framework de auditoria de segurança em 5 dimensões | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Como a Spectra Audit avalia contratos inteligentes em código, distribuição, tokenomics, liquidez e sentimento — uma nota transparente com evidências verificáveis.',
     },
     'fr': {
-        'title': "Le cadre d'audit de sécurité en 5 dimensions | Spectra Audit",
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': "Comment Spectra Audit note les smart contracts selon le code, la distribution, la tokenomics, la liquidité et le sentiment — une note transparente avec des preuves vérifiables.",
     },
     'de': {
-        'title': 'Das 5-dimensionale Sicherheits-Audit-Framework | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Wie Spectra Audit Smart Contracts nach Code, Verteilung, Tokenomics, Liquidität und Sentiment bewertet – eine transparente Note mit überprüfbaren Belegen.',
     },
     'zh': {
-        'title': '五维安全审计框架 | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': '了解 Spectra Audit 如何从代码、分布、代币经济学、流动性和情绪五个维度为智能合约评分——一个透明的等级，附可验证的证据。',
     },
     'ja': {
-        'title': '5次元セキュリティ監査フレームワーク | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Spectra Audit がコード、分布、トークノミクス、流動性、センチメントの5つの観点からスマートコントラクトを採点する仕組み。検証可能な証拠付きの透明なグレード。',
     },
     'ko': {
-        'title': '5차원 보안 감사 프레임워크 | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Spectra Audit가 코드, 분포, 토크노믹스, 유동성, 센티먼트의 5개 차원에서 스마트 컨트랙트를 평가하는 방법 — 검증 가능한 증거가 있는 투명한 등급.',
     },
     'ar': {
-        'title': 'إطار تدقيق الأمان خماسي الأبعاد | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'كيف تُقيِّم Spectra Audit العقود الذكية عبر الكود والتوزيع واقتصاد الرموز والسيولة والمشاعر — درجة شفافة مدعومة بأدلة يمكن التحقق منها.',
     },
     'ru': {
-        'title': 'Пятимерная система аудита безопасности | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Как Spectra Audit оценивает смарт-контракты по коду, распределению, токеномике, ликвидности и настроениям — прозрачная оценка с проверяемыми доказательствами.',
     },
     'tr': {
-        'title': '5 Boyutlu Güvenlik Denetimi Çerçevesi | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': "Spectra Audit'in akıllı sözleşmeleri kod, dağıtım, tokenomik, likidite ve duyarlılık boyutlarında nasıl puanladığı — doğrulanabilir kanıtlarla şeffaf bir not.",
     },
     'hi': {
-        'title': '5-आयामी सिक्योरिटी ऑडिट फ्रेमवर्क | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Spectra Audit कोड, वितरण, टोकनॉमिक्स, लिक्विडिटी और सेंटिमेंट के आधार पर स्मार्ट कॉन्ट्रैक्ट्स को कैसे स्कोर करता है — सत्यापन योग्य प्रमाण के साथ एक पारदर्शी ग्रेड।',
     },
     'bn': {
-        'title': '৫-মাত্রিক নিরাপত্তা অডিট ফ্রেমওয়ার্ক | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'Spectra Audit কীভাবে কোড, বণ্টন, টোকেনমিক্স, তারল্য ও সেন্টিমেন্টের ভিত্তিতে স্মার্ট কন্ট্রাক্ট স্কোর করে — যাচাইযোগ্য প্রমাণসহ একটি স্বচ্ছ গ্রেড।',
     },
     'te': {
-        'title': '5-డైమెన్షనల్ సెక్యూరిటీ ఆడిట్ ఫ్రేమ్‌వర్క్ | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'కోడ్, పంపిణీ, టోకనామిక్స్, లిక్విడిటీ, సెంటిమెంట్ ఆధారంగా Spectra Audit స్మార్ట్ కాంట్రాక్టులను ఎలా స్కోర్ చేస్తుందో తెలుసుకోండి — ధృవీకరించదగిన ఆధారాలతో పారదర్శక గ్రేడ్.',
     },
     'ta': {
-        'title': '5-பரிமாண பாதுகாப்பு தணிக்கை கட்டமைப்பு | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'கோட், விநியோகம், டோக்கனாமிக்ஸ், பணப்புழக்கம், உணர்வு ஆகியவற்றின் அடிப்படையில் Spectra Audit ஸ்மார்ட் காண்ட்ராக்ட்களை எப்படி மதிப்பிடுகிறது — சரிபார்க்கக்கூடிய சான்றுகளுடன் வெளிப்படையான தரம்.',
     },
     'mr': {
-        'title': '5-आयामी सुरक्षा ऑडिट फ्रेमवर्क | Spectra Audit',
+        'title': "The Multi-Dimensional Security Audit Framework | Spectra Audit",
         'description': 'कोड, वितरण, टोकनॉमिक्स, तरलता आणि सेंटिमेंट या आधारे Spectra Audit स्मार्ट कॉन्ट्रॅक्टला कसे गुण देते — तपासता येणाऱ्या पुराव्यांसह पारदर्शक ग्रेड.',
     },
 }
