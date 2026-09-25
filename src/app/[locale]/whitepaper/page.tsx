@@ -225,14 +225,17 @@ export default async function WhitepaperPage({
               </div>
 
               {/*
-                Stats. The "5 / Core Dimensions" tile is gone: its whole content
-                was the number, and with ten weighted inputs for a project that
-                has a token and three for one that does not, there is no honest
-                number to show. Three tiles left, so md:grid-cols-3.
+                Stats. Two of the original four are gone and neither was
+                replaced, because neither had an honest value to replace it
+                with. "5 / Core Dimensions" was a pure counter, and the scorer
+                weights ten inputs for a project with a token and three for one
+                without. "95% / Detection Rate" came from no benchmark; the
+                numbers we can actually show, projects audited and total
+                findings, need a live fetch this prerendered page cannot make.
+                Two tiles left, so plain grid-cols-2 at every width.
               */}
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+              <div className="grid grid-cols-2 gap-6 mt-12">
                 {[
-                  { value: t('introduction.stats.detectionRate.value'), label: t('introduction.stats.detectionRate.label'), icon: Target },
                   { value: t('introduction.stats.analysisTime.value'), label: t('introduction.stats.analysisTime.label'), icon: Gauge },
                   { value: t('introduction.stats.riskCategories.value'), label: t('introduction.stats.riskCategories.label'), icon: Shield }
                 ].map((stat, i) => (

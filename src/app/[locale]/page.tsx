@@ -24,9 +24,17 @@ export default async function HomePage({
   // Hero / final-CTA content. Persona-specific variants were retired when the
   // CTAs were repointed to app.spectra-audit.com, so only the default remains.
   //
-  // Verifiable trust metrics — no fabricated counters. Values reflect real
-  // platform capabilities: 95% known-vulnerability detection, ≤20-minute
-  // typical audit time.
+  // Verifiable trust metrics — no fabricated counters. The only number left
+  // here is the ≤20-minute typical audit time.
+  //
+  // The first badge read "95% Known Vulnerability Detection". No benchmark
+  // produces that figure; nothing in this repo or the backend measures a
+  // detection rate at all. The two real numbers we could show instead,
+  // projects audited and total findings, come from GET /analytics/stats/public
+  // — but this page is prerendered at build time for sixteen locales and the
+  // repo holds no API base URL to fetch them from, so either number would be
+  // baked at deploy time and start drifting immediately. A stale true number
+  // is still a false claim, so the badge is gone rather than replaced.
   //
   // The third badge carried `value: 5` over "Scoring Dimensions". The scorer
   // weights ten inputs for a project with a token and three for one without,
@@ -36,7 +44,6 @@ export default async function HomePage({
   const personaContent = {
     ctaText: t('hero.cta.primary'),
     trustMetrics: [
-      { type: 'accuracy' as const, value: 95, label: t('hero.trustMetrics.detectionRate') },
       { type: 'speed' as const, value: 20, label: t('hero.trustMetrics.scanTime') },
       { type: 'compliance' as const, value: undefined, label: t('hero.page.multiDimensional') }
     ]
@@ -199,7 +206,15 @@ export default async function HomePage({
                 />
               </div>
 
-              {/* Enhanced Trust Metrics - Using new metric variant */}
+              {/*
+                Enhanced Trust Metrics - Using new metric variant.
+
+                `animated`/`trend` used to key off `index === 0`, which was the
+                95% detection badge. With that badge gone the rising-trend arrow
+                landed on the audit-time badge, where a green arrow up reads as
+                audits getting slower. Neither remaining badge is a trend, so
+                both are neutral and unanimated.
+              */}
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-12 animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 {personaContent.trustMetrics.map((metric, index) => (
                   <TrustBadge
@@ -210,8 +225,7 @@ export default async function HomePage({
                     variant="metric"
                     size="md"
                     showIcon={true}
-                    animated={index === 0}
-                    trend={index === 0 ? 'up' : 'neutral'}
+                    trend="neutral"
                   />
                 ))}
               </div>

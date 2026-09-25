@@ -45,11 +45,9 @@
     "getReport": "Get Report",
     "trustMetrics": {
       "activeUsers": "Active Users",
-      "accuracy": "Known Vulnerability Detection",
       "scanTime": "Min Typical Audit",
       "protectedUsers": "Protected Users",
       "uptime": "Uptime",
-      "detectionRate": "Known Vulnerability Detection",
       "threatTypes": "Scoring Dimensions",
       "projectsAnalyzed": "Scoring Dimensions",
       "riskFlagsIdentified": "Risk Flags Identified"
@@ -98,7 +96,7 @@
       "comprehensiveCoverage": "Comprehensive Coverage",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes — smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ vulnerability categories",
-      "detectionRate": "Up to 95% detection of known issues",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "Verifiable & Transparent",
       "productionReadyDesc": "A transparent analysis pipeline built for developers and researchers who want to inspect, reproduce, and verify every step of the audit.",
       "thirdPartyVerified": "Verifiable Results",
@@ -244,7 +242,7 @@
       "title": "Comprehensive Coverage",
       "description": "Advanced AI models detect a broad range of known vulnerability classes — from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ vulnerability categories",
-      "detail": "Helps detect up to 95% of known exploits before deployment"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "On-Demand Analysis",
@@ -339,10 +337,6 @@
         "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "detectionRate": {
-          "value": "95%",
-          "label": "Detection Rate"
-        },
         "analysisTime": {
           "value": "≤20 min",
           "label": "Analysis Time"
@@ -695,7 +689,7 @@
     "q3": "Is Spectra Audit's security audit really free?",
     "a3": "Yes. Spectra Audit offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.",
     "q4": "How accurate are Spectra Audit's findings?",
-    "a4": "Spectra Audit detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Does Spectra Audit support multiple blockchains?",
     "a5": "Yes. Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains."
   }
