@@ -194,7 +194,9 @@ export default async function HomePage({
                 </div>
               </div>
 
-              {/* Unified Grade Display - CENTERPIECE (Replaces SecurityIllustration + GradeBadge) */}
+              {/* Security Score readout - CENTERPIECE. An illustrative score,
+                  not a measured one: it shows the shape of the output, the
+                  0-100 number and its colour band. */}
               <div className="mb-12 animate-scale-in" style={{ animationDelay: '0.3s' }}>
                 <UnifiedGradeDisplay
                   score={95}
@@ -202,7 +204,6 @@ export default async function HomePage({
                   animated={true}
                   showLabel={true}
                   showDescription={true}
-                  variant="detailed"
                 />
               </div>
 

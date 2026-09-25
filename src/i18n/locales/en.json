@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-    "description": "One clear security grade with the evidence behind it. Real-time AI audits you can verify — free smart contract analysis in minutes, no registration.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify — free smart contract analysis in minutes, no registration.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection",
     "og": {
       "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-      "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "One Security Score from 0 to 100 – with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI Security Audit Platform"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-    "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
+    "description": "One Security Score from 0 to 100 – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection"
   },
   "nav": {
@@ -181,7 +181,7 @@
     },
     "overallScore": {
       "title": "Overall Security Score",
-      "description": "All dimensions combined into a single, easy-to-understand grade.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = Excellent",
       "good": "70-84 = Good",
       "fair": "55-69 = Fair",
@@ -201,7 +201,7 @@
       "description": "Secure, low-maintenance protection for your crypto investments",
       "benefits": [
         "On-demand AI security analysis",
-        "Simple security grades (A-F)",
+        "Simple Security Scores from 0 to 100",
         "Instant alerts on risks",
         "No technical knowledge needed"
       ],
@@ -579,7 +579,7 @@
     },
     "metadata": {
       "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, and sentiment — one transparent grade backed by verifiable evidence."
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour — one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
@@ -662,8 +662,6 @@
     "poor": "Poor",
     "critical": "Critical",
     "needsWork": "Needs Work",
-    "security": "Security",
-    "labelFormat": "Grade {letter} - {label}",
     "descriptions": {
       "excellent": "No critical vulnerabilities found",
       "good": "Minor issues identified",

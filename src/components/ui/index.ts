@@ -10,10 +10,7 @@ export type { CardProps } from './Card'
 export { default as TrustBadge } from './TrustBadge'
 export type { TrustBadgeProps } from './TrustBadge'
 
-export { default as GradeBadge } from './GradeBadge'
-export type { GradeBadgeProps } from './GradeBadge'
-
-// NEW: UnifiedGradeDisplay - Combines SecurityIllustration and GradeBadge
+// The Security Score readout: the 0-100 number and its colour band.
 export { default as UnifiedGradeDisplay } from './UnifiedGradeDisplay'
 export type { UnifiedGradeDisplayProps } from './UnifiedGradeDisplay'
 
