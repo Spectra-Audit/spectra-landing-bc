@@ -12,7 +12,7 @@ type Pt = { x: number; y: number }
 /**
  * Shield-shaped animated SVG echoing the Spectra logo. Five nodes sit around
  * the shield outline, connected in a continuous feedback loop:
- * Audit -> User Feedback -> Evaluation -> Calibration -> Model Retraining -> Audit
+ * Audit -> User Feedback -> Evaluation -> Calibration -> Model Updates -> Audit
  *
  * Evaluation weighs feedback by reviewer reputation before it calibrates the
  * system; Calibration sits at the shield's point. The "circuit" is the shield
