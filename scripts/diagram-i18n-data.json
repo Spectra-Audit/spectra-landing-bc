@@ -1,7 +1,7 @@
 {
   "en": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Composite",
       "compositeLine2": "Score",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -19,7 +19,7 @@
   },
   "es": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Puntuación",
       "compositeLine2": "Compuesta",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -37,7 +37,7 @@
   },
   "pt": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Pontuação",
       "compositeLine2": "Composta",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -55,7 +55,7 @@
   },
   "fr": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Score",
       "compositeLine2": "Composite",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -73,7 +73,7 @@
   },
   "de": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Gesamt-",
       "compositeLine2": "Bewertung",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -91,7 +91,7 @@
   },
   "ru": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Составная",
       "compositeLine2": "оценка",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -109,7 +109,7 @@
   },
   "tr": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "Birleşik",
       "compositeLine2": "Skor",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -127,7 +127,7 @@
   },
   "zh": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "综合",
       "compositeLine2": "评分",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -145,7 +145,7 @@
   },
   "ja": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "複合",
       "compositeLine2": "スコア",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -163,7 +163,7 @@
   },
   "ko": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "복합",
       "compositeLine2": "점수",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -181,7 +181,7 @@
   },
   "ar": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "الدرجة",
       "compositeLine2": "المركبة",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -199,7 +199,7 @@
   },
   "hi": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "संयुक्त",
       "compositeLine2": "स्कोर",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -217,7 +217,7 @@
   },
   "bn": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "যৌগিক",
       "compositeLine2": "স্কোর",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -235,7 +235,7 @@
   },
   "te": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "సమ్మిళిత",
       "compositeLine2": "స్కోర్",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -253,7 +253,7 @@
   },
   "ta": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "கூட்டு",
       "compositeLine2": "மதிப்பெண்",
       "subtitle": "Analyzers running in parallel → weighted composite"
@@ -271,7 +271,7 @@
   },
   "mr": {
     "m": {
-      "ariaLabel": "Parallel audit pipeline: the deep-analysis analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "compositeLine1": "संमिश्र",
       "compositeLine2": "स्कोअर",
       "subtitle": "Analyzers running in parallel → weighted composite"
