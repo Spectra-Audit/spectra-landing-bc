@@ -456,11 +456,11 @@
     "scoring": {
       "badge": "算法",
       "title": {
-        "before": "AI 优化的",
+        "before": "How the ",
         "highlight": "安全评分",
-        "after": "计算"
+        "after": " Is Calculated"
       },
-      "subtitle": "我们的评分算法使用动态加权平均值，通过机器学习持续微调以实现最大的预测准确性。",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "安全评分公式",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
@@ -472,23 +472,21 @@
         "title": "Weight Distribution (Project With a Token)",
         "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
-      "aiOptimization": {
-        "title": "AI优化层",
-        "description": "机器学习模型根据以下因素持续优化权重：",
-        "factors": {
-          "exploitPatterns": "漏洞模式分析",
-          "marketCorrelation": "市场状况相关性",
-          "projectCategorization": "项目类型分类",
-          "threatIntelligence": "实时威胁情报",
-          "communityFeedback": "社区反馈整合"
-        }
-      },
       "calculationExample": {
         "title": "计算示例",
         "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "综合评分：",
         "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
         "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -509,7 +507,7 @@
         },
         "riskScoring": {
           "title": "3. 风险评分",
-          "description": "AI优化的加权评分与可验证的证据提供完整的安全评估。"
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -574,7 +572,7 @@
     },
     "cta": {
       "title": "准备好获得更深入的安全洞察了吗？",
-      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "开始您的首次审计"
     },
     "metadata": {
@@ -617,25 +615,25 @@
   },
   "learningLoop": {
     "title": "Spectra 评分如何随着时间不断提升",
-    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "用户反馈集成",
-      "description": "社区对每个发现的评分和专家评审将反馈回模型。误报、遗漏的漏洞和严重程度争议会被追踪，并用于重新校准评分权重。"
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "与相似项目的校准",
-      "description": "每次新审计都会与结构相似的合约和代币经济学的历史审计交叉参考。当过往项目的模式表明不同的风险特征时，评分会被调整。"
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "持续 AI 优化",
-      "description": "随着链上出现新的漏洞利用模式和新的漏洞类别被披露，我们的 AI 模型会定期重新训练。系统处理的每次审计都使其变得更智能。"
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "外部审计交叉参考",
-      "description": "当项目获得专业人工审计时，我们的发现会与报告进行比较。差异将反馈到模型优化中。"
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "盾牌形状的持续改进反馈循环：审计为用户反馈提供依据，用户反馈在评估期间根据审阅者信誉进行加权，然后用于校准和重新训练模型以进行下一次审计。",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
       "nodes": {
         "audit": "审计",
         "feedback": "用户反馈",

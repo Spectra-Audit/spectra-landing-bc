@@ -456,11 +456,11 @@
     "scoring": {
       "badge": "알고리즘",
       "title": {
-        "before": "AI 최적화",
+        "before": "How the ",
         "highlight": "보안 점수",
-        "after": " 계산"
+        "after": " Is Calculated"
       },
-      "subtitle": "우리의 점수 매기기 알고리즘은 동적 가중 평균을 사용하며 기계 학습에 의해 지속적으로 미세 조정되어 최대의 예측 정확도를 제공합니다.",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "보안 점수 공식",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
@@ -472,23 +472,21 @@
         "title": "Weight Distribution (Project With a Token)",
         "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
-      "aiOptimization": {
-        "title": "AI 최적화 레이어",
-        "description": "기계 학습 모델은 다음을 기반으로 가중치를 지속적으로 정제합니다:",
-        "factors": {
-          "exploitPatterns": "익스플로잇 패턴 분석",
-          "marketCorrelation": "시장 상태 상관관계",
-          "projectCategorization": "프로젝트 유형 분류",
-          "threatIntelligence": "실시간 위협 인텔리전스",
-          "communityFeedback": "커뮤니티 피드백 통합"
-        }
-      },
       "calculationExample": {
         "title": "계산 예시",
         "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "복합 점수:",
         "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
         "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -509,7 +507,7 @@
         },
         "riskScoring": {
           "title": "3. 리스크 점수 매기기",
-          "description": "검증 가능한 증거가 있는 AI 최적화 가중치 점수가 완전한 보안 평가를 제공합니다."
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -574,7 +572,7 @@
     },
     "cta": {
       "title": "더 깊은 보안 인사이트를 준비하셨나요?",
-      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "첫 번째 감사 시작"
     },
     "metadata": {
@@ -617,25 +615,25 @@
   },
   "learningLoop": {
     "title": "Spectra 점수가 시간이 지나면서 향상되는 방식",
-    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "사용자 피드백 통합",
-      "description": "각 발견에 대한 커뮤니티 평가와 전문가 리뷰가 모델로 피드백됩니다. 오탐, 누락된 취약점 및 심각도 분쟁이 추적되어 스코어링 가중치를 재보정하는 데 사용됩니다."
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "유사한 프로젝트와의 보정",
-      "description": "각 새 감사는 구조적으로 유사한 컨트랙트와 토크노믹스의 과거 감사와 교차 참조됩니다. 과거 프로젝트의 패턴이 다른 위험 프로필을 시사할 때 점수가 조정됩니다."
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "지속적인 AI 최적화",
-      "description": "새로운 익스플로잇 패턴이 온체인에 등장하고 새로운 취약점 클래스가 공개되면 AI 모델이 주기적으로 재훈련됩니다. 시스템은 처리하는 모든 감사로 더 똑똑해집니다."
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "외부 감사 교차 참조",
-      "description": "프로젝트에 대한 전문 인간 감사가 제공되면 우리의 발견이 보고서와 비교됩니다. 불일치는 모델 개선에 피드백됩니다."
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "방패 모양의 지속적 개선 피드백 루프: 감사가 사용자 피드백에 반영되고, 이 피드백은 평가 시 검토자 평판에 따라 가중치가 부여된 후 다음 감사를 위해 모델을 보정하고 재학습하는 데 사용됩니다.",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
       "nodes": {
         "audit": "감사",
         "feedback": "사용자 피드백",

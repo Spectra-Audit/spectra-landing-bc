@@ -456,11 +456,11 @@
     "scoring": {
       "badge": "Algoritma",
       "title": {
-        "before": "AI Optimize Edilmiş ",
+        "before": "How the ",
         "highlight": "Güvenlik Skoru",
-        "after": " Hesaplaması"
+        "after": " Is Calculated"
       },
-      "subtitle": "Skorlama algoritmamız, maksimum tahmin doğruluğu için makine öğrenmesi tarafından sürekli ince ayarlı dinamik ağırlıklı ortalamalar kullanır.",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "Güvenlik Skoru Formülü",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
@@ -472,23 +472,21 @@
         "title": "Weight Distribution (Project With a Token)",
         "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
-      "aiOptimization": {
-        "title": "AI Optimizasyon Katmanı",
-        "description": "Makine öğrenmesi modelleri aşağıdakilere göre ağırlıkları sürekli iyileştirir:",
-        "factors": {
-          "exploitPatterns": "Exploit kalıbı analizi",
-          "marketCorrelation": "Pazar koşulu korelasyonu",
-          "projectCategorization": "Proje türü kategorizasyonu",
-          "threatIntelligence": "Gerçek zamanlı tehdit istihbaratı",
-          "communityFeedback": "Topluluk geri bildirim entegrasyonu"
-        }
-      },
       "calculationExample": {
         "title": "Hesaplama Örneği",
         "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "Birleşik Skor:",
         "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
         "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -509,7 +507,7 @@
         },
         "riskScoring": {
           "title": "3. Risk Skorlaması",
-          "description": "Doğrulanabilir kanıtlarla AI optimize edilmiş ağırlıklı skorlar, eksiksiz güvenlik değerlendirmesi sağlar."
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -574,7 +572,7 @@
     },
     "cta": {
       "title": "Daha Derin Güvenlik Öngörülerine Hazır mısınız?",
-      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "İlk Denetiminizi Başlatın"
     },
     "metadata": {
@@ -617,25 +615,25 @@
   },
   "learningLoop": {
     "title": "Spectra Skoru Zamanla Nasıl Gelişir",
-    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "Kullanıcı Geri Bildirim Entegrasyonu",
-      "description": "Her bulguya yönelik topluluk derecelendirmeleri ve uzman incelemeleri modele geri besler. Yanlış pozitifler, kaçırılan güvenlik açıkları ve şiddet tartışmaları takip edilir ve skorlama ağırlıklarını yeniden kalibre etmek için kullanılır."
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "Benzer Projelere Karşı Kalibrasyon",
-      "description": "Her yeni denetim, yapısal olarak benzer sözleşmelerin ve tokenomiğin geçmiş denetimleriyle çapraz referanslanır. Geçmiş projelerden gelen kalıplar farklı risk profilleri önerdiğinde skorlar ayarlanır."
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "Sürekli AI Optimizasyonu",
-      "description": "Zincir üstünde yeni exploit kalıpları ortaya çıkıp yeni güvenlik açığı sınıfları açıklandıkça AI modellerimiz periyodik olarak yeniden eğitilir. Sistem, işlediği her denetimle daha akıllı hale gelir."
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "Harici Denetim Çapraz Referansı",
-      "description": "Bir proje için profesyonel insan denetimleri mevcut olduğunda, bulgularımız rapora kıyasla karşılaştırılır. Tutarsızlıklar model iyileştirmesine geri besler."
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Kalkan şeklinde sürekli iyileştirme geri bildirim döngüsü: denetimler kullanıcı geri bildirimini besler, bu geri bildirim değerlendirme sırasında inceleyenin itibarına göre ağırlıklandırılır ve ardından bir sonraki denetim için modeli kalibre etmek ve yeniden eğitmek için kullanılır.",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
       "nodes": {
         "audit": "Denetim",
         "feedback": "Geri Bildirim",

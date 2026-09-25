@@ -456,11 +456,11 @@
     "scoring": {
       "badge": "अल्गोरिदम",
       "title": {
-        "before": "AI-अनुकूलित ",
+        "before": "How the ",
         "highlight": "सुरक्षा स्कोअर",
-        "after": " गणना"
+        "after": " Is Calculated"
       },
-      "subtitle": "आमचा स्कोरिंग अल्गोरिदम जास्तीत जास्त भविष्यवाणी अचूकतेसाठी मशीन लर्निंगद्वारे सतत बारीक-ट्यून केलेले डायनॅमिक वेटेड सरासरी वापरतो.",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "सुरक्षा स्कोअर सूत्र",
         "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
@@ -472,23 +472,21 @@
         "title": "Weight Distribution (Project With a Token)",
         "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
-      "aiOptimization": {
-        "title": "AI ऑप्टिमायझेशन स्तर",
-        "description": "मशीन लर्निंग मॉडेल्स खालील आधारावर वजने सतत परिष्कृत करतात:",
-        "factors": {
-          "exploitPatterns": "Exploit पॅटर्न विश्लेषण",
-          "marketCorrelation": "बाजार स्थिती सहसंबंध",
-          "projectCategorization": "प्रकल्प प्रकार वर्गीकरण",
-          "threatIntelligence": "वास्तविक वेळ धोका बुद्धिमत्ता",
-          "communityFeedback": "समुदाय अभिप्राय एकत्रीकरण"
-        }
-      },
       "calculationExample": {
         "title": "गणना उदाहरण",
         "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "संमिश्र स्कोअर:",
         "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
         "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -509,7 +507,7 @@
         },
         "riskScoring": {
           "title": "3. जोखीम स्कोरिंग",
-          "description": "सत्यापन योग्य पुराव्यांसह AI-अनुकूलित वेटेड स्कोअर संपूर्ण सुरक्षा मूल्यांकन प्रदान करतात."
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -574,7 +572,7 @@
     },
     "cta": {
       "title": "अधिक खोल सुरक्षा अंतर्दृष्टीसाठी तयार आहात?",
-      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "तुमचा पहिला ऑडिट सुरू करा"
     },
     "metadata": {
@@ -617,25 +615,25 @@
   },
   "learningLoop": {
     "title": "Spectra स्कोअर कालांतराने कसा सुधारतो",
-    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "वापरकर्ता अभिप्राय एकत्रीकरण",
-      "description": "प्रत्येक शोधावर समुदाय रेटिंग आणि तज्ज्ञ पुनरावलोकने मॉडेलमध्ये परत येतात. खोटे पॉझिटिव्ह, चुकलेल्या दुर्बलता आणि तीव्रता वाद ट्रॅक केले जातात आणि स्कोरिंग वजन पुन्हा-कॅलिब्रेट करण्यासाठी वापरले जातात."
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "सारख्या प्रकल्पांच्या विरोधात कॅलिब्रेशन",
-      "description": "प्रत्येक नवीन ऑडिट संरचनात्मकदृष्ट्या समान कराराच्या आणि टोकनॉमिक्सच्या ऐतिहासिक ऑडिटसह क्रॉस-संदर्भित आहे. भूतकाळातील प्रकल्पांमधील नमुने वेगवेगळ्या जोखीम प्रोफाइल सुचवतात तेव्हा स्कोअर समायोजित केले जातात."
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "सतत AI ऑप्टिमायझेशन",
-      "description": "ऑन-चेनवर नवीन exploit पॅटर्न उदयास येतात आणि नवीन दुर्बलता वर्ग उघडकीस येतात तेव्हा, आमचे AI मॉडेल्स वेळोवेळी पुन्हा-प्रशिक्षित केले जातात. प्रत्येक ऑडिटसह सिस्टम अधिक हुशार होते."
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "बाह्य ऑडिट क्रॉस-संदर्भ",
-      "description": "जेव्हा एखाद्या प्रकल्पासाठी व्यावसायिक मानवी ऑडिट उपलब्ध होतात तेव्हा, आमचे शोध अहवालासह तुलना केले जातात. विसंगती मॉडेल परिष्करणात परत येतात."
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "ढालीच्या आकाराचे सतत सुधारणा अभिप्राय लूप: ऑडिट वापरकर्त्याच्या अभिप्रायाला माहिती देतात, ज्याचे मूल्यांकनादरम्यान समीक्षकाच्या प्रतिष्ठेनुसार वजन केले जाते आणि नंतर पुढील ऑडिटसाठी मॉडेल कॅलिब्रेट आणि पुन्हा प्रशिक्षित करण्यासाठी वापरले जाते.",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
       "nodes": {
         "audit": "ऑडिट",
         "feedback": "वापरकर्ता अभिप्राय",

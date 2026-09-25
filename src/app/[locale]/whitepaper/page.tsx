@@ -429,22 +429,38 @@ export default async function WhitepaperPage({
                 </div>
               </div>
 
-              {/* AI Optimization */}
+              {/*
+                This card is the sibling of the weight card in the same
+                md:grid-cols-2 row, so at tablet width and up the two sit side
+                by side. It used to be headed "AI Optimization Layer" over
+                "Machine learning models continuously refine weights based on",
+                which flatly contradicts the fixed, named table three inches to
+                its left. PHASE4_WEIGHTS_HAS_TOKEN and PHASE4_WEIGHTS_NO_TOKEN
+                are module-level dict literals read once by aggregate_scores;
+                nothing in the backend writes to them, and there is no
+                retraining or recalibration code anywhere in it.
+
+                So the card now says what does happen to the weights, which is
+                that they change per release, and lists what is actually
+                collected in between. Three inputs, not five: UserFeedback
+                stores a rating, an optional comment and a snapshot of the
+                reviewer's experience weight, and the admin blueprint imports
+                external audit reports. The other two bullets named things
+                nothing records.
+              */}
               <div className="glass-spectra rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700/50 bg-white/80 dark:bg-neutral-800/80">
                 <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
                   <Brain className="w-5 h-5 text-spectra-purple-500" />
-                  {t('scoring.aiOptimization.title')}
+                  {t('scoring.weightChanges.title')}
                 </h3>
                 <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-4">
-                  {t('scoring.aiOptimization.description')}
+                  {t('scoring.weightChanges.description')}
                 </p>
                 <ul className="space-y-2">
                   {[
-                    t('scoring.aiOptimization.factors.exploitPatterns'),
-                    t('scoring.aiOptimization.factors.marketCorrelation'),
-                    t('scoring.aiOptimization.factors.projectCategorization'),
-                    t('scoring.aiOptimization.factors.threatIntelligence'),
-                    t('scoring.aiOptimization.factors.communityFeedback')
+                    t('scoring.weightChanges.inputs.communityRatings'),
+                    t('scoring.weightChanges.inputs.reviewComments'),
+                    t('scoring.weightChanges.inputs.externalAudits')
                   ].map((factor, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300">
                       <div className="w-2 h-2 rounded-full bg-spectra-blue-500 flex-shrink-0" />
