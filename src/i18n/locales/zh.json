@@ -652,7 +652,7 @@
     "noGuarantee": "高安全评分不保证项目是安全的。评分反映分析时可用数据的状态。",
     "doYourResearch": "在做出任何投资、部署或集成决策之前，请始终进行自己的研究 (DYOR)。",
     "toolPurpose": "Spectra Audit 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "优秀",

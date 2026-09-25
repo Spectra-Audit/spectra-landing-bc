@@ -652,7 +652,7 @@
     "noGuarantee": "உயர் பாதுகாப்பு மதிப்பெண் ஒரு திட்டம் பாதுகாப்பானது என்பதற்கு உத்தரவாதம் இல்லை. மதிப்பெண்கள் பகுப்பாய்வின் போது கிடைக்கும் தரவின் நிலையைப் பிரதிபலிக்கின்றன.",
     "doYourResearch": "எந்தவொரு முதலீடு, வரிசைப்படுத்தல் அல்லது ஒருங்கிணைப்பு முடிவுகளை எடுக்கும் முன் எப்போதும் உங்கள் சொந்த ஆராய்ச்சியை (DYOR) நடத்தவும்.",
     "toolPurpose": "Spectra Audit ஒரு திட்டத்தின் பின்னால் உள்ள பாதுகாப்பு கருத்துகளை புரிந்து கொள்ள பயனர்களுக்கு உதவ வடிவமைக்கப்பட்ட ஒரு தகவல் கருவியாகும். இது நிதி, சட்ட அல்லது முதலீட்டு ஆலோசனை அல்ல.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "சிறப்பானது",

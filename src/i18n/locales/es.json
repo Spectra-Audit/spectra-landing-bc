@@ -652,7 +652,7 @@
     "noGuarantee": "Una puntuación de seguridad alta NO garantiza que un proyecto sea seguro. Las puntuaciones reflejan el estado de los datos disponibles en el momento del análisis.",
     "doYourResearch": "Realice siempre su propia investigación (DYOR) antes de tomar cualquier decisión de inversión, despliegue o integración.",
     "toolPurpose": "Spectra Audit es una herramienta informativa diseñada para ayudar a los usuarios a entender las consideraciones de seguridad detrás de un proyecto. No constituye asesoramiento financiero, legal ni de inversión.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "Excelente",

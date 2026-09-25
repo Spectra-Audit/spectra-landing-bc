@@ -652,7 +652,7 @@
     "noGuarantee": "उच्च सुरक्षा स्कोर यह गारंटी नहीं देता है कि कोई परियोजना सुरक्षित है। स्कोर विश्लेषण के समय उपलब्ध डेटा की स्थिति को दर्शाते हैं।",
     "doYourResearch": "कोई भी निवेश, परिनियोजन या एकीकरण निर्णय लेने से पहले हमेशा अपना स्वयं का शोध (DYOR) करें।",
     "toolPurpose": "Spectra Audit एक सूचनात्मक उपकरण है जो उपयोगकर्ताओं को एक परियोजना के पीछे सुरक्षा विचारों को समझने में मदद करने के लिए डिज़ाइन किया गया है। यह वित्तीय, कानूनी या निवेश सलाह नहीं है।",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "उत्कृष्ट",

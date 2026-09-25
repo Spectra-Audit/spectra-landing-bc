@@ -652,7 +652,7 @@
     "noGuarantee": "అధిక భద్రత స్కోర్ ప్రాజెక్ట్ సురక్షితమైనదని హామీ ఇవ్వదు. విశ్లేషణ సమయంలో అందుబాటులో ఉన్న డేటా స్థితిని స్కోర్‌లు ప్రతిబింబిస్తాయి.",
     "doYourResearch": "ఏదైనా పెట్టుబడి, విస్తరణ లేదా ఏకీకరణ నిర్ణయాలు తీసుకునే ముందు ఎల్లప్పుడూ మీ స్వంత పరిశోధనను (DYOR) నిర్వహించండి.",
     "toolPurpose": "Spectra Audit ఒక ప్రాజెక్ట్ వెనుక భద్రత పరిగణనలను అర్థం చేసుకోవడానికి వినియోగదారులకు సహాయం చేయడానికి రూపొందించబడిన సమాచార సాధనం. ఇది ఆర్థిక, చట్టపరమైన లేదా పెట్టుబడి సలహా కాదు.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "అద్భుతం",

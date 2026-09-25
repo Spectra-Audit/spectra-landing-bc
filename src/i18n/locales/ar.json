@@ -787,7 +787,7 @@
     "noGuarantee": "درجة الأمان العالية لا تضمن أن المشروع آمن. تعكس الدرجات حالة البيانات المتاحة وقت التحليل.",
     "doYourResearch": "دائماً قم بإجراء بحثك الخاص (DYOR) قبل اتخاذ أي قرارات استثمار أو نشر أو تكامل.",
     "toolPurpose": "Spectra Audit هي أداة معلوماتية مصممة لمساعدة المستخدمين على فهم اعتبارات الأمان وراء المشروع. وهي ليست نصيحة مالية أو قانونية أو استثمارية.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "ممتاز",

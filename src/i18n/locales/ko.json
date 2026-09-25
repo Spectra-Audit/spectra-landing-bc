@@ -652,7 +652,7 @@
     "noGuarantee": "높은 보안 점수가 프로젝트가 안전하다는 것을 보장하지는 않습니다. 점수는 분석 시점에 사용 가능한 데이터의 상태를 반영합니다.",
     "doYourResearch": "투자, 배포 또는 통합 결정을 내리기 전에 항상 자신의 조사(DYOR)를 수행하십시오.",
     "toolPurpose": "Spectra Audit는 사용자가 프로젝트 뒤의 보안 고려 사항을 이해하는 데 도움이 되도록 설계된 정보 도구입니다. 재무, 법률 또는 투자 조언이 아닙니다.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "우수",

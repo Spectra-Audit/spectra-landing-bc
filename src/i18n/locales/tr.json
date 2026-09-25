@@ -652,7 +652,7 @@
     "noGuarantee": "Yüksek bir güvenlik skoru, bir projenin güvenli olduğunu GARANTİ ETMEZ. Skorlar, analiz sırasında mevcut verilerin durumunu yansıtır.",
     "doYourResearch": "Herhangi bir yatırım, dağıtım veya entegrasyon kararı vermeden önce her zaman kendi araştırmanızı yapın (DYOR).",
     "toolPurpose": "Spectra Audit, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir.",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "Mükemmel",

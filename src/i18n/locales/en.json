@@ -647,7 +647,7 @@
   },
   "disclaimer": {
     "title": "Important Disclaimer",
-    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project.",
     "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "Contract behavior is analyzed on a forked replica of the blockchain, not the live mainnet.",
     "noGuarantee": "A high security score does NOT guarantee a project is safe. Scores reflect the state of available data at the time of analysis.",
