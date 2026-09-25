@@ -11,8 +11,12 @@ export interface DisclaimerFooterProps {
  *
  * Pulls all copy from the `disclaimer.*` translation namespace so it stays in
  * sync across locales. Uses a muted background, Info icon, bold title, and a
- * 5-bullet list covering: AI-generated findings, fork-based testing, score
- * caveats, "do your own research", and tool-purpose framing.
+ * 6-bullet list covering: beta status, AI-generated findings, fork-based
+ * testing, score caveats, "do your own research", and tool-purpose framing.
+ *
+ * Beta goes first and is emphasised: neither this site nor the app said
+ * anywhere that the product is in beta, which changes how every other bullet
+ * below it should be read.
  *
  * Server Component — this only ever needed `useTranslations` (no hooks, no
  * browser APIs), so it renders on the server via `getTranslations` and never
@@ -41,6 +45,11 @@ export default async function DisclaimerFooter({ className = '' }: DisclaimerFoo
         </div>
 
         <ul className="space-y-2.5 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed list-disc list-outside ml-5 sm:ml-6">
+          <li>
+            <span className="font-semibold text-neutral-700 dark:text-neutral-300">
+              {t('beta')}
+            </span>
+          </li>
           <li>{t('aiGenerated')}</li>
           <li>{t('forkTesting')}</li>
           <li>

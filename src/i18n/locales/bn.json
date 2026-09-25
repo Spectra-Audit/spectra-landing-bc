@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI চালিত ব্লকচেইন নিরাপত্তা অডিট",
-    "description": "একটি স্পষ্ট নিরাপত্তা গ্রেড - এর পিছনে প্রমাণ সহ। প্রকৃত সময় AI অডিট যা আপনি যাচাই করতে পারেন। ক্রমাগত, স্বচ্ছ নিরাপত্তা পর্যবেক্ষণের সাথে আপনার ক্রিপ্টো বিনিয়োগকে সুরক্ষিত করুন।",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "ব্লকচেইন নিরাপত্তা, AI অডিট, স্মার্ট চুক্তি নিরাপত্তা, ক্রিপ্টো নিরাপত্তা, DeFi সুরক্ষা",
     "og": {
       "title": "Spectra Audit - AI চালিত ব্লকচেইন নিরাপত্তা অডিট",
-      "description": "একটি স্পষ্ট নিরাপত্তা গ্রেড - এর পিছনে প্রমাণ সহ। প্রকৃত সময় AI অডিট যা আপনি যাচাই করতে পারেন।",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI নিরাপত্তা অডিট প্ল্যাটফর্ম"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI চালিত ব্লকচেইন নিরাপত্তা অডিট",
-    "description": "একটি স্পষ্ট নিরাপত্তা গ্রেড - এর পিছনে প্রমাণ সহ। প্রকৃত সময় AI অডিট যা আপনি যাচাই করতে পারেন। ক্রমাগত, স্বচ্ছ নিরাপত্তা পর্যবেক্ষণের সাথে আপনার ক্রিপ্টো বিনিয়োগকে সুরক্ষিত করুন।",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "ব্লকচেইন নিরাপত্তা, AI অডিট, স্মার্ট চুক্তি নিরাপত্তা, ক্রিপ্টো নিরাপত্তা, DeFi সুরক্ষা"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "রিপোর্ট পান",
     "trustMetrics": {
       "activeUsers": "সক্রিয় ব্যবহারকারী",
-      "accuracy": "পরিচিত দুর্বলতা সনাক্তকরণ",
       "scanTime": "মিনিট সাধারণ সময়",
       "protectedUsers": "সুরক্ষিত ব্যবহারকারী",
       "uptime": "আপটাইম",
-      "detectionRate": "পরিচিত দুর্বলতা সনাক্তকরণ",
       "threatTypes": "স্কোরিং মাত্রা",
       "projectsAnalyzed": "স্কোরিং মাত্রা",
       "riskFlagsIdentified": "চিহ্নিত ঝুঁকি পতাকা"
@@ -84,7 +82,7 @@
       "featuresTitle": "পরবর্তী প্রজন্মের নিরাপত্তা অডিট",
       "featuresSubtitle": "ঐতিহ্যবাহী অডিটগুলি ধীর, ব্যয়বহুল এবং দ্রুত পুরানো হয়ে যায়। Spectra Audit ক্রমাগত, যাচাইযোগ্য নিরাপত্তা পর্যবেক্ষণ প্রদান করে যা আপনার কোডের সাথে তাল মিলিয়ে চলে।",
       "realTimeMonitoring": "অন-ডিমান্ড AI বিশ্লেষণ",
-      "realTimeMonitoringDesc": "প্রকল্প জমা দেওয়া হলে অন-ডিমান্ড AI-চালিত বিশ্লেষণ। বিস্তৃত 5-মাত্রিক নিরাপত্তা পর্যালোচনা প্রতি অডিট 20 মিনিটের মধ্যে সম্পন্ন হয়।",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20মি",
       "avgScanTimeLabel": "সাধারণ অডিট সময়",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "পুনরুৎপাদনযোগ্য অনুসন্ধান",
       "publicGitHubRepo": "অন-চেইন ডেটার বিপরীতে যাচাইযোগ্য",
       "comprehensiveCoverage": "বিস্তৃত কভারেজ",
-      "comprehensiveCoverageDesc": "উন্নত AI মডেলগুলি পরিচিত দুর্বলতা ক্লাসের একটি বিস্তৃত পরিসর সনাক্ত করে — স্মার্ট চুক্তি বাগ, অর্থনৈতিক আক্রমণ ভেক্টর এবং ঘনত্ব ঝুঁকি।",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ দুর্বলতা বিভাগ",
-      "detectionRate": "পরিচিত সমস্যাগুলির 95% পর্যন্ত সনাক্তকরণ",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "যাচাইযোগ্য এবং স্বচ্ছ",
       "productionReadyDesc": "অডিটের প্রতিটি পদক্ষেপ পরিদর্শন, পুনরুৎপাদন এবং যাচাই করতে চান এমন ডেভেলপার এবং গবেষকদের জন্য নির্মিত একটি স্বচ্ছ বিশ্লেষণ পাইপলাইন।",
       "thirdPartyVerified": "যাচাইযোগ্য ফলাফল",
@@ -109,15 +107,12 @@
       "highAccuracy": "উচ্চ নির্ভুলতা",
       "highAccuracyDesc": "AI-যাচাইকৃত ফলাফল যা আপনি বিশ্বাস করতে পারেন",
       "multiDimensional": "বহুমাত্রিক",
-      "multiDimensionalDesc": "5-ফ্যাক্টর নিরাপত্তা স্কোরিং",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "বিস্তৃত নিরাপত্তা বিশ্লেষণ",
       "liveStatusSubtitle": "সম্পূর্ণ স্মার্ট চুক্তি নিরাপত্তা মূল্যায়নের জন্য বহুমাত্রিক স্কোরিং।",
       "scanTimeValue": "≤20মি",
       "scanTimeLabel": "সাধারণ অডিট সময়",
       "scanTimeBadge": "দ্রুত বিশ্লেষণ",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "নিরাপত্তা মাত্রা",
-      "dimensionsBadge": "বহু-ফ্যাক্টর স্কোরিং",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "চালিত বিশ্লেষণ",
       "aiPoweredBadge": "স্মার্ট সনাক্তকরণ",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI-পরিচালিত",
-          "description": "৫-মাত্রিক বিশ্লেষণ পাইপলাইন"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "অডিট",
@@ -180,13 +175,13 @@
       "team": {
         "title": "টিম এবং সেন্টিমেন্ট",
         "score": "0-100",
-        "description": "পটভূমি যাচাইকরণ, অতীত প্রকল্প ইতিহাস, সম্প্রদায় স্বাস্থ্য সংকেত, সামাজিক সেন্টিমেন্ট বিশ্লেষণ এবং সর্বজনীন বিশ্বাস সূচক।",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "শীঘ্রই আসছে"
       }
     },
     "overallScore": {
       "title": "সামগ্রিক নিরাপত্তা স্কোর",
-      "description": "সমস্ত মাত্রা একটি বোধগম্য একক গ্রেডে একত্রিত।",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = চমৎকার",
       "good": "70-84 = ভাল",
       "fair": "55-69 = সন্তোষজনক",
@@ -206,7 +201,7 @@
       "description": "আপনার ক্রিপ্টো বিনিয়োগের জন্য নিরাপদ, কম রক্ষণাবেক্ষণের সুরক্ষা।",
       "benefits": [
         "অন-ডিমান্ড AI নিরাপত্তা বিশ্লেষণ",
-        "সরল নিরাপত্তা গ্রেড (A-F)",
+        "Simple Security Scores from 0 to 100",
         "তাৎক্ষণিক ঝুঁকি সতর্কতা",
         "কোন প্রযুক্তিগত জ্ঞানের প্রয়োজন নেই"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "ঐতিহ্যবাহী অডিটগুলি ধীর এবং ব্যয়বহুল। Spectra AI-অর্কেস্ট্রেটেড, যাচাইযোগ্য নিরাপত্তা বিশ্লেষণ প্রদান করে যা আপনি পরিদর্শন এবং পুনরুৎপাদন করতে পারেন।",
     "monitoring": {
       "title": "দ্রুত AI বিশ্লেষণ",
-      "description": "AI-অর্কেস্ট্রেটেড বিশ্লেষণ 5 মাত্রা জুড়ে সমান্তরালভাবে চলে — কোড, বিতরণ, টোকেনোমিক্স, লিকুইডিটি এবং সেন্টিমেন্ট — ট্রেসযোগ্য প্রমাণ সহ একটি যৌগিক স্কোর তৈরি করে।",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "সাধারণত প্রতি অডিট 20 মিনিটের কম",
       "comparison": "ঐতিহ্যবাহী ম্যানুয়াল অডিটের চেয়ে 2.4× এর বেশি দ্রুত"
     },
     "verifiable": {
       "title": "যাচাইযোগ্য প্রমাণ",
-      "description": "প্রতিটি অনুসন্ধানে এর পিছনে যুক্তি, উৎস ডেটা এবং পুনরুৎপাদনযোগ্য প্রমাণ অন্তর্ভুক্ত রয়েছে। ঠিক কীভাবে প্রতিটি সমস্যা সনাক্ত করা হয়েছিল তা দেখুন — কোন ব্ল্যাক বক্স নেই।",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "সম্পূর্ণ স্বচ্ছ পদ্ধতি",
       "detail": "অন-চেইন ডেটার বিপরীতে অনুসন্ধান যাচাইযোগ্য"
     },
     "comprehensive": {
       "title": "বিস্তৃত কভারেজ",
-      "description": "উন্নত AI মডেলগুলি পরিচিত দুর্বলতা ক্লাসের একটি বিস্তৃত পরিসর সনাক্ত করে — স্মার্ট চুক্তি বাগ থেকে অর্থনৈতিক আক্রমণ ভেক্টর এবং ঘনত্ব ঝুঁকি পর্যন্ত।",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ দুর্বলতা বিভাগ",
-      "detail": "মোতায়েনের আগে পরিচিত exploits-এর 95% পর্যন্ত সনাক্ত করতে সাহায্য করে"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "অন-ডিমান্ড বিশ্লেষণ",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5 মাত্রিক",
+      "title": "The Multi-Dimensional",
       "subtitle": "নিরাপত্তা অডিট ফ্রেমওয়ার্ক",
       "description": "জানুন কীভাবে Spectra Audit বিস্তৃত বহুমাত্রিক বিশ্লেষণের মাধ্যমে ব্লকচেইন নিরাপত্তাকে বিপ্লব করে এবং ঐতিহ্যবাহী অডিট থেকে গভীর অন্তর্দৃষ্টি প্রদান করে।",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "ঐতিহ্যবাহী স্মার্ট চুক্তি অডিট শুধুমাত্র কোড নিরাপত্তার উপর ফোকাস করে। যদিও গুরুত্বপূর্ণ, এই একক-লেন্স পদ্ধতি গুরুত্বপূর্ণ ঝুঁকি কারণগুলি মিস করে যা বেশিরভাগ DeFi exploits এবং প্রকল্প ব্যর্থতার দিকে নিয়ে যায়।",
       "paragraph2": {
         "before": "Spectra Audit-র ",
-        "highlight": "5-মাত্রিক অডিট ফ্রেমওয়ার্ক",
-        "after": " সেন্টিমেন্ট, কোড, টোকেনোমিক্স, লিকুইডিটি এবং বিতরণ জুড়ে প্রকল্পগুলির বিস্তৃত বিশ্লেষণ করে—একটি সম্পূর্ণ নিরাপত্তা চিত্র প্রদান করে যা বিনিয়োগকারীদের হুমকি থেকে রক্ষা করে যা শুধুমাত্র কোড অডিট সনাক্ত করতে পারে না।"
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "মূল মাত্রা"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "সনাক্তকরণের হার"
-        },
         "analysisTime": {
           "value": "≤20 মিনিট",
           "label": "বিশ্লেষণের সময়"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 মাত্রা",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "প্রতিটি মাত্রা অনন্য অন্তর্দৃষ্টি প্রদান করে। একসাথে, তারা সম্পূর্ণ নিরাপত্তা ইন্টেলিজেন্স সরবরাহ করে।",
-      "convergeLabel": "5 মাত্রা একত্রিত হয়",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "নিরাপত্তা স্কোর",
         "excellent": "চমৎকার"
       },
       "weightDistribution": {
-        "title": "ওজন বিতরণ",
-        "totalLabel": "মোট:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "সম্প্রদায় স্বাস্থ্য সূচক",
             "fudFomoDetection": "FUD/FOMO সনাক্তকরণ"
           },
-          "weight": "10",
-          "weightNote": "নো-টোকেন প্রকল্পের জন্য 30%"
+          "weight": "10"
         },
         "code": {
           "name": "কোড নিরাপত্তা",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "নির্ভরতা বিশ্লেষণ",
             "bestPractices": "সর্বোত্তম অনুশীলন চেক"
           },
-          "weight": "45",
-          "weightNote": "নো-টোকেন প্রকল্পের জন্য 70%"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "টোকেনোমিক্স স্বাস্থ্য",
@@ -418,7 +403,7 @@
             "economicModel": "অর্থনৈতিক মডেল যাচাইকরণ",
             "unlockSchedule": "আনলক সময়সূচী ট্র্যাকিং"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "লিকুইডিটি গভীরতা",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX কভারেজ",
             "liquidityConcentration": "লিকুইডিটি ঘনত্ব"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "বিতরণ বিশ্লেষণ",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "এয়ারড্রপ বিশ্লেষণ",
             "walletDistribution": "ওয়ালেট বিতরণ"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "প্রকল্পের ধরন অনুসারে স্কোরিং ওজন",
-        "subtitle": "প্রকল্পের একটি ব্যবসায়িক টোকেন আছে কিনা তার ভিত্তিতে ওজন প্রয়োগ করা হয়। নো-টোকেন প্রকল্পগুলি (ইউটিলিটি প্রোটোকল, পরিকাঠামো ইত্যাদি) কোড এবং সেন্টিমেন্টকে আরও বেশি গুরুত্ব দেয় কারণ বিতরণ এবং লিকুইডিটি মেট্রিকগুলি প্রযোজ্য নয়।",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "মাত্রা",
         "headerHasToken": "টোকেন আছে",
         "headerNoToken": "টোকেন নেই",
@@ -459,52 +444,49 @@
         "rowLiquidity": "লিকুইডিটি",
         "rowSentiment": "সেন্টিমেন্ট",
         "notApplicable": "প্রযোজ্য নয়",
-        "footnote": "প্রকৃত ওজনগুলি ব্যাকএন্ড স্কোরিং পরিষেবাতে অডিট ধরন অনুসারে কনফিগার করা হয় এবং মডেল পুনঃ-ক্যালিব্রেট হওয়ার সাথে সাথে সময়ের সাথে সাথে টিউন করা যেতে পারে।"
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
       "badge": "অ্যালগরিদম",
       "title": {
-        "before": "AI-অপ্টিমাইজড ",
+        "before": "How the ",
         "highlight": "নিরাপত্তা স্কোর",
-        "after": " গণনা"
+        "after": " Is Calculated"
       },
-      "subtitle": "আমাদের স্কোরিং অ্যালগরিদম গতিশীল ওজনযুক্ত গড় ব্যবহার করে, সর্বাধিক ভবিষ্যদ্বাণীমূলক নির্ভুলতার জন্য মেশিন লার্নিং দ্বারা ক্রমাগত সূক্ষ্ম-টিউন করা হয়।",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "নিরাপত্তা স্কোর সূত্র",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "গতিশীল ওজন",
-        "aiAdjustments": "AI সমন্বয়",
-        "accuracy": "নির্ভুলতা"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "গতিশীল ওজন বিতরণ",
-        "description": "প্রতিটি মাত্রায় ঐতিহাসিক প্রভাব বিশ্লেষণের উপর ভিত্তি করে বেস ওজন বরাদ্দ করা হয়:"
-      },
-      "aiOptimization": {
-        "title": "AI অপ্টিমাইজেশন স্তর",
-        "description": "মেশিন লার্নিং মডেলগুলি নিম্নলিখিতের উপর ভিত্তি করে ক্রমাগত ওজনগুলি পরিমার্জন করে:",
-        "factors": {
-          "exploitPatterns": "Exploit প্যাটার্ন বিশ্লেষণ",
-          "marketCorrelation": "বাজার অবস্থা সম্পর্ক",
-          "projectCategorization": "প্রকল্পের ধরন শ্রেণীবিভাগ",
-          "threatIntelligence": "প্রকৃত সময় হুমকি বুদ্ধিমত্তা",
-          "communityFeedback": "সম্প্রদায়ের প্রতিক্রিয়া একীকরণ"
-        }
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "calculationExample": {
         "title": "গণনার উদাহরণ",
-        "comment": "// উদাহরণ: টোকেন সহ প্রকল্প — ওজনের যোগফল 100%",
-        "codeLabel": "কোড নিরাপত্তা",
-        "distributionLabel": "বিতরণ",
-        "tokenomicsLabel": "টোকেনোমিক্স",
-        "liquidityLabel": "লিকুইডিটি",
-        "sentimentLabel": "সেন্টিমেন্ট",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "যৌগিক স্কোর:",
-        "baseScore": "বেস স্কোর:",
-        "aiAdjustment": "AI সমন্বয়:",
-        "aiEnhancedTitle": "AI-উন্নত নির্ভুলতা",
-        "aiEnhancedDescription": "AI সমন্বয় ফ্যাক্টর ক্রস-ডায়মেনশনাল সম্পর্ক, প্রকল্পের পরিপক্কতা, বাজারের অবস্থা এবং প্রকৃত সময় হুমকি ডেটা বিবেচনা করে এমন একটি স্কোর প্রদান করার জন্য যা সত্যিকারের নিরাপত্তা ঝুঁকিকে আরও ভালভাবে প্রতিফলিত করে।"
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -521,11 +503,11 @@
         },
         "aiAnalysis": {
           "title": "2. AI বিশ্লেষণ",
-          "description": "উন্নত ML মডেলগুলি গতিশীল ওজন অপ্টিমাইজেশন সহ সমস্ত 5টি মাত্রা জুড়ে ডেটা প্রক্রিয়া করে।"
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. ঝুঁকি স্কোরিং",
-          "description": "যাচাইযোগ্য প্রমাণ সহ AI-অপ্টিমাইজড ওজনযুক্ত স্কোর সম্পূর্ণ নিরাপত্তা মূল্যায়ন প্রদান করে।"
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -541,7 +523,7 @@
           "phase": "Q1 2025",
           "title": "ভিত্তি",
           "items": [
-            "5-মাত্রিক অডিট সিস্টেম চালু করুন",
+            "Launch the multi-dimensional audit system",
             "প্রধান ব্লকচেইন নেটওয়ার্কগুলি একত্রিত করুন",
             "প্রকৃত সময় পর্যবেক্ষণ অবকাঠামো মোতায়েন করুন",
             "নিরাপত্তা অংশীদারিত্ব স্থাপন করুন"
@@ -590,35 +572,35 @@
     },
     "cta": {
       "title": "গভীর নিরাপত্তা অন্তর্দৃষ্টির জন্য প্রস্তুত?",
-      "description": "AI-অপ্টিমাইজড স্কোরিং সহ 5-মাত্রিক বিশ্লেষণের শক্তি অনুভব করুন। সপ্তাহের পরিবর্তে মিনিটে একটি বিস্তৃত নিরাপত্তা অডিট পান।",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "আপনার প্রথম অডিট শুরু করুন"
     },
     "metadata": {
-      "title": "৫-মাত্রিক নিরাপত্তা অডিট ফ্রেমওয়ার্ক | Spectra Audit",
-      "description": "Spectra Audit কীভাবে কোড, বণ্টন, টোকেনমিক্স, তারল্য ও সেন্টিমেন্টের ভিত্তিতে স্মার্ট কন্ট্রাক্ট স্কোর করে — যাচাইযোগ্য প্রমাণসহ একটি স্বচ্ছ গ্রেড।"
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "অত্যাধুনিক অডিট প্রক্রিয়া",
-    "subtitle": "প্রতিটি অডিট ব্লকচেইনের একটি স্যান্ডবক্সড ফর্কে চলে — কোন লাইভ লেনদেন নেই, বিশ্লেষণের সময় ব্যবহারকারীর তহবিলের জন্য কোন ঝুঁকি নেই।",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "ফর্ক-ভিত্তিক সিমুলেশন",
       "description": "স্মার্ট চুক্তি ইন্টারঅ্যাকশনগুলি একটি বিচ্ছিন্ন মেইননেট ফর্কে পুনরায় চালানো হয়। আমরা লাইভ নেটওয়ার্কে লেনদেন সম্প্রচার না করে আচরণ পর্যবেক্ষণ করি।"
     },
     "aiOrchestration": {
       "title": "AI-অর্কেস্ট্রেটেড বিশ্লেষণ",
-      "description": "একাধিক বিশেষায়িত AI এজেন্ট কোড পর্যালোচনা, অর্থনৈতিক মডেলিং এবং অন-চেইন ডেটা জুড়ে সমন্বয় করে — এমন অনুসন্ধান তৈরি করে যা কোন একক বিশ্লেষক একা প্রকাশ করতে পারে না।"
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "বাইটকোড এবং ABI স্ট্যাটিক বিশ্লেষণ",
       "description": "আমাদের স্ক্যানার সংকলিত বাইটকোড এবং ABI সরাসরি পরিদর্শন করে, যা উৎস কোড অনুপলব্ধ বা আংশিকভাবে যাচাই করা হলেও চুক্তিগুলির বিশ্লেষণের অনুমতি দেয়।"
     },
     "multiDimensional": {
-      "title": "5-মাত্রিক স্কোরিং",
-      "description": "কোড, বিতরণ, টোকেনোমিক্স, লিকুইডিটি এবং সেন্টিমেন্ট সমান্তরালভাবে স্বতন্ত্রভাবে স্কোর করা হয় — তারপর একটি যৌগিক নিরাপত্তা স্কোরে ওজনযুক্ত করা হয়।"
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "সমান্তরাল অডিট পাইপলাইন: পাঁচটি স্বতন্ত্র বিশ্লেষক — কোড, বিতরণ, টোকেনোমিক্স, লিকুইডিটি এবং সেন্টিমেন্ট — একসাথে চলে এবং একটি একক যৌগিক নিরাপত্তা স্কোরে মিলিত হয়।",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "কোড",
         "distribution": "বিতরণ",
@@ -628,36 +610,36 @@
       },
       "compositeLine1": "যৌগিক",
       "compositeLine2": "স্কোর",
-      "subtitle": "5টি বিশ্লেষক সমান্তরালে → ভারিত যৌগিক"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectra স্কোর সময়ের সাথে কীভাবে উন্নত হয়",
-    "subtitle": "Spectra Audit বাস্তব জগতের প্রতিক্রিয়া এবং ঐতিহাসিক অডিটের বিরুদ্ধে ক্যালিব্রেশনের মাধ্যমে ক্রমাগত উন্নতি করে — প্রতিটি বিশ্লেষণ পরবর্তীটিকে অবহিত করে।",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "ব্যবহারকারীর প্রতিক্রিয়া একীকরণ",
-      "description": "প্রতিটি অনুসন্ধানে সম্প্রদায়ের রেটিং এবং বিশেষজ্ঞ পর্যালোচনা মডেলে ফিরে আসে। মিথ্যা ইতিবাচক, মিস হওয়া দুর্বলতা এবং তীব্রতা বিরোধ ট্র্যাক করা হয় এবং স্কোরিং ওজন পুনঃ-ক্যালিব্রেট করতে ব্যবহৃত হয়।"
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "সমান প্রকল্পের বিরুদ্ধে ক্যালিব্রেশন",
-      "description": "প্রতিটি নতুন অডিট কাঠামোগতভাবে অনুরূপ চুক্তি এবং টোকেনোমিক্সের ঐতিহাসিক অডিটের সাথে ক্রস-রেফারেন্স করা হয়। যখন অতীতের প্রকল্পগুলি থেকে প্যাটার্নগুলি বিভিন্ন ঝুঁকি প্রোফাইল নির্দেশ করে তখন স্কোরগুলি সামঞ্জস্য করা হয়।"
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "ক্রমাগত AI অপ্টিমাইজেশন",
-      "description": "যেহেতু অন-চেইনে নতুন exploit প্যাটার্ন আবির্ভূত হয় এবং নতুন দুর্বলতা ক্লাস প্রকাশিত হয়, আমাদের AI মডেলগুলি পর্যায়ক্রমে পুনরায় প্রশিক্ষিত হয়। সিস্টেমটি প্রক্রিয়া করা প্রতিটি অডিটের সাথে আরও স্মার্ট হয়ে উঠে।"
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "বাহ্যিক অডিট ক্রস-রেফারেন্স",
-      "description": "যখন একটি প্রকল্পের জন্য পেশাদার মানব অডিট উপলব্ধ হয়, তখন আমাদের অনুসন্ধানগুলি রিপোর্টের বিরুদ্ধে তুলনা করা হয়। অসঙ্গতিগুলি মডেলের পরিমার্জনে ফিরে আসে।"
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "ঢালের আকৃতির ক্রমাগত উন্নতির ফিডব্যাক লুপ: অডিট ব্যবহারকারীর ফিডব্যাককে অবহিত করে, যা মূল্যায়নের সময় পর্যালোচকের সুনাম অনুসারে ওজন করা হয়, এরপর পরবর্তী অডিটের জন্য মডেল ক্যালিব্রেট ও পুনঃপ্রশিক্ষণে ব্যবহৃত হয়।",
+      "ariaLabel": "ঢালের আকৃতির ক্রমাগত উন্নতির ফিডব্যাক লুপ: অডিট ব্যবহারকারীর ফিডব্যাককে অবহিত করে, যা মূল্যায়নের সময় পর্যালোচকের সুনাম অনুসারে ওজন করা হয়, এরপর ভবিষ্যতের সংস্করণের জন্য মডেল ক্যালিব্রেট ও আপডেট করতে ব্যবহৃত হয়।",
       "nodes": {
         "audit": "অডিট",
         "feedback": "ব্যবহারকারীর ফিডব্যাক",
         "evaluation": "মূল্যায়ন",
         "calibration": "ক্যালিব্রেশন",
-        "retraining": "মডেল পুনঃপ্রশিক্ষণ"
+        "retraining": "মডেল আপডেট"
       },
       "centerLine1": "ক্রমাগত",
       "centerLine2": "লার্নিং লুপ"
@@ -665,11 +647,12 @@
   },
   "disclaimer": {
     "title": "গুরুত্বপূর্ণ দাবিত্যাগ",
-    "aiGenerated": "সমস্ত অনুসন্ধান AI বিশ্লেষণ দ্বারা উত্পাদিত — মানব নিরাপত্তা নিরীক্ষক দ্বারা নয়।",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "চুক্তি আচরণ লাইভ মেইননেটে নয়, ব্লকচেইনের একটি ফর্কড প্রতিরূপে বিশ্লেষণ করা হয়।",
     "noGuarantee": "একটি উচ্চ নিরাপত্তা স্কোর গ্যারান্টি দেয় না যে একটি প্রকল্প নিরাপদ। স্কোরগুলি বিশ্লেষণের সময় উপলব্ধ ডেটার অবস্থা প্রতিফলিত করে।",
     "doYourResearch": "যেকোনো বিনিয়োগ, মোতায়েন বা একীকরণ সিদ্ধান্ত নেওয়ার আগে সর্বদা আপনার নিজস্ব গবেষণা (DYOR) পরিচালনা করুন।",
-    "toolPurpose": "Spectra Audit একটি তথ্য টুল যা ব্যবহারকারীদের একটি প্রকল্পের পিছনে নিরাপত্তা বিবেচনাগুলি বুঝতে সাহায্য করার জন্য ডিজাইন করা হয়েছে। এটি আর্থিক, আইনি বা বিনিয়োগ পরামর্শ নয়।"
+    "toolPurpose": "Spectra Audit একটি তথ্য টুল যা ব্যবহারকারীদের একটি প্রকল্পের পিছনে নিরাপত্তা বিবেচনাগুলি বুঝতে সাহায্য করার জন্য ডিজাইন করা হয়েছে। এটি আর্থিক, আইনি বা বিনিয়োগ পরামর্শ নয়।",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "চমৎকার",
@@ -678,8 +661,6 @@
     "poor": "দুর্বল",
     "critical": "গুরুতর",
     "needsWork": "উন্নতি প্রয়োজন",
-    "security": "নিরাপত্তা",
-    "labelFormat": "গ্রেড {letter} - {label}",
     "descriptions": {
       "excellent": "কোনো গুরুতর দুর্বলতা পাওয়া যায়নি",
       "good": "সামান্য সমস্যা শনাক্ত হয়েছে",
@@ -705,7 +686,7 @@
     "q3": "Spectra Audit-এর নিরাপত্তা অডিট কি সত্যিই বিনামূল্যে?",
     "a3": "হ্যাঁ। Spectra Audit ক্রেডিট কার্ড ছাড়াই বিনামূল্যে পূর্ণাঙ্গ নিরাপত্তা অডিট প্রদান করে। উন্নত মনিটরিংয়ের জন্য প্রিমিয়াম ফিচার রয়েছে।",
     "q4": "Spectra Audit-এর ফলাফল কতটা নির্ভুল?",
-    "a4": "Spectra Audit পরিচিত দুর্বলতার প্যাটার্নের ৯৫% পর্যন্ত শনাক্ত করে। সব ফলাফল AI বিশ্লেষণ থেকে আসে এবং যাচাইযোগ্য প্রমাণ অন্তর্ভুক্ত থাকে। ফলাফল কেবল তথ্যের জন্য; এটি প্রকল্পের নিরাপত্তার নিশ্চয়তা দেয় না।",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit কি একাধিক ব্লকচেইন সমর্থন করে?",
     "a5": "হ্যাঁ। Spectra Audit Ethereum, BSC, Polygon, Arbitrum, Optimism এবং অন্যান্য প্রধান EVM-সামঞ্জস্যপূর্ণ ব্লকচেইন সমর্থন করে।"
   }

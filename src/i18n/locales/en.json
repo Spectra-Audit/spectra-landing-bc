@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-    "description": "One clear security grade with the evidence behind it. Real-time AI audits you can verify — free smart contract analysis in minutes, no registration.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection",
     "og": {
       "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-      "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI Security Audit Platform"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI-Powered Blockchain Security Audits",
-    "description": "One clear security grade – with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "blockchain security, AI audit, smart contract security, crypto safety, DeFi protection"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "Get Report",
     "trustMetrics": {
       "activeUsers": "Active Users",
-      "accuracy": "Known Vulnerability Detection",
       "scanTime": "Min Typical Audit",
       "protectedUsers": "Protected Users",
       "uptime": "Uptime",
-      "detectionRate": "Known Vulnerability Detection",
       "threatTypes": "Scoring Dimensions",
       "projectsAnalyzed": "Scoring Dimensions",
       "riskFlagsIdentified": "Risk Flags Identified"
@@ -84,7 +82,7 @@
       "featuresTitle": "Next-Generation Security Audits",
       "featuresSubtitle": "Traditional audits are slow, expensive, and quickly outdated. Spectra Audit provides continuous, verifiable security monitoring that keeps up with your code.",
       "realTimeMonitoring": "On-Demand AI Analysis",
-      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive 5-dimensional security review completes in under 20 minutes per audit.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20m",
       "avgScanTimeLabel": "Typical audit time",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "Reproducible findings",
       "publicGitHubRepo": "Verifiable against on-chain data",
       "comprehensiveCoverage": "Comprehensive Coverage",
-      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes — smart contract bugs, economic attack vectors, and concentration risks.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ vulnerability categories",
-      "detectionRate": "Up to 95% detection of known issues",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "Verifiable & Transparent",
       "productionReadyDesc": "A transparent analysis pipeline built for developers and researchers who want to inspect, reproduce, and verify every step of the audit.",
       "thirdPartyVerified": "Verifiable Results",
@@ -109,15 +107,12 @@
       "highAccuracy": "High Accuracy",
       "highAccuracyDesc": "AI-verified results you can trust",
       "multiDimensional": "Multi-Dimensional",
-      "multiDimensionalDesc": "5-factor security scoring",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "Comprehensive security analysis",
       "liveStatusSubtitle": "Multi-dimensional scoring for complete smart contract security assessment.",
       "scanTimeValue": "≤20m",
       "scanTimeLabel": "Typical audit time",
       "scanTimeBadge": "Fast analysis",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "Security dimensions",
-      "dimensionsBadge": "Multi-factor scoring",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "Powered analysis",
       "aiPoweredBadge": "Smart detection",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI-Orchestrated",
-          "description": "5-dimensional analysis pipeline"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "Audit",
@@ -180,13 +175,13 @@
       "team": {
         "title": "Sentiment",
         "score": "0-100",
-        "description": "Community engagement and social-trust signals — votes, comments, follows, and reports — weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "Coming Soon"
       }
     },
     "overallScore": {
       "title": "Overall Security Score",
-      "description": "All dimensions combined into a single, easy-to-understand grade.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = Excellent",
       "good": "70-84 = Good",
       "fair": "55-69 = Fair",
@@ -206,7 +201,7 @@
       "description": "Secure, low-maintenance protection for your crypto investments",
       "benefits": [
         "On-demand AI security analysis",
-        "Simple security grades (A-F)",
+        "Simple Security Scores from 0 to 100",
         "Instant alerts on risks",
         "No technical knowledge needed"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "Traditional audits are slow and expensive. Spectra Audit provides AI-orchestrated, verifiable security analysis you can inspect and reproduce.",
     "monitoring": {
       "title": "Fast AI Analysis",
-      "description": "AI-orchestrated analysis runs across 5 dimensions in parallel — code, distribution, tokenomics, liquidity, and sentiment — producing a composite score with traceable evidence.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "Typically under 20 minutes per audit",
       "comparison": "More than 2.4× faster than traditional manual audits"
     },
     "verifiable": {
       "title": "Verifiable Evidence",
-      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified — no black boxes.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "Fully transparent methodology",
       "detail": "Findings verifiable against on-chain data"
     },
     "comprehensive": {
       "title": "Comprehensive Coverage",
-      "description": "Advanced AI models detect a broad range of known vulnerability classes — from smart contract bugs to economic attack vectors and concentration risks.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ vulnerability categories",
-      "detail": "Helps detect up to 95% of known exploits before deployment"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "On-Demand Analysis",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The 5-Dimensional",
+      "title": "The Multi-Dimensional",
       "subtitle": "Security Audit Framework",
       "description": "Discover how Spectra Audit revolutionizes blockchain security through comprehensive multi-dimensional analysis, providing deeper insights than traditional audits ever could.",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "Traditional smart contract audits focus exclusively on code security. While important, this single-lens approach misses critical risk factors that lead to most DeFi exploits and project failures.",
       "paragraph2": {
         "before": "Spectra Audit's ",
-        "highlight": "5-dimensional audit framework",
-        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution—providing a complete security picture that protects investors from threats code audits alone cannot detect."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "Core Dimensions"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "Detection Rate"
-        },
         "analysisTime": {
           "value": "≤20 min",
           "label": "Analysis Time"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "The ",
-        "highlight": "5 Dimensions",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "Each dimension provides unique insights. Together, they deliver complete security intelligence.",
-      "convergeLabel": "5 dimensions converge",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "Security Score",
         "excellent": "Excellent"
       },
       "weightDistribution": {
-        "title": "Weight Distribution",
-        "totalLabel": "Total:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "Community health index",
             "fudFomoDetection": "FUD/FOMO detection"
           },
-          "weight": "10",
-          "weightNote": "30% for no-token projects"
+          "weight": "10"
         },
         "code": {
           "name": "Code Security",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "Dependency analysis",
             "bestPractices": "Best practices check"
           },
-          "weight": "45",
-          "weightNote": "70% for no-token projects"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "Tokenomics Health",
@@ -418,7 +403,7 @@
             "economicModel": "Economic model validation",
             "unlockSchedule": "Unlock schedule tracking"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "Liquidity Depth",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX coverage",
             "liquidityConcentration": "Liquidity concentration"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "Distribution Analysis",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "Airdrop analysis",
             "walletDistribution": "Wallet distribution"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "Scoring Weights by Project Type",
-        "subtitle": "Weights are applied based on whether the project has a tradeable token. No-token projects (utility protocols, infrastructure, etc.) emphasize code and sentiment more heavily since distribution and liquidity metrics don't apply.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "Dimension",
         "headerHasToken": "Has Token",
         "headerNoToken": "No Token",
@@ -458,53 +443,50 @@
         "rowTokenomics": "Tokenomics",
         "rowLiquidity": "Liquidity",
         "rowSentiment": "Sentiment",
+        "rowVelocity": "Trading Velocity",
+        "rowHolderGrowth": "Holder Growth",
+        "rowRealizedPnl": "Realized PnL",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowWhaleDumpRisk": "Whale Dump Risk",
+        "rowTotal": "Total",
         "notApplicable": "N/A",
-        "footnote": "Actual weights are configured per audit type in the backend scoring service and may be tuned over time as the model is recalibrated."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published."
       }
     },
     "scoring": {
       "badge": "Algorithm",
       "title": {
-        "before": "AI-Optimized ",
+        "before": "How the ",
         "highlight": "Security Score",
-        "after": " Calculation"
+        "after": " Is Calculated"
       },
-      "subtitle": "Our scoring algorithm uses dynamic weighted averages, continuously fine-tuned by machine learning for maximum predictive accuracy.",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "Security Score Formula",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Dynamic Weights",
-        "aiAdjustments": "AI Adjustments",
-        "accuracy": "Accuracy"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "Dynamic Weight Distribution",
-        "description": "Base weights are assigned to each dimension based on historical impact analysis:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
-      "aiOptimization": {
-        "title": "AI Optimization Layer",
-        "description": "Machine learning models continuously refine weights based on:",
-        "factors": {
-          "exploitPatterns": "Exploit pattern analysis",
-          "marketCorrelation": "Market condition correlation",
-          "projectCategorization": "Project type categorization",
-          "threatIntelligence": "Real-time threat intelligence",
-          "communityFeedback": "Community feedback integration"
+      "weightChanges": {
+        "title": "How the Weights Change",
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "reviewComments": "The comments submitted alongside those ratings",
+          "externalAudits": "Professional audit reports imported for projects we have already scored"
         }
       },
       "calculationExample": {
         "title": "Calculation Example",
-        "comment": "// Example: Has-token project — weights sum to 100%",
-        "codeLabel": "Code Security",
-        "distributionLabel": "Distribution",
-        "tokenomicsLabel": "Tokenomics",
-        "liquidityLabel": "Liquidity",
-        "sentimentLabel": "Sentiment",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "Composite Score:",
-        "baseScore": "Base Score:",
-        "aiAdjustment": "AI Adjustment:",
-        "aiEnhancedTitle": "AI-Enhanced Accuracy",
-        "aiEnhancedDescription": "The AI adjustment factor considers cross-dimensional correlations, project maturity, market conditions, and real-time threat data to provide a score that better reflects true security risk."
+        "renormalisationTitle": "When a dimension cannot be measured",
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable."
       }
     },
     "howItWorks": {
@@ -521,11 +503,11 @@
         },
         "aiAnalysis": {
           "title": "2. AI Analysis",
-          "description": "Advanced ML models process data across all 5 dimensions with dynamic weight optimization."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. Risk Scoring",
-          "description": "AI-optimized weighted scores with verifiable evidence provide complete security assessment."
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -541,7 +523,7 @@
           "phase": "Q1 2025",
           "title": "Foundation",
           "items": [
-            "Launch 5-dimensional audit system",
+            "Launch the multi-dimensional audit system",
             "Integrate major blockchain networks",
             "Deploy real-time monitoring infrastructure",
             "Establish security partnerships"
@@ -590,35 +572,35 @@
     },
     "cta": {
       "title": "Ready for Deeper Security Insights?",
-      "description": "Experience the power of 5-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes — not weeks.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "Start Your First Audit"
     },
     "metadata": {
-      "title": "The 5-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, and sentiment — one transparent grade backed by verifiable evidence."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "State-of-the-Art Audit Process",
-    "subtitle": "Every audit runs on a sandboxed fork of the blockchain — no live transactions, no risk to user funds during analysis.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "Fork-Based Simulation",
       "description": "Smart contract interactions are replayed on an isolated mainnet fork. We observe behavior without ever broadcasting transactions to the live network."
     },
     "aiOrchestration": {
       "title": "AI-Orchestrated Analysis",
-      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data — producing findings no single analyzer could surface alone."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "Bytecode & ABI Static Analysis",
       "description": "Our scanner inspects compiled bytecode and ABIs directly, allowing analysis of contracts even when source code is unavailable or partially verified."
     },
     "multiDimensional": {
-      "title": "5-Dimensional Scoring",
-      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel — then weighted into a composite security score."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "Parallel audit pipeline: five independent analyzers — Code, Distribution, Tokenomics, Liquidity, and Sentiment — run concurrently and converge into a single composite security score.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "Code",
         "distribution": "Distribution",
@@ -628,36 +610,36 @@
       },
       "compositeLine1": "Composite",
       "compositeLine2": "Score",
-      "subtitle": "5 analyzers running in parallel → weighted composite"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "How the Spectra Score Improves With Time",
-    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits — every analysis informs the next.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "User Feedback Integration",
-      "description": "Community ratings and expert reviews on every finding feed back into the model. False positives, missed vulnerabilities, and severity disputes are tracked and used to recalibrate scoring weights."
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "Calibration Against Similar Projects",
-      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. Scores are adjusted when patterns from past projects suggest different risk profiles."
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "Continuous AI Optimization",
-      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, our AI models are periodically retrained. The system gets smarter with every audit it processes."
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "External Audit Cross-Reference",
-      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies feed back into model refinement."
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for the next audit.",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and update the model for a future release.",
       "nodes": {
         "audit": "Audit",
         "feedback": "User Feedback",
         "evaluation": "Evaluation",
         "calibration": "Calibration",
-        "retraining": "Model Retraining"
+        "retraining": "Model Updates"
       },
       "centerLine1": "Continuous",
       "centerLine2": "Learning Loop"
@@ -665,7 +647,8 @@
   },
   "disclaimer": {
     "title": "Important Disclaimer",
-    "aiGenerated": "All findings are produced by AI analysis — not by human security auditors.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "Contract behavior is analyzed on a forked replica of the blockchain, not the live mainnet.",
     "noGuarantee": "A high security score does NOT guarantee a project is safe. Scores reflect the state of available data at the time of analysis.",
     "doYourResearch": "Always conduct your own research (DYOR) before making any investment, deployment, or integration decisions.",
@@ -678,8 +661,6 @@
     "poor": "Poor",
     "critical": "Critical",
     "needsWork": "Needs Work",
-    "security": "Security",
-    "labelFormat": "Grade {letter} - {label}",
     "descriptions": {
       "excellent": "No critical vulnerabilities found",
       "good": "Minor issues identified",
@@ -705,7 +686,7 @@
     "q3": "Is Spectra Audit's security audit really free?",
     "a3": "Yes. Spectra Audit offers free comprehensive security audits with no credit card required. Premium features are available for advanced monitoring.",
     "q4": "How accurate are Spectra Audit's findings?",
-    "a4": "Spectra Audit detects up to 95% of known vulnerability patterns. All findings are produced by AI analysis and include verifiable evidence you can inspect. Results are informational and do not guarantee project safety.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Does Spectra Audit support multiple blockchains?",
     "a5": "Yes. Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains."
   }

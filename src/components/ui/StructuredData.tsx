@@ -312,7 +312,7 @@ export const createServiceSchema = (): ServiceSchema => ({
       {
         '@type': 'Offer',
         name: 'AI-Powered Security Analysis',
-        description: '5-dimensional smart contract security analysis with AI-powered vulnerability detection',
+        description: 'Multi-dimensional smart contract security analysis with AI-powered vulnerability detection',
         offers: {
           '@type': 'Offer',
           price: '0',

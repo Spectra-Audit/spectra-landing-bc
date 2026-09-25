@@ -43,8 +43,6 @@ for (const file of files) {
   set(json, 'grades.poor', d.grades.poor)
   set(json, 'grades.critical', d.grades.critical)
   set(json, 'grades.needsWork', d.grades.needsWork)
-  set(json, 'grades.security', d.grades.security)
-  set(json, 'grades.labelFormat', d.grades.labelFormat)
   set(json, 'grades.descriptions.excellent', d.grades.descExcellent)
   set(json, 'grades.descriptions.good', d.grades.descGood)
   set(json, 'grades.descriptions.fair', d.grades.descFair)

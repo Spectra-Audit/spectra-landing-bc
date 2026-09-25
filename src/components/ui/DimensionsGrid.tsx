@@ -24,7 +24,7 @@ export interface DimensionsGridProps {
 }
 
 /**
- * The whitepaper's "5 Dimensions" card grid, with hover-to-highlight state
+ * The whitepaper's dimensions card grid, with hover-to-highlight state
  * (border/scale/shadow change on `onMouseEnter`/`onMouseLeave`). This is the
  * one interactive piece of the whitepaper's dimensions section — extracted
  * as a single island (not per-card) so the rest of that section (score

@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
-    "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "பிளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு",
     "og": {
       "title": "Spectra Audit - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
-      "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள்.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI பாதுகாப்பு தணிக்கை தளம்"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
-    "description": "ஒரு தெளிவான பாதுகாப்பு தரம் - அதன் பின்னால் ஆதாரத்துடன். நீங்கள் சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள். தொடர்ச்சியான, வெளிப்படையான பாதுகாப்பு கண்காணிப்புடன் உங்கள் கிரிப்டோ முதலீடுகளைப் பாதுகாக்கவும்.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "பிளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "அறிக்கையைப் பெறுங்கள்",
     "trustMetrics": {
       "activeUsers": "செயலில் உள்ள பயனர்கள்",
-      "accuracy": "அறியப்பட்ட பாதிப்பு கண்டறிதல்",
       "scanTime": "நிமிட வழக்கமான நேரம்",
       "protectedUsers": "பாதுகாக்கப்பட்ட பயனர்கள்",
       "uptime": "செயல்படும் நேரம்",
-      "detectionRate": "அறியப்பட்ட பாதிப்பு கண்டறிதல்",
       "threatTypes": "மதிப்பெண் பரிமாணங்கள்",
       "projectsAnalyzed": "மதிப்பெண் பரிமாணங்கள்",
       "riskFlagsIdentified": "அடையாளம் காணப்பட்ட ஆபத்து கொடிகள்"
@@ -84,7 +82,7 @@
       "featuresTitle": "அடுத்த தலைமுறை பாதுகாப்பு தணிக்கைகள்",
       "featuresSubtitle": "பாரம்பரிய தணிக்கைகள் மெதுவானவை, செலவானவை மற்றும் விரைவாக பழுதுபடுகின்றன. Spectra Audit உங்கள் குறியீட்டுடன் தொடர்ந்து, சரிபார்க்கக்கூடிய பாதுகாப்பு கண்காணிப்பை வழங்குகிறது.",
       "realTimeMonitoring": "தேவை-நேர AI பகுப்பாய்வு",
-      "realTimeMonitoringDesc": "திட்டங்கள் சமர்ப்பிக்கப்படும்போது தேவை-நேர AI-இயக்கப்படும் பகுப்பாய்வு. விரிவான 5-பரிமாண பாதுகாப்பு மதிப்பாய்வு ஒரு தணிக்கைக்கு 20 நிமிடங்களுக்குள் முடிகிறது.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20நி",
       "avgScanTimeLabel": "வழக்கமான தணிக்கை நேரம்",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "மீண்டும் உருவாக்கக்கூடிய கண்டுபிடிப்புகள்",
       "publicGitHubRepo": "ஆன்-செயின் தரவுக்கு எதிராக சரிபார்க்கக்கூடியது",
       "comprehensiveCoverage": "விரிவான கவரேஜ்",
-      "comprehensiveCoverageDesc": "மேம்படுத்தப்பட்ட AI மாதிரிகள் அறியப்பட்ட பாதிப்பு வகுப்புகளின் பரந்த வரம்பை கண்டறிகின்றன — ஸ்மார்ட் ஒப்பந்தம் பிழைகள், பொருளாதார தாக்குதல் திசைகள் மற்றும் செறிவு அபாயங்கள்.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ பாதிப்பு வகைகள்",
-      "detectionRate": "அறியப்பட்ட பிரச்சினைகளில் 95% வரை கண்டறிதல்",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "சரிபார்க்கக்கூடிய மற்றும் வெளிப்படையானது",
       "productionReadyDesc": "தணிக்கையின் ஒவ்வொரு படியையும் ஆராய, மீண்டும் உருவாக்க மற்றும் சரிபார்க்க விரும்பும் டெவலப்பர்கள் மற்றும் ஆராய்ச்சியாளர்களுக்காக கட்டப்பட்ட வெளிப்படையான பகுப்பாய்வு பைப்லைன்.",
       "thirdPartyVerified": "சரிபார்க்கக்கூடிய முடிவுகள்",
@@ -109,15 +107,12 @@
       "highAccuracy": "உயர் துல்லியம்",
       "highAccuracyDesc": "நீங்கள் நம்பக்கூடிய AI-சரிபார்க்கப்பட்ட முடிவுகள்",
       "multiDimensional": "பல பரிமாண",
-      "multiDimensionalDesc": "5-காரணி பாதுகாப்பு மதிப்பெண்",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "விரிவான பாதுகாப்பு பகுப்பாய்வு",
       "liveStatusSubtitle": "முழுமையான ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு மதிப்பீட்டிற்கான பல பரிமாண மதிப்பெண்.",
       "scanTimeValue": "≤20நி",
       "scanTimeLabel": "வழக்கமான தணிக்கை நேரம்",
       "scanTimeBadge": "வேகமான பகுப்பாய்வு",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "பாதுகாப்பு பரிமாணங்கள்",
-      "dimensionsBadge": "பல காரணி மதிப்பெண்",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "இயக்கப்படும் பகுப்பாய்வு",
       "aiPoweredBadge": "ஸ்மார்ட் கண்டறிதல்",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI ஒருங்கிணைப்பு",
-          "description": "5-பரிமாண பகுப்பாய்வு பைப்லைன்"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "தணிக்கை",
@@ -180,13 +175,13 @@
       "team": {
         "title": "குழு மற்றும் உணர்வு",
         "score": "0-100",
-        "description": "பின்னணி சரிபார்ப்பு, முந்தைய திட்ட வரலாறு, சமூக ஆரோக்கியம் சமிக்ஞைகள், சமூக உணர்வு பகுப்பாய்வு மற்றும் பொது நம்பிக்கை சூசகங்கள்.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "விரைவில்"
       }
     },
     "overallScore": {
       "title": "ஒட்டுமொத்த பாதுகாப்பு மதிப்பெண்",
-      "description": "அனைத்து பரிமாணங்களும் புரிந்து கொள்ளக்கூடிய ஒரே தரவரிசையில் இணைக்கப்பட்டுள்ளன.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = சிறப்பானது",
       "good": "70-84 = நல்லது",
       "fair": "55-69 = நியாயமானது",
@@ -206,7 +201,7 @@
       "description": "உங்கள் கிரிப்டோ முதலீடுகளுக்கு பாதுகாப்பான, குறைந்த பராமரிப்பு பாதுகாப்பு.",
       "benefits": [
         "தேவைக்கேற்ற AI பாதுகாப்பு பகுப்பாய்வு",
-        "எளிய பாதுகாப்பு தரவரிசைகள் (A-F)",
+        "Simple Security Scores from 0 to 100",
         "உடனடி ஆபத்து எச்சரிக்கைகள்",
         "தொழில்நுட்ப அறிவு தேவையில்லை"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "பாரம்பரிய தணிக்கைகள் மெதுவானவை மற்றும் செலவானவை. Spectra Audit நீங்கள் ஆராய்ந்து மீண்டும் உருவாக்கக்கூடிய AI-ஒருங்கிணைக்கப்பட்ட, சரிபார்க்கக்கூடிய பாதுகாப்பு பகுப்பாய்வை வழங்குகிறது.",
     "monitoring": {
       "title": "வேகமான AI பகுப்பாய்வு",
-      "description": "AI-ஒருங்கிணைக்கப்பட்ட பகுப்பாய்வு 5 பரிமாணங்களில் இணையாக இயங்குகிறது — குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு — கண்காணிக்கக்கூடிய ஆதாரத்துடன் ஒரு கூட்டு மதிப்பெண்ணை உருவாக்குகிறது.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "வழக்கமாக ஒரு தணிக்கைக்கு 20 நிமிடங்களுக்கும் குறைவாக",
       "comparison": "பாரம்பரிய கைமுறை தணிக்கைகளை விட 2.4× க்கும் அதிக வேகமானது"
     },
     "verifiable": {
       "title": "சரிபார்க்கக்கூடிய ஆதாரங்கள்",
-      "description": "ஒவ்வொரு கண்டுபிடிப்பும் அதன் பின்னால் உள்ள காரணம், மூல தரவு மற்றும் மீண்டும் உருவாக்கக்கூடிய ஆதாரங்களை உள்ளடக்கியது. ஒவ்வொரு பிரச்சினையும் எப்படி அடையாளம் காணப்பட்டது என்பதைச் சரியாகப் பாருங்கள் — கறுப்பு பெட்டிகள் இல்லை.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "முழுமையாக வெளிப்படையான முறை",
       "detail": "ஆன்-செயின் தரவுக்கு எதிராக சரிபார்க்கக்கூடிய கண்டுபிடிப்புகள்"
     },
     "comprehensive": {
       "title": "விரிவான கவரேஜ்",
-      "description": "மேம்படுத்தப்பட்ட AI மாதிரிகள் அறியப்பட்ட பாதிப்பு வகுப்புகளின் பரந்த வரம்பை கண்டறிகின்றன — ஸ்மார்ட் ஒப்பந்தம் பிழைகளிலிருந்து பொருளாதார தாக்குதல் திசைகள் மற்றும் செறிவு அபாயங்கள் வரை.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ பாதிப்பு வகைகள்",
-      "detail": "வரிசைப்படுத்துவதற்கு முன் அறிந்த exploits இன் 95% வரை கண்டறிய உதவுகிறது"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "தேவை-நேர பகுப்பாய்வு",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5-பரிமாண",
+      "title": "The Multi-Dimensional",
       "subtitle": "பாதுகாப்பு தணிக்கை கட்டமைப்பு",
       "description": "Spectra Audit விரிவான பல பரிமாண பகுப்பாய்வு மூலம் பிளாக்செயின் பாதுகாப்பை எவ்வாறு புரட்சிகரமாக மாற்றுகிறது மற்றும் பாரம்பரிய தணிக்கைகளை விட ஆழமான நுண்ணறிவுகளை எவ்வாறு வழங்குகிறது என்பதைக் கண்டறியுங்கள்.",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "பாரம்பரிய ஸ்மார்ட் ஒப்பந்தம் தணிக்கைகள் குறியீடு பாதுகாப்பில் மட்டுமே கவனம் செலுத்துகின்றன. முக்கியமானது என்றாலும், இந்த ஒற்றை-லென்ஸ் அணுகுமுறை பெரும்பாலான DeFi exploits மற்றும் திட்ட தோல்விகளுக்கு வழிவகுக்கும் முக்கியமான ஆபத்து காரணிகளை தவறவிடுகிறது.",
       "paragraph2": {
         "before": "Spectra Audit இன் ",
-        "highlight": "5-பரிமாண தணிக்கை கட்டமைப்பு",
-        "after": " உணர்வு, குறியீடு, டோக்கனோமிக்ஸ், தரமின்மை மற்றும் விநியோகம் முழுவதும் திட்டங்களை விரிவாக பகுப்பாய்வு செய்கிறது—குறியீடு தணிக்கைகள் மட்டும் கண்டறிய முடியாத அச்சுறுத்தல்களிலிருந்து முதலீட்டாளர்களைப் பாதுகாக்கும் முழுமையான பாதுகாப்பு படத்தை வழங்குகிறது."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "முக்கிய பரிமாணங்கள்"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "கண்டறிதல் விகிதம்"
-        },
         "analysisTime": {
           "value": "≤20 நிமிடம்",
           "label": "பகுப்பாய்வு நேரம்"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 பரிமாணங்கள்",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "ஒவ்வொரு பரிமாணமும் தனித்துவமான நுண்ணறிவுகளை வழங்குகிறது. ஒன்றாக, அவை முழுமையான பாதுகாப்பு புத்திசாலித்தனத்தை வழங்குகின்றன.",
-      "convergeLabel": "5 பரிமாணங்கள் ஒன்றிணைகின்றன",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "பாதுகாப்பு மதிப்பெண்",
         "excellent": "சிறப்பானது"
       },
       "weightDistribution": {
-        "title": "எடை விநியோகம்",
-        "totalLabel": "மொத்தம்:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "சமூக ஆரோக்கிய குறியீடு",
             "fudFomoDetection": "FUD/FOMO கண்டறிதல்"
           },
-          "weight": "10",
-          "weightNote": "டோக்கன் இல்லாத திட்டங்களுக்கு 30%"
+          "weight": "10"
         },
         "code": {
           "name": "குறியீடு பாதுகாப்பு",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "சார்பு பகுப்பாய்வு",
             "bestPractices": "சிறந்த நடைமுறைகள் சரிபார்ப்பு"
           },
-          "weight": "45",
-          "weightNote": "டோக்கன் இல்லாத திட்டங்களுக்கு 70%"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "டோக்கனோமிக்ஸ் ஆரோக்கியம்",
@@ -418,7 +403,7 @@
             "economicModel": "பொருளாதார மாதிரி சரிபார்ப்பு",
             "unlockSchedule": "திறப்பு அட்டவணை கண்காணிப்பு"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "தரமின்மை ஆழம்",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX கவரேஜ்",
             "liquidityConcentration": "தரமின்மை செறிவு"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "விநியோக பகுப்பாய்வு",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "எயர்ட்ராப் பகுப்பாய்வு",
             "walletDistribution": "பணப்பை விநியோகம்"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "திட்ட வகை மூலம் மதிப்பெண் எடைகள்",
-        "subtitle": "திட்டத்திற்கு வர்த்தகம் செய்யக்கூடிய டோக்கன் உள்ளதா இல்லையா என்பதன் அடிப்படையில் எடைகள் பயன்படுத்தப்படுகின்றன. டோக்கன் இல்லாத திட்டங்கள் (பயன்பாட்டு நெறிமுறைகள், உள்கட்டமைப்பு, முதலியன) விநியோகம் மற்றும் தரமின்மை அளவீடுகள் பொருந்தாததால் குறியீடு மற்றும் உணர்வை அதிகமாக வலியுறுத்துகின்றன.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "பரிமாணம்",
         "headerHasToken": "டோக்கன் உள்ளது",
         "headerNoToken": "டோக்கன் இல்லை",
@@ -459,52 +444,49 @@
         "rowLiquidity": "தரமின்மை",
         "rowSentiment": "உணர்வு",
         "notApplicable": "பொருந்தாது",
-        "footnote": "உண்மையான எடைகள் பின்-நிலைய மதிப்பெண் சேவையில் ஒவ்வொரு தணிக்கை வகைக்கும் கட்டமைக்கப்படுகின்றன மற்றும் மாதிரி மீண்டும்-அளவீடு செய்யப்படும்போது காலப்போக்கில் சரிசெய்யப்படலாம்."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
       "badge": "வழிமுறை",
       "title": {
-        "before": "AI-உகந்த ",
+        "before": "How the ",
         "highlight": "பாதுகாப்பு மதிப்பெண்",
-        "after": " கணக்கீடு"
+        "after": " Is Calculated"
       },
-      "subtitle": "எங்கள் மதிப்பெண் வழிமுறை அதிகபட்ச கணிப்பு துல்லியத்திற்காக இயந்திர கற்றலால் தொடர்ந்து நன்றாக-ட்யூன் செய்யப்படும் டைனமிக் வெயிட்டட் சராசரிகளைப் பயன்படுத்துகிறது.",
+      "subtitle": "Every dimension is scored 0 to 100, multiplied by its published weight and divided by the weights we were able to use. The weights are fixed constants. They change when we change them and ship a new version, not while an audit is running.",
       "formula": {
         "title": "பாதுகாப்பு மதிப்பெண் சூத்திரம்",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "டைனமிக் எடைகள்",
-        "aiAdjustments": "AI சரிசெய்தல்கள்",
-        "accuracy": "துல்லியம்"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "டைனமிக் எடை விநியோகம்",
-        "description": "வரலாற்று தாக்க பகுப்பாய்வின் அடிப்படையில் ஒவ்வொரு பரிமாணத்திற்கும் அடிப்படை எடைகள் ஒதுக்கப்படுகின்றன:"
-      },
-      "aiOptimization": {
-        "title": "AI உகப்பாக்கல் அடுக்கு",
-        "description": "இயந்திர கற்றல் மாதிரிகள் கீழ்க்கண்டவற்றின் அடிப்படையில் எடைகளை தொடர்ந்து செம்மைப்படுத்துகின்றன:",
-        "factors": {
-          "exploitPatterns": "Exploit முறை பகுப்பாய்வு",
-          "marketCorrelation": "சந்தை நிலை தொடர்பு",
-          "projectCategorization": "திட்ட வகை வகைப்படுத்தல்",
-          "threatIntelligence": "நிகழ்நேர அச்சுறுத்தல் புத்திசாலித்தனம்",
-          "communityFeedback": "சமூக பின்னூட்ட ஒருங்கிணைப்பு"
-        }
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "calculationExample": {
         "title": "கணக்கீடு உதாரணம்",
-        "comment": "// உதாரணம்: டோக்கன் கொண்ட திட்டம் — எடைகள் மொத்தம் 100%",
-        "codeLabel": "குறியீடு பாதுகாப்பு",
-        "distributionLabel": "விநியோகம்",
-        "tokenomicsLabel": "டோக்கனோமிக்ஸ்",
-        "liquidityLabel": "தரமின்மை",
-        "sentimentLabel": "உணர்வு",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "கூட்டு மதிப்பெண்:",
-        "baseScore": "அடிப்படை மதிப்பெண்:",
-        "aiAdjustment": "AI சரிசெய்தல்:",
-        "aiEnhancedTitle": "AI-மேம்படுத்தப்பட்ட துல்லியம்",
-        "aiEnhancedDescription": "AI சரிசெய்தல் காரணி குறுக்கு-பரிமாண தொடர்புகள், திட்ட முதிர்ச்சி, சந்தை நிலைமைகள் மற்றும் நிகழ்நேர அச்சுறுத்தல் தரவை கருதி உண்மையான பாதுகாப்பு ஆபத்தை சிறப்பாக பிரதிபலிக்கும் ஒரு மதிப்பெண்ணை வழங்குகிறது."
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
+      },
+      "weightChanges": {
+        "description": "Nothing tunes the weights per project and nothing adjusts them while an audit runs. They change only when we publish a new version of the scoring service, and the table on this page changes with it. Between versions we collect:",
+        "inputs": {
+          "communityRatings": "Community ratings, weighted by the reviewer's experience tier",
+          "externalAudits": "Professional audit reports imported for projects we have already scored",
+          "reviewComments": "The comments submitted alongside those ratings"
+        },
+        "title": "How the Weights Change"
       }
     },
     "howItWorks": {
@@ -521,11 +503,11 @@
         },
         "aiAnalysis": {
           "title": "2. AI பகுப்பாய்வு",
-          "description": "மேம்படுத்தப்பட்ட ML மாதிரிகள் டைனமிக் எடை உகப்பாக்கலுடன் அனைத்து 5 பரிமாணங்களிலும் தரவை செயலாக்குகின்றன."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. ஆபத்து மதிப்பெண்",
-          "description": "சரிபார்க்கக்கூடிய ஆதாரத்துடன் AI-உகந்த வெயிட்டட் மதிப்பெண்கள் முழுமையான பாதுகாப்பு மதிப்பீட்டை வழங்குகின்றன."
+          "description": "Each dimension score is combined against the published weights, with the evidence behind every finding attached."
         }
       }
     },
@@ -541,7 +523,7 @@
           "phase": "Q1 2025",
           "title": "அடித்தளம்",
           "items": [
-            "5-பரிமாண தணிக்கை அமைப்பை தொடங்கவும்",
+            "Launch the multi-dimensional audit system",
             "முக்கிய பிளாக்செயின் வலையமைப்புகளை ஒருங்கிணைக்கவும்",
             "நிகழ்நேர கண்காணிப்பு உள்கட்டமைப்பை வரிசைப்படுத்தவும்",
             "பாதுகாப்பு கூட்டாண்மைகளை நிறுவவும்"
@@ -590,35 +572,35 @@
     },
     "cta": {
       "title": "ஆழமான பாதுகாப்பு நுண்ணறிவுகளுக்கு தயாரா?",
-      "description": "AI-உகந்த மதிப்பெண்ணுடன் 5-பரிமாண பகுப்பாய்வின் சக்தியை அனுபவிக்கவும். வாரங்களில் அல்ல, நிமிடங்களில் விரிவான பாதுகாப்பு தணிக்கையைப் பெறுங்கள்.",
+      "description": "Experience the power of multi-dimensional analysis with weights you can read on this page. Get a comprehensive security audit in minutes, not weeks.",
       "button": "உங்கள் முதல் தணிக்கையைத் தொடங்கவும்"
     },
     "metadata": {
-      "title": "5-பரிமாண பாதுகாப்பு தணிக்கை கட்டமைப்பு | Spectra Audit",
-      "description": "கோட், விநியோகம், டோக்கனாமிக்ஸ், பணப்புழக்கம், உணர்வு ஆகியவற்றின் அடிப்படையில் Spectra Audit ஸ்மார்ட் காண்ட்ராக்ட்களை எப்படி மதிப்பிடுகிறது — சரிபார்க்கக்கூடிய சான்றுகளுடன் வெளிப்படையான தரம்."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "அதிநவீன தணிக்கை செயல்முறை",
-    "subtitle": "ஒவ்வொரு தணிக்கையும் பிளாக்செயினின் சாண்ட்பாக்ஸ் ஃபோர்க்கில் இயங்குகிறது — நேரடி பரிவர்த்தனைகள் இல்லை, பகுப்பாய்வின் போது பயனர் நிதிகளுக்கு எந்த ஆபத்தும் இல்லை.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "ஃபோர்க் அடிப்படையிலான உருவகப்படுத்தல்",
       "description": "ஸ்மார்ட் ஒப்பந்தம் இடைவினைகள் தனிமைப்படுத்தப்பட்ட மெயின்நெட் ஃபோர்க்கில் மீண்டும் இயக்கப்படுகின்றன. நேரடி வலையமைப்பிற்கு பரிவர்த்தனைகளை ஒளிபரப்பாமல் நாங்கள் நடத்தையை கவனிக்கிறோம்."
     },
     "aiOrchestration": {
       "title": "AI-ஒருங்கிணைக்கப்பட்ட பகுப்பாய்வு",
-      "description": "பல சிறப்பு AI முகவர்கள் குறியீடு மதிப்பாய்வு, பொருளாதார மாதிரியாக்கம் மற்றும் ஆன்-செயின் தரவு முழுவதும் ஒருங்கிணைக்கின்றன — எந்த ஒற்றை பகுப்பாய்விப்பாளர் தனியாக வெளிப்படுத்த முடியாத கண்டுபிடிப்புகளை உருவாக்குகின்றன."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "பைட்கோடு & ABI நிலையான பகுப்பாய்வு",
       "description": "எங்கள் ஸ்கேனர் தொகுக்கப்பட்ட பைட்கோடு மற்றும் ABI களை நேரடியாக ஆராய்கிறது, மூல குறியீடு கிடைக்காதபோது அல்லது ஓரளவு மட்டுமே சரிபார்க்கப்பட்டுள்ள போதும் ஒப்பந்தங்களின் பகுப்பாய்வை அனுமதிக்கிறது."
     },
     "multiDimensional": {
-      "title": "5-பரிமாண மதிப்பெண்",
-      "description": "குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு இணையாக சுயாதீனமாக மதிப்பிடப்படுகின்றன — பின்னர் கூட்டு பாதுகாப்பு மதிப்பெண்ணில் எடையிடப்படுகின்றன."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "இணை தணிக்கை பைப்லைன்: குறியீடு, விநியோகம், டோக்கனோமிக்ஸ், தரமின்மை மற்றும் உணர்வு ஆகிய ஐந்து சுயாதீன பகுப்பாய்விகள் ஒரே நேரத்தில் இயங்கி ஒற்றை கூட்டு பாதுகாப்பு மதிப்பெண்ணாக ஒன்றிணைகின்றன.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "குறியீடு",
         "distribution": "விநியோகம்",
@@ -628,36 +610,36 @@
       },
       "compositeLine1": "கூட்டு",
       "compositeLine2": "மதிப்பெண்",
-      "subtitle": "5 பகுப்பாய்விகள் இணையாக → எடையிட்ட கூட்டு"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectra மதிப்பெண் காலப்போக்கில் எவ்வாறு மேம்படுகிறது",
-    "subtitle": "Spectra Audit நிஜ உலக பின்னூட்டம் மற்றும் வரலாற்று தணிக்கைகளுக்கு எதிராக அளவீடு மூலம் தொடர்ந்து மேம்படுகிறது — ஒவ்வொரு பகுப்பாய்வும் அடுத்ததைத் தெரிவிக்கிறது.",
+    "subtitle": "Feedback and comparisons against past audits are collected and reviewed, and they shape the next version of the model. They do not change a score that has already been published.",
     "userFeedback": {
       "title": "பயனர் பின்னூட்ட ஒருங்கிணைப்பு",
-      "description": "ஒவ்வொரு கண்டுபிடிப்பிலும் சமூக மதிப்பீடுகள் மற்றும் நிபுணர் மதிப்பாய்வுகள் மாதிரியில் மீண்டும் ஊட்டப்படுகின்றன. தவறான நேர்மறைகள், தவறவிட்ட பாதிப்புகள் மற்றும் தீவிரத்தன்மை மோதல்கள் கண்காணிக்கப்பட்டு, மதிப்பெண் எடைகளை மீண்டும்-அளவீடு செய்ய பயன்படுத்தப்படுகின்றன."
+      "description": "Community ratings and expert reviews on every finding are recorded, weighted by the reviewer's experience tier. Reports of false positives, missed vulnerabilities and disputed severities are reviewed by us before the next release."
     },
     "calibration": {
       "title": "ஒத்த திட்டங்களுக்கு எதிராக அளவீடு",
-      "description": "ஒவ்வொரு புதிய தணிக்கையும் கட்டமைப்பு ரீதியாக ஒத்த ஒப்பந்தங்கள் மற்றும் டோக்கனோமிக்ஸ் இன் வரலாற்று தணிக்கைகளுடன் குறுக்கு-குறிப்பிடப்படுகிறது. கடந்த திட்டங்களில் இருந்து வடிவங்கள் வெவ்வேறு ஆபத்து சுயவிவரங்களை சுட்டிக்காட்டும்போது மதிப்பெண்கள் சரிசெய்யப்படுகின்றன."
+      "description": "Each new audit is cross-referenced against historical audits of structurally similar contracts and tokenomics. What that comparison turns up is reviewed by us. It does not move a published score on its own."
     },
     "aiOptimization": {
-      "title": "தொடர்ச்சியான AI உகப்பாக்கல்",
-      "description": "ஆன்-செயினில் புதிய exploit வடிவங்கள் தோன்றி புதிய பாதிப்பு வகுப்புகள் வெளிப்படும்போது, எங்கள் AI மாதிரிகள் காலந்தோறும் மீண்டும்-பயிற்றுவிக்கப்படுகின்றன. கணினி அது செயலாக்கும் ஒவ்வொரு தணிக்கையின் மூலம் புத்திசாலியாகிறது."
+      "title": "Model Updates",
+      "description": "As new exploit patterns emerge on-chain and new vulnerability classes are disclosed, the model is updated and a new version is released. Past scores are not rewritten. A project gets a new score when it is analysed again."
     },
     "externalAudits": {
       "title": "வெளிப்புற தணிக்கை குறுக்கு-குறிப்பு",
-      "description": "ஒரு திட்டத்திற்கு தொழில்முறை மனித தணிக்கைகள் கிடைக்கும்போது, எங்கள் கண்டுபிடிப்புகள் அறிக்கையுடன் ஒப்பிடப்படுகின்றன. முரண்பாடுகள் மாதிரி செம்மைப்படுத்தலுக்கு மீண்டும் ஊட்டப்படுகின்றன."
+      "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "கேடயம் வடிவ தொடர்ச்சியான மேம்பாட்டு பின்னூட்ட சுழற்சி: தணிக்கைகள் பயனர் பின்னூட்டத்தை வழங்குகின்றன, இது மதிப்பீட்டின் போது மதிப்பாய்வாளரின் நற்பெயரின் அடிப்படையில் எடையிடப்பட்டு, அடுத்த தணிக்கைக்காக மாதிரியை அளவீடு செய்து மீண்டும் பயிற்சி அளிக்கப் பயன்படுத்தப்படுகிறது.",
+      "ariaLabel": "கேடயம் வடிவ தொடர்ச்சியான மேம்பாட்டு பின்னூட்ட சுழற்சி: தணிக்கைகள் பயனர் பின்னூட்டத்தை வழங்குகின்றன, இது மதிப்பீட்டின் போது மதிப்பாய்வாளரின் நற்பெயரின் அடிப்படையில் எடையிடப்பட்டு, எதிர்கால வெளியீட்டிற்காக மாதிரியை அளவீடு செய்து புதுப்பிக்கப் பயன்படுத்தப்படுகிறது.",
       "nodes": {
         "audit": "தணிக்கை",
         "feedback": "பயனர் பின்னூட்டம்",
         "evaluation": "மதிப்பீடு",
         "calibration": "அளவீடு",
-        "retraining": "மாதிரி மறுபயிற்சி"
+        "retraining": "மாதிரி புதுப்பிப்பு"
       },
       "centerLine1": "தொடர்ச்சியான",
       "centerLine2": "கற்றல் சுழற்சி"
@@ -665,11 +647,12 @@
   },
   "disclaimer": {
     "title": "முக்கியமான மறுப்பு",
-    "aiGenerated": "அனைத்து கண்டுபிடிப்புகளும் AI பகுப்பாய்வு மூலம் உருவாக்கப்படுகின்றன — மனித பாதுகாப்பு தணிக்கையாளர்கள் அல்ல.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "ஒப்பந்த நடத்தை நேரடி மெயின்நெட்டில் அல்ல, பிளாக்செயினின் ஃபோர்க் செய்யப்பட்ட பிரதியில் பகுப்பாய்வு செய்யப்படுகிறது.",
     "noGuarantee": "உயர் பாதுகாப்பு மதிப்பெண் ஒரு திட்டம் பாதுகாப்பானது என்பதற்கு உத்தரவாதம் இல்லை. மதிப்பெண்கள் பகுப்பாய்வின் போது கிடைக்கும் தரவின் நிலையைப் பிரதிபலிக்கின்றன.",
     "doYourResearch": "எந்தவொரு முதலீடு, வரிசைப்படுத்தல் அல்லது ஒருங்கிணைப்பு முடிவுகளை எடுக்கும் முன் எப்போதும் உங்கள் சொந்த ஆராய்ச்சியை (DYOR) நடத்தவும்.",
-    "toolPurpose": "Spectra Audit ஒரு திட்டத்தின் பின்னால் உள்ள பாதுகாப்பு கருத்துகளை புரிந்து கொள்ள பயனர்களுக்கு உதவ வடிவமைக்கப்பட்ட ஒரு தகவல் கருவியாகும். இது நிதி, சட்ட அல்லது முதலீட்டு ஆலோசனை அல்ல."
+    "toolPurpose": "Spectra Audit ஒரு திட்டத்தின் பின்னால் உள்ள பாதுகாப்பு கருத்துகளை புரிந்து கொள்ள பயனர்களுக்கு உதவ வடிவமைக்கப்பட்ட ஒரு தகவல் கருவியாகும். இது நிதி, சட்ட அல்லது முதலீட்டு ஆலோசனை அல்ல.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "சிறப்பானது",
@@ -678,8 +661,6 @@
     "poor": "மோசம்",
     "critical": "ஆபத்தானது",
     "needsWork": "மேம்பாடு தேவை",
-    "security": "பாதுகாப்பு",
-    "labelFormat": "தரம் {letter} - {label}",
     "descriptions": {
       "excellent": "முக்கியமான பாதிப்புகள் எதுவும் இல்லை",
       "good": "சிறிய சிக்கல்கள் கண்டறியப்பட்டன",
@@ -705,7 +686,7 @@
     "q3": "Spectra Audit-இன் பாதுகாப்பு தணிக்கை உண்மையில் இலவசமா?",
     "a3": "ஆம். கிரெடிட் கார்டு தேவையின்றி இலவச, விரிவான பாதுகாப்பு தணிக்கைகளை Spectra Audit வழங்குகிறது. மேம்பட்ட கண்காணிப்புக்கு பிரீமியம் அம்சங்கள் உள்ளன.",
     "q4": "Spectra Audit முடிவுகள் எவ்வளவு துல்லியமானவை?",
-    "a4": "அறியப்பட்ட பாதிப்பு வடிவங்களில் 95% வரை Spectra Audit கண்டறிகிறது. அனைத்து முடிவுகளும் AI பகுப்பாய்வால் உருவாக்கப்படுகின்றன; நீங்கள் சரிபார்க்கக்கூடிய சான்றுகள் இணைக்கப்படுகின்றன. முடிவுகள் தகவலுக்காக மட்டுமே; திட்டத்தின் பாதுகாப்பிற்கு உத்தரவாதம் அல்ல.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit பல பிளாக்செயின்களை ஆதரிக்கிறதா?",
     "a5": "ஆம். Ethereum, BSC, Polygon, Arbitrum, Optimism மற்றும் பிற முக்கிய EVM-இணக்கப் பிளாக்செயின்களை Spectra Audit ஆதரிக்கிறது."
   }

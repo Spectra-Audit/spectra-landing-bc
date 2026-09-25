@@ -4,21 +4,30 @@ import { Shield, ShieldCheck, ShieldAlert, ShieldX, ShieldMinus, CheckCircle } f
 import { cn } from '@/lib/utils'
 
 export interface UnifiedGradeDisplayProps {
-  score: number // 0-100 percentage score
+  score: number // Security Score, 0-100
   size?: 'sm' | 'md' | 'lg' | 'xl'
   animated?: boolean
   showLabel?: boolean
   showDescription?: boolean
   className?: string
-  variant?: 'default' | 'compact' | 'detailed'
+  variant?: 'default' | 'compact'
 }
 
 /**
- * UnifiedGradeDisplay - Combines SecurityIllustration and GradeBadge
- * into a single, powerful component for displaying security grades.
+ * UnifiedGradeDisplay - the Security Score readout: the 0-100 number and the
+ * colour band it falls in.
  *
- * This component provides a comprehensive visual representation of
- * security audit scores with appropriate colors, icons, and descriptions.
+ * It used to render an A-F letter alongside the number ("Grade A - Excellent",
+ * plus an A+/A/B breakdown row under the `detailed` variant). Nothing produces
+ * a letter: the backend stores `score_general` as an integer 0-100 and the app
+ * renders that number against a colour band. The letters were invented here,
+ * so they are gone along with the `detailed` variant, whose entire content was
+ * the second letter.
+ *
+ * The band thresholds now match the app's `src/utils/scoreColor.ts`
+ * (85 / 70 / 55 / 40). They were 90 / 75 / 60 / 40, which disagreed both with
+ * the app and with this site's own "Overall Security Score" card, which has
+ * always published 85+ as Excellent.
  *
  * Server Component — only ever needed `useTranslations` (no hooks, no
  * browser APIs), so it renders on the server via `getTranslations`. Declared
@@ -48,10 +57,9 @@ async function UnifiedGradeDisplay({
   const { shieldSize, fontSize, iconSize } = sizeConfig[size]
 
   const getGradeConfig = (score: number) => {
-    if (score >= 90) {
+    if (score >= 85) {
       return {
         icon: ShieldCheck,
-        gradeLetter: 'A',
         tier: 'excellent' as const,
         color: 'text-spectra-green-700 dark:text-spectra-green-500',
         bgGradient: 'from-spectra-green-500 to-spectra-green-600',
@@ -59,10 +67,9 @@ async function UnifiedGradeDisplay({
         glowColor: 'rgba(0, 208, 132, 0.4)',
         shadowColor: 'shadow-glow-green'
       }
-    } else if (score >= 75) {
+    } else if (score >= 70) {
       return {
         icon: Shield,
-        gradeLetter: 'B',
         tier: 'good' as const,
         color: 'text-spectra-blue-700 dark:text-spectra-blue-500',
         bgGradient: 'from-spectra-blue-500 to-spectra-blue-600',
@@ -70,10 +77,9 @@ async function UnifiedGradeDisplay({
         glowColor: 'rgba(0, 102, 255, 0.4)',
         shadowColor: 'shadow-glow-spectra'
       }
-    } else if (score >= 60) {
+    } else if (score >= 55) {
       return {
         icon: ShieldAlert,
-        gradeLetter: 'C',
         tier: 'fair' as const,
         color: 'text-yellow-700 dark:text-warning-primary',
         bgGradient: 'from-warning-primary to-warning-secondary',
@@ -84,7 +90,6 @@ async function UnifiedGradeDisplay({
     } else if (score >= 40) {
       return {
         icon: ShieldMinus,
-        gradeLetter: 'D',
         tier: 'poor' as const,
         color: 'text-orange-700 dark:text-orange-400',
         bgGradient: 'from-orange-500 to-red-500',
@@ -95,7 +100,6 @@ async function UnifiedGradeDisplay({
     } else {
       return {
         icon: ShieldX,
-        gradeLetter: 'F',
         tier: 'critical' as const,
         color: 'text-red-700 dark:text-error-primary',
         bgGradient: 'from-error-primary to-error-secondary',
@@ -125,7 +129,7 @@ async function UnifiedGradeDisplay({
         </div>
         <div className="flex flex-col">
           <span className={cn('font-mono font-bold text-neutral-900 dark:text-white', fontSize)}>
-            {normalizedScore}%
+            {normalizedScore}/100
           </span>
           {showLabel && (
             <span className={cn('text-sm font-medium', config.color)}>
@@ -142,7 +146,7 @@ async function UnifiedGradeDisplay({
       {/* Shield Container with Glow */}
       <div className="relative mb-6">
         {/* Animated Glow Ring */}
-        {animated && normalizedScore >= 90 && (
+        {animated && normalizedScore >= 85 && (
           <div
             className="absolute inset-0 rounded-full animate-pulse-glow"
             style={{
@@ -177,24 +181,23 @@ async function UnifiedGradeDisplay({
             >
               {normalizedScore}
             </div>
-            <div className={cn('mt-1 text-sm font-semibold opacity-70', config.color)}>%</div>
+            <div className={cn('mt-1 text-sm font-semibold opacity-70', config.color)}>/100</div>
           </div>
         </div>
 
         {/* Verification Badge */}
-        {normalizedScore >= 90 && (
+        {normalizedScore >= 85 && (
           <div className="absolute -bottom-2 -right-2 bg-spectra-green-500 rounded-full p-2 shadow-lg">
             <CheckCircle className="w-5 h-5 text-white" />
           </div>
         )}
       </div>
 
-      {/* Grade Information */}
+      {/* Score band */}
       {showLabel && (
         <div className="text-center space-y-2">
-          {/* Grade Letter */}
           <div className={cn('font-display font-extrabold', fontSize, config.color, 'text-gradient-spectra')}>
-            {t('labelFormat', { letter: config.gradeLetter, label })}
+            {label}
           </div>
 
           {/* Description */}
@@ -202,18 +205,6 @@ async function UnifiedGradeDisplay({
             <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-[250px] leading-relaxed">
               {description}
             </p>
-          )}
-
-          {/* Score Breakdown (for detailed variant) */}
-          {variant === 'detailed' && (
-            <div className="flex items-center justify-center gap-4 mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-700/50">
-              <div className="text-center">
-                <div className="text-xs text-neutral-600 dark:text-neutral-500 uppercase tracking-wide">{t('security')}</div>
-                <div className={cn('font-mono font-bold', config.color)}>
-                  {normalizedScore >= 90 ? 'A+' : normalizedScore >= 75 ? 'A' : 'B'}
-                </div>
-              </div>
-            </div>
           )}
         </div>
       )}
