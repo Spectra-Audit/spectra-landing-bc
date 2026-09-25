@@ -325,8 +325,18 @@ export default async function WhitepaperPage({
                     )
                   })}
                 </div>
+                {/*
+                  The {' '} is load-bearing. These two spans sit on separate
+                  lines, and JSX drops the newline between them, so the DOM
+                  text runs the two strings together with no separator. That
+                  was invisible while the strings were "Total:" and "100%",
+                  where "Total:100%" reads as deliberate; it became a visible
+                  defect in all 16 locales the moment the label became a
+                  sentence fragment.
+                */}
                 <div className="mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-700/50 text-center">
                   <span className="text-sm text-neutral-500 dark:text-neutral-400">{t('dimensions.weightDistribution.totalLabel')}</span>
+                  {' '}
                   <span className="text-lg font-bold text-spectra-green-600 dark:text-spectra-green-400">{t('dimensions.weightDistribution.totalValue')}</span>
                 </div>
               </div>
