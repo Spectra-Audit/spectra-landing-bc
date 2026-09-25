@@ -17,11 +17,31 @@ import path from 'path'
  * back.
  *
  * RETRAINING_TERMS is per-locale on purpose. A /retrain|Retraining/i pattern
- * only matches English: it does not match Modelltraining, Yeniden Egitim,
- * Pereobuchenie or any other form this diagram actually shipped, so it would
- * pass on a revert. Every term below was verified to appear in that locale's
- * text at d2666871 and to be absent from it now, so the set fails on a revert
- * and on newly written retraining copy in any of the sixteen languages.
+ * only matches English: of the sixteen labels this diagram actually shipped it
+ * matches one, not Modelltraining, not Yeniden Egitim, not Pereobuchenie, so it
+ * would pass on a revert. Every term below was verified to appear in that
+ * locale's text at d2666871 and to be absent from it now.
+ *
+ * What this guards, exactly: a revert, a re-seed, and copy that reuses a
+ * locale's existing retraining term. That covers the regression that actually
+ * happened here twice.
+ *
+ * What it does not guard, measured rather than assumed. The term appears inside
+ * the retired node label in only five locales (ar, bn, en, ja, ko). For the
+ * other eleven the node assertion is the exact-value comparison alone, which is
+ * case- and diacritic-sensitive, so all of these get through:
+ *
+ *   modelltraining        lowercased
+ *   Yeniden Egitim        diacritic stripped
+ *   Model Re-training     hyphenated
+ *   Modell-Neutraining    a different compound
+ *   Dooboochenie          a real Russian synonym the old copy never used
+ *
+ * Case-folding and NFD-normalising the comparison would catch the first two and
+ * still miss the rest, so it is deliberately not built: a newly invented synonym
+ * is out of scope for a string guard and belongs to copy review. Do not read
+ * this test as proof that no locale can ever say "retrain" again. It proves the
+ * specific wording this repo has already shipped twice cannot come back.
  */
 const LOCALES_DIR = path.join(__dirname, '..', '..', 'i18n', 'locales')
 const SEED_FILE = path.join(__dirname, '..', '..', '..', 'scripts', 'diagram-i18n-data.json')
