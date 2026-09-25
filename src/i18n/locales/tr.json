@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
-    "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri. Kripto yatırımlarınızı sürekli, şeffaf güvenlik izleme ile koruyun.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "blockchain güvenliği, AI denetimi, akıllı sözleşme güvenliği, kripto güvenliği, DeFi koruması",
     "og": {
       "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
-      "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI Güvenlik Denetimi Platformu"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
-    "description": "Tek bir açık güvenlik notu - arkasındaki kanıtlarla birlikte. Doğrulanabilir gerçek zamanlı AI denetimleri. Kripto yatırımlarınızı sürekli, şeffaf güvenlik izleme ile koruyun.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "blockchain güvenliği, AI denetimi, akıllı sözleşme güvenliği, kripto güvenliği, DeFi koruması"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "Rapor Al",
     "trustMetrics": {
       "activeUsers": "Aktif Kullanıcılar",
-      "accuracy": "Bilinen Açık Tespiti",
       "scanTime": "dakika Tipik Süre",
       "protectedUsers": "Korunan Kullanıcılar",
       "uptime": "Çalışma Süresi",
-      "detectionRate": "Bilinen Açık Tespiti",
       "threatTypes": "Skorlama Boyutları",
       "projectsAnalyzed": "Skorlama Boyutları",
       "riskFlagsIdentified": "Belirlenen Risk Bayrakları"
@@ -84,7 +82,7 @@
       "featuresTitle": "Yeni Nesil Güvenlik Denetimleri",
       "featuresSubtitle": "Geleneksel denetimler yavaş, pahalı ve hızla eskiyor. Spectra Audit, kodunuzla uyumlu sürekli, doğrulanabilir güvenlik izleme sağlar.",
       "realTimeMonitoring": "Talep Üzerine AI Analizi",
-      "realTimeMonitoringDesc": "Projeler gönderildiğinde talep üzerine AI destekli analiz. Kapsamlı 5 boyutlu güvenlik incelemesi denetim başına 20 dakikanın altında tamamlanır.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20dk",
       "avgScanTimeLabel": "Tipik denetim süresi",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "Yeniden üretilebilir bulgular",
       "publicGitHubRepo": "Zincir üstü verilere karşı doğrulanabilir",
       "comprehensiveCoverage": "Kapsamlı Kapsama",
-      "comprehensiveCoverageDesc": "Gelişmiş AI modelleri bilinen geniş bir güvenlik açığı sınıfı yelpazesini tespit eder — akıllı sözleşme hataları, ekonomik saldırı vektörleri ve yoğunlaşma riskleri.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ güvenlik açığı kategorisi",
-      "detectionRate": "Bilinen sorunların %95'ine kadar tespiti",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "Doğrulanabilir ve Şeffaf",
       "productionReadyDesc": "Denetimin her adımını incelemek, yeniden üretmek ve doğrulamak isteyen geliştiriciler ve araştırmacılar için inşa edilen şeffaf bir analiz hattı.",
       "thirdPartyVerified": "Doğrulanabilir Sonuçlar",
@@ -109,15 +107,12 @@
       "highAccuracy": "Yüksek Doğruluk",
       "highAccuracyDesc": "Güvenebileceğiniz AI doğrulanmış sonuçlar",
       "multiDimensional": "Çok Boyutlu",
-      "multiDimensionalDesc": "5 faktörlü güvenlik skoru",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "Kapsamlı güvenlik analizi",
       "liveStatusSubtitle": "Eksiksiz akıllı sözleşme güvenlik değerlendirmesi için çok boyutlu skor.",
       "scanTimeValue": "≤20dk",
       "scanTimeLabel": "Tipik denetim süresi",
       "scanTimeBadge": "Hızlı analiz",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "Güvenlik boyutları",
-      "dimensionsBadge": "Çok faktörlü skor",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "Destekli analiz",
       "aiPoweredBadge": "Akıllı tespit",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI Tarafından Yönetilen",
-          "description": "5 boyutlu analiz hattı"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "Denetim",
@@ -180,13 +175,13 @@
       "team": {
         "title": "Ekip ve Sentiment",
         "score": "0-100",
-        "description": "Arka plan kontrolü, geçmiş proje geçmişi, topluluk sağlığı sinyalleri, sosyal duygu analizi ve kamu güveni göstergeleri.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "Çok Yakında"
       }
     },
     "overallScore": {
       "title": "Genel Güvenlik Skoru",
-      "description": "Tüm boyutlar anlaşılması kolay tek bir derecelendirmede birleştirilir.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = Mükemmel",
       "good": "70-84 = İyi",
       "fair": "55-69 = İdare Edilir",
@@ -206,7 +201,7 @@
       "description": "Kripto yatırımlarınız için güvenli, düşük bakımlı koruma.",
       "benefits": [
         "Talebe bağlı AI güvenlik analizi",
-        "Basit güvenlik derecelendirmeleri (A-F)",
+        "Simple Security Scores from 0 to 100",
         "Anında risk uyarıları",
         "Teknik bilgi gerektirmez"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "Geleneksel denetimler yavaş ve pahalı. Spectra Audit, inceleyebileceğiniz ve yeniden üretebileceğiniz AI tarafından düzenlenen doğrulanabilir güvenlik analizi sunar.",
     "monitoring": {
       "title": "Hızlı AI Analizi",
-      "description": "AI tarafından düzenlenen analiz 5 boyutta paralel olarak çalışır — kod, dağıtım, tokenomik, likidite ve sentiment — izlenebilir kanıtlarla birlikte birleşik skor üretir.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "Genellikle denetim başına 20 dakikanın altında",
       "comparison": "Geleneksel manuel denetimlerden 2,4× daha hızlı"
     },
     "verifiable": {
       "title": "Doğrulanabilir Kanıtlar",
-      "description": "Her bulgu, arkasındaki mantığı, kaynak verileri ve yeniden üretilebilir kanıtları içerir. Her sorunun nasıl tanımlandığını tam olarak görün — kara kutu yok.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "Tamamen şeffaf metodoloji",
       "detail": "Bulgular zincir üstü verilere karşı doğrulanabilir"
     },
     "comprehensive": {
       "title": "Kapsamlı Kapsama",
-      "description": "Gelişmiş AI modelleri, bilinen geniş bir güvenlik açığı sınıfı yelpazesini tespit eder — akıllı sözleşme hatalarından ekonomik saldırı vektörlerine ve yoğunlaşma risklerine kadar.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ açıklama kategorisi",
-      "detail": "Dağıtımdan önce bilinen exploit'lerin %95'ine kadar tespit edilmesine yardımcı olur"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "Talep Üzerine Analiz",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5 Boyutlu",
+      "title": "The Multi-Dimensional",
       "subtitle": "Güvenlik Denetim Çerçevesi",
       "description": "Spectra Audit'nın kapsamlı çok boyutlu analizle blockchain güvenliğini nasıl devrimleştirdiğini ve geleneksel denetimlerin sağlayabileceğinden daha derin öngörüler sunduğunu keşfedin.",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "Geleneksel akıllı sözleşme denetimleri yalnızca kod güvenliğine odaklanır. Önemli olmakla birlikte, bu tek mercekli yaklaşım, çoğu DeFi exploit'ine ve proje başarısızlığına yol açan kritik risk faktörlerini kaçırır.",
       "paragraph2": {
         "before": "Spectra Audit'nın ",
-        "highlight": "5 boyutlu denetim çerçevesi",
-        "after": " projeleri sentiment, kod, tokenomik, likidite ve dağıtım açısından kapsamlı olarak analiz eder; tek başına kod denetimlerinin tespit edemediği tehditlerden yatırımcıları koruyan eksiksiz bir güvenlik tablosu sunar."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "Çekirdek Boyutlar"
-        },
-        "detectionRate": {
-          "value": "%95",
-          "label": "Tespit Oranı"
-        },
         "analysisTime": {
           "value": "≤20 dk",
           "label": "Analiz Süresi"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 Boyut",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "Her boyut benzersiz öngörüler sunar. Birlikte, eksiksiz güvenlik zekası sağlarlar.",
-      "convergeLabel": "5 boyut birleşir",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "Güvenlik Skoru",
         "excellent": "Mükemmel"
       },
       "weightDistribution": {
-        "title": "Ağırlık Dağılımı",
-        "totalLabel": "Toplam:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "Topluluk sağlığı endeksi",
             "fudFomoDetection": "FUD/FOMO tespiti"
           },
-          "weight": "10",
-          "weightNote": "Token'sız projeler için %30"
+          "weight": "10"
         },
         "code": {
           "name": "Kod Güvenliği",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "Bağımlılık analizi",
             "bestPractices": "En iyi uygulama kontrolü"
           },
-          "weight": "45",
-          "weightNote": "Token'sız projeler için %70"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "Tokenomik Sağlığı",
@@ -418,7 +403,7 @@
             "economicModel": "Ekonomik model doğrulaması",
             "unlockSchedule": "Kilit açma programı takibi"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "Likidite Derinliği",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX kapsamı",
             "liquidityConcentration": "Likidite konsantrasyonu"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "Dağıtım Analizi",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "Airdrop analizi",
             "walletDistribution": "Cüzdan dağıtımı"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "Proje Türüne Göre Skorlama Ağırlıkları",
-        "subtitle": "Ağırlıklar, projenin işlem yapılabilir bir token'a sahip olup olmamasına göre uygulanır. Token'sız projeler (yardımcı protokoller, altyapı vb.) dağıtım ve likidite metrikleri geçerli olmadığından kod ve sentiment'i daha fazla vurgular.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "Boyut",
         "headerHasToken": "Token Var",
         "headerNoToken": "Token Yok",
@@ -459,7 +444,13 @@
         "rowLiquidity": "Likidite",
         "rowSentiment": "Sentiment",
         "notApplicable": "Uygulanamaz",
-        "footnote": "Gerçek ağırlıklar backend skorlama hizmetinde denetim türüne göre yapılandırılır ve model yeniden kalibre edildikçe zaman içinde ayarlanabilir."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -472,14 +463,14 @@
       "subtitle": "Skorlama algoritmamız, maksimum tahmin doğruluğu için makine öğrenmesi tarafından sürekli ince ayarlı dinamik ağırlıklı ortalamalar kullanır.",
       "formula": {
         "title": "Güvenlik Skoru Formülü",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Dinamik Ağırlıklar",
-        "aiAdjustments": "AI Ayarlamaları",
-        "accuracy": "Doğruluk"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "Dinamik Ağırlık Dağılımı",
-        "description": "Temel ağırlıklar, geçmiş etki analizine dayalı olarak her boyuta atanır:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "AI Optimizasyon Katmanı",
@@ -494,17 +485,10 @@
       },
       "calculationExample": {
         "title": "Hesaplama Örneği",
-        "comment": "// Örnek: Token'lı proje — ağırlıklar toplam %100",
-        "codeLabel": "Kod Güvenliği",
-        "distributionLabel": "Dağıtım",
-        "tokenomicsLabel": "Tokenomik",
-        "liquidityLabel": "Likidite",
-        "sentimentLabel": "Sentiment",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "Birleşik Skor:",
-        "baseScore": "Temel Skor:",
-        "aiAdjustment": "AI Ayarı:",
-        "aiEnhancedTitle": "AI Geliştirilmiş Doğruluk",
-        "aiEnhancedDescription": "AI ayar faktörü, gerçek güvenlik riskini daha iyi yansıtan bir skor sağlamak için boyutlar arası korelasyonları, proje olgunluğunu, pazar koşullarını ve gerçek zamanlı tehdit verilerini dikkate alır."
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -521,7 +505,7 @@
         },
         "aiAnalysis": {
           "title": "2. AI Analizi",
-          "description": "Gelişmiş ML modelleri, dinamik ağırlık optimizasyonu ile 5 boyutta verileri işler."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. Risk Skorlaması",
@@ -541,7 +525,7 @@
           "phase": "Q1 2025",
           "title": "Temel",
           "items": [
-            "5 boyutlu denetim sisteminin başlatılması",
+            "Launch the multi-dimensional audit system",
             "Ana blockchain ağlarının entegrasyonu",
             "Gerçek zamanlı izleme altyapısının dağıtılması",
             "Güvenlik ortaklıklarının kurulması"
@@ -590,35 +574,35 @@
     },
     "cta": {
       "title": "Daha Derin Güvenlik Öngörülerine Hazır mısınız?",
-      "description": "AI optimize edilmiş skorlama ile 5 boyutlu analizin gücünü deneyimleyin. Haftalar değil dakikalar içinde kapsamlı bir güvenlik denetimi alın.",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "İlk Denetiminizi Başlatın"
     },
     "metadata": {
-      "title": "5 Boyutlu Güvenlik Denetimi Çerçevesi | Spectra Audit",
-      "description": "Spectra Audit'in akıllı sözleşmeleri kod, dağıtım, tokenomik, likidite ve duyarlılık boyutlarında nasıl puanladığı — doğrulanabilir kanıtlarla şeffaf bir not."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "Son Teknoloji Denetim Süreci",
-    "subtitle": "Her denetim, blockchain'in sanal alana alınmış bir fork'unda çalışır — analiz sırasında canlı işlem yok, kullanıcı fonları için risk yok.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "Fork Tabanlı Simülasyon",
       "description": "Akıllı sözleşme etkileşimleri, izole edilmiş bir mainnet fork'unda yeniden oynatılır. Davranışı, canlı ağa işlem yayınlamadan gözlemleriz."
     },
     "aiOrchestration": {
       "title": "AI Tarafından Düzenlenen Analiz",
-      "description": "Birden fazla özelleştirilmiş AI ajanı, kod incelemesi, ekonomik modelleme ve zincir üstü veriler arasında koordine olur — tek bir analizörün başına bulamayacağı bulgular üretir."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "Bytecode ve ABI Statik Analizi",
       "description": "Tarayıcımız, derlenmiş bytecode'u ve ABI'ları doğrudan inceler ve kaynak kodu mevcut olmasa veya kısmen doğrulanmış olsa bile sözleşmelerin analizine olanak tanır."
     },
     "multiDimensional": {
-      "title": "5 Boyutlu Skorlama",
-      "description": "Kod, Dağıtım, Tokenomik, Likidite ve Sentiment paralel olarak bağımsız şekilde puanlanır — ardından birleşik bir güvenlik skoruna ağırlıklandırılır."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "Paralel denetim hattı: beş bağımsız analizör — Kod, Dağıtım, Tokenomik, Likidite ve Sentiment — aynı anda çalışır ve tek bir birleşik güvenlik skorunda birleşir.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "Kod",
         "distribution": "Dağıtım",
@@ -628,12 +612,12 @@
       },
       "compositeLine1": "Birleşik",
       "compositeLine2": "Skor",
-      "subtitle": "5 analizör paralel → ağırlıklı birleşik"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectra Skoru Zamanla Nasıl Gelişir",
-    "subtitle": "Spectra Audit, gerçek dünya geri bildirimleri ve geçmiş denetimlere karşı kalibrasyon yoluyla sürekli gelişir — her analiz bir sonrakine bilgi sağlar.",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "Kullanıcı Geri Bildirim Entegrasyonu",
       "description": "Her bulguya yönelik topluluk derecelendirmeleri ve uzman incelemeleri modele geri besler. Yanlış pozitifler, kaçırılan güvenlik açıkları ve şiddet tartışmaları takip edilir ve skorlama ağırlıklarını yeniden kalibre etmek için kullanılır."
@@ -665,11 +649,12 @@
   },
   "disclaimer": {
     "title": "Önemli Yasal Uyarı",
-    "aiGenerated": "Tüm bulgular AI analizi tarafından üretilir — insan güvenlik denetçileri tarafından değil.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "Sözleşme davranışı, canlı mainnet'te değil, blockchain'in fork edilmiş bir kopyasında analiz edilir.",
     "noGuarantee": "Yüksek bir güvenlik skoru, bir projenin güvenli olduğunu GARANTİ ETMEZ. Skorlar, analiz sırasında mevcut verilerin durumunu yansıtır.",
     "doYourResearch": "Herhangi bir yatırım, dağıtım veya entegrasyon kararı vermeden önce her zaman kendi araştırmanızı yapın (DYOR).",
-    "toolPurpose": "Spectra Audit, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir."
+    "toolPurpose": "Spectra Audit, kullanıcıların bir projenin arkasındaki güvenlik hususlarını anlamalarına yardımcı olmak için tasarlanmış bir bilgi aracıdır. Finansal, yasal veya yatırım tavsiyesi değildir.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "Mükemmel",
@@ -678,8 +663,6 @@
     "poor": "Zayıf",
     "critical": "Kritik",
     "needsWork": "Geliştirilmeli",
-    "security": "Güvenlik",
-    "labelFormat": "Not {letter} - {label}",
     "descriptions": {
       "excellent": "Kritik güvenlik açığı bulunamadı",
       "good": "Küçük sorunlar tespit edildi",
@@ -705,7 +688,7 @@
     "q3": "Spectra Audit'in güvenlik denetimi gerçekten ücretsiz mi?",
     "a3": "Evet. Spectra Audit, kredi kartı gerektirmeden ücretsiz kapsamlı güvenlik denetimleri sunar. Gelişmiş izleme için premium özellikler mevcuttur.",
     "q4": "Spectra Audit'in bulguları ne kadar doğru?",
-    "a4": "Spectra Audit, bilinen güvenlik açığı kalıplarının %95'ine kadarını tespit eder. Tüm bulgular yapay zekâ analiziyle üretilir ve inceleyebileceğiniz doğrulanabilir kanıtlar içerir. Sonuçlar bilgilendirme amaçlıdır ve proje güvenliğini garanti etmez.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit birden fazla blokzinciri destekliyor mu?",
     "a5": "Evet. Spectra Audit; Ethereum, BSC, Polygon, Arbitrum, Optimism ve diğer büyük EVM uyumlu blokzincirleri destekler."
   }

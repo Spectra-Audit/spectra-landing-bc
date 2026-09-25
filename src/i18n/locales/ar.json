@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - عمليات تدقيق الأمان بالذكاء الاصطناعي للبلوك تشين",
-    "description": "درجة أمان واضحة واحدة مع الأدلة معها. عمليات تدقيق AI في الوقت الفعلي يمكنك التحقق منها. احمِ استثماراتك العملية مع مراقبة الأمان المستمرة والشفافة.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "أمان البلوك تشين، تدقيق AI، أمان العقود الذكية، سلامة العملات المشفرة، حماية DeFi",
     "og": {
       "title": "Spectra Audit - عمليات تدقيق الأمان بالذكاء الاصطناعي للبلوك تشين",
-      "description": "درجة أمان واضحة واحدة مع الأدلة معها. عمليات تدقيق AI في الوقت الفعلي يمكنك التحقق منها.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "منصة Spectra Audit لتدقيق الأمان بالذكاء الاصطناعي"
     }
   },
   "meta": {
     "title": "Spectra Audit - عمليات تدقيق الأمان بالذكاء الاصطناعي للبلوك تشين",
-    "description": "درجة أمان واضحة واحدة مع الأدلة معها. عمليات تدقيق AI في الوقت الفعلي يمكنك التحقق منها. احمِ استثماراتك العملية مع مراقبة الأمان المستمرة والشفافة.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "أمان البلوك تشين، تدقيق AI، أمان العقود الذكية، سلامة العملات المشفرة، حماية DeFi"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "احصل على التقرير",
     "trustMetrics": {
       "activeUsers": "المستخدمون النشطون",
-      "accuracy": "كشف الثغرات المعروفة",
       "scanTime": "دقيقة الوقت المعتاد",
       "protectedUsers": "المستخدمون المحميون",
       "uptime": "وقت التشغيل",
-      "detectionRate": "كشف الثغرات المعروفة",
       "threatTypes": "أبعاد التقييم",
       "projectsAnalyzed": "أبعاد التقييم",
       "riskFlagsIdentified": "علامات المخاطر المحددة"
@@ -84,7 +82,7 @@
       "featuresTitle": "تدقيقات أمان الجيل التالي",
       "featuresSubtitle": "تدقيقات الأمان التقليدية بطيئة ومكلفة وتصبح قديمة بسرعة. توفر Spectra Audit مراقبة أمان مستمرة وقابلة للتحقق تواكب الكود الخاص بك.",
       "realTimeMonitoring": "تحليل AI عند الطلب",
-      "realTimeMonitoringDesc": "تحليل عند الطلب مدعوم بالذكاء الاصطناعي عند تقديم المشاريع. تكتمل المراجعة الأمنية الشاملة بخمسة أبعاد في أقل من 20 دقيقة لكل تدقيق.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20د",
       "avgScanTimeLabel": "الوقت المعتاد للتدقيق",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "اكتشافات قابلة لإعادة الإنتاج",
       "publicGitHubRepo": "قابلة للتحقق مقابل بيانات السلسلة",
       "comprehensiveCoverage": "تغطية شاملة",
-      "comprehensiveCoverageDesc": "نماذج الذكاء الاصطناعي المتقدمة تكتشف نطاقاً واسعاً من فئات الثغرات المعروفة — أخطاء العقود الذكية، ومتجهات الهجمات الاقتصادية، ومخاطر التركيز.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "أكثر من 15 فئة ثغرات",
-      "detectionRate": "اكتشاف يصل إلى 95% من المشاكل المعروفة",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "قابل للتحقق وشفاف",
       "productionReadyDesc": "خط أنابيب تحليل شفاف مبني للمطورين والباحثين الذين يريدون فحص وإعادة إنتاج والتحقق من كل خطوة في التدقيق.",
       "thirdPartyVerified": "نتائج قابلة للتحقق",
@@ -109,15 +107,12 @@
       "highAccuracy": "دقة عالية",
       "highAccuracyDesc": "نتائج verified بالذكاء الاصطناعي يمكنك الثقة بها",
       "multiDimensional": "متعدد الأبعاد",
-      "multiDimensionalDesc": "تسجيل أمان بخمسة عوامل",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "تحليل أمان شامل",
       "liveStatusSubtitle": "تسجيل متعدد الأبعاد لتقييم أمان العقود الذكية الكامل.",
       "scanTimeValue": "≤20د",
       "scanTimeLabel": "الوقت المعتاد للتدقيق",
       "scanTimeBadge": "تحليل سريع",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "أبعاد الأمان",
-      "dimensionsBadge": "تسجيل متعدد العوامل",
       "aiPoweredValue": "ذكاء اصطناعي",
       "aiPoweredLabel": "تحليل مدعوم",
       "aiPoweredBadge": "كشف ذكي",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "مُنسَّق بالذكاء الاصطناعي",
-          "description": "خط تحليل خماسي الأبعاد"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "التدقيق",
@@ -180,7 +175,7 @@
       "team": {
         "title": "الفريق والمشاعر",
         "score": "0-100",
-        "description": "فحص الخلفية، وسجل المشاريع السابقة، وإشارات صحة المجتمع، وتحليل المشاعر الاجتماعية، ومؤشرات الثقة العامة.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "قريباً"
       },
       "defi": {
@@ -321,7 +316,7 @@
     },
     "overallScore": {
       "title": "درجة الأمان الإجمالية",
-      "description": "جميع الأبعاد مجتمعة في تصنيف واحد سهل الفهم.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = ممتاز",
       "good": "70-84 = جيد",
       "fair": "55-69 = مقبول",
@@ -341,7 +336,7 @@
       "description": "حماية آمنة ومنخفضة الصيانة لاستثماراتك العملية.",
       "benefits": [
         "تحليل أمني بالذكاء الاصطناعي عند الطلب",
-        "درجات أمان بسيطة (A-F)",
+        "Simple Security Scores from 0 to 100",
         "تنبيهات المخاطر الفورية",
         "لا تتطلب معرفة تقنية"
       ],
@@ -368,21 +363,21 @@
     "subtitle": "عمليات التدقيق التقليدية بطيئة ومكلفة. توفر Spectra Audit تحليلاً أمنياً منسقاً بالذكاء الاصطناعي وقابلاً للتحقق يمكنك فحصه وإعادة إنتاجه.",
     "monitoring": {
       "title": "تحليل سريع بالذكاء الاصطناعي",
-      "description": "يعمل التحليل المنسق بالذكاء الاصطناعي عبر 5 أبعاد بالتوازي — الكود، التوزيع، اقتصاديات الرموز، السيولة، والمشاعر — منتجاً درجة مركبة بأدلة قابلة للتتبع.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "عادة أقل من 20 دقيقة لكل تدقيق",
       "comparison": "أسرع بأكثر من 2.4× من عمليات التدقيق اليدوية التقليدية"
     },
     "verifiable": {
       "title": "الأدلة القابلة للتحقيق",
-      "description": "كل اكتشاف يتضمن المنطق، وبيانات المصدر، والأدلة القابلة لإعادة الإنتاج وراءه. شاهد بالضبط كيف تم تحديد كل مشكلة — بدون صناديق سوداء.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "منهجية شفافة بالكامل",
       "detail": "اكتشافات قابلة للتحقق مقابل بيانات السلسلة"
     },
     "comprehensive": {
       "title": "التغطية الشاملة",
-      "description": "نماذج الذكاء الاصطناعي المتقدمة تكتشف نطاقاً واسعاً من فئات الثغرات المعروفة — من أخطاء العقود الذكية إلى متجهات الهجمات الاقتصادية ومخاطر التركيز.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "أكثر من 15 فئة ثغرات",
-      "detail": "يساعد في اكتشاف ما يصل إلى 95% من الاستغلالات المعروفة قبل النشر"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "التحليل عند الطلب",
@@ -459,7 +454,7 @@
   "whitepaper": {
     "badge": "الورقة البيضاء v1.0",
     "hero": {
-      "title": "5 أبعاد",
+      "title": "The Multi-Dimensional",
       "subtitle": "إطار تدقيق الأمان",
       "description": "اكتشف كيف تُحدث Spectra Audit ثورة في أمان البلوك تشين من خلال التحليل متعدد الأبعاد الشامل، وتوفر رؤى أعمق مما يمكن للتدقيق التقليدي",
       "buttons": {
@@ -473,18 +468,10 @@
       "paragraph1": "تركز عمليات تدقيق العقود الذكية التقليدية حصريًا على أمان الكود. على الرغم من أهميتها، يفوت هذا النهج أحادي العدسة عوامل الخطر الحرجة التي تؤدي إلى معظم عمليات استغلال DeFi وفشل المشاريع.",
       "paragraph2": {
         "before": "إطار التدقيق",
-        "highlight": "5 الأبعاد",
-        "after": " من Spectra Audit يحلل المشاريع بشكل شامل عبر المشاعر والكود والتمويل والسيولة والتوزيع—مما يوفر صورة أمان كاملة تحمي المستثمرين من التهديدات التي لا يمكن لعمليات تدقيق الكود وحدها اكتشافها."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "الأبعاد الأساسية"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "معدل الكشف"
-        },
         "analysisTime": {
           "value": "≤20 دقيقة",
           "label": "وقت التحليل"
@@ -498,20 +485,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 الأبعاد",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "كل بُعد يوفر رؤى فريدة. معًا، يقدمون ذكاء أمان كاملاً.",
-      "convergeLabel": "5 أبعاد تتقاطع",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "درجة الأمان",
         "excellent": "ممتاز"
       },
       "weightDistribution": {
-        "title": "توزيع الأوزان",
-        "totalLabel": "المجموع:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -525,8 +512,7 @@
             "communityHealth": "مؤشر صحة المجتمع",
             "fudFomoDetection": "كشف الخوف والطمع"
           },
-          "weight": "10",
-          "weightNote": "30% للمشاريع بدون رمز"
+          "weight": "10"
         },
         "code": {
           "name": "أمان الكود",
@@ -539,8 +525,7 @@
             "dependencyAnalysis": "تحليل الاعتماديات",
             "bestPractices": "فحص الممارسات المثلى"
           },
-          "weight": "45",
-          "weightNote": "70% للمشاريع بدون رمز"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "صحة التوكينوميكس",
@@ -553,7 +538,7 @@
             "economicModel": "التحقق من صحة النموذج الاقتصادي",
             "unlockSchedule": "تتبع جدول الفتح"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "عمق السيولة",
@@ -566,7 +551,7 @@
             "dexCoverage": "تغطية منصات التداول اللامركزية",
             "liquidityConcentration": "تركز السيولة"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "تحليل التوزيع",
@@ -579,12 +564,12 @@
             "airdropAnalysis": "تحليل الإيردروب",
             "walletDistribution": "توزيع المحافظ"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "أوزان التسجيل حسب نوع المشروع",
-        "subtitle": "يتم تطبيق الأوزان بناءً على ما إذا كان المشروع يمتلك رمزاً قابلاً للتداول. تركز المشاريع بدون رمز (بروتوكولات المرافق، البنية التحتية، إلخ) على الكود والمشاعر بشكل أكبر لأن مقاييس التوزيع والسيولة لا تنطبق.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "البُعد",
         "headerHasToken": "مع رمز",
         "headerNoToken": "بدون رمز",
@@ -594,7 +579,13 @@
         "rowLiquidity": "السيولة",
         "rowSentiment": "المشاعر",
         "notApplicable": "غير قابل للتطبيق",
-        "footnote": "يتم تكوين الأوزان الفعلية لكل نوع تدقيق في خدمة التسجيل في الخلفية وقد يتم ضبطها بمرور الوقت مع إعادة معايرة النموذج."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -607,14 +598,14 @@
       "subtitle": "خوارزمية التسجيل الخاصة بنا تستخدم المتوسطات المرجحة الديناميكية، يتم ضبطها بشكل مستمر بواسطة التعلم الآلي للحصول على أقصى دقة تنبؤية.",
       "formula": {
         "title": "معادلة درجة الأمان",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "الأوزان الديناميكية",
-        "aiAdjustments": "تعديلات الذكاء الاصطناعي",
-        "accuracy": "الدقة"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "توزيع الوزن الديناميكي",
-        "description": "يتم تعيين الأوزان الأساسية لكل بُعد بناءً على تحليل التأثير التاريخي:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "طبقة التحسين بالذكاء الاصطناعي",
@@ -629,17 +620,10 @@
       },
       "calculationExample": {
         "title": "مثال الحساب",
-        "comment": "// مثال: مشروع مع رمز — مجموع الأوزان 100%",
-        "codeLabel": "أمان الكود",
-        "distributionLabel": "التوزيع",
-        "tokenomicsLabel": "اقتصاديات الرموز",
-        "liquidityLabel": "السيولة",
-        "sentimentLabel": "المشاعر",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "الدرجة المركبة:",
-        "baseScore": "الدرجة الأساسية:",
-        "aiAdjustment": "تعديل الذكاء الاصطناعي:",
-        "aiEnhancedTitle": "دقة محسّنة بالذكاء الاصطناعي",
-        "aiEnhancedDescription": "يأخذ عامل تعديل الذكاء الاصطناعي في الاعتبار الارتباطات متعددة الأبعاد، ونضج المشروع، وظروف السوق، وبيانات التهديدات في الوقت الفعلي لتوفير درجة تعكس بشكل أفضل مخاطر الأمان الحقيقية."
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -656,7 +640,7 @@
         },
         "aiAnalysis": {
           "title": "2. تحليل الذكاء الاصطناعي",
-          "description": "تقوم نماذج التعلم الآلي المتقدمة بمعالجة البيانات عبر جميع الأبعاد الخمسة مع تحسين الوزن الديناميكي."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. تسجيل المخاطر",
@@ -676,7 +660,7 @@
           "phase": "Q1 2025",
           "title": "التأسيس",
           "items": [
-            "إطلاق نظام تدقيق خماسي الأبعاد",
+            "Launch the multi-dimensional audit system",
             "دمج شبكات البلوك تشين الرئيسية",
             "نشر بنية تحتية للمراقبة في الوقت الفعلي",
             "إقامة شراكات الأمان"
@@ -725,35 +709,35 @@
     },
     "cta": {
       "title": "هل أنت مستعد لرؤى أمان أعمق؟",
-      "description": "جرب قوة التحليل خماسي الأبعاد مع تسجيل محسّن بالذكاء الاصطناعي. احصل على تدقيق أمان شامل في دقائق — وليس أسابيع.",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "ابدأ أول تدقيق لك"
     },
     "metadata": {
-      "title": "إطار تدقيق الأمان خماسي الأبعاد | Spectra Audit",
-      "description": "كيف تُقيِّم Spectra Audit العقود الذكية عبر الكود والتوزيع واقتصاد الرموز والسيولة والمشاعر — درجة شفافة مدعومة بأدلة يمكن التحقق منها."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "عملية تدقيق متطورة",
-    "subtitle": "كل تدقيق يتم على فرع رمل من البلوك تشين — لا توجد معاملات حية، ولا مخاطر على أموال المستخدمين أثناء التحليل.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "محاكاة قائمة على الفرع",
       "description": "يتم إعادة تشغيل تفاعلات العقود الذكية على فرع معزول من الشبكة الرئيسية. نلاحظ السلوك دون بث المعاملات إلى الشبكة الحية."
     },
     "aiOrchestration": {
       "title": "تحليل منسق بالذكاء الاصطناعي",
-      "description": "تنسق وكلاء ذكاء اصطناعي متخصصون متعددون عبر مراجعة الكود، والنمذجة الاقتصادية، وبيانات السلسلة — منتجة اكتشافات لا يستطيع محلل واحد كشفها بمفرده."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "التحليل الثابت للبايت كود وABI",
       "description": "يفحص الماسح الضوئي لدينا البايت كود المترجم وABIs مباشرة، مما يسمح بتحليل العقود حتى عندما لا يكون الكود المصدري متاحاً أو تم التحقق منه جزئياً."
     },
     "multiDimensional": {
-      "title": "التسجيل خماسي الأبعاد",
-      "description": "يتم تسجيل الكود، والتوزيع، واقتصاديات الرموز، والسيولة، والمشاعر بشكل مستقل بالتوازي — ثم يتم ترجيحها في درجة أمان مركبة."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "خط أنابيب تدقيق متوازٍ: خمسة محللات مستقلة — الكود، التوزيع، التوكينوميكس، السيولة، والمشاعر — تعمل في وقت واحد وتتقارب في درجة أمان مركبة واحدة.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "الكود",
         "distribution": "التوزيع",
@@ -763,12 +747,12 @@
       },
       "compositeLine1": "الدرجة",
       "compositeLine2": "المركبة",
-      "subtitle": "5 محللات تعمل بالتوازي ← مركب مُرجَّح"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "كيف تتحسن درجة Spectra بمرور الوقت",
-    "subtitle": "تتحسن Spectra Audit باستمرار من خلال التعليقات الواقعية والمعايرة مقابل التدقيقات التاريخية — كل تحليل يفيد التحليل التالي.",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "دمج تعليقات المستخدم",
       "description": "تعود تقييمات المجتمع ومراجعات الخبراء على كل اكتشاف إلى النموذج. يتم تتبع الإيجابيات الخاطئة، والثغرات المفقودة، ونزاعات الشدة واستخدامها لإعادة معايرة أوزان التسجيل."
@@ -800,11 +784,12 @@
   },
   "disclaimer": {
     "title": "إخلاء مسؤولية مهم",
-    "aiGenerated": "جميع الاكتشافات يتم إنتاجها بواسطة تحليل الذكاء الاصطناعي — وليس بواسطة مدققي أمان بشريين.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "يتم تحليل سلوك العقد على نسخة مفرعة من البلوك تشين، وليس على الشبكة الرئيسية الحية.",
     "noGuarantee": "درجة الأمان العالية لا تضمن أن المشروع آمن. تعكس الدرجات حالة البيانات المتاحة وقت التحليل.",
     "doYourResearch": "دائماً قم بإجراء بحثك الخاص (DYOR) قبل اتخاذ أي قرارات استثمار أو نشر أو تكامل.",
-    "toolPurpose": "Spectra Audit هي أداة معلوماتية مصممة لمساعدة المستخدمين على فهم اعتبارات الأمان وراء المشروع. وهي ليست نصيحة مالية أو قانونية أو استثمارية."
+    "toolPurpose": "Spectra Audit هي أداة معلوماتية مصممة لمساعدة المستخدمين على فهم اعتبارات الأمان وراء المشروع. وهي ليست نصيحة مالية أو قانونية أو استثمارية.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "ممتاز",
@@ -813,8 +798,6 @@
     "poor": "ضعيف",
     "critical": "حرج",
     "needsWork": "يحتاج تحسين",
-    "security": "الأمان",
-    "labelFormat": "الدرجة {letter} - {label}",
     "descriptions": {
       "excellent": "لم يُعثر على ثغرات حرجة",
       "good": "تم تحديد مشكلات طفيفة",
@@ -840,7 +823,7 @@
     "q3": "هل تدقيق الأمان من Spectra Audit مجاني حقًا؟",
     "a3": "نعم. تقدم Spectra Audit تدقيقات أمان شاملة مجانية دون الحاجة إلى بطاقة ائتمان. تتوفر ميزات مدفوعة للمراقبة المتقدمة.",
     "q4": "ما مدى دقة نتائج Spectra Audit؟",
-    "a4": "تكتشف Spectra Audit ما يصل إلى 95% من أنماط الثغرات المعروفة. جميع النتائج ناتجة عن تحليل بالذكاء الاصطناعي وتتضمن أدلة يمكن التحقق منها. النتائج معلوماتية ولا تضمن سلامة المشروع.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "هل تدعم Spectra Audit عدة سلاسل كتل؟",
     "a5": "نعم. تدعم Spectra Audit شبكات Ethereum وBSC وPolygon وArbitrum وOptimism وغيرها من الشبكات المتوافقة مع EVM."
   }

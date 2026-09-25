@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI 기반 블록체인 보안 감사",
-    "description": "명확한 보안 등급과 그 뒤의 증거. 검증 가능한 실시간 AI 감사. 지속적이고 투명한 보안 모니터링으로 암호화폐 자산 투자를 보호하세요.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "블록체인 보안, AI 감사, 스마트 컨트랙트 보안, 암호화폐 보안, DeFi 보호",
     "og": {
       "title": "Spectra Audit - AI 기반 블록체인 보안 감사",
-      "description": "명확한 보안 등급과 그 뒤의 증거. 검증 가능한 실시간 AI 감사.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI 보안 감사 플랫폼"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI 기반 블록체인 보안 감사",
-    "description": "명확한 보안 등급과 그 뒤의 증거. 검증 가능한 실시간 AI 감사. 지속적이고 투명한 보안 모니터링으로 암호화폐 자산 투자를 보호하세요.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "블록체인 보안, AI 감사, 스마트 컨트랙트 보안, 암호화폐 보안, DeFi 보호"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "보고서 받기",
     "trustMetrics": {
       "activeUsers": "활성 사용자",
-      "accuracy": "알려진 취약점 탐지",
       "scanTime": "분 표준 시간",
       "protectedUsers": "보호된 사용자",
       "uptime": "가동 시간",
-      "detectionRate": "알려진 취약점 탐지",
       "threatTypes": "스코어링 차원",
       "projectsAnalyzed": "스코어링 차원",
       "riskFlagsIdentified": "식별된 위험 플래그"
@@ -84,7 +82,7 @@
       "featuresTitle": "차세대 보안 감사",
       "featuresSubtitle": "기존 감사는 느리고 비용이 많이 들며 빠르게 구식이 됩니다. Spectra Audit는 귀하의 코드와 함께 발전하는 지속적이고 검증 가능한 보안 모니터링을 제공합니다.",
       "realTimeMonitoring": "온디맨드 AI 분석",
-      "realTimeMonitoringDesc": "프로젝트가 제출될 때 진행되는 온디맨드 AI 기반 분석. 포괄적인 5차원 보안 검토가 감사당 20분 이내에 완료됩니다.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20분",
       "avgScanTimeLabel": "표준 감사 시간",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "재현 가능한 발견 사항",
       "publicGitHubRepo": "온체인 데이터로 검증 가능",
       "comprehensiveCoverage": "포괄적인 커버리지",
-      "comprehensiveCoverageDesc": "고급 AI 모델이 알려진 취약점 클래스의 광범위한 범위를 탐지합니다 — 스마트 컨트랙트 버그, 경제적 공격 벡터 및 집중도 리스크.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ 취약점 카테고리",
-      "detectionRate": "알려진 문제의 최대 95% 탐지",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "검증 가능하고 투명함",
       "productionReadyDesc": "감사의 모든 단계를 검사, 재현 및 검증하려는 개발자 및 연구자를 위해 구축된 투명한 분석 파이프라인.",
       "thirdPartyVerified": "검증 가능한 결과",
@@ -109,15 +107,12 @@
       "highAccuracy": "높은 정확도",
       "highAccuracyDesc": "신뢰할 수 있는 AI 검증 결과",
       "multiDimensional": "다차원",
-      "multiDimensionalDesc": "5요인 보안 점수 매기기",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "포괄적인 보안 분석",
       "liveStatusSubtitle": "완전한 스마트 컨트랙트 보안 평가를 위한 다차원 점수 매기기.",
       "scanTimeValue": "≤20분",
       "scanTimeLabel": "표준 감사 시간",
       "scanTimeBadge": "빠른 분석",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "보안 차원",
-      "dimensionsBadge": "다중 요인 점수 매기기",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "AI 기반 분석",
       "aiPoweredBadge": "스마트 감지",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI 오케스트레이션",
-          "description": "5차원 분석 파이프라인"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "감사",
@@ -180,13 +175,13 @@
       "team": {
         "title": "팀 및 정서",
         "score": "0-100",
-        "description": "배경 확인, 과거 프로젝트 이력, 커뮤니티 건전성 신호, 소셜 정서 분석, 공개 신뢰 지표.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "곧 출시"
       }
     },
     "overallScore": {
       "title": "종합 보안 점수",
-      "description": "모든 차원을 결합한 이해하기 쉬운 단일 등급.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = 우수",
       "good": "70-84 = 양호",
       "fair": "55-69 = 보통",
@@ -206,7 +201,7 @@
       "description": "암호화폐 자산을 위한 안전하고 관리가 용이한 보호",
       "benefits": [
         "온디맨드 AI 보안 분석",
-        "이해하기 쉬운 보안 등급 (A-F)",
+        "Simple Security Scores from 0 to 100",
         "위험 즉시 알림",
         "별도의 기술 지식 불필요"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "기존 감사는 느리고 비쌉니다. Spectra Audit는 검사 및 재현이 가능한 AI 오케스트레이션 기반의 검증 가능한 보안 분석을 제공합니다.",
     "monitoring": {
       "title": "빠른 AI 분석",
-      "description": "AI 오케스트레이션 분석은 5개 차원에서 병렬로 실행됩니다 — 코드, 분배, 토크노믹스, 유동성, 감성 — 추적 가능한 증거가 있는 복합 점수를 생성합니다.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "일반적으로 감사당 20분 미만",
       "comparison": "기존 수동 감사보다 2.4배 이상 빠름"
     },
     "verifiable": {
       "title": "검증 가능한 증거",
-      "description": "모든 발견에는 그 뒤에 있는 추론, 소스 데이터 및 재현 가능한 증거가 포함됩니다. 각 문제가 식별된 방법을 정확히 확인하세요 — 블랙박스가 없습니다.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "완전히 투명한 방법론",
       "detail": "온체인 데이터로 검증 가능한 발견 사항"
     },
     "comprehensive": {
       "title": "포괄적인 범위",
-      "description": "고급 AI 모델은 알려진 취약점 클래스의 광범위한 범위를 탐지합니다 — 스마트 컨트랙트 버그부터 경제적 공격 벡터 및 집중도 리스크까지.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15가지 이상의 취약점 카테고리",
-      "detail": "배포 전 알려진 익스플로잇의 최대 95% 탐지에 도움"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "온디맨드 분석",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5차원",
+      "title": "The Multi-Dimensional",
       "subtitle": "보안 감사 프레임워크",
       "description": "Spectra Audit가 포괄적인 다차원 분석을 통해 블록체인 보안을 어떻게 혁신하고 전통적인 감사보다 더 깊은 통찰력을 제공하는지 알아보세요.",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "전통적인 스마트 컨트랙트 감사는 코드 보안에만 집중합니다. 중요하지만 이 단일 렌즈 접근 방식은 대부분의 DeFi 익스플로잇과 프로젝트 실패로 이어지는 중요한 위험 요소를 놓칩니다.",
       "paragraph2": {
         "before": "Spectra Audit의",
-        "highlight": "5차원 감사 프레임워크",
-        "after": "는 감정, 코드, 토크노믹스, 유동성, 분포의 관점에서 프로젝트를 포괄적으로 분석하여——코드 감사만으로는 감지할 수 없는 위협으로부터 투자자를 보호하는 완전한 보안 그림을 제공합니다."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "핵심 차원"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "탐지율"
-        },
         "analysisTime": {
           "value": "≤20 분",
           "label": "분석 시간"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5개 차원",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "각 차원은 고유한 통찰력을 제공합니다. 함께 완전한 보안 인텔리전스를 전달합니다.",
-      "convergeLabel": "5개 차원 수렴",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "보안 점수",
         "excellent": "우수"
       },
       "weightDistribution": {
-        "title": "가중치 분포",
-        "totalLabel": "전체:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "커뮤니티 건강 지수",
             "fudFomoDetection": "FUD/FOMO 탐지"
           },
-          "weight": "10",
-          "weightNote": "토큰이 없는 프로젝트의 경우 30%"
+          "weight": "10"
         },
         "code": {
           "name": "코드 보안",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "의존성 분석",
             "bestPractices": "모범 사례 검사"
           },
-          "weight": "45",
-          "weightNote": "토큰이 없는 프로젝트의 경우 70%"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "토크노믹스 건전성",
@@ -418,7 +403,7 @@
             "economicModel": "경제 모델 검증",
             "unlockSchedule": "잠금 해제 일정 추적"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "유동성 깊이",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX 커버리지",
             "liquidityConcentration": "유동성 집중도"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "분포 분석",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "에어드롭 분석",
             "walletDistribution": "지갑 분배"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "프로젝트 유형별 스코어링 가중치",
-        "subtitle": "가중치는 프로젝트가 거래 가능한 토큰을 가지고 있는지 여부에 따라 적용됩니다. 토큰이 없는 프로젝트(유틸리티 프로토콜, 인프라 등)는 분배 및 유동성 지표가 적용되지 않으므로 코드와 감성을 더 강조합니다.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "차원",
         "headerHasToken": "토큰 있음",
         "headerNoToken": "토큰 없음",
@@ -459,7 +444,13 @@
         "rowLiquidity": "유동성",
         "rowSentiment": "감성",
         "notApplicable": "해당 없음",
-        "footnote": "실제 가중치는 백엔드 스코어링 서비스에서 감사 유형별로 구성되며, 모델이 재보정됨에 따라 시간이 지나면서 조정될 수 있습니다."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -472,14 +463,14 @@
       "subtitle": "우리의 점수 매기기 알고리즘은 동적 가중 평균을 사용하며 기계 학습에 의해 지속적으로 미세 조정되어 최대의 예측 정확도를 제공합니다.",
       "formula": {
         "title": "보안 점수 공식",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "동적 가중치",
-        "aiAdjustments": "AI 조정",
-        "accuracy": "정확도"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "동적 가중치 분포",
-        "description": "기본 가중치는 과거 영향 분석을 기반으로 각 차원에 할당됩니다:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "AI 최적화 레이어",
@@ -494,17 +485,10 @@
       },
       "calculationExample": {
         "title": "계산 예시",
-        "comment": "// 예: 토큰이 있는 프로젝트 — 가중치 합계는 100%",
-        "codeLabel": "코드 보안",
-        "distributionLabel": "분배",
-        "tokenomicsLabel": "토크노믹스",
-        "liquidityLabel": "유동성",
-        "sentimentLabel": "감성",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "복합 점수:",
-        "baseScore": "기본 점수:",
-        "aiAdjustment": "AI 조정:",
-        "aiEnhancedTitle": "AI 향상 정확도",
-        "aiEnhancedDescription": "AI 조정 요소는 차원 간 상관관계, 프로젝트 성숙도, 시장 상태 및 실시간 위협 데이터를 고려하여 실제 보안 리스크를 더 잘 반영하는 점수를 제공합니다."
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -521,7 +505,7 @@
         },
         "aiAnalysis": {
           "title": "2. AI 분석",
-          "description": "고급 ML 모델이 동적 가중치 최적화로 모든 5차원의 데이터를 처리합니다."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. 리스크 점수 매기기",
@@ -541,7 +525,7 @@
           "phase": "Q1 2025",
           "title": "기반",
           "items": [
-            "5차원 감사 시스템 출시",
+            "Launch the multi-dimensional audit system",
             "주요 블록체인 네트워크 통합",
             "실시간 모니터링 인프라 배포",
             "보안 파트너십 확립"
@@ -590,35 +574,35 @@
     },
     "cta": {
       "title": "더 깊은 보안 인사이트를 준비하셨나요?",
-      "description": "AI 최적화 점수 매기기로 5차원 분석의 힘을 경험하세요. 몇 주가 아닌 몇 분 안에 포괄적인 보안 감사를 받으세요.",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "첫 번째 감사 시작"
     },
     "metadata": {
-      "title": "5차원 보안 감사 프레임워크 | Spectra Audit",
-      "description": "Spectra Audit가 코드, 분포, 토크노믹스, 유동성, 센티먼트의 5개 차원에서 스마트 컨트랙트를 평가하는 방법 — 검증 가능한 증거가 있는 투명한 등급."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "최첨단 감사 프로세스",
-    "subtitle": "모든 감사는 블록체인의 샌드박스 포크에서 실행됩니다 — 라이브 거래 없음, 분석 중 사용자 자금에 대한 위험 없음.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "포크 기반 시뮬레이션",
       "description": "스마트 컨트랙트 상호 작용은 격리된 메인넷 포크에서 재생됩니다. 라이브 네트워크에 거래를 브로드캐스트하지 않고 동작을 관찰합니다."
     },
     "aiOrchestration": {
       "title": "AI 오케스트레이션 분석",
-      "description": "여러 전문 AI 에이전트가 코드 검토, 경제 모델링 및 온체인 데이터에 걸쳐 조정됩니다 — 단일 분석기 혼자서는 드러낼 수 없는 발견을 생성합니다."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "바이트코드 및 ABI 정적 분석",
       "description": "스캐너는 컴파일된 바이트코드와 ABI를 직접 검사하므로 소스 코드가 없거나 부분적으로만 검증된 경우에도 컨트랙트를 분석할 수 있습니다."
     },
     "multiDimensional": {
-      "title": "5차원 스코어링",
-      "description": "코드, 분배, 토크노믹스, 유동성, 감성이 병렬로 독립적으로 채점됩니다 — 그런 다음 복합 보안 점수로 가중치가 부여됩니다."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "병렬 감사 파이프라인: 코드, 분포, 토크노믹스, 유동성, 감성의 다섯 가지 독립 분석기가 동시에 실행되어 하나의 복합 보안 점수로 수렴합니다.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "코드",
         "distribution": "분포",
@@ -628,12 +612,12 @@
       },
       "compositeLine1": "복합",
       "compositeLine2": "점수",
-      "subtitle": "5개 분석기 병렬 실행 → 가중 복합 점수"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectra 점수가 시간이 지나면서 향상되는 방식",
-    "subtitle": "Spectra Audit는 실제 피드백과 과거 감사에 대한 보정을 통해 지속적으로 개선됩니다 — 모든 분석이 다음 분석에 정보를 제공합니다.",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "사용자 피드백 통합",
       "description": "각 발견에 대한 커뮤니티 평가와 전문가 리뷰가 모델로 피드백됩니다. 오탐, 누락된 취약점 및 심각도 분쟁이 추적되어 스코어링 가중치를 재보정하는 데 사용됩니다."
@@ -665,11 +649,12 @@
   },
   "disclaimer": {
     "title": "중요한 면책 조항",
-    "aiGenerated": "모든 발견 사항은 AI 분석에 의해 생성됩니다 — 인간 보안 감사인이 아닙니다.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "컨트랙트 동작은 라이브 메인넷이 아닌 블록체인의 포크된 복제본에서 분석됩니다.",
     "noGuarantee": "높은 보안 점수가 프로젝트가 안전하다는 것을 보장하지는 않습니다. 점수는 분석 시점에 사용 가능한 데이터의 상태를 반영합니다.",
     "doYourResearch": "투자, 배포 또는 통합 결정을 내리기 전에 항상 자신의 조사(DYOR)를 수행하십시오.",
-    "toolPurpose": "Spectra Audit는 사용자가 프로젝트 뒤의 보안 고려 사항을 이해하는 데 도움이 되도록 설계된 정보 도구입니다. 재무, 법률 또는 투자 조언이 아닙니다."
+    "toolPurpose": "Spectra Audit는 사용자가 프로젝트 뒤의 보안 고려 사항을 이해하는 데 도움이 되도록 설계된 정보 도구입니다. 재무, 법률 또는 투자 조언이 아닙니다.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "우수",
@@ -678,8 +663,6 @@
     "poor": "미흡",
     "critical": "심각",
     "needsWork": "개선 필요",
-    "security": "보안",
-    "labelFormat": "{letter}등급 - {label}",
     "descriptions": {
       "excellent": "심각한 취약점이 발견되지 않음",
       "good": "사소한 문제 발견",
@@ -705,7 +688,7 @@
     "q3": "Spectra Audit의 보안 감사는 정말 무료인가요?",
     "a3": "네. 신용카드 없이 무료로 종합 보안 감사를 제공합니다. 고급 모니터링을 위한 프리미엄 기능도 제공됩니다.",
     "q4": "Spectra Audit의 결과는 얼마나 정확한가요?",
-    "a4": "알려진 취약점 패턴의 최대 95%를 탐지합니다. 모든 결과는 AI 분석으로 생성되며 직접 확인할 수 있는 증거가 포함됩니다. 결과는 참고용이며 프로젝트의 안전을 보장하지 않습니다.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit는 여러 블록체인을 지원하나요?",
     "a5": "네. Ethereum, BSC, Polygon, Arbitrum, Optimism 및 기타 주요 EVM 호환 체인을 지원합니다."
   }

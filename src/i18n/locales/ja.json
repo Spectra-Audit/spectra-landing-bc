@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AIによるブロックチェーンセキュリティ監査",
-    "description": "明確なセキュリティ評価と、その根拠となる検証可能な証拠。AIによるリアルタイム監査を体験してください。継続的かつ透明性の高いセキュリティ監視で、あなたの暗号資産を守ります。",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "ブロックチェーンセキュリティ, AI監査, スマートコントラクトセキュリティ, 暗号資産セキュリティ, DeFi保護",
     "og": {
       "title": "Spectra Audit - AIによるブロックチェーンセキュリティ監査",
-      "description": "明確なセキュリティ評価と、その根拠となる検証可能な証拠。AIによるリアルタイム監査。",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI セキュリティ監査プラットフォーム"
     }
   },
   "meta": {
     "title": "Spectra Audit - AIによるブロックチェーンセキュリティ監査",
-    "description": "明確なセキュリティ評価と、その根拠となる検証可能な証拠。AIによるリアルタイム監査を体験してください。継続的かつ透明性の高いセキュリティ監視で、あなたの暗号資産を守ります。",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "ブロックチェーンセキュリティ, AI監査, スマートコントラクトセキュリティ, 暗号資産セキュリティ, DeFi保護"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "レポートを取得",
     "trustMetrics": {
       "activeUsers": "アクティブユーザー",
-      "accuracy": "既知の脆弱性検出",
       "scanTime": "分 標準時間",
       "protectedUsers": "保護されたユーザー",
       "uptime": "稼働時間",
-      "detectionRate": "既知の脆弱性検出",
       "threatTypes": "スコアリング次元",
       "projectsAnalyzed": "スコアリング次元",
       "riskFlagsIdentified": "特定されたリスクフラグ"
@@ -84,7 +82,7 @@
       "featuresTitle": "次世代のセキュリティ監査",
       "featuresSubtitle": "従来の監査は遅く、高価で、すぐに古くなります。Spectra Audit は、あなたのコードに合わせて進化する継続的で検証可能なセキュリティ監視を提供します。",
       "realTimeMonitoring": "オンデマンドAI分析",
-      "realTimeMonitoringDesc": "プロジェクトが提出されたときに行われるオンデマンドのAI駆動分析。包括的な5次元セキュリティレビューは、監査ごとに20分以内に完了します。",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20分",
       "avgScanTimeLabel": "標準的な監査時間",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "再現可能な発見",
       "publicGitHubRepo": "オンチェーンデータと照合して検証可能",
       "comprehensiveCoverage": "包括的なカバレッジ",
-      "comprehensiveCoverageDesc": "高度なAIモデルは、既知の脆弱性クラスの幅広い範囲を検出します — スマートコントラクトのバグ、経済攻撃ベクトル、集中度リスク。",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ 脆弱性カテゴリー",
-      "detectionRate": "既知の問題を最大95%検出",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "検証可能で透明",
       "productionReadyDesc": "監査のすべてのステップを検査、再現、検証したい開発者と研究者のために構築された、透明性のある分析パイプライン。",
       "thirdPartyVerified": "検証可能な結果",
@@ -109,15 +107,12 @@
       "highAccuracy": "高精度",
       "highAccuracyDesc": "信頼できるAI検証結果",
       "multiDimensional": "多次元",
-      "multiDimensionalDesc": "5因子セキュリティスコアリング",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "包括的なセキュリティ分析",
       "liveStatusSubtitle": "完全なスマートコントラクトセキュリティ評価のための多次元スコアリング。",
       "scanTimeValue": "≤20分",
       "scanTimeLabel": "標準的な監査時間",
       "scanTimeBadge": "高速分析",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "セキュリティ次元",
-      "dimensionsBadge": "多因子スコアリング",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "AI駆動分析",
       "aiPoweredBadge": "スマート検出",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AIオーケストレーション",
-          "description": "5次元分析パイプライン"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "監査",
@@ -180,13 +175,13 @@
       "team": {
         "title": "チームとセンチメント",
         "score": "0-100",
-        "description": "背景確認、過去のプロジェクト履歴、コミュニティヘルスシグナル、ソーシャルセンチメント分析、公開信頼指標。",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "近日公開"
       }
     },
     "overallScore": {
       "title": "総合セキュリティスコア",
-      "description": "すべての次元を組み合わせた、理解しやすい単一のグレード。",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = 優秀",
       "good": "70-84 = 良好",
       "fair": "55-69 = 普通",
@@ -206,7 +201,7 @@
       "description": "暗号資産を、手間なく安全に保護します。",
       "benefits": [
         "オンデマンドのAIセキュリティ分析",
-        "シンプルなセキュリティ評価（A～F）",
+        "Simple Security Scores from 0 to 100",
         "リスクの即時通知",
         "専門知識は不要"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "従来の監査は遅く高コストです。Spectra Auditは、検査と再現が可能なAIオーケストレーションによる検証可能なセキュリティ分析を提供します。",
     "monitoring": {
       "title": "高速なAI分析",
-      "description": "AIオーケストレーション分析が5つの次元 — コード、分布、トコノミクス、流動性、センチメント — を並行して実行し、追跡可能なエビデンスを伴う複合スコアを生成します。",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "通常、監査ごとに20分以下",
       "comparison": "従来の手動監査の2.4倍以上の速さ"
     },
     "verifiable": {
       "title": "検証可能な証拠",
-      "description": "すべての発見には、その背後にある推論、ソースデータ、再現可能なエビデンスが含まれます。各問題がどのように識別されたかを正確に確認できます — ブラックボックスはありません。",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "完全に透明な方法論",
       "detail": "オンチェーンデータと照合して検証可能な発見"
     },
     "comprehensive": {
       "title": "包括的なカバレッジ",
-      "description": "高度なAIモデルが既知の脆弱性クラスの幅広い範囲を検出します — スマートコントラクトのバグから経済的な攻撃ベクトル、集中度リスクまで。",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15以上の脆弱性カテゴリー",
-      "detail": "デプロイ前に既知の脆弱性の最大95%を検出するのに役立ちます"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "オンデマンド分析",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5次元",
+      "title": "The Multi-Dimensional",
       "subtitle": "セキュリティ監査フレームワーク",
       "description": "Spectra Auditが包括的な多次元分析を通じてブロックチェーンセキュリティをどのように革命化し、従来の監査よりも深い洞察を提供するかを発見してください。",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "従来のスマートコントラクト監査はコードセキュリティのみに集中しています。重要ですが、この単一のアプローチでは、ほとんどのDeFiエクスプロイトとプロジェクトの失敗につながる重要なリスク要因を見落としています。",
       "paragraph2": {
         "before": "Spectra Auditの",
-        "highlight": "5次元監査フレームワーク",
-        "after": "は、センチメント、コード、トコノミクス、流動性、配布の観点からプロジェクトを包括的に分析し——コード監査だけでは検出できない脅威から投資家を保護する完全なセキュリティ画像を提供します。"
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "コア次元"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "検出率"
-        },
         "analysisTime": {
           "value": "≤20 分",
           "label": "分析時間"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5つの次元",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "各次元は独自の洞察を提供します。それらを組み合わせることで、完全なセキュリティインテリジェンスが提供されます。",
-      "convergeLabel": "5つの次元が収束",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "セキュリティスコア",
         "excellent": "優秀"
       },
       "weightDistribution": {
-        "title": "ウェイト分布",
-        "totalLabel": "合計:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "コミュニティヘルス指数",
             "fudFomoDetection": "FUD/FOMO検出"
           },
-          "weight": "10",
-          "weightNote": "トークンなしプロジェクトでは30%"
+          "weight": "10"
         },
         "code": {
           "name": "コードセキュリティ",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "依存関係分析",
             "bestPractices": "ベストプラクティスチェック"
           },
-          "weight": "45",
-          "weightNote": "トークンなしプロジェクトでは70%"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "トコノミクスヘルス",
@@ -418,7 +403,7 @@
             "economicModel": "経済モデル検証",
             "unlockSchedule": "アンロックスケジュール追跡"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "流動性深さ",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEXカバレッジ",
             "liquidityConcentration": "流動性集中度"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "配分分析",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "エアドロップ分析",
             "walletDistribution": "ウォレット配分"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "プロジェクトタイプ別のスコアリング重み",
-        "subtitle": "重みは、プロジェクトが取引可能なトークンを持っているかどうかに基づいて適用されます。トークンなしのプロジェクト（ユーティリティプロトコル、インフラストラクチャなど）では、配布や流動性の指標が適用されないため、コードとセンチメントをより重視します。",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "次元",
         "headerHasToken": "トークンあり",
         "headerNoToken": "トークンなし",
@@ -459,7 +444,13 @@
         "rowLiquidity": "流動性",
         "rowSentiment": "センチメント",
         "notApplicable": "N/A",
-        "footnote": "実際の重みはバックエンドのスコアリングサービスで監査タイプごとに設定され、モデルが再調整されるにつれて時間とともに調整される可能性があります。"
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -472,14 +463,14 @@
       "subtitle": "私たちのスコアリングアルゴリズムは動的加重平均を使用し、機械学習によって継続的に微調整されて最大の予測精度を提供します。",
       "formula": {
         "title": "セキュリティスコア公式",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "動的ウェイト",
-        "aiAdjustments": "AI調整",
-        "accuracy": "精度"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "動的ウェイト分布",
-        "description": "基本ウェイトは、過去の影響分析に基づいて各次元に割り当てられます："
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "AI最適化レイヤー",
@@ -494,17 +485,10 @@
       },
       "calculationExample": {
         "title": "計算例",
-        "comment": "// 例：トークンありプロジェクト — 重みの合計は100%",
-        "codeLabel": "コードセキュリティ",
-        "distributionLabel": "配分",
-        "tokenomicsLabel": "トコノミクス",
-        "liquidityLabel": "流動性",
-        "sentimentLabel": "センチメント",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "複合スコア：",
-        "baseScore": "基本スコア:",
-        "aiAdjustment": "AI調整:",
-        "aiEnhancedTitle": "AI強化精度",
-        "aiEnhancedDescription": "AI調整因子は、次元間の相関、プロジェクト成熟度、市場条件、リアルタイム脅威データを考慮し、真のセキュリティリスクをより良く反映するスコアを提供します。"
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -521,7 +505,7 @@
         },
         "aiAnalysis": {
           "title": "2. AI分析",
-          "description": "高度なMLモデルが動的ウェイト最適化ですべての5次元のデータを処理します。"
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. リスクスコアリング",
@@ -541,7 +525,7 @@
           "phase": "Q1 2025",
           "title": "基盤",
           "items": [
-            "5次元監査システムのローンチ",
+            "Launch the multi-dimensional audit system",
             "主要ブロックチェーンネットワークの統合",
             "リアルタイム監視インフラの展開",
             "セキュリティパートナーシップの確立"
@@ -590,35 +574,35 @@
     },
     "cta": {
       "title": "より深いセキュリティインサイトの準備はできましたか？",
-      "description": "AI最適化スコアリングによる5次元分析の力を体験してください。数週間ではなく、数分で包括的なセキュリティ監査を取得してください。",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "最初の監査を開始"
     },
     "metadata": {
-      "title": "5次元セキュリティ監査フレームワーク | Spectra Audit",
-      "description": "Spectra Audit がコード、分布、トークノミクス、流動性、センチメントの5つの観点からスマートコントラクトを採点する仕組み。検証可能な証拠付きの透明なグレード。"
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "最先端の監査プロセス",
-    "subtitle": "すべての監査は、ブロックチェーンのサンドボックスフォーク上で実行されます — ライブトランザクションなし、分析中のユーザー資金へのリスクなし。",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "フォークベースのシミュレーション",
       "description": "スマートコントラクトのインタラクションは、分離されたメインネットフォーク上で再生されます。ライブネットワークにトランザクションをブロードキャストすることなく、動作を観察します。"
     },
     "aiOrchestration": {
       "title": "AIオーケストレーション分析",
-      "description": "複数の専門AIエージェントが、コードレビュー、経済モデリング、オンチェーンデータにわたって連携し — 単一のアナライザーでは明らかにできない発見を生み出します。"
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "バイトコード & ABI静的分析",
       "description": "スキャナーはコンパイル済みバイトコードとABIを直接検査するため、ソースコードが利用できない場合や部分的にしか検証されていない場合でもコントラクトを分析できます。"
     },
     "multiDimensional": {
-      "title": "5次元スコアリング",
-      "description": "コード、配分、トコノミクス、流動性、センチメントは並行して独立してスコア化され — 複合セキュリティスコアに重み付けされます。"
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "並列監査パイプライン：5つの独立した分析エンジン（コード、配分、トコノミクス、流動性、センチメント）が同時に実行され、単一の複合セキュリティスコアに収束します。",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "コード",
         "distribution": "配分",
@@ -628,12 +612,12 @@
       },
       "compositeLine1": "複合",
       "compositeLine2": "スコア",
-      "subtitle": "5つの分析エンジンが並列実行 → 加重複合スコア"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectraスコアが時間とともに向上する仕組み",
-    "subtitle": "Spectra Auditは、現実世界のフィードバックと過去の監査との校正を通じて継続的に改善されます — すべての分析が次の分析に情報を提供します。",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "ユーザーフィードバック統合",
       "description": "各発見に対するコミュニティの評価と専門家のレビューがモデルにフィードバックされます。誤検出、見逃された脆弱性、深刻度の論争が追跡され、スコアリング重みの再調整に使用されます。"
@@ -665,11 +649,12 @@
   },
   "disclaimer": {
     "title": "重要な免責事項",
-    "aiGenerated": "すべての発見はAI分析によって生成されています — 人間のセキュリティ監査人によるものではありません。",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "コントラクトの動作は、ライブメインネットではなく、ブロックチェーンのフォークレプリカ上で分析されます。",
     "noGuarantee": "高いセキュリティスコアはプロジェクトが安全であることを保証するものではありません。スコアは分析時点で利用可能なデータの状態を反映します。",
     "doYourResearch": "投資、デプロイ、統合の意思決定を行う前に、必ず自分自身のリサーチ（DYOR）を行ってください。",
-    "toolPurpose": "Spectra Auditは、ユーザーがプロジェクトの背後にあるセキュリティ上の考慮事項を理解するのに役立つように設計された情報ツールです。財務、法律、投資の助言ではありません。"
+    "toolPurpose": "Spectra Auditは、ユーザーがプロジェクトの背後にあるセキュリティ上の考慮事項を理解するのに役立つように設計された情報ツールです。財務、法律、投資の助言ではありません。",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "優秀",
@@ -678,8 +663,6 @@
     "poor": "不十分",
     "critical": "重大",
     "needsWork": "要改善",
-    "security": "セキュリティ",
-    "labelFormat": "グレード {letter} - {label}",
     "descriptions": {
       "excellent": "重大な脆弱性は見つかりませんでした",
       "good": "軽微な問題を検出",
@@ -705,7 +688,7 @@
     "q3": "Spectra Audit のセキュリティ監査は本当に無料ですか？",
     "a3": "はい。クレジットカード不要で、包括的なセキュリティ監査を無料で提供しています。高度なモニタリング向けのプレミアム機能もあります。",
     "q4": "Spectra Audit の検出結果はどの程度正確ですか？",
-    "a4": "既知の脆弱性パターンの最大95%を検出します。すべての結果はAI分析によるもので、確認可能な証拠が付属します。結果は参考情報であり、プロジェクトの安全性を保証するものではありません。",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit は複数のブロックチェーンに対応していますか？",
     "a5": "はい。Ethereum、BSC、Polygon、Arbitrum、Optimism などの主要な EVM 互換チェーンに対応しています。"
   }

@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI 驱动的智能合约安全审计平台",
-    "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计，通过持续透明的安全监控，守护您的加密资产安全。",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "区块链安全, 人工智能审计, 智能合约安全, 加密货币安全, DeFi 安全",
     "og": {
       "title": "Spectra Audit - AI 驱动的智能合约安全审计",
-      "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计。",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Spectra AI 安全审计平台界面"
     }
   },
   "meta": {
     "title": "Spectra Audit - AI 驱动的智能合约安全审计平台",
-    "description": "清晰的安全评级与可验证的证据。由 AI 驱动的实时审计，通过持续透明的安全监控，守护您的加密资产安全。",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "区块链安全, 人工智能审计, 智能合约安全, 加密货币安全, DeFi 安全"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "获取报告",
     "trustMetrics": {
       "activeUsers": "活跃用户",
-      "accuracy": "已知漏洞检测",
       "scanTime": "分钟典型时间",
       "protectedUsers": "受保护用户",
       "uptime": "正常运行时间",
-      "detectionRate": "已知漏洞检测",
       "threatTypes": "评分维度",
       "projectsAnalyzed": "评分维度",
       "riskFlagsIdentified": "识别的风险标记"
@@ -84,7 +82,7 @@
       "featuresTitle": "新一代安全审计",
       "featuresSubtitle": "传统审计缓慢、昂贵且很快过时。Spectra Audit 提供持续、可验证的安全监控，与您的代码保持同步。",
       "realTimeMonitoring": "按需 AI 分析",
-      "realTimeMonitoringDesc": "项目提交时进行按需 AI 驱动分析。全面的 5 维安全审查每次审计在 20 分钟内完成。",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20分钟",
       "avgScanTimeLabel": "典型审计时间",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "可复现的发现",
       "publicGitHubRepo": "可基于链上数据验证",
       "comprehensiveCoverage": "全面覆盖",
-      "comprehensiveCoverageDesc": "先进的 AI 模型检测广泛的已知漏洞类别 — 智能合约缺陷、经济攻击向量和集中度风险。",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ 漏洞类别",
-      "detectionRate": "最高可检测 95% 的已知问题",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "可验证且透明",
       "productionReadyDesc": "为希望检查、复现和验证审计每一步的开发者和研究人员构建的透明分析流水线。",
       "thirdPartyVerified": "可验证的结果",
@@ -109,15 +107,12 @@
       "highAccuracy": "高精度",
       "highAccuracyDesc": "您可以信赖的 AI 验证结果",
       "multiDimensional": "多维",
-      "multiDimensionalDesc": "5 因子安全评分",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "全面安全分析",
       "liveStatusSubtitle": "完整的智能合约安全评估多维评分。",
       "scanTimeValue": "≤20分钟",
       "scanTimeLabel": "典型审计时间",
       "scanTimeBadge": "快速分析",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "安全维度",
-      "dimensionsBadge": "多因子评分",
       "aiPoweredValue": "AI",
       "aiPoweredLabel": "AI 驱动分析",
       "aiPoweredBadge": "智能检测",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "AI 编排",
-          "description": "5 维分析流水线"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "审计",
@@ -180,13 +175,13 @@
       "team": {
         "title": "团队与情绪",
         "score": "0-100",
-        "description": "背景调查、过往项目记录、社区健康状况、社交情绪分析、公信力指标。",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "即将推出"
       }
     },
     "overallScore": {
       "title": "总体安全评分",
-      "description": "所有维度综合计算，得出易于理解的单项评级。",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = 优秀",
       "good": "70-84 = 良好",
       "fair": "55-69 = 一般",
@@ -206,7 +201,7 @@
       "description": "为您的加密资产提供安全、省心的自动化保护。",
       "benefits": [
         "按需 AI 安全分析",
-        "简明的安全评级 (A-F)",
+        "Simple Security Scores from 0 to 100",
         "风险即时警报",
         "无需技术背景"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "传统审计缓慢且昂贵。Spectra Audit 提供 AI 编排的、可验证的安全分析，您可以检查和复现。",
     "monitoring": {
       "title": "快速 AI 分析",
-      "description": "AI 编排分析跨 5 个维度并行运行 — 代码、分布、代币经济学、流动性和情绪 — 生成带有可追溯证据的综合评分。",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "通常每次审计不到 20 分钟",
       "comparison": "比传统手动审计快 2.4 倍以上"
     },
     "verifiable": {
       "title": "可验证的证据",
-      "description": "每一项发现都附有支撑推理、来源数据和可复现的证据。准确查看每个问题是如何被识别的 — 没有黑盒。",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "完全透明的方法论",
       "detail": "发现可基于链上数据进行验证"
     },
     "comprehensive": {
       "title": "全面覆盖",
-      "description": "先进的 AI 模型检测广泛的已知漏洞类别 — 从智能合约缺陷到经济攻击向量和集中度风险。",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "覆盖 15+ 种漏洞类别",
-      "detail": "有助于在部署前检测最高 95% 的已知漏洞利用"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "按需分析",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5 维度",
+      "title": "The Multi-Dimensional",
       "subtitle": "安全审计框架",
       "description": "了解 Spectra Audit 如何通过全面的多维度分析彻底变革区块链安全，提供比传统审计更深入的洞察。",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "传统的智能合约审计仅关注代码安全性。虽然重要，但这种单一视角的方法忽略了导致大多数 DeFi 漏洞利用和项目失败的关键风险因素。",
       "paragraph2": {
         "before": "Spectra Audit 的",
-        "highlight": "5 维度审计框架",
-        "after": "从情绪、代码、代币经济学、流动性和分布全面分析项目——提供完整的安全图景，保护投资者免受仅代码审计无法检测到的威胁。"
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "核心维度"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "检测率"
-        },
         "analysisTime": {
           "value": "≤20 分钟",
           "label": "分析时间"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 个维度",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "每个维度提供独特的洞察。它们共同提供完整的安全智能。",
-      "convergeLabel": "5个维度汇聚",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "安全评分",
         "excellent": "优秀"
       },
       "weightDistribution": {
-        "title": "权重分布",
-        "totalLabel": "总计:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "社区健康指数",
             "fudFomoDetection": "FUD/FOMO检测"
           },
-          "weight": "10",
-          "weightNote": "无代币项目为 30%"
+          "weight": "10"
         },
         "code": {
           "name": "代码安全",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "依赖关系分析",
             "bestPractices": "最佳实践检查"
           },
-          "weight": "45",
-          "weightNote": "无代币项目为 70%"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "代币经济学健康度",
@@ -418,7 +403,7 @@
             "economicModel": "经济模型验证",
             "unlockSchedule": "解锁时间表追踪"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "流动性深度",
@@ -431,7 +416,7 @@
             "dexCoverage": "DEX覆盖",
             "liquidityConcentration": "流动性集中度"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "分配分析",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "空投分析",
             "walletDistribution": "钱包分配"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "按项目类型划分的评分权重",
-        "subtitle": "权重根据项目是否拥有可交易代币而应用。无代币项目（实用协议、基础设施等）更强调代码和情绪，因为分布和流动性指标不适用。",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "维度",
         "headerHasToken": "有代币",
         "headerNoToken": "无代币",
@@ -459,7 +444,13 @@
         "rowLiquidity": "流动性",
         "rowSentiment": "情绪",
         "notApplicable": "不适用",
-        "footnote": "实际权重在后端评分服务中按审计类型配置，可能会随着模型重新校准而调整。"
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -472,14 +463,14 @@
       "subtitle": "我们的评分算法使用动态加权平均值，通过机器学习持续微调以实现最大的预测准确性。",
       "formula": {
         "title": "安全评分公式",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "动态权重",
-        "aiAdjustments": "AI调整",
-        "accuracy": "精度"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "动态权重分布",
-        "description": "根据历史影响分析为每个维度分配基础权重："
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "AI优化层",
@@ -494,17 +485,10 @@
       },
       "calculationExample": {
         "title": "计算示例",
-        "comment": "// 示例：有代币项目 — 权重总和为 100%",
-        "codeLabel": "代码安全",
-        "distributionLabel": "分布",
-        "tokenomicsLabel": "代币经济学",
-        "liquidityLabel": "流动性",
-        "sentimentLabel": "情绪",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "综合评分：",
-        "baseScore": "基础评分:",
-        "aiAdjustment": "AI调整:",
-        "aiEnhancedTitle": "AI增强精度",
-        "aiEnhancedDescription": "AI调整因子考虑跨维度相关性、项目成熟度、市场条件和实时威胁数据，提供更好地反映真实安全风险的评分。"
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -521,7 +505,7 @@
         },
         "aiAnalysis": {
           "title": "2. AI分析",
-          "description": "先进的ML模型通过动态权重优化处理所有5个维度的数据。"
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. 风险评分",
@@ -541,7 +525,7 @@
           "phase": "Q1 2025",
           "title": "基础",
           "items": [
-            "启动5维审计系统",
+            "Launch the multi-dimensional audit system",
             "集成主要区块链网络",
             "部署实时监控基础设施",
             "建立安全合作伙伴关系"
@@ -590,35 +574,35 @@
     },
     "cta": {
       "title": "准备好获得更深入的安全洞察了吗？",
-      "description": "体验AI优化评分的5维分析的力量。在几分钟内获得全面的安全审计 — 而非数周。",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "开始您的首次审计"
     },
     "metadata": {
-      "title": "五维安全审计框架 | Spectra Audit",
-      "description": "了解 Spectra Audit 如何从代码、分布、代币经济学、流动性和情绪五个维度为智能合约评分——一个透明的等级，附可验证的证据。"
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "最先进的审计流程",
-    "subtitle": "每次审计都在区块链的沙盒分叉上运行 — 没有实时交易，分析期间用户资金零风险。",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "基于分叉的模拟",
       "description": "智能合约交互在隔离的主网分叉上重放。我们观察其行为，从不向实时网络广播交易。"
     },
     "aiOrchestration": {
       "title": "AI 编排分析",
-      "description": "多个专业 AI 代理协调进行代码审查、经济建模和链上数据分析 — 产生单个分析器无法独立揭示的发现。"
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "字节码与 ABI 静态分析",
       "description": "我们的扫描器直接检查编译后的字节码和 ABI，即使在源代码不可用或仅部分验证时，也能分析合约。"
     },
     "multiDimensional": {
-      "title": "5 维评分",
-      "description": "代码、分布、代币经济学、流动性和情绪并行独立评分 — 然后加权为综合安全评分。"
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "并行审计流水线：五个独立分析器——代码、分配、代币经济学、流动性和情绪——同时运行并汇聚成单一的综合安全评分。",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "代码",
         "distribution": "分配",
@@ -628,12 +612,12 @@
       },
       "compositeLine1": "综合",
       "compositeLine2": "评分",
-      "subtitle": "5 个分析器并行运行 → 加权综合"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Spectra 评分如何随着时间不断提升",
-    "subtitle": "Spectra Audit 通过真实世界反馈和与历史审计的校准持续改进 — 每次分析都会启发下一次。",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "用户反馈集成",
       "description": "社区对每个发现的评分和专家评审将反馈回模型。误报、遗漏的漏洞和严重程度争议会被追踪，并用于重新校准评分权重。"
@@ -665,11 +649,12 @@
   },
   "disclaimer": {
     "title": "重要免责声明",
-    "aiGenerated": "所有发现均由 AI 分析产生 — 而非人类安全审计员。",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "合约行为在区块链的分叉副本上分析，而非实时主网。",
     "noGuarantee": "高安全评分不保证项目是安全的。评分反映分析时可用数据的状态。",
     "doYourResearch": "在做出任何投资、部署或集成决策之前，请始终进行自己的研究 (DYOR)。",
-    "toolPurpose": "Spectra Audit 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。"
+    "toolPurpose": "Spectra Audit 是一个信息工具，旨在帮助用户理解项目背后的安全考量。它不构成财务、法律或投资建议。",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "优秀",
@@ -678,8 +663,6 @@
     "poor": "较差",
     "critical": "严重",
     "needsWork": "需改进",
-    "security": "安全",
-    "labelFormat": "{letter} 级 - {label}",
     "descriptions": {
       "excellent": "未发现严重漏洞",
       "good": "发现轻微问题",
@@ -705,7 +688,7 @@
     "q3": "Spectra Audit 的安全审计真的免费吗？",
     "a3": "是的。Spectra Audit 提供免费的全面安全审计，无需信用卡。高级监控功能可通过付费方案获得。",
     "q4": "Spectra Audit 的检测结果有多准确？",
-    "a4": "Spectra Audit 可检测多达 95% 的已知漏洞模式。所有结果均由 AI 分析生成，并附带可供查验的证据。结果仅供参考，不构成项目安全的保证。",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit 支持多条区块链吗？",
     "a5": "支持。Spectra Audit 支持以太坊、BSC、Polygon、Arbitrum、Optimism 以及其他主流 EVM 兼容链。"
   }

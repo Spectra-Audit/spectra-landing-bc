@@ -1,17 +1,17 @@
 {
   "metadata": {
     "title": "Spectra Audit - Аудит безопасности блокчейна с ИИ",
-    "description": "Один четкий рейтинг безопасности с подтверждающими доказательствами. Аудиты ИИ в реальном времени, которые вы можете проверить. Защитите свои крипто-инвестиции с помощью непрерывного и прозрачного мониторинга безопасности.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
     "keywords": "безопасность блокчейна, аудит ИИ, безопасность смарт-контрактов, крипто-безопасность, защита DeFi",
     "og": {
       "title": "Spectra Audit - Аудит безопасности блокчейна с ИИ",
-      "description": "Один четкий рейтинг безопасности с подтверждающими доказательствами. Аудиты ИИ в реальном времени, которые вы можете проверить.",
+      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
       "imageAlt": "Платформа аудита безопасности Spectra AI"
     }
   },
   "meta": {
     "title": "Spectra Audit - Аудит безопасности блокчейна с ИИ",
-    "description": "Один четкий рейтинг безопасности с подтверждающими доказательствами. Аудиты ИИ в реальном времени, которые вы можете проверить. Защитите свои крипто-инвестиции с помощью непрерывного и прозрачного мониторинга безопасности.",
+    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Protect your crypto investments with continuous, transparent security monitoring.",
     "keywords": "безопасность блокчейна, аудит ИИ, безопасность смарт-контрактов, крипто-безопасность, защита DeFi"
   },
   "nav": {
@@ -45,11 +45,9 @@
     "getReport": "Получить отчет",
     "trustMetrics": {
       "activeUsers": "Активные пользователи",
-      "accuracy": "Обнаружение известных уязвимостей",
       "scanTime": "мин Типичное время",
       "protectedUsers": "Защищенные пользователи",
       "uptime": "Время работы",
-      "detectionRate": "Обнаружение известных уязвимостей",
       "threatTypes": "Измерения оценки",
       "projectsAnalyzed": "Измерения оценки",
       "riskFlagsIdentified": "Выявленные флаги рисков"
@@ -84,7 +82,7 @@
       "featuresTitle": "Аудиты безопасности нового поколения",
       "featuresSubtitle": "Традиционные аудиты медленные, дорогие и быстро устаревают. Spectra Audit обеспечивает непрерывный, проверяемый мониторинг безопасности, который соответствует вашему коду.",
       "realTimeMonitoring": "ИИ-анализ по запросу",
-      "realTimeMonitoringDesc": "Анализ по запросу на основе ИИ, когда проекты отправляются. Комплексный 5-мерный обзор безопасности завершается менее чем за 20 минут на аудит.",
+      "realTimeMonitoringDesc": "On-demand AI-powered analysis when projects are submitted. Comprehensive multi-dimensional security review completes in under 20 minutes per audit.",
       "avgScanTime": "≤20м",
       "avgScanTimeLabel": "Типичное время аудита",
       "fasterThanAudits": ">2.4×",
@@ -96,9 +94,9 @@
       "openSourceCodebase": "Воспроизводимые обнаружения",
       "publicGitHubRepo": "Проверяемо по данным on-chain",
       "comprehensiveCoverage": "Комплексное покрытие",
-      "comprehensiveCoverageDesc": "Продвинутые модели ИИ обнаруживают широкий спектр известных классов уязвимостей — ошибки смарт-контрактов, экономические векторы атак и риски концентрации.",
+      "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "Более 15 категорий уязвимостей",
-      "detectionRate": "До 95% обнаружения известных проблем",
+      "detectionRate": "Every finding rated by severity, from low to critical",
       "productionReady": "Проверяемо и прозрачно",
       "productionReadyDesc": "Прозрачный аналитический конвейер, созданный для разработчиков и исследователей, которые хотят инспектировать, воспроизводить и проверять каждый шаг аудита.",
       "thirdPartyVerified": "Проверяемые результаты",
@@ -109,15 +107,12 @@
       "highAccuracy": "Высокая точность",
       "highAccuracyDesc": "Проверенные ИИ результаты, которым можно доверять",
       "multiDimensional": "Многомерный",
-      "multiDimensionalDesc": "5-факторная оценка безопасности",
+      "multiDimensionalDesc": "Multi-factor security scoring",
       "liveStatusTitle": "Комплексный анализ безопасности",
       "liveStatusSubtitle": "Многомерная оценка для полной оценки безопасности смарт-контрактов.",
       "scanTimeValue": "≤20м",
       "scanTimeLabel": "Типичное время аудита",
       "scanTimeBadge": "Быстрый анализ",
-      "dimensionsValue": "5",
-      "dimensionsLabel": "Измерения безопасности",
-      "dimensionsBadge": "Многофакторная оценка",
       "aiPoweredValue": "ИИ",
       "aiPoweredLabel": "Анализ на основе",
       "aiPoweredBadge": "Умное обнаружение",
@@ -145,7 +140,7 @@
         },
         "aiOrchestrated": {
           "label": "Оркестрация ИИ",
-          "description": "5-мерный конвейер анализа"
+          "description": "Multi-dimensional analysis pipeline"
         }
       },
       "auditMetricValue": "Аудит",
@@ -180,13 +175,13 @@
       "team": {
         "title": "Команда и настроения",
         "score": "0-100",
-        "description": "Проверка биографии, история прошлых проектов, сигналы здоровья сообщества, анализ социальных настроений и индикаторы общественного доверия.",
+        "description": "Community engagement and social-trust signals (votes, comments, follows, and reports), weighted into a real-time sentiment score that surfaces momentum and reputation risk.",
         "comingSoon": "Скоро"
       }
     },
     "overallScore": {
       "title": "Общая оценка безопасности",
-      "description": "Все измерения объединены в одну простую для понимания оценку.",
+      "description": "Every dimension we could measure, combined into a single Security Score from 0 to 100.",
       "excellent": "85+ = Отлично",
       "good": "70-84 = Хорошо",
       "fair": "55-69 = Удовлетворительно",
@@ -206,7 +201,7 @@
       "description": "Безопасная защита с низкими эксплуатационными расходами для ваших крипто-инвестиций.",
       "benefits": [
         "AI-анализ безопасности по запросу",
-        "Простые оценки безопасности (A-F)",
+        "Simple Security Scores from 0 to 100",
         "Мгновенные оповещения о рисках",
         "Не требуются технические знания"
       ],
@@ -233,21 +228,21 @@
     "subtitle": "Традиционные аудиты медленные и дорогие. Spectra Audit обеспечивает анализ безопасности под управлением ИИ с проверяемой методологией, который вы можете инспектировать и воспроизводить.",
     "monitoring": {
       "title": "Быстрый ИИ-анализ",
-      "description": "Анализ под управлением ИИ работает по 5 измерениям параллельно — код, распределение, токеномика, ликвидность и настроения — создавая составную оценку с прослеживаемыми доказательствами.",
+      "description": "AI-orchestrated analysis runs multiple dimensions in parallel (code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour metrics), producing a composite score with traceable evidence.",
       "metric": "Обычно менее 20 минут на аудит",
       "comparison": "Более чем в 2,4× быстрее традиционных ручных аудитов"
     },
     "verifiable": {
       "title": "Проверяемые доказательства",
-      "description": "Каждое обнаружение включает обоснование, исходные данные и воспроизводимые доказательства. Точно увидите, как каждая проблема была идентифицирована — без черных ящиков.",
+      "description": "Every finding includes the reasoning, source data, and reproducible evidence behind it. See exactly how each issue was identified. No black boxes.",
       "metric": "Полностью прозрачная методология",
       "detail": "Обнаружения проверяемы по данным on-chain"
     },
     "comprehensive": {
       "title": "Комплексное покрытие",
-      "description": "Продвинутые AI-модели обнаруживают широкий спектр известных классов уязвимостей — от ошибок в смарт-контрактах до экономических векторов атак и рисков концентрации.",
+      "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "Более 15 категорий уязвимостей",
-      "detail": "Помогает обнаружить до 95% известных эксплойтов перед развертыванием"
+      "detail": "Every finding rated by severity, from low to critical"
     },
     "trustIndicators": {
       "monitoring": "Анализ по запросу",
@@ -324,7 +319,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "5-мерная",
+      "title": "The Multi-Dimensional",
       "subtitle": "Структура аудита безопасности",
       "description": "Узнайте, как Spectra Audit революционизирует безопасность блокчейна с помощью комплексного многомерного анализа, предоставляя более глубокие сведения, чем когда-либо могли традиционные аудиты.",
       "buttons": {
@@ -338,18 +333,10 @@
       "paragraph1": "Традиционные аудиты смарт-контрактов сосредоточены исключительно на безопасности кода. Хотя это важно, этот узконаправленный подход упускает критические факторы риска, которые приводят к большинству эксплойтов DeFi и сбоев проектов.",
       "paragraph2": {
         "before": "Структура аудита ",
-        "highlight": "5-мерная",
-        "after": " от Spectra Audit комплексно анализирует проекты по настроениям, коду, токеномике, ликвидности и распределению, предоставляя полную картину безопасности, которая защищает инвесторов от угроз, которые одни только аудиты кода не могут обнаружить."
+        "highlight": "multi-dimensional audit framework",
+        "after": " analyzes projects comprehensively across sentiment, code, tokenomics, liquidity, and distribution, providing a complete security picture that protects investors from threats code audits alone cannot detect."
       },
       "stats": {
-        "coreDimensions": {
-          "value": "5",
-          "label": "Основных измерений"
-        },
-        "detectionRate": {
-          "value": "95%",
-          "label": "Уровень обнаружения"
-        },
         "analysisTime": {
           "value": "≤20 мин",
           "label": "Время анализа"
@@ -363,20 +350,20 @@
     "dimensions": {
       "title": {
         "before": "",
-        "highlight": "5 измерений",
+        "highlight": "Scoring Dimensions",
         "after": ""
       },
       "subtitle": "Каждое измерение предоставляет уникальные сведения. Вместе они дают полную аналитику безопасности.",
-      "convergeLabel": "5 измерений сходятся",
+      "convergeLabel": "dimensions converge",
       "scoreDisplay": {
         "score": "95",
         "label": "Оценка безопасности",
         "excellent": "Отлично"
       },
       "weightDistribution": {
-        "title": "Распределение весов",
-        "totalLabel": "Всего:",
-        "totalValue": "100%"
+        "title": "Weight Distribution (Project With a Token)",
+        "totalLabel": "These five carry",
+        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -390,8 +377,7 @@
             "communityHealth": "Индекс здоровья сообщества",
             "fudFomoDetection": "Обнаружение FUD/FOMO"
           },
-          "weight": "10",
-          "weightNote": "30% для проектов без токена"
+          "weight": "10"
         },
         "code": {
           "name": "Безопасность кода",
@@ -404,8 +390,7 @@
             "dependencyAnalysis": "Анализ зависимостей",
             "bestPractices": "Проверка лучших практик"
           },
-          "weight": "45",
-          "weightNote": "70% для проектов без токена"
+          "weight": "35"
         },
         "tokenomics": {
           "name": "Здоровье токеномики",
@@ -418,7 +403,7 @@
             "economicModel": "Валидация экономической модели",
             "unlockSchedule": "Отслеживание графика разблокировки"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "liquidity": {
           "name": "Глубина ликвидности",
@@ -431,7 +416,7 @@
             "dexCoverage": "Покрытие DEX",
             "liquidityConcentration": "Концентрация ликвидности"
           },
-          "weight": "15"
+          "weight": "10"
         },
         "distribution": {
           "name": "Анализ распределения",
@@ -444,12 +429,12 @@
             "airdropAnalysis": "Анализ эйрдропа",
             "walletDistribution": "Распределение кошельков"
           },
-          "weight": "15"
+          "weight": "10"
         }
       },
       "weightTable": {
         "title": "Веса оценки по типу проекта",
-        "subtitle": "Веса применяются в зависимости от того, имеет ли проект торгуемый токен. Проекты без токенов (служебные протоколы, инфраструктура и т.д.) больше акцентируют код и настроения, поскольку метрики распределения и ликвидности неприменимы.",
+        "subtitle": "These are the weights the scoring service applies, in full. Which column a project gets depends on whether it has a tradeable token: with a token, ten dimensions are weighted; without one, the six that need token data cannot be measured at all, so three remain.",
         "headerDimension": "Измерение",
         "headerHasToken": "С токеном",
         "headerNoToken": "Без токена",
@@ -459,7 +444,13 @@
         "rowLiquidity": "Ликвидность",
         "rowSentiment": "Настроения",
         "notApplicable": "Н/Д",
-        "footnote": "Фактические веса настраиваются для каждого типа аудита в сервисе оценки бэкенда и могут корректироваться со временем по мере перекалибровки модели."
+        "footnote": "A dimension we cannot measure for a given project is skipped rather than scored zero, and the weights of the dimensions that remain are divided by their own sum. A missing dimension therefore raises the share every other dimension carries; it never drags the score down by itself. If no dimension can be measured, no overall score is published.",
+        "rowHolderGrowth": "Holder Growth",
+        "rowNetFlow": "Exchange Net Flow",
+        "rowRealizedPnl": "Realized PnL",
+        "rowTotal": "Total",
+        "rowVelocity": "Trading Velocity",
+        "rowWhaleDumpRisk": "Whale Dump Risk"
       }
     },
     "scoring": {
@@ -472,14 +463,14 @@
       "subtitle": "Наш алгоритм оценки использует динамические взвешенные средние, непрерывно настраиваемые машинным обучением для максимальной прогностической точности.",
       "formula": {
         "title": "Формула оценки безопасности",
-        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ × AdjustmentFactorᵢ)",
-        "dynamicWeights": "Динамические веса",
-        "aiAdjustments": "ИИ-корректировки",
-        "accuracy": "Точность"
+        "formula": "Score = Σ (Dimensionᵢ × Weightᵢ) ÷ Σ Weightᵢ",
+        "measuredDimensions": "Dimensions we could measure",
+        "publishedWeights": "Published weights, renormalised",
+        "securityScore": "Security Score"
       },
       "weightDistribution": {
-        "title": "Динамическое распределение весов",
-        "description": "Базовые веса назначаются каждому измерению на основе исторического анализа влияния:"
+        "title": "Weight Distribution (Project With a Token)",
+        "description": "The five dimensions below carry 75 of the 100 points available to a project with a token. The remaining 25 sit in the on-chain behaviour metrics listed in the full table further down."
       },
       "aiOptimization": {
         "title": "Слой оптимизации ИИ",
@@ -494,17 +485,10 @@
       },
       "calculationExample": {
         "title": "Пример расчета",
-        "comment": "// Пример: проект с токеном — сумма весов 100%",
-        "codeLabel": "Безопасность кода",
-        "distributionLabel": "Распределение",
-        "tokenomicsLabel": "Токеномика",
-        "liquidityLabel": "Ликвидность",
-        "sentimentLabel": "Настроения",
+        "comment": "// Illustration only. A project with a token, every dimension measured.",
         "compositeScore": "Составная оценка:",
-        "baseScore": "Базовая оценка:",
-        "aiAdjustment": "ИИ-корректировка:",
-        "aiEnhancedTitle": "Повышенная точность с ИИ",
-        "aiEnhancedDescription": "Коэффициент корректировки ИИ учитывает корреляции между измерениями, зрелость проекта, рыночные условия и данные об угрозах в реальном времени для предоставления оценки, которая лучше отражает реальный риск безопасности."
+        "renormalisationDescription": "The worked example above assumes all ten dimensions produced a score. In practice some of them often cannot: a contract whose source is unverified yields no code score, a token with no holder history yields no whale dump risk score. Those dimensions are dropped, and the weights of the ones that remain are divided by their own sum so they still add up to 100. Nothing is scored zero for being unmeasurable.",
+        "renormalisationTitle": "When a dimension cannot be measured"
       }
     },
     "howItWorks": {
@@ -521,7 +505,7 @@
         },
         "aiAnalysis": {
           "title": "2. ИИ-анализ",
-          "description": "Продвинутые ML-модели обрабатывают данные по всем 5 измерениям с динамической оптимизацией весов."
+          "description": "Advanced ML models process data across every scoring dimension the project supports."
         },
         "riskScoring": {
           "title": "3. Оценка рисков",
@@ -541,7 +525,7 @@
           "phase": "Q1 2025",
           "title": "Основа",
           "items": [
-            "Запуск 5-мерной системы аудита",
+            "Launch the multi-dimensional audit system",
             "Интеграция основных блокчейн-сетей",
             "Развертывание инфраструктуры мониторинга в реальном времени",
             "Установление партнерств в области безопасности"
@@ -590,35 +574,35 @@
     },
     "cta": {
       "title": "Готовы к более глубоким сведениям о безопасности?",
-      "description": "Испытайте мощь 5-мерного анализа с ИИ-оптимизированной оценкой. Получите комплексный аудит безопасности за минуты, а не недели.",
+      "description": "Experience the power of multi-dimensional analysis with AI-optimized scoring. Get a comprehensive security audit in minutes, not weeks.",
       "button": "Начните свой первый аудит"
     },
     "metadata": {
-      "title": "Пятимерная система аудита безопасности | Spectra Audit",
-      "description": "Как Spectra Audit оценивает смарт-контракты по коду, распределению, токеномике, ликвидности и настроениям — прозрачная оценка с проверяемыми доказательствами."
+      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
+      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
     }
   },
   "methodology": {
     "title": "Современный процесс аудита",
-    "subtitle": "Каждый аудит выполняется на изолированном форке блокчейна — нет реальных транзакций, нет риска для средств пользователей во время анализа.",
+    "subtitle": "Every audit runs on a sandboxed fork of the blockchain. No live transactions, and no risk to user funds during analysis.",
     "forkTesting": {
       "title": "Симуляция на основе форка",
       "description": "Взаимодействия со смарт-контрактами воспроизводятся на изолированном форке основной сети. Мы наблюдаем поведение, никогда не транслируя транзакции в действующую сеть."
     },
     "aiOrchestration": {
       "title": "Анализ под управлением ИИ",
-      "description": "Несколько специализированных ИИ-агентов координируются для проверки кода, экономического моделирования и анализа данных on-chain — обнаруживая факты, которые ни один отдельный анализатор не мог бы выявить."
+      "description": "Multiple specialized AI agents coordinate across code review, economic modeling, and on-chain data, producing findings no single analyzer could surface alone."
     },
     "staticAnalysis": {
       "title": "Статический анализ байт-кода и ABI",
       "description": "Наш сканер инспектирует скомпилированный байт-код и ABI напрямую, что позволяет анализировать контракты даже когда исходный код недоступен или верифицирован лишь частично."
     },
     "multiDimensional": {
-      "title": "5-мерная оценка",
-      "description": "Код, распределение, токеномика, ликвидность и настроения оцениваются независимо параллельно — затем взвешиваются в составную оценку безопасности."
+      "title": "Multi-Dimensional Scoring",
+      "description": "Code, Distribution, Tokenomics, Liquidity, and Sentiment are scored independently in parallel, then weighted into a composite security score."
     },
     "diagram": {
-      "ariaLabel": "Параллельный конвейер аудита: пять независимых анализаторов — Код, Распределение, Токеномика, Ликвидность и Настроения — работают одновременно и сходятся в единую составную оценку безопасности.",
+      "ariaLabel": "Parallel audit pipeline. The deep-analysis analyzers (Code, Distribution, Tokenomics, Liquidity, and Sentiment) run concurrently and converge, with the on-chain behaviour metrics, into a single composite security score.",
       "lanes": {
         "code": "Код",
         "distribution": "Распределение",
@@ -628,12 +612,12 @@
       },
       "compositeLine1": "Составная",
       "compositeLine2": "оценка",
-      "subtitle": "5 анализаторов параллельно → взвешенная составная"
+      "subtitle": "Analyzers running in parallel → weighted composite"
     }
   },
   "learningLoop": {
     "title": "Как оценка Spectra улучшается со временем",
-    "subtitle": "Spectra Audit постоянно совершенствуется благодаря реальной обратной связи и калибровке против исторических аудитов — каждый анализ информирует следующий.",
+    "subtitle": "Spectra Audit continuously improves through real-world feedback and calibration against historical audits. Every analysis informs the next.",
     "userFeedback": {
       "title": "Интеграция обратной связи пользователей",
       "description": "Оценки сообщества и экспертные обзоры каждого обнаружения возвращаются в модель. Ложные срабатывания, упущенные уязвимости и споры о серьезности отслеживаются и используются для перекалибровки весов оценки."
@@ -665,11 +649,12 @@
   },
   "disclaimer": {
     "title": "Важный отказ от ответственности",
-    "aiGenerated": "Все обнаружения создаются ИИ-анализом — а не человеческими аудиторами безопасности.",
+    "aiGenerated": "All findings are produced by AI analysis, not by human security auditors.",
     "forkTesting": "Поведение контрактов анализируется на форкнутой реплике блокчейна, а не в действующей основной сети.",
     "noGuarantee": "Высокая оценка безопасности НЕ гарантирует, что проект безопасен. Оценки отражают состояние доступных данных на момент анализа.",
     "doYourResearch": "Всегда проводите собственное исследование (DYOR), прежде чем принимать какие-либо решения об инвестициях, развертывании или интеграции.",
-    "toolPurpose": "Spectra Audit — это информационный инструмент, предназначенный для помощи пользователям в понимании соображений безопасности, лежащих в основе проекта. Это не финансовая, юридическая или инвестиционная консультация."
+    "toolPurpose": "Spectra Audit — это информационный инструмент, предназначенный для помощи пользователям в понимании соображений безопасности, лежащих в основе проекта. Это не финансовая, юридическая или инвестиционная консультация.",
+    "beta": "Spectra Audit is in beta. The platform, the scoring model, and the weights behind it are still changing, and a score produced today may not match one produced later for the same project."
   },
   "grades": {
     "excellent": "Отлично",
@@ -678,8 +663,6 @@
     "poor": "Слабо",
     "critical": "Критично",
     "needsWork": "Требует доработки",
-    "security": "Безопасность",
-    "labelFormat": "Оценка {letter} - {label}",
     "descriptions": {
       "excellent": "Критических уязвимостей не обнаружено",
       "good": "Выявлены незначительные проблемы",
@@ -705,7 +688,7 @@
     "q3": "Аудит безопасности Spectra Audit действительно бесплатный?",
     "a3": "Да. Spectra Audit предоставляет бесплатные комплексные аудиты безопасности без банковской карты. Премиум-функции доступны для расширенного мониторинга.",
     "q4": "Насколько точны результаты Spectra Audit?",
-    "a4": "Spectra Audit обнаруживает до 95% известных шаблонов уязвимостей. Все результаты получены с помощью ИИ-анализа и включают проверяемые доказательства. Результаты носят информационный характер и не гарантируют безопасность проекта.",
+    "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Поддерживает ли Spectra Audit несколько блокчейнов?",
     "a5": "Да. Spectra Audit поддерживает Ethereum, BSC, Polygon, Arbitrum, Optimism и другие основные EVM-совместимые блокчейны."
   }
