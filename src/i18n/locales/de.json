@@ -96,7 +96,7 @@
       "comprehensiveCoverage": "Umfassende Abdeckung",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ Schwachstellenkategorien",
-      "detectionRate": "Every finding rated by severity, from low to critical",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "Verifizierbar & transparent",
       "productionReadyDesc": "Eine transparente Analyse-Pipeline, entwickelt für Entwickler und Forscher, die jeden Schritt des Audits inspizieren, reproduzieren und verifizieren möchten.",
       "thirdPartyVerified": "Verifizierbare Ergebnisse",
@@ -242,7 +242,7 @@
       "title": "Umfassende Abdeckung",
       "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ Schwachstellenkategorien",
-      "detail": "Every finding rated by severity, from low to critical"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "Analyse auf Abruf",

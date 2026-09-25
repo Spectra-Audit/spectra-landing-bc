@@ -96,7 +96,7 @@
       "comprehensiveCoverage": "விரிவான கவரேஜ்",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ பாதிப்பு வகைகள்",
-      "detectionRate": "Every finding rated by severity, from low to critical",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "சரிபார்க்கக்கூடிய மற்றும் வெளிப்படையானது",
       "productionReadyDesc": "தணிக்கையின் ஒவ்வொரு படியையும் ஆராய, மீண்டும் உருவாக்க மற்றும் சரிபார்க்க விரும்பும் டெவலப்பர்கள் மற்றும் ஆராய்ச்சியாளர்களுக்காக கட்டப்பட்ட வெளிப்படையான பகுப்பாய்வு பைப்லைன்.",
       "thirdPartyVerified": "சரிபார்க்கக்கூடிய முடிவுகள்",
@@ -242,7 +242,7 @@
       "title": "விரிவான கவரேஜ்",
       "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ பாதிப்பு வகைகள்",
-      "detail": "Every finding rated by severity, from low to critical"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "தேவை-நேர பகுப்பாய்வு",

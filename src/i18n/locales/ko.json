@@ -96,7 +96,7 @@
       "comprehensiveCoverage": "포괄적인 커버리지",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ 취약점 카테고리",
-      "detectionRate": "Every finding rated by severity, from low to critical",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "검증 가능하고 투명함",
       "productionReadyDesc": "감사의 모든 단계를 검사, 재현 및 검증하려는 개발자 및 연구자를 위해 구축된 투명한 분석 파이프라인.",
       "thirdPartyVerified": "검증 가능한 결과",
@@ -242,7 +242,7 @@
       "title": "포괄적인 범위",
       "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15가지 이상의 취약점 카테고리",
-      "detail": "Every finding rated by severity, from low to critical"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "온디맨드 분석",

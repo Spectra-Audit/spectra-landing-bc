@@ -96,7 +96,7 @@
       "comprehensiveCoverage": "Kapsamlı Kapsama",
       "comprehensiveCoverageDesc": "Advanced AI models detect a broad range of known vulnerability classes: smart contract bugs, economic attack vectors, and concentration risks.",
       "vulnerabilityCategories": "15+ güvenlik açığı kategorisi",
-      "detectionRate": "Every finding rated by severity, from low to critical",
+      "detectionRate": "Every finding rated by severity, from informational to critical",
       "productionReady": "Doğrulanabilir ve Şeffaf",
       "productionReadyDesc": "Denetimin her adımını incelemek, yeniden üretmek ve doğrulamak isteyen geliştiriciler ve araştırmacılar için inşa edilen şeffaf bir analiz hattı.",
       "thirdPartyVerified": "Doğrulanabilir Sonuçlar",
@@ -242,7 +242,7 @@
       "title": "Kapsamlı Kapsama",
       "description": "Advanced AI models detect a broad range of known vulnerability classes, from smart contract bugs to economic attack vectors and concentration risks.",
       "metric": "15+ açıklama kategorisi",
-      "detail": "Every finding rated by severity, from low to critical"
+      "detail": "Every finding rated by severity, from informational to critical"
     },
     "trustIndicators": {
       "monitoring": "Talep Üzerine Analiz",
