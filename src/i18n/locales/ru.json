@@ -633,13 +633,13 @@
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Щитовидный цикл обратной связи для непрерывного улучшения: аудиты формируют отзывы пользователей, которые взвешиваются по репутации рецензента во время оценки, а затем используются для калибровки и обновления модели для будущей версии.",
       "nodes": {
         "audit": "Аудит",
         "feedback": "Отзывы",
         "evaluation": "Оценка",
         "calibration": "Калибровка",
-        "retraining": "Переобучение"
+        "retraining": "Обновление"
       },
       "centerLine1": "Непрерывное",
       "centerLine2": "обучение"

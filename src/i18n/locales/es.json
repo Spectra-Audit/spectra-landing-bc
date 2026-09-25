@@ -633,13 +633,13 @@
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Bucle de retroalimentación de mejora continua con forma de escudo: las auditorías informan los comentarios de los usuarios, que se ponderan según la reputación del revisor durante la evaluación y luego se usan para calibrar y actualizar el modelo para una versión futura.",
       "nodes": {
         "audit": "Auditoría",
         "feedback": "Comentarios",
         "evaluation": "Evaluación",
         "calibration": "Calibración",
-        "retraining": "Reentrenamiento"
+        "retraining": "Actualización"
       },
       "centerLine1": "Aprendizaje",
       "centerLine2": "Continuo"

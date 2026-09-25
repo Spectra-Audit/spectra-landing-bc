@@ -7,12 +7,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and update the model for a future release.",
       "audit": "Audit",
       "feedback": "User Feedback",
       "evaluation": "Evaluation",
       "calibration": "Calibration",
-      "retraining": "Model Retraining",
+      "retraining": "Model Updates",
       "centerLine1": "Continuous",
       "centerLine2": "Learning Loop"
     }
@@ -25,12 +25,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Bucle de retroalimentación de mejora continua con forma de escudo: las auditorías informan los comentarios de los usuarios, que se ponderan según la reputación del revisor durante la evaluación y luego se usan para calibrar y actualizar el modelo para una versión futura.",
       "audit": "Auditoría",
       "feedback": "Comentarios",
       "evaluation": "Evaluación",
       "calibration": "Calibración",
-      "retraining": "Reentrenamiento",
+      "retraining": "Actualización",
       "centerLine1": "Aprendizaje",
       "centerLine2": "Continuo"
     }
@@ -43,12 +43,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Ciclo de feedback de melhoria contínua em forma de escudo: as auditorias informam o feedback dos usuários, que é ponderado pela reputação do revisor durante a avaliação e então usado para calibrar e atualizar o modelo para uma versão futura.",
       "audit": "Auditoria",
       "feedback": "Feedback",
       "evaluation": "Avaliação",
       "calibration": "Calibração",
-      "retraining": "Retreinamento",
+      "retraining": "Atualização",
       "centerLine1": "Aprendizado",
       "centerLine2": "Contínuo"
     }
@@ -61,12 +61,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Boucle de rétroaction d'amélioration continue en forme de bouclier : les audits alimentent les retours des utilisateurs, qui sont pondérés selon la réputation de l'évaluateur lors de l'évaluation, puis utilisés pour calibrer et mettre à jour le modèle pour une version future.",
       "audit": "Audit",
       "feedback": "Retours",
       "evaluation": "Évaluation",
       "calibration": "Calibration",
-      "retraining": "Réentraînement",
+      "retraining": "Mise à jour",
       "centerLine1": "Apprentissage",
       "centerLine2": "Continu"
     }
@@ -79,12 +79,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Schildförmige Feedback-Schleife zur kontinuierlichen Verbesserung: Audits liefern Nutzer-Feedback, das während der Bewertung anhand der Reputation des Prüfers gewichtet und dann zur Kalibrierung und Aktualisierung des Modells für eine künftige Version verwendet wird.",
       "audit": "Audit",
       "feedback": "Nutzer-Feedback",
       "evaluation": "Bewertung",
       "calibration": "Kalibrierung",
-      "retraining": "Modelltraining",
+      "retraining": "Modellaktualisierung",
       "centerLine1": "Kontinuierliches",
       "centerLine2": "Lernen"
     }
@@ -97,12 +97,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Щитовидный цикл обратной связи для непрерывного улучшения: аудиты формируют отзывы пользователей, которые взвешиваются по репутации рецензента во время оценки, а затем используются для калибровки и обновления модели для будущей версии.",
       "audit": "Аудит",
       "feedback": "Отзывы",
       "evaluation": "Оценка",
       "calibration": "Калибровка",
-      "retraining": "Переобучение",
+      "retraining": "Обновление",
       "centerLine1": "Непрерывное",
       "centerLine2": "обучение"
     }
@@ -115,12 +115,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "Kalkan şeklinde sürekli iyileştirme geri bildirim döngüsü: denetimler kullanıcı geri bildirimini besler, bu geri bildirim değerlendirme sırasında inceleyenin itibarına göre ağırlıklandırılır ve ardından gelecekteki bir sürüm için modeli kalibre etmek ve güncellemek için kullanılır.",
       "audit": "Denetim",
       "feedback": "Geri Bildirim",
       "evaluation": "Değerlendirme",
       "calibration": "Kalibrasyon",
-      "retraining": "Yeniden Eğitim",
+      "retraining": "Güncelleme",
       "centerLine1": "Sürekli",
       "centerLine2": "Öğrenme"
     }
@@ -133,12 +133,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "盾牌形状的持续改进反馈循环：审计为用户反馈提供依据，用户反馈在评估期间根据审阅者信誉进行加权，然后用于校准和更新模型以用于未来版本。",
       "audit": "审计",
       "feedback": "用户反馈",
       "evaluation": "评估",
       "calibration": "校准",
-      "retraining": "模型再训练",
+      "retraining": "模型更新",
       "centerLine1": "持续",
       "centerLine2": "学习循环"
     }
@@ -151,12 +151,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "盾の形をした継続的改善フィードバックループ：監査がユーザーフィードバックに情報を提供し、それが評価時にレビュアーの信頼度に基づいて重み付けされ、将来のリリースに向けてモデルの較正と更新に使用されます。",
       "audit": "監査",
       "feedback": "ユーザーフィードバック",
       "evaluation": "評価",
       "calibration": "較正",
-      "retraining": "モデル再学習",
+      "retraining": "モデル更新",
       "centerLine1": "継続的",
       "centerLine2": "学習ループ"
     }
@@ -169,12 +169,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "방패 모양의 지속적 개선 피드백 루프: 감사가 사용자 피드백에 반영되고, 이 피드백은 평가 시 검토자 평판에 따라 가중치가 부여된 후 향후 릴리스를 위해 모델을 보정하고 업데이트하는 데 사용됩니다.",
       "audit": "감사",
       "feedback": "사용자 피드백",
       "evaluation": "평가",
       "calibration": "보정",
-      "retraining": "모델 재학습",
+      "retraining": "모델 업데이트",
       "centerLine1": "지속적",
       "centerLine2": "학습 루프"
     }
@@ -187,12 +187,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "حلقة تغذية راجعة للتحسين المستمر على شكل درع: عمليات التدقيق تُثري تعليقات المستخدمين، التي يتم ترجيحها حسب سمعة المراجع أثناء التقييم، ثم تُستخدم لمعايرة النموذج وتحديثه لإصدار مستقبلي.",
       "audit": "التدقيق",
       "feedback": "تعليقات المستخدم",
       "evaluation": "التقييم",
       "calibration": "المعايرة",
-      "retraining": "إعادة تدريب النموذج",
+      "retraining": "تحديث النموذج",
       "centerLine1": "التعلم",
       "centerLine2": "المستمر"
     }
@@ -205,12 +205,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "ढाल के आकार का निरंतर सुधार फीडबैक लूप: ऑडिट उपयोगकर्ता फीडबैक को सूचित करते हैं, जिसे मूल्यांकन के दौरान समीक्षक की प्रतिष्ठा के अनुसार महत्व दिया जाता है, फिर भविष्य के संस्करण के लिए मॉडल को कैलिब्रेट और अपडेट करने के लिए उपयोग किया जाता है।",
       "audit": "ऑडिट",
       "feedback": "उपयोगकर्ता फीडबैक",
       "evaluation": "मूल्यांकन",
       "calibration": "कैलिब्रेशन",
-      "retraining": "मॉडल पुनःप्रशिक्षण",
+      "retraining": "मॉडल अपडेट",
       "centerLine1": "निरंतर",
       "centerLine2": "लर्निंग लूप"
     }
@@ -223,12 +223,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "ঢালের আকৃতির ক্রমাগত উন্নতির ফিডব্যাক লুপ: অডিট ব্যবহারকারীর ফিডব্যাককে অবহিত করে, যা মূল্যায়নের সময় পর্যালোচকের সুনাম অনুসারে ওজন করা হয়, এরপর ভবিষ্যতের সংস্করণের জন্য মডেল ক্যালিব্রেট ও আপডেট করতে ব্যবহৃত হয়।",
       "audit": "অডিট",
       "feedback": "ব্যবহারকারীর ফিডব্যাক",
       "evaluation": "মূল্যায়ন",
       "calibration": "ক্যালিব্রেশন",
-      "retraining": "মডেল পুনঃপ্রশিক্ষণ",
+      "retraining": "মডেল আপডেট",
       "centerLine1": "ক্রমাগত",
       "centerLine2": "লার্নিং লুপ"
     }
@@ -241,12 +241,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "షీల్డ్ ఆకారంలో నిరంతర మెరుగుదల ఫీడ్‌బ్యాక్ లూప్: ఆడిట్‌లు వినియోగదారు ఫీడ్‌బ్యాక్‌ను తెలియజేస్తాయి, ఇది మూల్యాంకన సమయంలో సమీక్షకుని ప్రతిష్ఠ ఆధారంగా బరువు ఇవ్వబడుతుంది, ఆపై భవిష్యత్ విడుదల కోసం మోడల్‌ను క్యాలిబ్రేట్ చేసి అప్‌డేట్ చేయడానికి ఉపయోగించబడుతుంది.",
       "audit": "ఆడిట్",
       "feedback": "వినియోగదారు ఫీడ్‌బ్యాక్",
       "evaluation": "మూల్యాంకనం",
       "calibration": "క్యాలిబ్రేషన్",
-      "retraining": "మోడల్ పునఃశిక్షణ",
+      "retraining": "మోడల్ అప్‌డేట్",
       "centerLine1": "నిరంతర",
       "centerLine2": "లెర్నింగ్ లూప్"
     }
@@ -259,12 +259,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "கேடயம் வடிவ தொடர்ச்சியான மேம்பாட்டு பின்னூட்ட சுழற்சி: தணிக்கைகள் பயனர் பின்னூட்டத்தை வழங்குகின்றன, இது மதிப்பீட்டின் போது மதிப்பாய்வாளரின் நற்பெயரின் அடிப்படையில் எடையிடப்பட்டு, எதிர்கால வெளியீட்டிற்காக மாதிரியை அளவீடு செய்து புதுப்பிக்கப் பயன்படுத்தப்படுகிறது.",
       "audit": "தணிக்கை",
       "feedback": "பயனர் பின்னூட்டம்",
       "evaluation": "மதிப்பீடு",
       "calibration": "அளவீடு",
-      "retraining": "மாதிரி மறுபயிற்சி",
+      "retraining": "மாதிரி புதுப்பிப்பு",
       "centerLine1": "தொடர்ச்சியான",
       "centerLine2": "கற்றல் சுழற்சி"
     }
@@ -277,12 +277,12 @@
       "subtitle": "Analyzers running in parallel → weighted composite"
     },
     "l": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "ढालीच्या आकाराचे सतत सुधारणा अभिप्राय लूप: ऑडिट वापरकर्त्याच्या अभिप्रायाला माहिती देतात, ज्याचे मूल्यांकनादरम्यान समीक्षकाच्या प्रतिष्ठेनुसार वजन केले जाते आणि नंतर भविष्यातील आवृत्तीसाठी मॉडेल कॅलिब्रेट आणि अपडेट करण्यासाठी वापरले जाते.",
       "audit": "ऑडिट",
       "feedback": "वापरकर्ता अभिप्राय",
       "evaluation": "मूल्यांकन",
       "calibration": "कॅलिब्रेशन",
-      "retraining": "मॉडेल पुनःप्रशिक्षण",
+      "retraining": "मॉडेल अपडेट",
       "centerLine1": "सतत",
       "centerLine2": "लर्निंग लूप"
     }

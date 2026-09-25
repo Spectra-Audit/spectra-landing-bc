@@ -633,13 +633,13 @@
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "கேடயம் வடிவ தொடர்ச்சியான மேம்பாட்டு பின்னூட்ட சுழற்சி: தணிக்கைகள் பயனர் பின்னூட்டத்தை வழங்குகின்றன, இது மதிப்பீட்டின் போது மதிப்பாய்வாளரின் நற்பெயரின் அடிப்படையில் எடையிடப்பட்டு, எதிர்கால வெளியீட்டிற்காக மாதிரியை அளவீடு செய்து புதுப்பிக்கப் பயன்படுத்தப்படுகிறது.",
       "nodes": {
         "audit": "தணிக்கை",
         "feedback": "பயனர் பின்னூட்டம்",
         "evaluation": "மதிப்பீடு",
         "calibration": "அளவீடு",
-        "retraining": "மாதிரி மறுபயிற்சி"
+        "retraining": "மாதிரி புதுப்பிப்பு"
       },
       "centerLine1": "தொடர்ச்சியான",
       "centerLine2": "கற்றல் சுழற்சி"

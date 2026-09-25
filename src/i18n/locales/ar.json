@@ -768,13 +768,13 @@
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "حلقة تغذية راجعة للتحسين المستمر على شكل درع: عمليات التدقيق تُثري تعليقات المستخدمين، التي يتم ترجيحها حسب سمعة المراجع أثناء التقييم، ثم تُستخدم لمعايرة النموذج وتحديثه لإصدار مستقبلي.",
       "nodes": {
         "audit": "التدقيق",
         "feedback": "تعليقات المستخدم",
         "evaluation": "التقييم",
         "calibration": "المعايرة",
-        "retraining": "إعادة تدريب النموذج"
+        "retraining": "تحديث النموذج"
       },
       "centerLine1": "التعلم",
       "centerLine2": "المستمر"

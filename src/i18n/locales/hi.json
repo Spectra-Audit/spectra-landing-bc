@@ -633,13 +633,13 @@
       "description": "When professional human audits become available for a project, our findings are compared against the report. Discrepancies are recorded and reviewed before the next release."
     },
     "diagram": {
-      "ariaLabel": "Continuous improvement feedback loop shaped like a shield: audits inform user feedback, which is weighed by reviewer reputation during evaluation, then used to calibrate and retrain the model for a future release.",
+      "ariaLabel": "ढाल के आकार का निरंतर सुधार फीडबैक लूप: ऑडिट उपयोगकर्ता फीडबैक को सूचित करते हैं, जिसे मूल्यांकन के दौरान समीक्षक की प्रतिष्ठा के अनुसार महत्व दिया जाता है, फिर भविष्य के संस्करण के लिए मॉडल को कैलिब्रेट और अपडेट करने के लिए उपयोग किया जाता है।",
       "nodes": {
         "audit": "ऑडिट",
         "feedback": "उपयोगकर्ता फीडबैक",
         "evaluation": "मूल्यांकन",
         "calibration": "कैलिब्रेशन",
-        "retraining": "मॉडल पुनःप्रशिक्षण"
+        "retraining": "मॉडल अपडेट"
       },
       "centerLine1": "निरंतर",
       "centerLine2": "लर्निंग लूप"
