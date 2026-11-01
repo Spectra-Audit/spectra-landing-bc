@@ -1,5 +1,7 @@
 // Server Component — renders a static <script type="application/ld+json">
 // from plain data (no hooks, no browser APIs, no `'use client'` needed).
+import { SITE_URL, absoluteLocaleUrl } from '@/lib/site'
+
 interface SoftwareApplicationSchema {
   '@context': string
   '@type': string
@@ -40,38 +42,6 @@ interface OrganizationSchema {
   }
 }
 
-interface SecurityAuditSchema {
-  '@context': string
-  '@type': string
-  name: string
-  description: string
-  auditScore: string
-  dateModified: string
-  itemReviewed: {
-    '@type': string
-    name: string
-  }
-}
-
-interface WebPageSchema {
-  '@context': string
-  '@type': string
-  name: string
-  description: string
-  url: string
-  inLanguage: string
-  isPartOf: {
-    '@type': string
-    name: string
-    url: string
-  }
-  about?: string[]
-  mainEntity?: {
-    '@type': string
-    name: string
-  }
-}
-
 interface FAQSchema {
   '@context': string
   '@type': string
@@ -85,36 +55,52 @@ interface FAQSchema {
   }>
 }
 
-interface ServiceSchema {
+interface ArticleSchema {
   '@context': string
-  '@type': string
-  name: string
+  '@type': 'TechArticle'
+  headline: string
   description: string
-  provider: {
-    '@type': string
+  inLanguage: string
+  url: string
+  mainEntityOfPage: {
+    '@type': 'WebPage'
+    '@id': string
+  }
+  datePublished: string
+  dateModified: string
+  author: {
+    '@type': 'Organization'
     name: string
     url: string
   }
-  serviceType: string
-  areaServed: string
-  hasOfferCatalog: {
-    '@type': string
-    itemListElement: Array<{
-      '@type': string
-      name: string
-      description: string
-      offers: {
-        '@type': string
-        price: string
-        priceCurrency: string
-      }
-    }>
+  publisher: {
+    '@type': 'Organization'
+    name: string
+    url: string
+    logo: { '@type': 'ImageObject'; url: string }
   }
+  isPartOf: {
+    '@type': 'WebSite'
+    name: string
+    url: string
+  }
+  about: string[]
+}
+
+interface BreadcrumbSchema {
+  '@context': string
+  '@type': 'BreadcrumbList'
+  itemListElement: Array<{
+    '@type': 'ListItem'
+    position: number
+    name: string
+    item: string
+  }>
 }
 
 interface StructuredDataProps {
-  type: 'software' | 'organization' | 'security-audit' | 'webpage' | 'faq' | 'service'
-  data: SoftwareApplicationSchema | OrganizationSchema | SecurityAuditSchema | WebPageSchema | FAQSchema | ServiceSchema
+  type: 'software' | 'organization' | 'faq' | 'article' | 'breadcrumb'
+  data: SoftwareApplicationSchema | OrganizationSchema | FAQSchema | ArticleSchema | BreadcrumbSchema
 }
 
 export default function StructuredData({ type, data }: StructuredDataProps) {
@@ -125,14 +111,16 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         return !!(data.name && data.description && data.applicationCategory)
       case 'organization':
         return !!(data.name && data.url && data.description)
-      case 'security-audit':
-        return !!(data.name && data.description && data.auditScore)
-      case 'webpage':
-        return !!(data.name && data.description && data.url)
       case 'faq':
         return !!(data.mainEntity && Array.isArray(data.mainEntity) && data.mainEntity.length > 0)
-      case 'service':
-        return !!(data.name && data.description && data.serviceType)
+      case 'article':
+        return !!(data.headline && data.description && data.url && data.dateModified)
+      case 'breadcrumb':
+        return !!(
+          data.itemListElement &&
+          Array.isArray(data.itemListElement) &&
+          data.itemListElement.length > 0
+        )
       default:
         return false
     }
@@ -178,32 +166,23 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
       break
     }
 
-    case 'security-audit': {
-      const auditData = data as SecurityAuditSchema
-      schema = {
-        '@context': 'https://schema.org',
-        '@type': 'Review',
-        name: auditData.name,
-        description: auditData.description,
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: auditData.auditScore,
-          bestRating: 'A',
-          worstRating: 'F'
-        },
-        dateModified: auditData.dateModified,
-        itemReviewed: {
-          '@type': 'SoftwareApplication',
-          name: auditData.itemReviewed.name
-        }
-      }
-      break
-    }
-
     case 'faq': {
       // FAQ data arrives as a complete schema.org FAQPage object (built from
       // the active locale's translations so the markup matches visible text).
       schema = data as FAQSchema
+      break
+    }
+
+    // Article + breadcrumb builders below already emit complete, localized
+    // schema.org objects, so these cases pass the data straight through
+    // rather than re-deriving fields the builder already resolved.
+    case 'article': {
+      schema = data as ArticleSchema
+      break
+    }
+
+    case 'breadcrumb': {
+      schema = data as BreadcrumbSchema
       break
     }
   }
@@ -252,73 +231,89 @@ export const createOrganizationSchema = (): OrganizationSchema => ({
   }
 })
 
-export const createSecurityAuditSchema = (contractName: string, grade: string): SecurityAuditSchema => ({
-  '@context': 'https://schema.org',
-  '@type': 'Review',
-  name: `${contractName} Security Audit`,
-  description: `Comprehensive security analysis of ${contractName} smart contract using AI-powered vulnerability detection.`,
-  auditScore: grade,
-  dateModified: new Date().toISOString(),
-  itemReviewed: {
-    '@type': 'SoftwareApplication',
-    name: contractName
-  }
-})
-
-export const createWebPageSchema = (): WebPageSchema => ({
-  '@context': 'https://schema.org',
-  '@type': 'WebPage',
-  name: 'Spectra Audit - AI-Powered Security Audits | Smart Contract Security',
-  description: 'Real-time AI audits you can verify. Get comprehensive smart contract security audits in minutes, not weeks. Continuous monitoring for blockchain protocols.',
-  url: 'https://www.spectra-audit.com',
-  inLanguage: 'en',
-  isPartOf: {
-    '@type': 'WebSite',
-    name: 'Spectra Audit',
-    url: 'https://www.spectra-audit.com'
-  },
-  about: [
-    'Smart Contract Security',
-    'Blockchain Security',
-    'DeFi Auditing',
-    'Vulnerability Detection',
-    'AI Security Analysis'
-  ],
-  mainEntity: {
-    '@type': 'SoftwareApplication',
-    name: 'Spectra Audit Platform'
-  }
-})
-
 // FAQ structured data is built from translations in the page that renders it
 // (see HomePage) so the JSON-LD always matches the visible, localized FAQ text.
 export type { FAQSchema }
 
-export const createServiceSchema = (): ServiceSchema => ({
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'AI-Powered Security Audit Service',
-  description: 'AI-powered security analysis for blockchain smart contracts and DeFi protocols.',
-  provider: {
-    '@type': 'Organization',
-    name: 'Spectra Audit',
-    url: 'https://www.spectra-audit.com'
-  },
-  serviceType: 'Security Audit Service',
-  areaServed: 'Worldwide',
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        name: 'AI-Powered Security Analysis',
-        description: 'Multi-dimensional smart contract security analysis with AI-powered vulnerability detection',
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'USD'
-        }
-      }
-    ]
+// /whitepaper schema (SPE-4 section 4.4). Both builders take the already
+// translated, locale-specific strings from the page so the JSON-LD matches the
+// visible content in all 16 locales — the same rule the FAQPage schema follows.
+export const createArticleSchema = ({
+  locale,
+  headline,
+  description,
+  datePublished,
+  dateModified,
+  about,
+}: {
+  locale: string
+  headline: string
+  description: string
+  datePublished: string
+  dateModified: string
+  about: string[]
+}): ArticleSchema => {
+  const url = absoluteLocaleUrl(locale, '/whitepaper')
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline,
+    description,
+    inLanguage: locale,
+    url,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Organization',
+      name: 'Spectra Audit',
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Spectra Audit',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/logo.png`,
+      },
+    },
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Spectra Audit',
+      url: SITE_URL,
+    },
+    about,
   }
+}
+
+export const createBreadcrumbSchema = ({
+  locale,
+  homeName,
+  pageName,
+}: {
+  locale: string
+  homeName: string
+  pageName: string
+}): BreadcrumbSchema => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: homeName,
+      item: absoluteLocaleUrl(locale),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: pageName,
+      item: absoluteLocaleUrl(locale, '/whitepaper'),
+    },
+  ],
 })

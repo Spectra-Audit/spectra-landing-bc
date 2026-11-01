@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI 驱动的智能合约安全审计平台",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "0 到 100 的安全评分，并附上背后的证据。可验证的实时 AI 审计。几分钟内免费分析智能合约，无需注册。",
     "keywords": "区块链安全, 人工智能审计, 智能合约安全, 加密货币安全, DeFi 安全",
     "og": {
       "title": "Spectra Audit - AI 驱动的智能合约安全审计",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "0 到 100 的安全评分，并附上背后的证据。可验证的实时 AI 审计。",
       "imageAlt": "Spectra AI 安全审计平台界面"
     }
   },
@@ -576,8 +576,8 @@
       "button": "开始您的首次审计"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "多维度安全审计框架 | Spectra Audit",
+      "description": "Spectra Audit 如何从代码、持币分布、代币经济、流动性、市场情绪和链上行为六个维度评估智能合约，汇总为一个透明的安全评分。"
     }
   },
   "methodology": {

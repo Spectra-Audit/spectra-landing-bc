@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - Auditorías de Seguridad Blockchain con IA",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "Una Puntuación de Seguridad de 0 a 100, con la evidencia detrás. Auditorías de IA en tiempo real y verificables. Análisis gratis en minutos, sin registro.",
     "keywords": "seguridad blockchain, auditoría IA, seguridad de contratos inteligentes, seguridad cripto, protección DeFi",
     "og": {
       "title": "Spectra Audit - Auditorías de Seguridad Blockchain con IA",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "Una Puntuación de Seguridad de 0 a 100, con la evidencia detrás. Auditorías de IA verificables en tiempo real.",
       "imageAlt": "Plataforma de Auditoría de Seguridad de Spectra Audit IA"
     }
   },
@@ -576,8 +576,8 @@
       "button": "Inicia Tu Primera Auditoría"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "Marco de Auditoría de Seguridad Multidimensional | Spectra",
+      "description": "Cómo Spectra Audit puntúa contratos inteligentes en código, distribución, tokenomics, liquidez, sentimiento y actividad on-chain en una sola puntuación."
     }
   },
   "methodology": {

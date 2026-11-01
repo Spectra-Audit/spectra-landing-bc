@@ -4,6 +4,8 @@ import { Navbar, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
 import WhitepaperAnalyticsTracker from '@/components/ui/WhitepaperAnalyticsTracker'
 import DimensionsGrid, { type DimensionsGridItem } from '@/components/ui/DimensionsGrid'
+import StructuredData, { createArticleSchema, createBreadcrumbSchema } from '@/components/ui/StructuredData'
+import { WHITEPAPER_PUBLISHED, WHITEPAPER_MODIFIED } from '@/lib/content-dates'
 import {
   Shield,
   Code,
@@ -40,6 +42,7 @@ export default async function WhitepaperPage({
   setRequestLocale(locale)
 
   const t = await getTranslations('whitepaper')
+  const tNav = await getTranslations('nav')
 
   // Dimension icons mapping
   const dimensionIcons = {
@@ -150,8 +153,38 @@ export default async function WhitepaperPage({
     }
   })
 
+  // JSON-LD for /whitepaper (SPE-4 section 4.4). Built from the active locale's
+  // translations so the markup matches the visible, localized content in all 16
+  // locales — same rule the homepage FAQPage schema follows.
+  const articleSchema = createArticleSchema({
+    locale,
+    headline: t('metadata.title'),
+    description: t('metadata.description'),
+    datePublished: WHITEPAPER_PUBLISHED,
+    dateModified: WHITEPAPER_MODIFIED,
+    about: [
+      t('dimensions.items.code.name'),
+      t('dimensions.items.distribution.name'),
+      t('dimensions.items.tokenomics.name'),
+      t('dimensions.items.liquidity.name'),
+      t('dimensions.items.sentiment.name')
+    ]
+  })
+
+  // Position 1 uses the brand name rather than a translated "Home" label: the
+  // nav namespace has no `home` key, and adding an otherwise-unrendered string
+  // to it would ship to every client bundle via pick-messages for nothing.
+  const breadcrumbSchema = createBreadcrumbSchema({
+    locale,
+    homeName: 'Spectra Audit',
+    pageName: tNav('whitepaper')
+  })
+
   return (
     <MobileOptimized>
+      <StructuredData type="article" data={articleSchema} />
+      <StructuredData type="breadcrumb" data={breadcrumbSchema} />
+
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900">
         {/* Render-nothing client island for the page-view / whitepaper-viewed
             analytics side effect. */}

@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI चालित ब्लॉकचेन सुरक्षा ऑडिट",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "० ते १०० दरम्यान एक सुरक्षा स्कोअर, त्यामागील पुराव्यांसह. पडताळण्याजोगे रिअल-टाइम AI ऑडिट. काही मिनिटांत मोफत स्मार्ट कॉन्ट्रॅक्ट विश्लेषण, नोंदणीशिवाय.",
     "keywords": "ब्लॉकचेन सुरक्षा, AI ऑडिट, स्मार्ट करार सुरक्षा, क्रिप्टो सुरक्षा, DeFi संरक्षण",
     "og": {
       "title": "Spectra Audit - AI चालित ब्लॉकचेन सुरक्षा ऑडिट",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "० ते १०० दरम्यान एक सुरक्षा स्कोअर, त्यामागील पुराव्यांसह. पडताळण्याजोगे रिअल-टाइम AI ऑडिट.",
       "imageAlt": "Spectra AI सुरक्षा ऑडिट प्लॅटफॉर्म"
     }
   },
@@ -576,8 +576,8 @@
       "button": "तुमचा पहिला ऑडिट सुरू करा"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "बहुआयामी सुरक्षा ऑडिट आराखडा | Spectra Audit",
+      "description": "Spectra Audit कोड, वितरण, टोकनॉमिक्स, लिक्विडिटी, भावना आणि ऑन-चेन वर्तन यांच्या आधारे स्मार्ट कॉन्ट्रॅक्टला एका पारदर्शक सुरक्षा स्कोअरमध्ये कसे मांडते."
     }
   },
   "methodology": {

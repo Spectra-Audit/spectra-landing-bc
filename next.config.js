@@ -157,8 +157,14 @@ const nextConfig = {
   // Redirects for legacy routes - note: locale prefix handling is done by middleware
   async redirects() {
     return [
-      // Legacy redirects - these are handled by middleware for i18n
-      // No need to redirect root here as middleware handles locale prefix
+      // `localePrefix: 'as-needed'` serves the default locale unprefixed, so
+      // /en and /en/* are duplicates of / and /*. next-intl's middleware
+      // already redirects them, but only with a temporary 307, which does not
+      // consolidate link equity onto the canonical URL (SPE-4 plan line 90).
+      // next.config.js redirects are evaluated BEFORE middleware, so these
+      // win and emit a literal 301 instead.
+      { source: '/en', destination: '/', statusCode: 301 },
+      { source: '/en/:path+', destination: '/:path+', statusCode: 301 }
     ]
   }
 }

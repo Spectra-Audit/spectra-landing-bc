@@ -241,7 +241,7 @@ export default async function HomePage({
                         <FileCheck className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.thirdPartyAudited')}</h4>
+                        <h2 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.thirdPartyAudited')}</h2>
                         <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">{t('hero.page.thirdPartyAuditedDesc')}</p>
                       </div>
                     </div>
@@ -252,7 +252,7 @@ export default async function HomePage({
                         <Eye className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.openSource')}</h4>
+                        <h2 className="text-sm font-bold text-neutral-900 dark:text-white">{t('hero.page.openSource')}</h2>
                         <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">{t('hero.page.openSourceDesc')}</p>
                       </div>
                     </div>
