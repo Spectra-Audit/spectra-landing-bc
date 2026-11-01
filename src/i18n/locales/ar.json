@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "title": "Spectra Audit - عمليات تدقيق الأمان بالذكاء الاصطناعي للبلوك تشين",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "title": "Spectra Audit - تدقيق أمان البلوك تشين بالذكاء الاصطناعي",
+    "description": "درجة أمان من 0 إلى 100 مع الأدلة التي تدعمها. تدقيقات بالذكاء الاصطناعي في الوقت الفعلي قابلة للتحقق. تحليل مجاني للعقود الذكية في دقائق، بدون تسجيل.",
     "keywords": "أمان البلوك تشين، تدقيق AI، أمان العقود الذكية، سلامة العملات المشفرة، حماية DeFi",
     "og": {
-      "title": "Spectra Audit - عمليات تدقيق الأمان بالذكاء الاصطناعي للبلوك تشين",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "title": "Spectra Audit - تدقيق أمان البلوك تشين بالذكاء الاصطناعي",
+      "description": "درجة أمان من 0 إلى 100 مع الأدلة التي تدعمها. تدقيقات بالذكاء الاصطناعي في الوقت الفعلي قابلة للتحقق.",
       "imageAlt": "منصة Spectra Audit لتدقيق الأمان بالذكاء الاصطناعي"
     }
   },
@@ -711,8 +711,8 @@
       "button": "ابدأ أول تدقيق لك"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "إطار تدقيق الأمان متعدد الأبعاد | Spectra Audit",
+      "description": "كيف يقيّم Spectra Audit العقود الذكية عبر الكود والتوزيع واقتصاد التوكن والسيولة ومعنويات السوق والسلوك على السلسلة في درجة أمان شفافة واحدة."
     }
   },
   "methodology": {

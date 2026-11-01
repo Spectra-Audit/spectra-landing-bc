@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI ఆధారిత బ్లాక్‌చైన్ భద్రత ఆడిట్‌లు",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "0 నుండి 100 వరకు ఒక భద్రతా స్కోరు, దాని వెనుక ఆధారాలతో. ధృవీకరించదగిన రియల్-టైమ్ AI ఆడిట్‌లు. నిమిషాల్లో ఉచిత స్మార్ట్ కాంట్రాక్ట్ విశ్లేషణ, రిజిస్ట్రేషన్ లేదు.",
     "keywords": "బ్లాక్‌చైన్ భద్రత, AI ఆడిట్, స్మార్ట్ ఒప్పందం భద్రత, క్రిప్టో భద్రత, DeFi రక్షణ",
     "og": {
       "title": "Spectra Audit - AI ఆధారిత బ్లాక్‌చైన్ భద్రత ఆడిట్‌లు",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "0 నుండి 100 వరకు ఒక భద్రతా స్కోరు, దాని వెనుక ఆధారాలతో. ధృవీకరించదగిన రియల్-టైమ్ AI ఆడిట్‌లు.",
       "imageAlt": "Spectra AI భద్రత ఆడిట్ ప్లాట్‌ఫారం"
     }
   },
@@ -576,8 +576,8 @@
       "button": "మీ మొదటి ఆడిట్‌ను ప్రారంభించండి"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "బహుముఖ భద్రతా ఆడిట్ ఫ్రేమ్‌వర్క్ | Spectra Audit",
+      "description": "Spectra Audit కోడ్, పంపిణీ, టోకెనామిక్స్, లిక్విడిటీ, సెంటిమెంట్, ఆన్-చైన్ ప్రవర్తన ఆధారంగా స్మార్ట్ కాంట్రాక్ట్‌లను పారదర్శక భద్రతా స్కోరుగా ఎలా మార్చుతుంది."
     }
   },
   "methodology": {

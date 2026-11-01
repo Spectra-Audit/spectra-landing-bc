@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "0 ile 100 arasında tek bir Güvenlik Puanı ve arkasındaki kanıtlar. Doğrulanabilir, gerçek zamanlı AI denetimleri. Dakikalar içinde ücretsiz analiz, kayıt yok.",
     "keywords": "blockchain güvenliği, AI denetimi, akıllı sözleşme güvenliği, kripto güvenliği, DeFi koruması",
     "og": {
       "title": "Spectra Audit - AI Destekli Blockchain Güvenlik Denetimleri",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "0 ile 100 arasında tek bir Güvenlik Puanı ve arkasındaki kanıtlar. Doğrulanabilir, gerçek zamanlı AI denetimleri.",
       "imageAlt": "Spectra AI Güvenlik Denetimi Platformu"
     }
   },
@@ -576,8 +576,8 @@
       "button": "İlk Denetiminizi Başlatın"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "Çok Boyutlu Güvenlik Denetim Çerçevesi | Spectra Audit",
+      "description": "Spectra Audit akıllı sözleşmeleri kod, dağıtım, tokenomi, likidite, piyasa duyarlılığı ve zincir üstü davranış açısından nasıl tek puanda değerlendirir."
     }
   },
   "methodology": {

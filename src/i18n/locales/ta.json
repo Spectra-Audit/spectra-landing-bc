@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "title": "Spectra Audit - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "title": "Spectra Audit - AI பிளாக்செயின் பாதுகாப்பு தணிக்கை",
+    "description": "0 முதல் 100 வரை ஒரு பாதுகாப்பு மதிப்பெண், சான்றுகளுடன். சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள். நிமிடங்களில் இலவச ஒப்பந்த பகுப்பாய்வு, பதிவு தேவையில்லை.",
     "keywords": "பிளாக்செயின் பாதுகாப்பு, AI தணிக்கை, ஸ்மார்ட் ஒப்பந்தம் பாதுகாப்பு, கிரிப்டோ பாதுகாப்பு, DeFi பாதுகாப்பு",
     "og": {
-      "title": "Spectra Audit - AI இயக்கப்படும் பிளாக்செயின் பாதுகாப்பு தணிக்கைகள்",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "title": "Spectra Audit - AI பிளாக்செயின் பாதுகாப்பு தணிக்கை",
+      "description": "0 முதல் 100 வரை ஒரு பாதுகாப்பு மதிப்பெண், சான்றுகளுடன். சரிபார்க்கக்கூடிய நிகழ்நேர AI தணிக்கைகள்.",
       "imageAlt": "Spectra AI பாதுகாப்பு தணிக்கை தளம்"
     }
   },
@@ -576,8 +576,8 @@
       "button": "உங்கள் முதல் தணிக்கையைத் தொடங்கவும்"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "பல்பரிமாண பாதுகாப்பு தணிக்கை கட்டமைப்பு | Spectra",
+      "description": "Spectra Audit குறியீடு, பங்கீடு, டோக்கனாமிக்ஸ், பணப்புழக்கம், உணர்வு, செயின் நடத்தை அடிப்படையில் ஸ்மார்ட் ஒப்பந்தங்களை ஒரு மதிப்பெண்ணாக மாற்றும் விதம்."
     }
   },
   "methodology": {

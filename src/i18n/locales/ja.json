@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AIによるブロックチェーンセキュリティ監査",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "0〜100のセキュリティスコアと、その根拠となる証拠を提示。検証可能なリアルタイムAI監査。スマートコントラクトを数分で無料分析、登録不要。",
     "keywords": "ブロックチェーンセキュリティ, AI監査, スマートコントラクトセキュリティ, 暗号資産セキュリティ, DeFi保護",
     "og": {
       "title": "Spectra Audit - AIによるブロックチェーンセキュリティ監査",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "0〜100のセキュリティスコアと、その根拠となる証拠を提示。検証可能なリアルタイムAI監査。",
       "imageAlt": "Spectra AI セキュリティ監査プラットフォーム"
     }
   },
@@ -576,8 +576,8 @@
       "button": "最初の監査を開始"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "多次元セキュリティ監査フレームワーク | Spectra Audit",
+      "description": "Spectra Auditがコード、保有分布、トークノミクス、流動性、センチメント、オンチェーン挙動からスマートコントラクトを評価し、透明なセキュリティスコアにまとめる仕組み。"
     }
   },
   "methodology": {

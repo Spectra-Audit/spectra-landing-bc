@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI 기반 블록체인 보안 감사",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "0에서 100까지의 보안 점수와 그 근거가 되는 증거를 함께 제공합니다. 검증 가능한 실시간 AI 감사. 스마트 컨트랙트를 몇 분 안에 무료 분석, 가입 불필요.",
     "keywords": "블록체인 보안, AI 감사, 스마트 컨트랙트 보안, 암호화폐 보안, DeFi 보호",
     "og": {
       "title": "Spectra Audit - AI 기반 블록체인 보안 감사",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "0에서 100까지의 보안 점수와 그 근거가 되는 증거를 함께 제공합니다. 검증 가능한 실시간 AI 감사.",
       "imageAlt": "Spectra AI 보안 감사 플랫폼"
     }
   },
@@ -576,8 +576,8 @@
       "button": "첫 번째 감사 시작"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "다차원 보안 감사 프레임워크 | Spectra Audit",
+      "description": "Spectra Audit가 코드, 분배, 토크노믹스, 유동성, 심리, 온체인 행동을 기준으로 스마트 컨트랙트를 평가해 투명한 보안 점수로 집계하는 방식."
     }
   },
   "methodology": {

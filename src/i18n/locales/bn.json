@@ -1,11 +1,11 @@
 {
   "metadata": {
     "title": "Spectra Audit - AI চালিত ব্লকচেইন নিরাপত্তা অডিট",
-    "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify. Free smart contract analysis in minutes, no registration.",
+    "description": "০ থেকে ১০০ পর্যন্ত একটি নিরাপত্তা স্কোর, পেছনের প্রমাণসহ। যাচাইযোগ্য রিয়েল-টাইম AI অডিট। মিনিটেই বিনামূল্যে স্মার্ট কনট্র্যাক্ট বিশ্লেষণ, রেজিস্ট্রেশন ছাড়াই।",
     "keywords": "ব্লকচেইন নিরাপত্তা, AI অডিট, স্মার্ট চুক্তি নিরাপত্তা, ক্রিপ্টো নিরাপত্তা, DeFi সুরক্ষা",
     "og": {
       "title": "Spectra Audit - AI চালিত ব্লকচেইন নিরাপত্তা অডিট",
-      "description": "One Security Score from 0 to 100, with the evidence behind it. Real-time AI audits you can verify.",
+      "description": "০ থেকে ১০০ পর্যন্ত একটি নিরাপত্তা স্কোর, পেছনের প্রমাণসহ। যাচাইযোগ্য রিয়েল-টাইম AI অডিট।",
       "imageAlt": "Spectra AI নিরাপত্তা অডিট প্ল্যাটফর্ম"
     }
   },
@@ -576,8 +576,8 @@
       "button": "আপনার প্রথম অডিট শুরু করুন"
     },
     "metadata": {
-      "title": "The Multi-Dimensional Security Audit Framework | Spectra Audit",
-      "description": "How Spectra Audit scores smart contracts across code, distribution, tokenomics, liquidity, sentiment, and on-chain behaviour, in one transparent Security Score backed by verifiable evidence."
+      "title": "বহু-মাত্রিক নিরাপত্তা অডিট ফ্রেমওয়ার্ক | Spectra",
+      "description": "Spectra Audit কীভাবে কোড, বিতরণ, টোকেনমিক্স, লিকুইডিটি, সেন্টিমেন্ট ও অন-চেইন আচরণ বিচার করে স্মার্ট কনট্র্যাক্টকে একটি স্বচ্ছ নিরাপত্তা স্কোরে রূপ দেয়।"
     }
   },
   "methodology": {
