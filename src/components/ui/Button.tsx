@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, forwardRef } from 'react'
+import { AnchorHTMLAttributes, ButtonHTMLAttributes, forwardRef } from 'react'
 import { cn } from '@/lib/utils'
 import SpectraLoader from './SpectraLoader'
 
@@ -9,9 +9,22 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   success?: boolean
   icon?: React.ReactNode
   fullWidth?: boolean
+  /**
+   * When set, the button renders as a real `<a href>` instead of a
+   * `<button>`. Navigation CTAs must use this: a `<button>` that navigates
+   * from an onClick handler has no href in the server-rendered HTML, so it
+   * is invisible to crawlers, cannot be middle-clicked, cmd-clicked or
+   * copied as a link, and does nothing at all before hydration or if the
+   * JS bundle fails. Styling and focus ring are identical either way.
+   */
+  href?: string
+  /** Anchor-only; ignored unless `href` is set. */
+  target?: AnchorHTMLAttributes<HTMLAnchorElement>['target']
+  /** Anchor-only; ignored unless `href` is set. */
+  rel?: string
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
   (
     {
       className,
@@ -21,6 +34,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       success = false,
       icon,
       fullWidth = false,
+      href,
+      target,
+      rel,
       children,
       disabled,
       ...props
@@ -81,21 +97,18 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       xl: 'px-10 py-5 text-xl min-h-[64px]'          /* Extra large */
     }
 
-    return (
-      <button
-        className={cn(
-          baseClasses,
-          variants[variant],
-          sizes[size],
-          fullWidth && 'w-full',
-          loading && 'cursor-wait',
-          success && 'animate-success-pulse bg-gradient-shield-green',
-          className
-        )}
-        disabled={disabled || loading}
-        ref={ref}
-        {...props}
-      >
+    const classes = cn(
+      baseClasses,
+      variants[variant],
+      sizes[size],
+      fullWidth && 'w-full',
+      loading && 'cursor-wait',
+      success && 'animate-success-pulse bg-gradient-shield-green',
+      className
+    )
+
+    const content = (
+      <>
         {loading && (
           // 20px is below MIN_FRAGMENT_SIZE_PX (48), so SpectraLoader
           // deliberately renders its plain CSS ring fallback here, not the
@@ -126,6 +139,40 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <span className={cn('truncate', loading && 'opacity-70')}>
           {children}
         </span>
+      </>
+    )
+
+    // An `<a>` has no disabled state, so a disabled/loading link CTA still
+    // renders as a (disabled) button rather than a clickable link.
+    if (href && !disabled && !loading) {
+      // `props` is typed for a button because that is the common case; the
+      // shared attributes we forward (onClick, aria-*, id, title, …) are
+      // valid on both elements.
+      const anchorProps = props as AnchorHTMLAttributes<HTMLAnchorElement>
+      return (
+        <a
+          className={classes}
+          href={href}
+          target={target}
+          // Anything opening a new tab gets noopener/noreferrer so the
+          // opened page cannot reach back through window.opener.
+          rel={rel ?? (target === '_blank' ? 'noopener noreferrer' : undefined)}
+          ref={ref as React.Ref<HTMLAnchorElement>}
+          {...anchorProps}
+        >
+          {content}
+        </a>
+      )
+    }
+
+    return (
+      <button
+        className={classes}
+        disabled={disabled || loading}
+        ref={ref as React.Ref<HTMLButtonElement>}
+        {...props}
+      >
+        {content}
       </button>
     )
   }
