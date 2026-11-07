@@ -361,11 +361,6 @@
         "label": "নিরাপত্তা স্কোর",
         "excellent": "চমৎকার"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "সেন্টিমেন্ট বিশ্লেষণ",

@@ -323,52 +323,6 @@ export default async function WhitepaperPage({
                   interactive piece of this section) */}
               <DimensionsGrid dimensions={dimensionsForGrid} />
             </div>
-
-            {/* Weights Summary Bar */}
-            <div className="max-w-4xl mx-auto">
-              <div className="glass-spectra rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700/50 bg-white/80 dark:bg-neutral-800/80">
-                <h4 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
-                  <Sliders className="w-5 h-5 text-spectra-blue-500" />
-                  {t('dimensions.weightDistribution.title')}
-                </h4>
-                <div className="space-y-3">
-                  {dimensions.map((dim) => {
-                    const Icon = dim.icon
-                    return (
-                      <div key={dim.id} className="flex items-center gap-4">
-                        <Icon className={`w-5 h-5 ${dim.text} flex-shrink-0`} />
-                        <div className="flex-1">
-                          <div className="flex justify-between text-sm mb-1">
-                            <span className="text-neutral-700 dark:text-neutral-300 font-medium">{dim.name}</span>
-                            <span className={`font-bold ${dim.text}`}>{dim.weight}%</span>
-                          </div>
-                          <div className="h-2.5 bg-neutral-200 dark:bg-neutral-800 rounded-full overflow-hidden">
-                            <div
-                              className={`h-full bg-gradient-to-r ${dim.gradient} transition-all duration-700 ease-out`}
-                              style={{ width: `${Math.min(dim.weight * 2, 100)}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-                {/*
-                  The {' '} is load-bearing. These two spans sit on separate
-                  lines, and JSX drops the newline between them, so the DOM
-                  text runs the two strings together with no separator. That
-                  was invisible while the strings were "Total:" and "100%",
-                  where "Total:100%" reads as deliberate; it became a visible
-                  defect in all 16 locales the moment the label became a
-                  sentence fragment.
-                */}
-                <div className="mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-700/50 text-center">
-                  <span className="text-sm text-neutral-500 dark:text-neutral-400">{t('dimensions.weightDistribution.totalLabel')}</span>
-                  {' '}
-                  <span className="text-lg font-bold text-spectra-green-600 dark:text-spectra-green-400">{t('dimensions.weightDistribution.totalValue')}</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 

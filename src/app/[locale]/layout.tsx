@@ -6,6 +6,7 @@ import { SITE_URL, localePath } from '@/lib/site'
 import { pickMessages } from '@/lib/pick-messages'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Analytics from '@/components/ui/Analytics'
+import LocaleSuggestionBanner from '@/components/ui/LocaleSuggestionBanner'
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor'
 import { UmamiProvider } from '@/providers/UmamiProvider'
 import { inter, jetbrainsMono } from '@/lib/fonts'
@@ -17,7 +18,8 @@ import '@/globals.css'
 //  - Navbar (rendered on every page): `nav.*`, `navbar.mobileMenu.*`
 //  - Analytics cookie-consent banner: `cookieConsent.*`
 // LanguageSelector, ThemeToggle, and PerformanceMonitor call no next-intl
-// hooks at all. Everything else that used to need the full
+// hooks at all; LocaleSuggestionBanner calls only `useLocale`, which reads
+// provider state rather than a message namespace. Everything else that used to need the full
 // message bundle (DisclaimerFooter, MethodologyDiagram, LearningLoopDiagram,
 // UnifiedGradeDisplay, the home + whitepaper pages) is now a Server Component
 // reading via `getTranslations`, so it never touches this client provider.
@@ -136,6 +138,11 @@ export default async function LocaleLayout({
               </div>
               {/* Privacy-Compliant Analytics + cookie consent (inside the locale provider so the banner is translated) */}
               <Analytics />
+              {/* "Read this page in <language>": the offer that replaced the
+                  Accept-Language redirect (see middleware.ts). Inside the
+                  provider because it reads the active locale; its own copy is
+                  keyed by the SUGGESTED locale, so it needs no messages. */}
+              <LocaleSuggestionBanner />
             </NextIntlClientProvider>
           </ThemeProvider>
         </UmamiProvider>

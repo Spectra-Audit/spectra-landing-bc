@@ -496,11 +496,6 @@
         "label": "درجة الأمان",
         "excellent": "ممتاز"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "تحليل المشاعر",

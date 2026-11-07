@@ -361,11 +361,6 @@
         "label": "보안 점수",
         "excellent": "우수"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "감성 분석",

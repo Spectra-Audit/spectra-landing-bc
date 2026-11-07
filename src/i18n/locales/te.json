@@ -361,11 +361,6 @@
         "label": "భద్రత స్కోర్",
         "excellent": "అద్భుతం"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "సెంటిమెంట్ విశ్లేషణ",

@@ -361,11 +361,6 @@
         "label": "பாதுகாப்பு மதிப்பெண்",
         "excellent": "சிறப்பானது"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "உணர்வு பகுப்பாய்வு",
