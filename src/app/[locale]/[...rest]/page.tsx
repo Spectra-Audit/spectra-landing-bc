@@ -17,6 +17,13 @@ import { notFound } from 'next/navigation'
  * Requests the middleware does not rewrite onto a locale (anything with a
  * file extension, `/api/*`, `/_next/*` — see `middleware.ts`'s matcher) still
  * get the built-in 404. Those are not pages anyone browses to.
+ *
+ * This file must stay OUTSIDE the `(pages)` route group. A Suspense boundary
+ * above it — which is what `(pages)/loading.tsx` is — makes Next flush the
+ * streamed shell, and a 200 status with it, before this component runs, so
+ * the 404 below degrades into a soft 404. Measured on a production build:
+ * with `loading.tsx` directly under `[locale]`, `/zh/nope` answered 200;
+ * with it inside the group, 404.
  */
 export default function CatchAllNotFound() {
   notFound()
