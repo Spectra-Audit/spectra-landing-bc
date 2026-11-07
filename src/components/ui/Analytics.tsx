@@ -23,7 +23,6 @@ declare global {
   }
 }
 
-
 export default function Analytics() {
   const t = useTranslations('cookieConsent')
   // Visibility MUST NOT be decided during render. This page is prerendered,
