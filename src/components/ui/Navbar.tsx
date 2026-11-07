@@ -171,7 +171,7 @@ export function Navbar({ className }: NavbarProps) {
             <div className="min-w-0">
               <Button
                 size="sm"
-                className="whitespace-nowrap bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
+                className="whitespace-nowrap max-md:min-h-[44px] bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
                 icon={<ArrowUpRight className="w-4 h-4" />}
                 onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
