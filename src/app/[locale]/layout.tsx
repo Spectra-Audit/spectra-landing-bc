@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { locales, isRtlLocale } from '@/i18n/config'
-import { SITE_URL, localePath } from '@/lib/site'
+import { SITE_URL, localePath, absoluteLocaleUrl } from '@/lib/site'
 import { pickMessages } from '@/lib/pick-messages'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import Analytics from '@/components/ui/Analytics'
@@ -66,14 +66,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t('og.description'),
       images: ['/images/og-image.jpg'],
     },
+    // Absolute URLs on purpose. A relative canonical ('/') would be left for
+    // Next to resolve against `metadataBase`, which is how this page ended up
+    // advertising a canonical of `https://www.spectra-audit.com` while the
+    // sitemap advertised `https://www.spectra-audit.com/` (SPE-4 P0-3 / G5).
+    // `absoluteLocaleUrl` is now the single source for both.
     alternates: {
-      canonical: localePath(locale),
+      canonical: absoluteLocaleUrl(locale),
       languages: {
         ...locales.reduce((acc, loc) => {
-          acc[loc] = localePath(loc)
+          acc[loc] = absoluteLocaleUrl(loc)
           return acc
         }, {} as Record<string, string>),
-        'x-default': '/',
+        'x-default': absoluteLocaleUrl('en'),
       },
     },
   }
