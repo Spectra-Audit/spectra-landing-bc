@@ -125,17 +125,17 @@ export function Navbar({ className }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link href={homePath} className="flex items-center space-x-2">
+          <div className="flex items-center min-w-0">
+            <Link href={homePath} className="flex items-center space-x-2 min-w-0">
               <Image
                 src="/spectra-logo.png"
                 alt="Spectra Audit"
                 width={32}
                 height={32}
                 priority
-                className="w-8 h-8 object-contain"
+                className="w-8 h-8 shrink-0 object-contain"
               />
-              <span className="text-xl font-bold text-neutral-900 dark:text-white">Spectra Audit</span>
+              <span className="hidden sm:inline truncate text-xl font-bold text-neutral-900 dark:text-white">Spectra Audit</span>
             </Link>
           </div>
 
@@ -160,17 +160,18 @@ export function Navbar({ className }: NavbarProps) {
           </div>
 
           {/* Theme & Language Controls */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 min-w-0">
             <div className="hidden md:flex items-center gap-3">
               <LanguageSelector variant="dropdown" size="sm" />
               <ThemeToggle variant="button" size="sm" />
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
+            {/* CTA Button. Rendered at every width: on mobile this is the only
+                path to the app that doesn't require opening the menu first. */}
+            <div className="min-w-0">
               <Button
                 size="sm"
-                className="bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
+                className="whitespace-nowrap bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
                 icon={<ArrowUpRight className="w-4 h-4" />}
                 onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
               >
@@ -178,10 +179,9 @@ export function Navbar({ className }: NavbarProps) {
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-1">
-              <LanguageSelector variant="dropdown" size="sm" />
-              <ThemeToggle variant="button" size="sm" />
+            {/* Mobile Menu Button. Language and theme moved into the menu so the
+                header still fits the Launch App CTA on a 375px viewport. */}
+            <div className="md:hidden flex items-center shrink-0">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200 p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -245,11 +245,13 @@ export function Navbar({ className }: NavbarProps) {
                 {/* Language & Theme Controls in Mobile Menu */}
                 <div className="py-6 border-t border-neutral-200 dark:border-neutral-800/50 mt-6">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="flex items-center justify-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
+                    <div className="flex flex-col items-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
                       <span className="text-xs uppercase tracking-wide">{t('navbar.mobileMenu.languageLabel')}</span>
+                      <LanguageSelector variant="dropdown" size="md" />
                     </div>
-                    <div className="flex items-center justify-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
+                    <div className="flex flex-col items-center gap-2 text-neutral-500 dark:text-neutral-400 text-sm">
                       <span className="text-xs uppercase tracking-wide">{t('navbar.mobileMenu.themeLabel')}</span>
+                      <ThemeToggle variant="button" size="md" />
                     </div>
                   </div>
                 </div>
