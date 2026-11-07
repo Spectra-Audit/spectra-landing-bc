@@ -15,11 +15,6 @@ interface SoftwareApplicationSchema {
     priceCurrency: string
     description?: string
   }
-  aggregateRating?: {
-    '@type': string
-    ratingValue: string
-    reviewCount: string
-  }
   provider?: {
     '@type': string
     name: string
@@ -36,8 +31,9 @@ interface OrganizationSchema {
   sameAs?: string[]
   contactPoint?: {
     '@type': string
-    telephone?: string
     contactType: string
+    email?: string
+    url?: string
     availableLanguage: string[]
   }
 }
@@ -145,7 +141,6 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         applicationCategory: softwareData.applicationCategory,
         operatingSystem: softwareData.operatingSystem || 'Any',
         ...(softwareData.offers && { offers: softwareData.offers }),
-        ...(softwareData.aggregateRating && { aggregateRating: softwareData.aggregateRating }),
         ...(softwareData.provider && { provider: softwareData.provider })
       }
       break
@@ -224,10 +219,20 @@ export const createOrganizationSchema = (): OrganizationSchema => ({
   url: 'https://www.spectra-audit.com',
   logo: 'https://www.spectra-audit.com/logo.png',
   description: 'Leading blockchain security platform providing AI-powered smart contract audits and continuous security monitoring.',
+  // SPE-46b / board decision D5: entity signals are restricted to verified,
+  // live profiles. @SpectraAudit on X is the only one confirmed live, so it is
+  // the only entry. Do not add GitHub/LinkedIn/Crunchbase/Wikidata without a
+  // human confirming a live URL first.
+  sameAs: ['https://x.com/SpectraAudit'],
+  // SPE-46b / G8: a contactPoint must give a way to make contact. This inbox is
+  // the one the repo actually documents (SECURITY.md). availableLanguage is
+  // BCP-47 and reflects real support coverage, which is English-only — it is
+  // NOT the 16 UI locales.
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer support',
-    availableLanguage: ['English']
+    email: 'support@spectra-audit.com',
+    availableLanguage: ['en']
   }
 })
 
