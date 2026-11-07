@@ -124,4 +124,41 @@ describe('Analytics consent banner', () => {
     expect(stored.functional).toBe(true)
     expect(stored.marketing).toBe(false)
   })
+
+  // SPE-18: the headline symptom was the banner re-appearing on every visit.
+  // A fresh render is what a reload or a new tab does, since the choice lives
+  // in localStorage (shared across tabs, survives reload).
+  describe('banner does not return after a choice (SPE-18)', () => {
+    it.each([
+      ['acceptAll', 'acceptAll'],
+      ['acceptEssential', 'acceptEssential'],
+      ['rejectAll', 'rejectAll'],
+    ])('stays hidden on a fresh render after "%s"', (_label, buttonKey) => {
+      const first = render(<Analytics />)
+      fireEvent.click(screen.getByText(buttonKey))
+
+      // The banner goes away immediately...
+      expect(screen.queryByText(buttonKey)).not.toBeInTheDocument()
+      first.unmount()
+
+      // ...and does not come back on the next page load.
+      render(<Analytics />)
+      expect(screen.queryByText(buttonKey)).not.toBeInTheDocument()
+    })
+
+    it('shows the banner again once the stored choice is over a year old', () => {
+      localStorage.setItem(
+        'cookie_consent',
+        JSON.stringify({
+          analytics: true,
+          marketing: false,
+          functional: true,
+          timestamp: Date.now() - 366 * 24 * 60 * 60 * 1000,
+        }),
+      )
+
+      render(<Analytics />)
+      expect(screen.getByText('rejectAll')).toBeInTheDocument()
+    })
+  })
 })
