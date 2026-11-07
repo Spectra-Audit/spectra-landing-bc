@@ -22,6 +22,14 @@ import { locales } from '@/i18n/config'
 describe('scoring example', () => {
   const read = (p: string) => fs.readFileSync(path.join(process.cwd(), p), 'utf8')
 
+  // The two pages live in the `(pages)` route group — a route group is
+  // organizational and does not appear in the URL, so `/` and `/whitepaper`
+  // are unchanged. SPE-24 moved them there so the segment's `loading.tsx`
+  // stops sitting above `[locale]/[...rest]`, whose `notFound()` was being
+  // downgraded to a soft 404 by the streamed shell.
+  const HOME = 'src/app/[locale]/(pages)/page.tsx'
+  const WHITEPAPER = 'src/app/[locale]/(pages)/whitepaper/page.tsx'
+
   it('weights sum to 100 for a project with a token', () => {
     expect(SCORING_WEIGHT_ROWS.reduce((sum, row) => sum + row.hasToken, 0)).toBe(100)
   })
@@ -38,14 +46,14 @@ describe('scoring example', () => {
   })
 
   it('renders the hero score from this module, not a literal', () => {
-    const home = read('src/app/[locale]/page.tsx')
+    const home = read(HOME)
     expect(home).toContain('score={SAMPLE_HEADLINE_SCORE}')
     // The pre-SPE-21 hardcoded score, and any other bare number, must not come back.
     expect(home).not.toMatch(/<UnifiedGradeDisplay[\s\S]{0,200}?score=\{\d/)
   })
 
   it('computes the whitepaper worked example from this module, not a literal', () => {
-    const whitepaper = read('src/app/[locale]/whitepaper/page.tsx')
+    const whitepaper = read(WHITEPAPER)
     expect(whitepaper).toContain("from '@/lib/scoring-example'")
     expect(whitepaper).toContain('const exampleTotal = SAMPLE_COMPOSITE_SCORE')
     // The weights themselves must not be re-declared here.
@@ -53,7 +61,7 @@ describe('scoring example', () => {
   })
 
   it('links the hero score and the CTA to the sample report artifact', () => {
-    const home = read('src/app/[locale]/page.tsx')
+    const home = read(HOME)
     expect(home.match(/href=\{SAMPLE_REPORT_PATH\}/g)).toHaveLength(2)
     expect(fs.existsSync(path.join(process.cwd(), 'src/app/(root)/sample-report/page.tsx'))).toBe(true)
   })
