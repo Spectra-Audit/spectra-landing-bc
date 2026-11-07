@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { locales } from '@/i18n/config'
-import { localePath } from '@/lib/site'
+import { localePath, absoluteLocaleUrl } from '@/lib/site'
 
 // The whitepaper page is a client component, so its metadata lives in this
 // segment layout. Without it the page inherits the homepage title, description,
@@ -38,14 +38,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t('description'),
       images: ['/images/og-image.jpg'],
     },
+    // Absolute, via the shared helper, for the same reason as the home page —
+    // see `src/lib/site.ts`. /whitepaper never had the trailing-slash
+    // divergence (its path is non-empty for every locale), but it goes through
+    // the same helper so it cannot acquire one later.
     alternates: {
-      canonical: localePath(locale, '/whitepaper'),
+      canonical: absoluteLocaleUrl(locale, '/whitepaper'),
       languages: {
         ...locales.reduce((acc, loc) => {
-          acc[loc] = localePath(loc, '/whitepaper')
+          acc[loc] = absoluteLocaleUrl(loc, '/whitepaper')
           return acc
         }, {} as Record<string, string>),
-        'x-default': localePath('en', '/whitepaper'),
+        'x-default': absoluteLocaleUrl('en', '/whitepaper'),
       },
     },
   }
