@@ -68,8 +68,35 @@ describe('locale metadata', () => {
 
       expect(typeof value).toBe('string')
       expect(value.trim().length).toBeGreaterThan(0)
-      expect(value.length).toBeLessThanOrEqual(limit)
+
+      // Count characters, not bytes and not UTF-16 code units. ar, ja, zh,
+      // hi, bn, te, ta and mr are all multi-byte in UTF-8, so
+      // `Buffer.byteLength` would report two to four times the real length
+      // and reject perfectly short copy — while conversely a byte budget set
+      // loose enough for them would let real overruns through in the Latin
+      // locales. `.length` is closer but still wrong in principle: it counts
+      // UTF-16 code units, so anything outside the BMP (an emoji, a CJK
+      // Ext-B ideograph) counts double. Spreading the string counts code
+      // points, which is what a SERP truncates on.
+      expect([...value].length).toBeLessThanOrEqual(limit)
     })
+
+    // The exact regression QA confirmed live twice: the English string
+    // shipped verbatim under every locale's key. The duplicate grouping
+    // below also catches that, but only for as long as all fifteen stay
+    // identical to each other — translate fourteen, leave one in English,
+    // and the grouping goes quiet while a user-visible bug ships. This
+    // check names English directly, so a single untranslated locale fails.
+    it.each(locales.filter((locale) => locale !== 'en'))(
+      '[%s] is not byte-identical to the English string',
+      (locale) => {
+        const value = read(messages[locale])
+        const english = read(messages.en)
+
+        expect(value).not.toBe(english)
+        expect(Buffer.from(value, 'utf8').equals(Buffer.from(english, 'utf8'))).toBe(false)
+      }
+    )
 
     // English is the source copy, so it is excluded from the "differs from
     // English" comparison but still has to be unique against the other
