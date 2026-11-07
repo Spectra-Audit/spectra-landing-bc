@@ -2,26 +2,12 @@
 
 import { useEffect, useState, createContext, useContext, ReactNode, useCallback } from 'react'
 
+import { clearNonEssentialStorage, hasAnalyticsConsent } from '@/lib/consent'
+
 // Umami config is supplied via environment variables. If NEXT_PUBLIC_UMAMI_WEBSITE_ID
 // is not set, Umami is a clean no-op and no script is ever injected.
 const UMAMI_WEBSITE_ID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
 const UMAMI_HOST = process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is'
-
-// Returns true only when the visitor has granted analytics cookie consent.
-// Mirrors the consent contract used by Analytics.tsx (the cookie banner).
-function hasAnalyticsConsent(): boolean {
-  if (typeof window === 'undefined') return false
-  try {
-    const stored = localStorage.getItem('cookie_consent')
-    if (!stored) return false
-    const parsed = JSON.parse(stored)
-    const oneYear = 365 * 24 * 60 * 60 * 1000
-    if (Date.now() - parsed.timestamp >= oneYear) return false
-    return parsed.analytics === true
-  } catch {
-    return false
-  }
-}
 
 // Type declarations for Umami
 declare global {
@@ -78,8 +64,33 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
     sessionId: '',
   });
 
-  // Initialize session from localStorage
+  // Single consent gate for everything non-essential this provider does.
+  // The cookie banner (Analytics.tsx) writes localStorage in the same tab
+  // without emitting an event, so until a choice is made we poll for it.
+  const [consentGranted, setConsentGranted] = useState(hasAnalyticsConsent)
+
   useEffect(() => {
+    if (consentGranted) return
+
+    // No choice yet, or "Reject All": leave nothing non-essential on the
+    // device, then watch for a later "Accept" in this same tab.
+    clearNonEssentialStorage()
+
+    const consentPoll = setInterval(() => {
+      if (hasAnalyticsConsent()) {
+        clearInterval(consentPoll)
+        setConsentGranted(true)
+      }
+    }, 1000)
+
+    return () => clearInterval(consentPoll)
+  }, [consentGranted])
+
+  // Session identifiers are non-essential analytics storage: read or create
+  // them only once analytics consent exists.
+  useEffect(() => {
+    if (!consentGranted) return
+
     const initializeSession = () => {
       const savedSession = localStorage.getItem('umami_session_id');
       const savedUserId = localStorage.getItem('umami_user_id');
@@ -99,7 +110,7 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
     };
 
     initializeSession();
-  }, [])
+  }, [consentGranted])
 
   // trackEvent is declared first so that the script-load effect below and the
   // identifyUser/resetSession callbacks below can reference it without triggering
@@ -124,14 +135,12 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
   //   1. a website ID is configured (env-gated — no hardcoded ID in source),
   //   2. we are in production (matches Analytics.tsx's loadAnalytics gate), and
   //   3. the visitor has granted analytics cookie consent (same banner as GA).
-  // Until consent is resolved we poll the consent flag, since the cookie banner
-  // (Analytics.tsx) writes localStorage in the same tab without emitting an event.
   useEffect(() => {
+    if (!consentGranted) return
     if (!UMAMI_WEBSITE_ID) return
     if (process.env.NODE_ENV !== 'production') return
 
     let script: HTMLScriptElement | null = null
-    let consentPoll: ReturnType<typeof setInterval> | undefined
 
     const injectScript = () => {
       script = document.createElement('script')
@@ -165,27 +174,20 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
       document.head.appendChild(script)
     }
 
-    if (hasAnalyticsConsent()) {
-      injectScript()
-    } else {
-      consentPoll = setInterval(() => {
-        if (hasAnalyticsConsent()) {
-          if (consentPoll) clearInterval(consentPoll)
-          consentPoll = undefined
-          injectScript()
-        }
-      }, 1000)
-    }
+    injectScript()
 
     return () => {
-      if (consentPoll) clearInterval(consentPoll)
       if (script && script.parentNode) {
         script.parentNode.removeChild(script)
       }
     }
-  }, [])
+  }, [consentGranted])
 
   const identifyUser = useCallback(async (userId: string, walletAddress?: string) => {
+    // Identifiers are non-essential storage: refuse to persist them until the
+    // visitor has granted analytics consent.
+    if (!hasAnalyticsConsent()) return
+
     let walletHash: string | undefined;
 
     if (walletAddress) {
@@ -224,6 +226,14 @@ export function UmamiProvider({ children }: UmamiProviderProps) {
   const resetSession = useCallback(() => {
     localStorage.removeItem('umami_user_id');
     localStorage.removeItem('umami_wallet_hash');
+
+    // Without consent, reset means "leave nothing behind" rather than
+    // "start a fresh tracked session".
+    if (!hasAnalyticsConsent()) {
+      clearNonEssentialStorage()
+      setCurrentUser({ sessionId: '' })
+      return
+    }
 
     const newSessionId = generateSessionId();
     localStorage.setItem('umami_session_id', newSessionId);

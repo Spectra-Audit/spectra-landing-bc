@@ -1,7 +1,14 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
+
+import {
+  CONSENT_STORAGE_KEY,
+  clearNonEssentialStorage,
+  readStoredConsent,
+  type ConsentData,
+} from '@/lib/consent'
 
 // Type declaration for gtag
 declare global {
@@ -16,40 +23,37 @@ declare global {
   }
 }
 
-interface ConsentData {
-  analytics: boolean
-  marketing: boolean
-  functional: boolean
-  timestamp: number
-}
-
-function readStoredConsent(): ConsentData | null {
-  if (typeof window === 'undefined') return null
-  try {
-    const storedConsent = localStorage.getItem('cookie_consent')
-    if (!storedConsent) return null
-    const parsed = JSON.parse(storedConsent)
-    const oneYear = 365 * 24 * 60 * 60 * 1000
-    if (Date.now() - parsed.timestamp >= oneYear) return null
-    return parsed as ConsentData
-  } catch {
-    return null
-  }
-}
-
 export default function Analytics() {
   const t = useTranslations('cookieConsent')
-  // Lazy initializer reads localStorage once on mount — no set-in-effect needed
-  const [consent, setConsent] = useState<ConsentData | null>(readStoredConsent)
-  const [showBanner, setShowBanner] = useState<boolean>(() => {
-    const stored = readStoredConsent()
-    // Show banner when there is no valid stored consent
-    return stored === null
-  })
+  // Visibility MUST NOT be decided during render. This page is prerendered,
+  // and the server cannot read localStorage, so a render-time decision bakes
+  // the banner into the static HTML; a returning visitor's first client render
+  // then disagrees with that markup and the stale banner survives hydration
+  // as dead DOM (SPE-18: "re-appears despite Accept All", clicks ignored).
+  // Instead: render nothing until mounted, then decide from storage.
+  const [consent, setConsent] = useState<ConsentData | null>(null)
+  const [showBanner, setShowBanner] = useState(false)
+
+  useEffect(() => {
+    const applyStoredConsent = () => {
+      const stored = readStoredConsent()
+      setConsent(stored)
+      // Ask only when there is no valid stored choice.
+      setShowBanner(stored === null)
+    }
+
+    applyStoredConsent()
+  }, [])
+
+  const analyticsLoaded = useRef(false)
 
   const loadAnalytics = () => {
     // Only load in production environment
     if (process.env.NODE_ENV !== 'production') return
+    // Reachable from the consent click and from the returning-visitor effect;
+    // injecting the GA4 tag twice would double-count every page view.
+    if (analyticsLoaded.current) return
+    analyticsLoaded.current = true
 
     // Google Analytics 4
     const gtagId = process.env.NEXT_PUBLIC_GA_ID
@@ -129,13 +133,16 @@ export default function Analytics() {
     }
   }
 
-  // On mount: if valid analytics consent already exists, load analytics scripts.
-  // State is already initialized via lazy useState above — no setState needed here.
+  // Once consent is known (from storage on mount, or from a click), load
+  // analytics if it was granted. loadAnalytics() is idempotent.
   useEffect(() => {
     if (consent?.analytics) {
       loadAnalytics()
     }
-  }, [])
+    // loadAnalytics is deliberately omitted: it is re-created each render but
+    // guarded by the analyticsLoaded ref, so adding it would only re-run a no-op.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [consent])
 
   const handleAccept = (preferences: Partial<ConsentData>) => {
     const newConsent: ConsentData = {
@@ -146,12 +153,16 @@ export default function Analytics() {
     }
 
     setConsent(newConsent)
-    localStorage.setItem('cookie_consent', JSON.stringify(newConsent))
+    localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(newConsent))
     setShowBanner(false)
 
     // Load analytics if consent was given
     if (newConsent.analytics) {
       loadAnalytics()
+    } else {
+      // "Accept Essential" declines analytics, so withhold non-essential
+      // storage exactly as a full rejection would.
+      clearNonEssentialStorage()
     }
 
     // Track consent event
@@ -175,8 +186,11 @@ export default function Analytics() {
     }
 
     setConsent(newConsent)
-    localStorage.setItem('cookie_consent', JSON.stringify(newConsent))
+    localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(newConsent))
     setShowBanner(false)
+
+    // Rejection must also remove anything non-essential already stored.
+    clearNonEssentialStorage()
   }
 
   if (!showBanner || consent) return null
