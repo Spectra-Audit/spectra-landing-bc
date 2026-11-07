@@ -8,6 +8,11 @@ import TrackedCta from '@/components/ui/TrackedCta'
 import StructuredData, { createSoftwareSchema, createOrganizationSchema } from '@/components/ui/StructuredData'
 import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Wallet, LifeBuoy } from 'lucide-react'
 
+// Target for the "View Sample Report" CTA. The sample report page does not
+// exist on either host yet (SPE-29); it is authored under SPE-21. This is the
+// only place the URL is defined, so repointing it is a one-line change.
+const SAMPLE_REPORT_URL = 'https://app.spectra-audit.com/demo'
+
 export default async function HomePage({
   params
 }: {
@@ -439,6 +444,14 @@ export default async function HomePage({
                     action={{ type: 'openUrl', url: 'https://app.spectra-audit.com' }}
                   >
                     {t('howScoresWork.cta.exploreProjects')}
+                  </TrackedCta>
+                  <TrackedCta
+                    size="lg"
+                    variant="outline"
+                    className="px-6 py-3"
+                    action={{ type: 'openUrl', url: SAMPLE_REPORT_URL }}
+                  >
+                    {t('howScoresWork.cta.viewSampleReport')}
                   </TrackedCta>
                 </div>
               </div>
