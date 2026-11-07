@@ -1,6 +1,6 @@
 import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
+import { Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
 import PageAnalyticsTracker from '@/components/ui/PageAnalyticsTracker'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
@@ -440,13 +440,6 @@ export default async function HomePage({
                   >
                     {t('howScoresWork.cta.exploreProjects')}
                   </TrackedCta>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="px-6 py-3"
-                  >
-                    {t('howScoresWork.cta.viewSampleReport')}
-                  </Button>
                 </div>
               </div>
             </Card>

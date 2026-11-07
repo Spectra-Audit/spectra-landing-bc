@@ -15,6 +15,8 @@ interface NavbarProps {
   className?: string
 }
 
+const APP_URL = 'https://app.spectra-audit.com'
+
 // Helper function to create locale-aware paths with 'as-needed' prefix
 function localePath(locale: string, path: string = ''): string {
   // With 'as-needed' prefix, English (default) has no prefix
@@ -79,7 +81,7 @@ export function Navbar({ className }: NavbarProps) {
     },
     {
       label: 'Pricing',
-      href: 'https://app.spectra-audit.com/pricing',
+      href: `${APP_URL}/pricing`,
       icon: <DollarSign className="w-5 h-5" />,
       external: true
     }
@@ -101,7 +103,7 @@ export function Navbar({ className }: NavbarProps) {
     },
     {
       label: t('nav.pricing'),
-      href: 'https://app.spectra-audit.com/pricing',
+      href: `${APP_URL}/pricing`,
       icon: <DollarSign className="w-5 h-5" />,
       external: true
     }
@@ -172,7 +174,8 @@ export function Navbar({ className }: NavbarProps) {
                 size="sm"
                 className="bg-spectra-blue-500 hover:bg-spectra-blue-400 text-white font-semibold shadow-glow-spectra dark:shadow-neon"
                 icon={<ArrowUpRight className="w-4 h-4" />}
-                onClick={() => window.open('https://app.spectra-audit.com', '_blank')}
+                href={APP_URL}
+                target="_blank"
               >
                 {t('nav.launchApp')}
               </Button>
@@ -292,10 +295,9 @@ export function Navbar({ className }: NavbarProps) {
                     variant="gradient"
                     className="w-full min-h-[64px] text-lg font-semibold"
                     icon={<ArrowUpRight className="w-5 h-5" />}
-                    onClick={() => {
-                      window.open('https://app.spectra-audit.com', '_blank')
-                      setIsMobileMenuOpen(false)
-                    }}
+                    href={APP_URL}
+                    target="_blank"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t('nav.launchApp')}
                   </Button>
