@@ -18,6 +18,13 @@ export interface DisclaimerFooterProps {
  * anywhere that the product is in beta, which changes how every other bullet
  * below it should be read.
  *
+ * It is the last block on both pages and is the only thing that plays the
+ * part of a site footer, so it renders as a <footer> landmark rather than a
+ * generic <section>. Its accessible name is a reference to the heading it
+ * already renders (`aria-labelledby`), not a hardcoded `aria-label`: the old
+ * label was the literal English string "Disclaimer" on all 16 locales, which
+ * is what a screen reader announced for the landmark on, say, /zh.
+ *
  * Server Component — this only ever needed `useTranslations` (no hooks, no
  * browser APIs), so it renders on the server via `getTranslations` and never
  * ships to the client bundle. Relies on the ancestor route segment having
@@ -28,8 +35,8 @@ export default async function DisclaimerFooter({ className = '' }: DisclaimerFoo
   const t = await getTranslations('disclaimer')
 
   return (
-    <section
-      aria-label="Disclaimer"
+    <footer
+      aria-labelledby="site-disclaimer-title"
       className={`border-t border-neutral-200 dark:border-white/5 bg-neutral-100/70 dark:bg-ink-900/40 py-10 sm:py-12 ${className}`}
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +46,10 @@ export default async function DisclaimerFooter({ className = '' }: DisclaimerFoo
               <Info className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
           </div>
-          <h2 className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white">
+          <h2
+            id="site-disclaimer-title"
+            className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white"
+          >
             {t('title')}
           </h2>
         </div>
@@ -61,6 +71,6 @@ export default async function DisclaimerFooter({ className = '' }: DisclaimerFoo
           <li>{t('toolPurpose')}</li>
         </ul>
       </div>
-    </section>
+    </footer>
   )
 }

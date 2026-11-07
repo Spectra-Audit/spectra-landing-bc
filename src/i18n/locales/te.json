@@ -320,7 +320,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
+      "title": "బహుముఖ",
       "subtitle": "భద్రత ఆడిట్ ఫ్రేమ్‌వర్క్",
       "description": "Spectra Audit సమగ్ర బహుళ-కొలమాన విశ్లేషణ ద్వారా బ్లాక్‌చైన్ భద్రతను ఎలా విప్లవాత్మకంగా మారుస్తుంది మరియు సంప్రదాయ ఆడిట్‌లు ఎప్పటికీ అందించలేని లోతైన అంతర్దృష్టులను ఎలా అందిస్తుందో కనుగొనండి.",
       "buttons": {
@@ -360,11 +360,6 @@
         "score": "95",
         "label": "భద్రత స్కోర్",
         "excellent": "అద్భుతం"
-      },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -690,5 +685,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit బహుళ బ్లాక్‌చెయిన్‌లకు మద్దతు ఇస్తుందా?",
     "a5": "అవును. Ethereum, BSC, Polygon, Arbitrum, Optimism సహా ఇతర ప్రధాన EVM-అనుకూల బ్లాక్‌చెయిన్‌లకు Spectra Audit మద్దతు ఇస్తుంది."
+  },
+  "notFound": {
+    "title": "పేజీ కనుగొనబడలేదు",
+    "description": "మీరు వెతుకుతున్న పేజీ లేదు లేదా తరలించబడింది.",
+    "backHome": "హోమ్‌కు తిరిగి వెళ్లండి"
   }
 }

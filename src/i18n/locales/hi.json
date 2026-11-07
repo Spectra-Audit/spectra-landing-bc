@@ -320,7 +320,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
+      "title": "बहु-आयामी",
       "subtitle": "सुरक्षा ऑडिट फ्रेमवर्क",
       "description": "जानें कि Spectra Audit व्यापक बहु-आयामी विश्लेषण के माध्यम से ब्लॉकचेन सुरक्षा को कैसे क्रांतिकारी बनाता है और पारंपरिक ऑडिट से गहरी अंतर्दृष्टि प्रदान करता है।",
       "buttons": {
@@ -360,11 +360,6 @@
         "score": "95",
         "label": "सुरक्षा स्कोर",
         "excellent": "उत्कृष्ट"
-      },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -690,5 +685,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "क्या Spectra Audit कई ब्लॉकचेन सपोर्ट करता है?",
     "a5": "हाँ। Spectra Audit Ethereum, BSC, Polygon, Arbitrum, Optimism और अन्य प्रमुख EVM-संगत ब्लॉकचेन सपोर्ट करता है।"
+  },
+  "notFound": {
+    "title": "पृष्ठ नहीं मिला",
+    "description": "आप जो पृष्ठ खोज रहे हैं वह मौजूद नहीं है या उसे स्थानांतरित कर दिया गया है।",
+    "backHome": "होम पर वापस जाएं"
   }
 }

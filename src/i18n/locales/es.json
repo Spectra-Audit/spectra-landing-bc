@@ -320,8 +320,8 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
-      "subtitle": "Marco de Auditoría de Seguridad",
+      "title": "Marco de Auditoría de Seguridad",
+      "subtitle": "Multidimensional",
       "description": "Descubre cómo Spectra Audit revoluciona la seguridad blockchain a través de un análisis multidimensional integral, proporcionando perspectivas más profundas que las auditorías tradicionales jamás podrían.",
       "buttons": {
         "exploreDimensions": "Explorar Dimensiones",
@@ -360,11 +360,6 @@
         "score": "95",
         "label": "Puntuación de Seguridad",
         "excellent": "Excelente"
-      },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -690,5 +685,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "¿Spectra Audit es compatible con varias blockchains?",
     "a5": "Sí. Spectra Audit es compatible con Ethereum, BSC, Polygon, Arbitrum, Optimism y otras blockchains compatibles con EVM."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
   }
 }

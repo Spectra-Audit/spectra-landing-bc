@@ -1,4 +1,28 @@
-// Static, locale-independent <head> meta tags: mobile viewport config,
+import type { Viewport } from 'next'
+
+/**
+ * The page viewport, declared through Next's `viewport` export (each root
+ * layout re-exports this as `viewport`).
+ *
+ * It used to be a hand-written <meta name="viewport"> inside the component
+ * below, which did not stop Next emitting its own default one — so every
+ * prerendered page carried two conflicting viewport tags:
+ *
+ *   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"/>
+ *   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ *
+ * The second wins in browsers that take the last declaration, which quietly
+ * dropped the `maximum-scale` / `user-scalable` part this site asked for.
+ * Going through the `viewport` export means Next renders exactly one tag.
+ */
+export const siteViewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+}
+
+// Static, locale-independent <head> meta tags: mobile web-app config,
 // security headers (defense-in-depth alongside the real HTTP headers set in
 // next.config.js), and the Content-Security-Policy. None of this depends on
 // request data, so it's safe to render from a Server Component in either of
@@ -8,8 +32,8 @@
 export default function SiteHeadMeta() {
   return (
     <>
-      {/* Mobile Viewport Configuration */}
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+      {/* Mobile config. The viewport itself is declared via the `viewport`
+          export (see `siteViewport` above), not here. */}
       <meta name="theme-color" content="#1f2937" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />

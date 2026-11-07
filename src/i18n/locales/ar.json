@@ -455,8 +455,8 @@
   "whitepaper": {
     "badge": "الورقة البيضاء v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
-      "subtitle": "إطار تدقيق الأمان",
+      "title": "إطار تدقيق الأمان",
+      "subtitle": "متعدد الأبعاد",
       "description": "اكتشف كيف تُحدث Spectra Audit ثورة في أمان البلوك تشين من خلال التحليل متعدد الأبعاد الشامل، وتوفر رؤى أعمق مما يمكن للتدقيق التقليدي",
       "buttons": {
         "exploreDimensions": "استكشاف الأبعاد",
@@ -495,11 +495,6 @@
         "score": "95",
         "label": "درجة الأمان",
         "excellent": "ممتاز"
-      },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
       },
       "items": {
         "sentiment": {
@@ -825,5 +820,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "هل تدعم Spectra Audit عدة سلاسل كتل؟",
     "a5": "نعم. تدعم Spectra Audit شبكات Ethereum وBSC وPolygon وArbitrum وOptimism وغيرها من الشبكات المتوافقة مع EVM."
+  },
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backHome": "العودة إلى الصفحة الرئيسية"
   }
 }

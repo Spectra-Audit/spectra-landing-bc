@@ -1,14 +1,15 @@
 import '@/globals.css'
 import { inter, jetbrainsMono } from '@/lib/fonts'
-import SiteHeadMeta from '@/components/SiteHeadMeta'
+import SiteHeadMeta, { siteViewport } from '@/components/SiteHeadMeta'
 import ThemeInitScript from '@/components/ThemeInitScript'
 
+export const viewport = siteViewport
+
 // Root layout for the handful of routes that sit OUTSIDE the `[locale]`
-// segment: `/` (redirects to the default locale), and the unlinked utility
-// routes `/not-found` and `/error`. None of these render localized content,
-// so this layout has no reason to resolve a request-scoped locale — it's
-// fully static, which keeps it (and by extension every route under it) out
-// of dynamic rendering.
+// segment: `/` (redirects to the default locale) and the unlinked `/error`
+// utility route. None of these render localized content, so this layout has
+// no reason to resolve a request-scoped locale — it's fully static, which
+// keeps it (and by extension every route under it) out of dynamic rendering.
 //
 // This works alongside `app/[locale]/layout.tsx` via Next.js's "multiple
 // root layouts" pattern (this route group + the `[locale]` segment are each

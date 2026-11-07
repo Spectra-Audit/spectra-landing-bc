@@ -361,11 +361,6 @@
         "label": "Security Score",
         "excellent": "Excellent"
       },
-      "weightDistribution": {
-        "title": "Weight Distribution (Project With a Token)",
-        "totalLabel": "These five carry",
-        "totalValue": "75 of 100"
-      },
       "items": {
         "sentiment": {
           "name": "Sentiment Analysis",
@@ -690,5 +685,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Does Spectra Audit support multiple blockchains?",
     "a5": "Yes. Spectra Audit supports Ethereum, BSC, Polygon, Arbitrum, Optimism, and other major EVM-compatible blockchains."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
   }
 }

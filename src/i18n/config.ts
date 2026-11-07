@@ -43,3 +43,28 @@ export const localeFlags: Record<Locale, string> = {
   ta: '🇱🇰',
   mr: '🇮🇳'
 }
+
+// Copy for the "read this page in <language>" banner (LocaleSuggestionBanner),
+// keyed by the locale being SUGGESTED rather than by the locale of the page
+// showing it — the whole point is to address a visitor in a language they
+// read, on a page that is not in it. That is why these strings live here and
+// not in `locales/*.json`: a message in `de.json` is only loaded when the page
+// is already German, which is exactly when this banner does not appear.
+export const localeSuggestions: Record<Locale, { message: string; dismiss: string }> = {
+  en: { message: 'Read this page in English', dismiss: 'Close' },
+  es: { message: 'Leer esta página en español', dismiss: 'Cerrar' },
+  pt: { message: 'Ler esta página em português', dismiss: 'Fechar' },
+  fr: { message: 'Lire cette page en français', dismiss: 'Fermer' },
+  de: { message: 'Diese Seite auf Deutsch lesen', dismiss: 'Schließen' },
+  zh: { message: '用简体中文阅读本页', dismiss: '关闭' },
+  ja: { message: 'このページを日本語で読む', dismiss: '閉じる' },
+  ko: { message: '이 페이지를 한국어로 보기', dismiss: '닫기' },
+  ar: { message: 'اقرأ هذه الصفحة بالعربية', dismiss: 'إغلاق' },
+  ru: { message: 'Читать эту страницу на русском', dismiss: 'Закрыть' },
+  tr: { message: 'Bu sayfayı Türkçe okuyun', dismiss: 'Kapat' },
+  hi: { message: 'इस पृष्ठ को हिन्दी में पढ़ें', dismiss: 'बंद करें' },
+  bn: { message: 'এই পৃষ্ঠাটি বাংলায় পড়ুন', dismiss: 'বন্ধ করুন' },
+  te: { message: 'ఈ పేజీని తెలుగులో చదవండి', dismiss: 'మూసివేయి' },
+  ta: { message: 'இந்தப் பக்கத்தை தமிழில் படிக்கவும்', dismiss: 'மூடு' },
+  mr: { message: 'हे पृष्ठ मराठीत वाचा', dismiss: 'बंद करा' }
+}
