@@ -573,7 +573,7 @@
     },
     "metadata": {
       "title": "多维度安全审计框架 | Spectra Audit",
-      "description": "Spectra Audit 如何从代码、持币分布、代币经济、流动性、市场情绪和链上行为六个维度评估智能合约，汇总为一个透明的安全评分。"
+      "description": "Spectra Audit 如何从代码、持币分布、代币经济、流动性、市场情绪和链上行为等维度评估智能合约，汇总为一个透明的安全评分。"
     }
   },
   "methodology": {

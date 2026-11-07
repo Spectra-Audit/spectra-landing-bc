@@ -1,0 +1,12 @@
+# Spectra Audit
+
+> Spectra Audit is a blockchain security audit platform for smart contracts and tokens. It produces a Security Score from 0 to 100 across code security, distribution, tokenomics, liquidity, sentiment and on-chain behaviour, with the evidence behind each score.
+
+The analysis is free and requires no registration. A typical analysis takes
+about 20 minutes. The Security Score runs from 0 to 100; five core pillars
+carry 75 of those 100 points.
+
+Key pages:
+- [Home](https://www.spectra-audit.com): product overview and free analysis entry point
+- [Whitepaper: The Multi-Dimensional Security Audit Framework](https://www.spectra-audit.com/whitepaper): scoring framework
+- [Platform app](https://app.spectra-audit.com): pre-launch page for the analysis app

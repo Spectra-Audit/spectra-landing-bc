@@ -1,7 +1,9 @@
+import type { NextRequest } from 'next/server'
 import createMiddleware from 'next-intl/middleware'
 import { locales, defaultLocale } from './src/i18n/config'
+import { canonicalizeRootUrl } from './src/lib/site'
 
-export default createMiddleware({
+const handleI18n = createMiddleware({
   // A list of all locales that are supported
   locales,
 
@@ -44,6 +46,38 @@ export default createMiddleware({
   // Optional: Configure alternate links
   alternateLinks: true
 })
+
+// next-intl emits the hreflang set as a `Link` response header as well as the
+// `<link>` tags in <head>, and for the en home it writes
+// `https://www.spectra-audit.com/` — WITH a trailing slash, one byte off the
+// canonical we serve.
+//
+// That is not configurable. next-intl's `normalizeTrailingSlash` short-circuits
+// on a pathname of exactly '/' (`if ('/' !== pathname)`), so the root is left
+// alone no matter what `trailingSlash` is set to, and `new URL('/', origin)`
+// stringifies with the slash. Setting `trailingSlash: true` in next.config.js
+// would not fix it either — it would only move the disagreement to the other
+// three places and add a redirect hop on our most-linked URL.
+//
+// So we rewrite that one URL form on the way out. The regex only matches a URL
+// whose path is exactly '/' with no query or fragment, which is the en home and
+// its x-default twin; '/de', '/whitepaper' and everything else pass through
+// untouched. Done here rather than by disabling `alternateLinks`, because the
+// header is a real signal for non-HTML responses and dropping it would be a
+// regression, not a fix. See `src/lib/site.ts` for the canonical form.
+export default function middleware(request: NextRequest) {
+  const response = handleI18n(request)
+
+  const link = response.headers.get('link')
+  if (link) {
+    response.headers.set(
+      'link',
+      link.replace(/<(https?:\/\/[^>]+)>/g, (_match, url: string) => `<${canonicalizeRootUrl(url)}>`),
+    )
+  }
+
+  return response
+}
 
 export const config = {
   // Match all pathnames except for:

@@ -10,22 +10,16 @@ import Button from './Button'
 import LanguageSelector from './LanguageSelector'
 import ThemeToggle from './ThemeToggle'
 import { cn } from '@/lib/utils'
+// Shared with canonical/sitemap/hreflang URL building (SPE-4 P0-3 / G5): internal
+// links must agree with what we publish to crawlers, so there is exactly one
+// localePath in the codebase rather than a second copy that can drift.
+import { localePath } from '@/lib/site'
 
 interface NavbarProps {
   className?: string
 }
 
 const APP_URL = 'https://app.spectra-audit.com'
-
-// Helper function to create locale-aware paths with 'as-needed' prefix
-function localePath(locale: string, path: string = ''): string {
-  // With 'as-needed' prefix, English (default) has no prefix
-  if (locale === 'en') {
-    return path ? `/${path}` : '/'
-  }
-  // Other locales have the prefix
-  return path ? `/${locale}/${path}` : `/${locale}`
-}
 
 export function Navbar({ className }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -63,7 +57,7 @@ export function Navbar({ className }: NavbarProps) {
 
   // Memoize locale-aware paths
   const homePath = useMemo(() => localePath(locale), [locale])
-  const whitepaperPath = useMemo(() => localePath(locale, 'whitepaper'), [locale])
+  const whitepaperPath = useMemo(() => localePath(locale, '/whitepaper'), [locale])
 
   // Default fallback translations (English) for SSR
   const fallbackNavItems = [
