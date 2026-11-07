@@ -2,6 +2,76 @@ const createNextIntlPlugin = require('next-intl/plugin')
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
+// --- Content-Security-Policy, report-only (SPE-20) -------------------------
+//
+// This is the policy we intend to ENFORCE as a real HTTP header. It ships
+// report-only first so it cannot break the site while we watch for
+// violations.
+//
+// Why a real header when `SiteHeadMeta.tsx` already enforces a CSP via
+// `<meta http-equiv>`: the meta form is strictly weaker. Per spec, browsers
+// ignore `frame-ancestors`, `report-uri` and `report-to` in a meta CSP, and a
+// meta policy only covers the HTML document that carries it — never
+// non-HTML responses, and nothing the parser fetched before reaching the tag.
+// So clickjacking protection and violation reporting are only obtainable as a
+// header, which is what this adds.
+//
+// The directive list deliberately mirrors the meta policy rather than
+// tightening it. That policy is already enforcing in production, so it is
+// known-workable; keeping them identical means any report we collect is
+// evidence about the *delivery path* (something the meta tag never covered),
+// not noise from a policy nobody has run yet. Tightening — in particular
+// dropping 'unsafe-inline' / 'unsafe-eval' from script-src, which needs
+// per-request nonces and a check against the analytics loaders — is separate
+// follow-up work, not part of this baseline.
+//
+// Rollout: leave report-only for >= 1 week, confirm reports are clean, then
+// rename this header to `Content-Security-Policy` and delete the CSP meta tag
+// from `SiteHeadMeta.tsx` so there is one policy in one place.
+const CSP_DIRECTIVES = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://cloud.umami.is",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: https: blob:",
+  "connect-src 'self' https://api.spectra-audit.com https://cloud.umami.is https://*.netlify.com https://*.netlify.app",
+  "frame-src 'none'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  // Header-only directive: blocks this site being framed anywhere. Matches
+  // the existing `X-Frame-Options: DENY` below, which modern browsers ignore
+  // in favour of frame-ancestors when both are present.
+  "frame-ancestors 'none'",
+]
+
+// Where violation reports go. Unset by default: no collector has been chosen
+// yet, and inventing a URL would silently black-hole every report. With it
+// unset the policy still ships and violations still surface in the browser
+// console; set it to start the >= 1 week collection window.
+//
+// `report-uri` is deprecated but is still the only directive Safari and
+// Firefox honour, so both it and the modern `report-to` are sent.
+const CSP_REPORT_URI = process.env.CSP_REPORT_URI || ''
+const CSP_REPORT_GROUP = 'csp-endpoint'
+
+const cspReportOnlyValue = [
+  ...CSP_DIRECTIVES,
+  ...(CSP_REPORT_URI
+    ? [`report-uri ${CSP_REPORT_URI}`, `report-to ${CSP_REPORT_GROUP}`]
+    : []),
+].join('; ')
+
+/** Headers that only make sense when a report collector is configured. */
+const cspReportingHeaders = CSP_REPORT_URI
+  ? [
+      {
+        key: 'Reporting-Endpoints',
+        value: `${CSP_REPORT_GROUP}="${CSP_REPORT_URI}"`,
+      },
+    ]
+  : []
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -120,7 +190,15 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin'
           },
-          // Note: CSP is handled in layout.tsx meta tag to avoid conflicts
+          // The enforcing CSP still comes from the meta tag in
+          // SiteHeadMeta.tsx. This report-only header is the real-header
+          // version of that same policy, plus the directives meta cannot
+          // carry — see CSP_DIRECTIVES above for the rollout plan.
+          {
+            key: 'Content-Security-Policy-Report-Only',
+            value: cspReportOnlyValue
+          },
+          ...cspReportingHeaders,
           {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()'
