@@ -320,7 +320,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
+      "title": "多维度",
       "subtitle": "安全审计框架",
       "description": "了解 Spectra Audit 如何通过全面的多维度分析彻底变革区块链安全，提供比传统审计更深入的洞察。",
       "buttons": {
@@ -690,5 +690,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit 支持多条区块链吗？",
     "a5": "支持。Spectra Audit 支持以太坊、BSC、Polygon、Arbitrum、Optimism 以及其他主流 EVM 兼容链。"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "您访问的页面不存在或已被移动。",
+    "backHome": "返回首页"
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Navbar, DisclaimerFooter } from '@/components/ui'
-import MobileOptimized from '@/components/ui/MobileOptimized'
 import WhitepaperAnalyticsTracker from '@/components/ui/WhitepaperAnalyticsTracker'
 import DimensionsGrid, { type DimensionsGridItem } from '@/components/ui/DimensionsGrid'
 import StructuredData, { createArticleSchema, createBreadcrumbSchema } from '@/components/ui/StructuredData'
@@ -173,8 +172,11 @@ export default async function WhitepaperPage({
     pageName: tNav('whitepaper')
   })
 
+  // Page shell. `touch-action: manipulation` suppresses the double-tap zoom
+  // delay on touch input; it is inert on a mouse, so it is set in the markup
+  // rather than by a client component sniffing the UA.
   return (
-    <MobileOptimized>
+    <div className="touch-manipulation">
       <StructuredData type="article" data={articleSchema} />
       <StructuredData type="breadcrumb" data={breadcrumbSchema} />
 
@@ -754,6 +756,6 @@ export default async function WhitepaperPage({
         {/* Persistent disclaimer footer — same shared component used on landing page */}
         <DisclaimerFooter />
       </div>
-    </MobileOptimized>
+    </div>
   )
 }

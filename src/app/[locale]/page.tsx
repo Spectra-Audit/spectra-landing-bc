@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
-import MobileOptimized from '@/components/ui/MobileOptimized'
 import PageAnalyticsTracker from '@/components/ui/PageAnalyticsTracker'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import TrackedCta from '@/components/ui/TrackedCta'
@@ -102,7 +101,10 @@ export default async function HomePage({
       <PageAnalyticsTracker />
       <RevealOnScroll />
 
-      <MobileOptimized>
+      {/* Page shell. `touch-action: manipulation` suppresses the double-tap
+          zoom delay on touch input; it is inert on a mouse, so it is set
+          here rather than by a client component sniffing the UA. */}
+      <div className="touch-manipulation">
         <div className="min-h-screen ambient-glow bg-gradient-to-br from-neutral-50 via-white to-neutral-50 dark:from-ink-950 dark:via-ink-900 dark:to-ink-950 mobile-performance">
         {/* Navigation */}
         <Navbar />
@@ -1008,7 +1010,7 @@ export default async function HomePage({
         {/* Disclaimer Footer — extracted into shared component for reuse */}
         <DisclaimerFooter />
       </div>
-    </MobileOptimized>
+    </div>
     </>
   )
 }

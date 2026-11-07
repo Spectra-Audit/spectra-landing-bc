@@ -320,8 +320,8 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
-      "subtitle": "Cadre d'Audit de Sécurité",
+      "title": "Cadre d'Audit de Sécurité",
+      "subtitle": "Multidimensionnel",
       "description": "Découvrez comment Spectra Audit révolutionne la sécurité blockchain grâce à une analyse multidimensionnelle complète, offrant des perspectives plus approfondies que les audits traditionnels.",
       "buttons": {
         "exploreDimensions": "Explorer les Dimensions",
@@ -690,5 +690,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit prend-il en charge plusieurs blockchains ?",
     "a5": "Oui. Spectra Audit prend en charge Ethereum, BSC, Polygon, Arbitrum, Optimism et d'autres blockchains compatibles EVM."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil"
   }
 }

@@ -320,7 +320,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
+      "title": "Çok Boyutlu",
       "subtitle": "Güvenlik Denetim Çerçevesi",
       "description": "Spectra Audit'nın kapsamlı çok boyutlu analizle blockchain güvenliğini nasıl devrimleştirdiğini ve geleneksel denetimlerin sağlayabileceğinden daha derin öngörüler sunduğunu keşfedin.",
       "buttons": {
@@ -690,5 +690,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit birden fazla blokzinciri destekliyor mu?",
     "a5": "Evet. Spectra Audit; Ethereum, BSC, Polygon, Arbitrum, Optimism ve diğer büyük EVM uyumlu blokzincirleri destekler."
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana sayfaya dön"
   }
 }

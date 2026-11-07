@@ -12,8 +12,34 @@ export default createMiddleware({
   // This means the default locale (en) doesn't need a prefix
   localePrefix: 'as-needed',
 
-  // Optional: Configure locale detection
-  localeDetection: true,
+  // Locale is pinned to the URL: one URL always serves one locale.
+  //
+  // This used to be `true`, which made the middleware 307-redirect by
+  // `Accept-Language` — `GET /` with `Accept-Language: de` landed on `/de`.
+  // Three problems with that:
+  //
+  //  1. The redirect response carried no `Vary: Accept-Language`, so any
+  //     shared cache in front of the site (the CDN, a corporate proxy) could
+  //     hand the German redirect to the next visitor regardless of their
+  //     language.
+  //  2. `/` is the canonical and `x-default` URL for the English page and is
+  //     listed as such in the sitemap. A canonical URL that redirects
+  //     elsewhere depending on a request header is not a stable canonical.
+  //  3. Google asks specifically for no automatic redirection based on
+  //     perceived user language, because it stops crawlers reaching every
+  //     localized version:
+  //     https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites#avoid-automatic-redirection
+  //
+  // Visitors still choose a language through the navbar's LanguageSelector,
+  // which navigates to that locale's URL. hreflang (both the <link> tags and
+  // the Link response header) is what points a search engine, or a visitor
+  // arriving on the wrong one, at the right version.
+  localeDetection: false,
+
+  // No locale cookie either. With detection off nothing reads it: the locale
+  // comes from the path on every request. Writing it anyway would mean
+  // setting a cookie on first visit that changes no behaviour.
+  localeCookie: false,
 
   // Optional: Configure alternate links
   alternateLinks: true

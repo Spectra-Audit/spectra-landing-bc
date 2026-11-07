@@ -9,19 +9,21 @@ import Analytics from '@/components/ui/Analytics'
 import PerformanceMonitor from '@/components/ui/PerformanceMonitor'
 import { UmamiProvider } from '@/providers/UmamiProvider'
 import { inter, jetbrainsMono } from '@/lib/fonts'
-import SiteHeadMeta from '@/components/SiteHeadMeta'
+import SiteHeadMeta, { siteViewport } from '@/components/SiteHeadMeta'
 import ThemeInitScript from '@/components/ThemeInitScript'
 import '@/globals.css'
 
 // Namespaces the GLOBAL client islands actually read via `useTranslations`:
 //  - Navbar (rendered on every page): `nav.*`, `navbar.mobileMenu.*`
 //  - Analytics cookie-consent banner: `cookieConsent.*`
-// LanguageSelector, ThemeToggle, MobileOptimized, and PerformanceMonitor call
-// no next-intl hooks at all. Everything else that used to need the full
+// LanguageSelector, ThemeToggle, and PerformanceMonitor call no next-intl
+// hooks at all. Everything else that used to need the full
 // message bundle (DisclaimerFooter, MethodologyDiagram, LearningLoopDiagram,
 // UnifiedGradeDisplay, the home + whitepaper pages) is now a Server Component
 // reading via `getTranslations`, so it never touches this client provider.
 const GLOBAL_CLIENT_NAMESPACES = ['nav', 'navbar', 'cookieConsent'] as const
+
+export const viewport = siteViewport
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))

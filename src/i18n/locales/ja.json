@@ -320,7 +320,7 @@
   "whitepaper": {
     "badge": "Whitepaper v1.0",
     "hero": {
-      "title": "The Multi-Dimensional",
+      "title": "多次元",
       "subtitle": "セキュリティ監査フレームワーク",
       "description": "Spectra Auditが包括的な多次元分析を通じてブロックチェーンセキュリティをどのように革命化し、従来の監査よりも深い洞察を提供するかを発見してください。",
       "buttons": {
@@ -690,5 +690,10 @@
     "a4": "We publish no detection-rate figure, because we have not benchmarked one. What we can tell you is how the findings are produced: by AI analysis rather than by human auditors, each one rated by severity and shipped with the evidence behind it so you can check it yourself. Results are informational and do not guarantee that a project is safe.",
     "q5": "Spectra Audit は複数のブロックチェーンに対応していますか？",
     "a5": "はい。Ethereum、BSC、Polygon、Arbitrum、Optimism などの主要な EVM 互換チェーンに対応しています。"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動されました。",
+    "backHome": "ホームに戻る"
   }
 }
