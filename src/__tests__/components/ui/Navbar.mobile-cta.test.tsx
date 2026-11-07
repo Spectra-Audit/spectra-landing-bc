@@ -63,8 +63,15 @@ function ancestorClassesWithinNav(el: HTMLElement): string[] {
   return classes
 }
 
-function headerCta() {
-  return screen.getByRole('button', { name: /nav\.launchApp/ })
+/**
+ * Looked up by label rather than by role: SPE-16 is converting this CTA from a
+ * `<button onClick={window.open}>` into a real `<a href>`, and placement is
+ * what SPE-22 cares about either way.
+ */
+function headerCta(): HTMLElement {
+  const el = screen.getByText('nav.launchApp').closest('a, button')
+  if (!el) throw new Error('Launch App CTA is not inside a link or button')
+  return el as HTMLElement
 }
 
 describe('Navbar: mobile Launch App CTA (SPE-22)', () => {
@@ -93,13 +100,19 @@ describe('Navbar: mobile Launch App CTA (SPE-22)', () => {
     expect(classes).not.toContain('md:flex')
   })
 
-  it('opens the app from the header CTA', async () => {
+  it('points the header CTA at the app', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
 
-    await user.click(headerCta())
-
-    expect(window.open).toHaveBeenCalledWith(APP_URL, '_blank')
+    const cta = headerCta()
+    // Once SPE-16 lands this becomes an anchor; until then the handler is the
+    // navigation. Both forms have to reach the same origin.
+    if (cta.tagName === 'A') {
+      expect(cta).toHaveAttribute('href', APP_URL)
+    } else {
+      await user.click(cta)
+      expect(window.open).toHaveBeenCalledWith(APP_URL, '_blank')
+    }
   })
 
   it('serves language and theme from the mobile menu instead of the header', async () => {
