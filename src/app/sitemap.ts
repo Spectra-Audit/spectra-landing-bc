@@ -10,7 +10,17 @@ const PAGES: Array<{ sub: string; priority: number }> = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
 
-  return PAGES.flatMap(({ sub, priority }) => {
+  // /sample-report is one English document at one URL (it lives outside the
+  // `[locale]` segment), so it gets a single entry with no hreflang alternates
+  // rather than a row per locale.
+  const sampleReport = {
+    url: `${SITE_URL}/sample-report`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }
+
+  const localizedPages = PAGES.flatMap(({ sub, priority }) => {
     const languages = {
       ...Object.fromEntries(locales.map((locale) => [locale, `${SITE_URL}${localePath(locale, sub)}`])),
       'x-default': `${SITE_URL}${localePath('en', sub)}`,
@@ -24,4 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages },
     }))
   })
+
+  return [...localizedPages, sampleReport]
 }

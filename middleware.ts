@@ -24,8 +24,11 @@ export const config = {
   // - API routes (/api/*)
   // - Next.js internal routes (_next/*)
   // - Static files with extensions
+  // - /sample-report, which lives in the `(root)` segment outside `[locale]`.
+  //   Left in the matcher, next-intl would rewrite it to /en/sample-report and
+  //   the request would 404, because there is no such route under `[locale]`.
   matcher: [
     // Match all paths that don't start with api, _next, or have a file extension
-    '/((?!api|_next|_vercel|.*\\..*).*)',
+    '/((?!api|_next|_vercel|sample-report|.*\\..*).*)',
   ]
 }

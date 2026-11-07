@@ -70,6 +70,7 @@
       "heroTitle": "智能合约安全审计",
       "heroSubtitle": "分钟级完成，而非数周",
       "heroDescription": "AI 驱动的智能合约分析，附带可验证的证据。20分钟内获取全面的安全分析。无需注册。",
+      "sampleScoreBadge": "示例",
       "securityAuditTitle": "可公开验证的审计",
       "securityAuditSubtitle": "透明的方法论，您可以检查、审计和复现",
       "thirdPartyAudited": "可复现的发现",

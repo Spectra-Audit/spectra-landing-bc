@@ -6,6 +6,7 @@ import WhitepaperAnalyticsTracker from '@/components/ui/WhitepaperAnalyticsTrack
 import DimensionsGrid, { type DimensionsGridItem } from '@/components/ui/DimensionsGrid'
 import StructuredData, { createArticleSchema, createBreadcrumbSchema } from '@/components/ui/StructuredData'
 import { WHITEPAPER_PUBLISHED, WHITEPAPER_MODIFIED } from '@/lib/content-dates'
+import { SCORING_WEIGHT_ROWS, SAMPLE_COMPOSITE_SCORE } from '@/lib/scoring-example'
 import {
   Shield,
   Code,
@@ -107,34 +108,26 @@ export default async function WhitepaperPage({
     }
   })
 
-  // The published scoring weights. Source of truth, and the only thing these
-  // two columns may ever be copied from:
-  //   spectra/services/scoring/phase4_metrics.py
-  //   PHASE4_WEIGHTS_HAS_TOKEN / PHASE4_WEIGHTS_NO_TOKEN
-  //
-  // What used to be here was the `TECHNICAL_WEIGHTS_WITH_TOKEN` table from
-  // sentiment.py (code 45 / distribution 15 / tokenomics 15 / liquidity 15),
-  // which produces `score_technical` — a display-only subscore that is not an
-  // input to the headline score at all. The no-token column was a 70/30
-  // two-input model that exists in no file.
-  //
-  // `sample` is the illustrative per-dimension score in the worked example
-  // below. The example's products and total are computed from these numbers
-  // rather than written out, so the two can't drift apart.
-  const weightRows = [
-    { key: 'rowCode', Icon: Code, tone: 'text-green-600 dark:text-green-400', hasToken: 35, noToken: 55, sample: 82 },
-    { key: 'rowDistribution', Icon: Users, tone: 'text-orange-600 dark:text-orange-400', hasToken: 10, noToken: null, sample: 71 },
-    { key: 'rowTokenomics', Icon: TrendingUp, tone: 'text-purple-600 dark:text-purple-400', hasToken: 10, noToken: null, sample: 64 },
-    { key: 'rowLiquidity', Icon: Droplets, tone: 'text-cyan-600 dark:text-cyan-400', hasToken: 10, noToken: null, sample: 77 },
-    { key: 'rowSentiment', Icon: MessageSquare, tone: 'text-blue-600 dark:text-blue-400', hasToken: 10, noToken: 25, sample: 80 },
-    { key: 'rowVelocity', Icon: Activity, tone: 'text-sky-600 dark:text-sky-400', hasToken: 5, noToken: null, sample: 55 },
-    { key: 'rowHolderGrowth', Icon: Users, tone: 'text-emerald-600 dark:text-emerald-400', hasToken: 5, noToken: null, sample: 62 },
-    { key: 'rowRealizedPnl', Icon: TrendingUp, tone: 'text-amber-600 dark:text-amber-400', hasToken: 5, noToken: null, sample: 48 },
-    { key: 'rowNetFlow', Icon: GitBranch, tone: 'text-indigo-600 dark:text-indigo-400', hasToken: 5, noToken: null, sample: 58 },
-    { key: 'rowWhaleDumpRisk', Icon: Shield, tone: 'text-rose-600 dark:text-rose-400', hasToken: 5, noToken: 20, sample: 69 }
-  ] as const
+  // Per-dimension icon and colour. Presentation only: the weights and the
+  // illustrative per-dimension scores live in @/lib/scoring-example, shared
+  // with the hero readout and the /sample-report artifact so that the three
+  // cannot publish different numbers for the same example.
+  const rowPresentation = {
+    rowCode: { Icon: Code, tone: 'text-green-600 dark:text-green-400' },
+    rowDistribution: { Icon: Users, tone: 'text-orange-600 dark:text-orange-400' },
+    rowTokenomics: { Icon: TrendingUp, tone: 'text-purple-600 dark:text-purple-400' },
+    rowLiquidity: { Icon: Droplets, tone: 'text-cyan-600 dark:text-cyan-400' },
+    rowSentiment: { Icon: MessageSquare, tone: 'text-blue-600 dark:text-blue-400' },
+    rowVelocity: { Icon: Activity, tone: 'text-sky-600 dark:text-sky-400' },
+    rowHolderGrowth: { Icon: Users, tone: 'text-emerald-600 dark:text-emerald-400' },
+    rowRealizedPnl: { Icon: TrendingUp, tone: 'text-amber-600 dark:text-amber-400' },
+    rowNetFlow: { Icon: GitBranch, tone: 'text-indigo-600 dark:text-indigo-400' },
+    rowWhaleDumpRisk: { Icon: Shield, tone: 'text-rose-600 dark:text-rose-400' }
+  } as const
 
-  const exampleTotal = weightRows.reduce((sum, row) => sum + (row.sample * row.hasToken) / 100, 0)
+  const weightRows = SCORING_WEIGHT_ROWS.map((row) => ({ ...row, ...rowPresentation[row.key] }))
+
+  const exampleTotal = SAMPLE_COMPOSITE_SCORE
 
   // Build roadmap array from translations
   const phaseKeys = ['q1_2025', 'q2_2025', 'q3_2025', 'q4_2025'] as const

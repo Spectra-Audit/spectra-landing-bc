@@ -1,11 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import { Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
+import { Button, Card, TrustBadge, Navbar, UnifiedGradeDisplay, MethodologyDiagram, LearningLoopDiagram, DisclaimerFooter } from '@/components/ui'
 import MobileOptimized from '@/components/ui/MobileOptimized'
 import PageAnalyticsTracker from '@/components/ui/PageAnalyticsTracker'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import TrackedCta from '@/components/ui/TrackedCta'
 import StructuredData, { createSoftwareSchema, createOrganizationSchema } from '@/components/ui/StructuredData'
+import { SAMPLE_HEADLINE_SCORE, SAMPLE_REPORT_PATH } from '@/lib/scoring-example'
 import { Shield, Search, BarChart3, CheckCircle, Eye, Clock, Users, GitBranch, Cpu, Layers, ThumbsUp, Brain, RefreshCw, FileCheck, Droplets, MessagesSquare, ScanSearch, Workflow, Wallet, LifeBuoy } from 'lucide-react'
 
 export default async function HomePage({
@@ -196,15 +198,34 @@ export default async function HomePage({
 
               {/* Security Score readout - CENTERPIECE. An illustrative score,
                   not a measured one: it shows the shape of the output, the
-                  0-100 number and its colour band. */}
+                  0-100 number and its colour band.
+
+                  It used to be a bare 95 with no provenance: nothing on the
+                  site explained where it came from, and no example anywhere
+                  added up to it. It is now the headline score of the specimen
+                  report at /sample-report, read from the same constant that
+                  report and the whitepaper's worked example are computed from,
+                  carries a "Sample" badge, and links to that report so the
+                  number can be taken apart. */}
               <div className="mb-12 animate-scale-in" style={{ animationDelay: '0.3s' }}>
-                <UnifiedGradeDisplay
-                  score={95}
-                  size="xl"
-                  animated={true}
-                  showLabel={true}
-                  showDescription={true}
-                />
+                <Link
+                  href={SAMPLE_REPORT_PATH}
+                  className="group flex flex-col items-center rounded-2xl p-2 transition-colors hover:bg-neutral-100/60 dark:hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-spectra-blue-500"
+                >
+                  <span className="mb-4 inline-flex items-center rounded-full border border-spectra-yellow-500/40 bg-spectra-yellow-500/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-spectra-yellow-700 dark:text-spectra-yellow-500">
+                    {t('hero.page.sampleScoreBadge')}
+                  </span>
+                  <UnifiedGradeDisplay
+                    score={SAMPLE_HEADLINE_SCORE}
+                    size="xl"
+                    animated={true}
+                    showLabel={true}
+                    showDescription={true}
+                  />
+                  <span className="mt-4 text-sm font-medium text-spectra-blue-600 dark:text-spectra-blue-400 group-hover:underline">
+                    {t('howScoresWork.cta.viewSampleReport')}
+                  </span>
+                </Link>
               </div>
 
               {/*
@@ -440,6 +461,18 @@ export default async function HomePage({
                   >
                     {t('howScoresWork.cta.exploreProjects')}
                   </TrackedCta>
+                  {/* SPE-16 deleted this CTA because it was a <Button> with
+                      no handler and no href — there was no sample report to
+                      open. There is one now, so it comes back as a real link
+                      through the href API SPE-16 added. */}
+                  <Button
+                    href={SAMPLE_REPORT_PATH}
+                    size="lg"
+                    variant="outline"
+                    className="px-6 py-3"
+                  >
+                    {t('howScoresWork.cta.viewSampleReport')}
+                  </Button>
                 </div>
               </div>
             </Card>

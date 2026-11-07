@@ -70,6 +70,7 @@
       "heroTitle": "スマートコントラクトセキュリティ監査",
       "heroSubtitle": "数分で、数週間ではなく",
       "heroDescription": "検証可能なエビデンス付きのAI駆動スマートコントラクト分析。20分以内に包括的なセキュリティ分析を取得。登録不要。",
+      "sampleScoreBadge": "サンプル",
       "securityAuditTitle": "公開検証可能な監査",
       "securityAuditSubtitle": "検査、監査、再現が可能な透明性のある方法論",
       "thirdPartyAudited": "再現可能な発見",
